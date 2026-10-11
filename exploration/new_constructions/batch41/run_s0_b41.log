@@ -1,0 +1,9 @@
+agentwork-launch: tag=track6/b41-s0-runner schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+agentwork-launch: tag=track6/b41-s0-runner schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+backoff CLEAR after 5 checks Sun Oct 11 06:14:29 UTC 2026
+CLEAR: load=11.42, no frozen processes
+S0 nandM6a done rc=0 Sun Oct 11 06:18:15 UTC 2026
+RESULT name=t6_nandM6a cells=3129 area=9259 crit=21.5 delay_ratio=0.208 area_ratio=0.262 ref_crit=103.5 ref_area=35323
+S0 norM6a done rc=0 Sun Oct 11 06:34:47 UTC 2026
+RESULT name=t6_norM6a cells=4469 area=13808 crit=21.9 delay_ratio=0.212 area_ratio=0.391 ref_crit=103.5 ref_area=35323
+ALL_S0_DONE

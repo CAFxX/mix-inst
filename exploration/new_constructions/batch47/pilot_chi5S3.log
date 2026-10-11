@@ -1,0 +1,41 @@
+try   0 maxworst|z|= 27028.5 killkey=0xaaaaaaaaaaaaaaaa kill
+try   1 maxworst|z|=739994.3 killkey=0x0 kill
+try   2 maxworst|z|= 44927.6 killkey=0xffffffffffffffff kill
+try   3 maxworst|z|=  1990.0 killkey=0x0 kill
+try   4 maxworst|z|= 39675.6 killkey=0x123456789abcdef kill
+try   5 maxworst|z|=  3126.8 killkey=0x123456789abcdef kill
+try   6 maxworst|z|=  2061.7 killkey=0xffffffffffffffff kill
+try   7 maxworst|z|=  5154.2 killkey=0xffffffffffffffff kill
+try   8 maxworst|z|= 39528.6 killkey=0xaaaaaaaaaaaaaaaa kill
+try   9 maxworst|z|= 10655.8 killkey=0x9e3779b97f4a7c15 kill
+try  10 maxworst|z|=  2422.0 killkey=0xdeadbeefdeadbeef kill
+try  11 maxworst|z|=  5386.2 killkey=0xffffffffffffffff kill
+try  12 maxworst|z|=  2773.2 killkey=0x0 kill
+try  13 maxworst|z|= 19274.6 killkey=0x5555555555555555 kill
+try  14 maxworst|z|= 89950.2 killkey=0xaaaaaaaaaaaaaaaa kill
+try  15 maxworst|z|=264522.6 killkey=0xaaaaaaaaaaaaaaaa kill
+try  16 maxworst|z|= 78141.4 killkey=0x0 kill
+try  17 maxworst|z|= 12241.6 killkey=0x0 kill
+try  18 maxworst|z|= 52347.3 killkey=0xffffffffffffffff kill
+try  19 maxworst|z|= 78705.0 killkey=0x0 kill
+try  20 maxworst|z|= 33763.0 killkey=0x0 kill
+try  21 maxworst|z|= 14193.3 killkey=0x0 kill
+try  22 maxworst|z|= 37507.7 killkey=0x5555555555555555 kill
+try  23 maxworst|z|=  3677.8 killkey=0xf0b52a9e7d8ba2b5 kill
+try  24 maxworst|z|=  5017.0 killkey=0xffffffffffffffff kill
+try  25 maxworst|z|= 16965.9 killkey=0xaaaaaaaaaaaaaaaa kill
+try  26 maxworst|z|=182813.6 killkey=0xffffffffffffffff kill
+try  27 maxworst|z|=  7565.7 killkey=0xffffffffffffffff kill
+try  28 maxworst|z|=136381.9 killkey=0xaaaaaaaaaaaaaaaa kill
+try  29 maxworst|z|=737092.4 killkey=0x0 kill
+try  30 maxworst|z|= 49685.2 killkey=0xaaaaaaaaaaaaaaaa kill
+try  31 maxworst|z|= 48959.7 killkey=0xf0b52a9e7d8ba2b5 kill
+try  32 maxworst|z|=  3659.1 killkey=0x5555555555555555 kill
+try  33 maxworst|z|= 80518.7 killkey=0x0 kill
+try  34 maxworst|z|=   790.0 killkey=0xffffffffffffffff kill
+try  35 maxworst|z|= 19466.9 killkey=0xffffffffffffffff kill
+try  36 maxworst|z|=  7643.1 killkey=0x9e3779b97f4a7c15 kill
+try  37 maxworst|z|= 16372.3 killkey=0xffffffffffffffff kill
+try  38 maxworst|z|=  2067.4 killkey=0xf0b52a9e7d8ba2b5 kill
+try  39 maxworst|z|=  7433.3 killkey=0xffffffffffffffff kill
+=== chi5S3: 0/40 KEEP (seed=0xb472) ===

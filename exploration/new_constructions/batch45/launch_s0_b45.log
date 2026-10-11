@@ -1,0 +1,33 @@
+agentwork-launch: tag=track6/b45-s0 schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+[2026-10-11T10:51:12+00:00] backoff CLEAR -- starting batch-45 S0s
+[2026-10-11T10:51:12+00:00] S0 t6_chiS4a
+[2026-10-11T10:51:54+00:00] S0 t6_chiS4a FAILED rc=0 -- see s0_t6_chiS4a.log
+
+/home/hatch/workspace/mix/exploration/fast_battery/candidates/t6_chiS4a/rtl.v:24: ERROR: syntax error, unexpected '['
+
+[2026-10-11T10:51:54+00:00] S0 t6_chiS4b
+[2026-10-11T10:52:46+00:00] S0 t6_chiS4b FAILED rc=0 -- see s0_t6_chiS4b.log
+
+/home/hatch/workspace/mix/exploration/fast_battery/candidates/t6_chiS4b/rtl.v:24: ERROR: syntax error, unexpected '['
+
+[2026-10-11T10:52:46+00:00] S0 t6_chiS4c
+[2026-10-11T10:53:34+00:00] S0 t6_chiS4c FAILED rc=0 -- see s0_t6_chiS4c.log
+
+/home/hatch/workspace/mix/exploration/fast_battery/candidates/t6_chiS4c/rtl.v:24: ERROR: syntax error, unexpected '['
+
+[2026-10-11T10:53:34+00:00] batch-45 S0s COMPLETE
+agentwork-launch: tag=track6/b45-s0 schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+[2026-10-11T10:54:36+00:00] backoff CLEAR -- starting batch-45 S0s
+[2026-10-11T10:54:36+00:00] S0 t6_chiS4a
+DUT t6_chiS4a: cells=3143 area=9499 crit=23.1
+RESULT name=t6_chiS4a cells=3143 area=9499 crit=23.1 delay_ratio=0.223 area_ratio=0.269 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+[2026-10-11T10:55:10+00:00] S0 t6_chiS4b
+DUT t6_chiS4b: cells=2689 area=8274 crit=23.2
+RESULT name=t6_chiS4b cells=2689 area=8274 crit=23.2 delay_ratio=0.224 area_ratio=0.234 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+[2026-10-11T10:55:36+00:00] S0 t6_chiS4c
+DUT t6_chiS4c: cells=3077 area=9555 crit=22.9
+RESULT name=t6_chiS4c cells=3077 area=9555 crit=22.9 delay_ratio=0.221 area_ratio=0.271 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+[2026-10-11T10:55:55+00:00] batch-45 S0s COMPLETE

@@ -1,0 +1,41 @@
+try   0 maxworst|z|= 13931.7 killkey=0xdeadbeefdeadbeef kill
+try   1 maxworst|z|= 33536.7 killkey=0xdeadbeefdeadbeef kill
+try   2 maxworst|z|= 34925.2 killkey=0x92988f142674743 kill
+try   3 maxworst|z|= 21054.1 killkey=0x9e3779b97f4a7c15 kill
+try   4 maxworst|z|=  3740.6 killkey=0x123456789abcdef kill
+try   5 maxworst|z|= 16925.3 killkey=0x92988f142674743 kill
+try   6 maxworst|z|= 62120.2 killkey=0x9e3779b97f4a7c15 kill
+try   7 maxworst|z|= 29292.6 killkey=0x92988f142674743 kill
+try   8 maxworst|z|= 24265.7 killkey=0x92988f142674743 kill
+try   9 maxworst|z|= 10565.3 killkey=0xdeadbeefdeadbeef kill
+try  10 maxworst|z|=136121.7 killkey=0x123456789abcdef kill
+try  11 maxworst|z|= 16467.9 killkey=0x5555555555555555 kill
+try  12 maxworst|z|= 55492.4 killkey=0xf0b52a9e7d8ba2b5 kill
+try  13 maxworst|z|= 10806.0 killkey=0x0 kill
+try  14 maxworst|z|= 31944.0 killkey=0x9e3779b97f4a7c15 kill
+try  15 maxworst|z|=  9261.2 killkey=0xf0b52a9e7d8ba2b5 kill
+try  16 maxworst|z|= 39496.1 killkey=0xf0b52a9e7d8ba2b5 kill
+try  17 maxworst|z|=101193.2 killkey=0x123456789abcdef kill
+try  18 maxworst|z|= 25991.8 killkey=0x0 kill
+try  19 maxworst|z|= 41577.1 killkey=0x123456789abcdef kill
+try  20 maxworst|z|= 23792.5 killkey=0xf0b52a9e7d8ba2b5 kill
+try  21 maxworst|z|= 10779.2 killkey=0x92988f142674743 kill
+try  22 maxworst|z|= 30698.1 killkey=0x0 kill
+try  23 maxworst|z|= 11271.4 killkey=0x123456789abcdef kill
+try  24 maxworst|z|= 10299.9 killkey=0x92988f142674743 kill
+try  25 maxworst|z|= 25091.0 killkey=0xf0b52a9e7d8ba2b5 kill
+try  26 maxworst|z|= 11957.6 killkey=0x9e3779b97f4a7c15 kill
+try  27 maxworst|z|=  9461.4 killkey=0xf0b52a9e7d8ba2b5 kill
+try  28 maxworst|z|= 33938.0 killkey=0x123456789abcdef kill
+try  29 maxworst|z|= 10779.1 killkey=0x92988f142674743 kill
+try  30 maxworst|z|= 70538.2 killkey=0x123456789abcdef kill
+try  31 maxworst|z|=146570.0 killkey=0x9e3779b97f4a7c15 kill
+try  32 maxworst|z|= 10499.8 killkey=0xdeadbeefdeadbeef kill
+try  33 maxworst|z|= 20341.1 killkey=0x9e3779b97f4a7c15 kill
+try  34 maxworst|z|=  6170.6 killkey=0xdeadbeefdeadbeef kill
+try  35 maxworst|z|=  9212.7 killkey=0x92988f142674743 kill
+try  36 maxworst|z|= 16298.8 killkey=0xdeadbeefdeadbeef kill
+try  37 maxworst|z|=  6760.0 killkey=0x123456789abcdef kill
+try  38 maxworst|z|= 85430.9 killkey=0x123456789abcdef kill
+try  39 maxworst|z|=  3695.1 killkey=0xdeadbeefdeadbeef kill
+=== andn-7: 0/40 KEEP (seed=0xb391) ===

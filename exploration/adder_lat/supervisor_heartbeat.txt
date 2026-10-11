@@ -73,3 +73,7 @@ HB 2026-10-11T20:52Z Track3: RESUMED per user order; W3 LIN-kill MECHANISM FOUND
 2026-10-11 21:45:40 w3prime-harvest: 4 bundles verified OK (al_w3p_a/b/c/d); starting S0
 2026-10-11 21:50:45 w3prime-harvest: S0 al_w3p_a DONE 48.3u/18917/58806 (< 123.4u bar, eligible); b/c/d still running
 2026-10-11 21:55:09 w3prime-harvest: S0 all 4 DONE (a 48.3u, b 50.6u, c 49.0u, d 48.7u — all < 123.4u bar); launching battery S1->S4
+2026-10-11 22:04:25 w3prime-harvest: S1 al_w3p_a CAL_PASS (wave-14 LIN kill fixed by W3' rank probe); S2 running
+2026-10-11 22:11:23 w3prime-harvest: S2 al_w3p_a 40/115 deltas, 0 kills so far, max|z| low; b/c/d queued
+2026-10-11 22:20:09 w3prime-harvest: S2 al_w3p_a 66/115, max|z|=4.1, 0 kills; steady progress
+2026-10-11 22:28:43 w3prime-harvest: S2 al_w3p_a 93/115, max|z|=4.1, 0 kills

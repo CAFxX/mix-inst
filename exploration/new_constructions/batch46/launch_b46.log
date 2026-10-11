@@ -1,0 +1,23 @@
+agentwork-launch: tag=track6/b46-pilot schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+[2026-10-11T10:59:07+00:00] backoff CLEAR -- starting batch-46 pilot
+[2026-10-11T10:59:07+00:00] calibration: and1/b33c must reproduce z=3.3
+CALIBRATION and1/b33c: maxworst|z|=3.3 (expect 3.3)
+[2026-10-11T10:59:23+00:00] calibration PASS
+[2026-10-11T10:59:23+00:00] arm hetCA4a: 40 draws seed 0xB461
+try  39 maxworst|z|=  1948.8 killkey=0x0 kill
+=== hetCA4a: 0/40 KEEP (seed=0xb461) ===
+[2026-10-11T11:02:43+00:00] arm hetCA4b: 40 draws seed 0xB462
+agentwork-launch: tag=track6/b46-pilot schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+[2026-10-11T11:07:06+00:00] backoff CLEAR -- starting batch-46 pilot
+[2026-10-11T11:07:06+00:00] calibration: and1/b33c must reproduce z=3.3
+CALIBRATION and1/b33c: maxworst|z|=3.3 (expect 3.3)
+[2026-10-11T11:07:19+00:00] calibration PASS
+[2026-10-11T11:07:19+00:00] arm hetCA4a: 40 draws seed 0xB461
+[2026-10-11T11:07:19+00:00] preserved pre-existing pilot_hetCA4a.log -> .dead1
+try  39 maxworst|z|=  1948.8 killkey=0x0 kill
+=== hetCA4a: 0/40 KEEP (seed=0xb461) ===
+[2026-10-11T11:19:09+00:00] arm hetCA4b: 40 draws seed 0xB462
+[2026-10-11T11:19:09+00:00] preserved pre-existing pilot_hetCA4b.log -> .dead1
+try  39 maxworst|z|=  6945.4 killkey=0x5555555555555555 kill
+=== hetCA4b: 0/40 KEEP (seed=0xb462) ===
+[2026-10-11T11:25:40+00:00] batch-46 pilot COMPLETE

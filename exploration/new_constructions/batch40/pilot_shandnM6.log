@@ -1,0 +1,42 @@
+agentwork-launch: tag=track6/b40-shandnM6 schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+try   0 maxworst|z|=1480000.0 killkey=0x0 kill
+try   1 maxworst|z|=739994.3 killkey=0xdeadbeefdeadbeef kill
+try   2 maxworst|z|=739994.3 killkey=0x0 kill
+try   3 maxworst|z|=739994.3 killkey=0x0 kill
+try   4 maxworst|z|=182813.6 killkey=0x0 kill
+try   5 maxworst|z|= 17400.6 killkey=0x0 kill
+try   6 maxworst|z|=1480000.0 killkey=0x0 kill
+try   7 maxworst|z|=182813.6 killkey=0x0 kill
+try   8 maxworst|z|=739994.3 killkey=0x0 kill
+try   9 maxworst|z|=182813.6 killkey=0x0 kill
+try  10 maxworst|z|=739994.3 killkey=0x0 kill
+try  11 maxworst|z|=739994.3 killkey=0x0 kill
+try  12 maxworst|z|=  1906.8 killkey=0x5555555555555555 kill
+try  13 maxworst|z|=368540.5 killkey=0x0 kill
+try  14 maxworst|z|=1480000.0 killkey=0x0 kill
+try  15 maxworst|z|=737092.4 killkey=0x0 kill
+try  16 maxworst|z|=1480000.0 killkey=0x0 kill
+try  17 maxworst|z|=739994.3 killkey=0x0 kill
+try  18 maxworst|z|=739994.3 killkey=0x0 kill
+try  19 maxworst|z|=739994.3 killkey=0xdeadbeefdeadbeef kill
+try  20 maxworst|z|=272775.1 killkey=0x0 kill
+try  21 maxworst|z|=1480000.0 killkey=0x0 kill
+try  22 maxworst|z|=739994.3 killkey=0x0 kill
+try  23 maxworst|z|=1480000.0 killkey=0x0 kill
+try  24 maxworst|z|=1480000.0 killkey=0x0 kill
+try  25 maxworst|z|=1480000.0 killkey=0x0 kill
+try  26 maxworst|z|=182813.6 killkey=0x0 kill
+try  27 maxworst|z|=  5217.3 killkey=0x0 kill
+try  28 maxworst|z|= 69636.3 killkey=0x0 kill
+try  29 maxworst|z|= 11596.6 killkey=0x0 kill
+try  30 maxworst|z|=1480000.0 killkey=0x0 kill
+try  31 maxworst|z|= 87048.2 killkey=0x0 kill
+try  32 maxworst|z|=1480000.0 killkey=0x0 kill
+try  33 maxworst|z|=182813.6 killkey=0xffffffffffffffff kill
+try  34 maxworst|z|=739994.3 killkey=0x0 kill
+try  35 maxworst|z|= 26106.6 killkey=0x0 kill
+try  36 maxworst|z|=368540.5 killkey=0x0 kill
+try  37 maxworst|z|=365638.5 killkey=0x0 kill
+try  38 maxworst|z|=739994.3 killkey=0x0 kill
+try  39 maxworst|z|=1480000.0 killkey=0xffffffffffffffff kill
+=== shandnM-6: 0/40 KEEP (seed=0xb400) ===

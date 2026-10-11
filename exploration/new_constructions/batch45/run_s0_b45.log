@@ -1,0 +1,14 @@
+[2026-10-11T10:54:36+00:00] backoff CLEAR -- starting batch-45 S0s
+[2026-10-11T10:54:36+00:00] S0 t6_chiS4a
+DUT t6_chiS4a: cells=3143 area=9499 crit=23.1
+RESULT name=t6_chiS4a cells=3143 area=9499 crit=23.1 delay_ratio=0.223 area_ratio=0.269 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+[2026-10-11T10:55:10+00:00] S0 t6_chiS4b
+DUT t6_chiS4b: cells=2689 area=8274 crit=23.2
+RESULT name=t6_chiS4b cells=2689 area=8274 crit=23.2 delay_ratio=0.224 area_ratio=0.234 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+[2026-10-11T10:55:36+00:00] S0 t6_chiS4c
+DUT t6_chiS4c: cells=3077 area=9555 crit=22.9
+RESULT name=t6_chiS4c cells=3077 area=9555 crit=22.9 delay_ratio=0.221 area_ratio=0.271 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+[2026-10-11T10:55:55+00:00] batch-45 S0s COMPLETE

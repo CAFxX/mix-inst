@@ -1,0 +1,12 @@
+[2026-10-11T10:37:25+00:00] backoff CLEAR -- starting batch-45 pilot
+[2026-10-11T10:37:26+00:00] calibration: and1/b33c must reproduce z=3.3
+CALIBRATION and1/b33c: maxworst|z|=3.3 (expect 3.3)
+[2026-10-11T10:37:55+00:00] calibration PASS
+[2026-10-11T10:37:55+00:00] arm chiS4: 40 draws seed 0xB451
+=== chiS4-4: 10/40 KEEP (seed=0xb451) ===
+KEEP schedules -> keeps_chiS4.jsonl
+[2026-10-11T10:49:46+00:00] arm chiS5: 40 draws seed 0xB452
+[2026-10-11T10:56:51+00:00] arm chiS5 exited rc=0 (rc=2 with 0 kills = vacuous-harness GATE-FAIL)
+KEEP schedules -> keeps_chiS5.jsonl
+GATE-FAIL: 0 kills -- harness may be vacuous
+[2026-10-11T10:56:51+00:00] batch-45 pilot COMPLETE

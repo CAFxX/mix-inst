@@ -1,0 +1,14 @@
+[2026-10-11T12:10:47+00:00] backoff CLEAR -- starting batch-47 pilot
+[2026-10-11T12:10:48+00:00] calibration: and1/b33c must reproduce z=3.3
+CALIBRATION and1/b33c: maxworst|z|=3.3 (expect 3.3) PASS
+[2026-10-11T12:11:15+00:00] calibration PASS
+[2026-10-11T12:11:15+00:00] arm chi3S3: 40 draws seed 0xB471
+try  39 maxworst|z|= 26945.9 killkey=0x0 kill
+=== chi3S3: 0/40 KEEP (seed=0xb471) ===
+[2026-10-11T12:20:14+00:00] arm chi5S3: 40 draws seed 0xB472
+try  39 maxworst|z|=  7433.3 killkey=0xffffffffffffffff kill
+=== chi5S3: 0/40 KEEP (seed=0xb472) ===
+[2026-10-11T12:26:29+00:00] arm maj3S3: 40 draws seed 0xB473
+try  39 maxworst|z|= 71242.1 killkey=0x0 kill
+=== maj3S3: 0/40 KEEP (seed=0xb473) ===
+[2026-10-11T12:29:20+00:00] batch-47 pilot COMPLETE

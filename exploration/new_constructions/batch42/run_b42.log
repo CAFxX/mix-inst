@@ -1,0 +1,20 @@
+[2026-10-11T07:44:09+00:00] backoff CLEAR -- starting batch-42 pilot
+[2026-10-11T07:44:09+00:00] calibration: and1/b33c must reproduce z=3.3
+CALIBRATION and1/b33c: maxworst|z|=3.3 (expect 3.3)
+[2026-10-11T07:44:34+00:00] calibration PASS
+[2026-10-11T07:44:35+00:00] arm chi5f5: 40 draws seed 0xB421
+[2026-10-11T08:03:13+00:00] backoff CLEAR -- starting batch-42 pilot
+[2026-10-11T08:03:13+00:00] calibration: and1/b33c must reproduce z=3.3
+CALIBRATION and1/b33c: maxworst|z|=3.3 (expect 3.3)
+[2026-10-11T08:03:45+00:00] calibration PASS
+[2026-10-11T08:03:45+00:00] arm chi5f5: 40 draws seed 0xB421
+[2026-10-11T08:03:45+00:00] preserved pre-existing pilot_chi5f5.log -> .dead2
+try  39 maxworst|z|=   421.2 killkey=0x0 kill
+=== chi5f5-5: 0/40 KEEP (seed=0xb421) ===
+[2026-10-11T08:07:37+00:00] arm chi3f5: 40 draws seed 0xB422
+try  39 maxworst|z|=  1213.1 killkey=0x0 kill
+=== chi3f5-5: 0/40 KEEP (seed=0xb422) ===
+[2026-10-11T08:13:10+00:00] arm and5: 10 draws seed 0xB423
+try   9 maxworst|z|=   717.6 killkey=0x0 kill
+=== and5-5: 0/10 KEEP (seed=0xb423) ===
+[2026-10-11T08:15:28+00:00] batch-42 pilot COMPLETE

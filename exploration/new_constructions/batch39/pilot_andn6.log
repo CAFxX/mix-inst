@@ -1,0 +1,42 @@
+try   0 maxworst|z|= 42986.7 killkey=0x92988f142674743 kill
+try   1 maxworst|z|=118115.1 killkey=0xdeadbeefdeadbeef kill
+try   2 maxworst|z|=461404.0 killkey=0x9e3779b97f4a7c15 kill
+try   3 maxworst|z|= 88013.5 killkey=0x123456789abcdef kill
+try   4 maxworst|z|=302355.2 killkey=0x123456789abcdef kill
+try   5 maxworst|z|=107586.5 killkey=0x123456789abcdef kill
+try   6 maxworst|z|= 38013.6 killkey=0xdeadbeefdeadbeef kill
+try   7 maxworst|z|= 39904.5 killkey=0x123456789abcdef kill
+try   8 maxworst|z|=174253.4 killkey=0x9e3779b97f4a7c15 kill
+try   9 maxworst|z|= 57540.2 killkey=0xdeadbeefdeadbeef kill
+try  10 maxworst|z|= 89414.5 killkey=0xf0b52a9e7d8ba2b5 kill
+try  11 maxworst|z|=153408.7 killkey=0x9e3779b97f4a7c15 kill
+try  12 maxworst|z|=123541.0 killkey=0x9e3779b97f4a7c15 kill
+try  13 maxworst|z|= 48002.8 killkey=0xffffffffffffffff kill
+try  14 maxworst|z|=120649.6 killkey=0x123456789abcdef kill
+try  15 maxworst|z|=325010.8 killkey=0x123456789abcdef kill
+try  16 maxworst|z|= 93642.6 killkey=0x92988f142674743 kill
+try  17 maxworst|z|=181064.9 killkey=0x9e3779b97f4a7c15 kill
+try  18 maxworst|z|= 40583.3 killkey=0x9e3779b97f4a7c15 kill
+try  19 maxworst|z|= 71709.8 killkey=0x92988f142674743 kill
+try  20 maxworst|z|= 76196.0 killkey=0x123456789abcdef kill
+try  21 maxworst|z|=117619.5 killkey=0x9e3779b97f4a7c15 kill
+try  22 maxworst|z|=177029.5 killkey=0x9e3779b97f4a7c15 kill
+try  23 maxworst|z|=161081.3 killkey=0x9e3779b97f4a7c15 kill
+try  24 maxworst|z|= 22237.5 killkey=0x123456789abcdef kill
+try  25 maxworst|z|=101854.6 killkey=0x9e3779b97f4a7c15 kill
+try  26 maxworst|z|=103146.5 killkey=0xdeadbeefdeadbeef kill
+try  27 maxworst|z|=231284.2 killkey=0xaaaaaaaaaaaaaaaa kill
+try  28 maxworst|z|=299126.5 killkey=0xf0b52a9e7d8ba2b5 kill
+try  29 maxworst|z|= 85809.0 killkey=0xf0b52a9e7d8ba2b5 kill
+try  30 maxworst|z|=180604.2 killkey=0xdeadbeefdeadbeef kill
+try  31 maxworst|z|= 28242.9 killkey=0x92988f142674743 kill
+try  32 maxworst|z|= 31592.8 killkey=0xffffffffffffffff kill
+try  33 maxworst|z|= 66719.6 killkey=0x123456789abcdef kill
+try  34 maxworst|z|=204419.4 killkey=0x0 kill
+try  35 maxworst|z|= 36533.8 killkey=0xdeadbeefdeadbeef kill
+try  36 maxworst|z|= 64650.8 killkey=0xf0b52a9e7d8ba2b5 kill
+try  37 maxworst|z|=108881.7 killkey=0xdeadbeefdeadbeef kill
+try  38 maxworst|z|=286690.6 killkey=0x123456789abcdef kill
+try  39 maxworst|z|=189367.0 killkey=0x0 kill
+=== andn-6: 0/40 KEEP (seed=0xb390) ===
+ALL-PILOT-DONE

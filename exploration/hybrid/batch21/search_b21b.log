@@ -1,0 +1,185 @@
+agentwork-launch: tag=track5/b21b-screen schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+try fat 5st   0 maxworst|z|=      19.5 killkey=0x0 kill
+try fat 5st   1 maxworst|z|=     433.4 killkey=0x0 kill
+try fat 5st   2 maxworst|z|=     123.5 killkey=0x0 kill
+try fat 5st   3 maxworst|z|=       3.1 killkey=0x0 KEEP
+try fat 5st   4 maxworst|z|=      47.1 killkey=0x0 kill
+try fat 5st   5 maxworst|z|=       2.4 killkey=0xf0b52a9e7d8ba2b5 KEEP
+try fat 5st   6 maxworst|z|=     260.9 killkey=0x0 kill
+try fat 5st   7 maxworst|z|=      13.5 killkey=0x0 kill
+try fat 5st   8 maxworst|z|=      64.8 killkey=0x0 kill
+try fat 5st   9 maxworst|z|=      20.8 killkey=0x0 kill
+try fat 5st  10 maxworst|z|=      49.4 killkey=0x0 kill
+try fat 5st  11 maxworst|z|=      25.1 killkey=0x0 kill
+try fat 5st  12 maxworst|z|=      15.5 killkey=0x0 kill
+try fat 5st  13 maxworst|z|=       3.1 killkey=0x0 KEEP
+try fat 5st  14 maxworst|z|=      36.5 killkey=0x0 kill
+try fat 5st  15 maxworst|z|=      61.2 killkey=0x0 kill
+try fat 5st  16 maxworst|z|=      96.6 killkey=0x0 kill
+try fat 5st  17 maxworst|z|=     242.1 killkey=0x0 kill
+try fat 5st  18 maxworst|z|=       8.4 killkey=0x0 KEEP
+try fat 5st  19 maxworst|z|=      15.4 killkey=0x0 kill
+try fat 5st  20 maxworst|z|=       2.7 killkey=0x9e3779b97f4a7c15 KEEP
+try fat 5st  21 maxworst|z|=      25.8 killkey=0x0 kill
+try fat 5st  22 maxworst|z|=      28.8 killkey=0x0 kill
+try fat 5st  23 maxworst|z|=      13.3 killkey=0x0 kill
+try fat 5st  24 maxworst|z|=   73349.4 killkey=0x0 kill
+try fat 5st  25 maxworst|z|=       3.3 killkey=0x92988f142674743 KEEP
+try fat 5st  26 maxworst|z|=       4.3 killkey=0x5555555555555555 KEEP
+try fat 5st  27 maxworst|z|=       3.3 killkey=0x5555555555555555 KEEP
+try fat 5st  28 maxworst|z|=      65.3 killkey=0x0 kill
+try fat 5st  29 maxworst|z|=     219.3 killkey=0x0 kill
+try fat 5st  30 maxworst|z|=       3.5 killkey=0x0 KEEP
+try fat 5st  31 maxworst|z|=    2014.1 killkey=0x0 kill
+try fat 5st  32 maxworst|z|=       2.8 killkey=0x9e3779b97f4a7c15 KEEP
+try fat 5st  33 maxworst|z|=      19.3 killkey=0x0 kill
+try fat 5st  34 maxworst|z|=      15.9 killkey=0x0 kill
+try fat 5st  35 maxworst|z|=      43.8 killkey=0x0 kill
+try fat 5st  36 maxworst|z|=       3.5 killkey=0x0 KEEP
+try fat 5st  37 maxworst|z|=   97537.5 killkey=0x0 kill
+try fat 5st  38 maxworst|z|=      78.5 killkey=0x0 kill
+try fat 5st  39 maxworst|z|=       5.4 killkey=0x0 KEEP
+try fat 5st  40 maxworst|z|=     281.3 killkey=0x0 kill
+try fat 5st  41 maxworst|z|=      24.8 killkey=0x0 kill
+try fat 5st  42 maxworst|z|=       9.9 killkey=0x0 KEEP
+try fat 5st  43 maxworst|z|=      36.9 killkey=0x0 kill
+try fat 5st  44 maxworst|z|=      46.5 killkey=0x0 kill
+try fat 5st  45 maxworst|z|=     443.6 killkey=0x0 kill
+try fat 5st  46 maxworst|z|=    1912.9 killkey=0x0 kill
+try fat 5st  47 maxworst|z|=       2.6 killkey=0x123456789abcdef KEEP
+try fat 5st  48 maxworst|z|=     393.2 killkey=0x0 kill
+try fat 5st  49 maxworst|z|=      97.6 killkey=0x0 kill
+try fat 5st  50 maxworst|z|=       3.2 killkey=0xaaaaaaaaaaaaaaaa KEEP
+try fat 5st  51 maxworst|z|=       6.4 killkey=0x0 KEEP
+try fat 5st  52 maxworst|z|=       3.1 killkey=0x0 KEEP
+try fat 5st  53 maxworst|z|=    3803.5 killkey=0x0 kill
+try fat 5st  54 maxworst|z|=      15.0 killkey=0x0 kill
+try fat 5st  55 maxworst|z|=       3.2 killkey=0xaaaaaaaaaaaaaaaa KEEP
+try fat 5st  56 maxworst|z|=       3.2 killkey=0x9e3779b97f4a7c15 KEEP
+try fat 5st  57 maxworst|z|=       3.4 killkey=0x92988f142674743 KEEP
+try fat 5st  58 maxworst|z|=       2.6 killkey=0x9e3779b97f4a7c15 KEEP
+try fat 5st  59 maxworst|z|=      14.3 killkey=0x0 kill
+try std 5st   0 maxworst|z|=  440360.0 killkey=0x0 kill
+try std 5st   1 maxworst|z|=    5208.8 killkey=0xf0b52a9e7d8ba2b5 kill
+try std 5st   2 maxworst|z|=     194.1 killkey=0xf0b52a9e7d8ba2b5 kill
+try std 5st   3 maxworst|z|=    1549.2 killkey=0x0 kill
+try std 5st   4 maxworst|z|=    1915.1 killkey=0x0 kill
+try std 5st   5 maxworst|z|=   37003.2 killkey=0x0 kill
+try std 5st   6 maxworst|z|=    6459.7 killkey=0x0 kill
+try std 5st   7 maxworst|z|=   31214.0 killkey=0x92988f142674743 kill
+try std 5st   8 maxworst|z|=    2669.3 killkey=0x0 kill
+try std 5st   9 maxworst|z|=    7809.8 killkey=0x0 kill
+try std 5st  10 maxworst|z|=   21723.3 killkey=0x92988f142674743 kill
+try std 5st  11 maxworst|z|=    9779.9 killkey=0x0 kill
+try std 5st  12 maxworst|z|=     348.8 killkey=0x0 kill
+try std 5st  13 maxworst|z|=   50936.3 killkey=0x0 kill
+try std 5st  14 maxworst|z|=   80817.0 killkey=0xaaaaaaaaaaaaaaaa kill
+try std 5st  15 maxworst|z|=    1051.3 killkey=0x0 kill
+try std 5st  16 maxworst|z|=    5050.2 killkey=0x0 kill
+try std 5st  17 maxworst|z|=    5958.8 killkey=0x0 kill
+try std 5st  18 maxworst|z|=   43858.0 killkey=0x0 kill
+try std 5st  19 maxworst|z|=   18289.6 killkey=0x0 kill
+try std 5st  20 maxworst|z|=    3987.1 killkey=0x0 kill
+try std 5st  21 maxworst|z|= 1480000.0 killkey=0x0 kill
+try std 5st  22 maxworst|z|=    3176.5 killkey=0x0 kill
+try std 5st  23 maxworst|z|=   67971.9 killkey=0x123456789abcdef kill
+try std 5st  24 maxworst|z|=    2823.9 killkey=0x0 kill
+try std 5st  25 maxworst|z|=    5889.1 killkey=0x0 kill
+try std 5st  26 maxworst|z|=     672.0 killkey=0x0 kill
+try std 5st  27 maxworst|z|=    1920.6 killkey=0x0 kill
+try std 5st  28 maxworst|z|=    1209.2 killkey=0x5555555555555555 kill
+try std 5st  29 maxworst|z|=   33386.5 killkey=0x0 kill
+try std 5st  30 maxworst|z|=    1914.8 killkey=0x123456789abcdef kill
+try std 5st  31 maxworst|z|=     801.6 killkey=0x92988f142674743 kill
+try std 5st  32 maxworst|z|= 1480000.0 killkey=0x0 kill
+try std 5st  33 maxworst|z|=    1637.9 killkey=0x0 kill
+try std 5st  34 maxworst|z|=    1345.6 killkey=0x0 kill
+try std 5st  35 maxworst|z|=  783524.1 killkey=0x0 kill
+try std 5st  36 maxworst|z|=    3867.1 killkey=0x0 kill
+try std 5st  37 maxworst|z|=    1363.0 killkey=0x0 kill
+try std 5st  38 maxworst|z|=    3045.2 killkey=0x0 kill
+try std 5st  39 maxworst|z|=    4459.0 killkey=0x92988f142674743 kill
+try fat 6st   0 maxworst|z|=       2.9 killkey=0xaaaaaaaaaaaaaaaa KEEP
+try fat 6st   1 maxworst|z|=       3.8 killkey=0xffffffffffffffff KEEP
+try fat 6st   2 maxworst|z|=       2.4 killkey=0xdeadbeefdeadbeef KEEP
+try fat 6st   3 maxworst|z|=       3.2 killkey=0x5555555555555555 KEEP
+try fat 6st   4 maxworst|z|=       4.2 killkey=0x5555555555555555 KEEP
+try fat 6st   5 maxworst|z|=       2.5 killkey=0x9e3779b97f4a7c15 KEEP
+try fat 6st   6 maxworst|z|=       3.6 killkey=0x9e3779b97f4a7c15 KEEP
+try fat 6st   7 maxworst|z|=       2.9 killkey=0xdeadbeefdeadbeef KEEP
+try fat 6st   8 maxworst|z|=       3.1 killkey=0xf0b52a9e7d8ba2b5 KEEP
+try fat 6st   9 maxworst|z|=       2.7 killkey=0xf0b52a9e7d8ba2b5 KEEP
+try fat 6st  10 maxworst|z|=       4.2 killkey=0xaaaaaaaaaaaaaaaa KEEP
+try fat 6st  11 maxworst|z|=       3.6 killkey=0xf0b52a9e7d8ba2b5 KEEP
+try fat 6st  12 maxworst|z|=       2.7 killkey=0x9e3779b97f4a7c15 KEEP
+try fat 6st  13 maxworst|z|=       3.2 killkey=0xffffffffffffffff KEEP
+try fat 6st  14 maxworst|z|=       2.8 killkey=0x0 KEEP
+try fat 6st  15 maxworst|z|=       2.5 killkey=0xaaaaaaaaaaaaaaaa KEEP
+try fat 6st  16 maxworst|z|=       3.0 killkey=0x92988f142674743 KEEP
+try fat 6st  17 maxworst|z|=       3.8 killkey=0x123456789abcdef KEEP
+try fat 6st  18 maxworst|z|=       3.1 killkey=0x9e3779b97f4a7c15 KEEP
+try fat 6st  19 maxworst|z|=       2.4 killkey=0x92988f142674743 KEEP
+try fat 6st  20 maxworst|z|=       2.2 killkey=0xaaaaaaaaaaaaaaaa KEEP
+try fat 6st  21 maxworst|z|=       2.4 killkey=0x123456789abcdef KEEP
+try fat 6st  22 maxworst|z|=       3.0 killkey=0x123456789abcdef KEEP
+try fat 6st  23 maxworst|z|=       3.3 killkey=0x9e3779b97f4a7c15 KEEP
+try fat 6st  24 maxworst|z|=       2.4 killkey=0x5555555555555555 KEEP
+try fat 6st  25 maxworst|z|=       3.7 killkey=0x5555555555555555 KEEP
+try fat 6st  26 maxworst|z|=       3.3 killkey=0x9e3779b97f4a7c15 KEEP
+try fat 6st  27 maxworst|z|=      18.2 killkey=0x0 kill
+try fat 6st  28 maxworst|z|=       2.8 killkey=0xf0b52a9e7d8ba2b5 KEEP
+try fat 6st  29 maxworst|z|=       2.6 killkey=0x92988f142674743 KEEP
+=== 50/130 KEEP (125.1s) ===
+KEEP fat 6st z=2.23 killkey=12297829382473034410 [(33, 38, 31, 18, 35), (43, 9, 40, 39, 1), (31, 27, 26, 50, 2), (44, 20, 5, 30, 49), (44, 24, 12, 7, 6), (16, 1, 60, 6, 20)]
+KEEP fat 6st z=2.39 killkey=660209390169048899 [(19, 40, 41, 36, 59), (46, 32, 11, 55, 29), (61, 53, 11, 49, 14), (5, 24, 4, 9, 49), (61, 50, 52, 42, 15), (52, 45, 36, 52, 25)]
+KEEP fat 6st z=2.40 killkey=16045690984833335023 [(11, 57, 19, 57, 45), (54, 27, 37, 57, 1), (8, 36, 6, 22, 26), (32, 22, 13, 59, 19), (26, 19, 52, 27, 14), (52, 8, 39, 15, 48)]
+KEEP fat 6st z=2.42 killkey=6148914691236517205 [(28, 54, 37, 19, 50), (38, 7, 39, 60, 28), (63, 44, 27, 12, 36), (58, 50, 26, 17, 57), (40, 37, 61, 43, 58), (4, 29, 14, 41, 59)]
+KEEP fat 5st z=2.42 killkey=17344816400086835893 [(11, 6, 25, 13, 30), (16, 7, 24, 23, 31), (22, 18, 3, 14, 38), (7, 28, 14, 15, 10), (11, 34, 19, 38, 5)]
+KEEP fat 6st z=2.44 killkey=81985529216486895 [(45, 21, 56, 58, 45), (48, 2, 31, 38, 10), (25, 23, 18, 34, 12), (37, 46, 52, 35, 7), (42, 10, 32, 28, 7), (2, 35, 43, 16, 25)]
+KEEP fat 6st z=2.45 killkey=12297829382473034410 [(15, 35, 23, 61, 29), (30, 19, 6, 61, 51), (10, 53, 47, 49, 48), (20, 46, 10, 51, 59), (21, 40, 47, 26, 17), (38, 31, 12, 22, 54)]
+KEEP fat 6st z=2.52 killkey=11400714819323198485 [(16, 51, 27, 3, 15), (15, 52, 31, 9, 62), (1, 19, 59, 39, 50), (7, 5, 14, 4, 25), (7, 57, 45, 62, 34), (29, 7, 12, 20, 58)]
+KEEP fat 5st z=2.55 killkey=81985529216486895 [(32, 43, 49, 9, 17), (7, 59, 11, 9, 30), (21, 31, 50, 37, 39), (35, 15, 41, 63, 45), (44, 23, 10, 46, 39)]
+KEEP fat 5st z=2.59 killkey=11400714819323198485 [(38, 34, 14, 20, 4), (55, 5, 6, 57, 23), (19, 38, 23, 53, 30), (53, 6, 5, 2, 44), (37, 47, 16, 6, 35)]
+KEEP fat 6st z=2.60 killkey=660209390169048899 [(28, 61, 30, 13, 56), (50, 53, 7, 51, 22), (40, 30, 49, 52, 5), (11, 8, 45, 2, 0), (17, 22, 35, 40, 8), (33, 26, 50, 13, 62)]
+KEEP fat 6st z=2.70 killkey=11400714819323198485 [(42, 57, 37, 7, 50), (43, 4, 45, 35, 45), (42, 38, 43, 63, 16), (43, 36, 23, 43, 58), (1, 34, 54, 60, 23), (57, 12, 61, 36, 36)]
+KEEP fat 6st z=2.71 killkey=17344816400086835893 [(7, 58, 23, 9, 13), (51, 1, 3, 57, 39), (30, 27, 18, 25, 14), (57, 58, 53, 33, 24), (33, 26, 43, 36, 42), (5, 33, 21, 59, 17)]
+KEEP fat 5st z=2.75 killkey=11400714819323198485 [(38, 7, 38, 28, 35), (32, 16, 55, 23, 54), (45, 19, 43, 39, 50), (51, 28, 27, 49, 26), (63, 10, 58, 9, 17)]
+KEEP fat 6st z=2.76 killkey=0 [(31, 47, 46, 57, 21), (16, 21, 27, 23, 1), (50, 19, 39, 56, 26), (7, 44, 42, 61, 32), (61, 51, 50, 28, 31), (40, 14, 59, 47, 39)]
+KEEP fat 5st z=2.81 killkey=11400714819323198485 [(10, 62, 36, 41, 48), (36, 12, 25, 7, 2), (15, 18, 46, 35, 51), (58, 5, 4, 54, 40), (54, 30, 31, 5, 27)]
+KEEP fat 6st z=2.81 killkey=17344816400086835893 [(59, 53, 9, 6, 60), (16, 35, 43, 26, 47), (24, 5, 57, 54, 54), (31, 12, 10, 1, 21), (24, 39, 25, 3, 45), (4, 48, 62, 16, 40)]
+KEEP fat 6st z=2.88 killkey=16045690984833335023 [(4, 56, 54, 21, 25), (41, 45, 26, 52, 30), (11, 8, 45, 43, 7), (18, 9, 25, 31, 9), (25, 55, 33, 2, 63), (35, 18, 39, 41, 23)]
+KEEP fat 6st z=2.90 killkey=12297829382473034410 [(25, 57, 56, 35, 54), (48, 59, 14, 54, 24), (26, 63, 59, 54, 35), (16, 33, 8, 55, 37), (4, 58, 57, 6, 19), (17, 20, 3, 20, 57)]
+KEEP fat 6st z=3.03 killkey=660209390169048899 [(28, 2, 28, 30, 52), (34, 6, 59, 58, 20), (10, 17, 35, 6, 12), (45, 40, 16, 58, 18), (8, 12, 29, 35, 11), (58, 24, 47, 57, 30)]
+KEEP fat 6st z=3.03 killkey=81985529216486895 [(12, 34, 48, 21, 58), (32, 1, 61, 33, 38), (4, 40, 56, 25, 37), (24, 18, 37, 33, 46), (24, 11, 62, 15, 61), (3, 15, 44, 57, 60)]
+KEEP fat 5st z=3.05 killkey=0 [(16, 35, 15, 51, 39), (42, 2, 31, 32, 54), (12, 55, 33, 26, 45), (19, 59, 51, 35, 39), (60, 62, 52, 54, 28)]
+KEEP fat 6st z=3.08 killkey=17344816400086835893 [(58, 35, 61, 6, 24), (45, 22, 29, 39, 32), (40, 57, 27, 34, 29), (30, 14, 4, 1, 55), (33, 50, 17, 45, 6), (46, 41, 3, 55, 40)]
+KEEP fat 6st z=3.12 killkey=11400714819323198485 [(28, 41, 33, 16, 59), (48, 46, 63, 18, 33), (56, 49, 57, 21, 31), (55, 22, 12, 33, 28), (9, 61, 28, 36, 48), (36, 38, 21, 19, 12)]
+KEEP fat 5st z=3.12 killkey=0 [(47, 60, 31, 58, 26), (60, 23, 34, 37, 19), (44, 36, 13, 38, 32), (43, 31, 13, 49, 59), (13, 42, 47, 8, 58)]
+KEEP fat 5st z=3.13 killkey=0 [(24, 38, 55, 62, 17), (12, 61, 25, 6, 54), (37, 45, 45, 62, 19), (8, 33, 36, 31, 51), (26, 58, 40, 3, 30)]
+KEEP fat 6st z=3.16 killkey=18446744073709551615 [(20, 19, 22, 50, 3), (41, 1, 47, 37, 29), (35, 8, 35, 50, 8), (61, 24, 33, 19, 39), (4, 54, 60, 25, 2), (3, 4, 26, 9, 50)]
+KEEP fat 5st z=3.17 killkey=12297829382473034410 [(21, 62, 55, 61, 50), (56, 17, 35, 26, 46), (42, 14, 59, 21, 35), (12, 31, 38, 37, 53), (4, 36, 26, 33, 52)]
+KEEP fat 5st z=3.17 killkey=11400714819323198485 [(35, 52, 13, 36, 41), (30, 55, 1, 53, 61), (40, 33, 22, 23, 5), (24, 9, 58, 22, 19), (15, 25, 54, 26, 30)]
+KEEP fat 6st z=3.17 killkey=6148914691236517205 [(62, 9, 62, 33, 28), (16, 25, 14, 29, 5), (39, 51, 38, 51, 59), (40, 30, 49, 32, 41), (15, 16, 33, 29, 52), (30, 38, 59, 49, 29)]
+KEEP fat 5st z=3.22 killkey=12297829382473034410 [(55, 1, 52, 56, 27), (29, 28, 51, 28, 19), (56, 11, 33, 23, 4), (47, 37, 9, 28, 30), (2, 29, 44, 21, 10)]
+KEEP fat 5st z=3.25 killkey=6148914691236517205 [(36, 42, 49, 41, 28), (32, 37, 57, 23, 19), (21, 39, 18, 17, 24), (45, 33, 55, 63, 43), (56, 62, 41, 49, 3)]
+KEEP fat 6st z=3.26 killkey=11400714819323198485 [(53, 7, 2, 40, 56), (40, 13, 44, 34, 41), (32, 19, 45, 26, 33), (17, 21, 54, 43, 52), (37, 48, 4, 28, 17), (25, 48, 9, 38, 2)]
+KEEP fat 6st z=3.27 killkey=11400714819323198485 [(43, 52, 45, 49, 34), (5, 27, 21, 53, 7), (15, 52, 43, 61, 17), (24, 30, 13, 44, 63), (60, 52, 18, 32, 50), (12, 46, 21, 20, 21)]
+KEEP fat 5st z=3.32 killkey=660209390169048899 [(60, 32, 46, 30, 47), (27, 12, 42, 33, 14), (54, 49, 35, 28, 63), (42, 18, 9, 45, 18), (57, 61, 47, 5, 58)]
+KEEP fat 5st z=3.44 killkey=660209390169048899 [(26, 61, 19, 11, 27), (31, 63, 9, 48, 19), (38, 43, 7, 52, 28), (35, 29, 44, 46, 23), (61, 59, 29, 31, 53)]
+KEEP fat 5st z=3.47 killkey=0 [(47, 28, 32, 28, 11), (46, 28, 21, 5, 27), (61, 21, 59, 20, 30), (47, 15, 55, 48, 5), (27, 18, 60, 47, 43)]
+KEEP fat 5st z=3.48 killkey=0 [(53, 57, 32, 39, 40), (44, 60, 41, 22, 9), (37, 62, 3, 31, 8), (36, 63, 56, 60, 48), (33, 30, 14, 42, 32)]
+KEEP fat 6st z=3.55 killkey=17344816400086835893 [(14, 24, 39, 27, 59), (41, 35, 29, 23, 14), (44, 18, 36, 14, 42), (53, 10, 20, 25, 52), (40, 5, 40, 42, 20), (8, 1, 58, 37, 7)]
+KEEP fat 6st z=3.59 killkey=11400714819323198485 [(50, 33, 51, 46, 10), (19, 17, 22, 38, 57), (30, 8, 58, 62, 56), (57, 23, 25, 8, 43), (24, 7, 7, 52, 42), (61, 29, 16, 18, 53)]
+KEEP fat 6st z=3.73 killkey=6148914691236517205 [(47, 28, 11, 35, 34), (10, 28, 51, 15, 40), (30, 42, 39, 49, 22), (60, 18, 48, 10, 63), (43, 61, 6, 25, 59), (57, 3, 11, 41, 59)]
+KEEP fat 6st z=3.77 killkey=18446744073709551615 [(63, 54, 38, 41, 46), (50, 29, 44, 18, 16), (25, 49, 26, 45, 38), (21, 15, 2, 62, 38), (41, 18, 33, 22, 62), (16, 7, 18, 39, 46)]
+KEEP fat 6st z=3.82 killkey=81985529216486895 [(59, 56, 8, 18, 28), (38, 3, 39, 1, 55), (59, 1, 43, 37, 47), (25, 14, 42, 36, 25), (4, 44, 43, 41, 25), (30, 18, 2, 35, 37)]
+KEEP fat 6st z=4.15 killkey=12297829382473034410 [(25, 17, 3, 60, 3), (35, 34, 7, 55, 54), (38, 62, 56, 33, 32), (4, 56, 34, 8, 33), (38, 4, 47, 4, 49), (52, 59, 44, 51, 56)]
+KEEP fat 6st z=4.25 killkey=6148914691236517205 [(45, 35, 56, 30, 61), (3, 8, 37, 21, 19), (10, 21, 39, 43, 2), (13, 49, 10, 61, 56), (56, 22, 38, 39, 12), (26, 49, 50, 7, 3)]
+KEEP fat 5st z=4.25 killkey=6148914691236517205 [(10, 53, 39, 34, 47), (11, 13, 58, 30, 53), (24, 12, 29, 40, 20), (41, 59, 21, 18, 56), (10, 45, 28, 35, 27)]
+KEEP fat 5st z=5.41 killkey=0 [(48, 18, 56, 5, 55), (21, 56, 46, 42, 53), (30, 53, 25, 15, 50), (24, 63, 2, 46, 5), (55, 31, 5, 30, 43)]
+KEEP fat 5st z=6.40 killkey=0 [(18, 3, 25, 43, 20), (39, 15, 61, 32, 49), (36, 23, 20, 39, 60), (61, 21, 26, 58, 36), (41, 4, 21, 40, 35)]
+KEEP fat 5st z=8.43 killkey=0 [(48, 43, 10, 61, 55), (47, 42, 10, 26, 41), (4, 41, 2, 53, 53), (35, 8, 34, 60, 57), (47, 34, 57, 5, 13)]
+KEEP fat 5st z=9.88 killkey=0 [(38, 27, 12, 40, 55), (11, 45, 15, 39, 61), (35, 20, 36, 38, 7), (38, 4, 54, 30, 21), (40, 44, 9, 21, 4)]
+SUMMARY fat 5st: 21/60 keep, min z=2.4, median z=20.8
+SUMMARY std 5st: 0/40 keep, min z=194.1, median z=5050.2
+SUMMARY fat 6st: 29/30 keep, min z=2.2, median z=3.0

@@ -1,0 +1,12 @@
+agentwork-launch: tag=track5/b27-pilot schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+pilot L5  0 z=   61540.4 killkey=0xf0b52a9e7d8ba2b5 kill
+pilot L5  1 z=   31842.2 killkey=0x0 kill
+pilot L5  2 z=   47520.8 killkey=0x0 kill
+pilot L5  3 z=   79453.8 killkey=0x0 kill
+pilot L5  4 z=    9246.0 killkey=0x0 kill
+pilot L5  5 z=   79185.9 killkey=0x0 kill
+pilot L5  6 z=  266971.1 killkey=0x0 kill
+pilot L5  7 z=  284383.0 killkey=0x0 kill
+pilot L5  8 z=   40175.0 killkey=0x0 kill
+pilot L5  9 z=   15329.3 killkey=0x0 kill
+PILOT L5: 0/10 keep, min z=9246.0 median=61540.4 (51s)

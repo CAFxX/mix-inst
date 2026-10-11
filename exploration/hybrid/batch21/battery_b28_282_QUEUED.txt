@@ -1,0 +1,6 @@
+QUEUED 2026-10-11 ~07:12 CEST — load backoff rc=1 (load 13.94 >= 12); battery for hyb28_mu5_282 held until `load-shed.sh backoff` clears.
+Candidate: hyb28_mu5_282 — S1 CAL_PASS (fast_battery/results/hyb28_mu5_282/s1_result.json), S0 DONE crit=19.2u cells=6129 area=19957 XCHECK clean (hybrid/batch21/s0_b28_mu5_282.log) — COST-ELIGIBLE (<19.8u bar).
+Exact command to run when backoff clears:
+  cd ~/workspace/mix/exploration/fast_battery && ~/workspace/system/bin/agentwork-launch.sh --nice 10 --tag track5/b28-battery282 -- bash run_fast_battery.sh hyb28_mu5_282 2 >> ~/workspace/mix/exploration/hybrid/batch21/battery_b28_282.log 2>&1
+(start_stage=2 replicates the 266a pattern: S0/S1 already done; battery runs xcheck-skipped, S2 -> S3 (1GB + strided) -> S4; then Q1 sac/bic per b33 playbook after S4 PASS.)
+On completion: record verdict in LEADS_LEDGER.md; if full PASS + Q1 clean -> new Frontier-S speed point candidate (19.2u < 19.8u); if killed, scope verdict to schedule 282 and move to next reserve keep (hyb28_mu5_304a, z=3.04).

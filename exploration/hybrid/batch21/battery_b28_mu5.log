@@ -1,0 +1,15 @@
+agentwork-launch: tag=track5/b28-battery schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+=== S0a [hyb28_mu5_234] started 2026-10-11T04:11:16Z
+--- S0a tail:
+XCHECK hyb28_mu5_234: PASS 10000/10000 C==Python
+=== S0a [hyb28_mu5_234] rc=0 wall=12s
+=== S1 [hyb28_mu5_234] started 2026-10-11T04:11:29Z
+--- S1 tail:
+  [DIFF] key=0x123456789abcdef worst|z|=2.0 fisher_logp=-0.14 bonf_logp=-0.19
+  [DIFF] key=0xf0b52a9e7d8ba2b5 worst|z|=2.3 fisher_logp=-1.44 bonf_logp=-0.90
+  [DIFF] key=0x92988f142674743 worst|z|=2.2 fisher_logp=-0.60 bonf_logp=-0.57
+  LIN: PASS (rej=0)  DIFF: PASS (rej=0)
+[S1 hyb28_mu5_234] LIN/DIFF 80s: LIN PASS DIFF PASS; marginal 676s: PB rej=3 RD rej=0
+[S1 hyb28_mu5_234] verdict: FLAG
+=== S1 [hyb28_mu5_234] rc=2 wall=707s
+BATTERY-FAIL stage=S1-screen [hyb28_mu5_234] (see /home/hatch/workspace/mix/exploration/fast_battery/results/hyb28_mu5_234/battery.log)

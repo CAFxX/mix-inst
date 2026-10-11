@@ -1,0 +1,24 @@
+agentwork-launch: tag=track5/q1-324 schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+[q1-324] backoff CLEAR after 5 polls 2026-10-11T07:39:38Z
+  bit 16/64 done (211s)
+  bit 32/64 done (383s)
+  bit 48/64 done (635s)
+[q1-324] backoff CLEAR after 12 polls 2026-10-11T08:46:52Z
+  bit 16/64 done (167s)
+  bit 32/64 done (314s)
+  bit 48/64 done (450s)
+  bit 64/64 done (562s)
+{
+ "candidate": "hyb28_mu5_324",
+ "key": "0x123456789abcdef0",
+ "N": 262144,
+ "sac_maxdev": 0.003772735595703125,
+ "sac_meandev": 0.0008007483556866646,
+ "sac_z5": 0,
+ "bic_maxcorr": 0.008697815049995311,
+ "bic_meancorr": 0.0015515630224578157,
+ "avalanche_mean": 31.99809020757675,
+ "wall_s": 561.6
+}
+[q1-324] rc=0 2026-10-11T08:56:19Z
+Q1 hyb28_mu5_324 sac_z5= 0 sac_maxdev= 0.00377 bic_maxcorr= 0.0087 avalanche_mean= 32.0

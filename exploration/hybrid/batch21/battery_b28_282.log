@@ -1,0 +1,24 @@
+queue-runner started 2026-10-11T05:12:58Z polling backoff every 60s
+backoff CLEAR at 2026-10-11T05:15:01Z after 3 polls; launching battery
+agentwork-launch: tag=track5/b28-battery282 schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+=== S2 [hyb28_mu5_282] started 2026-10-11T05:15:43Z
+agentwork-launch: tag=track5/b28-battery282 schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+=== S2 [hyb28_mu5_282] started 2026-10-11T05:36:23Z
+--- S2 tail:
+  0xe000000000000000      2.1      268.2            0
+  0x000000000000000f      2.2      258.9            0
+  0x00000000f0000000      2.5      264.2            0
+  0x0000000f00000000      2.4      255.2            0
+  0xf000000000000000      2.7      245.2            0
+PASS max_repeats=0 max|z|=76.9 (all 115 deltas)
+=== S2 [hyb28_mu5_282] rc=0 wall=409s
+=== S3 [hyb28_mu5_282] started 2026-10-11T05:43:12Z
+--- S3 tail:
+[S3 hyb28_mu5_282] stage 256MB (key=0x123456789abcdef0 stride=1) ...
+[S3 hyb28_mu5_282] 256MB: no FAIL (rng_test rc=0)
+[S3 hyb28_mu5_282] stage 1GB (key=0x123456789abcdef0 stride=1) ...
+[S3 hyb28_mu5_282] KILL at 1GB:
+  [Low1/64]BCFN(2+1,13-5U)          R= +34.4  p =  1.1e-13    FAIL           
+[S3 hyb28_mu5_282] verdict: KILL@1GB
+=== S3 [hyb28_mu5_282] rc=2 wall=279s
+BATTERY-FAIL stage=S3-practrand [hyb28_mu5_282] (see /home/hatch/workspace/mix/exploration/fast_battery/results/hyb28_mu5_282/battery.log)

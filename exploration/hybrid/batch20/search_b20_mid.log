@@ -1,0 +1,34 @@
+agentwork-launch: tag=track5/b20-mid schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+loaded 100 triage records; shortlist top 12
+MID fm5: z=3.8 cost=23.50u d=0x8000b51
+MID fm5: z=3.8 cost=23.50u d=0x400000000000000b27
+MID fm5: z=3.9 cost=23.50u d=0x80000000000000b8
+MID dm4: z=3.7 cost=18.80u d=0x2000000000b62
+MID fm5: z=3.7 cost=23.50u d=0x20000000000b10
+MID fm5: z=3.3 cost=23.50u d=0x2000000000000000b12
+MID rf5: z=5.7 cost=23.50u d=0x40b45
+MID fm5: z=3.7 cost=23.50u d=0x1000000b27
+MID fm5: z=4.0 cost=23.50u d=0x800000000b50
+MID dm4: z=4.5 cost=18.80u d=0x2000000000b29
+MID fm5: z=4.1 cost=23.50u d=0x20000000000b41
+MID fm5: z=3.7 cost=23.50u d=0x400000000b40
+MID done in 25.2 min
+HILL fm5: z=4.6 cost=23.50u d=0x100b14
+HILL fm5: z=3.6 cost=23.50u d=0x20b61
+HILL fm5: z=3.9 cost=23.50u d=0x1000b6
+HILL fm5: z=3.2 cost=23.50u d=0x4000b1
+HILL dm4: z=6.6 cost=18.80u d=0x100000000000b23
+HILL fm5: z=3.6 cost=23.50u d=0x4000000000b35
+HILL fm5: z=4.2 cost=23.50u d=0x10000b28
+HILL fm5: z=4.3 cost=23.50u d=0x8000000b36
+
+=== TOP 8 (n=2^18, hill-climbed) ===
+z=   3.2 cost=23.50u fm5 d=0x4000b1
+z=   3.6 cost=23.50u fm5 d=0x4000000000b35
+z=   3.6 cost=23.50u fm5 d=0x20b61
+z=   3.9 cost=23.50u fm5 d=0x1000b6
+z=   4.2 cost=23.50u fm5 d=0x10000b28
+z=   4.3 cost=23.50u fm5 d=0x8000000b36
+z=   4.6 cost=23.50u fm5 d=0x100b14
+z=   6.6 cost=18.80u dm4 d=0x100000000000b23
+saved /home/hatch/workspace/mix/exploration/hybrid/batch20/search_b20_mid_final.json

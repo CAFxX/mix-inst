@@ -1,0 +1,12 @@
+agentwork-launch: tag=track5/b21d-s0ref schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+=== S0-refactored hyb21_lin2a ===
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT hyb21_lin2a: cells=5103 area=14915 crit=23.5
+RESULT name=hyb21_lin2a cells=5103 area=14915 crit=23.5 delay_ratio=0.227 area_ratio=0.422 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+=== S0-refactored hyb21_lin2b ===
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT hyb21_lin2b: cells=5023 area=14227 crit=23.5
+RESULT name=hyb21_lin2b cells=5023 area=14227 crit=23.5 delay_ratio=0.227 area_ratio=0.403 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+DONE

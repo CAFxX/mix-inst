@@ -1,0 +1,17 @@
+agentwork-launch: tag=track5/b20 schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+>> fm4 best triage (35 draws): z=3.8 cost=18.80u
+>> fm5 best triage (25 draws): z=3.4 cost=23.50u
+>> dm4 best triage (25 draws): z=3.5 cost=18.80u
+>> rf5 best triage (15 draws): z=3.6 cost=23.50u
+triage done in 27.3 min
+MID fm5: z=3.8 cost=23.50u d=0x8000b51
+MID fm5: z=3.8 cost=23.50u d=0x400000000000000b27
+MID fm5: z=3.9 cost=23.50u d=0x80000000000000b8
+MID dm4: z=3.7 cost=18.80u d=0x2000000000b62
+MID fm5: z=3.7 cost=23.50u d=0x20000000000b10
+MID fm5: z=3.3 cost=23.50u d=0x2000000000000000b12
+MID rf5: z=5.7 cost=23.50u d=0x40b45
+MID fm5: z=3.7 cost=23.50u d=0x1000000b27
+MID fm5: z=4.0 cost=23.50u d=0x800000000b50
+MID dm4: z=4.5 cost=18.80u d=0x2000000000b29
+MID fm5: z=4.1 cost=23.50u d=0x20000000000b41

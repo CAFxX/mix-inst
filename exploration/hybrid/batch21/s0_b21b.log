@@ -1,0 +1,17 @@
+agentwork-launch: tag=track5/b21b-s0 schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+=== S0 hyb21_fat5a ===
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT hyb21_fat5a: cells=5147 area=14384 crit=24.4
+RESULT name=hyb21_fat5a cells=5147 area=14384 crit=24.4 delay_ratio=0.236 area_ratio=0.407 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+=== S0 hyb21_fat5b ===
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT hyb21_fat5b: cells=5316 area=14663 crit=24.3
+RESULT name=hyb21_fat5b cells=5316 area=14663 crit=24.3 delay_ratio=0.235 area_ratio=0.415 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+=== S0 hyb21_fat5c ===
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT hyb21_fat5c: cells=4562 area=12699 crit=25.2
+RESULT name=hyb21_fat5c cells=4562 area=12699 crit=25.2 delay_ratio=0.243 area_ratio=0.360 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+S0 BATCH DONE

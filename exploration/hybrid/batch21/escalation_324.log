@@ -1,0 +1,10 @@
+escalation runner started 2026-10-11T06:02:47Z polling backoff every 60s
+backoff CLEAR at 2026-10-11T06:05:50Z after 4 polls; running S0
+agentwork-launch: tag=track5/b28-s0-324 schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT hyb28_mu5_324: cells=6146 area=20001 crit=19.3
+RESULT name=hyb28_mu5_324 cells=6146 area=20001 crit=19.3 delay_ratio=0.186 area_ratio=0.566 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+S0 crit=19.3
+cost-eligible + XCHECK clean; launching battery S2->S4
+battery exited rc=0 at 2026-10-11T07:10:30Z

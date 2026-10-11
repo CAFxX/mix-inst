@@ -1,0 +1,8 @@
+agentwork-launch: tag=track5/b28-s1chain schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+=== S1 hyb28_mu5_266a started 2026-10-11T04:25:39Z ===
+S1 hyb28_mu5_266a rc=0 verdict: CAL_PASS
+=== S1 hyb28_mu5_266b started 2026-10-11T04:37:21Z ===
+S1 hyb28_mu5_266b rc=2 verdict: FLAG
+=== S1 hyb28_mu5_282 started 2026-10-11T04:46:08Z ===
+S1 hyb28_mu5_282 rc=0 verdict: CAL_PASS
+S1 CHAIN DONE

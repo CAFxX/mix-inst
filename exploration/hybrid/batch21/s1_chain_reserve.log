@@ -1,0 +1,32 @@
+agentwork-launch: tag=track5/b28-s1reserve schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+=== S1 hyb28_mu5_304a started 2026-10-11T05:51:09Z ===
+S1 hyb28_mu5_304a rc=2 verdict: FLAG
+=== S1 hyb28_mu5_304b started 2026-10-11T05:53:31Z ===
+S1 hyb28_mu5_304b rc=2 verdict: FLAG
+=== S1 hyb28_mu5_323 started 2026-10-11T05:56:16Z ===
+S1 hyb28_mu5_323 rc=2 verdict: FLAG
+=== S1 hyb28_mu5_324 started 2026-10-11T05:58:02Z ===
+S1 hyb28_mu5_324 rc=0 verdict: CAL_PASS
+=== S1 hyb28_mu5_325 started 2026-10-11T06:02:16Z ===
+S1 hyb28_mu5_325 rc=2 verdict: FLAG
+=== S1 hyb28_mu5_326 started 2026-10-11T06:03:24Z ===
+S1 hyb28_mu5_326 rc=2 verdict: FLAG
+=== S1 hyb28_mu5_328 started 2026-10-11T06:05:15Z ===
+S1 hyb28_mu5_328 rc=2 verdict: FLAG
+=== S1 hyb28_mu5_339 started 2026-10-11T06:10:19Z ===
+S1 hyb28_mu5_339 rc=0 verdict: CAL_PASS
+=== S1 hyb28_mu5_351 started 2026-10-11T06:14:27Z ===
+S1 hyb28_mu5_351 rc=2 verdict: FLAG
+=== S1 hyb28_mu5_443 started 2026-10-11T06:17:05Z ===
+S1 hyb28_mu5_443 rc=2 verdict: FLAG
+=== S1 hyb28_mu5_471 started 2026-10-11T06:28:01Z ===
+S1 hyb28_mu5_471 rc=2 verdict: FLAG
+=== S1 hyb28_mu5_480 started 2026-10-11T06:40:28Z ===
+S1 hyb28_mu5_480 rc=0 verdict: CAL_PASS
+=== S1 hyb28_mu5_568 started 2026-10-11T06:53:29Z ===
+S1 hyb28_mu5_568 rc=2 verdict: FLAG
+=== S1 hyb28_mu5_570 started 2026-10-11T06:53:52Z ===
+S1 hyb28_mu5_570 rc=2 verdict: FLAG
+=== S1 hyb28_mu5_621 started 2026-10-11T06:54:16Z ===
+S1 hyb28_mu5_621 rc=2 verdict: FLAG
+S1 RESERVE CHAIN DONE

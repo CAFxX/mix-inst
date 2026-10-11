@@ -1,0 +1,21 @@
+agentwork-launch: tag=track5/x6-s0 schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+=== S0 hyb25_x6_244 02:39:48 ===
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT hyb25_x6_244: cells=7240 area=19393 crit=24.2
+RESULT name=hyb25_x6_244 cells=7240 area=19393 crit=24.2 delay_ratio=0.234 area_ratio=0.549 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+=== S0 hyb25_x6_245 02:40:27 ===
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT hyb25_x6_245: cells=7580 area=20334 crit=23.8
+RESULT name=hyb25_x6_245 cells=7580 area=20334 crit=23.8 delay_ratio=0.230 area_ratio=0.576 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+=== S0 hyb25_x6_264 02:41:03 ===
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT hyb25_x6_264: cells=7427 area=19911 crit=23.9
+RESULT name=hyb25_x6_264 cells=7427 area=19911 crit=23.9 delay_ratio=0.231 area_ratio=0.564 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+=== S0 hyb25_x6_269 02:41:24 ===
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT hyb25_x6_269: cells=7301 area=19425 crit=24.1
+RESULT name=hyb25_x6_269 cells=7301 area=19425 crit=24.1 delay_ratio=0.233 area_ratio=0.550 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)

@@ -1,0 +1,20 @@
+agentwork-launch: tag=track5/b28-battery266a schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+=== S2 [hyb28_mu5_266a] started 2026-10-11T04:40:26Z
+--- S2 tail:
+  0xe000000000000000      2.4      264.5            0
+  0x000000000000000f      2.3      263.7            0
+  0x00000000f0000000      2.1      203.7            0
+  0x0000000f00000000      3.9      250.7            0
+  0xf000000000000000      2.0      248.6            0
+PASS max_repeats=0 max|z|=33.6 (all 115 deltas)
+=== S2 [hyb28_mu5_266a] rc=0 wall=1136s
+=== S3 [hyb28_mu5_266a] started 2026-10-11T04:59:23Z
+--- S3 tail:
+[S3 hyb28_mu5_266a] 64MB: no FAIL (rng_test rc=0)
+[S3 hyb28_mu5_266a] stage 256MB (key=0x123456789abcdef0 stride=1) ...
+[S3 hyb28_mu5_266a] KILL at 256MB:
+  [Low16/64]FPF/16:(1,14-0)         R= +15.6  p =  4.4e-14    FAIL           
+  [Low16/64]FPF/16:all              R= +16.0  p =  1.5e-14    FAIL           
+[S3 hyb28_mu5_266a] verdict: KILL@256MB
+=== S3 [hyb28_mu5_266a] rc=2 wall=333s
+BATTERY-FAIL stage=S3-practrand [hyb28_mu5_266a] (see /home/hatch/workspace/mix/exploration/fast_battery/results/hyb28_mu5_266a/battery.log)

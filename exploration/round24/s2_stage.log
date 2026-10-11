@@ -1,0 +1,64 @@
+2026-10-04T20:03:10Z === STAGE s2 ===
+2026-10-04T20:03:11Z S2_LAUNCH r24_spn_mix4r_pba19b03_nw
+2026-10-04T20:03:11Z S2_LAUNCH r24_spn_mix4r_pba19b07_nw
+2026-10-04T20:03:21Z S2_LAUNCH r24_spn_mix4r_pba19b09_nw
+2026-10-04T20:13:33Z S2_LAUNCH r24_spn_mix4r_pba19b11_nw
+2026-10-04T20:16:44Z S2_LAUNCH r24_spn_mix4r_pba19b13_nw
+2026-10-04T20:23:05Z S2_LAUNCH r24_spn_mix4r_pba19b15_nw
+2026-10-04T20:34:19Z S2_LAUNCH r24_spn_mix4r_pba19b17_nw
+2026-10-04T20:36:50Z S2_LAUNCH r24_spn_mix4r_pba19b19_nw
+2026-10-04T20:49:44Z S2_LAUNCH r24_spn_mix4r_pba19b21_nw
+2026-10-04T20:52:15Z S2_LAUNCH r24_spn_mix4r_pba19b23_nw
+2026-10-04T21:08:22Z === STAGE s2 ===
+2026-10-04T21:08:22Z S2_SKIP r24_spn_mix4r_pba19b03_nw
+2026-10-04T21:08:22Z S2_SKIP r24_spn_mix4r_pba19b07_nw
+2026-10-04T21:08:22Z S2_SKIP r24_spn_mix4r_pba19b09_nw
+2026-10-04T21:08:22Z S2_SKIP r24_spn_mix4r_pba19b11_nw
+2026-10-04T21:08:22Z S2_SKIP r24_spn_mix4r_pba19b13_nw
+2026-10-04T21:08:22Z S2_SKIP r24_spn_mix4r_pba19b15_nw
+2026-10-04T21:08:22Z S2_SKIP r24_spn_mix4r_pba19b17_nw
+2026-10-04T21:08:22Z S2_SKIP r24_spn_mix4r_pba19b19_nw
+2026-10-04T21:08:23Z S2_LAUNCH r24_spn_mix4r_pba19b21_nw
+2026-10-04T21:08:24Z S2_LAUNCH r24_spn_mix4r_pba19b23_nw
+2026-10-04T21:18:16Z S2_LAUNCH r24_spn_mix4r_pba19b25_nw
+2026-10-04T21:20:07Z S2_LAUNCH r24_spn_mix4r_pba19b27_nw
+2026-10-04T21:25:38Z S2_LAUNCH r24_spn_mix4r_pba19b29_nw
+2026-10-04T21:25:38Z S2_LAUNCH r24_spn_mix4r_pba29b01_nw
+2026-10-04T21:29:58Z S2_LAUNCH r24_spn_mix4r_pba31b01_nw
+2026-10-04T21:31:28Z S2_LAUNCH r24_spn_mix4r_ks_smallodd_nw
+2026-10-04T21:35:49Z S2_LAUNCH r24_spn_mix4r_ks_gold16_nw
+2026-10-04T21:37:30Z S2_LAUNCH r24_spn_mix4r_ks_rotgolden_nw
+2026-10-04T21:42:20Z S2_LAUNCH r24_spn_mix4r_ks_nibrep_nw
+2026-10-04T21:43:41Z S2_LAUNCH r24_spn_mix4r_ks_gold32_nw
+2026-10-04T21:48:32Z S2_LAUNCH r24_spn_mix4r_l0513_pb19_nw
+2026-10-04T21:49:52Z S2_LAUNCH r24_spn_mix4r_l0517_pb19_nw
+2026-10-04T21:54:22Z S2_LAUNCH r24_spn_mix4r_l1113_pb19_nw
+2026-10-04T21:55:43Z S2_LAUNCH r24_spn_mix4r_hsaff_pb19_nw
+2026-10-04T21:57:33Z S2_LAUNCH r24_spn_mix4r_hsalt_pb19_nw
+2026-10-04T21:57:33Z --- waiting for stage s2 jobs ---
+2026-10-04T22:03:22Z S2_DONE r24_spn_mix4r_pba19b03_nw KILL delta=0x0000000000000400 repeats=14 > kill_repeats=10
+2026-10-04T22:03:22Z S2_DONE r24_spn_mix4r_pba19b07_nw KILL delta=0x0000000070000000 repeats=94 > kill_repeats=10
+2026-10-04T22:03:22Z S2_DONE r24_spn_mix4r_pba19b09_nw PASS max_repeats=1 max|z|=14.9 (all 115 deltas)
+2026-10-04T22:03:22Z S2_DONE r24_spn_mix4r_pba19b11_nw KILL delta=0x0000000070000000 repeats=116 > kill_repeats=10
+2026-10-04T22:03:22Z S2_DONE r24_spn_mix4r_pba19b13_nw PASS max_repeats=0 max|z|=16.7 (all 115 deltas)
+2026-10-04T22:03:22Z S2_DONE r24_spn_mix4r_pba19b15_nw KILL delta=0x0000000070000000 repeats=92 > kill_repeats=10
+2026-10-04T22:03:22Z S2_DONE r24_spn_mix4r_pba19b17_nw PASS max_repeats=1 max|z|=13.0 (all 115 deltas)
+2026-10-04T22:03:22Z S2_DONE r24_spn_mix4r_pba19b19_nw KILL delta=0x0000000070000000 repeats=98 > kill_repeats=10
+2026-10-04T22:03:22Z S2_DONE r24_spn_mix4r_pba19b21_nw PASS max_repeats=0 max|z|=14.9 (all 115 deltas)
+2026-10-04T22:03:22Z S2_DONE r24_spn_mix4r_pba19b23_nw KILL delta=0x0000000070000000 repeats=76 > kill_repeats=10
+2026-10-04T22:03:22Z S2_DONE r24_spn_mix4r_pba19b25_nw PASS max_repeats=1 max|z|=8.6 (all 115 deltas)
+2026-10-04T22:03:22Z S2_DONE r24_spn_mix4r_pba19b27_nw KILL delta=0x0000000070000000 repeats=115 > kill_repeats=10
+2026-10-04T22:03:22Z S2_DONE r24_spn_mix4r_pba19b29_nw PASS max_repeats=0 max|z|=9.6 (all 115 deltas)
+2026-10-04T22:03:22Z S2_DONE r24_spn_mix4r_pba29b01_nw KILL delta=0x0000000070000000 repeats=12 > kill_repeats=10
+2026-10-04T22:03:22Z S2_DONE r24_spn_mix4r_pba31b01_nw PASS max_repeats=5 max|z|=38.4 (all 115 deltas)
+2026-10-04T22:03:22Z S2_DONE r24_spn_mix4r_ks_smallodd_nw PASS max_repeats=0 max|z|=9.3 (all 115 deltas)
+2026-10-04T22:03:22Z S2_DONE r24_spn_mix4r_ks_gold16_nw PASS max_repeats=1 max|z|=7.8 (all 115 deltas)
+2026-10-04T22:03:22Z S2_DONE r24_spn_mix4r_ks_rotgolden_nw PASS max_repeats=0 max|z|=16.6 (all 115 deltas)
+2026-10-04T22:03:22Z S2_DONE r24_spn_mix4r_ks_nibrep_nw PASS max_repeats=1 max|z|=13.6 (all 115 deltas)
+2026-10-04T22:03:22Z S2_DONE r24_spn_mix4r_ks_gold32_nw PASS max_repeats=1 max|z|=8.7 (all 115 deltas)
+2026-10-04T22:03:23Z S2_DONE r24_spn_mix4r_l0513_pb19_nw PASS max_repeats=0 max|z|=4.3 (all 115 deltas)
+2026-10-04T22:03:23Z S2_DONE r24_spn_mix4r_l0517_pb19_nw PASS max_repeats=6 max|z|=22.0 (all 115 deltas)
+2026-10-04T22:03:23Z S2_DONE r24_spn_mix4r_l1113_pb19_nw KILL delta=0x1000000000000000 repeats=51 > kill_repeats=10
+2026-10-04T22:03:23Z S2_DONE r24_spn_mix4r_hsaff_pb19_nw PASS max_repeats=1 max|z|=11.4 (all 115 deltas)
+2026-10-04T22:03:23Z S2_DONE r24_spn_mix4r_hsalt_pb19_nw PASS max_repeats=0 max|z|=7.4 (all 115 deltas)
+2026-10-04T22:03:23Z ALL_STAGES_DONE s2

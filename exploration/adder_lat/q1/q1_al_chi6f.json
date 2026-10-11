@@ -1,0 +1,12 @@
+{
+ "candidate": "al_chi6f",
+ "key": "0x123456789abcdef0",
+ "N": 262144,
+ "sac_maxdev": 0.00406646728515625,
+ "sac_meandev": 0.0008069686591625214,
+ "sac_z5": 0,
+ "bic_maxcorr": 0.008766176583890051,
+ "bic_meancorr": 0.0015626334580888255,
+ "avalanche_mean": 31.99786114692688,
+ "wall_s": 84.8
+}

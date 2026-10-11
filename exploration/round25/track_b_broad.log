@@ -1,0 +1,5 @@
+[2026-10-05 05:49] r25_spn_pba19_sb_midori_sb0_nw: xcheck PASS 10000/10000 C==Python
+[2026-10-05 05:49] r25_spn_pba19_sb_midori_sb0_nw: model.py template bug fixed (r24->r25) in gen_r25.py + 4 broad model.py files
+[2026-10-05 05:55] r25_spn_pba19_sb_rasC2_5_nw: xcheck PASS 10000/10000 C==Python
+[2026-10-05 05:55] r25_spn_pba19_sb_rasC2_0_nw: xcheck PASS 10000/10000 C==Python
+[2026-10-05 05:55] r25_spn_pba19_sb_rasC1_2_nw: xcheck PASS 10000/10000 C==Python

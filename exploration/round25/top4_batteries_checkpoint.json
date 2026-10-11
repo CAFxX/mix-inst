@@ -1,0 +1,72 @@
+{
+ "current_candidate": 1,
+ "current_stage": "DONE (escalation stop)",
+ "frontier_challenger": "r25_spn_pba19_sb_rasC2_5_nw",
+ "notes": "KEY=0x123456789abcdef0; KILL_REP=10 (ref/s2_kill_repeats.txt); S2 N=2^22",
+ "order": [
+  "r25_spn_pba19_sb_midori_sb0_nw",
+  "r25_spn_pba19_sb_rasC2_5_nw",
+  "r25_spn_pba19_sb_rasC2_0_nw",
+  "r25_spn_pba19_sb_rasC1_2_nw"
+ ],
+ "results": {
+  "r25_spn_pba19_sb_midori_sb0_nw": {
+   "xcheck": "PASS (10k, per track_b_broad.log)",
+   "S0": {
+    "verdict": "PASS",
+    "delay_u": 27.4,
+    "cells": 5169,
+    "area": 14170.0,
+    "delay_ratio": 0.2647,
+    "equiv": "n=1000 err=0"
+   },
+   "S1": {
+    "verdict": "FLAG",
+    "pb_rej": 0,
+    "rd_rej": 0,
+    "lin_rej": 0,
+    "diff_rej": 1,
+    "failing": "DIFF key=0x0 worst|z|=8.24 bonf_logp=-33.36"
+   },
+   "S2": null,
+   "verdict": "S1-KILLED"
+  },
+  "r25_spn_pba19_sb_rasC2_5_nw": {
+   "xcheck": "PASS (10k, per track_b_broad.log)",
+   "S0": {
+    "verdict": "PASS",
+    "delay_u": 28.1,
+    "cells": 5778,
+    "area": 15764.0,
+    "delay_ratio": 0.2715,
+    "equiv": "n=1000 err=0"
+   },
+   "S1": {
+    "verdict": "CAL_PASS",
+    "pb_rej": 0,
+    "rd_rej": 0,
+    "lin_rej": 0,
+    "diff_rej": 0
+   },
+   "S2": {
+    "verdict": "PASS",
+    "max_repeats": 1,
+    "max_abs_z": 12.1,
+    "deltas": 115,
+    "kill_repeats": 10,
+    "key": "0x123456789abcdef0",
+    "N": "2^22"
+   },
+   "verdict": "FRONTIER-CHALLENGER (escalation rule; +0.3u vs 27.8u ref, does not Pareto-dominate)"
+  },
+  "r25_spn_pba19_sb_rasC2_0_nw": {
+   "verdict": "not run (batteries stopped per escalation rule after rasC2_5 full pass)"
+  },
+  "r25_spn_pba19_sb_rasC1_2_nw": {
+   "verdict": "not run (batteries stopped per escalation rule after rasC2_5 full pass)"
+  }
+ },
+ "started": "2026-10-05T08:52:00+02:00",
+ "status": "stopped-per-escalation-rule",
+ "work_id": "mix-round-25-top4-batteries"
+}

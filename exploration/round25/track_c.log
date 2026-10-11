@@ -1,0 +1,101 @@
+=== Track C start Mon Oct  5 04:35:19 UTC 2026 ===
+--- r25_feist6_linfirst_nw
+__pycache__
+impl.c
+meta.json
+model.py
+rtl.v
+--- r25_feist6_keyin_nw
+__pycache__
+impl.c
+meta.json
+model.py
+rtl.v
+--- r25_feist6_rot13_nw
+__pycache__
+impl.c
+meta.json
+model.py
+rtl.v
+r25_feist6_linfirst_nw build rc=0
+r25_feist6_keyin_nw build rc=0
+r25_feist6_rot13_nw build rc=0
+=== r25_feist6_linfirst_nw ===
+  mismatch v=1f00bca0042db923 k=6dbca290a9eab706 C=2c7d202fd7031eef py=a2fd2c73ab60175e
+  mismatch v=4c10a4fe30cffdda k=f26fff4cc4fd394d C=a68f31b001ad0a8e py=63d12a5db870075d
+XCHECK r25_feist6_linfirst_nw: FAIL 10000/10000 mismatches
+=== r25_feist6_keyin_nw ===
+  mismatch v=1f00bca0042db923 k=6dbca290a9eab706 C=4dd805dc5fe29627 py=f5b452f42dd088df
+  mismatch v=4c10a4fe30cffdda k=f26fff4cc4fd394d C=12d1c7b2c020500a py=fbf10d79c6b73c73
+XCHECK r25_feist6_keyin_nw: FAIL 10000/10000 mismatches
+=== r25_feist6_rot13_nw ===
+  mismatch v=1f00bca0042db923 k=6dbca290a9eab706 C=e49e1080f64b32e3 py=ac127b25b5188d54
+  mismatch v=4c10a4fe30cffdda k=f26fff4cc4fd394d C=9280688d4ccd3d21 py=85592c6eaa7aecdb
+XCHECK r25_feist6_rot13_nw: FAIL 10000/10000 mismatches
+=== xcheck re-run after key-schedule fix Mon Oct  5 04:40:21 UTC 2026 ===
+XCHECK r25_feist6_linfirst_nw: PASS 10000/10000 C==Python
+XCHECK r25_feist6_keyin_nw: PASS 10000/10000 C==Python
+XCHECK r25_feist6_rot13_nw: PASS 10000/10000 C==Python
+=== S0 r25_feist6_linfirst_nw Mon Oct  5 04:50:28 UTC 2026 ===
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT r25_feist6_linfirst_nw: cells=4808 area=14267 crit=46.3
+RESULT name=r25_feist6_linfirst_nw cells=4808 area=14267 crit=46.3 delay_ratio=0.447 area_ratio=0.404 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+=== S0 r25_feist6_keyin_nw Mon Oct  5 04:51:28 UTC 2026 ===
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT r25_feist6_keyin_nw: cells=4532 area=12115 crit=45.2
+RESULT name=r25_feist6_keyin_nw cells=4532 area=12115 crit=45.2 delay_ratio=0.437 area_ratio=0.343 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+=== S0 r25_feist6_rot13_nw Mon Oct  5 04:52:30 UTC 2026 ===
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT r25_feist6_rot13_nw: cells=3844 area=10641 crit=40.9
+RESULT name=r25_feist6_rot13_nw cells=3844 area=10641 crit=40.9 delay_ratio=0.395 area_ratio=0.301 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+=== S1 r25_feist6_rot13_nw (S0=40.9u, gate was <=40.5u: 0.4u over, running per track-C Q - ties r9 delay, 10% fewer cells) Mon Oct  5 04:54:00 UTC 2026 ===
+  [LIN] key=0x0 D=4096/4096 logp=-inf
+  [LIN] key=0xffffffffffffffff D=4096/4096 logp=-inf
+  [LIN] key=0xaaaaaaaaaaaaaaaa D=4096/4096 logp=-inf
+  [LIN] key=0x5555555555555555 D=4096/4096 logp=-inf
+  [LIN] key=0xdeadbeefdeadbeef D=4096/4096 logp=-inf
+  [LIN] key=0x9e3779b97f4a7c15 D=4096/4096 logp=-inf
+  [LIN] key=0x1234 D=4096/4096 logp=-inf
+  [LIN] key=0x123456789abcdef D=4096/4096 logp=-inf
+  [LIN] key=0xf0b52a9e7d8ba2b5 D=4096/4096 logp=-inf
+  [LIN] key=0x92988f142674743 D=4096/4096 logp=-inf
+  [DIFF] key=0x0 worst|z|=739994.3 fisher_logp=-inf bonf_logp=-273795809354.60
+  [DIFF] key=0xffffffffffffffff worst|z|=739994.3 fisher_logp=-inf bonf_logp=-273795809354.60
+  [DIFF] key=0xaaaaaaaaaaaaaaaa worst|z|=739994.3 fisher_logp=-inf bonf_logp=-273795809354.60
+  [DIFF] key=0x5555555555555555 worst|z|=739994.3 fisher_logp=-inf bonf_logp=-273795809354.60
+  [DIFF] key=0xdeadbeefdeadbeef worst|z|=739994.3 fisher_logp=-inf bonf_logp=-273795809354.60
+  [DIFF] key=0x9e3779b97f4a7c15 worst|z|=739994.3 fisher_logp=-inf bonf_logp=-273795809354.60
+  [DIFF] key=0x1234 worst|z|=739994.3 fisher_logp=-inf bonf_logp=-273795809354.60
+  [DIFF] key=0x123456789abcdef worst|z|=739994.3 fisher_logp=-inf bonf_logp=-273795809354.60
+  [DIFF] key=0xf0b52a9e7d8ba2b5 worst|z|=739994.3 fisher_logp=-inf bonf_logp=-273795809354.60
+  [DIFF] key=0x92988f142674743 worst|z|=739994.3 fisher_logp=-inf bonf_logp=-273795809354.60
+  LIN: FLAG (rej=10)  DIFF: FLAG (rej=10)
+[S1 r25_feist6_rot13_nw] LIN/DIFF 124s: LIN FLAG DIFF FLAG; SKIPPED (LIN/DIFF kill)
+[S1 r25_feist6_rot13_nw] verdict: FLAG
+
+=== TRACK C SUMMARY 2026-10-05 04:55 UTC ===
+KEYSCHED BUG (gen_r25c.py, found via xcheck 10000/10000 FAIL x3): C RK32 used
+rotl64(k,13*(i+1))^((i+1)*GOLDEN) [r9-canonical] but Python _rk32 and Verilog rk64
+used rotl64(k,13*i)^(i*GOLDEN). Fixed Python+Verilog to canonical (pure F-restructure
+vs r9); C binaries unchanged. Class hunt: gen_r25.py/models/r25.py (Track B) already
+canonical (i+1) in py+C+v templates -- only Track C affected. Generator templates patched.
+xcheck re-run: all three PASS 10000/10000 C==Python.
+
+S0 (run_synth RESULT lines):
+  r25_feist6_linfirst_nw: cells=4808 area=14267 crit=46.3 delay_ratio=0.447  -> KILL (delay; >r9 41.0u, >40.5 S1 gate)
+  r25_feist6_keyin_nw:    cells=4532 area=12115 crit=45.2 delay_ratio=0.437  -> KILL (delay; >r9 41.0u, >40.5 S1 gate)
+  r25_feist6_rot13_nw:    cells=3844 area=10641 crit=40.9 delay_ratio=0.395  -> S1 (0.4u over 40.5 gate; ran: ties r9 delay, 10% fewer cells)
+
+S1 r25_feist6_rot13_nw: verdict FLAG (s1_result.json). LIN D=4096/4096 logp=-inf on all
+10 keys; DIFF worst|z|=739994.3 fisher_logp=-inf on all 10 keys; PB/RD skipped (kill).
+  -> KILL (crypto). Root cause: taps (1,3) linear layer has 4-bit interaction window vs
+  12-bit for r9's (3,11); 6 Feistel rounds insufficient for low input bits to reach the
+  full output. Measured: 4096 sequential (low-12-bit) inputs -> outputs span only a
+  59-dim subspace (rank 64 over random inputs, so not global invariants); r9 spans 64.
+  Reduced-round ranks (600 seq): (1,3) 19/26/33/40/47/54 vs (3,11) 19/39/62/64/64/64.
+
+TRACK C VERDICT: all three dead. No restructure gives a usable mapped-depth win over r9
+(41.0u/4265). rot13's nominal 40.9u is within noise AND cryptographically dead.

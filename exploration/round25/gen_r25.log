@@ -1,0 +1,15 @@
+r23 self-test: baseline == r22c on 2000 vectors OK
+bijectivity: 9 specs x 2 keys x 5k samples collision-free OK
+DNF emission: 9 specs x distinct tables x 64 bits OK
+lin/pbox emission: 9 specs OK
+generated r25_spn_pba19_ks_a2_nw
+generated r25_spn_pba19_ks_a4_nw
+generated r25_spn_pba19_sb_aff1_nw
+generated r25_spn_pba19_sb_inv13_nw
+generated r25_spn_pba19_sb_rnd4_nw
+generated r25_spn_pba19_sb_midori_sb0_nw
+generated r25_spn_pba19_sb_rasC2_5_nw
+generated r25_spn_pba19_sb_rasC2_0_nw
+generated r25_spn_pba19_sb_rasC1_2_nw
+gen_r23 complete
+EXIT:0

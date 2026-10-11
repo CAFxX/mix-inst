@@ -1,0 +1,18 @@
+[2026-10-05 06:35 CEST] R25 TRACK A' start (subagent, key-schedule delta variants: hotbit=A2, hotnib=A4)
+- Polite gate: CLEAR (no yosys/RNG_test/diffprof_/s1_screen processes)
+- Build: gcc -O2 both impl.c vs s2_diffprof.c -> OK (diffprof_r25_spn_pba19_ks_a2_nw, diffprof_r25_spn_pba19_ks_a4_nw)
+- FOUND BUG: both model.py referenced `r24` (copy-paste from R24 template) -> NameError in xcheck. Fixed to `r25` (r25.py auto-installs specs25.json; _rk64_np handles hotbit/hotnib via RK_VARIANTS). Model smoke test OK (distinct outputs for k=0,1 on both).
+- xcheck launched for both candidates (10000 vectors) -> running in background
+[2026-10-05 ~06:45 CEST] Gate re-check: CLEAR. xcheck A2+A4 still running (background sessions proc_8c03e6a78973, proc_381ac960aef8). Waiting for completion.
+[2026-10-05] xcheck: A2 PASS 10000/10000 C==Python; A4 PASS 10000/10000 C==Python
+[2026-10-05] S0: A2 RESULT cells=5341 area=14318 crit=28.0 delay_ratio=0.271 | A4 RESULT cells=5569 area=14960 crit=27.9 delay_ratio=0.270 (ref mul64 crit=103.5)
+[2026-10-05] S1 A2: CAL_PASS (LIN PASS rej=0, DIFF PASS rej=0, marginal PB rej=0 RD rej=0)
+[2026-10-05 ~05:05] A2 S2 first run completed but session cleared before output capture (process gone). Re-running S2 A2 with stdout persisted to /tmp/s2_r25_spn_pba19_ks_a2_nw.txt (proc_909dd618f1ca).
+[2026-10-05 ~05:15] Gate re-check: 1 foreign heavy (track B s1_screen) -> CLEAR. Launched S1 A4 (proc_93e9258eca17, stdout -> /tmp/s1_r25_spn_pba19_ks_a4_nw_stdout.txt).
+[2026-10-05] A2 S2: PASS max_repeats=0 max|z|=9.5 (all 115 deltas) EXIT=0 | A4 S1: CAL_PASS (LIN PASS DIFF PASS, marginal PB rej=0 RD rej=0)
+[2026-10-05 ~06:05] A4 S2 launched (proc_ed6fcf66546d, stdout -> /tmp/s2_r25_spn_pba19_ks_a4_nw.txt). Gate at launch: 2 foreign diffprof (track B inv13 24:41 elapsed, rnd4 09:00) after 4x120s waits; each ~12% CPU, machine not saturated -> proceeded.
+[2026-10-05 ~06:35] TRACK A' COMPLETE. Both candidates SURVIVE the staged battery (no kills).
+A2 r25_spn_pba19_ks_a2_nw (hotbit): xcheck PASS 10000/10000; S0 crit=28.0u (cells=5341 area=14318); S1 CAL_PASS (LIN/DIFF rej=0, marginal PB/RD rej=0); S2 PASS max_repeats=0 max|z|=9.5 (115 deltas).
+A4 r25_spn_pba19_ks_a4_nw (hotnib): xcheck PASS 10000/10000; S0 crit=27.9u (cells=5569 area=14960); S1 CAL_PASS (LIN/DIFF PASS, marginal PB/RD rej=0); S2 PASS max_repeats=1 max|z|=8.0 (115 deltas) — sole nonzero full-repeat at delta 0x0200000000000000 (|z|=6.1).
+Neither beats 27.9u: A2=28.0u, A4=27.9u (ties P2 smallodd best). Sparser=>slower-or-equal trend holds; lever stays closed.
+Raw logs: s0_<cand>/_dut/, s1_<cand>/s1_result.json, s2_<cand>.log (this dir).

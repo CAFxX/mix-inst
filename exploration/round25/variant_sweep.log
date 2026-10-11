@@ -1,0 +1,26 @@
+[2026-10-05 06:43] variant sweep starting
+[2026-10-05 06:43] variant sweep starting
+[2026-10-05 06:43] midori_sb0: starting sweep (4096 variants)
+[2026-10-05 06:43] midori_sb0: starting sweep (4096 variants)
+[2026-10-05 06:54] midori_sb0: 100/4096 done, best=3.0u/176c vi=3824
+[2026-10-05 06:54] midori_sb0: 100/4096 done, best=3.0u/176c vi=3824
+[2026-10-05 07:09] midori_sb0: 200/4096 done, best=3.0u/176c vi=3824
+[2026-10-05 07:09] midori_sb0: 200/4096 done, best=3.0u/176c vi=3824
+[2026-10-05 07:24] midori_sb0: 300/4096 done, best=3.0u/176c vi=3824
+[2026-10-05 07:24] midori_sb0: 300/4096 done, best=3.0u/176c vi=3824
+[2026-10-05 07:46] midori_sb0: 400/4096 done, best=3.0u/176c vi=3824
+[2026-10-05 07:46] midori_sb0: 400/4096 done, best=3.0u/176c vi=3824
+[2026-10-05 08:06] midori_sb0: 500/4096 done, best=3.0u/176c vi=3824
+[2026-10-05 08:06] midori_sb0: 500/4096 done, best=3.0u/176c vi=3824
+[2026-10-05 08:19] midori_sb0: 600/4096 done, best=3.0u/176c vi=3824
+[2026-10-05 08:19] midori_sb0: 600/4096 done, best=3.0u/176c vi=3824
+[2026-10-05 08:29] midori_sb0: 700/4096 done, best=3.0u/176c vi=3824
+[2026-10-05 08:29] midori_sb0: 700/4096 done, best=3.0u/176c vi=3824
+[2026-10-05 08:30] gate full (2 foreign yosys), sleeping 60s
+[2026-10-05 08:30] gate full (2 foreign yosys), sleeping 60s
+[2026-10-05 08:30] gate full (2 foreign yosys), sleeping 60s
+[2026-10-05 08:30] gate full (2 foreign yosys), sleeping 60s
+[2026-10-05 08:36] gate full (2 foreign yosys), sleeping 60s
+[2026-10-05 08:36] gate full (2 foreign yosys), sleeping 60s
+[2026-10-05 08:36] gate full (2 foreign yosys), sleeping 60s
+[2026-10-05 08:36] gate full (2 foreign yosys), sleeping 60s

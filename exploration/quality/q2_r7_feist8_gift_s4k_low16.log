@@ -1,0 +1,43 @@
+RNG_test using PractRand version 0.96
+RNG = RNG_stdin, seed = unknown
+test set = core, folding = standard(unknown format)
+
+rng=RNG_stdin, seed=unknown
+length= 8 megabytes (2^23 bytes), time= 2.4 seconds
+  Test Name                         Raw       Processed     Evaluation       
+  [Low1/32]BCFN(2+2,13-9U)          R=  -3.6  p =1-2.3e-4   unusual          
+  ...and 137 test result(s) without anomalies
+
+rng=RNG_stdin, seed=unknown
+length= 16 megabytes (2^24 bytes), time= 5.8 seconds
+  no anomalies in 150 test result(s)
+
+rng=RNG_stdin, seed=unknown
+length= 32 megabytes (2^25 bytes), time= 9.7 seconds
+  Test Name                         Raw       Processed     Evaluation       
+  [Low1/8]BCFN(2+0,13-6U)           R=  +9.8  p =  8.5e-4   unusual          
+  ...and 162 test result(s) without anomalies
+
+rng=RNG_stdin, seed=unknown
+length= 64 megabytes (2^26 bytes), time= 18.9 seconds
+  no anomalies in 174 test result(s)
+
+rng=RNG_stdin, seed=unknown
+length= 128 megabytes (2^27 bytes), time= 33.3 seconds
+  no anomalies in 187 test result(s)
+
+rng=RNG_stdin, seed=unknown
+length= 256 megabytes (2^28 bytes), time= 71.1 seconds
+  no anomalies in 201 test result(s)
+
+rng=RNG_stdin, seed=unknown
+length= 512 megabytes (2^29 bytes), time= 133 seconds
+  no anomalies in 216 test result(s)
+
+rng=RNG_stdin, seed=unknown
+length= 1 gigabyte (2^30 bytes), time= 262 seconds
+  Test Name                         Raw       Processed     Evaluation       
+  [Low1/32]Gap-16:B                 R=  +4.6  p =  9.1e-4   unusual          
+  ...and 230 test result(s) without anomalies
+
+error reading from file

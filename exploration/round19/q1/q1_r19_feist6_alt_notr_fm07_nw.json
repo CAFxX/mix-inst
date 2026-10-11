@@ -1,0 +1,12 @@
+{
+ "candidate": "r19_feist6_alt_notr_fm07_nw",
+ "key": "0x123456789abcdef0",
+ "N": 262144,
+ "sac_maxdev": 0.00446319580078125,
+ "sac_meandev": 0.0007868027314543724,
+ "sac_z5": 0,
+ "bic_maxcorr": 0.008049706125215255,
+ "bic_meancorr": 0.0015595972004275377,
+ "avalanche_mean": 32.00007230043411,
+ "wall_s": 93.4
+}

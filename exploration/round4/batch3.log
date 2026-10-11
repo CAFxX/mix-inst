@@ -1,0 +1,63 @@
+measuring reference mul64 (fresh)...
+REF: cells=17893 area=46073 crit=50.8
+[simeck_f10] crit=57.0 r_ref=1.122 r_csd=1.360 cells=4544 -> delay OUT
+[simon_f10] crit=57.0 r_ref=1.122 r_csd=1.360 cells=4544 -> delay OUT
+[simeck_f12] crit=68.0 r_ref=1.339 r_csd=1.623 cells=5440 -> delay OUT
+[dbland_f8] crit=62.0 r_ref=1.220 r_csd=1.480 cells=6720 -> delay OUT
+[xsm_c3] crit=50.0 r_ref=0.984 r_csd=1.193 cells=4937 -> delay OUT
+[xsm_c8] crit=42.0 r_ref=0.827 r_csd=1.002 cells=2520 -> delay PASS
+[xsm_sa] crit=42.4 r_ref=0.835 r_csd=1.012 cells=1179 -> delay PASS
+[fmix32h_a] crit=82.8 r_ref=1.630 r_csd=1.976 cells=12293 -> delay OUT
+[fmix32h_b] crit=87.8 r_ref=1.728 r_csd=2.095 cells=12431 -> delay OUT
+[gl5_f6] crit=50.5 r_ref=0.994 r_csd=1.205 cells=4175 -> delay OUT
+[gl5_f8] crit=66.5 r_ref=1.309 r_csd=1.587 cells=5601 -> delay OUT
+[skinny_xorlin] synth FAILED: analyze2.py FAILED for r4_skinny_xorlin (not trusted):
+stdout=
+stderr=ERROR: undriven net 'sbox16$func$/home/hatch/workspace/mix/exploration/round4/rtl/r4_xorlinv.v:43$5.$result[51]' into cell 1 (XNOR2)
+
+[blink2] synth FAILED: analyze2.py FAILED for r4_blink2 (not trusted):
+stdout=
+stderr=ERROR: undriven net 'sbox16$func$/home/hatch/workspace/mix/exploration/round4/rtl/flat2/r4_blink2.v:53$1.$result[38]' into cell 0 (XNOR2)
+
+[blink3] synth FAILED: analyze2.py FAILED for r4_blink3 (not trusted):
+stdout=
+stderr=ERROR: undriven net 'sbox16$func$/home/hatch/workspace/mix/exploration/round4/rtl/flat2/r4_blink3.v:55$4.$result[6]' into cell 0 (XNOR2)
+
+[blink4] synth FAILED: analyze2.py FAILED for r4_blink4 (not trusted):
+stdout=
+stderr=ERROR: undriven net 'sbox16$func$/home/hatch/workspace/mix/exploration/round4/rtl/flat2/r4_blink4.v:57$7.$result[38]' into cell 1 (XNOR2)
+
+[midori3] synth FAILED: analyze2.py FAILED for r4_midori3 (not trusted):
+stdout=
+stderr=ERROR: undriven net 'sbox16$func$/home/hatch/workspace/mix/exploration/round4/rtl/flat2/r4_midori3.v:55$4.$result[6]' into cell 0 (XNOR2)
+
+[speedy3] synth FAILED: analyze2.py FAILED for r4_speedy3 (not trusted):
+stdout=
+stderr=ERROR: width mismatch: assign st3[22:17] = $auto$proc_rom.cc:155:do_switch$161[_018_];
+
+[speedy4] synth FAILED: analyze2.py FAILED for r4_speedy4 (not trusted):
+stdout=
+stderr=ERROR: width mismatch: assign st4[22:17] = $auto$proc_rom.cc:155:do_switch$213[_030_];
+
+
+=== round-4 delay summary (bar 44.3) ===
+name             crit  x_mult   x_csd   cells gate
+simeck_f10       57.0   1.122   1.360    4544 OUT
+simon_f10        57.0   1.122   1.360    4544 OUT
+simeck_f12       68.0   1.339   1.623    5440 OUT
+dbland_f8        62.0   1.220   1.480    6720 OUT
+xsm_c3           50.0   0.984   1.193    4937 OUT
+xsm_c8           42.0   0.827   1.002    2520 PASS
+xsm_sa           42.4   0.835   1.012    1179 PASS
+fmix32h_a        82.8   1.630   1.976   12293 OUT
+fmix32h_b        87.8   1.728   2.095   12431 OUT
+gl5_f6           50.5   0.994   1.205    4175 OUT
+gl5_f8           66.5   1.309   1.587    5601 OUT
+skinny_xorlin      --      --      --      -- SYNTH-FAIL
+blink2             --      --      --      -- SYNTH-FAIL
+blink3             --      --      --      -- SYNTH-FAIL
+blink4             --      --      --      -- SYNTH-FAIL
+midori3            --      --      --      -- SYNTH-FAIL
+speedy3            --      --      --      -- SYNTH-FAIL
+speedy4            --      --      --      -- SYNTH-FAIL
+ref_crit=50.8 ref_cells=17893

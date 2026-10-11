@@ -1,0 +1,474 @@
+XCHECK_DONE r23_spn_mix3r_lp_nw rc=0 XCHECK r23_spn_mix3r_lp_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r23_spn_mix4r_l0307_nw rc=0 XCHECK r23_spn_mix4r_l0307_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r23_spn_mix4r_l0313_nw rc=0 XCHECK r23_spn_mix4r_l0313_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r23_spn_mix4r_l0511_nw rc=0 XCHECK r23_spn_mix4r_l0511_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r23_spn_mix4r_l0713_nw rc=0 XCHECK r23_spn_mix4r_l0713_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r23_spn_mix4r_l1117_nw rc=0 XCHECK r23_spn_mix4r_l1117_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r23_spn_mix4r_l0107_nw rc=0 XCHECK r23_spn_mix4r_l0107_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r23_spn_mix4r_l030711_nw rc=0 XCHECK r23_spn_mix4r_l030711_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r23_spn_mix4r_l031117_nw rc=0 XCHECK r23_spn_mix4r_l031117_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r23_spn_mix4r_l051123_nw rc=0 XCHECK r23_spn_mix4r_l051123_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r23_spn_mix4r_l010925_nw rc=0 XCHECK r23_spn_mix4r_l010925_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r23_spn_mix4r_pba03b03_nw rc=0 XCHECK r23_spn_mix4r_pba03b03_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r23_spn_mix4r_pba05b01_nw rc=0 XCHECK r23_spn_mix4r_pba05b01_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r23_spn_mix4r_pba07b01_nw rc=0 XCHECK r23_spn_mix4r_pba07b01_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r23_spn_mix4r_pba09b01_nw rc=0 XCHECK r23_spn_mix4r_pba09b01_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r23_spn_mix4r_pba11b01_nw rc=0 XCHECK r23_spn_mix4r_pba11b01_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r23_spn_mix4r_pba13b01_nw rc=0 XCHECK r23_spn_mix4r_pba13b01_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r23_spn_mix4r_pba15b01_nw rc=0 XCHECK r23_spn_mix4r_pba15b01_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r23_spn_mix4r_pba17b01_nw rc=0 XCHECK r23_spn_mix4r_pba17b01_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r23_spn_mix4r_pba19b01_nw rc=0 XCHECK r23_spn_mix4r_pba19b01_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r23_spn_mix4r_pba23b01_nw rc=0 XCHECK r23_spn_mix4r_pba23b01_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r23_spn_mix4r_pba25b01_nw rc=0 XCHECK r23_spn_mix4r_pba25b01_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r23_spn_mix4r_pba27b01_nw rc=0 XCHECK r23_spn_mix4r_pba27b01_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r23_spn_mix4r_pbrnd13_nw rc=0 XCHECK r23_spn_mix4r_pbrnd13_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r23_spn_mix4r_pbrnd14_nw rc=0 XCHECK r23_spn_mix4r_pbrnd14_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r23_spn_mix4r_sb1_nw rc=0 XCHECK r23_spn_mix4r_sb1_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r23_spn_mix4r_sb2_nw rc=0 XCHECK r23_spn_mix4r_sb2_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r23_spn_mix4r_sb3_nw rc=0 XCHECK r23_spn_mix4r_sb3_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r23_spn_mix4r_pl_nw rc=0 XCHECK r23_spn_mix4r_pl_nw: PASS 10000/10000 C==Python
+=== STAGE rtlcheck ===
+RTLCHECK_LAUNCH r23_spn_mix3r_lp_nw
+RTLCHECK_LAUNCH r23_spn_mix4r_l0307_nw
+RTLCHECK_LAUNCH r23_spn_mix4r_l0313_nw
+RTLCHECK_LAUNCH r23_spn_mix4r_l0511_nw
+RTLCHECK_LAUNCH r23_spn_mix4r_l0713_nw
+RTLCHECK_LAUNCH r23_spn_mix4r_l1117_nw
+RTLCHECK_LAUNCH r23_spn_mix4r_l0107_nw
+RTLCHECK_LAUNCH r23_spn_mix4r_l030711_nw
+RTLCHECK_LAUNCH r23_spn_mix4r_l031117_nw
+RTLCHECK_LAUNCH r23_spn_mix4r_l051123_nw
+RTLCHECK_LAUNCH r23_spn_mix4r_l010925_nw
+RTLCHECK_LAUNCH r23_spn_mix4r_pba03b03_nw
+RTLCHECK_LAUNCH r23_spn_mix4r_pba05b01_nw
+RTLCHECK_LAUNCH r23_spn_mix4r_pba07b01_nw
+RTLCHECK_LAUNCH r23_spn_mix4r_pba09b01_nw
+RTLCHECK_LAUNCH r23_spn_mix4r_pba11b01_nw
+RTLCHECK_LAUNCH r23_spn_mix4r_pba13b01_nw
+RTLCHECK_LAUNCH r23_spn_mix4r_pba15b01_nw
+S0_DONE r23_spn_mix3r_lp_nw RESULT name=r23_spn_mix3r_lp_nw cells=3812 area=10367 crit=21.4 delay_ratio=0.207
+RTLCHECK_LAUNCH r23_spn_mix4r_pba17b01_nw
+RTLCHECK_LAUNCH r23_spn_mix4r_pba19b01_nw
+RTLCHECK_LAUNCH r23_spn_mix4r_pba23b01_nw
+RTLCHECK_LAUNCH r23_spn_mix4r_pba25b01_nw
+RTLCHECK_LAUNCH r23_spn_mix4r_pba27b01_nw
+RTLCHECK_LAUNCH r23_spn_mix4r_pbrnd13_nw
+RTLCHECK_LAUNCH r23_spn_mix4r_pbrnd14_nw
+RTLCHECK_LAUNCH r23_spn_mix4r_sb1_nw
+RTLCHECK_LAUNCH r23_spn_mix4r_sb2_nw
+RTLCHECK_LAUNCH r23_spn_mix4r_sb3_nw
+RTLCHECK_LAUNCH r23_spn_mix4r_pl_nw
+--- waiting for stage rtlcheck jobs ---
+RTLCHECK_DONE r23_spn_mix3r_lp_nw RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r23_spn_mix4r_l0307_nw RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r23_spn_mix4r_l0313_nw RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r23_spn_mix4r_l0511_nw RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r23_spn_mix4r_l0713_nw RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r23_spn_mix4r_l1117_nw RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r23_spn_mix4r_l0107_nw RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r23_spn_mix4r_l030711_nw RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r23_spn_mix4r_l031117_nw RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r23_spn_mix4r_l051123_nw RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r23_spn_mix4r_l010925_nw RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r23_spn_mix4r_pba03b03_nw RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r23_spn_mix4r_pba05b01_nw RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r23_spn_mix4r_pba07b01_nw RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r23_spn_mix4r_pba09b01_nw RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r23_spn_mix4r_pba11b01_nw RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r23_spn_mix4r_pba13b01_nw RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r23_spn_mix4r_pba15b01_nw RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r23_spn_mix4r_pba17b01_nw RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r23_spn_mix4r_pba19b01_nw RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r23_spn_mix4r_pba23b01_nw RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r23_spn_mix4r_pba25b01_nw RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r23_spn_mix4r_pba27b01_nw RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r23_spn_mix4r_pbrnd13_nw RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r23_spn_mix4r_pbrnd14_nw RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r23_spn_mix4r_sb1_nw RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r23_spn_mix4r_sb2_nw RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r23_spn_mix4r_sb3_nw RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r23_spn_mix4r_pl_nw RTLCHECK: 300/300 vectors match -> PASS
+ALL_STAGES_DONE rtlcheck
+=== STAGE s0 ===
+S0_SKIP r23_spn_mix3r_lp_nw
+S0_LAUNCH r23_spn_mix4r_l0307_nw
+S0_LAUNCH r23_spn_mix4r_l0313_nw
+S0_LAUNCH r23_spn_mix4r_l0511_nw
+S0_LAUNCH r23_spn_mix4r_l0713_nw
+S0_LAUNCH r23_spn_mix4r_l1117_nw
+S0_LAUNCH r23_spn_mix4r_l0107_nw
+S0_LAUNCH r23_spn_mix4r_l030711_nw
+S0_LAUNCH r23_spn_mix4r_l031117_nw
+S0_LAUNCH r23_spn_mix4r_l051123_nw
+S0_LAUNCH r23_spn_mix4r_l010925_nw
+S0_LAUNCH r23_spn_mix4r_pba03b03_nw
+S0_LAUNCH r23_spn_mix4r_pba05b01_nw
+S0_LAUNCH r23_spn_mix4r_pba07b01_nw
+S0_LAUNCH r23_spn_mix4r_pba09b01_nw
+S0_LAUNCH r23_spn_mix4r_pba11b01_nw
+S0_LAUNCH r23_spn_mix4r_pba13b01_nw
+S0_LAUNCH r23_spn_mix4r_pba15b01_nw
+S0_LAUNCH r23_spn_mix4r_pba17b01_nw
+S0_LAUNCH r23_spn_mix4r_pba19b01_nw
+S0_LAUNCH r23_spn_mix4r_pba23b01_nw
+S0_LAUNCH r23_spn_mix4r_pba25b01_nw
+S0_LAUNCH r23_spn_mix4r_pba27b01_nw
+S0_LAUNCH r23_spn_mix4r_pbrnd13_nw
+S0_LAUNCH r23_spn_mix4r_pbrnd14_nw
+S0_LAUNCH r23_spn_mix4r_sb1_nw
+S0_LAUNCH r23_spn_mix4r_sb2_nw
+S0_LAUNCH r23_spn_mix4r_sb3_nw
+S0_LAUNCH r23_spn_mix4r_pl_nw
+--- waiting for stage s0 jobs ---
+S0_DONE r23_spn_mix3r_lp_nw RESULT name=r23_spn_mix3r_lp_nw cells=3812 area=10367 crit=21.4 delay_ratio=0.207 area_ratio=0.293 ref_crit=103.5 ref_ar
+S0_DONE r23_spn_mix4r_l0307_nw RESULT name=r23_spn_mix4r_l0307_nw cells=5525 area=14878 crit=27.9 delay_ratio=0.270 area_ratio=0.421 ref_crit=103.5 ref
+S0_DONE r23_spn_mix4r_l0313_nw RESULT name=r23_spn_mix4r_l0313_nw cells=5187 area=14124 crit=28.1 delay_ratio=0.271 area_ratio=0.400 ref_crit=103.5 ref
+S0_DONE r23_spn_mix4r_l0511_nw RESULT name=r23_spn_mix4r_l0511_nw cells=5345 area=14422 crit=27.8 delay_ratio=0.269 area_ratio=0.408 ref_crit=103.5 ref
+S0_DONE r23_spn_mix4r_l0713_nw RESULT name=r23_spn_mix4r_l0713_nw cells=4800 area=13275 crit=28.5 delay_ratio=0.275 area_ratio=0.376 ref_crit=103.5 ref
+S0_DONE r23_spn_mix4r_l1117_nw RESULT name=r23_spn_mix4r_l1117_nw cells=5231 area=14116 crit=27.9 delay_ratio=0.270 area_ratio=0.400 ref_crit=103.5 ref
+S0_DONE r23_spn_mix4r_l0107_nw RESULT name=r23_spn_mix4r_l0107_nw cells=5561 area=15025 crit=27.8 delay_ratio=0.269 area_ratio=0.425 ref_crit=103.5 ref
+S0_DONE r23_spn_mix4r_l030711_nw RESULT name=r23_spn_mix4r_l030711_nw cells=5246 area=14113 crit=27.8 delay_ratio=0.269 area_ratio=0.400 ref_crit=103.5 r
+S0_DONE r23_spn_mix4r_l031117_nw RESULT name=r23_spn_mix4r_l031117_nw cells=5166 area=14077 crit=28.1 delay_ratio=0.271 area_ratio=0.399 ref_crit=103.5 r
+S0_DONE r23_spn_mix4r_l051123_nw RESULT name=r23_spn_mix4r_l051123_nw cells=5118 area=13912 crit=28.1 delay_ratio=0.271 area_ratio=0.394 ref_crit=103.5 r
+S0_DONE r23_spn_mix4r_l010925_nw RESULT name=r23_spn_mix4r_l010925_nw cells=4782 area=13054 crit=28.2 delay_ratio=0.272 area_ratio=0.370 ref_crit=103.5 r
+S0_DONE r23_spn_mix4r_pba03b03_nw RESULT name=r23_spn_mix4r_pba03b03_nw cells=5409 area=14654 crit=28.2 delay_ratio=0.272 area_ratio=0.415 ref_crit=103.5 
+S0_DONE r23_spn_mix4r_pba05b01_nw RESULT name=r23_spn_mix4r_pba05b01_nw cells=5263 area=14266 crit=28.0 delay_ratio=0.271 area_ratio=0.404 ref_crit=103.5 
+S0_DONE r23_spn_mix4r_pba07b01_nw RESULT name=r23_spn_mix4r_pba07b01_nw cells=5312 area=14360 crit=28.0 delay_ratio=0.271 area_ratio=0.407 ref_crit=103.5 
+S0_DONE r23_spn_mix4r_pba09b01_nw RESULT name=r23_spn_mix4r_pba09b01_nw cells=4718 area=13080 crit=28.4 delay_ratio=0.274 area_ratio=0.370 ref_crit=103.5 
+S0_DONE r23_spn_mix4r_pba11b01_nw RESULT name=r23_spn_mix4r_pba11b01_nw cells=5182 area=13973 crit=28.2 delay_ratio=0.272 area_ratio=0.396 ref_crit=103.5 
+S0_DONE r23_spn_mix4r_pba13b01_nw RESULT name=r23_spn_mix4r_pba13b01_nw cells=5026 area=13765 crit=28.2 delay_ratio=0.272 area_ratio=0.390 ref_crit=103.5 
+S0_DONE r23_spn_mix4r_pba15b01_nw RESULT name=r23_spn_mix4r_pba15b01_nw cells=4897 area=13431 crit=28.3 delay_ratio=0.273 area_ratio=0.380 ref_crit=103.5 
+S0_DONE r23_spn_mix4r_pba17b01_nw RESULT name=r23_spn_mix4r_pba17b01_nw cells=4903 area=13465 crit=28.4 delay_ratio=0.274 area_ratio=0.381 ref_crit=103.5 
+S0_DONE r23_spn_mix4r_pba19b01_nw RESULT name=r23_spn_mix4r_pba19b01_nw cells=5732 area=15374 crit=27.8 delay_ratio=0.269 area_ratio=0.435 ref_crit=103.5 
+S0_DONE r23_spn_mix4r_pba23b01_nw RESULT name=r23_spn_mix4r_pba23b01_nw cells=4820 area=13298 crit=28.2 delay_ratio=0.272 area_ratio=0.376 ref_crit=103.5 
+S0_DONE r23_spn_mix4r_pba25b01_nw RESULT name=r23_spn_mix4r_pba25b01_nw cells=5276 area=14219 crit=27.8 delay_ratio=0.269 area_ratio=0.403 ref_crit=103.5 
+S0_DONE r23_spn_mix4r_pba27b01_nw RESULT name=r23_spn_mix4r_pba27b01_nw cells=5093 area=13870 crit=28.2 delay_ratio=0.272 area_ratio=0.393 ref_crit=103.5 
+S0_DONE r23_spn_mix4r_pbrnd13_nw RESULT name=r23_spn_mix4r_pbrnd13_nw cells=5313 area=14330 crit=28.1 delay_ratio=0.271 area_ratio=0.406 ref_crit=103.5 r
+S0_DONE r23_spn_mix4r_pbrnd14_nw RESULT name=r23_spn_mix4r_pbrnd14_nw cells=5128 area=14036 crit=28.2 delay_ratio=0.272 area_ratio=0.397 ref_crit=103.5 r
+S0_DONE r23_spn_mix4r_sb1_nw RESULT name=r23_spn_mix4r_sb1_nw cells=5874 area=15896 crit=29.2 delay_ratio=0.282 area_ratio=0.450 ref_crit=103.5 ref_a
+S0_DONE r23_spn_mix4r_sb2_nw RESULT name=r23_spn_mix4r_sb2_nw cells=6817 area=18438 crit=29.0 delay_ratio=0.280 area_ratio=0.522 ref_crit=103.5 ref_a
+S0_DONE r23_spn_mix4r_sb3_nw RESULT name=r23_spn_mix4r_sb3_nw cells=5861 area=15881 crit=29.4 delay_ratio=0.284 area_ratio=0.450 ref_crit=103.5 ref_a
+S0_DONE r23_spn_mix4r_pl_nw RESULT name=r23_spn_mix4r_pl_nw cells=5482 area=14723 crit=27.4 delay_ratio=0.265 area_ratio=0.417 ref_crit=103.5 ref_ar
+ALL_STAGES_DONE s0
+=== STAGE s1 ===
+S1_LAUNCH r23_spn_mix3r_lp_nw
+S1_LAUNCH r23_spn_mix4r_l0307_nw
+S1_LAUNCH r23_spn_mix4r_l0313_nw
+S1_LAUNCH r23_spn_mix4r_l0511_nw
+S1_LAUNCH r23_spn_mix4r_l0713_nw
+S1_LAUNCH r23_spn_mix4r_l1117_nw
+S1_LAUNCH r23_spn_mix4r_l0107_nw
+S1_LAUNCH r23_spn_mix4r_l030711_nw
+S1_LAUNCH r23_spn_mix4r_l031117_nw
+S1_LAUNCH r23_spn_mix4r_l051123_nw
+S1_LAUNCH r23_spn_mix4r_l010925_nw
+S1_LAUNCH r23_spn_mix4r_pba03b03_nw
+S1_LAUNCH r23_spn_mix4r_pba05b01_nw
+S1_LAUNCH r23_spn_mix4r_pba07b01_nw
+S1_LAUNCH r23_spn_mix4r_pba09b01_nw
+S1_LAUNCH r23_spn_mix4r_pba11b01_nw
+S1_LAUNCH r23_spn_mix4r_pba13b01_nw
+S1_LAUNCH r23_spn_mix4r_pba15b01_nw
+S1_LAUNCH r23_spn_mix4r_pba17b01_nw
+S1_LAUNCH r23_spn_mix4r_pba19b01_nw
+S1_LAUNCH r23_spn_mix4r_pba23b01_nw
+S1_LAUNCH r23_spn_mix4r_pba25b01_nw
+S1_LAUNCH r23_spn_mix4r_pba27b01_nw
+S1_LAUNCH r23_spn_mix4r_pbrnd13_nw
+S1_LAUNCH r23_spn_mix4r_pbrnd14_nw
+S1_LAUNCH r23_spn_mix4r_sb1_nw
+S1_LAUNCH r23_spn_mix4r_sb2_nw
+S1_LAUNCH r23_spn_mix4r_sb3_nw
+S1_LAUNCH r23_spn_mix4r_pl_nw
+--- waiting for stage s1 jobs ---
+S1_DONE r23_spn_mix3r_lp_nw 
+S1_DONE r23_spn_mix4r_l0307_nw [S1 r23_spn_mix4r_l0307_nw] verdict: CAL_PASS
+S1_DONE r23_spn_mix4r_l0313_nw 
+S1_DONE r23_spn_mix4r_l0511_nw 
+S1_DONE r23_spn_mix4r_l0713_nw [S1 r23_spn_mix4r_l0713_nw] verdict: CAL_PASS
+S1_DONE r23_spn_mix4r_l1117_nw [S1 r23_spn_mix4r_l1117_nw] verdict: CAL_PASS
+S1_DONE r23_spn_mix4r_l0107_nw [S1 r23_spn_mix4r_l0107_nw] verdict: CAL_PASS
+S1_DONE r23_spn_mix4r_l030711_nw 
+S1_DONE r23_spn_mix4r_l031117_nw [S1 r23_spn_mix4r_l031117_nw] verdict: CAL_PASS
+S1_DONE r23_spn_mix4r_l051123_nw [S1 r23_spn_mix4r_l051123_nw] verdict: CAL_PASS
+S1_DONE r23_spn_mix4r_l010925_nw [S1 r23_spn_mix4r_l010925_nw] verdict: CAL_PASS
+S1_DONE r23_spn_mix4r_pba03b03_nw [S1 r23_spn_mix4r_pba03b03_nw] verdict: CAL_PASS
+S1_DONE r23_spn_mix4r_pba05b01_nw [S1 r23_spn_mix4r_pba05b01_nw] verdict: CAL_PASS
+S1_DONE r23_spn_mix4r_pba07b01_nw [S1 r23_spn_mix4r_pba07b01_nw] verdict: CAL_PASS
+S1_DONE r23_spn_mix4r_pba09b01_nw [S1 r23_spn_mix4r_pba09b01_nw] verdict: CAL_PASS
+S1_DONE r23_spn_mix4r_pba11b01_nw 
+S1_DONE r23_spn_mix4r_pba13b01_nw [S1 r23_spn_mix4r_pba13b01_nw] verdict: CAL_PASS
+S1_DONE r23_spn_mix4r_pba15b01_nw 
+S1_DONE r23_spn_mix4r_pba17b01_nw [S1 r23_spn_mix4r_pba17b01_nw] verdict: CAL_PASS
+S1_DONE r23_spn_mix4r_pba19b01_nw [S1 r23_spn_mix4r_pba19b01_nw] verdict: CAL_PASS
+S1_DONE r23_spn_mix4r_pba23b01_nw [S1 r23_spn_mix4r_pba23b01_nw] verdict: CAL_PASS
+S1_DONE r23_spn_mix4r_pba25b01_nw 
+S1_DONE r23_spn_mix4r_pba27b01_nw [S1 r23_spn_mix4r_pba27b01_nw] verdict: CAL_PASS
+S1_DONE r23_spn_mix4r_pbrnd13_nw [S1 r23_spn_mix4r_pbrnd13_nw] verdict: CAL_PASS
+S1_DONE r23_spn_mix4r_pbrnd14_nw [S1 r23_spn_mix4r_pbrnd14_nw] verdict: CAL_PASS
+S1_DONE r23_spn_mix4r_sb1_nw [S1 r23_spn_mix4r_sb1_nw] verdict: CAL_PASS
+S1_DONE r23_spn_mix4r_sb2_nw [S1 r23_spn_mix4r_sb2_nw] verdict: CAL_PASS
+S1_DONE r23_spn_mix4r_sb3_nw [S1 r23_spn_mix4r_sb3_nw] verdict: CAL_PASS
+S1_DONE r23_spn_mix4r_pl_nw 
+ALL_STAGES_DONE s1
+=== STAGE s2 ===
+S2_LAUNCH r23_spn_mix4r_l0107_nw
+S2_LAUNCH r23_spn_mix4r_l010925_nw
+S2_LAUNCH r23_spn_mix4r_l0307_nw
+S2_LAUNCH r23_spn_mix4r_l031117_nw
+S2_LAUNCH r23_spn_mix4r_l051123_nw
+S2_LAUNCH r23_spn_mix4r_l0713_nw
+S2_LAUNCH r23_spn_mix4r_l1117_nw
+S2_LAUNCH r23_spn_mix4r_pba03b03_nw
+S2_LAUNCH r23_spn_mix4r_pba05b01_nw
+S2_LAUNCH r23_spn_mix4r_pba07b01_nw
+S2_LAUNCH r23_spn_mix4r_pba09b01_nw
+S2_LAUNCH r23_spn_mix4r_pba13b01_nw
+S2_LAUNCH r23_spn_mix4r_pba17b01_nw
+S2_LAUNCH r23_spn_mix4r_pba19b01_nw
+2026-10-04T07:53:34Z === S2 resume queue: 8 candidates ===
+2026-10-04T07:53:35Z S2_LAUNCH r23_spn_mix4r_pba19b01_nw
+2026-10-04T07:53:35Z S2_LAUNCH r23_spn_mix4r_pba23b01_nw
+2026-10-04T08:01:12Z S2_DONE r23_spn_mix4r_pba23b01_nw KILL delta=0x0000000080000000 repeats=34 > kill_repeats=10
+2026-10-04T08:01:17Z [polite] 2 foreign heavies, sleeping 60s
+2026-10-04T08:02:17Z [polite] 2 foreign heavies, sleeping 60s
+2026-10-04T08:03:17Z [polite] 2 foreign heavies, sleeping 60s
+2026-10-04T08:04:17Z [polite] 2 foreign heavies, sleeping 60s
+2026-10-04T08:04:58Z XCHECK_DONE r23_spn_mix4r_hs_alt_nw rc=0 XCHECK r23_spn_mix4r_hs_alt_nw: PASS 10000/10000 C==Python
+2026-10-04T08:05:02Z XCHECK_DONE r23_spn_mix4r_hs_aff_nw rc=0 XCHECK r23_spn_mix4r_hs_aff_nw: PASS 10000/10000 C==Python
+2026-10-04T08:05:07Z XCHECK_DONE r23_spn_mix4r_hs_rh_nw rc=0 XCHECK r23_spn_mix4r_hs_rh_nw: PASS 10000/10000 C==Python
+2026-10-04T08:05:10Z XCHECK_DONE r23_spn_mix4r_mols8a_nw rc=0 XCHECK r23_spn_mix4r_mols8a_nw: PASS 10000/10000 C==Python
+2026-10-04T08:05:12Z XCHECK_DONE r23_spn_mix4r_mols8b_nw rc=0 XCHECK r23_spn_mix4r_mols8b_nw: PASS 10000/10000 C==Python
+2026-10-04T08:05:15Z XCHECK_DONE r23_spn_mix4r_mols8c_nw rc=0 XCHECK r23_spn_mix4r_mols8c_nw: PASS 10000/10000 C==Python
+2026-10-04T08:05:17Z [polite] 2 foreign heavies, sleeping 60s
+2026-10-04T08:05:18Z XCHECK_DONE r23_spn_mix4r_ks0_nw rc=0 XCHECK r23_spn_mix4r_ks0_nw: PASS 10000/10000 C==Python
+2026-10-04T08:05:18Z S0_DONE r23_spn_mix4r_hs_alt_nw 
+2026-10-04T08:05:18Z S0_DONE r23_spn_mix4r_hs_aff_nw 
+2026-10-04T08:05:18Z S0_DONE r23_spn_mix4r_hs_rh_nw 
+2026-10-04T08:05:18Z S0_DONE r23_spn_mix4r_mols8a_nw 
+2026-10-04T08:05:18Z S0_DONE r23_spn_mix4r_mols8b_nw 
+2026-10-04T08:05:18Z S0_DONE r23_spn_mix4r_mols8c_nw 
+2026-10-04T08:05:18Z S0_DONE r23_spn_mix4r_ks0_nw 
+2026-10-04T08:05:18Z S1_DONE r23_spn_mix4r_hs_alt_nw 
+2026-10-04T08:05:18Z S1_DONE r23_spn_mix4r_hs_aff_nw 
+2026-10-04T08:05:18Z S1_DONE r23_spn_mix4r_hs_rh_nw 
+2026-10-04T08:05:18Z S1_DONE r23_spn_mix4r_mols8a_nw 
+2026-10-04T08:05:18Z S1_DONE r23_spn_mix4r_mols8b_nw 
+2026-10-04T08:05:18Z S1_DONE r23_spn_mix4r_mols8c_nw 
+2026-10-04T08:05:18Z S1_DONE r23_spn_mix4r_ks0_nw 
+2026-10-04T08:05:18Z S2_SKIP r23_spn_mix4r_hs_alt_nw (no S1 CAL_PASS)
+2026-10-04T08:05:18Z S2_SKIP r23_spn_mix4r_hs_aff_nw (no S1 CAL_PASS)
+2026-10-04T08:05:18Z S2_SKIP r23_spn_mix4r_hs_rh_nw (no S1 CAL_PASS)
+2026-10-04T08:05:18Z S2_SKIP r23_spn_mix4r_mols8a_nw (no S1 CAL_PASS)
+2026-10-04T08:05:18Z S2_SKIP r23_spn_mix4r_mols8b_nw (no S1 CAL_PASS)
+2026-10-04T08:05:18Z S2_SKIP r23_spn_mix4r_mols8c_nw (no S1 CAL_PASS)
+2026-10-04T08:05:18Z S2_SKIP r23_spn_mix4r_ks0_nw (no S1 CAL_PASS)
+2026-10-04T08:05:19Z === p689 pipeline complete ===
+2026-10-04T08:05:55Z XCHECK_SKIP r23_spn_mix4r_hs_alt_nw
+2026-10-04T08:05:55Z XCHECK_SKIP r23_spn_mix4r_hs_aff_nw
+2026-10-04T08:05:55Z XCHECK_SKIP r23_spn_mix4r_hs_rh_nw
+2026-10-04T08:05:55Z XCHECK_SKIP r23_spn_mix4r_mols8a_nw
+2026-10-04T08:05:55Z XCHECK_SKIP r23_spn_mix4r_mols8b_nw
+2026-10-04T08:05:55Z XCHECK_SKIP r23_spn_mix4r_mols8c_nw
+2026-10-04T08:05:55Z XCHECK_SKIP r23_spn_mix4r_ks0_nw
+2026-10-04T08:05:55Z [p689-polite] 2 foreign heavies, sleeping 60s
+2026-10-04T08:06:18Z [polite] 2 foreign heavies, sleeping 60s
+2026-10-04T08:06:56Z [p689-polite] 2 foreign heavies, sleeping 60s
+2026-10-04T08:07:18Z [polite] 2 foreign heavies, sleeping 60s
+2026-10-04T08:07:56Z [p689-polite] 2 foreign heavies, sleeping 60s
+2026-10-04T08:08:18Z [polite] 2 foreign heavies, sleeping 60s
+2026-10-04T08:08:56Z [p689-polite] 2 foreign heavies, sleeping 60s
+2026-10-04T08:09:18Z [polite] 2 foreign heavies, sleeping 60s
+2026-10-04T08:10:18Z [polite] 2 foreign heavies, sleeping 60s
+2026-10-04T08:10:19Z XCHECK_SKIP r23_spn_mix4r_hs_alt_nw
+2026-10-04T08:10:19Z XCHECK_SKIP r23_spn_mix4r_hs_aff_nw
+2026-10-04T08:10:20Z XCHECK_SKIP r23_spn_mix4r_hs_rh_nw
+2026-10-04T08:10:20Z XCHECK_SKIP r23_spn_mix4r_mols8a_nw
+2026-10-04T08:10:20Z XCHECK_SKIP r23_spn_mix4r_mols8b_nw
+2026-10-04T08:10:20Z XCHECK_SKIP r23_spn_mix4r_mols8c_nw
+2026-10-04T08:10:20Z XCHECK_SKIP r23_spn_mix4r_ks0_nw
+2026-10-04T08:10:23Z RTLCHECK_DONE r23_spn_mix4r_hs_alt_nw RTLCHECK: 300/300 vectors match -> PASS
+2026-10-04T08:10:25Z RTLCHECK_DONE r23_spn_mix4r_hs_aff_nw RTLCHECK: 300/300 vectors match -> PASS
+2026-10-04T08:10:27Z RTLCHECK_DONE r23_spn_mix4r_hs_rh_nw RTLCHECK: 300/300 vectors match -> PASS
+2026-10-04T08:10:30Z RTLCHECK_DONE r23_spn_mix4r_mols8a_nw RTLCHECK: 300/300 vectors match -> PASS
+2026-10-04T08:10:33Z RTLCHECK_DONE r23_spn_mix4r_mols8b_nw RTLCHECK: 300/300 vectors match -> PASS
+2026-10-04T08:10:36Z RTLCHECK_DONE r23_spn_mix4r_mols8c_nw RTLCHECK: 300/300 vectors match -> PASS
+2026-10-04T08:10:38Z RTLCHECK_DONE r23_spn_mix4r_ks0_nw RTLCHECK: 300/300 vectors match -> PASS
+2026-10-04T08:10:38Z S0_DONE r23_spn_mix4r_hs_alt_nw 
+2026-10-04T08:10:38Z S0_DONE r23_spn_mix4r_hs_aff_nw 
+2026-10-04T08:10:38Z S0_DONE r23_spn_mix4r_hs_rh_nw 
+2026-10-04T08:10:38Z S0_DONE r23_spn_mix4r_mols8a_nw 
+2026-10-04T08:10:38Z S0_DONE r23_spn_mix4r_mols8b_nw 
+2026-10-04T08:10:38Z S0_DONE r23_spn_mix4r_mols8c_nw 
+2026-10-04T08:10:38Z S0_DONE r23_spn_mix4r_ks0_nw 
+2026-10-04T08:10:39Z S1_DONE r23_spn_mix4r_hs_alt_nw 
+2026-10-04T08:10:39Z S1_DONE r23_spn_mix4r_hs_aff_nw 
+2026-10-04T08:10:39Z S1_DONE r23_spn_mix4r_hs_rh_nw 
+2026-10-04T08:10:39Z S1_DONE r23_spn_mix4r_mols8a_nw 
+2026-10-04T08:10:39Z S1_DONE r23_spn_mix4r_mols8b_nw 
+2026-10-04T08:10:39Z S1_DONE r23_spn_mix4r_mols8c_nw 
+2026-10-04T08:10:39Z S1_DONE r23_spn_mix4r_ks0_nw 
+2026-10-04T08:10:39Z S2_SKIP r23_spn_mix4r_hs_alt_nw (no S1 CAL_PASS)
+2026-10-04T08:10:39Z S2_SKIP r23_spn_mix4r_hs_aff_nw (no S1 CAL_PASS)
+2026-10-04T08:10:39Z S2_SKIP r23_spn_mix4r_hs_rh_nw (no S1 CAL_PASS)
+2026-10-04T08:10:39Z S2_SKIP r23_spn_mix4r_mols8a_nw (no S1 CAL_PASS)
+2026-10-04T08:10:39Z S2_SKIP r23_spn_mix4r_mols8b_nw (no S1 CAL_PASS)
+2026-10-04T08:10:39Z S2_SKIP r23_spn_mix4r_mols8c_nw (no S1 CAL_PASS)
+2026-10-04T08:10:39Z S2_SKIP r23_spn_mix4r_ks0_nw (no S1 CAL_PASS)
+2026-10-04T08:10:39Z === p689 pipeline complete ===
+2026-10-04T08:10:45Z XCHECK_SKIP r23_spn_mix4r_hs_alt_nw
+2026-10-04T08:10:45Z XCHECK_SKIP r23_spn_mix4r_hs_aff_nw
+2026-10-04T08:10:45Z XCHECK_SKIP r23_spn_mix4r_hs_rh_nw
+2026-10-04T08:10:45Z XCHECK_SKIP r23_spn_mix4r_mols8a_nw
+2026-10-04T08:10:45Z XCHECK_SKIP r23_spn_mix4r_mols8b_nw
+2026-10-04T08:10:45Z XCHECK_SKIP r23_spn_mix4r_mols8c_nw
+2026-10-04T08:10:45Z XCHECK_SKIP r23_spn_mix4r_ks0_nw
+2026-10-04T08:10:46Z S0_DONE r23_spn_mix4r_hs_alt_nw 
+2026-10-04T08:10:46Z S0_DONE r23_spn_mix4r_hs_aff_nw 
+2026-10-04T08:10:46Z S0_DONE r23_spn_mix4r_hs_rh_nw 
+2026-10-04T08:10:46Z S0_DONE r23_spn_mix4r_mols8a_nw 
+2026-10-04T08:10:46Z S0_DONE r23_spn_mix4r_mols8b_nw 
+2026-10-04T08:10:46Z S0_DONE r23_spn_mix4r_mols8c_nw 
+2026-10-04T08:10:46Z S0_DONE r23_spn_mix4r_ks0_nw 
+2026-10-04T08:10:46Z S1_DONE r23_spn_mix4r_hs_alt_nw 
+2026-10-04T08:10:46Z S1_DONE r23_spn_mix4r_hs_aff_nw 
+2026-10-04T08:10:46Z S1_DONE r23_spn_mix4r_hs_rh_nw 
+2026-10-04T08:10:46Z S1_DONE r23_spn_mix4r_mols8a_nw 
+2026-10-04T08:10:46Z S1_DONE r23_spn_mix4r_mols8b_nw 
+2026-10-04T08:10:46Z S1_DONE r23_spn_mix4r_mols8c_nw 
+2026-10-04T08:10:46Z S1_DONE r23_spn_mix4r_ks0_nw 
+2026-10-04T08:10:47Z S2_SKIP r23_spn_mix4r_hs_alt_nw (no S1 CAL_PASS)
+2026-10-04T08:10:47Z S2_SKIP r23_spn_mix4r_hs_aff_nw (no S1 CAL_PASS)
+2026-10-04T08:10:47Z S2_SKIP r23_spn_mix4r_hs_rh_nw (no S1 CAL_PASS)
+2026-10-04T08:10:47Z S2_SKIP r23_spn_mix4r_mols8a_nw (no S1 CAL_PASS)
+2026-10-04T08:10:47Z S2_SKIP r23_spn_mix4r_mols8b_nw (no S1 CAL_PASS)
+2026-10-04T08:10:47Z S2_SKIP r23_spn_mix4r_mols8c_nw (no S1 CAL_PASS)
+2026-10-04T08:10:47Z S2_SKIP r23_spn_mix4r_ks0_nw (no S1 CAL_PASS)
+2026-10-04T08:10:47Z === p689 pipeline complete ===
+2026-10-04T08:11:19Z [polite] 2 foreign heavies, sleeping 60s
+2026-10-04T08:12:12Z === p689 S0 stage ===
+2026-10-04T08:12:12Z S0_SKIP r23_spn_mix4r_hs_alt_nw
+2026-10-04T08:12:12Z S0_SKIP r23_spn_mix4r_hs_aff_nw
+2026-10-04T08:12:12Z S0_SKIP r23_spn_mix4r_hs_rh_nw
+2026-10-04T08:12:12Z S0_SKIP r23_spn_mix4r_mols8a_nw
+2026-10-04T08:12:12Z S0_SKIP r23_spn_mix4r_mols8b_nw
+2026-10-04T08:12:12Z S0_SKIP r23_spn_mix4r_mols8c_nw
+2026-10-04T08:12:12Z S0_SKIP r23_spn_mix4r_ks0_nw
+2026-10-04T08:12:12Z S0_DONE r23_spn_mix4r_hs_alt_nw 
+2026-10-04T08:12:12Z S0_DONE r23_spn_mix4r_hs_aff_nw 
+2026-10-04T08:12:12Z S0_DONE r23_spn_mix4r_hs_rh_nw 
+2026-10-04T08:12:12Z S0_DONE r23_spn_mix4r_mols8a_nw 
+2026-10-04T08:12:12Z S0_DONE r23_spn_mix4r_mols8b_nw 
+2026-10-04T08:12:12Z S0_DONE r23_spn_mix4r_mols8c_nw 
+2026-10-04T08:12:12Z S0_DONE r23_spn_mix4r_ks0_nw 
+2026-10-04T08:12:12Z === p689 S1 stage ===
+2026-10-04T08:12:12Z S1_SKIP r23_spn_mix4r_hs_alt_nw
+2026-10-04T08:12:12Z S1_SKIP r23_spn_mix4r_hs_aff_nw
+2026-10-04T08:12:12Z S1_SKIP r23_spn_mix4r_hs_rh_nw
+2026-10-04T08:12:13Z S1_SKIP r23_spn_mix4r_mols8a_nw
+2026-10-04T08:12:13Z S1_SKIP r23_spn_mix4r_mols8b_nw
+2026-10-04T08:12:13Z S1_SKIP r23_spn_mix4r_mols8c_nw
+2026-10-04T08:12:13Z S1_SKIP r23_spn_mix4r_ks0_nw
+2026-10-04T08:12:13Z S1_DONE r23_spn_mix4r_hs_alt_nw 
+2026-10-04T08:12:13Z S1_DONE r23_spn_mix4r_hs_aff_nw 
+2026-10-04T08:12:13Z S1_DONE r23_spn_mix4r_hs_rh_nw 
+2026-10-04T08:12:13Z S1_DONE r23_spn_mix4r_mols8a_nw 
+2026-10-04T08:12:13Z S1_DONE r23_spn_mix4r_mols8b_nw 
+2026-10-04T08:12:13Z S1_DONE r23_spn_mix4r_mols8c_nw 
+2026-10-04T08:12:13Z S1_DONE r23_spn_mix4r_ks0_nw 
+2026-10-04T08:12:13Z === p689 S2 stage (S1 survivors only) ===
+2026-10-04T08:12:13Z S2_SKIP r23_spn_mix4r_hs_alt_nw (no S1 CAL_PASS)
+2026-10-04T08:12:13Z S2_SKIP r23_spn_mix4r_hs_aff_nw (no S1 CAL_PASS)
+2026-10-04T08:12:13Z S2_SKIP r23_spn_mix4r_hs_rh_nw (no S1 CAL_PASS)
+2026-10-04T08:12:13Z S2_SKIP r23_spn_mix4r_mols8a_nw (no S1 CAL_PASS)
+2026-10-04T08:12:13Z S2_SKIP r23_spn_mix4r_mols8b_nw (no S1 CAL_PASS)
+2026-10-04T08:12:13Z S2_SKIP r23_spn_mix4r_mols8c_nw (no S1 CAL_PASS)
+2026-10-04T08:12:13Z S2_SKIP r23_spn_mix4r_ks0_nw (no S1 CAL_PASS)
+2026-10-04T08:12:13Z === p689 S0/S1/S2 complete ===
+2026-10-04T08:12:19Z [polite] 2 foreign heavies, sleeping 60s
+2026-10-04T08:12:57Z === p689 S0 stage ===
+2026-10-04T08:12:57Z S0_LAUNCH r23_spn_mix4r_hs_alt_nw
+2026-10-04T08:12:57Z S0_LAUNCH r23_spn_mix4r_hs_aff_nw
+2026-10-04T08:13:19Z [polite] 4 foreign heavies, sleeping 60s
+2026-10-04T08:13:48Z S0_LAUNCH r23_spn_mix4r_hs_rh_nw
+2026-10-04T08:13:48Z S0_LAUNCH r23_spn_mix4r_mols8a_nw
+2026-10-04T08:14:19Z [polite] 2 foreign heavies, sleeping 60s
+2026-10-04T08:14:38Z S0_LAUNCH r23_spn_mix4r_mols8b_nw
+2026-10-04T08:14:38Z S0_LAUNCH r23_spn_mix4r_mols8c_nw
+2026-10-04T08:15:20Z [polite] 4 foreign heavies, sleeping 60s
+2026-10-04T08:15:29Z S0_LAUNCH r23_spn_mix4r_ks0_nw
+2026-10-04T08:16:07Z S0_DONE r23_spn_mix4r_hs_alt_nw RESULT name=r23_spn_mix4r_hs_alt_nw cells=5492 area=14881 crit=28.7 delay_ratio=0.277 area_ratio=0.421 ref_crit=103.5 re
+2026-10-04T08:16:07Z S0_DONE r23_spn_mix4r_hs_aff_nw RESULT name=r23_spn_mix4r_hs_aff_nw cells=4873 area=13320 crit=28.5 delay_ratio=0.275 area_ratio=0.377 ref_crit=103.5 re
+2026-10-04T08:16:07Z S0_DONE r23_spn_mix4r_hs_rh_nw RESULT name=r23_spn_mix4r_hs_rh_nw cells=5591 area=15290 crit=28.5 delay_ratio=0.275 area_ratio=0.433 ref_crit=103.5 ref
+2026-10-04T08:16:07Z S0_DONE r23_spn_mix4r_mols8a_nw RESULT name=r23_spn_mix4r_mols8a_nw cells=4780 area=13234 crit=28.3 delay_ratio=0.273 area_ratio=0.375 ref_crit=103.5 re
+2026-10-04T08:16:07Z S0_DONE r23_spn_mix4r_mols8b_nw RESULT name=r23_spn_mix4r_mols8b_nw cells=5493 area=14752 crit=27.8 delay_ratio=0.269 area_ratio=0.418 ref_crit=103.5 re
+2026-10-04T08:16:07Z S0_DONE r23_spn_mix4r_mols8c_nw RESULT name=r23_spn_mix4r_mols8c_nw cells=5205 area=14020 crit=27.9 delay_ratio=0.270 area_ratio=0.397 ref_crit=103.5 re
+2026-10-04T08:16:07Z S0_DONE r23_spn_mix4r_ks0_nw RESULT name=r23_spn_mix4r_ks0_nw cells=5330 area=14510 crit=27.9 delay_ratio=0.270 area_ratio=0.411 ref_crit=103.5 ref_a
+2026-10-04T08:16:07Z === p689 S1 stage ===
+2026-10-04T08:16:07Z S1_LAUNCH r23_spn_mix4r_hs_alt_nw
+2026-10-04T08:16:07Z S1_LAUNCH r23_spn_mix4r_hs_aff_nw
+2026-10-04T08:16:20Z [polite] 2 foreign heavies, sleeping 60s
+2026-10-04T08:17:20Z [polite] 2 foreign heavies, sleeping 60s
+2026-10-04T08:18:21Z [polite] 2 foreign heavies, sleeping 60s
+2026-10-04T08:18:55Z S2_DONE r23_spn_mix4r_pba19b01_nw PASS max_repeats=0 max|z|=12.2 (all 115 deltas)
+2026-10-04T08:19:01Z S2_LAUNCH r23_spn_mix4r_pbrnd13_nw
+2026-10-04T08:19:21Z [polite] 2 foreign heavies, sleeping 60s
+2026-10-04T08:20:21Z [polite] 2 foreign heavies, sleeping 60s
+2026-10-04T08:21:21Z [polite] 2 foreign heavies, sleeping 60s
+2026-10-04T08:22:21Z [polite] 2 foreign heavies, sleeping 60s
+2026-10-04T08:23:22Z [polite] 2 foreign heavies, sleeping 60s
+2026-10-04T08:24:22Z [polite] 2 foreign heavies, sleeping 60s
+2026-10-04T08:25:23Z S2_LAUNCH r23_spn_mix4r_pba27b01_nw
+2026-10-04T08:28:51Z S1_LAUNCH r23_spn_mix4r_hs_rh_nw
+2026-10-04T08:29:21Z S1_LAUNCH r23_spn_mix4r_mols8a_nw
+2026-10-04T08:30:52Z S1_LAUNCH r23_spn_mix4r_mols8b_nw
+2026-10-04T08:40:38Z S2_DONE r23_spn_mix4r_pbrnd13_nw KILL delta=0x0000000600000000 repeats=40 > kill_repeats=10
+2026-10-04T08:41:55Z S1_LAUNCH r23_spn_mix4r_mols8c_nw
+2026-10-04T08:43:46Z S1_LAUNCH r23_spn_mix4r_ks0_nw
+2026-10-04T08:52:55Z S1_DONE r23_spn_mix4r_hs_alt_nw [S1 r23_spn_mix4r_hs_alt_nw] verdict: CAL_PASS
+2026-10-04T08:52:55Z S1_DONE r23_spn_mix4r_hs_aff_nw [S1 r23_spn_mix4r_hs_aff_nw] verdict: CAL_PASS
+2026-10-04T08:52:55Z S1_DONE r23_spn_mix4r_hs_rh_nw [S1 r23_spn_mix4r_hs_rh_nw] verdict: CAL_PASS
+2026-10-04T08:52:55Z S1_DONE r23_spn_mix4r_mols8a_nw 
+2026-10-04T08:52:55Z S1_DONE r23_spn_mix4r_mols8b_nw [S1 r23_spn_mix4r_mols8b_nw] verdict: CAL_PASS
+2026-10-04T08:52:55Z S1_DONE r23_spn_mix4r_mols8c_nw 
+2026-10-04T08:52:55Z S1_DONE r23_spn_mix4r_ks0_nw 
+2026-10-04T08:52:55Z === p689 S2 stage (S1 survivors only) ===
+2026-10-04T08:52:55Z S2_LAUNCH r23_spn_mix4r_hs_alt_nw
+2026-10-04T08:52:56Z S2_LAUNCH r23_spn_mix4r_hs_aff_nw
+2026-10-04T09:06:21Z === S2 queue part 2: 6 candidates (hs_rh, mols8b, pbrnd14, sb1-3) ===
+2026-10-04T09:13:30Z S2_LAUNCH r23_spn_mix4r_hs_rh_nw
+2026-10-04T09:13:30Z S2_SKIP r23_spn_mix4r_mols8a_nw (no S1 CAL_PASS)
+2026-10-04T09:13:30Z S2_LAUNCH r23_spn_mix4r_mols8b_nw
+2026-10-04T09:13:30Z S2_SKIP r23_spn_mix4r_mols8c_nw (no S1 CAL_PASS)
+2026-10-04T09:13:30Z S2_SKIP r23_spn_mix4r_ks0_nw (no S1 CAL_PASS)
+2026-10-04T09:15:22Z [polite] 2 foreign heavies, sleeping 60s
+2026-10-04T09:15:22Z [polite] 2 foreign heavies, sleeping 60s
+2026-10-04T09:16:23Z [polite] 2 foreign heavies, sleeping 60s
+2026-10-04T09:16:23Z [polite] 2 foreign heavies, sleeping 60s
+2026-10-04T09:17:23Z [polite] 2 foreign heavies, sleeping 60s
+2026-10-04T09:17:23Z [polite] 2 foreign heavies, sleeping 60s
+2026-10-04T09:17:38Z S2_DONE r23_spn_mix4r_hs_alt_nw PASS max_repeats=1 max|z|=16.5 (all 115 deltas)
+2026-10-04T09:17:38Z S2_DONE r23_spn_mix4r_hs_aff_nw PASS max_repeats=0 max|z|=14.2 (all 115 deltas)
+2026-10-04T09:18:23Z S2_LAUNCH r23_spn_mix4r_hs_rh_nw
+2026-10-04T09:18:23Z S2_LAUNCH r23_spn_mix4r_mols8b_nw
+2026-10-04T09:20:20Z S2_DONE r23_spn_mix4r_mols8b_nw KILL delta=0x0000000000002000 repeats=54 > kill_repeats=10
+2026-10-04T09:30:26Z S2_DONE r23_spn_mix4r_mols8b_nw KILL delta=0x0000000000002000 repeats=54 > kill_repeats=10
+2026-10-04T09:31:24Z S2_DONE r23_spn_mix4r_hs_rh_nw 
+2026-10-04T09:31:25Z S2_LAUNCH r23_spn_mix4r_pbrnd14_nw
+2026-10-04T09:34:49Z S2_DONE r23_spn_mix4r_hs_alt_nw PASS max_repeats=1 max|z|=16.5 (all 115 deltas)
+2026-10-04T09:34:49Z S2_DONE r23_spn_mix4r_hs_aff_nw PASS max_repeats=0 max|z|=14.2 (all 115 deltas)
+2026-10-04T09:34:50Z S2_DONE r23_spn_mix4r_hs_rh_nw PASS max_repeats=7 max|z|=26.5 (all 115 deltas)
+2026-10-04T09:34:50Z S2_DONE r23_spn_mix4r_mols8b_nw KILL delta=0x0000000000002000 repeats=54 > kill_repeats=10
+2026-10-04T09:34:50Z === p689 S0/S1/S2 complete ===
+2026-10-04T09:34:54Z S2_DONE r23_spn_mix4r_pbrnd14_nw KILL delta=0x0000000008000000 repeats=586 > kill_repeats=10
+2026-10-04T09:34:58Z S2_LAUNCH r23_spn_mix4r_sb2_nw
+2026-10-04T09:35:28Z S2_LAUNCH r23_spn_mix4r_sb1_nw
+2026-10-04T09:37:03Z S2_DONE r23_spn_mix4r_hs_rh_nw PASS max_repeats=7 max|z|=26.5 (all 115 deltas) [via p689 driver]
+2026-10-04T09:37:03Z S2_DONE r23_spn_mix4r_pbrnd14_nw KILL delta=0x0000000008000000 repeats=586 > kill_repeats=10
+2026-10-04T09:56:18Z S2_DONE r23_spn_mix4r_sb2_nw PASS max_repeats=0 max|z|=3.8 (all 115 deltas)
+2026-10-04T09:56:24Z S2_LAUNCH r23_spn_mix4r_sb3_nw
+2026-10-04T09:57:44Z S2_DONE r23_spn_mix4r_sb1_nw PASS max_repeats=0 max|z|=12.3 (all 115 deltas)
+2026-10-04T09:58:37Z S2_DONE r23_spn_mix4r_sb1_nw PASS max_repeats=0 max|z|=12.3 (all 115 deltas)
+2026-10-04T09:58:37Z S2_DONE r23_spn_mix4r_sb2_nw PASS max_repeats=0 max|z|=3.8 (all 115 deltas)
+2026-10-04T10:16:02Z S2_DONE r23_spn_mix4r_sb3_nw PASS max_repeats=0 max|z|=7.5 (all 115 deltas)
+2026-10-04T10:16:02Z === S2 queue part 2 complete ===

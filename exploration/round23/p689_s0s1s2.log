@@ -1,0 +1,43 @@
+2026-10-04T08:12:57Z === p689 S0 stage ===
+2026-10-04T08:12:57Z S0_LAUNCH r23_spn_mix4r_hs_alt_nw
+2026-10-04T08:12:57Z S0_LAUNCH r23_spn_mix4r_hs_aff_nw
+2026-10-04T08:13:48Z S0_LAUNCH r23_spn_mix4r_hs_rh_nw
+2026-10-04T08:13:48Z S0_LAUNCH r23_spn_mix4r_mols8a_nw
+2026-10-04T08:14:38Z S0_LAUNCH r23_spn_mix4r_mols8b_nw
+2026-10-04T08:14:38Z S0_LAUNCH r23_spn_mix4r_mols8c_nw
+2026-10-04T08:15:29Z S0_LAUNCH r23_spn_mix4r_ks0_nw
+2026-10-04T08:16:07Z S0_DONE r23_spn_mix4r_hs_alt_nw RESULT name=r23_spn_mix4r_hs_alt_nw cells=5492 area=14881 crit=28.7 delay_ratio=0.277 area_ratio=0.421 ref_crit=103.5 re
+2026-10-04T08:16:07Z S0_DONE r23_spn_mix4r_hs_aff_nw RESULT name=r23_spn_mix4r_hs_aff_nw cells=4873 area=13320 crit=28.5 delay_ratio=0.275 area_ratio=0.377 ref_crit=103.5 re
+2026-10-04T08:16:07Z S0_DONE r23_spn_mix4r_hs_rh_nw RESULT name=r23_spn_mix4r_hs_rh_nw cells=5591 area=15290 crit=28.5 delay_ratio=0.275 area_ratio=0.433 ref_crit=103.5 ref
+2026-10-04T08:16:07Z S0_DONE r23_spn_mix4r_mols8a_nw RESULT name=r23_spn_mix4r_mols8a_nw cells=4780 area=13234 crit=28.3 delay_ratio=0.273 area_ratio=0.375 ref_crit=103.5 re
+2026-10-04T08:16:07Z S0_DONE r23_spn_mix4r_mols8b_nw RESULT name=r23_spn_mix4r_mols8b_nw cells=5493 area=14752 crit=27.8 delay_ratio=0.269 area_ratio=0.418 ref_crit=103.5 re
+2026-10-04T08:16:07Z S0_DONE r23_spn_mix4r_mols8c_nw RESULT name=r23_spn_mix4r_mols8c_nw cells=5205 area=14020 crit=27.9 delay_ratio=0.270 area_ratio=0.397 ref_crit=103.5 re
+2026-10-04T08:16:07Z S0_DONE r23_spn_mix4r_ks0_nw RESULT name=r23_spn_mix4r_ks0_nw cells=5330 area=14510 crit=27.9 delay_ratio=0.270 area_ratio=0.411 ref_crit=103.5 ref_a
+2026-10-04T08:16:07Z === p689 S1 stage ===
+2026-10-04T08:16:07Z S1_LAUNCH r23_spn_mix4r_hs_alt_nw
+2026-10-04T08:16:07Z S1_LAUNCH r23_spn_mix4r_hs_aff_nw
+2026-10-04T08:28:51Z S1_LAUNCH r23_spn_mix4r_hs_rh_nw
+2026-10-04T08:29:21Z S1_LAUNCH r23_spn_mix4r_mols8a_nw
+2026-10-04T08:30:52Z S1_LAUNCH r23_spn_mix4r_mols8b_nw
+2026-10-04T08:41:55Z S1_LAUNCH r23_spn_mix4r_mols8c_nw
+2026-10-04T08:43:46Z S1_LAUNCH r23_spn_mix4r_ks0_nw
+2026-10-04T08:52:55Z S1_DONE r23_spn_mix4r_hs_alt_nw [S1 r23_spn_mix4r_hs_alt_nw] verdict: CAL_PASS
+2026-10-04T08:52:55Z S1_DONE r23_spn_mix4r_hs_aff_nw [S1 r23_spn_mix4r_hs_aff_nw] verdict: CAL_PASS
+2026-10-04T08:52:55Z S1_DONE r23_spn_mix4r_hs_rh_nw [S1 r23_spn_mix4r_hs_rh_nw] verdict: CAL_PASS
+2026-10-04T08:52:55Z S1_DONE r23_spn_mix4r_mols8a_nw 
+2026-10-04T08:52:55Z S1_DONE r23_spn_mix4r_mols8b_nw [S1 r23_spn_mix4r_mols8b_nw] verdict: CAL_PASS
+2026-10-04T08:52:55Z S1_DONE r23_spn_mix4r_mols8c_nw 
+2026-10-04T08:52:55Z S1_DONE r23_spn_mix4r_ks0_nw 
+2026-10-04T08:52:55Z === p689 S2 stage (S1 survivors only) ===
+2026-10-04T08:52:55Z S2_LAUNCH r23_spn_mix4r_hs_alt_nw
+2026-10-04T08:52:56Z S2_LAUNCH r23_spn_mix4r_hs_aff_nw
+2026-10-04T09:13:30Z S2_LAUNCH r23_spn_mix4r_hs_rh_nw
+2026-10-04T09:13:30Z S2_SKIP r23_spn_mix4r_mols8a_nw (no S1 CAL_PASS)
+2026-10-04T09:13:30Z S2_LAUNCH r23_spn_mix4r_mols8b_nw
+2026-10-04T09:13:30Z S2_SKIP r23_spn_mix4r_mols8c_nw (no S1 CAL_PASS)
+2026-10-04T09:13:30Z S2_SKIP r23_spn_mix4r_ks0_nw (no S1 CAL_PASS)
+2026-10-04T09:34:49Z S2_DONE r23_spn_mix4r_hs_alt_nw PASS max_repeats=1 max|z|=16.5 (all 115 deltas)
+2026-10-04T09:34:50Z S2_DONE r23_spn_mix4r_hs_aff_nw PASS max_repeats=0 max|z|=14.2 (all 115 deltas)
+2026-10-04T09:34:50Z S2_DONE r23_spn_mix4r_hs_rh_nw PASS max_repeats=7 max|z|=26.5 (all 115 deltas)
+2026-10-04T09:34:50Z S2_DONE r23_spn_mix4r_mols8b_nw KILL delta=0x0000000000002000 repeats=54 > kill_repeats=10
+2026-10-04T09:34:50Z === p689 S0/S1/S2 complete ===

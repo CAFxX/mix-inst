@@ -1,0 +1,122 @@
+2026-10-04T10:18:44Z ===== r23_spn_mix4r_pba19b01_nw =====
+2026-10-04T10:18:44Z [polite] 2 heavies, sleeping 60s
+2026-10-04T10:19:45Z [polite] 2 heavies, sleeping 60s
+2026-10-04T10:51:02Z ===== r23_spn_mix4r_pba19b01_nw =====
+2026-10-04T10:51:02Z battery S3+S4 start r23_spn_mix4r_pba19b01_nw
+=== S3 [r23_spn_mix4r_pba19b01_nw] started 2026-10-04T10:51:06Z
+--- S3 tail:
+[S3 r23_spn_mix4r_pba19b01_nw] 64MB: no FAIL (rng_test rc=0)
+[S3 r23_spn_mix4r_pba19b01_nw] stage 256MB (key=0x123456789abcdef0 stride=1) ...
+[S3 r23_spn_mix4r_pba19b01_nw] 256MB: no FAIL (rng_test rc=0)
+[S3 r23_spn_mix4r_pba19b01_nw] stage 1GB (key=0x123456789abcdef0 stride=1) ...
+[S3 r23_spn_mix4r_pba19b01_nw] 1GB: no FAIL (rng_test rc=0)
+[S3 r23_spn_mix4r_pba19b01_nw] verdict: PASS (all 4 stages, no FAIL)
+=== S3 [r23_spn_mix4r_pba19b01_nw] rc=0 wall=269s
+=== S3b [r23_spn_mix4r_pba19b01_nw] started 2026-10-04T10:55:36Z
+--- S3b tail:
+[S3 r23_spn_mix4r_pba19b01_nw_strided] 64MB: no FAIL (rng_test rc=0)
+[S3 r23_spn_mix4r_pba19b01_nw_strided] stage 256MB (key=0x0 stride=0x9E3779B97F4A7C15) ...
+[S3 r23_spn_mix4r_pba19b01_nw_strided] 256MB: no FAIL (rng_test rc=0)
+[S3 r23_spn_mix4r_pba19b01_nw_strided] stage 1GB (key=0x0 stride=0x9E3779B97F4A7C15) ...
+[S3 r23_spn_mix4r_pba19b01_nw_strided] 1GB: no FAIL (rng_test rc=0)
+[S3 r23_spn_mix4r_pba19b01_nw_strided] verdict: PASS (all 4 stages, no FAIL)
+=== S3b [r23_spn_mix4r_pba19b01_nw] rc=0 wall=234s
+=== S4 [r23_spn_mix4r_pba19b01_nw] started 2026-10-04T10:59:31Z
+--- S4 tail:
+ Total CPU time:   00:00:31.42
+
+ All tests were passed
+
+
+
+=== S4 [r23_spn_mix4r_pba19b01_nw] rc=0 wall=95s
+BATTERY-PASS [r23_spn_mix4r_pba19b01_nw] all stages survived (S5 P&R+review is a manual gate)
+2026-10-04T11:01:06Z battery r23_spn_mix4r_pba19b01_nw rc=0
+2026-10-04T11:01:06Z xcheck 10k r23_spn_mix4r_pba19b01_nw
+XCHECK r23_spn_mix4r_pba19b01_nw: PASS 10000/10000 C==Python
+2026-10-04T11:01:48Z xcheck PASS r23_spn_mix4r_pba19b01_nw
+2026-10-04T11:01:48Z Q1 start r23_spn_mix4r_pba19b01_nw
+  bit 16/64 done (55s)
+  bit 32/64 done (146s)
+  bit 48/64 done (245s)
+  bit 64/64 done (330s)
+{
+ "candidate": "r23_spn_mix4r_pba19b01_nw",
+ "key": "0x123456789abcdef0",
+ "N": 262144,
+ "sac_maxdev": 0.00372314453125,
+ "sac_meandev": 0.0007753893733024597,
+ "sac_z5": 0,
+ "bic_maxcorr": 0.010915282632926291,
+ "bic_meancorr": 0.0015531075347285852,
+ "avalanche_mean": 31.999632120132446,
+ "wall_s": 330.5
+}
+2026-10-04T11:07:20Z Q1 done r23_spn_mix4r_pba19b01_nw: sac_z5=0 bic_maxcorr=0.010915 sac_maxdev=0.0037 avalanche_mean=32.00
+2026-10-04T11:07:20Z bijectivity start r23_spn_mix4r_pba19b01_nw
+cc1: fatal error: /tmp/bij_check.c: No such file or directory
+compilation terminated.
+2026-10-04T11:07:20Z build bij failed r23_spn_mix4r_pba19b01_nw
+2026-10-04T11:07:20Z ===== r23_spn_mix4r_pba27b01_nw =====
+2026-10-04T11:07:21Z [polite] 2 heavies, sleeping 60s
+2026-10-04T11:08:21Z battery S3+S4 start r23_spn_mix4r_pba27b01_nw
+=== S3 [r23_spn_mix4r_pba27b01_nw] started 2026-10-04T11:08:23Z
+--- S3 tail:
+[S3 r23_spn_mix4r_pba27b01_nw] 64MB: no FAIL (rng_test rc=0)
+[S3 r23_spn_mix4r_pba27b01_nw] stage 256MB (key=0x123456789abcdef0 stride=1) ...
+[S3 r23_spn_mix4r_pba27b01_nw] 256MB: no FAIL (rng_test rc=0)
+[S3 r23_spn_mix4r_pba27b01_nw] stage 1GB (key=0x123456789abcdef0 stride=1) ...
+[S3 r23_spn_mix4r_pba27b01_nw] 1GB: no FAIL (rng_test rc=0)
+[S3 r23_spn_mix4r_pba27b01_nw] verdict: PASS (all 4 stages, no FAIL)
+=== S3 [r23_spn_mix4r_pba27b01_nw] rc=0 wall=239s
+=== S3b [r23_spn_mix4r_pba27b01_nw] started 2026-10-04T11:12:23Z
+--- S3b tail:
+[S3 r23_spn_mix4r_pba27b01_nw_strided] 64MB: no FAIL (rng_test rc=0)
+[S3 r23_spn_mix4r_pba27b01_nw_strided] stage 256MB (key=0x0 stride=0x9E3779B97F4A7C15) ...
+[S3 r23_spn_mix4r_pba27b01_nw_strided] 256MB: no FAIL (rng_test rc=0)
+[S3 r23_spn_mix4r_pba27b01_nw_strided] stage 1GB (key=0x0 stride=0x9E3779B97F4A7C15) ...
+[S3 r23_spn_mix4r_pba27b01_nw_strided] 1GB: no FAIL (rng_test rc=0)
+[S3 r23_spn_mix4r_pba27b01_nw_strided] verdict: PASS (all 4 stages, no FAIL)
+=== S3b [r23_spn_mix4r_pba27b01_nw] rc=0 wall=258s
+=== S4 [r23_spn_mix4r_pba27b01_nw] started 2026-10-04T11:16:41Z
+--- S4 tail:
+ Total CPU time:   00:00:31.85
+
+ All tests were passed
+
+
+
+=== S4 [r23_spn_mix4r_pba27b01_nw] rc=0 wall=128s
+BATTERY-PASS [r23_spn_mix4r_pba27b01_nw] all stages survived (S5 P&R+review is a manual gate)
+2026-10-04T11:18:49Z battery r23_spn_mix4r_pba27b01_nw rc=0
+2026-10-04T11:18:49Z xcheck 10k r23_spn_mix4r_pba27b01_nw
+XCHECK r23_spn_mix4r_pba27b01_nw: PASS 10000/10000 C==Python
+2026-10-04T11:19:50Z xcheck PASS r23_spn_mix4r_pba27b01_nw
+2026-10-04T11:19:50Z Q1 start r23_spn_mix4r_pba27b01_nw
+  bit 16/64 done (77s)
+  bit 32/64 done (143s)
+  bit 48/64 done (246s)
+  bit 64/64 done (355s)
+{
+ "candidate": "r23_spn_mix4r_pba27b01_nw",
+ "key": "0x123456789abcdef0",
+ "N": 262144,
+ "sac_maxdev": 0.003265380859375,
+ "sac_meandev": 0.0007847258821129799,
+ "sac_z5": 0,
+ "bic_maxcorr": 0.008529464133487801,
+ "bic_meancorr": 0.0015652242437109592,
+ "avalanche_mean": 31.99741643667221,
+ "wall_s": 355.5
+}
+2026-10-04T11:25:47Z Q1 done r23_spn_mix4r_pba27b01_nw: sac_z5=0 bic_maxcorr=0.008529 sac_maxdev=0.0033 avalanche_mean=32.00
+2026-10-04T11:25:47Z bijectivity start r23_spn_mix4r_pba27b01_nw
+cc1: fatal error: /tmp/bij_check.c: No such file or directory
+compilation terminated.
+2026-10-04T11:25:48Z build bij failed r23_spn_mix4r_pba27b01_nw
+2026-10-04T11:25:48Z ALL VALIDATION DONE
+2026-10-04 bijectivity (rerun after /tmp wipe; src=fast_battery/src/s5_bijcheck.c):
+r23_spn_mix4r_pba19b01_nw key=0x123456789abcdef0 n=2000000 collisions=0
+r23_spn_mix4r_pba19b01_nw key=0x0000000000000000 n=2000000 collisions=0
+r23_spn_mix4r_pba27b01_nw key=0x123456789abcdef0 n=2000000 collisions=0
+r23_spn_mix4r_pba27b01_nw key=0x0000000000000000 n=2000000 collisions=0

@@ -1,0 +1,51 @@
+measuring reference mul64 (fresh)...
+REF: cells=17893 area=46073 crit=50.8
+[simeck_f10] synth FAILED: analyze2.py FAILED for r4_simeck_f10 (not trusted):
+stdout=
+stderr=ERROR: width mismatch: assign R[10] = out[31:0];
+
+[simon_f10] synth FAILED: analyze2.py FAILED for r4_simon_f10 (not trusted):
+stdout=
+stderr=ERROR: width mismatch: assign R[10] = out[31:0];
+
+[simeck_f12] synth FAILED: analyze2.py FAILED for r4_simeck_f12 (not trusted):
+stdout=
+stderr=ERROR: width mismatch: assign R[12] = out[31:0];
+
+[dbland_f8] synth FAILED: analyze2.py FAILED for r4_dbland_f8 (not trusted):
+stdout=
+stderr=ERROR: width mismatch: assign R[8] = out[31:0];
+
+[xsm_c3] crit=50.0 r_ref=0.984 r_csd=1.193 cells=4937 -> delay OUT
+[xsm_c8] crit=42.0 r_ref=0.827 r_csd=1.002 cells=2520 -> delay PASS
+[xsm_sa] crit=42.4 r_ref=0.835 r_csd=1.012 cells=1179 -> delay PASS
+[fmix32h_a] crit=82.8 r_ref=1.630 r_csd=1.976 cells=12293 -> delay OUT
+[fmix32h_b] crit=87.8 r_ref=1.728 r_csd=2.095 cells=12431 -> delay OUT
+[gl5_f6] synth FAILED: analyze2.py FAILED for r4_gl5_f6 (not trusted):
+stdout=
+stderr=ERROR: width mismatch: assign R[6] = out[31:0];
+
+[gl5_f8] synth FAILED: analyze2.py FAILED for r4_gl5_f8 (not trusted):
+stdout=
+stderr=ERROR: width mismatch: assign R[8] = out[31:0];
+
+[skinny_xorlin] synth FAILED: analyze2.py FAILED for r4_skinny_xorlin (not trusted):
+stdout=
+stderr=ERROR: undriven net 'sbox16$func$/home/hatch/workspace/mix/exploration/round4/rtl/r4_xorlinv.v:43$5.$result[51]' into cell 1 (XNOR2)
+
+
+=== round-4 delay summary (bar 44.3) ===
+name             crit  x_mult   x_csd   cells gate
+simeck_f10         --      --      --      -- SYNTH-FAIL
+simon_f10          --      --      --      -- SYNTH-FAIL
+simeck_f12         --      --      --      -- SYNTH-FAIL
+dbland_f8          --      --      --      -- SYNTH-FAIL
+xsm_c3           50.0   0.984   1.193    4937 OUT
+xsm_c8           42.0   0.827   1.002    2520 PASS
+xsm_sa           42.4   0.835   1.012    1179 PASS
+fmix32h_a        82.8   1.630   1.976   12293 OUT
+fmix32h_b        87.8   1.728   2.095   12431 OUT
+gl5_f6             --      --      --      -- SYNTH-FAIL
+gl5_f8             --      --      --      -- SYNTH-FAIL
+skinny_xorlin      --      --      --      -- SYNTH-FAIL
+ref_crit=50.8 ref_cells=17893

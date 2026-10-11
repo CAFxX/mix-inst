@@ -1,0 +1,8 @@
+# key=123456789abcdef0 N=2^22 kill_repeats=10
+# null E[repeats/delta] = 2^22 * 2^-64 = 2^-42
+# delta                  max|z|  low8_chi2 full_repeats
+  0x0000000000000400      2.7      245.1            3
+  0x0000000004000000      2.7      216.7            0
+  0x0000000000000001      2.9      257.2            0
+  0x0000000000000002      9.7      374.6           29
+KILL delta=0x0000000000000002 repeats=29 > kill_repeats=10

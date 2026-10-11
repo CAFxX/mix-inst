@@ -1,0 +1,29 @@
+2026-10-04T08:10:45Z XCHECK_SKIP r23_spn_mix4r_hs_alt_nw
+2026-10-04T08:10:45Z XCHECK_SKIP r23_spn_mix4r_hs_aff_nw
+2026-10-04T08:10:45Z XCHECK_SKIP r23_spn_mix4r_hs_rh_nw
+2026-10-04T08:10:45Z XCHECK_SKIP r23_spn_mix4r_mols8a_nw
+2026-10-04T08:10:45Z XCHECK_SKIP r23_spn_mix4r_mols8b_nw
+2026-10-04T08:10:45Z XCHECK_SKIP r23_spn_mix4r_mols8c_nw
+2026-10-04T08:10:45Z XCHECK_SKIP r23_spn_mix4r_ks0_nw
+2026-10-04T08:10:46Z S0_DONE r23_spn_mix4r_hs_alt_nw 
+2026-10-04T08:10:46Z S0_DONE r23_spn_mix4r_hs_aff_nw 
+2026-10-04T08:10:46Z S0_DONE r23_spn_mix4r_hs_rh_nw 
+2026-10-04T08:10:46Z S0_DONE r23_spn_mix4r_mols8a_nw 
+2026-10-04T08:10:46Z S0_DONE r23_spn_mix4r_mols8b_nw 
+2026-10-04T08:10:46Z S0_DONE r23_spn_mix4r_mols8c_nw 
+2026-10-04T08:10:46Z S0_DONE r23_spn_mix4r_ks0_nw 
+2026-10-04T08:10:46Z S1_DONE r23_spn_mix4r_hs_alt_nw 
+2026-10-04T08:10:46Z S1_DONE r23_spn_mix4r_hs_aff_nw 
+2026-10-04T08:10:46Z S1_DONE r23_spn_mix4r_hs_rh_nw 
+2026-10-04T08:10:46Z S1_DONE r23_spn_mix4r_mols8a_nw 
+2026-10-04T08:10:46Z S1_DONE r23_spn_mix4r_mols8b_nw 
+2026-10-04T08:10:46Z S1_DONE r23_spn_mix4r_mols8c_nw 
+2026-10-04T08:10:47Z S1_DONE r23_spn_mix4r_ks0_nw 
+2026-10-04T08:10:47Z S2_SKIP r23_spn_mix4r_hs_alt_nw (no S1 CAL_PASS)
+2026-10-04T08:10:47Z S2_SKIP r23_spn_mix4r_hs_aff_nw (no S1 CAL_PASS)
+2026-10-04T08:10:47Z S2_SKIP r23_spn_mix4r_hs_rh_nw (no S1 CAL_PASS)
+2026-10-04T08:10:47Z S2_SKIP r23_spn_mix4r_mols8a_nw (no S1 CAL_PASS)
+2026-10-04T08:10:47Z S2_SKIP r23_spn_mix4r_mols8b_nw (no S1 CAL_PASS)
+2026-10-04T08:10:47Z S2_SKIP r23_spn_mix4r_mols8c_nw (no S1 CAL_PASS)
+2026-10-04T08:10:47Z S2_SKIP r23_spn_mix4r_ks0_nw (no S1 CAL_PASS)
+2026-10-04T08:10:47Z === p689 pipeline complete ===

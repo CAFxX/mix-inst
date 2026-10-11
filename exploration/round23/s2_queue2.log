@@ -1,0 +1,21 @@
+2026-10-04T09:06:21Z === S2 queue part 2: 6 candidates (hs_rh, mols8b, pbrnd14, sb1-3) ===
+2026-10-04T09:15:22Z [polite] 2 foreign heavies, sleeping 60s
+2026-10-04T09:15:22Z [polite] 2 foreign heavies, sleeping 60s
+2026-10-04T09:16:23Z [polite] 2 foreign heavies, sleeping 60s
+2026-10-04T09:16:23Z [polite] 2 foreign heavies, sleeping 60s
+2026-10-04T09:17:23Z [polite] 2 foreign heavies, sleeping 60s
+2026-10-04T09:17:23Z [polite] 2 foreign heavies, sleeping 60s
+2026-10-04T09:18:23Z S2_LAUNCH r23_spn_mix4r_hs_rh_nw
+2026-10-04T09:18:23Z S2_LAUNCH r23_spn_mix4r_mols8b_nw
+2026-10-04T09:20:20Z S2_DONE r23_spn_mix4r_mols8b_nw KILL delta=0x0000000000002000 repeats=54 > kill_repeats=10
+Terminated
+2026-10-04T09:31:24Z S2_DONE r23_spn_mix4r_hs_rh_nw 
+2026-10-04T09:31:25Z S2_LAUNCH r23_spn_mix4r_pbrnd14_nw
+2026-10-04T09:34:54Z S2_DONE r23_spn_mix4r_pbrnd14_nw KILL delta=0x0000000008000000 repeats=586 > kill_repeats=10
+2026-10-04T09:34:58Z S2_LAUNCH r23_spn_mix4r_sb2_nw
+2026-10-04T09:35:28Z S2_LAUNCH r23_spn_mix4r_sb1_nw
+2026-10-04T09:56:18Z S2_DONE r23_spn_mix4r_sb2_nw PASS max_repeats=0 max|z|=3.8 (all 115 deltas)
+2026-10-04T09:56:24Z S2_LAUNCH r23_spn_mix4r_sb3_nw
+2026-10-04T09:57:44Z S2_DONE r23_spn_mix4r_sb1_nw PASS max_repeats=0 max|z|=12.3 (all 115 deltas)
+2026-10-04T10:16:02Z S2_DONE r23_spn_mix4r_sb3_nw PASS max_repeats=0 max|z|=7.5 (all 115 deltas)
+2026-10-04T10:16:02Z === S2 queue part 2 complete ===

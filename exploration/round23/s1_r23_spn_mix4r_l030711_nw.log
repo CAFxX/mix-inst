@@ -1,0 +1,23 @@
+  [LIN] key=0x0 D=21/4096 logp=-0.54
+  [LIN] key=0xffffffffffffffff D=19/4096 logp=-0.29
+  [LIN] key=0xaaaaaaaaaaaaaaaa D=36/4096 logp=-5.86
+  [LIN] key=0x5555555555555555 D=39/4096 logp=-7.65
+  [LIN] key=0xdeadbeefdeadbeef D=16/4096 logp=-0.09
+  [LIN] key=0x9e3779b97f4a7c15 D=24/4096 logp=-1.10
+  [LIN] key=0x1234 D=28/4096 logp=-2.24
+  [LIN] key=0x123456789abcdef D=23/4096 logp=-0.88
+  [LIN] key=0xf0b52a9e7d8ba2b5 D=16/4096 logp=-0.09
+  [LIN] key=0x92988f142674743 D=20/4096 logp=-0.40
+  [DIFF] key=0x0 worst|z|=2.0 fisher_logp=-0.56 bonf_logp=-0.32
+  [DIFF] key=0xffffffffffffffff worst|z|=2.1 fisher_logp=-0.78 bonf_logp=-0.50
+  [DIFF] key=0xaaaaaaaaaaaaaaaa worst|z|=1.9 fisher_logp=-1.80 bonf_logp=0.07
+  [DIFF] key=0x5555555555555555 worst|z|=1.8 fisher_logp=-0.50 bonf_logp=0.36
+  [DIFF] key=0xdeadbeefdeadbeef worst|z|=1.5 fisher_logp=-0.12 bonf_logp=0.89
+  [DIFF] key=0x9e3779b97f4a7c15 worst|z|=2.2 fisher_logp=-1.64 bonf_logp=-0.70
+  [DIFF] key=0x1234 worst|z|=1.8 fisher_logp=-0.84 bonf_logp=0.28
+  [DIFF] key=0x123456789abcdef worst|z|=1.8 fisher_logp=-0.20 bonf_logp=0.22
+  [DIFF] key=0xf0b52a9e7d8ba2b5 worst|z|=1.8 fisher_logp=-0.11 bonf_logp=0.29
+  [DIFF] key=0x92988f142674743 worst|z|=1.9 fisher_logp=-2.19 bonf_logp=0.00
+  LIN: FLAG (rej=1)  DIFF: PASS (rej=0)
+[S1 r23_spn_mix4r_l030711_nw] LIN/DIFF 45s: LIN FLAG DIFF PASS; SKIPPED (LIN/DIFF kill)
+[S1 r23_spn_mix4r_l030711_nw] verdict: FLAG

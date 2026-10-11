@@ -652,6 +652,18 @@ def main():
             log(f"  NO-PROMOTE {name}: sweep S1 verdict={s1v}")
             rec["promote_skipped"] = f"S1 {s1v}"
             win = False
+        # 2026-10-11: N8 fm-cure axis is Q1-doomed on proof-backed evidence
+        # (LEADS_LEDGER 14:05 entry): the fm cure acts inside the cascade;
+        # the final chi is identical across all N8 candidates, and Q1's
+        # sac_z5/sac_maxdev are determined by that unmixed final chi —
+        # 6/6 promotions (fm05/07/13/15/19/24) die with bit-identical Q1
+        # JSONs (sac_z5=12, bic=0.01857811987792497). Keep the cheap S0
+        # probes (cost data informs other axes); skip the Q1+battery burn.
+        if win and nb == "N8" and name.startswith("rtw_ab48_fm"):
+            log(f"  NO-PROMOTE {name}: N8 fm axis Q1-doomed "
+                f"(cure-invariant chassis, sac_z5=12)")
+            rec["promote_skipped"] = "N8 fm axis Q1-doomed (cure-invariant chassis)"
+            win = False
         if win and not battery_done(name):
             log(f"  PROMOTE {name} -> full battery")
             rec["xcheck10k"] = xcheck(name, 10000)[0]

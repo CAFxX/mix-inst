@@ -1,0 +1,57 @@
+RNG_test using PractRand version 0.96
+RNG = RNG_stdin, seed = unknown
+test set = core, folding = standard(unknown format)
+
+rng=RNG_stdin, seed=unknown
+length= 8 megabytes (2^23 bytes), time= 2.7 seconds
+  Test Name                         Raw       Processed     Evaluation       
+  BCFN(2+0,13-5U)                   R>+99999  p = 0           FAIL !!!!!!!!  
+  BCFN(2+1,13-5U)                   R>+99999  p = 0           FAIL !!!!!!!!  
+  BCFN(2+2,13-6U)                   R>+99999  p = 0           FAIL !!!!!!!!  
+  BCFN(2+3,13-6U)                   R>+99999  p = 0           FAIL !!!!!!!!  
+  BCFN(2+4,13-6U)                   R>+99999  p = 0           FAIL !!!!!!!!  
+  BCFN(2+5,13-7U)                   R=+71158  p = 0           FAIL !!!!!!!!  
+  BCFN(2+6,13-8U)                   R=+41820  p = 0           FAIL !!!!!!!!  
+  BCFN(2+7,13-8U)                   R=+20745  p =  1e-5370    FAIL !!!!!!!!  
+  BCFN(2+8,13-9U)                   R=+11858  p =  7e-2671    FAIL !!!!!!!!  
+  BCFN(2+9,13-9U)                   R= +5896  p =  1e-1328    FAIL !!!!!!!!  
+  DC6-9x1Bytes-1                    R>+99999  p = 0           FAIL !!!!!!!!  
+  Gap-16:A                          R>+99999  p = 0           FAIL !!!!!!!!  
+  Gap-16:B                          R>+99999  p = 0           FAIL !!!!!!!!  
+  Gap-16:C                          R= +6728  p~=1-3e-2026    FAIL !!!!!!!!  
+  FPF/16:(0,14-2)                   R>+99999  p = 0           FAIL !!!!!!!!  
+  FPF/16:(1,14-2)                   R=+91482  p = 0           FAIL !!!!!!!!  
+  FPF/16:(2,14-3)                   R=+64823  p = 0           FAIL !!!!!!!!  
+  FPF/16:(3,14-4)                   R=+45713  p = 0           FAIL !!!!!!!!  
+  FPF/16:(4,14-5)                   R=+32275  p = 0           FAIL !!!!!!!!  
+  FPF/16:(5,14-5)                   R=+20655  p = 0           FAIL !!!!!!!!  
+  FPF/16:(6,14-6)                   R=+14550  p = 0           FAIL !!!!!!!!  
+  FPF/16:(7,14-7)                   R=+10331  p =  2e-8222    FAIL !!!!!!!!  
+  FPF/16:(8,14-8)                   R= +7357  p =  8e-5294    FAIL !!!!!!!!  
+  FPF/16:(9,14-8)                   R= +4300  p =  1e-3094    FAIL !!!!!!!!  
+  FPF/16:all                        R>+99999  p = 0           FAIL !!!!!!!!  
+  FPF/16:cross                      R= +6343  p =  1e-5141    FAIL !!!!!!!!  
+  BDayS2(4,24)[36]                  R= +2849  p~= 0           FAIL !!!!!!!!  
+  BRank(12):score:512(12)           R= +5538  p~=  1          FAIL !!!!!!!!  
+  mod3n(5):(0,9-3)                  R= +1742  p =  3.0e-905   FAIL !!!!!!!   
+  [Low1/8]BCFN(2+0,13-7U)           R=+623.1  p =  5.1e-186   FAIL !!!!!!    
+  [Low1/8]BCFN(2+1,13-7U)           R=+617.8  p =  4.4e-188   FAIL !!!!!!    
+  [Low1/8]BCFN(2+2,13-8U)           R=+736.0  p =  2.2e-191   FAIL !!!!!!    
+  [Low1/8]BCFN(2+3,13-8U)           R=+734.3  p =  5.8e-191   FAIL !!!!!!    
+  [Low1/8]BCFN(2+4,13-8U)           R=+721.1  p =  1.5e-187   FAIL !!!!!!    
+  [Low1/8]BCFN(2+5,13-9U)           R=+802.8  p =  7.2e-182   FAIL !!!!!!    
+  [Low1/8]BCFN(2+6,13-9U)           R=+781.4  p =  4.6e-177   FAIL !!!!!!    
+  [Low1/8]DC6-9x1Bytes-1            R= +64.9  p =  1.2e-33    FAIL !!!       
+  [Low1/8]FPF/16:(0,14-4)           R= +23.5  p =  3.7e-19    FAIL !         
+  [Low1/8]FPF/16:(1,14-5)           R= +15.6  p =  7.8e-13   VERY SUSPICIOUS 
+  [Low1/8]FPF/16:all                R= +31.8  p =  1.0e-26    FAIL !!        
+  [Low1/8]FPF/16:cross              R= +40.8  p =  9.6e-32    FAIL !!!       
+  [Low4/32]BCFN(2+0,13-7U)          R= +46.8  p =  1.3e-14    FAIL           
+  [Low4/32]BCFN(2+1,13-7U)          R= +30.4  p =  7.5e-10   VERY SUSPICIOUS 
+  [Low4/32]BCFN(2+2,13-8U)          R= +36.4  p =  2.7e-10   VERY SUSPICIOUS 
+  [Low4/32]BCFN(2+3,13-8U)          R= +26.4  p =  1.0e-7   very suspicious  
+  [Low4/32]BCFN(2+4,13-8U)          R= +33.7  p =  1.3e-9   very suspicious  
+  [Low4/32]BCFN(2+5,13-9U)          R= +27.4  p =  2.7e-7   suspicious       
+  [Low4/32]BCFN(2+6,13-9U)          R= +40.8  p =  2.7e-10   VERY SUSPICIOUS 
+  ...and 86 test result(s) without anomalies
+

@@ -1,0 +1,41 @@
+RNG_test using PractRand version 0.96
+RNG = RNG_stdin32, seed = unknown
+test set = core, folding = standard (32 bit)
+
+rng=RNG_stdin32, seed=unknown
+length= 8 megabytes (2^23 bytes), time= 2.4 seconds
+  Test Name                         Raw       Processed     Evaluation       
+  BCFN(2+0,13-5U)                   R>+99999  p = 0           FAIL !!!!!!!!  
+  BCFN(2+1,13-5U)                   R>+99999  p = 0           FAIL !!!!!!!!  
+  BCFN(2+2,13-6U)                   R>+99999  p = 0           FAIL !!!!!!!!  
+  BCFN(2+3,13-6U)                   R>+99999  p = 0           FAIL !!!!!!!!  
+  BCFN(2+4,13-6U)                   R=+87418  p = 0           FAIL !!!!!!!!  
+  BCFN(2+5,13-7U)                   R=+66404  p = 0           FAIL !!!!!!!!  
+  BCFN(2+6,13-8U)                   R=+41613  p = 0           FAIL !!!!!!!!  
+  BCFN(2+7,13-8U)                   R=+20745  p =  1e-5370    FAIL !!!!!!!!  
+  BCFN(2+8,13-9U)                   R=+11858  p =  7e-2671    FAIL !!!!!!!!  
+  BCFN(2+9,13-9U)                   R= +5896  p =  1e-1328    FAIL !!!!!!!!  
+  DC6-9x1Bytes-1                    R=+14741  p =  6e-7981    FAIL !!!!!!!!  
+  Gap-16:A                          R= +8691  p =  1e-7474    FAIL !!!!!!!!  
+  Gap-16:B                          R=+21983  p = 0           FAIL !!!!!!!!  
+  Gap-16:C                          R=+685.1  p~=1-2.8e-207   FAIL !!!!!!    
+  FPF/16:(0,14-2)                   R=+306.5  p =  7.3e-268   FAIL !!!!!!    
+  FPF/16:(1,14-2)                   R=+365.1  p =  4.2e-319   FAIL !!!!!!    
+  FPF/16:(2,14-3)                   R=+253.8  p =  3.2e-222   FAIL !!!!!!    
+  FPF/16:(3,14-4)                   R=+185.9  p =  7.7e-152   FAIL !!!!!     
+  FPF/16:(4,14-5)                   R=+132.3  p =  1.6e-109   FAIL !!!!!     
+  FPF/16:(5,14-5)                   R=+857.9  p =  4.7e-711   FAIL !!!!!!!   
+  FPF/16:(6,14-6)                   R=+588.7  p =  1.5e-450   FAIL !!!!!!!   
+  FPF/16:(7,14-7)                   R=+425.8  p =  1.1e-338   FAIL !!!!!!!   
+  FPF/16:(8,14-8)                   R=+342.2  p =  2.5e-246   FAIL !!!!!!    
+  FPF/16:(9,14-8)                   R=+341.7  p =  5.9e-246   FAIL !!!!!!    
+  FPF/16:(10,14-9)                  R=+234.9  p =  3.4e-148   FAIL !!!!!     
+  FPF/16:(11,14-10)                 R=+173.4  p =  7.9e-93    FAIL !!!!!     
+  FPF/16:(12,14-11)                 R=+146.9  p =  7.0e-65    FAIL !!!!      
+  FPF/16:(13,14-11)                 R= +78.3  p =  5.8e-35    FAIL !!!       
+  FPF/16:all                        R=+924.7  p =  5.7e-836   FAIL !!!!!!!   
+  FPF/16:cross                      R= +39.4  p =  2.6e-32    FAIL !!!       
+  BDayS2(4,24)[36]                  R=+122.7  p~=  2e-1025    FAIL !!!!!!!!  
+  BRank(12):score:512(12)           R=+530.6  p~=  1          FAIL !!!!!!!!  
+  ...and 75 test result(s) without anomalies
+

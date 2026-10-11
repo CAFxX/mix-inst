@@ -1,0 +1,12 @@
+XCHECK_DONE r17_feist5_alt_s1chi_nw rc=0 XCHECK r17_feist5_alt_s1chi_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r17_feist5_parsplit_nw rc=0 XCHECK r17_feist5_parsplit_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r17_feist5_alt_chifirst_nw rc=0 XCHECK r17_feist5_alt_chifirst_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r17_feist6_alt_pshalf_nw rc=0 XCHECK r17_feist6_alt_pshalf_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r17_feist6_parmix_nw rc=0 XCHECK r17_feist6_parmix_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r17_feist6_dbs1split_nw rc=0 XCHECK r17_feist6_dbs1split_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r17_feist6_parsplit_chioff01_nw rc=0 XCHECK r17_feist6_parsplit_chioff01_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r17_feist4_parsplit_nw rc=0 XCHECK r17_feist4_parsplit_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r17_feist6_premix_nw rc=0 XCHECK r17_feist6_premix_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r17_feist5_parsplit_713_nw rc=0 XCHECK r17_feist5_parsplit_713_nw: PASS 10000/10000 C==Python
+ALL_XCHECK_DONE
+ALL_CHECKS_DONE

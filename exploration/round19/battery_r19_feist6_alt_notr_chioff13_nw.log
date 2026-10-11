@@ -1,0 +1,37 @@
+=== S2 [r19_feist6_alt_notr_chioff13_nw] started 2026-10-03T13:56:03Z
+--- S2 tail:
+  0xe000000000000000      2.5      272.2            0
+  0x000000000000000f      1.9      263.9            0
+  0x00000000f0000000      3.0      239.7            0
+  0x0000000f00000000      2.5      281.1            0
+  0xf000000000000000      2.5      258.6            0
+PASS max_repeats=0 max|z|=11.2 (all 115 deltas)
+=== S2 [r19_feist6_alt_notr_chioff13_nw] rc=0 wall=519s
+=== S3 [r19_feist6_alt_notr_chioff13_nw] started 2026-10-03T14:04:41Z
+--- S3 tail:
+[S3 r19_feist6_alt_notr_chioff13_nw] 64MB: no FAIL (rng_test rc=0)
+[S3 r19_feist6_alt_notr_chioff13_nw] stage 256MB (key=0x123456789abcdef0 stride=1) ...
+[S3 r19_feist6_alt_notr_chioff13_nw] 256MB: no FAIL (rng_test rc=0)
+[S3 r19_feist6_alt_notr_chioff13_nw] stage 1GB (key=0x123456789abcdef0 stride=1) ...
+[S3 r19_feist6_alt_notr_chioff13_nw] 1GB: no FAIL (rng_test rc=0)
+[S3 r19_feist6_alt_notr_chioff13_nw] verdict: PASS (all 4 stages, no FAIL)
+=== S3 [r19_feist6_alt_notr_chioff13_nw] rc=0 wall=124s
+=== S3b [r19_feist6_alt_notr_chioff13_nw] started 2026-10-03T14:06:45Z
+--- S3b tail:
+[S3 r19_feist6_alt_notr_chioff13_nw_strided] 64MB: no FAIL (rng_test rc=0)
+[S3 r19_feist6_alt_notr_chioff13_nw_strided] stage 256MB (key=0x0 stride=0x9E3779B97F4A7C15) ...
+[S3 r19_feist6_alt_notr_chioff13_nw_strided] 256MB: no FAIL (rng_test rc=0)
+[S3 r19_feist6_alt_notr_chioff13_nw_strided] stage 1GB (key=0x0 stride=0x9E3779B97F4A7C15) ...
+[S3 r19_feist6_alt_notr_chioff13_nw_strided] 1GB: no FAIL (rng_test rc=0)
+[S3 r19_feist6_alt_notr_chioff13_nw_strided] verdict: PASS (all 4 stages, no FAIL)
+=== S3b [r19_feist6_alt_notr_chioff13_nw] rc=0 wall=98s
+=== S4 [r19_feist6_alt_notr_chioff13_nw] started 2026-10-03T14:08:23Z
+--- S4 tail:
+ Total CPU time:   00:00:32.18
+
+ All tests were passed
+
+
+
+=== S4 [r19_feist6_alt_notr_chioff13_nw] rc=0 wall=45s
+BATTERY-PASS [r19_feist6_alt_notr_chioff13_nw] all stages survived (S5 P&R+review is a manual gate)

@@ -1,0 +1,25 @@
+/home/hatch/workspace/mix/exploration/round17/models/r17.py:112: RuntimeWarning: overflow encountered in scalar multiply
+  return (_rotl64_np(k, r) ^ (np.uint64(i + 1) * GOLDEN64)) & MASK32
+  [LIN] key=0x0 D=4096/4096 logp=-inf
+  [LIN] key=0xffffffffffffffff D=4096/4096 logp=-inf
+  [LIN] key=0xaaaaaaaaaaaaaaaa D=4096/4096 logp=-inf
+  [LIN] key=0x5555555555555555 D=4096/4096 logp=-inf
+  [LIN] key=0xdeadbeefdeadbeef D=4096/4096 logp=-inf
+  [LIN] key=0x9e3779b97f4a7c15 D=4096/4096 logp=-inf
+  [LIN] key=0x1234 D=4096/4096 logp=-inf
+  [LIN] key=0x123456789abcdef D=4096/4096 logp=-inf
+  [LIN] key=0xf0b52a9e7d8ba2b5 D=4096/4096 logp=-inf
+  [LIN] key=0x92988f142674743 D=4096/4096 logp=-inf
+  [DIFF] key=0x0 worst|z|=272775.1 fisher_logp=-inf bonf_logp=-37203126771.26
+  [DIFF] key=0xffffffffffffffff worst|z|=272775.1 fisher_logp=-inf bonf_logp=-37203126771.26
+  [DIFF] key=0xaaaaaaaaaaaaaaaa worst|z|=272775.1 fisher_logp=-inf bonf_logp=-37203126771.26
+  [DIFF] key=0x5555555555555555 worst|z|=272775.1 fisher_logp=-inf bonf_logp=-37203126771.26
+  [DIFF] key=0xdeadbeefdeadbeef worst|z|=272775.1 fisher_logp=-inf bonf_logp=-37203126771.26
+  [DIFF] key=0x9e3779b97f4a7c15 worst|z|=272775.1 fisher_logp=-inf bonf_logp=-37203126771.26
+  [DIFF] key=0x1234 worst|z|=272775.1 fisher_logp=-inf bonf_logp=-37203126771.26
+  [DIFF] key=0x123456789abcdef worst|z|=272775.1 fisher_logp=-inf bonf_logp=-37203126771.26
+  [DIFF] key=0xf0b52a9e7d8ba2b5 worst|z|=272775.1 fisher_logp=-inf bonf_logp=-37203126771.26
+  [DIFF] key=0x92988f142674743 worst|z|=272775.1 fisher_logp=-inf bonf_logp=-37203126771.26
+  LIN: FLAG (rej=10)  DIFF: FLAG (rej=10)
+[S1 r17_feist6_premix_nw] LIN/DIFF 44s: LIN FLAG DIFF FLAG; SKIPPED (LIN/DIFF kill)
+[S1 r17_feist6_premix_nw] verdict: FLAG

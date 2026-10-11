@@ -1,0 +1,117 @@
+XCHECK_DONE r19_feist6_alt_notr_fm03_nw rc=0 XCHECK r19_feist6_alt_notr_fm03_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r19_feist6_alt_notr_fm07_nw rc=0 XCHECK r19_feist6_alt_notr_fm07_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r19_feist6_alt_notr_fm11_nw rc=0 XCHECK r19_feist6_alt_notr_fm11_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r19_feist6_alt_notr_fm311_nw rc=0 XCHECK r19_feist6_alt_notr_fm311_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r19_feist6_alt_notr5_nw rc=0 XCHECK r19_feist6_alt_notr5_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r19_feist6_ps_notr_nw rc=0 XCHECK r19_feist6_ps_notr_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r19_feist6_alt_notr_chioff13_nw rc=0 XCHECK r19_feist6_alt_notr_chioff13_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r19_feist6_r9_notr_nw rc=0 XCHECK r19_feist6_r9_notr_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r19_feist6_alt_notr_517_nw rc=0 XCHECK r19_feist6_alt_notr_517_nw: PASS 10000/10000 C==Python
+ALL_XCHECK_DONE
+RTLCHECK_DONE r19_feist6_alt_notr_fm03_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r19_feist6_alt_notr_fm07_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r19_feist6_alt_notr_fm311_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r19_feist6_alt_notr_fm11_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r19_feist6_ps_notr_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r19_feist6_alt_notr5_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r19_feist6_alt_notr_chioff13_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r19_feist6_r9_notr_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r19_feist6_alt_notr_517_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+ALL_RTLCHECK_DONE
+S0_DONE r19_feist6_alt_notr_fm07_nw rc=0 RESULT name=r19_feist6_alt_notr_fm07_nw cells=5053 area=14320 crit=38.8 delay_ratio=0.375 area_ratio=0.405 ref_crit=103.
+S0_DONE r19_feist6_alt_notr_fm03_nw rc=0 RESULT name=r19_feist6_alt_notr_fm03_nw cells=4572 area=12943 crit=39.8 delay_ratio=0.385 area_ratio=0.366 ref_crit=103.
+S0_DONE r19_feist6_alt_notr_fm311_nw rc=0 RESULT name=r19_feist6_alt_notr_fm311_nw cells=4467 area=12769 crit=39.5 delay_ratio=0.382 area_ratio=0.361 ref_crit=103
+S0_DONE r19_feist6_alt_notr_fm11_nw rc=0 RESULT name=r19_feist6_alt_notr_fm11_nw cells=4877 area=13748 crit=39.3 delay_ratio=0.380 area_ratio=0.389 ref_crit=103.
+S0_DONE r19_feist6_alt_notr5_nw rc=0 RESULT name=r19_feist6_alt_notr5_nw cells=4028 area=11580 crit=34.9 delay_ratio=0.337 area_ratio=0.328 ref_crit=103.5 re
+S0_DONE r19_feist6_ps_notr_nw rc=0 RESULT name=r19_feist6_ps_notr_nw cells=3905 area=10994 crit=39.5 delay_ratio=0.382 area_ratio=0.311 ref_crit=103.5 ref_
+S0_DONE r19_feist6_r9_notr_nw rc=0 RESULT name=r19_feist6_r9_notr_nw cells=3960 area=11039 crit=39.9 delay_ratio=0.386 area_ratio=0.313 ref_crit=103.5 ref_
+S0_DONE r19_feist6_alt_notr_chioff13_nw rc=0 RESULT name=r19_feist6_alt_notr_chioff13_nw cells=4149 area=11820 crit=37.4 delay_ratio=0.361 area_ratio=0.335 ref_crit=
+S0_DONE r19_feist6_alt_notr_517_nw rc=0 RESULT name=r19_feist6_alt_notr_517_nw cells=4320 area=12285 crit=38.4 delay_ratio=0.371 area_ratio=0.348 ref_crit=103.5
+ALL_S0_DONE
+S1_DONE r19_feist6_alt_notr_fm07_nw rc=0 [S1 r19_feist6_alt_notr_fm07_nw] verdict: CAL_PASS
+S1_DONE r19_feist6_alt_notr_fm03_nw rc=0 [S1 r19_feist6_alt_notr_fm03_nw] verdict: CAL_PASS
+S1_DONE r19_feist6_alt_notr_fm11_nw rc=0 [S1 r19_feist6_alt_notr_fm11_nw] verdict: CAL_PASS
+S1_DONE r19_feist6_alt_notr_fm311_nw rc=0 [S1 r19_feist6_alt_notr_fm311_nw] verdict: CAL_PASS
+S1_DONE r19_feist6_alt_notr5_nw rc=0 [S1 r19_feist6_alt_notr5_nw] verdict: CAL_PASS
+S1_DONE r19_feist6_ps_notr_nw rc=0 [S1 r19_feist6_ps_notr_nw] verdict: CAL_PASS
+S1_DONE r19_feist6_r9_notr_nw rc=0 [S1 r19_feist6_r9_notr_nw] verdict: CAL_PASS
+S1_DONE r19_feist6_alt_notr_chioff13_nw rc=0 [S1 r19_feist6_alt_notr_chioff13_nw] verdict: CAL_PASS
+S1_DONE r19_feist6_alt_notr_517_nw rc=0 [S1 r19_feist6_alt_notr_517_nw] verdict: CAL_PASS
+ALL_S1_DONE
+BATTERY_STAGES_1_DONE
+S2_DONE r19_feist6_alt_notr_fm03_nw rc=0 # delta                  max|z|  low8_chi2 full_repeats
+PASS max_repeats=0 max|z|=10.7 (all 115 deltas)
+S2_DONE r19_feist6_alt_notr_fm07_nw rc=0 # delta                  max|z|  low8_chi2 full_repeats
+PASS max_repeats=0 max|z|=10.7 (all 115 deltas)
+S2_DONE r19_feist6_alt_notr_fm11_nw rc=0 # delta                  max|z|  low8_chi2 full_repeats
+PASS max_repeats=0 max|z|=10.7 (all 115 deltas)
+S2_DONE r19_feist6_alt_notr_fm311_nw rc=0 # delta                  max|z|  low8_chi2 full_repeats
+PASS max_repeats=0 max|z|=10.7 (all 115 deltas)
+S2_DONE r19_feist6_alt_notr5_nw rc=0 # delta                  max|z|  low8_chi2 full_repeats
+PASS max_repeats=1 max|z|=477.4 (all 115 deltas)
+S2_DONE r19_feist6_ps_notr_nw rc=0 # delta                  max|z|  low8_chi2 full_repeats
+PASS max_repeats=0 max|z|=18.6 (all 115 deltas)
+S2_DONE r19_feist6_r9_notr_nw rc=0 # delta                  max|z|  low8_chi2 full_repeats
+PASS max_repeats=0 max|z|=16.5 (all 115 deltas)
+S2_DONE r19_feist6_alt_notr_chioff13_nw rc=0 # delta                  max|z|  low8_chi2 full_repeats
+PASS max_repeats=0 max|z|=11.2 (all 115 deltas)
+S2_DONE r19_feist6_alt_notr_517_nw rc=0 # delta                  max|z|  low8_chi2 full_repeats
+PASS max_repeats=0 max|z|=4.7 (all 115 deltas)
+ALL_S2_DONE
+Q1_DONE r19_feist6_alt_notr_fm07_nw rc=0 sac_z5=0 bic_maxcorr=0.00805 sac_maxdev=0.00446
+Q1_DONE r19_feist6_alt_notr_fm03_nw rc=0 sac_z5=0 bic_maxcorr=0.00844 sac_maxdev=0.00446
+Q1_DONE r19_feist6_alt_notr_fm11_nw rc=0 sac_z5=0 bic_maxcorr=0.00976 sac_maxdev=0.00446
+Q1_DONE r19_feist6_alt_notr_fm311_nw rc=0 sac_z5=0 bic_maxcorr=0.00882 sac_maxdev=0.00446
+Q1_DONE r19_feist6_alt_notr_chioff13_nw rc=0 sac_z5=0 bic_maxcorr=0.14217 sac_maxdev=0.00376
+Q1_DONE r13_feist6_alt_s1chi_nw rc=0 sac_z5=0 bic_maxcorr=0.00800 sac_maxdev=0.00446
+ALL_Q1_DONE
+XCHECK_SKIP r19_feist6_alt_notr_fm03_nw
+XCHECK_SKIP r19_feist6_alt_notr_fm07_nw
+XCHECK_SKIP r19_feist6_alt_notr_fm11_nw
+XCHECK_SKIP r19_feist6_alt_notr_fm311_nw
+XCHECK_SKIP r19_feist6_alt_notr5_nw
+XCHECK_SKIP r19_feist6_ps_notr_nw
+XCHECK_SKIP r19_feist6_r9_notr_nw
+XCHECK_SKIP r19_feist6_alt_notr_chioff13_nw
+XCHECK_SKIP r19_feist6_alt_notr_517_nw
+XCHECK_DONE r19_feist6_alt_notr_chioff13_fm03_nw rc=0 XCHECK r19_feist6_alt_notr_chioff13_fm03_nw: PASS 10000/10000 C==Python
+ALL_XCHECK_DONE
+RTLCHECK_SKIP r19_feist6_alt_notr_fm03_nw
+RTLCHECK_SKIP r19_feist6_alt_notr_fm07_nw
+RTLCHECK_SKIP r19_feist6_alt_notr_fm11_nw
+RTLCHECK_SKIP r19_feist6_alt_notr_fm311_nw
+RTLCHECK_SKIP r19_feist6_alt_notr5_nw
+RTLCHECK_SKIP r19_feist6_ps_notr_nw
+RTLCHECK_SKIP r19_feist6_r9_notr_nw
+RTLCHECK_SKIP r19_feist6_alt_notr_chioff13_nw
+RTLCHECK_SKIP r19_feist6_alt_notr_517_nw
+RTLCHECK_DONE r19_feist6_alt_notr_chioff13_fm03_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+ALL_RTLCHECK_DONE
+S0_SKIP r19_feist6_alt_notr_fm03_nw
+S0_SKIP r19_feist6_alt_notr_fm07_nw
+S0_SKIP r19_feist6_alt_notr_fm11_nw
+S0_SKIP r19_feist6_alt_notr_fm311_nw
+S0_SKIP r19_feist6_alt_notr5_nw
+S0_SKIP r19_feist6_ps_notr_nw
+S0_SKIP r19_feist6_r9_notr_nw
+S0_SKIP r19_feist6_alt_notr_chioff13_nw
+S0_SKIP r19_feist6_alt_notr_517_nw
+S0_DONE r19_feist6_alt_notr_chioff13_fm03_nw rc=0 RESULT name=r19_feist6_alt_notr_chioff13_fm03_nw cells=4848 area=13891 crit=39.5 delay_ratio=0.382 area_ratio=0.393 ref_
+ALL_S0_DONE
+S1_SKIP r19_feist6_alt_notr_fm03_nw
+S1_SKIP r19_feist6_alt_notr_fm07_nw
+S1_SKIP r19_feist6_alt_notr_fm11_nw
+S1_SKIP r19_feist6_alt_notr_fm311_nw
+S1_SKIP r19_feist6_alt_notr5_nw
+S1_SKIP r19_feist6_ps_notr_nw
+S1_SKIP r19_feist6_r9_notr_nw
+S1_SKIP r19_feist6_alt_notr_chioff13_nw
+S1_SKIP r19_feist6_alt_notr_517_nw
+S1_DONE r19_feist6_alt_notr_chioff13_fm03_nw rc=0 [S1 r19_feist6_alt_notr_chioff13_fm03_nw] verdict: CAL_PASS
+ALL_S1_DONE
+BATTERY_STAGES_1_DONE
+S2_DONE r19_feist6_alt_notr_chioff13_fm03_nw rc=0 # delta                  max|z|  low8_chi2 full_repeats
+PASS max_repeats=0 max|z|=11.2 (all 115 deltas)
+ALL_S2_DONE
+Q1_DONE r19_feist6_alt_notr_chioff13_fm03_nw rc=0 sac_z5=0 bic_maxcorr=0.00860 sac_maxdev=0.00359
+ALL_Q1_DONE

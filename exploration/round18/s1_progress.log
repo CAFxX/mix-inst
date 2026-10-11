@@ -1,0 +1,10 @@
+S1_DONE r18_feist6_ps_chioff13_nw rc=0 [S1 r18_feist6_ps_chioff13_nw] verdict: CAL_PASS
+S1_DONE r18_feist6_ps_chioff02_nw rc=2 
+S1_DONE r18_feist6_alt_notr_nw rc=0 [S1 r18_feist6_alt_notr_nw] verdict: CAL_PASS
+S1_DONE r18_feist6_ps_s18_chi24_nw rc=0 [S1 r18_feist6_ps_s18_chi24_nw] verdict: CAL_PASS
+S1_DONE r18_feist6_alt_asym_nw rc=2 
+S1_DONE r18_feist6_alt_palk_nw rc=0 [S1 r18_feist6_alt_palk_nw] verdict: CAL_PASS
+S1_DONE r18_feist6_s1xorchi_nw rc=2 
+S1_DONE r18_feist6_ps_517_nw rc=0 [S1 r18_feist6_ps_517_nw] verdict: CAL_PASS
+S1_DONE r18_feist6_alt_chioff13_nw rc=0 [S1 r18_feist6_alt_chioff13_nw] verdict: CAL_PASS
+ALL_S1_DONE

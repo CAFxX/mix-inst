@@ -1,0 +1,10 @@
+XCHECK_DONE r18_feist6_ps_chioff13_nw rc=0 XCHECK r18_feist6_ps_chioff13_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r18_feist6_ps_chioff02_nw rc=0 XCHECK r18_feist6_ps_chioff02_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r18_feist6_alt_notr_nw rc=0 XCHECK r18_feist6_alt_notr_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r18_feist6_ps_s18_chi24_nw rc=0 XCHECK r18_feist6_ps_s18_chi24_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r18_feist6_alt_asym_nw rc=0 XCHECK r18_feist6_alt_asym_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r18_feist6_alt_palk_nw rc=0 XCHECK r18_feist6_alt_palk_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r18_feist6_ps_517_nw rc=0 XCHECK r18_feist6_ps_517_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r18_feist6_s1xorchi_nw rc=0 XCHECK r18_feist6_s1xorchi_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r18_feist6_alt_chioff13_nw rc=0 XCHECK r18_feist6_alt_chioff13_nw: PASS 10000/10000 C==Python
+ALL_XCHECK_DONE

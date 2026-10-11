@@ -1,0 +1,10 @@
+RTLCHECK_DONE r18_feist6_ps_chioff13_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r18_feist6_ps_chioff02_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r18_feist6_ps_s18_chi24_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r18_feist6_alt_notr_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r18_feist6_alt_palk_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r18_feist6_alt_asym_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r18_feist6_ps_517_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r18_feist6_s1xorchi_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r18_feist6_alt_chioff13_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+ALL_RTLCHECK_DONE

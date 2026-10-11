@@ -1,0 +1,5 @@
+S2_DONE r18_feist6_alt_notr_nw rc=0 # delta                  max|z|  low8_chi2 full_repeats
+PASS max_repeats=0 max|z|=10.7 (all 115 deltas)
+S2_DONE r18_feist6_alt_palk_nw rc=0 # delta                  max|z|  low8_chi2 full_repeats
+PASS max_repeats=0 max|z|=12.4 (all 115 deltas)
+ALL_S2_DONE

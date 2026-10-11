@@ -1,0 +1,3 @@
+/home/hatch/workspace/mix/exploration/round21/models/r21.py:106: RuntimeWarning: overflow encountered in scalar multiply
+  return (_rotl64_np(k, r) ^ (np.uint64(i + 1) * GOLDEN64)) & MASK32
+XCHECK r21_feist6_alt_notr_chioff21_nw: PASS 10000/10000 C==Python

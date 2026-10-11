@@ -1,0 +1,4 @@
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT r22_em_chichi4_nw: cells=5750 area=17155 crit=23.2
+RESULT name=r22_em_chichi4_nw cells=5750 area=17155 crit=23.2 delay_ratio=0.224 area_ratio=0.486 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)

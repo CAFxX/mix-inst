@@ -1,0 +1,4 @@
+agentwork-launch: tag=track8/wave35-C schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+[C] TRY 10: marg-KILL (0 hits, 200s)
+[C] TRY 20: marg-KILL (0 hits, 476s)
+[C] TRY 30: marg-KILL (0 hits, 1098s)

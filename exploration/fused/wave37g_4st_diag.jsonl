@@ -1,0 +1,7 @@
+{"try": 1, "sched": [[15, 46, 53, 38], [58, 33, 13, 55], [34, 17, 23, 6], [57, 46, 45, 11]], "marg_ok": true, "marg_margin": 3.1055055144198596, "marg_desc": "RD RND64 0x0 lp=-5.9", "z": 753.4569285854866, "status": "SEQ-KILL"}
+{"try": 2, "sched": [[39, 55, 3, 19], [20, 23, 53, 41], [20, 17, 57, 23], [3, 30, 33, 27]], "marg_ok": false, "marg_margin": -9.739419611082592, "marg_desc": "PB SINGLE-BIT 0xaaaaaaaaaaaaaaaa lp=-20.7", "status": "MARG-KILL"}
+{"try": 3, "sched": [[28, 29, 47, 46], [50, 25, 5, 26], [8, 58, 61, 35], [10, 3, 24, 27]], "marg_ok": true, "marg_margin": 5.062907406964079, "marg_desc": "RD PTR-j8 0x0 lp=-3.9", "z": 2698.6747384562104, "status": "SEQ-KILL"}
+{"try": 4, "sched": [[45, 59, 41, 4], [10, 62, 5, 59], [55, 18, 15, 36], [4, 1, 42, 55]], "marg_ok": false, "marg_margin": -44.30824164240778, "marg_desc": "RD PTR-j8 0x1234 lp=-53.3", "status": "MARG-KILL"}
+{"try": 5, "sched": [[46, 57, 49, 32], [6, 38, 12, 47], [19, 15, 18, 0], [61, 63, 27, 1]], "marg_ok": false, "marg_margin": -244.8052494753997, "marg_desc": "RD PTR-j8 0x0 lp=-253.8", "status": "MARG-KILL"}
+{"try": 6, "sched": [[8, 62, 16, 60], [1, 32, 17, 6], [55, 61, 4, 52], [53, 1, 52, 20]], "marg_ok": false, "marg_margin": -466.470390188343, "marg_desc": "PB SINGLE-BIT 0x0 lp=-477.5", "status": "MARG-KILL"}
+{"try": 7, "sched": [[49, 57, 53, 24], [47, 49, 42, 35], [7, 6, 4, 2], [46, 42, 8, 27]], "marg_ok": true, "marg_margin": 5.369362153852067, "marg_desc": "RD RND64 0xdeadbeefdeadbeef lp=-3.6", "z": 2002.9868839864816, "status": "SEQ-KILL"}

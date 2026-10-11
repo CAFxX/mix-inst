@@ -1,0 +1,37 @@
+[2026-10-09T09:14:57Z] Q1 start cd2_p_a43b7_l513_nw
+  bit 16/64 done (439s)
+  bit 32/64 done (967s)
+  bit 48/64 done (1251s)
+  bit 64/64 done (1437s)
+{
+ "candidate": "cd2_p_a43b7_l513_nw",
+ "key": "0x123456789abcdef0",
+ "N": 262144,
+ "sac_maxdev": 0.003566741943359375,
+ "sac_meandev": 0.0007793297991156578,
+ "sac_z5": 0,
+ "bic_maxcorr": 0.009613262055170926,
+ "bic_meancorr": 0.0015523015666631266,
+ "avalanche_mean": 31.999910533428192,
+ "wall_s": 1436.8
+}
+[2026-10-09T09:39:02Z] Q1 done cd2_p_a43b7_l513_nw rc=0
+[2026-10-09T09:39:02Z] Q1 start hyb5_casc8_p43
+  bit 16/64 done (111s)
+  bit 32/64 done (224s)
+  bit 48/64 done (394s)
+  bit 64/64 done (568s)
+{
+ "candidate": "hyb5_casc8_p43",
+ "key": "0x123456789abcdef0",
+ "N": 262144,
+ "sac_maxdev": 0.004070281982421875,
+ "sac_meandev": 0.000764261931180954,
+ "sac_z5": 0,
+ "bic_maxcorr": 0.009048790856866735,
+ "bic_meancorr": 0.001556842878699125,
+ "avalanche_mean": 31.999635934829712,
+ "wall_s": 568.0
+}
+[2026-10-09T09:48:32Z] Q1 done hyb5_casc8_p43 rc=0
+[2026-10-09T09:48:32Z] ALL_Q1_DONE

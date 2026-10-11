@@ -1,0 +1,17 @@
+=== t6_lane3b (DEAD) ===
+  max deterministic OUTPUT bits over 3 keys x 18 deltas: 17  (key=0x123456789abcdef0 delta=2^0)
+  per-stage deterministic bits, key0, delta 2^0:
+    fold: 126
+    fold: 113
+    fold: 63
+=== t6_sand4a (DEAD) ===
+Traceback (most recent call last):
+  File "/home/hatch/workspace/mix/exploration/new_constructions/t6_diffwall_verify.py", line 178, in <module>
+    main()
+  File "/home/hatch/workspace/mix/exploration/new_constructions/t6_diffwall_verify.py", line 165, in main
+    results["t6_sand4a"] = analyze("t6_sand4a (DEAD)", sand4a_stages, keys, deltas)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hatch/workspace/mix/exploration/new_constructions/t6_diffwall_verify.py", line 151, in analyze
+    f"{worst_out}  (key={worst_cfg[0]:#x} delta=2^{worst_cfg[1]})")
+                         ~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable

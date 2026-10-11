@@ -1,0 +1,1 @@
+agentwork-launch: tag=track8/wave38-s0 schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)

@@ -1,0 +1,4 @@
+agentwork-launch: tag=track8/w37d-screen schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+[w37-3st-L3x1y] TRY 1: marg=+4.7 z=22042.6 SEQ-KILL (68s)
+[w37-3st-L3x1y] TRY 2: marg=+4.5 z=20665.3 SEQ-KILL (148s)
+[w37-3st-L3x1y] TRY 3: marg=-48.6 MARG-KILL (195s)

@@ -1,0 +1,30 @@
+agentwork-launch: tag=track6/diffwall-v2-fix schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+=== t6_lane3b (DEAD) ===
+  max deterministic OUTPUT bits over 3 keys x 18 deltas: 17  (key=0x123456789abcdef0 delta=2^0)
+  per-stage deterministic bits, key0, delta 2^0:
+    fold: 126
+    fold: 113
+    fold: 63
+=== t6_sand4a (DEAD) ===
+  max deterministic OUTPUT bits over 3 keys x 18 deltas: 0 (NO deterministic output bit on any key/delta)
+  per-stage deterministic bits: skipped (no deterministic skeleton present)
+=== t6_skip4a (DEAD) ===
+  max deterministic OUTPUT bits over 3 keys x 18 deltas: 2  (key=0x123456789abcdef0 delta=2^0)
+  per-stage deterministic bits, key0, delta 2^0:
+    stage: 62
+    stage: 54
+    stage: 29
+    stage: 2
+=== t6_lane4a (DEAD) ===
+  max deterministic OUTPUT bits over 3 keys x 18 deltas: 0 (NO deterministic output bit on any key/delta)
+  per-stage deterministic bits: skipped (no deterministic skeleton present)
+=== al_and6a (CLEAN) ===
+  max deterministic OUTPUT bits over 3 keys x 18 deltas: 0 (NO deterministic output bit on any key/delta)
+  per-stage deterministic bits: skipped (no deterministic skeleton present)
+
+=== verdict ===
+  t6_lane3b: max deterministic output bits = 17 -> DEAD (predicted DEAD)
+  t6_sand4a: max deterministic output bits = 0 -> CLEAN (predicted DEAD)
+  t6_skip4a: max deterministic output bits = 2 -> DEAD (predicted DEAD)
+  t6_lane4a: max deterministic output bits = 0 -> CLEAN (predicted DEAD)
+  al_and6a: max deterministic output bits = 0 -> CLEAN (predicted CLEAN)

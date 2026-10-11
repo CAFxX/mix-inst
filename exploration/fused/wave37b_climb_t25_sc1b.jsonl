@@ -1,0 +1,83 @@
+{"eval": 0, "z": 25.981726704532548, "acc": true, "cand": {"r1": 35, "r2": 48, "p": 24, "q": 1, "m": 56, "n_lin": 3, "stages": [[39, 29, [17, 44, 52], 29, 53, 28, 41, [56, 41, 63], 29, 5], [34, 2, [25, 11, 10], 36, 15, 12, 14, [8, 27, 59], 46, 7], [62, 47, [13, 56, 60], 4, 41, 62, 51, [25, 46, 23], 42, 59]]}}
+{"eval": 1, "z": 44.99477127847147, "marg_ok": true, "acc": false, "best": 25.981726704532548}
+{"eval": 2, "z": 179.43111090345795, "marg_ok": true, "acc": false, "best": 25.981726704532548}
+{"eval": 3, "z": 181.87070315846918, "marg_ok": true, "acc": false, "best": 25.981726704532548}
+{"eval": 4, "z": null, "marg_ok": false, "acc": false, "best": 25.981726704532548}
+{"eval": 5, "z": 43.735537613094145, "marg_ok": true, "acc": false, "best": 25.981726704532548}
+{"eval": 6, "z": 20.330396716179813, "marg_ok": true, "acc": true, "best": 20.330396716179813, "cand": {"r1": 35, "r2": 48, "p": 24, "q": 1, "m": 56, "n_lin": 3, "stages": [[39, 29, [17, 44, 52], 29, 53, 28, 41, [56, 53, 63], 29, 5], [34, 2, [25, 11, 10], 36, 15, 12, 14, [8, 27, 59], 46, 7], [62, 47, [13, 56, 60], 4, 41, 62, 51, [25, 46, 23], 42, 59]]}}
+{"eval": 7, "z": 439.3092639721643, "marg_ok": true, "acc": false, "best": 20.330396716179813}
+{"eval": 8, "z": null, "marg_ok": false, "acc": false, "best": 20.330396716179813}
+{"eval": 9, "z": null, "marg_ok": false, "acc": false, "best": 20.330396716179813}
+{"eval": 10, "z": null, "marg_ok": false, "acc": false, "best": 20.330396716179813}
+{"eval": 11, "z": null, "marg_ok": false, "acc": false, "best": 20.330396716179813}
+{"eval": 12, "z": 20.330396716179813, "marg_ok": true, "acc": false, "best": 20.330396716179813}
+{"eval": 13, "z": 105.2151997219393, "marg_ok": true, "acc": false, "best": 20.330396716179813}
+{"eval": 14, "z": 44.31395483521252, "marg_ok": true, "acc": false, "best": 20.330396716179813}
+{"eval": 15, "z": 46.082417059775395, "marg_ok": true, "acc": false, "best": 20.330396716179813}
+{"eval": 16, "z": 10.356159067784489, "marg_ok": true, "acc": true, "best": 10.356159067784489, "cand": {"r1": 35, "r2": 48, "p": 24, "q": 1, "m": 56, "n_lin": 3, "stages": [[39, 29, [17, 44, 52], 29, 53, 28, 41, [56, 53, 63], 29, 5], [34, 2, [25, 11, 10], 36, 15, 12, 14, [8, 27, 59], 46, 7], [62, 47, [13, 56, 60], 4, 41, 11, 33, [25, 46, 23], 42, 59]]}}
+{"eval": 17, "z": 44.1907990151921, "marg_ok": true, "acc": false, "best": 10.356159067784489}
+{"eval": 18, "z": null, "marg_ok": false, "acc": false, "best": 10.356159067784489}
+{"eval": 19, "z": null, "marg_ok": false, "acc": false, "best": 10.356159067784489}
+{"eval": 20, "z": null, "marg_ok": false, "acc": false, "best": 10.356159067784489}
+{"eval": 21, "z": null, "marg_ok": false, "acc": false, "best": 10.356159067784489}
+{"eval": 22, "z": 42.621600139875746, "marg_ok": true, "acc": false, "best": 10.356159067784489}
+{"eval": 23, "z": null, "marg_ok": false, "acc": false, "best": 10.356159067784489}
+{"eval": 24, "z": null, "marg_ok": false, "acc": false, "best": 10.356159067784489}
+{"eval": 25, "z": 12.856291402861938, "marg_ok": true, "acc": false, "best": 10.356159067784489}
+{"eval": 26, "z": 46.2346321182276, "marg_ok": true, "acc": false, "best": 10.356159067784489}
+{"eval": 27, "z": 9.517592473038713, "marg_ok": true, "acc": true, "best": 9.517592473038713, "cand": {"r1": 35, "r2": 48, "p": 24, "q": 1, "m": 56, "n_lin": 3, "stages": [[39, 29, [17, 44, 52], 29, 53, 28, 41, [56, 53, 63], 29, 5], [34, 2, [25, 11, 10], 36, 15, 12, 14, [8, 27, 59], 46, 7], [62, 47, [13, 5, 60], 4, 41, 11, 33, [25, 46, 23], 42, 59]]}}
+{"eval": 28, "z": 44.3343654907777, "marg_ok": true, "acc": false, "best": 9.517592473038713}
+{"eval": 29, "z": 5.763415622303902, "marg_ok": true, "acc": true, "best": 5.763415622303902, "cand": {"r1": 35, "r2": 10, "p": 24, "q": 1, "m": 56, "n_lin": 3, "stages": [[39, 29, [17, 44, 52], 29, 53, 28, 41, [56, 53, 63], 29, 5], [34, 2, [25, 11, 10], 36, 15, 12, 14, [8, 27, 59], 46, 7], [62, 47, [13, 5, 60], 4, 41, 11, 33, [25, 46, 23], 42, 59]]}}
+{"eval": 30, "z": null, "marg_ok": false, "acc": false, "best": 5.763415622303902}
+{"eval": 31, "z": 4.519057519457135, "marg_ok": true, "acc": true, "best": 4.519057519457135, "cand": {"r1": 35, "r2": 10, "p": 24, "q": 1, "m": 56, "n_lin": 3, "stages": [[39, 29, [17, 44, 52], 29, 53, 28, 41, [56, 53, 63], 29, 5], [34, 2, [25, 11, 10], 36, 15, 12, 14, [8, 27, 59], 46, 7], [24, 55, [13, 5, 60], 4, 41, 11, 33, [25, 46, 23], 42, 59]]}}
+{"eval": 32, "z": null, "marg_ok": false, "acc": false, "best": 4.519057519457135}
+{"eval": 33, "z": 4.10427148517488, "marg_ok": true, "acc": true, "best": 4.10427148517488, "cand": {"r1": 35, "r2": 10, "p": 24, "q": 1, "m": 56, "n_lin": 3, "stages": [[39, 29, [17, 44, 52], 29, 53, 7, 18, [56, 53, 63], 29, 5], [34, 2, [25, 11, 10], 36, 15, 12, 14, [8, 27, 59], 46, 7], [24, 55, [13, 5, 60], 4, 41, 11, 33, [25, 46, 23], 42, 59]]}}
+{"eval": 34, "z": 45.72644138898604, "marg_ok": true, "acc": false, "best": 4.10427148517488}
+{"eval": 35, "z": null, "marg_ok": false, "acc": false, "best": 4.10427148517488}
+{"eval": 36, "z": 11.124845112968119, "marg_ok": true, "acc": false, "best": 4.10427148517488}
+{"eval": 37, "z": 15.27478111567866, "marg_ok": true, "acc": false, "best": 4.10427148517488}
+{"eval": 38, "z": 44.701065404321646, "marg_ok": true, "acc": false, "best": 4.10427148517488}
+{"eval": 39, "z": 28.151829117420444, "marg_ok": true, "acc": false, "best": 4.10427148517488}
+{"eval": 40, "z": null, "marg_ok": false, "acc": false, "best": 4.10427148517488}
+{"eval": 41, "z": 24.437435747872005, "marg_ok": true, "acc": false, "best": 4.10427148517488}
+{"eval": 42, "z": 6.093445544493453, "marg_ok": true, "acc": false, "best": 4.10427148517488}
+{"eval": 43, "z": 20.891862715879647, "marg_ok": true, "acc": false, "best": 4.10427148517488}
+{"eval": 44, "z": 411.6898416160119, "marg_ok": true, "acc": false, "best": 4.10427148517488}
+{"eval": 45, "z": 25.016198913305043, "marg_ok": true, "acc": false, "best": 4.10427148517488}
+{"eval": 46, "z": null, "marg_ok": false, "acc": false, "best": 4.10427148517488}
+{"eval": 47, "z": 92.76297011060502, "marg_ok": true, "acc": false, "best": 4.10427148517488}
+{"eval": 48, "z": 29.4425436244322, "marg_ok": true, "acc": false, "best": 4.10427148517488}
+{"eval": 49, "z": 12.17374524302967, "marg_ok": true, "acc": false, "best": 4.10427148517488}
+{"eval": 50, "z": 5.584908871937226, "marg_ok": true, "acc": false, "best": 4.10427148517488}
+{"eval": 51, "z": 405.8219511126794, "marg_ok": true, "acc": false, "best": 4.10427148517488}
+{"eval": 52, "z": null, "marg_ok": false, "acc": false, "best": 4.10427148517488}
+{"eval": 53, "z": null, "marg_ok": false, "acc": false, "best": 4.10427148517488}
+{"eval": 54, "z": null, "marg_ok": false, "acc": false, "best": 4.10427148517488}
+{"eval": 55, "z": 7.2329828229969975, "marg_ok": true, "acc": false, "best": 4.10427148517488}
+{"eval": 56, "z": 46.75562275011173, "marg_ok": true, "acc": false, "best": 4.10427148517488}
+{"eval": 57, "z": 6.399951321285845, "marg_ok": true, "acc": false, "best": 4.10427148517488}
+{"eval": 58, "z": null, "marg_ok": false, "acc": false, "best": 4.10427148517488}
+{"eval": 59, "z": 12.912680163152187, "marg_ok": true, "acc": false, "best": 4.10427148517488}
+{"eval": 60, "z": 11.323416575585313, "marg_ok": true, "acc": false, "best": 4.10427148517488}
+{"eval": 61, "z": 46.59372127884894, "marg_ok": true, "acc": false, "best": 4.10427148517488}
+{"eval": 62, "z": null, "marg_ok": false, "acc": false, "best": 4.10427148517488}
+{"eval": 63, "z": null, "marg_ok": false, "acc": false, "best": 4.10427148517488}
+{"eval": 64, "z": 7.818318911408654, "marg_ok": true, "acc": false, "best": 4.10427148517488}
+{"eval": 65, "z": 182.79575558188097, "marg_ok": true, "acc": false, "best": 4.10427148517488}
+{"eval": 66, "z": 14.404733679298449, "marg_ok": true, "acc": false, "best": 4.10427148517488}
+{"eval": 67, "z": null, "marg_ok": false, "acc": false, "best": 4.10427148517488}
+{"eval": 68, "z": null, "marg_ok": false, "acc": false, "best": 4.10427148517488}
+{"eval": 69, "z": 14.431371314527585, "marg_ok": true, "acc": false, "best": 4.10427148517488}
+{"eval": 70, "z": null, "marg_ok": false, "acc": false, "best": 4.10427148517488}
+{"eval": 71, "z": 3.2065485836215406, "marg_ok": true, "acc": true, "best": 3.2065485836215406, "cand": {"r1": 35, "r2": 10, "p": 24, "q": 1, "m": 56, "n_lin": 3, "stages": [[39, 29, [17, 44, 52], 29, 53, 7, 18, [56, 53, 63], 29, 5], [34, 2, [25, 11, 10], 36, 15, 12, 14, [8, 27, 48], 46, 7], [24, 55, [13, 5, 60], 4, 41, 11, 33, [25, 46, 23], 42, 59]]}}
+{"eval": 72, "z": null, "marg_ok": false, "acc": false, "best": 3.2065485836215406}
+{"eval": 73, "z": 3.6642315889221444, "marg_ok": true, "acc": false, "best": 3.2065485836215406}
+{"eval": 74, "z": null, "marg_ok": false, "acc": false, "best": 3.2065485836215406}
+{"eval": 75, "z": 3.524470489797848, "marg_ok": true, "acc": false, "best": 3.2065485836215406}
+{"eval": 76, "z": null, "marg_ok": false, "acc": false, "best": 3.2065485836215406}
+{"eval": 77, "z": 24.692050027464784, "marg_ok": true, "acc": false, "best": 3.2065485836215406}
+{"eval": 78, "z": 30.003663680817372, "marg_ok": true, "acc": false, "best": 3.2065485836215406}
+{"eval": 79, "z": null, "marg_ok": false, "acc": false, "best": 3.2065485836215406}
+{"eval": 80, "z": null, "marg_ok": false, "acc": false, "best": 3.2065485836215406}
+{"eval": 81, "z": 5.0528480539838405, "marg_ok": true, "acc": false, "best": 3.2065485836215406}
+{"eval": 82, "z": null, "marg_ok": false, "acc": false, "best": 3.2065485836215406}

@@ -1,7 +1,10 @@
 # RV64 `mix` — Cumulative Pareto Frontier
 
 **Updated:** 2026-10-11 — tables reworked: uniform per-row Design column,
-simplified Quality column; 324 added to Frontier Q (BIC-clean).
+simplified Quality column; 324 added to Frontier Q (BIC-clean); BIC / SAC z5 /
+S2 max|z| quantitative columns added to Frontier S, Frontier Q and the
+dominated table, all re-read from raw result files (three stale numbers
+corrected: 324 S2 76.9→64.7, r9 bic 0.0085→0.00853, r8 bic 0.008037→0.00804).
 **Multiplier reference:** 103.5u (cells 12,645, area 35,323), re-measured per
 round in the pinned Yosys-0.69 flow. S0 bar: ≤ 0.9 × 103.5 = 93.15u.
 
@@ -23,16 +26,22 @@ for future extended-PractRand breaking-point batteries; the registry is
 
 ## Frontier S (delay, cells, area — lower is better)
 
-| Candidate | Delay | Ratio | Cells | Area | Round claimed | Design | Quality |
-|---|---|---:|---:|---:|---|---|---|
-| **hyb28_mu5_324** | **19.3u** | **0.186×** | 6,146 | 20,001 | batch-28 | 5-stage MUX-rotation cascade, pre-whiten, final x^=rotl(k,13) | Speed point; S0–S4 pass, Q1 sac_z5=0, bic 0.0087 (Frontier-Q eligible) |
-| **t6_b33c** | **19.8u** | **0.191×** | 6,133 | 19,817 | batch-33 | 6-stage AND-rotation cascade, pre-whiten, stage x^=(ra&rb)^rc, final x^=rotl(k,13) | Nondominated on cells/area; S0–S4 pass, Q1 sac_z5=0, bic 0.01002 (Frontier-Q eligible) |
-| **t6_b33b** | **20.1u** | **0.194×** | 5,992 | 19,280 | batch-33 | 6-stage AND-rotation cascade, pre-whiten, stage x^=(ra&rb)^rc, final x^=rotl(k,13) | Size point; S0–S4 pass, Q1 sac_z5=0, bic 0.00913 (Frontier-Q eligible) |
-| **r25_spn_pba19_sb_rasC2_0_513_nw** | **26.4u** | **0.255×** | 5,385 | 14,415 | 25 | 4r keyed SPN, P(i)=(19i+1)%64, lin(5,13), rasC2_0 S-box | Nondominated vs (3,11): 0.1u faster, 260 cells larger; S0–S4 pass, Q1 sac_z5=0, bic 0.00907 (Frontier-Q eligible) |
-| **r25_spn_pba19_sb_rasC2_0_nw** | **26.5u** | **0.256×** | 5,125 | 14,019 | 25 | 4r keyed SPN, P(i)=(19i+1)%64, lin(3,11), rasC2_0 S-box | Size point; S0–S4 pass, Q1 sac_z5=0, bic 0.01012 (Frontier-Q eligible) |
-| **r22c_spn_mix4r_lp_nw** | **28.3u** | **0.273×** | 4,656 | 12,949 | O44 | 4r keyed SPN, x_{i+1}=L(P(S(x_i^rk_i))), P(i)=(5i+27)%64, lin(3,11) | Nondominated on cells/area; S0–S4 pass, Q1 sac_z5=0, bic 0.00865 (Frontier-Q eligible) |
-| **r21_feist6_alt_notr_chioff31final_nw** | **36.7u** | **0.355×** | 4,198 | 12,005 | 21 | 6r Feistel, S1/chi alternating rounds, no round-6 linear, chi(3,1) final | Speed point of the Feistel tail; S0–S4 pass, Q1 sac_z5=0, bic 0.14029 (Frontier-S only) |
-| **r21_feist6_alt_notr_3rot_ns_nw** | **37.4u** | **0.361×** | **3,667** | **10,742** | 21 | 6r Feistel, R³x^R⁷x^R¹¹x on 5 linear rounds, truncated chi final | Size point; S0–S4 pass, Q1 sac_z5=0, bic 0.25384 (Frontier-S only) |
+BIC = `bic_maxcorr`; SAC z5 = avalanche z5-cell count (0 = clean);
+S2 max|z| = worst differential z-score across the 115 deltas. "—" means not
+measured — never inferred. All quantitative values below were re-read from
+the raw result files on 2026-10-11 (this pass corrected three stale numbers:
+324's S2 76.9→64.7, r9's bic 0.0085→0.00853, r8's bic 0.008037→0.00804).
+
+| Candidate | Delay | Ratio | Cells | Area | BIC | SAC z5 | S2 max\|z\| | Round claimed | Design | Quality |
+|---|---|---:|---:|---:|---:|---:|---:|---|---|---|
+| **hyb28_mu5_324** | **19.3u** | **0.186×** | 6,146 | 20,001 | 0.00870 | 0 | 64.7 | batch-28 | 5-stage MUX-rotation cascade, pre-whiten, final x^=rotl(k,13) | Speed point; S0–S4 pass (Frontier-Q eligible) |
+| **t6_b33c** | **19.8u** | **0.191×** | 6,133 | 19,817 | 0.01002 | 0 | 29.2 | batch-33 | 6-stage AND-rotation cascade, pre-whiten, stage x^=(ra&rb)^rc, final x^=rotl(k,13) | Nondominated on cells/area; S0–S4 pass (Frontier-Q eligible) |
+| **t6_b33b** | **20.1u** | **0.194×** | 5,992 | 19,280 | 0.00913 | 0 | 21.2 | batch-33 | 6-stage AND-rotation cascade, pre-whiten, stage x^=(ra&rb)^rc, final x^=rotl(k,13) | Size point; S0–S4 pass (Frontier-Q eligible) |
+| **r25_spn_pba19_sb_rasC2_0_513_nw** | **26.4u** | **0.255×** | 5,385 | 14,415 | 0.00907 | 0 | 25.1 | 25 | 4r keyed SPN, P(i)=(19i+1)%64, lin(5,13), rasC2_0 S-box | Nondominated vs (3,11): 0.1u faster, 260 cells larger; S0–S4 pass (Frontier-Q eligible) |
+| **r25_spn_pba19_sb_rasC2_0_nw** | **26.5u** | **0.256×** | 5,125 | 14,019 | 0.01012 | 0 | 11.3 | 25 | 4r keyed SPN, P(i)=(19i+1)%64, lin(3,11), rasC2_0 S-box | Size point; S0–S4 pass (Frontier-Q eligible) |
+| **r22c_spn_mix4r_lp_nw** | **28.3u** | **0.273×** | 4,656 | 12,949 | 0.00865 | 0 | 13.6 | O44 | 4r keyed SPN, x_{i+1}=L(P(S(x_i^rk_i))), P(i)=(5i+27)%64, lin(3,11) | Nondominated on cells/area; S0–S4 pass (Frontier-Q eligible) |
+| **r21_feist6_alt_notr_chioff31final_nw** | **36.7u** | **0.355×** | 4,198 | 12,005 | 0.14029 | 0 | 11.2 | 21 | 6r Feistel, S1/chi alternating rounds, no round-6 linear, chi(3,1) final | Speed point of the Feistel tail; S0–S4 pass (Frontier-S only) |
+| **r21_feist6_alt_notr_3rot_ns_nw** | **37.4u** | **0.361×** | **3,667** | **10,742** | 0.25384 | 0 | 4.7 | 21 | 6r Feistel, R³x^R⁷x^R¹¹x on 5 linear rounds, truncated chi final | Size point; S0–S4 pass (Frontier-S only) |
 
 hyb28_mu5_324 is the speed point (19.3u); t6_b33c survives on cells/area;
 t6_b33b is the size point at 20.1u. The r25 SPN pair holds the mid-size
@@ -50,17 +59,17 @@ RTL for the frontier points in `~/workspace/your_files/mix_rtl_pareto/`
 
 ## Frontier Q (BIC-clean; adds bic_maxcorr ≤ 0.02)
 
-| Candidate | Delay | Ratio | Cells | Area | Round claimed | Design | Quality |
-|---|---|---:|---:|---:|---|---|---|
-| **hyb28_mu5_324** | **19.3u** | **0.186×** | 6,146 | 20,001 | batch-28 | 5-stage MUX-rotation cascade, pre-whiten, final x^=rotl(k,13) | Speed point; bic 0.0087, sac_z5=0, full battery |
-| **t6_b33c** | **19.8u** | **0.191×** | 6,133 | 19,817 | batch-33 | 6-stage AND-rotation cascade, pre-whiten, stage x^=(ra&rb)^rc, final x^=rotl(k,13) | Nondominated on cells/area; bic 0.01002, sac_z5=0, full battery |
-| **t6_b33b** | **20.1u** | **0.194×** | 5,992 | 19,280 | batch-33 | 6-stage AND-rotation cascade, pre-whiten, stage x^=(ra&rb)^rc, final x^=rotl(k,13) | Size point; bic 0.00913, sac_z5=0, full battery |
-| **r25_spn_pba19_sb_rasC2_0_513_nw** | **26.4u** | **0.255×** | 5,385 | 14,415 | 25 | 4r keyed SPN, P(i)=(19i+1)%64, lin(5,13), rasC2_0 S-box | Nondominated vs (3,11); bic 0.00907, sac_z5=0, full battery |
-| **r25_spn_pba19_sb_rasC2_0_nw** | **26.5u** | **0.256×** | 5,125 | 14,019 | 25 | 4r keyed SPN, P(i)=(19i+1)%64, lin(3,11), rasC2_0 S-box | Size point; bic 0.01012, sac_z5=0, full battery |
-| **r22c_spn_mix4r_lp_nw** | **28.3u** | **0.273×** | 4,656 | 12,949 | O44 | 4r keyed SPN, x_{i+1}=L(P(S(x_i^rk_i))), P(i)=(5i+27)%64, lin(3,11) | Nondominated on cells/area; bic 0.00865, sac_z5=0, full battery |
-| **r21b_3rot_ns_fm311_nw** | **38.3u** | **0.370×** | 4,299 | 12,356 | r21b | 6r Feistel, R³x^R⁷x^R¹¹x linear, fm311 final-mix cure in F_6 | Mid-frontier point; bic 0.00883 (cured), sac_z5=0, full battery |
-| r9_feist6_rot311_nw | 41.0u | 0.396× | 4,265 | 11,996 | 9 | 6r Feistel, S1 S-box rounds, lin(3,11) | bic 0.0085, sac_z5=0, full battery |
-| r8_feist6_s1_1sbox_nw | 42.9u | 0.414× | 4,133 | 11,670 | 8 | 6r Feistel, single S1 S-box per round, lin(3,11) | Size/quality point; bic 0.008037, sac_z5=0, full battery |
+| Candidate | Delay | Ratio | Cells | Area | BIC | SAC z5 | S2 max\|z\| | Round claimed | Design | Quality |
+|---|---|---:|---:|---:|---:|---:|---:|---|---|---|
+| **hyb28_mu5_324** | **19.3u** | **0.186×** | 6,146 | 20,001 | 0.00870 | 0 | 64.7 | batch-28 | 5-stage MUX-rotation cascade, pre-whiten, final x^=rotl(k,13) | Speed point; full battery |
+| **t6_b33c** | **19.8u** | **0.191×** | 6,133 | 19,817 | 0.01002 | 0 | 29.2 | batch-33 | 6-stage AND-rotation cascade, pre-whiten, stage x^=(ra&rb)^rc, final x^=rotl(k,13) | Nondominated on cells/area; full battery |
+| **t6_b33b** | **20.1u** | **0.194×** | 5,992 | 19,280 | 0.00913 | 0 | 21.2 | batch-33 | 6-stage AND-rotation cascade, pre-whiten, stage x^=(ra&rb)^rc, final x^=rotl(k,13) | Size point; full battery |
+| **r25_spn_pba19_sb_rasC2_0_513_nw** | **26.4u** | **0.255×** | 5,385 | 14,415 | 0.00907 | 0 | 25.1 | 25 | 4r keyed SPN, P(i)=(19i+1)%64, lin(5,13), rasC2_0 S-box | Nondominated vs (3,11); full battery |
+| **r25_spn_pba19_sb_rasC2_0_nw** | **26.5u** | **0.256×** | 5,125 | 14,019 | 0.01012 | 0 | 11.3 | 25 | 4r keyed SPN, P(i)=(19i+1)%64, lin(3,11), rasC2_0 S-box | Size point; full battery |
+| **r22c_spn_mix4r_lp_nw** | **28.3u** | **0.273×** | 4,656 | 12,949 | 0.00865 | 0 | 13.6 | O44 | 4r keyed SPN, x_{i+1}=L(P(S(x_i^rk_i))), P(i)=(5i+27)%64, lin(3,11) | Nondominated on cells/area; full battery |
+| **r21b_3rot_ns_fm311_nw** | **38.3u** | **0.370×** | 4,299 | 12,356 | 0.00883 | 0 | 4.7 | r21b | 6r Feistel, R³x^R⁷x^R¹¹x linear, fm311 final-mix cure in F_6 | Mid-frontier point; full battery |
+| r9_feist6_rot311_nw | 41.0u | 0.396× | 4,265 | 11,996 | 0.00853 | 0 | 16.5 | 9 | 6r Feistel, S1 S-box rounds, lin(3,11) | Full battery |
+| r8_feist6_s1_1sbox_nw | 42.9u | 0.414× | 4,133 | 11,670 | 0.00804 | 0 | 4.0 | 8 | 6r Feistel, single S1 S-box per round, lin(3,11) | Size/quality point; full battery |
 
 Frontier Q is Frontier S minus the notr pair (BIC blemish 0.14–0.25), plus
 the BIC-cured notr derivative r21b and the slow, small, BIC-clean r9/r8.
@@ -97,32 +106,32 @@ No point dominates another. Retired points live in
 
 ## Qualified but dominated (selected)
 
-| Candidate | Delay | Cells | Area | Design | Notes |
-|---|---|---:|---:|---|---|
-| al_and6a | 20.1u | 6,116 | 19,541 | 6-stage AND-rotation cascade | Dominated by t6_b33b (delay tie, fewer cells, less area) |
-| al_cascad | 25.5u | 7,891 | 26,566 | AND-rotation cascade | Dominated by t6_b33c on all three axes |
-| r20_feist6_alt_notr_keyin_nw | 37.2u | 4,382 | 12,497 | 6r Feistel, S1/chi alternating, round key inside final chi | Near-duplicate of chioff13all (+0.2u/+25 cells); effectively dominated |
-| r18_feist6_alt_notr_nw | 37.9u | 4,119 | 11,621 | 6r Feistel, S1/chi alternating, no round-6 linear | Dominated on all axes by r20 chioff31 |
-| r13_feist6_alt_s1chi_nw | 40.1u | 4,563 | 13,041 | 6r Feistel, heterogeneous S1/chi alternating rounds | Dominated on all axes by r18 alt_notr |
-| r18_feist6_alt_palk_nw | 40.5u | 4,447 | 12,905 | 6r Feistel, S1/chi alternating, palindromic key schedule | Dominated by r18 alt_notr on all axes |
-| r15_feist6_parsplit_nw | 40.7u | 4,318 | 12,356 | 6r Feistel, parallel S1/chi16 split F | Dominated on all axes by r18 alt_notr |
-| r9_feist6_rot311_nw | 41.0u | 4,265 | 11,996 | 6r Feistel, S1 S-box rounds, lin(3,11) | Dominated on all axes by r18 alt_notr |
-| r8_feist6_s1_1sbox_nw | 42.9u | 4,133 | 11,670 | 6r Feistel, single S1 S-box per round, lin(3,11) | Dominated on all axes by r18 alt_notr |
-| r10_feist6_rot0313_nw | 41.4u | 4,645 | 12,855 | 6r Feistel, S1 S-box, (3,13) rotations | Dominated on (delay,area) |
-| r9_feist6_ksalt_nw | 41.8u | 4,628 | 12,946 | 6r Feistel, alternate key schedule | Dominated by rot311 |
-| r9_feist6_rot0719_nw | 41.8u | 4,602 | 12,963 | 6r Feistel, S1 S-box, (7,19) rotations | Dominated by rot311 |
-| r10_feist6_altrot311_713_nw | 41.9u | 4,480 | 12,598 | 6r Feistel, heterogeneous (3,11)/(7,13) rotations | Dominated |
-| r9_feist6_ksrot_nw | 42.5u | 4,777 | 13,351 | 6r Feistel, rotated key schedule | Dominated by rot311 |
-| r10_feist6_rot0411_nw | 42.8u | 4,150 | 11,847 | 6r Feistel, S1 S-box, (4,11) rotations | 0.1u faster than r8 but larger — below P&R noise |
-| r9_feist6_altrot_nw | 43.2u | 4,338 | 12,239 | 6r Feistel, heterogeneous rotation rounds | Dominated |
-| r9_feist6_rot517_nw | 43.2u | 6,444 | 17,638 | 6r Feistel, S1 S-box, (5,17) rotations | Dominated |
-| r8_feist6_pbox | 43.5u | 4,544 | 12,929 | 6r Feistel, P-box diffusion variant | Dominated by r8 leader |
-| r8_feist6_s1_1sbox | 43.7u | 4,744 | 13,387 | 6r Feistel, single S1 S-box per round | Dominated by r8 leader |
-| r9_feist7_rot517_nw | 49.3u | 5,454 | 15,308 | 7r Feistel, (5,17) rotations | Dominated |
-| r8_feist7_s1_1sbox | 50.2u | 5,452 | 15,421 | 7r Feistel, single S1 S-box per round | Dominated |
-| r8_feist6_s1_alt | 55.0u | 5,436 | 15,095 | 6r Feistel, alternating S1 S-box rounds | Dominated |
-| r7_feist8_s1_1sbox | 56.5u | 6,063 | 17,098 | 8r Feistel, single S1 S-box per round | Dominated |
-| r9_feist7_s1_lin2_nw | 66.6u | 7,532 | 20,968 | 7r Feistel, S1 S-box, 2-rotation linear | Dominated |
+| Candidate | Delay | Cells | Area | BIC | SAC z5 | S2 max\|z\| | Design | Notes |
+|---|---|---:|---:|---:|---:|---:|---|---|
+| al_and6a | 20.1u | 6,116 | 19,541 | 0.00868 | 0 | — | 6-stage AND-rotation cascade | Dominated by t6_b33b (delay tie, fewer cells, less area) |
+| al_cascad | 25.5u | 7,891 | 26,566 | 0.00891 | 0 | — | AND-rotation cascade | Dominated by t6_b33c on all three axes |
+| r20_feist6_alt_notr_keyin_nw | 37.2u | 4,382 | 12,497 | 0.17232 | 0 | — | 6r Feistel, S1/chi alternating, round key inside final chi | Near-duplicate of chioff13all (+0.2u/+25 cells); effectively dominated |
+| r18_feist6_alt_notr_nw | 37.9u | 4,119 | 11,621 | 0.17247 | 0 | 10.7 | 6r Feistel, S1/chi alternating, no round-6 linear | Dominated on all axes by r20 chioff31 |
+| r13_feist6_alt_s1chi_nw | 40.1u | 4,563 | 13,041 | 0.00800 | 0 | 10.7 | 6r Feistel, heterogeneous S1/chi alternating rounds | Dominated on all axes by r18 alt_notr |
+| r18_feist6_alt_palk_nw | 40.5u | 4,447 | 12,905 | 0.00890 | 0 | 12.4 | 6r Feistel, S1/chi alternating, palindromic key schedule | Dominated by r18 alt_notr on all axes |
+| r15_feist6_parsplit_nw | 40.7u | 4,318 | 12,356 | 0.00842 | 0 | 18.6 | 6r Feistel, parallel S1/chi16 split F | Dominated on all axes by r18 alt_notr |
+| r9_feist6_rot311_nw | 41.0u | 4,265 | 11,996 | 0.00853 | 0 | 16.5 | 6r Feistel, S1 S-box rounds, lin(3,11) | Dominated on all axes by r18 alt_notr |
+| r8_feist6_s1_1sbox_nw | 42.9u | 4,133 | 11,670 | 0.00804 | 0 | 4.0 | 6r Feistel, single S1 S-box per round, lin(3,11) | Dominated on all axes by r18 alt_notr |
+| r10_feist6_rot0313_nw | 41.4u | 4,645 | 12,855 | — | — | 4.1 | 6r Feistel, S1 S-box, (3,13) rotations | Dominated on (delay,area) |
+| r9_feist6_ksalt_nw | 41.8u | 4,628 | 12,946 | — | — | — | 6r Feistel, alternate key schedule | Dominated by rot311 |
+| r9_feist6_rot0719_nw | 41.8u | 4,602 | 12,963 | — | — | — | 6r Feistel, S1 S-box, (7,19) rotations | Dominated by rot311 |
+| r10_feist6_altrot311_713_nw | 41.9u | 4,480 | 12,598 | — | — | 3.6 | 6r Feistel, heterogeneous (3,11)/(7,13) rotations | Dominated |
+| r9_feist6_ksrot_nw | 42.5u | 4,777 | 13,351 | — | — | — | 6r Feistel, rotated key schedule | Dominated by rot311 |
+| r10_feist6_rot0411_nw | 42.8u | 4,150 | 11,847 | — | — | 4.1 | 6r Feistel, S1 S-box, (4,11) rotations | 0.1u faster than r8 but larger — below P&R noise |
+| r9_feist6_altrot_nw | 43.2u | 4,338 | 12,239 | — | — | — | 6r Feistel, heterogeneous rotation rounds | Dominated |
+| r9_feist6_rot517_nw | 43.2u | 6,444 | 17,638 | — | — | — | 6r Feistel, S1 S-box, (5,17) rotations | Dominated |
+| r8_feist6_pbox | 43.5u | 4,544 | 12,929 | 0.00866 | 0 | — | 6r Feistel, P-box diffusion variant | Dominated by r8 leader |
+| r8_feist6_s1_1sbox | 43.7u | 4,744 | 13,387 | — | — | — | 6r Feistel, single S1 S-box per round | Dominated by r8 leader |
+| r9_feist7_rot517_nw | 49.3u | 5,454 | 15,308 | — | — | — | 7r Feistel, (5,17) rotations | Dominated |
+| r8_feist7_s1_1sbox | 50.2u | 5,452 | 15,421 | 0.00857 | 0 | — | 7r Feistel, single S1 S-box per round | Dominated |
+| r8_feist6_s1_alt | 55.0u | 5,436 | 15,095 | 0.00891 | 0 | — | 6r Feistel, alternating S1 S-box rounds | Dominated |
+| r7_feist8_s1_1sbox | 56.5u | 6,063 | 17,098 | 0.00919 | 0 | — | 8r Feistel, single S1 S-box per round | Dominated |
+| r9_feist7_s1_lin2_nw | 66.6u | 7,532 | 20,968 | — | — | — | 7r Feistel, S1 S-box, 2-rotation linear | Dominated |
 
 ## Fast but not qualified
 

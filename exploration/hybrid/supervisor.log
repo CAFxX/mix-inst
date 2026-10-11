@@ -1,0 +1,29 @@
+2026-10-08 06:52 UTC: Track-5 supervisor (rearm after reboot). VM rebooted ~25min ago; load 23.88/2cpu (graalgo java, gincache go, adder diffprof_al_chi, sweep S1). Nothing running on this track (S2_BATCH4_ALLDONE pre-reboot). Batch-4 S2 state: a43b7 PASS(12.2), a53b1 PASS(13.9, S1 was FLAG), a3b7 PASS(5.4), a61b1 PASS(5.7); a9b1_l311 TIMEOUT fail-closed; front-2 (3,11) FLAGs skipped by driver design. Flagged items: (1) run_s2_batch4.sh lacks timeout wrapper; (2) no flock on batch drivers (2 duplicate-driver incidents). Plan: patch drivers (timeout+flock), then batch-5 co-design (al_cascad/chi x SPN), then front-2 S2 for (3,1)@l311 (26.1u) when load permits. Polite gate: hold heavy launches while load >4.
+2026-10-08 07:05 UTC: Infrastructure patched: run_s2_batch4.sh already had timeout 2400 (added 03:44 UTC, after 03:41 flag); added flock to s2_batch4.sh + s1_batch4_rest.sh (2 duplicate-driver incidents). Batch-5 designed: P-box-augmented chi/AND cascades, P-box chosen BY chi_pbox_diffuse.py metric FOR the cascade (top: a=43,27,11; pba19/a=19 is NEGATIVE control, metric 18 < 29 baseline). Metric validation: cannot distinguish chi6/chi8 schedules at equal stages (dependency saturates at 5 stages; S2 quality needs stage count, not just spread) -- weak prior only, S1/S2 decide. 6 candidates generated (hyb5_chi8_p43/p27/p19, hyb5_casc8_p43, hyb5_chi6_p43, hyb5_casc6_p43), bit-exact C/Python/Verilog verified. S0 running (nice-19 seq).
+2026-10-08 07:35 UTC: NON-NOMINAL FOUND+FIXED: s0_delay.py expects model.mix(), batch-5 models only had mix_hash(). Patched all 6 model.py + generator. S0 batch continuing (p27 may recover, p19/casc8/chi6/casc6 will have fix). Also noted: pkill -f self-match footgun struck again (killed own shell); using pgrep+kill by PID.
+2026-10-08 07:50 UTC: S0 hyb5_chi8_p43 = 26.4u/7939 (vs al_chi8 26.1u/8203). P-box COSTS 0.3u -- not free! Likely prevents ABC cross-stage optimization (optimization barrier, not wire delay). Co-design lesson: "free wires" assumption wrong. Equiv check failed on port names (v/k/o vs val/key/out); patched RTL + generator. Re-running S0 for p43 (equiv), chi6_p43, casc6_p43 (6-stage reduced may still win: ~20u).
+2026-10-08 08:20 UTC: Killed S0 batch yielded one more result before SIGTERM: hyb5_chi8_p27 = 26.4u/7764/25772 (XCHECK pass). Confirms P-box cost: both p43 and p27 give 26.4u vs 26.1u baseline. Consistent 0.3u penalty across P-box choices.
+2026-10-08 08:25 UTC: S1 batch for hyb5_chi6_p43 + hyb5_casc6_p43 launched detached (nice-19, 1800s timeout each). Awaiting results. Supervisor session persistent; will check on next heartbeat cycle.
+2026-10-08 13:17 UTC: Supervisor resumed after daemon restart. Batch-5 S1 dirs empty (08:25 launch died).
+Attempted S0 for 4 remaining batch-5 candidates; VM load 42/2cpu, synthesis timing out.
+Deferring S0/S1 until load clears. Priority: hyb5_chi6_p43, hyb5_casc6_p43 (~20u est).
+2026-10-09 06:15 UTC: Track 5 supervisor active. Bundled 9 candidates to fanout (6 batch-5 hyb5_*, 3 batch-4 cd1/cd2 S2-PASS). Pushed via PAT (2 attempts, transient disconnect on 1st). Submitted 5 GHA campaigns via pipeline.py run (race strategy, 1 shard/candidate):
+  - hyb5-6stage-20261009-r1: hyb5_chi6_p43 [frontier-challenger]
+  - hyb5-6stage-20261009-r2: hyb5_casc6_p43 [frontier-challenger]
+  - hyb5-8stage-20261009-r1: hyb5_chi8_p19, hyb5_casc8_p43 [new-leads]
+  - hyb5-8stage-20261009-r2: hyb5_chi8_p43, hyb5_chi8_p27 [new-leads]
+  - hyb4-s34-20261009-r1: cd1_p_a27b1, cd1_p_a21b7, cd2_p_a43b7 [frontier-challenger] (full S0->S4; S0-S2 re-run, harmless)
+Polling for STATUS.json. Canceller risk noted; small races have been winning.
+2026-10-09 06:40 UTC: All 5 campaigns submitted and polling. STATUS.json not yet present (GHA queue latency normal). Ledger rows updated for all 9 candidates. Heartbeat active. Awaiting GHA results; will harvest on completion and run Q1 locally for S2 survivors.
+2026-10-09 12:35 UTC: Track 5 supervisor respawned after 11:01Z VM reboot (previous HB 06:37Z, ~6h stale).
+
+STATE ASSESSMENT:
+- Batch-4 co-designed trio (cd1_p_a27b1, cd1_p_a21b7, cd2_p_a43b7) + hyb5_casc8_p43: ALL S0/S1/S2 PASS + Q1 PASS (sac_z5=0, BIC-clean, verified on disk in hybrid/q1/). S3 INFRA_FAIL (PractRand pipe, GHA image issue) — DO NOT re-race per standing block.
+- Batch-5 6-stage (hyb5_chi6_p43, hyb5_casc6_p43 @ 20.1u): S1 FLAG (diff rejections) — statistically dead, legitimate kill after co-design (P-box was chosen FOR the cascade via metric).
+- Batch-5 8-stage: chi8_p19/p27/p43 all S1 FLAG (single-bit PB); casc8_p43 is the survivor above.
+
+TERMINAL STATUS:
+- 4 leads (cd1×2, cd2, hyb5_casc8_p43) are S0-S2+Q1 clean, S3/S4 blocked on infra. They are DOMINATED on speed (26.2-26.4u vs al_cascad 25.5u) but fully validated otherwise.
+- 5 leads (hyb5 6-stage ×2, 8-stage ×3) are S1-KILLED (terminal).
+
+NEXT: Awaiting S3 infra fix for the 4 survivors. No new co-design round launched — batch-4 methodology validated, batch-5 6-stage approach exhausted. Potential future direction: P-box co-designed FOR the AND-cascade (al_cascad style), but not started without parent direction.

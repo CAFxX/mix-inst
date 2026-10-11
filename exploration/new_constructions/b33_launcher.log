@@ -1,0 +1,16 @@
+agentwork-launch: tag=mix/track6/b33-chain schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+=== CHAIN t6_b33a 2026-10-10T19:48:42Z ===
+=== t6_b33a rc=2 2026-10-10T19:51:40Z ===
+=== CHAIN t6_b33b 2026-10-10T19:51:40Z ===
+=== t6_b33b rc=2 2026-10-10T20:24:14Z ===
+=== CHAIN t6_b33c 2026-10-10T20:24:14Z ===
+=== t6_b33c rc=0 2026-10-10T21:17:54Z ===
+=== CHAIN t6_b33d 2026-10-10T21:17:54Z ===
+=== t6_b33d rc=2 2026-10-10T21:20:14Z ===
+=== CHAIN t6_b33e 2026-10-10T21:20:14Z ===
+=== t6_b33e rc=2 2026-10-10T21:26:12Z ===
+=== CHAIN t6_b33f 2026-10-10T21:26:13Z ===
+=== t6_b33f rc=2 2026-10-10T21:29:04Z ===
+=== CHAIN t6_b33g 2026-10-10T21:29:04Z ===
+=== t6_b33g rc=2 2026-10-10T21:33:09Z ===
+=== B33 CHAIN DONE 2026-10-10T21:33:09Z ===

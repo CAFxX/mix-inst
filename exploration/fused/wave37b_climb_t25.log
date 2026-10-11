@@ -1,0 +1,18 @@
+agentwork-launch: tag=track8/w37b-climb-t25 schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+[climb t25] start z=26.0 (20s)
+[climb t25] eval 6: NEW BEST z=20.33 (156s)
+[climb t25] eval 16: NEW BEST z=10.36 (414s)
+[climb t25] eval 20: best z=10.36 (534s)
+[climb t25] eval 27: NEW BEST z=9.52 (788s)
+[climb t25] *** KEEP z=9.52 *** logged to wave37b_climb_HITS.jsonl
+[climb t25] eval 29: NEW BEST z=5.76 (888s)
+[climb t25] *** KEEP z=5.76 *** logged to wave37b_climb_HITS.jsonl
+[climb t25] eval 31: NEW BEST z=4.52 (975s)
+[climb t25] *** KEEP z=4.52 *** logged to wave37b_climb_HITS.jsonl
+[climb t25] eval 33: NEW BEST z=4.10 (1058s)
+[climb t25] *** KEEP z=4.10 *** logged to wave37b_climb_HITS.jsonl
+[climb t25] eval 40: best z=4.10 (1366s)
+[climb t25] eval 60: best z=4.10 (2436s)
+[climb t25] eval 71: NEW BEST z=3.21 (2817s)
+[climb t25] *** KEEP z=3.21 *** logged to wave37b_climb_HITS.jsonl
+[climb t25] eval 80: best z=3.21 (3272s)

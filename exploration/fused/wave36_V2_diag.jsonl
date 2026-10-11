@@ -1,0 +1,2 @@
+{"try": 1, "stages": [[60, 8, 13, 2, 10, 23, 57, 1], [53, 25, 7, 23, 15, 5, 45, 13], [45, 28, 60, 49, 23, 43, 30, 43]], "marg_ok": false, "marg_margin": -Infinity, "marg_desc": "PB SINGLE-BIT 0x0 lp=-inf", "status": "MARG-KILL"}
+{"try": 2, "stages": [[18, 22, 41, 2, 19, 58, 18, 15], [48, 20, 41, 4, 26, 7, 27, 52], [4, 9, 34, 8, 12, 25, 60, 9]], "marg_ok": false, "marg_margin": -Infinity, "marg_desc": "PB SINGLE-BIT 0x0 lp=-inf", "status": "MARG-KILL"}

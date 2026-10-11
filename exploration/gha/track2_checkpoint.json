@@ -1,0 +1,69 @@
+{
+ "coverage": {
+  "screened_with_results": 335,
+  "b5": "247/247 done, 217 survivors, 27 S1-killed, 3 S2-killed",
+  "note": "broad pool TERMINALLY CLOSED"
+ },
+ "harvested": {
+  "broad-s0s1s2-20261010-b3": "17/18 S1 CAL_PASS + S2 PASS (boyar19_gf4inv KILLED) \u2014 harvested by 16:16 status report, no re-harvest needed",
+  "broad-s0s1s2-20261010-b4": "17/17 done; 15/17 S1 CAL_PASS + S2 PASS (saar11 g0-g9,g11,g12,g14,g15 + rasd3c1_100); saar11_g10 S1-KILLED (red_rejected SEQ cell, key 0x0123456789abcdef); saar11_g13 S1-KILLED (diff_rejected 660209390169048899) \u2014 verified from raw repo artifacts by track-2 supervisor 2026-10-10T19:2xZ",
+  "broad-s1s2-20261010-b1": "17/17 S1 PASS + S2 PASS",
+  "broad-s1s2-20261010-b2": "16/17 S1 PASS + S2 PASS, 1 S1 FLAG (rasd3c1_27 KILLED)",
+  "broad-s1s2-20261010-b5": "247/247 done 0 infra fails; 217 S1 CAL_PASS+S2 PASS; 27 S1-KILLED (24 Holm + 3 zero-rej anomaly adjudicated: inner LIN/DIFF marg_kill); 3 S2-KILLED (rasd3c2_111/83, thf_blink_nw diff repeats); canaries verified (pass CAL_PASS, kill FLAG, identity KILL); raw in gha/b5_harvest_raw.json, survivors in gha/b5_survivors.json"
+ },
+ "last_submission": {
+  "campaigns": [
+   "broad-s1s2-20261010-b5a",
+   "broad-s1s2-20261010-b5b",
+   "broad-s1s2-20261010-b5c",
+   "broad-s1s2-20261010-b5d"
+  ],
+  "candidates": 247,
+  "commit": "ea327bc9",
+  "note": "entire remaining pool: rasd3c1 x112 + rasd3c2 x122 + misc x13; 11 missing rasd3c2 bundles (9,90-99) pushed new; 2 lit_midori bundles excluded as bit-identical dups of screened midori_sb0/sb1; stages s1,s2 only (S0 skipped, SPN family delay-dominated; S3 excluded, canary-pipe broken); b5a runs WITH stage canaries (batch positive control, same image), b5b-d skip-canary",
+  "run": 38079450621,
+  "stages": "s1,s2",
+  "status_at_submit": "in_progress (247 shard jobs: setup completed, shards queued/in_progress as of 19:24Z)",
+  "status_1958Z": "HEALTHY and processing: 92/248 jobs completed success, 21 in_progress, 135 queued (jobs endpoint); setup done 19:21:07Z; zero failures; run-level 'queued' is aggregation only \u2014 NOT stuck; no investigation, no re-submit",
+  "status_2019Z": "Draining clean: 185/248 jobs completed success, 20 in_progress, 43 queued; zero failures; harvest imminent",
+  "status_2045Z": "HARVESTED COMPLETE"
+ },
+ "pending": [
+  "saar11 deep validation RUNNING (pid 117477, successor-supervised): on DEEP_COMPLETE in deep/deep_summary.txt, harvest raw logs per candidate (PASS/FAIL per stage + FAIL signatures + S4 for 1G survivors), prepend ledger verdicts, update retained-set bookkeeping, goal timeline entry goal_9ba69377034a"
+ ],
+ "supervisor": "successor-20261011-0644Z track2-deep (predecessor errored 06:43Z; runner pid 117477 survived, ownership taken)",
+ "track": 2,
+ "updated": "2026-10-11T06:53:00Z",
+ "s3_pipe_fix": {
+  "finding": "RNG_test stdin64 with finite input reads all input, runs zero tests, exits 0 ('error reading from file') -- PractRand 0.96 _file_reader::refill calls read_failed()->exit(0) on EOF",
+  "impact": "s3_practrand.sh finite-input pattern silently vacuous; all S3 PASS verdicts from it VOID; observed-FAIL verdicts (fz24_o) still valid",
+  "fix": "fast_battery/src/s3_practrand.sh patched: infinite 4GB stream + -tlmax <stage> + -tlmin 10 + fail-loud guard (exit 3 on zero length= checkpoints)",
+  "fixed_at": "2026-10-10T20:10Z"
+ },
+ "saar11_s3_screen": {
+  "status": "COMPLETE 20:33:52Z -- 15/15 PASS (all logs: 15 progressive checkpoints, 0 FAILs)",
+  "candidates": 15,
+  "method": "s3gen + RNG_test stdin64 -tlmax 16M -tlmin 10, key 123456789abcdef0",
+  "logs": "workspace/mix/exploration/gha/s3_saar11/",
+  "partial": "saar11_g0 PASS (147 tests, no anomalies at 16MB)",
+  "verdict": "15-candidate S2-clean set is S3-16MB clean; deeper S3/S4 queued as follow-up"
+ },
+ "saar11_deep_validation": {
+  "status": "RUNNING 2026-10-11T06:53Z under pid 117477: g0 S3_PASS_1GB; g1 64M+256M clean, 1G stage next (backoff-gated, load easing). 1/15 fully verdicted, g1 in flight",
+  "runner": "gha/s3_saar11/run_deep_saar11.sh (pid 117477, tag track2/saar11-deep, nice 19, resumable: skips verdicted candidates)",
+  "scope": "15 candidates (saar11 g0-g9,g11,g12,g14,g15 + rasd3c1_100) \u2014 the full S3-16MB PASS set",
+  "method": "validated fixed pipe: 4GB infinite stream + RNG_test stdin64 -tlmax <stage> -tlmin 10 + fail-loud zero-length guard; stages 64M->256M->1G, stop at first FAIL; S4 SmallCrush for 1GB survivors (golden probe method verified bit-exact vs g0 meta.json 0x1aef715c1b5c3b19)",
+  "canary": "identity generator MUST FAIL at 16MB before any candidate stage; abort LOUD if not",
+  "pipe_fix_verified": "exploration/fast_battery/src/s3_practrand.sh contains 4GB stream + -tlmax + exit-3 zero-test guard (read 2026-10-11)",
+  "framing": "deeper-statistical-validation / retained-set breaking-point task; SPN/S-box family is S0 delay-dominated, NOT a frontier-challenger task (frontier t6_b33c 19.8u)",
+  "outputs": "gha/s3_saar11/deep/{deep_summary.txt,deep_runner.log,s3_<cand>_<stage>.log,s4_<cand>.log}",
+  "est": "~15 min/candidate S3 (b33c evidence 874s full S3) + ~36s S4 -> ~4h wall when load permits",
+  "progress": {
+   "verdicted": 1,
+   "of": 15,
+   "saar11_g0": "S3_PASS_1GB (raw-verified)",
+   "saar11_g1": "64M clean 17ckpt + 256M clean 19ckpt; 1G pending",
+   "current": "backoff gate before saar11_g1 1G stage at 06:53Z"
+  }
+ }
+}

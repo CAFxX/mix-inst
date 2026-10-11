@@ -1,0 +1,19 @@
+[wave38-s0] started 2026-10-11T06:48:37Z pid=181932
+[wave38-s0] backoff CLEAR after 10 polls 2026-10-11T06:57:47Z
+[wave38-s0] S0 w38_t039 start 2026-10-11T06:57:47Z
+[wave38-s0] S0 w38_t039 done rc=0 xcheck_lines=1: RESULT name=w38_t039 cells=6085 area=19787 crit=19.8 delay_ratio=0.191 area_ratio=0.560 ref_crit=103.5 ref_area=35323
+[wave38-s0] S0 w38_t064 start 2026-10-11T06:58:38Z
+[wave38-s0] S0 w38_t064 done rc=0 xcheck_lines=1: RESULT name=w38_t064 cells=5571 area=16639 crit=21.3 delay_ratio=0.206 area_ratio=0.471 ref_crit=103.5 ref_area=35323
+[wave38-s0] S0 w38_t004 start 2026-10-11T07:00:07Z
+[wave38-s0] S0 w38_t004 done rc=0 xcheck_lines=1: RESULT name=w38_t004 cells=5422 area=17039 crit=19.6 delay_ratio=0.189 area_ratio=0.482 ref_crit=103.5 ref_area=35323
+[wave38-s0] S0 w38_t027 start 2026-10-11T07:01:53Z
+[wave38-s0] S0 w38_t027 done rc=0 xcheck_lines=1: RESULT name=w38_t027 cells=5922 area=19115 crit=20.1 delay_ratio=0.194 area_ratio=0.541 ref_crit=103.5 ref_area=35323
+[wave38-s0] S0 w38_t116 start 2026-10-11T07:03:20Z
+[wave38-s0] S0 w38_t116 done rc=0 xcheck_lines=1: RESULT name=w38_t116 cells=6767 area=21832 crit=19.2 delay_ratio=0.186 area_ratio=0.618 ref_crit=103.5 ref_area=35323
+[wave38-s0] S0 w38_t049 start 2026-10-11T07:04:18Z
+[wave38-s0] S0 w38_t049 done rc=0 xcheck_lines=1: RESULT name=w38_t049 cells=5918 area=19146 crit=20.1 delay_ratio=0.194 area_ratio=0.542 ref_crit=103.5 ref_area=35323
+[wave38-s0] S0 w38_t090 start 2026-10-11T07:04:50Z
+[wave38-s0] S0 w38_t090 done rc=0 xcheck_lines=1: RESULT name=w38_t090 cells=6755 area=21786 crit=19.2 delay_ratio=0.186 area_ratio=0.617 ref_crit=103.5 ref_area=35323
+[wave38-s0] S0 w38_t104 start 2026-10-11T07:05:19Z
+[wave38-s0] S0 w38_t104 done rc=0 xcheck_lines=1: RESULT name=w38_t104 cells=6231 area=20077 crit=19.8 delay_ratio=0.191 area_ratio=0.568 ref_crit=103.5 ref_area=35323
+[wave38-s0] ALL DONE 2026-10-11T07:05:46Z

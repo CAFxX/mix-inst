@@ -1,0 +1,9 @@
+[wave38-batt] started 2026-10-11T07:11:01Z pid=226800 (queued by status report)
+[wave38-batt] backoff CLEAR after 6 polls 2026-10-11T07:18:12Z
+[wave38-batt] battery w38_t004 start 2026-10-11T07:18:12Z
+[wave38-batt] battery w38_t004 rc=2 2026-10-11T07:21:09Z
+[wave38-batt] battery w38_t116 start 2026-10-11T07:21:10Z
+[wave38-batt] battery w38_t116 rc=2 2026-10-11T07:22:52Z
+[wave38-batt] battery w38_t090 start 2026-10-11T07:22:52Z
+[wave38-batt] battery w38_t090 rc=2 2026-10-11T07:24:29Z
+[wave38-batt] ALL DONE 2026-10-11T07:24:29Z

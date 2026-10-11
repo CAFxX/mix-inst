@@ -1,0 +1,165 @@
+{
+ "all": [
+  {
+   "name": "lit_present",
+   "source": "PRESENT paper (Bogdanov et al. 2007)",
+   "delay": 6.0,
+   "du": 4,
+   "nl": 4,
+   "table": "c56b90ad3ef84712"
+  },
+  {
+   "name": "lit_skinny",
+   "source": "SKINNY spec (Beierle et al., CRYPTO 2016; 2 srcs)",
+   "delay": 5.2,
+   "du": 4,
+   "nl": 4,
+   "table": "c6901a2b385d4e7f"
+  },
+  {
+   "name": "lit_rectangle",
+   "source": "RECTANGLE paper (Zhang et al. 2015, primary)",
+   "delay": 4.5,
+   "du": 4,
+   "nl": 4,
+   "table": "94fae106c7382b5d"
+  },
+  {
+   "name": "lit_midori_sb0",
+   "source": "MIDORI spec (Banik et al.); parent-verified",
+   "delay": 3.0,
+   "du": 4,
+   "nl": 4,
+   "table": "cad3ebf789150246"
+  },
+  {
+   "name": "lit_midori_sb1",
+   "source": "MIDORI spec (Banik et al.); parent-verified",
+   "delay": 4.0,
+   "du": 4,
+   "nl": 4,
+   "table": "1053e2f7da9bc846"
+  },
+  {
+   "name": "s1_baseline",
+   "source": "our S1 (depth-3 reference)",
+   "delay": 3.7,
+   "du": 4,
+   "nl": 4,
+   "table": "012438fc95b67eda"
+  },
+  {
+   "name": "aff_eq3",
+   "source": "random affine-equiv of S1 #3",
+   "delay": 4.2,
+   "du": 4,
+   "nl": 4,
+   "table": "37c2ae1649fd85b0"
+  },
+  {
+   "name": "aff_eq4",
+   "source": "random affine-equiv of S1 #4",
+   "delay": 4.7,
+   "du": 4,
+   "nl": 4,
+   "table": "bc73642d0591aef8"
+  },
+  {
+   "name": "aff_eq5",
+   "source": "random affine-equiv of S1 #5",
+   "delay": 4.5,
+   "du": 4,
+   "nl": 4,
+   "table": "2cda3b76409fe581"
+  },
+  {
+   "name": "aff_eq6",
+   "source": "random affine-equiv of S1 #6",
+   "delay": 4.5,
+   "du": 4,
+   "nl": 4,
+   "table": "510ea4c87f32d69b"
+  },
+  {
+   "name": "rnd_opt1",
+   "source": "random 4-bit perm, DU=4/NL=4 filtered",
+   "delay": 5.5,
+   "du": 4,
+   "nl": 4,
+   "table": "903647bac1582efd"
+  },
+  {
+   "name": "rnd_opt2",
+   "source": "random 4-bit perm, DU=4/NL=4 filtered",
+   "delay": 6.0,
+   "du": 4,
+   "nl": 4,
+   "table": "e4ac1f853bd60927"
+  },
+  {
+   "name": "rnd_opt3",
+   "source": "random 4-bit perm, DU=4/NL=4 filtered",
+   "delay": 5.5,
+   "du": 4,
+   "nl": 4,
+   "table": "d02879a3fbc614e5"
+  },
+  {
+   "name": "rnd_opt4",
+   "source": "random 4-bit perm, DU=4/NL=4 filtered",
+   "delay": 4.5,
+   "du": 4,
+   "nl": 4,
+   "table": "c2bae5f194678d30"
+  },
+  {
+   "name": "rnd_opt5",
+   "source": "random 4-bit perm, DU=4/NL=4 filtered",
+   "delay": 5.0,
+   "du": 4,
+   "nl": 4,
+   "table": "e416b0f9a325dc78"
+  },
+  {
+   "name": "mols8_c12",
+   "source": "MOLS(8) GF(8) pair c=1,2, 4x4 corner mod4",
+   "delay": null,
+   "note": "affine (DU=16) - excluded from synth, S1-fail certain"
+  },
+  {
+   "name": "mols8_c23",
+   "source": "MOLS(8) GF(8) pair c=2,3, 4x4 corner mod4",
+   "delay": null,
+   "note": "affine (DU=16) - excluded from synth, S1-fail certain"
+  },
+  {
+   "name": "mols8_c35",
+   "source": "MOLS(8) GF(8) pair c=3,5, 4x4 corner mod4",
+   "delay": null,
+   "note": "affine (DU=16) - excluded from synth, S1-fail certain"
+  },
+  {
+   "name": "mols8_c25",
+   "source": "MOLS(8) GF(8) pair c=2,5, 4x4 corner mod4",
+   "delay": null,
+   "note": "affine (DU=16) - excluded from synth, S1-fail certain"
+  }
+ ],
+ "ranked": [
+  "lit_midori_sb0",
+  "s1_baseline",
+  "lit_midori_sb1",
+  "aff_eq3",
+  "lit_rectangle",
+  "aff_eq5",
+  "aff_eq6",
+  "rnd_opt4",
+  "aff_eq4",
+  "rnd_opt5",
+  "lit_skinny",
+  "rnd_opt1",
+  "rnd_opt3",
+  "lit_present",
+  "rnd_opt2"
+ ]
+}

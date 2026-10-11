@@ -1,0 +1,28 @@
+rasC1_0 (S4D3C1_L8U4.txt:0): depth=3 (nonlin 3), cells=273, DU=4
+rasC1_1 (S4D3C1_L8U4.txt:30): depth=3 (nonlin 3), cells=257, DU=4
+rasC1_2 (S4D3C1_L8U4.txt:60): depth=3 (nonlin 3), cells=239, DU=4
+rasC1_3 (S4D3C1_L8U4.txt:91): depth=4 (nonlin 4), cells=258, DU=4
+rasC1_4 (S4D3C1_L8U4.txt:121): depth=4 (nonlin 4), cells=268, DU=4
+rasC1_5 (S4D3C1_L8U4.txt:151): depth=4 (nonlin 4), cells=257, DU=4
+rasC2_0 (S4D3C2_L8U4.txt:0): depth=3 (nonlin 3), cells=238, DU=4
+rasC2_1 (S4D3C2_L8U4.txt:26): depth=3 (nonlin 3), cells=242, DU=4
+rasC2_2 (S4D3C2_L8U4.txt:51): depth=3 (nonlin 3), cells=254, DU=4
+rasC2_3 (S4D3C2_L8U4.txt:77): depth=3 (nonlin 3), cells=257, DU=4
+rasC2_4 (S4D3C2_L8U4.txt:102): depth=3 (nonlin 3), cells=255, DU=4
+rasC2_5 (S4D3C2_L8U4.txt:128): depth=3 (nonlin 3), cells=223, DU=4
+
+Ranked:
+  3 levels  rasC1_0 (S4D3C1_L8U4.txt:0)
+  3 levels  rasC1_1 (S4D3C1_L8U4.txt:30)
+  3 levels  rasC1_2 (S4D3C1_L8U4.txt:60)
+  3 levels  rasC2_0 (S4D3C2_L8U4.txt:0)
+  3 levels  rasC2_1 (S4D3C2_L8U4.txt:26)
+  3 levels  rasC2_2 (S4D3C2_L8U4.txt:51)
+  3 levels  rasC2_3 (S4D3C2_L8U4.txt:77)
+  3 levels  rasC2_4 (S4D3C2_L8U4.txt:102)
+  3 levels  rasC2_5 (S4D3C2_L8U4.txt:128)
+  4 levels  rasC1_3 (S4D3C1_L8U4.txt:91)
+  4 levels  rasC1_4 (S4D3C1_L8U4.txt:121)
+  4 levels  rasC1_5 (S4D3C1_L8U4.txt:151)
+
+keep: ['rasC1_0', 'rasC1_1', 'rasC1_2']

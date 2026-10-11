@@ -1,0 +1,51 @@
+ULBC_s1: standalone delay = 3.4u
+BOYAR19_GF4INV: standalone delay = 4.2u
+THF_BLINK_S0: standalone delay = 3.4u
+LU21_RECTANGLE: standalone delay = 5.0u
+LU21_PICCOLO: standalone delay = 5.2u
+LU21_LBLOCK_S0: standalone delay = 4.0u
+JIA25_12GE_R1: standalone delay = Noneu
+JIA25_12GE_R2: standalone delay = Noneu
+JIA25_12GE_R3: standalone delay = Noneu
+ORTHROS_S0: standalone delay = Noneu
+PRINCE_S0: standalone delay = 4.0u
+SAAR11_G0: standalone delay = 4.2u
+SAAR11_G1: standalone delay = 5.0u
+SAAR11_G2: standalone delay = 4.7u
+SAAR11_G3: standalone delay = 5.0u
+SAAR11_G4: standalone delay = 4.2u
+SAAR11_G5: standalone delay = 4.2u
+SAAR11_G6: standalone delay = 5.0u
+SAAR11_G7: standalone delay = 4.4u
+SAAR11_G8: standalone delay = 4.5u
+SAAR11_G9: standalone delay = 4.2u
+SAAR11_G10: standalone delay = 4.0u
+SAAR11_G11: standalone delay = 4.7u
+SAAR11_G12: standalone delay = 4.4u
+SAAR11_G13: standalone delay = 4.5u
+SAAR11_G14: standalone delay = Noneu
+SAAR11_G15: standalone delay = Noneu
+
+=== RANKED (add2 pool) ===
+  3.4u  ULBC_s1
+  3.4u  THF_BLINK_S0
+  4.0u  LU21_LBLOCK_S0
+  4.0u  PRINCE_S0
+  4.0u  SAAR11_G10
+  4.2u  BOYAR19_GF4INV
+  4.2u  SAAR11_G0
+  4.2u  SAAR11_G4
+  4.2u  SAAR11_G5
+  4.2u  SAAR11_G9
+  4.4u  SAAR11_G7
+  4.4u  SAAR11_G12
+  4.5u  SAAR11_G8
+  4.5u  SAAR11_G13
+  4.7u  SAAR11_G2
+  4.7u  SAAR11_G11
+  5.0u  LU21_RECTANGLE
+  5.0u  SAAR11_G1
+  5.0u  SAAR11_G3
+  5.0u  SAAR11_G6
+  5.2u  LU21_PICCOLO
+EXIT:0

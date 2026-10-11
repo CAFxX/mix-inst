@@ -1,0 +1,39 @@
+lit_present: standalone delay = 6.0u
+lit_skinny: standalone delay = 5.2u
+lit_rectangle: standalone delay = 4.5u
+lit_midori_sb0: standalone delay = 3.0u
+lit_midori_sb1: standalone delay = 4.0u
+s1_baseline: standalone delay = 3.7u
+aff_eq3: standalone delay = 4.2u
+aff_eq4: standalone delay = 4.7u
+aff_eq5: standalone delay = 4.5u
+aff_eq6: standalone delay = 4.5u
+rnd_opt1: standalone delay = 5.5u
+rnd_opt2: standalone delay = 6.0u
+rnd_opt3: standalone delay = 5.5u
+rnd_opt4: standalone delay = 4.5u
+rnd_opt5: standalone delay = 5.0u
+mols8_c12: SKIP (affine)
+mols8_c23: SKIP (affine)
+mols8_c35: SKIP (affine)
+mols8_c25: SKIP (affine)
+
+=== RANKED (broad pool, by standalone mapped delay) ===
+  3.0u  lit_midori_sb0   DU=4 NL=4 :: MIDORI spec (Banik et al.); parent-verified
+  3.7u  s1_baseline      DU=4 NL=4 :: our S1 (depth-3 reference)
+  4.0u  lit_midori_sb1   DU=4 NL=4 :: MIDORI spec (Banik et al.); parent-verified
+  4.2u  aff_eq3          DU=4 NL=4 :: random affine-equiv of S1 #3
+  4.5u  lit_rectangle    DU=4 NL=4 :: RECTANGLE paper (Zhang et al. 2015, primary)
+  4.5u  aff_eq5          DU=4 NL=4 :: random affine-equiv of S1 #5
+  4.5u  aff_eq6          DU=4 NL=4 :: random affine-equiv of S1 #6
+  4.5u  rnd_opt4         DU=4 NL=4 :: random 4-bit perm, DU=4/NL=4 filtered
+  4.7u  aff_eq4          DU=4 NL=4 :: random affine-equiv of S1 #4
+  5.0u  rnd_opt5         DU=4 NL=4 :: random 4-bit perm, DU=4/NL=4 filtered
+  5.2u  lit_skinny       DU=4 NL=4 :: SKINNY spec (Beierle et al., CRYPTO 2016; 2 srcs
+  5.5u  rnd_opt1         DU=4 NL=4 :: random 4-bit perm, DU=4/NL=4 filtered
+  5.5u  rnd_opt3         DU=4 NL=4 :: random 4-bit perm, DU=4/NL=4 filtered
+  6.0u  lit_present      DU=4 NL=4 :: PRESENT paper (Bogdanov et al. 2007)
+  6.0u  rnd_opt2         DU=4 NL=4 :: random 4-bit perm, DU=4/NL=4 filtered
+
+Skipped (affine): ['mols8_c12', 'mols8_c23', 'mols8_c35', 'mols8_c25']
+EXIT:0

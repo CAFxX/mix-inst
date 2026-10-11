@@ -1,0 +1,162 @@
+{
+ "all": [
+  {
+   "name": "ULBC_s1",
+   "delay": 3.4,
+   "table": "8015c7462a3defb9"
+  },
+  {
+   "name": "BOYAR19_GF4INV",
+   "delay": 4.2,
+   "table": "04c81aed3b59276f"
+  },
+  {
+   "name": "THF_BLINK_S0",
+   "delay": 3.4,
+   "table": "109385e742cbaf6d"
+  },
+  {
+   "name": "LU21_RECTANGLE",
+   "delay": 5.0,
+   "table": "65ca1e79b03d8f42"
+  },
+  {
+   "name": "LU21_PICCOLO",
+   "delay": 5.2,
+   "table": "e4b238091a7f6c5d"
+  },
+  {
+   "name": "LU21_LBLOCK_S0",
+   "delay": 4.0,
+   "table": "e9f0d4ab128376c5"
+  },
+  {
+   "name": "JIA25_12GE_R1",
+   "delay": null,
+   "table": "04ca51db27f8e963"
+  },
+  {
+   "name": "JIA25_12GE_R2",
+   "delay": null,
+   "table": "0b6f1ae7395d4c82"
+  },
+  {
+   "name": "JIA25_12GE_R3",
+   "delay": null,
+   "table": "01476d2acf98e5b3"
+  },
+  {
+   "name": "ORTHROS_S0",
+   "delay": null,
+   "table": "1024386d9abefc75"
+  },
+  {
+   "name": "PRINCE_S0",
+   "delay": 4.0,
+   "table": "bf32ac916780e5d4"
+  },
+  {
+   "name": "SAAR11_G0",
+   "delay": 4.2,
+   "table": "0123468a5bcf7e9d"
+  },
+  {
+   "name": "SAAR11_G1",
+   "delay": 5.0,
+   "table": "0123468a5bcfed97"
+  },
+  {
+   "name": "SAAR11_G2",
+   "delay": 4.7,
+   "table": "0123468a5bcf79de"
+  },
+  {
+   "name": "SAAR11_G3",
+   "delay": 5.0,
+   "table": "0123468b5cd7f9ea"
+  },
+  {
+   "name": "SAAR11_G4",
+   "delay": 4.2,
+   "table": "0123468b5c9dea7f"
+  },
+  {
+   "name": "SAAR11_G5",
+   "delay": 4.2,
+   "table": "0123468b5cd7af9e"
+  },
+  {
+   "name": "SAAR11_G6",
+   "delay": 5.0,
+   "table": "0123468b5cd79fae"
+  },
+  {
+   "name": "SAAR11_G7",
+   "delay": 4.4,
+   "table": "0123468c59bdea7f"
+  },
+  {
+   "name": "SAAR11_G8",
+   "delay": 4.5,
+   "table": "0123468a5bcfde79"
+  },
+  {
+   "name": "SAAR11_G9",
+   "delay": 4.2,
+   "table": "0123468b59ced7af"
+  },
+  {
+   "name": "SAAR11_G10",
+   "delay": 4.0,
+   "table": "0123468c59bde7af"
+  },
+  {
+   "name": "SAAR11_G11",
+   "delay": 4.7,
+   "table": "0123468c59dfa7be"
+  },
+  {
+   "name": "SAAR11_G12",
+   "delay": 4.4,
+   "table": "0123468b5c9de7af"
+  },
+  {
+   "name": "SAAR11_G13",
+   "delay": 4.5,
+   "table": "0123468b59ceda7f"
+  },
+  {
+   "name": "SAAR11_G14",
+   "delay": null,
+   "table": "0123468b59cf7dae"
+  },
+  {
+   "name": "SAAR11_G15",
+   "delay": null,
+   "table": "0123468a5bcf7d9e"
+  }
+ ],
+ "ranked": [
+  "ULBC_s1",
+  "THF_BLINK_S0",
+  "LU21_LBLOCK_S0",
+  "PRINCE_S0",
+  "SAAR11_G10",
+  "BOYAR19_GF4INV",
+  "SAAR11_G0",
+  "SAAR11_G4",
+  "SAAR11_G5",
+  "SAAR11_G9",
+  "SAAR11_G7",
+  "SAAR11_G12",
+  "SAAR11_G8",
+  "SAAR11_G13",
+  "SAAR11_G2",
+  "SAAR11_G11",
+  "LU21_RECTANGLE",
+  "SAAR11_G1",
+  "SAAR11_G3",
+  "SAAR11_G6",
+  "LU21_PICCOLO"
+ ]
+}

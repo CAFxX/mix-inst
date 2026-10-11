@@ -1,0 +1,22 @@
+=== S0a [rtw_pb_rev_a03] started 2026-10-03T16:06:29Z
+--- S0a tail:
+/home/hatch/workspace/mix/exploration/round_tweak/models/rtweak.py:104: RuntimeWarning: overflow encountered in scalar multiply
+  return (rotl64_np(k, r) ^ (np.uint64(int(i) + 1) * GOLDEN64)) & MASK32
+XCHECK rtw_pb_rev_a03: PASS 10000/10000 C==Python
+=== S0a [rtw_pb_rev_a03] rc=0 wall=26s
+=== S0 [rtw_pb_rev_a03] started 2026-10-03T16:06:56Z
+--- S0 tail:
+/home/hatch/workspace/mix/exploration/round_tweak/models/rtweak.py:104: RuntimeWarning: overflow encountered in scalar multiply
+  return (rotl64_np(k, r) ^ (np.uint64(int(i) + 1) * GOLDEN64)) & MASK32
+[S0 rtw_pb_rev_a03] delay=33.1u cells=3207 x_mult=0.320 (bar 0.9) equiv=n=1000 err=0 -> PASS [ref 0s cached=True, dut 4s, equiv 46s]
+=== S0 [rtw_pb_rev_a03] rc=0 wall=52s
+=== S1 [rtw_pb_rev_a03] started 2026-10-03T16:07:47Z
+--- S1 tail:
+  [DIFF] key=0x123456789abcdef worst|z|=179755.8 fisher_logp=-inf bonf_logp=-16156078082.32
+  [DIFF] key=0xf0b52a9e7d8ba2b5 worst|z|=527914.5 fisher_logp=-inf bonf_logp=-139346878384.44
+  [DIFF] key=0x92988f142674743 worst|z|=233775.6 fisher_logp=-inf bonf_logp=-27325513797.29
+  LIN: FLAG (rej=10)  DIFF: FLAG (rej=10)
+[S1 rtw_pb_rev_a03] LIN/DIFF 64s: LIN FLAG DIFF FLAG; SKIPPED (LIN/DIFF kill)
+[S1 rtw_pb_rev_a03] verdict: FLAG
+=== S1 [rtw_pb_rev_a03] rc=2 wall=68s
+BATTERY-FAIL stage=S1-screen [rtw_pb_rev_a03] (see /home/hatch/workspace/mix/exploration/fast_battery/results/rtw_pb_rev_a03/battery.log)

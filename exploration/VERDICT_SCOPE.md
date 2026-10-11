@@ -114,6 +114,8 @@ frontier (notr family, 37.4–37.9u).
 
 | O83 | 6-stage chi cascade + per-stage key fold rk_i=rotl(k,13(i+1))^RC[i] in XOR tree, S0 26.0u | adder-lat: al_chi6k — S1 PASS; S2 tool-PASS (repeats=0) BUT differential profile KILL: key=0x123456789abcdef0 max|z|=103.0 @ bit52; key=0x0 49/115 deltas |z|>9, peak 95.2 @ bit34, broad 10–70 elevation | per-stage key folding introduces systematic differential bias **in this construction** (keyless al_chi8 S2 max|z|=4.3 clean; the fold is the differentiator); fold also costs +5.6u | keyless chi cascades (al_chi6/al_chi8); key schedule outside the XOR tree | HIGH |
 
+| O87 | Bijective quadratic 4-bit S-box (mined Q4, DU=8) as repeated replacement-stage, 2-rotation XOR tree, pre-whiten + rotl(k,13) | track-6 batch-49: pre-pilot exact-DIFF triage q4bS4 4/6 KEEP (min z=2.6, calibration b33c z=3.3 exact), q4bS3 0/6 KEEP (min z=18273.5, b48-class kill) — bundle t6_q4S4a (min-z keep, bit-exact C-vs-Python 2000/2000, ANF-vs-LUT 500/500) → S0 28.0u (crit=29.0, 7.0u/stage, XCHECK clean, ref mul64 103.5) vs 19.3u bar | quality-alive but COST-DOOMED **in the 4st/3st repeated-Q4 replacement-cascade construction**: the 5-AND-monomial quadratic S-box costs 7.0u/stage vs the <4.83u/stage budget; per-stage cost is schedule-independent so no rotation schedule rescues it. Pilot foregone per pre-registered rule (b48 precedent) | cost-driven quadratic-S-box mining (minimize AND-monomials s.t. bijective + DU≤8); other S-box families as repeated stages | MEDIUM |
+
 ## Rules
 
 1. A kill is recorded as "**X** fails in **<exact construction>**", never "**X** fails".

@@ -1,0 +1,26 @@
+{
+ "name": "r8_feist6_pbox",
+ "description": "6r Feistel, F=S1x1+lin713 + P32 on new R, whitening",
+ "composition": "6r Feistel, F=S1x1+lin713 + P32 on new R, whitening",
+ "rtl_top": "r8_feist6_pbox",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xcf146959c21ad6a4"
+  },
+  {
+   "val": "0x0",
+   "key": "0x0",
+   "out": "0xd2c9f2162175907f"
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "name": "r8_feist6_s1_alt",
+ "description": "6r Feistel, alternating F (1sbox/2sbox), whitening",
+ "composition": "6r Feistel, alternating F (1sbox/2sbox), whitening",
+ "rtl_top": "r8_feist6_s1_alt",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xdc56ae1f4b8e1011"
+  },
+  {
+   "val": "0x0",
+   "key": "0x0",
+   "out": "0xd8d3d506cf5eaa41"
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "name": "r9_feist6_ksrot_nw",
+ "description": "6r Feistel, F=S1x1+lin713, rk=rotl64(k,8i), NO whitening",
+ "composition": "6r Feistel, F=S1x1+lin713, rk=rotl64(k,8i), NO whitening",
+ "rtl_top": "r9_feist6_ksrot_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xc9f4ed4219c62a3a"
+  },
+  {
+   "val": "0x0",
+   "key": "0x0",
+   "out": "0x0000000000000000"
+  }
+ ]
+}

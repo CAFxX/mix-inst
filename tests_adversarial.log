@@ -1,0 +1,34 @@
+--- splitmix64 ---
+    seq-key0       23 tests, worst: perbit-max|z| z=+3.33
+    seq-key9e37    23 tests, worst: perbit-max|z| z=+2.78
+    seq-keyAAAA    23 tests, worst: lemire-X=1000 z=-1.91
+    seq-keyFFFF    23 tests, worst: mask-m=2 z=+2.63
+    seq-key5555    23 tests, worst: perbit-max|z| z=+1.71
+    stride-3       23 tests, worst: mod-7 z=+2.65
+    stride-big2    23 tests, worst: perbit-max|z| z=+2.90
+--- murmur3-fmix ---
+    seq-key0       23 tests, worst: lemire-X=3 z=+2.26
+    seq-key9e37    23 tests, worst: lemire-X=2 z=+3.26
+    seq-keyAAAA    23 tests, worst: perbit-max|z| z=+2.86
+    seq-keyFFFF    23 tests, worst: perbit-max|z| z=+2.77
+    seq-key5555    23 tests, worst: perbit-max|z| z=+2.64
+    stride-3       23 tests, worst: perbit-max|z| z=+2.36
+    stride-big2    23 tests, worst: low4-chi2 z=+3.93
+--- SPN-8 ---
+    seq-key0       23 tests, worst: lemire-X=2 z=+143.19  FLAGS: [('raw-monobit', 9.65), ('perbit-max|z|', 16.96), ('lemire-X=2', 143.19), ('lemire-X=3', 69.94), ('lemire-X=10', 54.11), ('lemire-X=1000', 10.71), ('lemire-X=4294967296', 10.49), ('lemire-X=18446744073709551615', 10.49)]
+    seq-key9e37    23 tests, worst: lemire-X=10 z=+106.81  FLAGS: [('perbit-max|z|', 19.6), ('lemire-X=2', 38.78), ('lemire-X=3', 4.65), ('lemire-X=10', 106.81), ('lemire-X=1000', 16.58), ('lemire-X=4294967296', 15.78), ('lemire-X=18446744073709551615', 15.78)]
+    seq-keyAAAA    23 tests, worst: lemire-X=3 z=+21.34  FLAGS: [('perbit-max|z|', 13.12), ('lemire-X=2', 16.48), ('lemire-X=3', 21.34), ('lemire-X=10', 19.96), ('lemire-X=1000', 6.15), ('lemire-X=4294967296', 7.53), ('lemire-X=18446744073709551615', 7.53)]
+    seq-keyFFFF    23 tests, worst: lemire-X=2 z=+57.47  FLAGS: [('perbit-max|z|', 11.6), ('lemire-X=2', 57.47), ('lemire-X=3', 12.5), ('lemire-X=10', 21.06), ('lemire-X=1000', 4.14)]
+    seq-key5555    23 tests, worst: lemire-X=10 z=+19.40  FLAGS: [('perbit-max|z|', 9.37), ('lemire-X=2', 15.91), ('lemire-X=10', 19.4), ('lemire-X=1000', 6.11), ('lemire-X=4294967296', 6.81), ('lemire-X=18446744073709551615', 6.81)]
+    stride-3       23 tests, worst: lemire-X=10 z=+59.56  FLAGS: [('raw-monobit', -7.62), ('perbit-max|z|', 15.38), ('lemire-X=3', 27.65), ('lemire-X=10', 59.56), ('lemire-X=1000', 11.6), ('lemire-X=4294967296', 15.21), ('lemire-X=18446744073709551615', 15.21)]
+    stride-big2    23 tests, worst: lemire-X=10 z=+11.45  FLAGS: [('perbit-max|z|', 8.57), ('lemire-X=3', 5.9), ('lemire-X=10', 11.45), ('lemire-X=1000', 4.47), ('lemire-X=4294967296', 4.05), ('lemire-X=18446744073709551615', 4.05)]
+--- SPN-10 ---
+    seq-key0       23 tests, worst: perbit-max|z| z=+3.84
+    seq-key9e37    23 tests, worst: perbit-max|z| z=+2.91
+    seq-keyAAAA    23 tests, worst: perbit-max|z| z=+2.76
+    seq-keyFFFF    23 tests, worst: perbit-max|z| z=+3.32
+    seq-key5555    23 tests, worst: perbit-max|z| z=+2.63
+    stride-3       23 tests, worst: perbit-max|z| z=+4.57  FLAGS: [('perbit-max|z|', 4.57)]
+    stride-big2    23 tests, worst: perbit-max|z| z=+2.88
+total flags: 47  (41s)
+EXIT: 0

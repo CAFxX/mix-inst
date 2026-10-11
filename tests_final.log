@@ -1,0 +1,60 @@
+==============================================================================
+PART A: avalanche / SAC  (trials=4096)
+  splitmix64     val: mean=0.50002 mean|dev|=0.00635 max|dev|=0.03027
+  splitmix64     key: mean=0.50002 mean|dev|=0.00635 max|dev|=0.03027
+  murmur3-fmix   val: mean=0.50008 mean|dev|=0.00606 max|dev|=0.02686
+  murmur3-fmix   key: mean=0.50008 mean|dev|=0.00606 max|dev|=0.02686
+  SPN-8          val: mean=0.50001 mean|dev|=0.00621 max|dev|=0.02661
+  SPN-8          key: mean=0.50008 mean|dev|=0.00630 max|dev|=0.02808
+  SPN-10         val: mean=0.50006 mean|dev|=0.00624 max|dev|=0.02783
+  SPN-10         key: mean=0.49993 mean|dev|=0.00621 max|dev|=0.02710
+  (6s)
+==============================================================================
+PART B: BIC max|corr| (trials=8192, flip val bit0)
+  splitmix64    : 0.0653
+  murmur3-fmix  : 0.9653
+  SPN-8         : 0.0354
+  SPN-10        : 0.0439
+  (0s)
+==============================================================================
+PART C: sequential-input uniformity chi2 z (n=2^20, fixed key)
+  splitmix64    : m4=+1.08 m8=-0.28 m12=-0.11 m14=-0.52
+  murmur3-fmix  : m4=+0.72 m8=-0.05 m12=-0.90 m14=-0.95
+  SPN-8         : m4=+0.51 m8=-1.03 m12=-0.28 m14=-0.74
+  SPN-10        : m4=-0.85 m8=-1.09 m12=-0.92 m14=-0.93
+  (61s)
+==============================================================================
+PART D: sequence battery (|z|>4 flagged)
+  --- splitmix64 ---
+    seq64          23 tests, worst: perbit-max|z| z=+2.14
+    seq64-oddkey   23 tests, worst: perbit-max|z| z=+2.72
+    stride-big     23 tests, worst: perbit-max|z| z=+2.26
+    stride-2       23 tests, worst: perbit-max|z| z=+2.44
+    high-only      23 tests, worst: perbit-max|z| z=+2.02
+    random         23 tests, worst: perbit-max|z| z=+3.21
+  --- murmur3-fmix ---
+    seq64          23 tests, worst: perbit-max|z| z=+2.77
+    seq64-oddkey   23 tests, worst: perbit-max|z| z=+2.83
+    stride-big     23 tests, worst: perbit-max|z| z=+2.25
+    stride-2       23 tests, worst: perbit-max|z| z=+2.70
+    high-only      23 tests, worst: perbit-max|z| z=+2.79
+    random         23 tests, worst: perbit-max|z| z=+2.71
+  --- SPN-8 ---
+    seq64          23 tests, worst: lemire-X=2 z=+212.09  FLAGS: [('perbit-max|z|', 17.34765625), ('lemire-X=2', 212.0904404741058), ('lemire-X=3', 69.45176696777344), ('lemire-X=10', 76.8965928785683), ('lemire-X=1000', 7.736875957388348), ('lemire-X=4294967296', 8.377161014538121), ('lemire-X=18446744073709551615', 8.377161014538121)]
+    seq64-oddkey   23 tests, worst: lemire-X=2 z=+29.17  FLAGS: [('raw-monobit', -4.23046875), ('perbit-max|z|', 15.828125), ('lemire-X=2', 29.168154723945083), ('lemire-X=10', 22.52463173643627), ('lemire-X=1000', 7.346522081077497), ('lemire-X=4294967296', 8.063505404410678), ('lemire-X=18446744073709551615', 8.063505404410678)]
+    stride-big     23 tests, worst: low14-chi2 z=+2.95
+    stride-2       23 tests, worst: perbit-max|z| z=+12.50  FLAGS: [('perbit-max|z|', 12.5), ('lemire-X=3', 6.6411895751953125), ('lemire-X=10', 6.555386397035607), ('lemire-X=1000', 4.270970486304776), ('lemire-X=4294967296', 5.568768822538001), ('lemire-X=18446744073709551615', 5.568768822538001)]
+    high-only      23 tests, worst: perbit-max|z| z=+6.25  FLAGS: [('perbit-max|z|', 6.24609375)]
+    random         23 tests, worst: mod-1000 z=-2.85
+  --- SPN-10 ---
+    seq64          23 tests, worst: perbit-max|z| z=+3.00
+    seq64-oddkey   23 tests, worst: perbit-max|z| z=+4.37  FLAGS: [('perbit-max|z|', 4.37109375)]
+    stride-big     23 tests, worst: mask-m=1 z=+4.49  FLAGS: [('mask-m=1', 4.48954973833805)]
+    stride-2       23 tests, worst: perbit-max|z| z=+2.55
+    high-only      23 tests, worst: perbit-max|z| z=+2.99
+    random         23 tests, worst: mod-3 z=+2.93
+  total flags: 23  (50s)
+==============================================================================
+DONE
+EXIT: 0
+EXIT: 0

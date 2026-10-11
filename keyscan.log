@@ -1,0 +1,9 @@
+SPN-10: 32 keys seq N=2^18: flags=7/32 worst|z|=5.53 (32s)
+   key=0x3cc4feb11a717bff bit=31 z=+4.00
+   key=0x26f0ae2707772c5b bit=61 z=+5.17
+   key=0xea5157b971c9b0be bit=61 z=+4.63
+   key=0xb8614c830e7c2a62 bit=29 z=+5.47
+   key=0x5a720f685056d5e5 bit=55 z=+4.77
+   key=0x38ab7fd86d4b4706 bit=31 z=+5.53
+   key=0x571ec71420d45d9e bit=23 z=+4.20
+splitmix64: 32 keys seq N=2^18: flags=0/32 worst|z|=3.49 (1s)

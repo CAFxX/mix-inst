@@ -1,0 +1,7 @@
+# raw RNG streams and battery bulk outputs (regenerable from checked-in generators)
+*.bin
+*.vcd
+*.fst
+__pycache__/
+*.pyc
+.DS_Store

@@ -1,0 +1,6 @@
+[2026-10-11T23:21:52+00:00] backoff CLEAR -- starting batch-55 staged battery
+[2026-10-11T23:21:52+00:00] BATTERY t6_b55_f0 (start_stage=1)
+[2026-10-11T23:22:39+00:00] BATTERY t6_b55_f0 rc=2
+BATTERY-FAIL stage=S1-screen [t6_b55_f0] (see /home/hatch/workspace/mix/exploration/fast_battery/results/t6_b55_f0/battery.log)
+[2026-10-11T23:22:39+00:00] S4 survivors:
+[2026-10-11T23:22:39+00:00] batch-55 staged battery COMPLETE; survivors:

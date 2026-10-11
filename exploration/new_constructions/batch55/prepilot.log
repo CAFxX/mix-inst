@@ -1,0 +1,21 @@
+2026-10-11T23:10:52Z wrapper start: deadline=1791803452 now=1791760252
+2026-10-11T23:10:53Z backoff clear after 1 polls
+2026-10-11T23:10:53Z backoff clear: running calibration
+CALIBRATION exit=0
+CALIB-1 and1/b33c: maxworst|z|=3.3 (expect 3.3) PASS
+CALIB-2 mux/MU5-324: n_reject=0 maxworst|z|=3.24 min_fisher=-3.7 (expect KEEP: 0 rejections; b51/b52/b53 measured z=3.24) PASS
+try   0 n_reject=10 maxworst|z|=   319.6 min_fisher=   -inf worstkey=0xf0b52a9e7d8ba2b5 kill andpos=1
+try   1 n_reject=7 maxworst|z|=  1053.7 min_fisher=   -inf worstkey=0x0 kill andpos=1
+try   2 n_reject=10 maxworst|z|=  1104.0 min_fisher=   -inf worstkey=0xdeadbeefdeadbeef kill andpos=1
+try   3 n_reject=10 maxworst|z|=   497.0 min_fisher=   -inf worstkey=0xdeadbeefdeadbeef kill andpos=1
+try   4 n_reject=10 maxworst|z|=   874.4 min_fisher=   -inf worstkey=0xf0b52a9e7d8ba2b5 kill andpos=1
+try   5 n_reject=8 maxworst|z|=  3052.9 min_fisher=   -inf worstkey=0xffffffffffffffff kill andpos=1
+try   6 n_reject=6 maxworst|z|=    21.8 min_fisher=   -inf worstkey=0x0 kill andpos=1
+try   7 n_reject=10 maxworst|z|=    41.1 min_fisher=   -inf worstkey=0xffffffffffffffff kill andpos=1
+try   8 n_reject=8 maxworst|z|=   223.7 min_fisher=   -inf worstkey=0xdeadbeefdeadbeef kill andpos=1
+try   9 n_reject=9 maxworst|z|=   197.9 min_fisher=   -inf worstkey=0x0 kill andpos=1
+try  10 n_reject=10 maxworst|z|=   426.9 min_fisher=   -inf worstkey=0x0 kill andpos=1
+try  11 n_reject=5 maxworst|z|=    26.9 min_fisher= -679.2 worstkey=0xffffffffffffffff kill andpos=1
+=== hetMA5p1f: 0/12 KEEP minz=21.8 (seed=0xb551) ===
+hetMA5p1f exit=0
+2026-10-11T23:11:26Z PRE-PILOT COMPLETE

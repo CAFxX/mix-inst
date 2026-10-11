@@ -83,3 +83,10 @@ HB 2026-10-11T20:52Z Track3: RESUMED per user order; W3 LIN-kill MECHANISM FOUND
 2026-10-11 22:51:11 w3prime-harvest: S3b al_w3p_a PASS (strided 1GB); S4 SmallCrush running
 2026-10-11 22:52:56 w3prime-harvest: BATTERY-PASS al_w3p_a (S0a/S1 CAL_PASS/S2 0rep z4.1/S3 1GB/S3b strided/S4 all PASS); running Q1 for a, battery continues b
 2026-10-11 22:58:41 w3prime-harvest: Q1 al_w3p_a sac_z5=0 bic=0.00839 (BIC-clean) — FULL BATTERY+Q1 PASS; dominated on impl axes (48.3u vs r8 42.9u); battery on b (S1)
+2026-10-11 23:03:57 w3prime-harvest: S1 al_w3p_b CAL_PASS; S2 running
+2026-10-11 23:09:18 w3prime-harvest: S2 al_w3p_b 67/115, max|z|=3.9, 0 kills
+2026-10-11 23:14:28 w3prime-harvest: S2 al_w3p_b PASS (0 repeats, max|z|=3.9); S3 running
+2026-10-11 23:19:38 w3prime-harvest: S3 al_w3p_b 16/64/256MB clean; 1GB running
+2026-10-11 23:27:58 w3prime-harvest: al_w3p_c KILLED at S1 (LIN FLAG rej=1, DIFF PASS; rank-62 probe insufficient); battery continues d
+2026-10-11 23:28:08 w3prime-harvest: Q1 al_w3p_b sac_z5=0 bic=0.00858 (BIC-clean) — a and b both FULL BATTERY+Q1 PASS; d in S1
+2026-10-11 23:29:55 w3prime-harvest: S1 al_w3p_d CAL_PASS; S2 running

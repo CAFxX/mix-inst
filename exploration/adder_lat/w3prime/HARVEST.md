@@ -31,7 +31,16 @@
   Verdict: FULL BATTERY+Q1 PASS. Dominated on implementation axes
   (48.3u/18917/58806 vs r8 42.9u/4133/11670) — retained, not frontier.
   First adder-latency-track design through the full battery with BIC-clean.
-- al_w3p_b/c/d: battery running sequentially (b in S1 as of 22:52Z).
+- al_w3p_b: S0 50.6u/18322/57155 (< 123.4u bar); S0a xcheck PASS; **S1 CAL_PASS**;
+  **S2 PASS** (0 repeats, max|z|=3.9, all 115 deltas); **S3 PASS** (PractRand 1GB);
+  **S3b PASS** (strided 1GB); **S4 PASS** (SmallCrush). **BATTERY-PASS.**
+  Q1 running. → Q1 DONE: sac_z5=0, bic_maxcorr=0.00858 (BIC-clean).
+  **FULL BATTERY+Q1 PASS.** Dominated on implementation axes (50.6u) — retained.
+- al_w3p_c: S0 49.0u/18119/56361 (< 123.4u bar); S0a xcheck PASS; **S1 KILL
+  (LIN FLAG rej=1, DIFF PASS)**. Verdict: KILLED at S1. Note: c had the minimum
+  screen full_rank=62; a/b (rank 63) passed S1 — the rank-62 probe is marginal,
+  not a sufficient S1-LIN gate.
+- al_w3p_d: battery running (started 23:20Z).
 
 ## Battery (pending S0)
 - Survivors → `run_fast_battery.sh` START=1, S1→S2→S3→S4→Q1 per b33 playbook.

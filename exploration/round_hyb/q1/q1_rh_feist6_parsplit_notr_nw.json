@@ -1,0 +1,12 @@
+{
+ "candidate": "rh_feist6_parsplit_notr_nw",
+ "key": "0x123456789abcdef0",
+ "N": 262144,
+ "sac_maxdev": 0.013477325439453125,
+ "sac_meandev": 0.0008126925677061081,
+ "sac_z5": 7,
+ "bic_maxcorr": 0.25263967894570377,
+ "bic_meancorr": 0.0016647052945597625,
+ "avalanche_mean": 31.998491168022156,
+ "wall_s": 331.8
+}

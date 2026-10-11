@@ -1,0 +1,5 @@
+fast_battery/candidates/r9_feist6_altrot_nw/impl.c: In function 'mix_hash':
+fast_battery/candidates/r9_feist6_altrot_nw/impl.c:36:43: error: 'rnd' undeclared (first use in this function)
+   36 |         uint32_t F = F_f(R, RK32(key, i), rnd);
+      |                                           ^~~
+fast_battery/candidates/r9_feist6_altrot_nw/impl.c:36:43: note: each undeclared identifier is reported only once for each function it appears in

@@ -1,0 +1,23 @@
+/home/hatch/workspace/mix/exploration/round_hyb/models/rhyb.py:115: RuntimeWarning: overflow encountered in scalar multiply
+  return (_rotl64_np(k, r) ^ (np.uint64(i + 1) * GOLDEN64)) & MASK32
+/home/hatch/workspace/mix/exploration/round_hyb/rtlcheck/rh_lm_chi_nw/tb_check.v:23: $finish called at 110000 (1ps)
+Traceback (most recent call last):
+  File "/home/hatch/workspace/mix/exploration/check_rtl.py", line 46, in <module>
+    main()
+  File "/home/hatch/workspace/mix/exploration/check_rtl.py", line 42, in main
+    raise RuntimeError(f"RTL check FAILED for {top}:\n{out[-3000:]}")
+RuntimeError: RTL check FAILED for rh_lm_chi_nw:
+MISMATCH 0: val=5cdb5a824b383a06 key=af5f54716b273aeb got=ab31e21df4e5a956 exp=5906a2875462aabe
+MISMATCH 1: val=ba04cc3adc226b5d key=125d0e628d50c8a5 got=a71bd9e9db3554da exp=5c0282efc6637b9b
+MISMATCH 2: val=9256c08fa13ca427 key=452a6d9264d912d7 got=522a6a83a799151d exp=c14dc7e084b41613
+MISMATCH 3: val=c2858b56aaee29b9 key=03e42bac8d1fccc4 got=76a6a2de985f3c9d exp=b162e55b857d13bb
+MISMATCH 4: val=5e95539e15d848d5 key=7249f45a7da34d20 got=1de2ae77429453d7 exp=180dbf2446771d2a
+MISMATCH 5: val=8ffc049be209c896 key=b2a5eb0bca5c0bf9 got=7435d0e148aaa6ff exp=6d2b7e89b6f5553d
+MISMATCH 6: val=cd2bb57a56fda4c7 key=57483028be8ee684 got=f2e2dcfe148507ca exp=97278e2fbaf4d15e
+MISMATCH 7: val=d0ee6d6ffd5172ec key=df1a0141bc2bab54 got=bb2111c4e834f063 exp=93f92851562dd6c9
+MISMATCH 8: val=29520092b4110b47 key=7b51e5ecf03fd8d0 got=a3f57f605ea17834 exp=e4c5d6458fc8a9f5
+MISMATCH 9: val=5af2392b68983bfb key=84152bed40d2e4be got=bb42cf1d4c21124d exp=7fd82584c5f6966b
+MISMATCH 10: val=2289f70ddc84188e key=989c391546e46d1c got=100ff3ac3579a2b9 exp=dc94d3fcfcb1b697
+FATAL: too many mismatches
+/home/hatch/workspace/mix/exploration/round_hyb/rtlcheck/rh_lm_chi_nw/tb_check.v:23: $finish called at 110000 (1ps)
+

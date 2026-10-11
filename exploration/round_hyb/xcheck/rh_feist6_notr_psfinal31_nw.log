@@ -1,0 +1,3 @@
+/home/hatch/workspace/mix/exploration/round_hyb/models/rhyb.py:115: RuntimeWarning: overflow encountered in scalar multiply
+  return (_rotl64_np(k, r) ^ (np.uint64(i + 1) * GOLDEN64)) & MASK32
+XCHECK rh_feist6_notr_psfinal31_nw: PASS 10000/10000 C==Python

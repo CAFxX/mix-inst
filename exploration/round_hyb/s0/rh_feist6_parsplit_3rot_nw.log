@@ -1,0 +1,4 @@
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT rh_feist6_parsplit_3rot_nw: cells=5703 area=16143 crit=45.9
+RESULT name=rh_feist6_parsplit_3rot_nw cells=5703 area=16143 crit=45.9 delay_ratio=0.443 area_ratio=0.457 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)

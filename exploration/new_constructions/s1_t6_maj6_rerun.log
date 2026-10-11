@@ -1,0 +1,8 @@
+/usr/bin/ld: /tmp/ccAhZXwh.o: in function `main':
+s2_diffprof.c:(.text.startup+0x423): undefined reference to `mix_hash'
+/usr/bin/ld: s2_diffprof.c:(.text.startup+0x436): undefined reference to `mix_hash'
+/usr/bin/ld: s2_diffprof.c:(.text.startup+0x870): undefined reference to `mix_hash'
+/usr/bin/ld: s2_diffprof.c:(.text.startup+0x92f): undefined reference to `mix_hash'
+/usr/bin/ld: s2_diffprof.c:(.text.startup+0x950): undefined reference to `mix_hash'
+collect2: error: ld returned 1 exit status
+build diffprof failed

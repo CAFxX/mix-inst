@@ -1,0 +1,9 @@
+=== S0a [t6_maj6] started 2026-10-09T08:45:32Z
+--- S0a tail:
+XCHECK t6_maj6: PASS 10000/10000 C==Python
+=== S0a [t6_maj6] rc=0 wall=20s
+=== S0 [t6_maj6] started 2026-10-09T08:45:52Z
+--- S0 tail:
+[S0 t6_maj6] delay=29.4u cells=8647 x_mult=0.284 (bar 0.9) equiv=n=1000 err=0 -> PASS [ref 0s cached=True, dut 41s, equiv 189s]
+=== S0 [t6_maj6] rc=0 wall=237s
+=== S1 [t6_maj6] started 2026-10-09T08:49:50Z

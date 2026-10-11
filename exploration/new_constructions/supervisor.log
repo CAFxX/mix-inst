@@ -1,0 +1,106 @@
+=== Track 6 supervisor started 2026-10-08T06:51:39Z ===
+2026-10-08T07:02:20Z: 4 candidates modeled (narrow_arx, trivium64, feistel_arx, laidassey); RTL generated; installing iverilog for bit-exact check
+2026-10-08T07:16:22Z: all 4 RTL bit-exact PASS; starting S0
+S0 results (2026-10-08):
+- t6_narrow_arx: 91.5u / 3126 cells — SLOW (sequential 16-bit adds), not competitive
+- t6_trivium64: 19.8u / 372 cells — TIES fastest S0, 17x fewer cells than al_chi6b! BREAKTHROUGH
+- t6_feistel_arx: 533.8u / 4430 cells — DEAD (5x slower than multiplier)
+- t6_laidassey: 85.7u / 4312 cells — passes bar but not competitive
+Starting S1/S2 on t6_trivium64.
+2026-10-08T07:29:13Z: S1 restarted in background (PID 50011) for t6_trivium64; designing batch 2
+S0 batch 2 (2026-10-08):
+- t6_trivium64b: 25.5u / 1108 cells — ties al_cascad speed, 7x fewer cells
+- t6_grain64: 81.4u — too slow (60 clocks x filter depth)
+- t6_xorshift_nl: 36.7u — decent, not breakthrough
+- t6_simon_like: 35.1u — decent, 10-round Feistel
+S0 batch 3 (2026-10-08):
+- t6_ca30: 42.4u / 4893 cells — Rule 30 CA, 16 steps too deep
+- t6_ca_mix: 32.5u / 4718 cells — mixed CA better
+- t6_ascon5: 43.4u / 10359 cells — chi triplets not fast enough
+- t6_gimli: 21.4u / 4890 cells — BREAKTHROUGH #2, Gimli-like SP-box
+2026-10-08T07:50:39Z: 3x S1 running (trivium64, trivium64b, gimli); 12 candidates total, 2 breakthroughs (19.8u, 21.4u)
+
+=== TRACK 6 STATUS REPORT (2026-10-08 ~08:15 UTC) ===
+12 candidates designed, modeled, RTL-generated, bit-exact verified, S0 measured.
+3x S1 running in background (trivium64, trivium64b, gimli).
+
+BREAKTHROUGHS:
+- t6_trivium64: 19.8u / 372 cells (TIES fastest S0 ever, 17x fewer cells than al_chi6b)
+- t6_gimli: 21.4u / 4890 cells (Gimli-like SP-box, 2nd fastest non-chi)
+
+All S0 (delay/cells):
+- t6_trivium64:  19.8u /   372  (Trivium NFSR, 6x8 clocks)
+- t6_gimli:      21.4u /  4890  (Gimli SP-box, 6 rounds)
+- t6_trivium64b: 25.5u /  1108  (denser taps, 8x8 clocks)
+- t6_ca_mix:     32.5u /  4718  (mixed CA rules)
+- t6_simon_like: 35.1u /  4758  (Simon Feistel, 10 rounds)
+- t6_xorshift_nl:36.7u /  7568  (xorshift + filter)
+- t6_ca30:       42.4u /  4893  (Rule 30 CA, 16 steps)
+- t6_ascon5:     43.4u / 10359  (chi triplets + linear)
+- t6_grain64:    81.4u /  1700  (Grain LFSR+filter, too slow)
+- t6_laidassey:  85.7u /  4312  (Lai-Massey, not competitive)
+- t6_narrow_arx: 91.5u /  3126  (16-bit ARX, sequential adds too slow)
+- t6_feistel_arx:533.8u/  4430  (DEAD, 5x slower than multiplier)
+
+Key insight: shift-register/wiring-dominated structures (Trivium, Gimli)
+beat ARX/Feistel because state update is mostly free wiring + shallow feedback.
+
+=== RESUMED SUPERVISOR (2026-10-08T08:09Z) ===
+Previous supervisor died with 3x S1 in flight. Recovered results:
+- t6_trivium64 (19.8u/372): S1 KILLED — LIN FLAG rej=10/10 (D=4096/4096 logp=-inf), DIFF FLAG rej=10/10. Hard kill.
+- t6_gimli (21.4u/4890): S1 KILLED — same catastrophic LIN/DIFF signature.
+- t6_trivium64b (25.5u/1108): S1 still running (30 min in).
+
+MECHANISTIC HYPOTHESIS: stream-cipher/NFSR round functions assume fixed key during operation; as a 64-bit keyed finalizer with (input,key) both varying, 6-8 clocks of mostly-linear state update cannot kill linear trails at 64-bit width. The "free wiring" latency insight is real; the nonlinearity is insufficient. This is a construction-class kill for shift-register-cascade-at-64-bit, NOT a parameter-tuning problem.
+
+NEXT: batch 4 — permutation-only-diffusion mini-SPN (4-bit S-box + bit-permutation, no XOR-tree linear layer). Each round = S-box (~3.5u) + permute (0u) + key XOR; 5 rounds ≈ 20u target. Genuinely different axis from (a,b) XOR linear layers and chi-cascades.
+
+=== BATCH 4 S0 RESULTS (2026-10-08 ~09:30Z) ===
+All 8 S0-KILLED on latency (frontier 25.5u):
+- t6_theta5: 59.4u | t6_theta6: 69.2u | t6_theta7: 79.6u
+- t6_midori6: 40.2u | t6_midori7: 46.5u | t6_midori8: 52.8u
+- t6_chi3col8: 43.3u | t6_chi3col10: ~50u (est)
+Lesson: S-box-per-round costs ~6-7u minimum with real diffusion; 4 rounds max for
+competitiveness, but 4 rounds insufficient for these structures. The al_ family's
+~3u/stage with full 64-bit mixing is the right cost model.
+PIVOT: batch 5 — majority + AND-OR cascades on rotated copies. New boolean functions
+(maj, and-or-mix) NOT in al_ track's opcode list (chi/and/andxor/orand/triand).
+Same proven latency structure, genuinely new nonlinearity.
+
+=== BATCH 5 S0 RESULTS (2026-10-08 ~10:00Z) ===
+- t6_maj6: 29.4u / 8647 | t6_maj8: 37.6u / 12446
+- t6_andor6: 29.5u / 7609 | t6_andor8: ~37u est
+- t6_majxor6: 29.8u / 10009 | t6_majxor8: ~38u est
+- t6_xor3and6: 34.3u / 9359 | t6_xor3and8: ~42u est
+All slower than al_cascad (25.5u). Majority costs ~4.9u/stage vs chi/AND ~3.2u/stage.
+8-stage variants dead on latency. 6-stage variants not frontier-competitive but
+t6_maj6 (29.4u) running S1 to assess majority's statistical quality for future hybridization.
+If majority shows excellent quality, hybridize: fewer maj stages + chi stages.
+
+=== 30-MIN STATUS CHECK (2026-10-08 ~13:00Z) ===
+- Track-6 supervisor heartbeat stale (~50 min; last signal 12:09:59Z after gen fixes). Supervisor session likely killed by a runtime restart; no t6 process running.
+- VERIFIED FIXES IN PLACE (syntax-parse OK): gen_t6*.py 5 files rewritten with named functions; t6_maj6/model.py regenerated (no more `return <lambda>`).
+- S1 t6_maj6 re-run (supervisor's planned next step) NOT YET LAUNCHED. HELD deliberately by this check: VM 1-min load ~35 (graalgo gofrontend/java/compile dominate); launching a ~40-min S1 now would fight sibling work. Relaunch as `run_fast_battery.sh t6_maj6 1` (nice-19) when the polite gate clears, or offload to GHA once the cancellation issue resolves.
+- Added consolidated row to LEADS_LEDGER.md for t6 batch-5 6-stage variants (S0 pass, S1 pending maj6-first).
+
+## 2026-10-09 08:45Z — resumed after VM reboot
+- VM rebooted (uptime 1min at 08:38Z); previous supervisor died
+- Backoff CLEAR (load 5.26) — resumed work
+- t6_maj6 local S1 relaunched (S0a started 08:42:30Z) — impl.c stub was fixed by status-report worker (bit-exact, 0/2002 mismatches)
+- Fixed run_fast_battery.sh invocation (pass bare candidate name, not candidates/ prefix)
+- Bundled t6_maj6 (fixed impl.c) + t6_het6a/b/c to GHA candidates dir; push in progress (first attempt RemoteDisconnected, retrying)
+- Next: submit small GHA campaigns (≤10 shards) for het6 S0 retry + t6_maj6 S1 once push lands
+
+## 2026-10-09 09:08Z — t6_maj6 S0 PASS
+- S0: 29.4u / 8647 cells / x_mult=0.284 — PASS (equiv n=1000 err=0, XCHECK 10000/10000)
+- Confirms maj3 6-stage ~29-30u class (cf fz_majx_5 29.7u) — not frontier-competitive
+- S1 running; GHA campaigns submitted (t6-maj6-s1, t6-het6-s0)
+- Fixed meta.json rtl_top KeyError (gen_t6_b5.py omission) for t6_maj6; synced to GHA bundle
+
+## 2026-10-09 09:20Z — mix-search-status-30m note
+- Your 08:52Z bundle push did NOT land despite "exit 0" (verified: t6_maj6/t6_het6* absent from repo tree; 3rd silent push-loss instance — same class as track-5's 06:15Z loss).
+- Consequently t6-maj6-s1-20261009 (run 37907470160) and t6-het6-s0-20261009 (run 37908155009) both ran with 0 candidates (shards rc=0, empty).
+- FIXED: pushed t6_maj6 (fixed impl.c + rtl_top) + t6_het6a/b/c via Git Data API as repo commit 404e256a — all 4 verified PRESENT in projects/mix-sbox-search/battery/candidates/.
+- Safe to resubmit t6-maj6-s1 and t6-het6-s0 (shards: 1x and 3x 1-shard; batch rule <=17 specs/push).
+- Process note: verify bundle presence in repo tree (contents API) BEFORE submitting campaigns; the campaign driver exits 0 on 0 candidates, so a missing bundle is silent.
+2026-10-10 11:52Z — Batch 26: andchi5a 21.2u DOM, split6a 30.0u DOM, twin4a 21.6u DOM. Triage kills: 2r-Feistel, 2r-SPN. Batch 27: dual5a/b 24u DOM, dual4a 19.9u CHALLENGER on GHA.

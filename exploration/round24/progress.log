@@ -1,0 +1,438 @@
+[2026-10-04T14:31:05Z] ROUND24 setup started
+2026-10-04T14:34:48Z XCHECK_DONE r24_spn_mix4r_pba19b03_nw rc=0 XCHECK r24_spn_mix4r_pba19b03_nw: PASS 10000/10000 C==Python
+2026-10-04T14:34:50Z XCHECK_DONE r24_spn_mix4r_pba19b05_nw rc=0 XCHECK r24_spn_mix4r_pba19b05_nw: PASS 10000/10000 C==Python
+2026-10-04T14:34:53Z XCHECK_DONE r24_spn_mix4r_pba19b07_nw rc=0 XCHECK r24_spn_mix4r_pba19b07_nw: PASS 10000/10000 C==Python
+2026-10-04T14:34:56Z XCHECK_DONE r24_spn_mix4r_pba19b09_nw rc=0 XCHECK r24_spn_mix4r_pba19b09_nw: PASS 10000/10000 C==Python
+2026-10-04T14:35:01Z XCHECK_DONE r24_spn_mix4r_pba19b11_nw rc=0 XCHECK r24_spn_mix4r_pba19b11_nw: PASS 10000/10000 C==Python
+2026-10-04T14:35:04Z XCHECK_DONE r24_spn_mix4r_pba19b13_nw rc=0 XCHECK r24_spn_mix4r_pba19b13_nw: PASS 10000/10000 C==Python
+2026-10-04T14:35:07Z XCHECK_DONE r24_spn_mix4r_pba19b15_nw rc=0 XCHECK r24_spn_mix4r_pba19b15_nw: PASS 10000/10000 C==Python
+2026-10-04T14:35:10Z XCHECK_DONE r24_spn_mix4r_pba19b17_nw rc=0 XCHECK r24_spn_mix4r_pba19b17_nw: PASS 10000/10000 C==Python
+2026-10-04T14:35:13Z XCHECK_DONE r24_spn_mix4r_pba19b19_nw rc=0 XCHECK r24_spn_mix4r_pba19b19_nw: PASS 10000/10000 C==Python
+2026-10-04T14:35:15Z XCHECK_DONE r24_spn_mix4r_pba19b21_nw rc=0 XCHECK r24_spn_mix4r_pba19b21_nw: PASS 10000/10000 C==Python
+2026-10-04T14:35:18Z XCHECK_DONE r24_spn_mix4r_pba19b23_nw rc=0 XCHECK r24_spn_mix4r_pba19b23_nw: PASS 10000/10000 C==Python
+2026-10-04T14:35:21Z XCHECK_DONE r24_spn_mix4r_pba19b25_nw rc=0 XCHECK r24_spn_mix4r_pba19b25_nw: PASS 10000/10000 C==Python
+2026-10-04T14:35:26Z XCHECK_DONE r24_spn_mix4r_pba19b27_nw rc=0 XCHECK r24_spn_mix4r_pba19b27_nw: PASS 10000/10000 C==Python
+2026-10-04T14:35:30Z XCHECK_DONE r24_spn_mix4r_pba19b29_nw rc=0 XCHECK r24_spn_mix4r_pba19b29_nw: PASS 10000/10000 C==Python
+2026-10-04T14:35:33Z XCHECK_DONE r24_spn_mix4r_pba29b01_nw rc=0 XCHECK r24_spn_mix4r_pba29b01_nw: PASS 10000/10000 C==Python
+2026-10-04T14:35:37Z XCHECK_DONE r24_spn_mix4r_pba31b01_nw rc=0 XCHECK r24_spn_mix4r_pba31b01_nw: PASS 10000/10000 C==Python
+2026-10-04T14:35:40Z XCHECK_DONE r24_spn_mix4r_pba35b01_nw rc=0 XCHECK r24_spn_mix4r_pba35b01_nw: PASS 10000/10000 C==Python
+2026-10-04T14:35:43Z XCHECK_DONE r24_spn_mix4r_ks_smallodd_nw rc=0 XCHECK r24_spn_mix4r_ks_smallodd_nw: PASS 10000/10000 C==Pyt
+2026-10-04T14:35:48Z XCHECK_DONE r24_spn_mix4r_ks_gold16_nw rc=0 XCHECK r24_spn_mix4r_ks_gold16_nw: PASS 10000/10000 C==Pytho
+2026-10-04T14:35:51Z XCHECK_DONE r24_spn_mix4r_ks_rotgolden_nw rc=0 XCHECK r24_spn_mix4r_ks_rotgolden_nw: PASS 10000/10000 C==Py
+2026-10-04T14:35:53Z XCHECK_DONE r24_spn_mix4r_ks_nibrep_nw rc=0 XCHECK r24_spn_mix4r_ks_nibrep_nw: PASS 10000/10000 C==Pytho
+2026-10-04T14:35:56Z XCHECK_DONE r24_spn_mix4r_ks_gold32_nw rc=0 XCHECK r24_spn_mix4r_ks_gold32_nw: PASS 10000/10000 C==Pytho
+2026-10-04T14:36:00Z XCHECK_DONE r24_spn_mix4r_ks_altbit_nw rc=0 XCHECK r24_spn_mix4r_ks_altbit_nw: PASS 10000/10000 C==Pytho
+2026-10-04T14:36:03Z XCHECK_DONE r24_spn_mix4r_l0317_pb19_nw rc=0 XCHECK r24_spn_mix4r_l0317_pb19_nw: PASS 10000/10000 C==Pyth
+2026-10-04T14:36:07Z XCHECK_DONE r24_spn_mix4r_l0513_pb19_nw rc=0 XCHECK r24_spn_mix4r_l0513_pb19_nw: PASS 10000/10000 C==Pyth
+2026-10-04T14:36:10Z XCHECK_DONE r24_spn_mix4r_l0517_pb19_nw rc=0 XCHECK r24_spn_mix4r_l0517_pb19_nw: PASS 10000/10000 C==Pyth
+2026-10-04T14:36:13Z XCHECK_DONE r24_spn_mix4r_l0711_pb19_nw rc=0 XCHECK r24_spn_mix4r_l0711_pb19_nw: PASS 10000/10000 C==Pyth
+2026-10-04T14:36:16Z XCHECK_DONE r24_spn_mix4r_l0717_pb19_nw rc=0 XCHECK r24_spn_mix4r_l0717_pb19_nw: PASS 10000/10000 C==Pyth
+2026-10-04T14:36:17Z XCHECK_DONE r24_spn_mix4r_l1113_pb19_nw rc=0 XCHECK r24_spn_mix4r_l1113_pb19_nw: PASS 10000/10000 C==Pyth
+2026-10-04T14:36:20Z XCHECK_DONE r24_spn_mix4r_hsaff_pb19_nw rc=0 XCHECK r24_spn_mix4r_hsaff_pb19_nw: PASS 10000/10000 C==Pyth
+2026-10-04T14:36:24Z XCHECK_DONE r24_spn_mix4r_hsalt_pb19_nw rc=0 XCHECK r24_spn_mix4r_hsalt_pb19_nw: PASS 10000/10000 C==Pyth
+2026-10-04T14:37:08Z === S_QUEUE start: rtlcheck -> s0 -> s1 -> s2 ===
+2026-10-04T14:37:08Z === STAGE rtlcheck ===
+2026-10-04T14:40:08Z RTLCHECK_LAUNCH r24_spn_mix4r_pba19b03_nw
+2026-10-04T14:40:08Z RTLCHECK_LAUNCH r24_spn_mix4r_pba19b05_nw
+2026-10-04T14:40:18Z RTLCHECK_LAUNCH r24_spn_mix4r_pba19b07_nw
+2026-10-04T14:40:18Z RTLCHECK_LAUNCH r24_spn_mix4r_pba19b09_nw
+2026-10-04T14:40:28Z RTLCHECK_LAUNCH r24_spn_mix4r_pba19b11_nw
+2026-10-04T14:40:29Z RTLCHECK_LAUNCH r24_spn_mix4r_pba19b13_nw
+2026-10-04T14:40:39Z RTLCHECK_LAUNCH r24_spn_mix4r_pba19b15_nw
+2026-10-04T14:40:39Z RTLCHECK_LAUNCH r24_spn_mix4r_pba19b17_nw
+2026-10-04T14:40:49Z RTLCHECK_LAUNCH r24_spn_mix4r_pba19b19_nw
+2026-10-04T14:40:49Z RTLCHECK_LAUNCH r24_spn_mix4r_pba19b21_nw
+2026-10-04T14:40:59Z RTLCHECK_LAUNCH r24_spn_mix4r_pba19b23_nw
+2026-10-04T14:40:59Z RTLCHECK_LAUNCH r24_spn_mix4r_pba19b25_nw
+2026-10-04T14:41:09Z RTLCHECK_LAUNCH r24_spn_mix4r_pba19b27_nw
+2026-10-04T14:41:09Z RTLCHECK_LAUNCH r24_spn_mix4r_pba19b29_nw
+2026-10-04T14:41:19Z RTLCHECK_LAUNCH r24_spn_mix4r_pba29b01_nw
+2026-10-04T14:41:19Z RTLCHECK_LAUNCH r24_spn_mix4r_pba31b01_nw
+2026-10-04T14:41:29Z RTLCHECK_LAUNCH r24_spn_mix4r_pba35b01_nw
+2026-10-04T14:41:29Z RTLCHECK_LAUNCH r24_spn_mix4r_ks_smallodd_nw
+2026-10-04T14:41:40Z RTLCHECK_LAUNCH r24_spn_mix4r_ks_gold16_nw
+2026-10-04T14:41:40Z RTLCHECK_LAUNCH r24_spn_mix4r_ks_rotgolden_nw
+2026-10-04T14:41:50Z RTLCHECK_LAUNCH r24_spn_mix4r_ks_nibrep_nw
+2026-10-04T14:41:50Z RTLCHECK_LAUNCH r24_spn_mix4r_ks_gold32_nw
+2026-10-04T14:42:00Z RTLCHECK_LAUNCH r24_spn_mix4r_ks_altbit_nw
+2026-10-04T14:42:00Z RTLCHECK_LAUNCH r24_spn_mix4r_l0317_pb19_nw
+2026-10-04T14:42:10Z RTLCHECK_LAUNCH r24_spn_mix4r_l0513_pb19_nw
+2026-10-04T14:42:10Z RTLCHECK_LAUNCH r24_spn_mix4r_l0517_pb19_nw
+2026-10-04T14:42:20Z RTLCHECK_LAUNCH r24_spn_mix4r_l0711_pb19_nw
+2026-10-04T14:42:20Z RTLCHECK_LAUNCH r24_spn_mix4r_l0717_pb19_nw
+2026-10-04T14:42:31Z RTLCHECK_LAUNCH r24_spn_mix4r_l1113_pb19_nw
+2026-10-04T14:42:31Z RTLCHECK_LAUNCH r24_spn_mix4r_hsaff_pb19_nw
+2026-10-04T14:42:41Z RTLCHECK_LAUNCH r24_spn_mix4r_hsalt_pb19_nw
+2026-10-04T14:42:41Z --- waiting for stage rtlcheck jobs ---
+2026-10-04T14:42:42Z RTLCHECK_DONE r24_spn_mix4r_pba19b03_nw RTLCHECK: 300/300 vectors match -> PASS
+2026-10-04T14:42:42Z RTLCHECK_DONE r24_spn_mix4r_pba19b05_nw RTLCHECK: 300/300 vectors match -> PASS
+2026-10-04T14:42:42Z RTLCHECK_DONE r24_spn_mix4r_pba19b07_nw RTLCHECK: 300/300 vectors match -> PASS
+2026-10-04T14:42:42Z RTLCHECK_DONE r24_spn_mix4r_pba19b09_nw RTLCHECK: 300/300 vectors match -> PASS
+2026-10-04T14:42:42Z RTLCHECK_DONE r24_spn_mix4r_pba19b11_nw RTLCHECK: 300/300 vectors match -> PASS
+2026-10-04T14:42:42Z RTLCHECK_DONE r24_spn_mix4r_pba19b13_nw RTLCHECK: 300/300 vectors match -> PASS
+2026-10-04T14:42:42Z RTLCHECK_DONE r24_spn_mix4r_pba19b15_nw RTLCHECK: 300/300 vectors match -> PASS
+2026-10-04T14:42:42Z RTLCHECK_DONE r24_spn_mix4r_pba19b17_nw RTLCHECK: 300/300 vectors match -> PASS
+2026-10-04T14:42:42Z RTLCHECK_DONE r24_spn_mix4r_pba19b19_nw RTLCHECK: 300/300 vectors match -> PASS
+2026-10-04T14:42:42Z RTLCHECK_DONE r24_spn_mix4r_pba19b21_nw RTLCHECK: 300/300 vectors match -> PASS
+2026-10-04T14:42:42Z RTLCHECK_DONE r24_spn_mix4r_pba19b23_nw RTLCHECK: 300/300 vectors match -> PASS
+2026-10-04T14:42:42Z RTLCHECK_DONE r24_spn_mix4r_pba19b25_nw RTLCHECK: 300/300 vectors match -> PASS
+2026-10-04T14:42:42Z RTLCHECK_DONE r24_spn_mix4r_pba19b27_nw RTLCHECK: 300/300 vectors match -> PASS
+2026-10-04T14:42:42Z RTLCHECK_DONE r24_spn_mix4r_pba19b29_nw RTLCHECK: 300/300 vectors match -> PASS
+2026-10-04T14:42:42Z RTLCHECK_DONE r24_spn_mix4r_pba29b01_nw RTLCHECK: 300/300 vectors match -> PASS
+2026-10-04T14:42:42Z RTLCHECK_DONE r24_spn_mix4r_pba31b01_nw RTLCHECK: 300/300 vectors match -> PASS
+2026-10-04T14:42:42Z RTLCHECK_DONE r24_spn_mix4r_pba35b01_nw RTLCHECK: 300/300 vectors match -> PASS
+2026-10-04T14:42:42Z RTLCHECK_DONE r24_spn_mix4r_ks_smallodd_nw RTLCHECK: 300/300 vectors match -> PASS
+2026-10-04T14:42:42Z RTLCHECK_DONE r24_spn_mix4r_ks_gold16_nw RTLCHECK: 300/300 vectors match -> PASS
+2026-10-04T14:42:42Z RTLCHECK_DONE r24_spn_mix4r_ks_rotgolden_nw RTLCHECK: 300/300 vectors match -> PASS
+2026-10-04T14:42:42Z RTLCHECK_DONE r24_spn_mix4r_ks_nibrep_nw RTLCHECK: 300/300 vectors match -> PASS
+2026-10-04T14:42:42Z RTLCHECK_DONE r24_spn_mix4r_ks_gold32_nw RTLCHECK: 300/300 vectors match -> PASS
+2026-10-04T14:42:42Z RTLCHECK_DONE r24_spn_mix4r_ks_altbit_nw RTLCHECK: 300/300 vectors match -> PASS
+2026-10-04T14:42:42Z RTLCHECK_DONE r24_spn_mix4r_l0317_pb19_nw RTLCHECK: 300/300 vectors match -> PASS
+2026-10-04T14:42:42Z RTLCHECK_DONE r24_spn_mix4r_l0513_pb19_nw RTLCHECK: 300/300 vectors match -> PASS
+2026-10-04T14:42:42Z RTLCHECK_DONE r24_spn_mix4r_l0517_pb19_nw RTLCHECK: 300/300 vectors match -> PASS
+2026-10-04T14:42:42Z RTLCHECK_DONE r24_spn_mix4r_l0711_pb19_nw RTLCHECK: 300/300 vectors match -> PASS
+2026-10-04T14:42:42Z RTLCHECK_DONE r24_spn_mix4r_l0717_pb19_nw RTLCHECK: 300/300 vectors match -> PASS
+2026-10-04T14:42:43Z RTLCHECK_DONE r24_spn_mix4r_l1113_pb19_nw RTLCHECK: 300/300 vectors match -> PASS
+2026-10-04T14:42:43Z RTLCHECK_DONE r24_spn_mix4r_hsaff_pb19_nw RTLCHECK: 300/300 vectors match -> PASS
+2026-10-04T14:42:43Z RTLCHECK_DONE r24_spn_mix4r_hsalt_pb19_nw RTLCHECK: 300/300 vectors match -> PASS
+2026-10-04T14:42:43Z ALL_STAGES_DONE rtlcheck
+2026-10-04T14:42:43Z === STAGE s0 ===
+2026-10-04T14:42:43Z S0_LAUNCH r24_spn_mix4r_pba19b03_nw
+2026-10-04T14:42:43Z S0_LAUNCH r24_spn_mix4r_pba19b05_nw
+2026-10-04T14:43:03Z S0_LAUNCH r24_spn_mix4r_pba19b07_nw
+2026-10-04T14:43:03Z S0_LAUNCH r24_spn_mix4r_pba19b09_nw
+2026-10-04T14:43:23Z S0_LAUNCH r24_spn_mix4r_pba19b11_nw
+2026-10-04T14:45:23Z S0_LAUNCH r24_spn_mix4r_pba19b13_nw
+2026-10-04T14:45:23Z S0_LAUNCH r24_spn_mix4r_pba19b15_nw
+2026-10-04T14:46:04Z S0_LAUNCH r24_spn_mix4r_pba19b17_nw
+2026-10-04T14:46:04Z S0_LAUNCH r24_spn_mix4r_pba19b19_nw
+2026-10-04T14:46:34Z S0_LAUNCH r24_spn_mix4r_pba19b21_nw
+2026-10-04T14:46:34Z S0_LAUNCH r24_spn_mix4r_pba19b23_nw
+2026-10-04T14:47:04Z S0_LAUNCH r24_spn_mix4r_pba19b25_nw
+2026-10-04T14:47:04Z S0_LAUNCH r24_spn_mix4r_pba19b27_nw
+2026-10-04T14:47:34Z S0_LAUNCH r24_spn_mix4r_pba19b29_nw
+2026-10-04T14:48:35Z S0_LAUNCH r24_spn_mix4r_pba29b01_nw
+2026-10-04T14:48:35Z S0_LAUNCH r24_spn_mix4r_pba31b01_nw
+2026-10-04T14:49:05Z S0_LAUNCH r24_spn_mix4r_pba35b01_nw
+2026-10-04T14:49:05Z S0_LAUNCH r24_spn_mix4r_ks_smallodd_nw
+2026-10-04T14:49:35Z S0_LAUNCH r24_spn_mix4r_ks_gold16_nw
+2026-10-04T14:49:35Z S0_LAUNCH r24_spn_mix4r_ks_rotgolden_nw
+2026-10-04T14:49:56Z S0_LAUNCH r24_spn_mix4r_ks_nibrep_nw
+2026-10-04T14:50:56Z S0_LAUNCH r24_spn_mix4r_ks_gold32_nw
+2026-10-04T14:50:56Z S0_LAUNCH r24_spn_mix4r_ks_altbit_nw
+2026-10-04T14:51:26Z S0_LAUNCH r24_spn_mix4r_l0317_pb19_nw
+2026-10-04T14:51:26Z S0_LAUNCH r24_spn_mix4r_l0513_pb19_nw
+2026-10-04T14:52:27Z S0_LAUNCH r24_spn_mix4r_l0517_pb19_nw
+2026-10-04T14:52:27Z S0_LAUNCH r24_spn_mix4r_l0711_pb19_nw
+2026-10-04T14:53:07Z S0_LAUNCH r24_spn_mix4r_l0717_pb19_nw
+2026-10-04T14:53:07Z S0_LAUNCH r24_spn_mix4r_l1113_pb19_nw
+2026-10-04T14:51:22Z S0_DONE r24_spn_mix4r_ks_altbit_nw RESULT name=r24_spn_mix4r_ks_altbit_nw cells=5242 area=14187 crit=28.0 delay_ratio=0.271 area_ratio=0.402 ref_crit=103.5 ref_area=35323
+2026-10-04T14:49:54Z S0_DONE r24_spn_mix4r_ks_gold16_nw RESULT name=r24_spn_mix4r_ks_gold16_nw cells=5366 area=14371 crit=28.0 delay_ratio=0.271 area_ratio=0.407 ref_crit=103.5 ref_area=35323
+2026-10-04T14:51:22Z S0_DONE r24_spn_mix4r_ks_gold32_nw RESULT name=r24_spn_mix4r_ks_gold32_nw cells=4683 area=12860 crit=28.5 delay_ratio=0.275 area_ratio=0.364 ref_crit=103.5 ref_area=35323
+2026-10-04T14:50:14Z S0_DONE r24_spn_mix4r_ks_nibrep_nw RESULT name=r24_spn_mix4r_ks_nibrep_nw cells=5173 area=14040 crit=28.4 delay_ratio=0.274 area_ratio=0.397 ref_crit=103.5 ref_area=35323
+2026-10-04T14:50:02Z S0_DONE r24_spn_mix4r_ks_rotgolden_nw RESULT name=r24_spn_mix4r_ks_rotgolden_nw cells=5308 area=14370 crit=28.0 delay_ratio=0.271 area_ratio=0.407 ref_crit=103.5 ref_area=35323
+2026-10-04T14:49:32Z S0_DONE r24_spn_mix4r_ks_smallodd_nw RESULT name=r24_spn_mix4r_ks_smallodd_nw cells=5416 area=14607 crit=27.9 delay_ratio=0.270 area_ratio=0.414 ref_crit=103.5 ref_area=35323
+2026-10-04T14:51:58Z S0_DONE r24_spn_mix4r_l0317_pb19_nw RESULT name=r24_spn_mix4r_l0317_pb19_nw cells=5586 area=14930 crit=27.9 delay_ratio=0.270 area_ratio=0.423 ref_crit=103.5 ref_area=35323
+2026-10-04T14:51:57Z S0_DONE r24_spn_mix4r_l0513_pb19_nw RESULT name=r24_spn_mix4r_l0513_pb19_nw cells=5374 area=14258 crit=28.0 delay_ratio=0.271 area_ratio=0.404 ref_crit=103.5 ref_area=35323
+2026-10-04T14:53:00Z S0_DONE r24_spn_mix4r_l0517_pb19_nw RESULT name=r24_spn_mix4r_l0517_pb19_nw cells=5168 area=14073 crit=28.3 delay_ratio=0.273 area_ratio=0.398 ref_crit=103.5 ref_area=35323
+2026-10-04T14:53:04Z S0_DONE r24_spn_mix4r_l0711_pb19_nw RESULT name=r24_spn_mix4r_l0711_pb19_nw cells=5380 area=14515 crit=27.5 delay_ratio=0.266 area_ratio=0.411 ref_crit=103.5 ref_area=35323
+2026-10-04T14:42:58Z S0_DONE r24_spn_mix4r_pba19b03_nw RESULT name=r24_spn_mix4r_pba19b03_nw cells=5306 area=14225 crit=27.9 delay_ratio=0.270 area_ratio=0.403 ref_crit=103.5 ref_area=35323
+2026-10-04T14:42:58Z S0_DONE r24_spn_mix4r_pba19b05_nw RESULT name=r24_spn_mix4r_pba19b05_nw cells=5371 area=14391 crit=27.9 delay_ratio=0.270 area_ratio=0.407 ref_crit=103.5 ref_area=35323
+2026-10-04T14:43:16Z S0_DONE r24_spn_mix4r_pba19b07_nw RESULT name=r24_spn_mix4r_pba19b07_nw cells=5376 area=14375 crit=27.8 delay_ratio=0.269 area_ratio=0.407 ref_crit=103.5 ref_area=35323
+2026-10-04T14:43:15Z S0_DONE r24_spn_mix4r_pba19b09_nw RESULT name=r24_spn_mix4r_pba19b09_nw cells=4978 area=13611 crit=28.4 delay_ratio=0.274 area_ratio=0.385 ref_crit=103.5 ref_area=35323
+2026-10-04T14:43:42Z S0_DONE r24_spn_mix4r_pba19b11_nw RESULT name=r24_spn_mix4r_pba19b11_nw cells=5000 area=13582 crit=28.1 delay_ratio=0.271 area_ratio=0.385 ref_crit=103.5 ref_area=35323
+2026-10-04T14:45:57Z S0_DONE r24_spn_mix4r_pba19b13_nw RESULT name=r24_spn_mix4r_pba19b13_nw cells=5259 area=14251 crit=27.9 delay_ratio=0.270 area_ratio=0.403 ref_crit=103.5 ref_area=35323
+2026-10-04T14:45:55Z S0_DONE r24_spn_mix4r_pba19b15_nw RESULT name=r24_spn_mix4r_pba19b15_nw cells=5438 area=14446 crit=27.7 delay_ratio=0.268 area_ratio=0.409 ref_crit=103.5 ref_area=35323
+2026-10-04T14:46:26Z S0_DONE r24_spn_mix4r_pba19b17_nw RESULT name=r24_spn_mix4r_pba19b17_nw cells=5153 area=14000 crit=28.3 delay_ratio=0.273 area_ratio=0.396 ref_crit=103.5 ref_area=35323
+2026-10-04T14:46:28Z S0_DONE r24_spn_mix4r_pba19b19_nw RESULT name=r24_spn_mix4r_pba19b19_nw cells=5135 area=13873 crit=27.8 delay_ratio=0.269 area_ratio=0.393 ref_crit=103.5 ref_area=35323
+2026-10-04T14:46:54Z S0_DONE r24_spn_mix4r_pba19b21_nw RESULT name=r24_spn_mix4r_pba19b21_nw cells=5507 area=14784 crit=27.8 delay_ratio=0.269 area_ratio=0.419 ref_crit=103.5 ref_area=35323
+2026-10-04T14:46:56Z S0_DONE r24_spn_mix4r_pba19b23_nw RESULT name=r24_spn_mix4r_pba19b23_nw cells=5136 area=13864 crit=28.0 delay_ratio=0.271 area_ratio=0.392 ref_crit=103.5 ref_area=35323
+2026-10-04T14:47:25Z S0_DONE r24_spn_mix4r_pba19b25_nw RESULT name=r24_spn_mix4r_pba19b25_nw cells=5378 area=14485 crit=28.1 delay_ratio=0.271 area_ratio=0.410 ref_crit=103.5 ref_area=35323
+2026-10-04T14:47:26Z S0_DONE r24_spn_mix4r_pba19b27_nw RESULT name=r24_spn_mix4r_pba19b27_nw cells=5378 area=14531 crit=28.0 delay_ratio=0.271 area_ratio=0.411 ref_crit=103.5 ref_area=35323
+2026-10-04T14:47:51Z S0_DONE r24_spn_mix4r_pba19b29_nw RESULT name=r24_spn_mix4r_pba19b29_nw cells=5264 area=14289 crit=28.1 delay_ratio=0.271 area_ratio=0.405 ref_crit=103.5 ref_area=35323
+2026-10-04T14:49:03Z S0_DONE r24_spn_mix4r_pba29b01_nw RESULT name=r24_spn_mix4r_pba29b01_nw cells=5474 area=14628 crit=27.7 delay_ratio=0.268 area_ratio=0.414 ref_crit=103.5 ref_area=35323
+2026-10-04T14:49:02Z S0_DONE r24_spn_mix4r_pba31b01_nw RESULT name=r24_spn_mix4r_pba31b01_nw cells=4971 area=13615 crit=28.2 delay_ratio=0.272 area_ratio=0.385 ref_crit=103.5 ref_area=35323
+2026-10-04T14:49:29Z S0_DONE r24_spn_mix4r_pba35b01_nw RESULT name=r24_spn_mix4r_pba35b01_nw cells=4827 area=13231 crit=28.4 delay_ratio=0.274 area_ratio=0.375 ref_crit=103.5 ref_area=35323
+2026-10-04T17:29:09Z === STAGE s0 ===
+2026-10-04T17:29:09Z S0_LAUNCH r24_spn_mix4r_l0717_pb19_nw
+2026-10-04T17:29:09Z S0_LAUNCH r24_spn_mix4r_l1113_pb19_nw
+2026-10-04T17:29:49Z S0_LAUNCH r24_spn_mix4r_hsaff_pb19_nw
+2026-10-04T17:29:50Z S0_LAUNCH r24_spn_mix4r_hsalt_pb19_nw
+2026-10-04T17:29:50Z --- waiting for stage s0 jobs ---
+2026-10-04T17:30:08Z S0_DONE r24_spn_mix4r_l0717_pb19_nw RESULT name=r24_spn_mix4r_l0717_pb19_nw cells=5789 area=15521 crit=26.9 delay_ratio=0.260 area_ratio=0.439 ref_crit=103.5 ref_area=35323
+2026-10-04T17:30:08Z S0_DONE r24_spn_mix4r_l1113_pb19_nw RESULT name=r24_spn_mix4r_l1113_pb19_nw cells=4944 area=13733 crit=28.5 delay_ratio=0.275 area_ratio=0.389 ref_crit=103.5 ref_area=35323
+2026-10-04T17:30:08Z S0_DONE r24_spn_mix4r_hsaff_pb19_nw RESULT name=r24_spn_mix4r_hsaff_pb19_nw cells=5206 area=14142 crit=28.2 delay_ratio=0.272 area_ratio=0.400 ref_crit=103.5 ref_area=35323
+2026-10-04T17:30:08Z S0_DONE r24_spn_mix4r_hsalt_pb19_nw RESULT name=r24_spn_mix4r_hsalt_pb19_nw cells=5174 area=14185 crit=29.0 delay_ratio=0.280 area_ratio=0.402 ref_crit=103.5 ref_area=35323
+2026-10-04T17:30:08Z ALL_STAGES_DONE s0
+2026-10-04T17:33:21Z === STAGE s1 ===
+2026-10-04T17:33:21Z S1_LAUNCH r24_spn_mix4r_pba19b03_nw
+2026-10-04T17:33:21Z S1_LAUNCH r24_spn_mix4r_pba19b05_nw
+2026-10-04T17:42:20Z RESUME r24 coordinator handoff: 31/31 S0 green, S1 queue running detached (2-parallel), monitoring
+2026-10-04T17:43:35Z S1_LAUNCH r24_spn_mix4r_pba19b07_nw
+2026-10-04T17:43:45Z S1_LAUNCH r24_spn_mix4r_pba19b09_nw
+2026-10-04T17:53:58Z S1_LAUNCH r24_spn_mix4r_pba19b11_nw
+2026-10-04T17:54:08Z S1_LAUNCH r24_spn_mix4r_pba19b13_nw
+2026-10-04T18:04:02Z S1_LAUNCH r24_spn_mix4r_pba19b15_nw
+2026-10-04T18:04:32Z S1_LAUNCH r24_spn_mix4r_pba19b17_nw
+2026-10-04T18:13:25Z S1_LAUNCH r24_spn_mix4r_pba19b19_nw
+2026-10-04T18:14:06Z S1_LAUNCH r24_spn_mix4r_pba19b21_nw
+2026-10-04T18:22:48Z S1_LAUNCH r24_spn_mix4r_pba19b23_nw
+2026-10-04T18:22:48Z S1_LAUNCH r24_spn_mix4r_pba19b25_nw
+2026-10-04T18:28:30Z S1_LAUNCH r24_spn_mix4r_pba19b27_nw
+2026-10-04T18:28:30Z S1_LAUNCH r24_spn_mix4r_pba19b29_nw
+2026-10-04T18:34:21Z S1_LAUNCH r24_spn_mix4r_pba29b01_nw
+2026-10-04T18:34:41Z S1_LAUNCH r24_spn_mix4r_pba31b01_nw
+2026-10-04T18:40:13Z S1_LAUNCH r24_spn_mix4r_pba35b01_nw
+2026-10-04T18:40:43Z S1_LAUNCH r24_spn_mix4r_ks_smallodd_nw
+2026-10-04T18:40:43Z S1_LAUNCH r24_spn_mix4r_ks_gold16_nw
+2026-10-04T18:44:54Z S1_LAUNCH r24_spn_mix4r_ks_rotgolden_nw
+2026-10-04T18:44:54Z S1_LAUNCH r24_spn_mix4r_ks_nibrep_nw
+2026-10-04T18:50:45Z S1_LAUNCH r24_spn_mix4r_ks_gold32_nw
+2026-10-04T18:50:45Z S1_LAUNCH r24_spn_mix4r_ks_altbit_nw
+2026-10-04T18:54:16Z S1_LAUNCH r24_spn_mix4r_l0317_pb19_nw
+2026-10-04T18:54:16Z S1_LAUNCH r24_spn_mix4r_l0513_pb19_nw
+2026-10-04T18:54:56Z S1_LAUNCH r24_spn_mix4r_l0517_pb19_nw
+2026-10-04T18:58:07Z S1_LAUNCH r24_spn_mix4r_l0711_pb19_nw
+2026-10-04T18:58:37Z S1_LAUNCH r24_spn_mix4r_l0717_pb19_nw
+2026-10-04T18:59:17Z S1_LAUNCH r24_spn_mix4r_l1113_pb19_nw
+2026-10-04T19:01:37Z S1_LAUNCH r24_spn_mix4r_hsaff_pb19_nw
+2026-10-04T19:02:48Z S1_LAUNCH r24_spn_mix4r_hsalt_pb19_nw
+2026-10-04T19:02:48Z --- waiting for stage s1 jobs ---
+2026-10-04T19:05:52Z S1_DONE r24_spn_mix4r_pba19b03_nw verdict=CAL_PASS lin_rej=0 diff_rej=0 pb_rej=0 rd_rej=0
+2026-10-04T19:05:53Z S1_DONE r24_spn_mix4r_pba19b05_nw verdict=FLAG lin_rej=0 diff_rej=0 pb_rej=0 rd_rej=1
+2026-10-04T19:05:53Z S1_DONE r24_spn_mix4r_pba19b07_nw verdict=CAL_PASS lin_rej=0 diff_rej=0 pb_rej=0 rd_rej=0
+2026-10-04T19:05:53Z S1_DONE r24_spn_mix4r_pba19b09_nw verdict=CAL_PASS lin_rej=0 diff_rej=0 pb_rej=0 rd_rej=0
+2026-10-04T19:05:53Z S1_DONE r24_spn_mix4r_pba19b11_nw verdict=CAL_PASS lin_rej=0 diff_rej=0 pb_rej=0 rd_rej=0
+2026-10-04T19:05:53Z S1_DONE r24_spn_mix4r_pba19b13_nw verdict=CAL_PASS lin_rej=0 diff_rej=0 pb_rej=0 rd_rej=0
+2026-10-04T19:05:53Z S1_DONE r24_spn_mix4r_pba19b15_nw verdict=CAL_PASS lin_rej=0 diff_rej=0 pb_rej=0 rd_rej=0
+2026-10-04T19:05:53Z S1_DONE r24_spn_mix4r_pba19b17_nw verdict=CAL_PASS lin_rej=0 diff_rej=0 pb_rej=0 rd_rej=0
+2026-10-04T19:05:53Z S1_DONE r24_spn_mix4r_pba19b19_nw verdict=CAL_PASS lin_rej=0 diff_rej=0 pb_rej=0 rd_rej=0
+2026-10-04T19:05:53Z S1_DONE r24_spn_mix4r_pba19b21_nw verdict=CAL_PASS lin_rej=0 diff_rej=0 pb_rej=0 rd_rej=0
+2026-10-04T19:05:53Z S1_DONE r24_spn_mix4r_pba19b23_nw verdict=CAL_PASS lin_rej=0 diff_rej=0 pb_rej=0 rd_rej=0
+2026-10-04T19:05:53Z S1_DONE r24_spn_mix4r_pba19b25_nw verdict=CAL_PASS lin_rej=0 diff_rej=0 pb_rej=0 rd_rej=0
+2026-10-04T19:05:53Z S1_DONE r24_spn_mix4r_pba19b27_nw verdict=CAL_PASS lin_rej=0 diff_rej=0 pb_rej=0 rd_rej=0
+2026-10-04T19:05:53Z S1_DONE r24_spn_mix4r_pba19b29_nw verdict=CAL_PASS lin_rej=0 diff_rej=0 pb_rej=0 rd_rej=0
+2026-10-04T19:05:53Z S1_DONE r24_spn_mix4r_pba29b01_nw verdict=CAL_PASS lin_rej=0 diff_rej=0 pb_rej=0 rd_rej=0
+2026-10-04T19:05:53Z S1_DONE r24_spn_mix4r_pba31b01_nw verdict=CAL_PASS lin_rej=0 diff_rej=0 pb_rej=0 rd_rej=0
+2026-10-04T19:05:53Z S1_DONE r24_spn_mix4r_pba35b01_nw verdict=FLAG lin_rej=0 diff_rej=1 pb_rej=0 rd_rej=0
+2026-10-04T19:05:53Z S1_DONE r24_spn_mix4r_ks_smallodd_nw verdict=CAL_PASS lin_rej=0 diff_rej=0 pb_rej=0 rd_rej=0
+2026-10-04T19:05:53Z S1_DONE r24_spn_mix4r_ks_gold16_nw verdict=CAL_PASS lin_rej=0 diff_rej=0 pb_rej=0 rd_rej=0
+2026-10-04T19:05:53Z S1_DONE r24_spn_mix4r_ks_rotgolden_nw verdict=CAL_PASS lin_rej=0 diff_rej=0 pb_rej=0 rd_rej=0
+2026-10-04T19:05:53Z S1_DONE r24_spn_mix4r_ks_nibrep_nw verdict=CAL_PASS lin_rej=0 diff_rej=0 pb_rej=0 rd_rej=0
+2026-10-04T19:05:53Z S1_DONE r24_spn_mix4r_ks_gold32_nw verdict=CAL_PASS lin_rej=0 diff_rej=0 pb_rej=0 rd_rej=0
+2026-10-04T19:05:53Z S1_DONE r24_spn_mix4r_ks_altbit_nw verdict=FLAG lin_rej=0 diff_rej=0 pb_rej=1 rd_rej=0
+2026-10-04T19:05:53Z S1_DONE r24_spn_mix4r_l0317_pb19_nw verdict=FLAG lin_rej=0 diff_rej=1 pb_rej=0 rd_rej=0
+2026-10-04T19:05:54Z S1_DONE r24_spn_mix4r_l0513_pb19_nw verdict=CAL_PASS lin_rej=0 diff_rej=0 pb_rej=0 rd_rej=0
+2026-10-04T19:05:54Z S1_DONE r24_spn_mix4r_l0517_pb19_nw verdict=CAL_PASS lin_rej=0 diff_rej=0 pb_rej=0 rd_rej=0
+2026-10-04T19:05:54Z S1_DONE r24_spn_mix4r_l0711_pb19_nw verdict=FLAG lin_rej=0 diff_rej=0 pb_rej=0 rd_rej=1
+2026-10-04T19:05:54Z S1_DONE r24_spn_mix4r_l0717_pb19_nw verdict=FLAG lin_rej=0 diff_rej=1 pb_rej=0 rd_rej=0
+2026-10-04T19:05:54Z S1_DONE r24_spn_mix4r_l1113_pb19_nw verdict=CAL_PASS lin_rej=0 diff_rej=0 pb_rej=0 rd_rej=0
+2026-10-04T19:05:54Z S1_DONE r24_spn_mix4r_hsaff_pb19_nw verdict=CAL_PASS lin_rej=0 diff_rej=0 pb_rej=0 rd_rej=0
+2026-10-04T19:05:54Z S1_DONE r24_spn_mix4r_hsalt_pb19_nw verdict=CAL_PASS lin_rej=0 diff_rej=0 pb_rej=0 rd_rej=0
+2026-10-04T19:05:54Z ALL_STAGES_DONE s1
+2026-10-04T20:03:10Z === STAGE s2 ===
+2026-10-04T20:03:11Z S2_LAUNCH r24_spn_mix4r_pba19b03_nw
+2026-10-04T20:03:11Z S2_LAUNCH r24_spn_mix4r_pba19b07_nw
+2026-10-04T20:03:21Z S2_LAUNCH r24_spn_mix4r_pba19b09_nw
+2026-10-04T20:08:03Z S1_TABLE_INGEST_DONE 31/31 s1_result.json verified vs progress.log (0 mismatches); 25 CAL_PASS, 6 FLAG; failure analyses written; VERDICT_SCOPE O47-O52 appended
+2026-10-04T20:08:03Z TABLE_RECONSTRUCT note: a buggy python table-edit overwrote ROUND24_TABLE.md with 1 row; reconstructed in full from verified context (31 rows, S1 fills, analyses). Process fix: verify row counts after any scripted table edit.
+2026-10-04T20:08:03Z S2_KILL r24_spn_mix4r_pba19b03_nw delta=0x400 repeats=14 max|z|=6.9
+2026-10-04T20:11:34Z S2_DONE r24_spn_mix4r_pba19b03_nw KILL KILL delta=0x0000000000000400 repeats=14 > kill_repeats=10
+2026-10-04T20:13:33Z S2_LAUNCH r24_spn_mix4r_pba19b11_nw
+2026-10-04T20:16:44Z S2_LAUNCH r24_spn_mix4r_pba19b13_nw
+2026-10-04T20:23:05Z S2_LAUNCH r24_spn_mix4r_pba19b15_nw
+2026-10-04T20:32:48Z S2_DONE r24_spn_mix4r_pba19b07_nw KILL KILL delta=0x0000000070000000 repeats=94 > kill_repeats=10
+2026-10-04T20:32:48Z S2_DONE r24_spn_mix4r_pba19b09_nw PASS PASS max_repeats=1 max|z|=14.9 (all 115 deltas)
+2026-10-04T20:32:48Z S2_DONE r24_spn_mix4r_pba19b11_nw KILL KILL delta=0x0000000070000000 repeats=116 > kill_repeats=10
+2026-10-04T20:34:19Z S2_LAUNCH r24_spn_mix4r_pba19b17_nw
+2026-10-04T20:36:50Z S2_LAUNCH r24_spn_mix4r_pba19b19_nw
+2026-10-04T20:49:44Z S2_LAUNCH r24_spn_mix4r_pba19b21_nw
+2026-10-04T20:52:15Z S2_LAUNCH r24_spn_mix4r_pba19b23_nw
+2026-10-04T21:04:46Z S2_DONE r24_spn_mix4r_pba19b13_nw PASS PASS max_repeats=0 max|z|=16.7 (all 115 deltas)
+2026-10-04T21:04:46Z S2_DONE r24_spn_mix4r_pba19b15_nw KILL KILL delta=0x0000000070000000 repeats=92 > kill_repeats=10
+2026-10-04T21:04:46Z S2_DONE r24_spn_mix4r_pba19b17_nw PASS PASS max_repeats=1 max|z|=13.0 (all 115 deltas)
+2026-10-04T21:04:46Z S2_DONE r24_spn_mix4r_pba19b19_nw KILL KILL delta=0x0000000070000000 repeats=98 > kill_repeats=10
+2026-10-04T21:04:46Z S2_RECOVER note: b13/b15/b17/b19 launched pre-cancellation; logs verified complete (115-delta PASS final line or delta-line+KILL final line, col-0 verdict) — ingested as DONE, deterministic fixed-key run, not re-run
+2026-10-04T21:08:22Z === STAGE s2 ===
+2026-10-04T21:08:22Z S2_SKIP r24_spn_mix4r_pba19b03_nw
+2026-10-04T21:08:22Z S2_SKIP r24_spn_mix4r_pba19b07_nw
+2026-10-04T21:08:22Z S2_SKIP r24_spn_mix4r_pba19b09_nw
+2026-10-04T21:08:22Z S2_SKIP r24_spn_mix4r_pba19b11_nw
+2026-10-04T21:08:22Z S2_SKIP r24_spn_mix4r_pba19b13_nw
+2026-10-04T21:08:22Z S2_SKIP r24_spn_mix4r_pba19b15_nw
+2026-10-04T21:08:22Z S2_SKIP r24_spn_mix4r_pba19b17_nw
+2026-10-04T21:08:22Z S2_SKIP r24_spn_mix4r_pba19b19_nw
+2026-10-04T21:08:23Z S2_LAUNCH r24_spn_mix4r_pba19b21_nw
+2026-10-04T21:08:24Z S2_LAUNCH r24_spn_mix4r_pba19b23_nw
+2026-10-04T21:15:43Z COORD note: S2 queue resumed (17 pending, 2-concurrent, ETA ~2.8h); S3 driver r24_s3.sh + S4 driver r24_s4.sh written; gen_/sc_ binaries pre-built for all 25; S4 parser validating on r23 baseline (sc_r23 run)
+2026-10-04T21:17:29Z COORD note: run_survivors.sh S4 verdict fixed — old 'grep -q FAIL' never matches TestU01 output (word FAIL absent); new check keys on 'gave a p-value outside' / 'All tests were passed'. Using run_survivors.sh (serial, lockfile) for S3/S4/bij/Q1; removed my r24_s3.sh/r24_s4.sh dupes.
+2026-10-04T21:18:16Z S2_LAUNCH r24_spn_mix4r_pba19b25_nw
+2026-10-04T21:20:07Z S2_LAUNCH r24_spn_mix4r_pba19b27_nw
+2026-10-04T21:25:38Z S2_LAUNCH r24_spn_mix4r_pba19b29_nw
+2026-10-04T21:25:38Z S2_LAUNCH r24_spn_mix4r_pba29b01_nw
+2026-10-04T21:29:58Z S2_LAUNCH r24_spn_mix4r_pba31b01_nw
+2026-10-04T21:31:28Z S2_LAUNCH r24_spn_mix4r_ks_smallodd_nw
+2026-10-04T21:35:49Z S2_LAUNCH r24_spn_mix4r_ks_gold16_nw
+2026-10-04T21:37:30Z S2_LAUNCH r24_spn_mix4r_ks_rotgolden_nw
+2026-10-04T21:42:20Z S2_LAUNCH r24_spn_mix4r_ks_nibrep_nw
+2026-10-04T21:43:41Z S2_LAUNCH r24_spn_mix4r_ks_gold32_nw
+2026-10-04T21:48:32Z S2_LAUNCH r24_spn_mix4r_l0513_pb19_nw
+2026-10-04T21:49:52Z S2_LAUNCH r24_spn_mix4r_l0517_pb19_nw
+2026-10-04T21:54:22Z S2_LAUNCH r24_spn_mix4r_l1113_pb19_nw
+2026-10-04T21:55:43Z S2_LAUNCH r24_spn_mix4r_hsaff_pb19_nw
+2026-10-04T21:57:33Z S2_LAUNCH r24_spn_mix4r_hsalt_pb19_nw
+2026-10-04T21:57:33Z --- waiting for stage s2 jobs ---
+2026-10-04T22:03:22Z S2_DONE r24_spn_mix4r_pba19b03_nw KILL delta=0x0000000000000400 repeats=14 > kill_repeats=10
+2026-10-04T22:03:22Z S2_DONE r24_spn_mix4r_pba19b07_nw KILL delta=0x0000000070000000 repeats=94 > kill_repeats=10
+2026-10-04T22:03:22Z S2_DONE r24_spn_mix4r_pba19b09_nw PASS max_repeats=1 max|z|=14.9 (all 115 deltas)
+2026-10-04T22:03:22Z S2_DONE r24_spn_mix4r_pba19b11_nw KILL delta=0x0000000070000000 repeats=116 > kill_repeats=10
+2026-10-04T22:03:22Z S2_DONE r24_spn_mix4r_pba19b13_nw PASS max_repeats=0 max|z|=16.7 (all 115 deltas)
+2026-10-04T22:03:22Z S2_DONE r24_spn_mix4r_pba19b15_nw KILL delta=0x0000000070000000 repeats=92 > kill_repeats=10
+2026-10-04T22:03:22Z S2_DONE r24_spn_mix4r_pba19b17_nw PASS max_repeats=1 max|z|=13.0 (all 115 deltas)
+2026-10-04T22:03:22Z S2_DONE r24_spn_mix4r_pba19b19_nw KILL delta=0x0000000070000000 repeats=98 > kill_repeats=10
+2026-10-04T22:03:22Z S2_DONE r24_spn_mix4r_pba19b21_nw PASS max_repeats=0 max|z|=14.9 (all 115 deltas)
+2026-10-04T22:03:22Z S2_DONE r24_spn_mix4r_pba19b23_nw KILL delta=0x0000000070000000 repeats=76 > kill_repeats=10
+2026-10-04T22:03:22Z S2_DONE r24_spn_mix4r_pba19b25_nw PASS max_repeats=1 max|z|=8.6 (all 115 deltas)
+2026-10-04T22:03:22Z S2_DONE r24_spn_mix4r_pba19b27_nw KILL delta=0x0000000070000000 repeats=115 > kill_repeats=10
+2026-10-04T22:03:22Z S2_DONE r24_spn_mix4r_pba19b29_nw PASS max_repeats=0 max|z|=9.6 (all 115 deltas)
+2026-10-04T22:03:22Z S2_DONE r24_spn_mix4r_pba29b01_nw KILL delta=0x0000000070000000 repeats=12 > kill_repeats=10
+2026-10-04T22:03:22Z S2_DONE r24_spn_mix4r_pba31b01_nw PASS max_repeats=5 max|z|=38.4 (all 115 deltas)
+2026-10-04T22:03:22Z S2_DONE r24_spn_mix4r_ks_smallodd_nw PASS max_repeats=0 max|z|=9.3 (all 115 deltas)
+2026-10-04T22:03:22Z S2_DONE r24_spn_mix4r_ks_gold16_nw PASS max_repeats=1 max|z|=7.8 (all 115 deltas)
+2026-10-04T22:03:22Z S2_DONE r24_spn_mix4r_ks_rotgolden_nw PASS max_repeats=0 max|z|=16.6 (all 115 deltas)
+2026-10-04T22:03:22Z S2_DONE r24_spn_mix4r_ks_nibrep_nw PASS max_repeats=1 max|z|=13.6 (all 115 deltas)
+2026-10-04T22:03:22Z S2_DONE r24_spn_mix4r_ks_gold32_nw PASS max_repeats=1 max|z|=8.7 (all 115 deltas)
+2026-10-04T22:03:23Z S2_DONE r24_spn_mix4r_l0513_pb19_nw PASS max_repeats=0 max|z|=4.3 (all 115 deltas)
+2026-10-04T22:03:23Z S2_DONE r24_spn_mix4r_l0517_pb19_nw PASS max_repeats=6 max|z|=22.0 (all 115 deltas)
+2026-10-04T22:03:23Z S2_DONE r24_spn_mix4r_l1113_pb19_nw KILL delta=0x1000000000000000 repeats=51 > kill_repeats=10
+2026-10-04T22:03:23Z S2_DONE r24_spn_mix4r_hsaff_pb19_nw PASS max_repeats=1 max|z|=11.4 (all 115 deltas)
+2026-10-04T22:03:23Z S2_DONE r24_spn_mix4r_hsalt_pb19_nw PASS max_repeats=0 max|z|=7.4 (all 115 deltas)
+2026-10-04T22:03:23Z ALL_STAGES_DONE s2
+2026-10-04T22:06:05Z === SURVIVORS start ===
+2026-10-04T22:06:05Z SURV_LAUNCH r24_spn_mix4r_pba19b09_nw
+2026-10-04T22:07:52Z SURV_S3_PASS r24_spn_mix4r_pba19b09_nw
+2026-10-04T22:08:25Z COORD note: S3 false alarm resolved — 'error reading from file' is PractRand's benign stdin-EOF message; 16MB stage yields zero results because PractRand's first interim report is at 32MB (64MB stage covers it). 1GB stage for b09 at 512MB, no anomalies. Pipeline healthy.
+2026-10-04T22:09:32Z SURV_S3B_PASS r24_spn_mix4r_pba19b09_nw
+2026-10-04T22:10:16Z SURV_S4_PASS r24_spn_mix4r_pba19b09_nw
+2026-10-04T22:10:18Z SURV_BIJ_PASS r24_spn_mix4r_pba19b09_nw (2M x 2 keys collision-free)
+2026-10-04T22:12:07Z SURV_Q1 r24_spn_mix4r_pba19b09_nw sac_z5=0 bic_maxcorr=0.00943
+2026-10-04T22:12:07Z SURV_DONE r24_spn_mix4r_pba19b09_nw ALL_PASS q1=[sac_z5=0 bic_maxcorr=0.00943]
+2026-10-04T22:12:07Z SURV_LAUNCH r24_spn_mix4r_pba19b13_nw
+2026-10-04T22:15:51Z SURV_S3_PASS r24_spn_mix4r_pba19b13_nw
+2026-10-04T22:17:35Z SURV_S3B_PASS r24_spn_mix4r_pba19b13_nw
+2026-10-04T22:18:20Z SURV_S4_PASS r24_spn_mix4r_pba19b13_nw
+2026-10-04T22:18:23Z SURV_BIJ_PASS r24_spn_mix4r_pba19b13_nw (2M x 2 keys collision-free)
+2026-10-04T22:20:01Z SURV_Q1 r24_spn_mix4r_pba19b13_nw sac_z5=0 bic_maxcorr=0.00851
+2026-10-04T22:20:01Z SURV_DONE r24_spn_mix4r_pba19b13_nw ALL_PASS q1=[sac_z5=0 bic_maxcorr=0.00851]
+2026-10-04T22:20:02Z SURV_LAUNCH r24_spn_mix4r_pba19b17_nw
+2026-10-04T22:21:52Z SURV_S3_PASS r24_spn_mix4r_pba19b17_nw
+2026-10-04T22:23:26Z SURV_S3B_PASS r24_spn_mix4r_pba19b17_nw
+2026-10-04T22:24:09Z SURV_S4_PASS r24_spn_mix4r_pba19b17_nw
+2026-10-04T22:24:11Z SURV_BIJ_PASS r24_spn_mix4r_pba19b17_nw (2M x 2 keys collision-free)
+2026-10-04T22:25:45Z SURV_Q1 r24_spn_mix4r_pba19b17_nw sac_z5=1 bic_maxcorr=0.00893
+2026-10-04T22:25:45Z SURV_DONE r24_spn_mix4r_pba19b17_nw ALL_PASS q1=[sac_z5=1 bic_maxcorr=0.00893]
+2026-10-04T22:25:45Z SURV_LAUNCH r24_spn_mix4r_pba19b21_nw
+2026-10-04T22:28:06Z SURV_S3_PASS r24_spn_mix4r_pba19b21_nw
+2026-10-04T22:29:38Z SURV_S3B_PASS r24_spn_mix4r_pba19b21_nw
+2026-10-04T22:30:20Z SURV_S4_PASS r24_spn_mix4r_pba19b21_nw
+2026-10-04T22:30:23Z SURV_BIJ_PASS r24_spn_mix4r_pba19b21_nw (2M x 2 keys collision-free)
+2026-10-04T22:31:53Z SURV_Q1 r24_spn_mix4r_pba19b21_nw sac_z5=0 bic_maxcorr=0.00884
+2026-10-04T22:31:53Z SURV_DONE r24_spn_mix4r_pba19b21_nw ALL_PASS q1=[sac_z5=0 bic_maxcorr=0.00884]
+2026-10-04T22:31:53Z SURV_LAUNCH r24_spn_mix4r_pba19b25_nw
+2026-10-04T22:33:26Z SURV_S3_PASS r24_spn_mix4r_pba19b25_nw
+2026-10-04T22:35:02Z SURV_S3B_PASS r24_spn_mix4r_pba19b25_nw
+2026-10-04T22:35:44Z SURV_S4_PASS r24_spn_mix4r_pba19b25_nw
+2026-10-04T22:35:47Z SURV_BIJ_PASS r24_spn_mix4r_pba19b25_nw (2M x 2 keys collision-free)
+2026-10-04T22:37:24Z SURV_Q1 r24_spn_mix4r_pba19b25_nw sac_z5=0 bic_maxcorr=0.00902
+2026-10-04T22:37:24Z SURV_DONE r24_spn_mix4r_pba19b25_nw ALL_PASS q1=[sac_z5=0 bic_maxcorr=0.00902]
+2026-10-04T22:37:24Z SURV_LAUNCH r24_spn_mix4r_pba19b29_nw
+2026-10-04T22:39:05Z SURV_S3_PASS r24_spn_mix4r_pba19b29_nw
+2026-10-04T22:40:46Z SURV_S3B_PASS r24_spn_mix4r_pba19b29_nw
+2026-10-04T22:41:30Z SURV_S4_PASS r24_spn_mix4r_pba19b29_nw
+2026-10-04T22:41:32Z SURV_BIJ_PASS r24_spn_mix4r_pba19b29_nw (2M x 2 keys collision-free)
+2026-10-04T22:43:17Z SURV_Q1 r24_spn_mix4r_pba19b29_nw sac_z5=0 bic_maxcorr=0.00876
+2026-10-04T22:43:17Z SURV_DONE r24_spn_mix4r_pba19b29_nw ALL_PASS q1=[sac_z5=0 bic_maxcorr=0.00876]
+2026-10-04T22:43:17Z SURV_LAUNCH r24_spn_mix4r_pba31b01_nw
+2026-10-04T22:45:42Z SURV_S3_PASS r24_spn_mix4r_pba31b01_nw
+2026-10-04T22:47:31Z SURV_S3B_PASS r24_spn_mix4r_pba31b01_nw
+2026-10-04T22:48:15Z SURV_S4_PASS r24_spn_mix4r_pba31b01_nw
+2026-10-04T22:48:18Z SURV_BIJ_PASS r24_spn_mix4r_pba31b01_nw (2M x 2 keys collision-free)
+2026-10-04T22:49:50Z SURV_Q1 r24_spn_mix4r_pba31b01_nw sac_z5=0 bic_maxcorr=0.00927
+2026-10-04T22:49:50Z SURV_DONE r24_spn_mix4r_pba31b01_nw ALL_PASS q1=[sac_z5=0 bic_maxcorr=0.00927]
+2026-10-04T22:49:50Z SURV_LAUNCH r24_spn_mix4r_ks_smallodd_nw
+2026-10-04T22:51:24Z SURV_S3_PASS r24_spn_mix4r_ks_smallodd_nw
+2026-10-04T22:53:12Z SURV_S3B_PASS r24_spn_mix4r_ks_smallodd_nw
+2026-10-04T22:53:55Z SURV_S4_PASS r24_spn_mix4r_ks_smallodd_nw
+2026-10-04T22:53:58Z SURV_BIJ_PASS r24_spn_mix4r_ks_smallodd_nw (2M x 2 keys collision-free)
+2026-10-04T22:55:29Z SURV_Q1 r24_spn_mix4r_ks_smallodd_nw sac_z5=0 bic_maxcorr=0.00812
+2026-10-04T22:55:29Z SURV_DONE r24_spn_mix4r_ks_smallodd_nw ALL_PASS q1=[sac_z5=0 bic_maxcorr=0.00812]
+2026-10-04T22:55:30Z SURV_LAUNCH r24_spn_mix4r_ks_gold16_nw
+2026-10-04T22:57:05Z SURV_S3_PASS r24_spn_mix4r_ks_gold16_nw
+2026-10-04T22:59:20Z SURV_S3B_PASS r24_spn_mix4r_ks_gold16_nw
+2026-10-04T23:00:21Z SURV_S4_PASS r24_spn_mix4r_ks_gold16_nw
+2026-10-04T23:00:24Z SURV_BIJ_PASS r24_spn_mix4r_ks_gold16_nw (2M x 2 keys collision-free)
+2026-10-04T23:05:38Z SURV_Q1 r24_spn_mix4r_ks_gold16_nw sac_z5=0 bic_maxcorr=0.01003
+2026-10-04T23:05:38Z SURV_DONE r24_spn_mix4r_ks_gold16_nw ALL_PASS q1=[sac_z5=0 bic_maxcorr=0.01003]
+2026-10-04T23:07:21Z COORD note: Q1 for ks_gold16 recovered (sac_z5=0, bic=0.01003); 9/9 done survivors raw-log-verified and checkpointed in ROUND24_TABLE.md (S3/S4/Q1/Verdict). CORRECTION to prior brief: pba19b17 Q1 is sac_z5=1 (not 0) per q1 JSON — pipeline-complete but FRONTIER-INELIGIBLE (sac_z5=0 mandatory). Launching 7 pending, one at a time.
+2026-10-04T23:07:21Z === SURVIVORS start ===
+2026-10-04T23:07:21Z SURV_LAUNCH r24_spn_mix4r_ks_rotgolden_nw
+2026-10-04T23:09:01Z SURV_S3_PASS r24_spn_mix4r_ks_rotgolden_nw
+2026-10-04T23:10:39Z SURV_S3B_PASS r24_spn_mix4r_ks_rotgolden_nw
+2026-10-04T23:11:29Z SURV_S4_PASS r24_spn_mix4r_ks_rotgolden_nw
+2026-10-04T23:11:31Z SURV_BIJ_PASS r24_spn_mix4r_ks_rotgolden_nw (2M x 2 keys collision-free)
+2026-10-04T23:12:53Z SURV_Q1 r24_spn_mix4r_ks_rotgolden_nw sac_z5=0 bic_maxcorr=0.00920
+2026-10-04T23:12:53Z SURV_DONE r24_spn_mix4r_ks_rotgolden_nw ALL_PASS q1=[sac_z5=0 bic_maxcorr=0.00920]
+2026-10-04T23:12:53Z === SURVIVORS complete ===
+2026-10-04T23:13:04Z === SURVIVORS start ===
+2026-10-04T23:13:04Z SURV_LAUNCH r24_spn_mix4r_ks_nibrep_nw
+2026-10-04T23:14:14Z SURV_S3_PASS r24_spn_mix4r_ks_nibrep_nw
+2026-10-04T23:15:38Z SURV_S3B_PASS r24_spn_mix4r_ks_nibrep_nw
+2026-10-04T23:16:14Z SURV_S4_PASS r24_spn_mix4r_ks_nibrep_nw
+2026-10-04T23:16:16Z SURV_BIJ_PASS r24_spn_mix4r_ks_nibrep_nw (2M x 2 keys collision-free)
+2026-10-04T23:17:29Z SURV_Q1 r24_spn_mix4r_ks_nibrep_nw sac_z5=0 bic_maxcorr=0.00845
+2026-10-04T23:17:29Z SURV_DONE r24_spn_mix4r_ks_nibrep_nw ALL_PASS q1=[sac_z5=0 bic_maxcorr=0.00845]
+2026-10-04T23:17:29Z === SURVIVORS complete ===
+2026-10-04T23:17:37Z === SURVIVORS start ===
+2026-10-04T23:17:37Z SURV_LAUNCH r24_spn_mix4r_ks_gold32_nw
+2026-10-04T23:19:02Z SURV_S3_PASS r24_spn_mix4r_ks_gold32_nw
+2026-10-04T23:20:18Z SURV_S3B_PASS r24_spn_mix4r_ks_gold32_nw
+2026-10-04T23:20:51Z SURV_FAIL r24_spn_mix4r_ks_gold32_nw S4-smallcrush no pass confirmation (see /home/hatch/workspace/mix/exploration/round24/survivors/r24_spn_mix4r_ks_gold32_nw/s4.log)
+2026-10-04T23:20:51Z === SURVIVORS complete ===
+2026-10-04T23:21:47Z === SURVIVORS start ===
+2026-10-04T23:21:47Z SURV_LAUNCH r24_spn_mix4r_l0513_pb19_nw
+2026-10-04T23:22:36Z COORD note: gold32 S4 KILL (sstring_HammingIndep p=8.3e-4) — first S4 kill of r24; genuine, not a flake (deterministic generator). Table row marked KILLED, analysis #16 + VERDICT_SCOPE O62 written. Parse note: S4's first grep pattern (singular 'p-value') never matches TestU01's plural header — kill registered via fallback check; verdict correct, log string misleading.
+2026-10-04T23:23:33Z SURV_S3_PASS r24_spn_mix4r_l0513_pb19_nw
+2026-10-04T23:26:36Z SURV_S3B_PASS r24_spn_mix4r_l0513_pb19_nw
+2026-10-04T23:29:36Z SURV_S4_PASS r24_spn_mix4r_l0513_pb19_nw
+2026-10-04T23:29:52Z SURV_BIJ_PASS r24_spn_mix4r_l0513_pb19_nw (2M x 2 keys collision-free)
+2026-10-04T23:41:20Z SURV_Q1 r24_spn_mix4r_l0513_pb19_nw sac_z5=0 bic_maxcorr=0.00959
+2026-10-04T23:41:20Z SURV_DONE r24_spn_mix4r_l0513_pb19_nw ALL_PASS q1=[sac_z5=0 bic_maxcorr=0.00959]
+2026-10-04T23:41:20Z === SURVIVORS complete ===
+2026-10-04T23:41:32Z === SURVIVORS start ===
+2026-10-04T23:41:32Z SURV_LAUNCH r24_spn_mix4r_l0517_pb19_nw
+2026-10-04T23:46:53Z SURV_S3_PASS r24_spn_mix4r_l0517_pb19_nw
+2026-10-04T23:51:40Z SURV_S3B_PASS r24_spn_mix4r_l0517_pb19_nw
+2026-10-04T23:52:27Z SURV_S4_PASS r24_spn_mix4r_l0517_pb19_nw
+2026-10-04T23:52:29Z SURV_BIJ_PASS r24_spn_mix4r_l0517_pb19_nw (2M x 2 keys collision-free)
+2026-10-04T23:54:47Z SURV_Q1 r24_spn_mix4r_l0517_pb19_nw sac_z5=0 bic_maxcorr=0.00837
+2026-10-04T23:54:47Z SURV_DONE r24_spn_mix4r_l0517_pb19_nw ALL_PASS q1=[sac_z5=0 bic_maxcorr=0.00837]
+2026-10-04T23:54:47Z === SURVIVORS complete ===
+2026-10-04T23:54:58Z === SURVIVORS start ===
+2026-10-04T23:54:58Z SURV_LAUNCH r24_spn_mix4r_hsaff_pb19_nw
+2026-10-05T00:08:23Z SURV_S3_PASS r24_spn_mix4r_hsaff_pb19_nw
+2026-10-05T00:12:27Z SURV_S3B_PASS r24_spn_mix4r_hsaff_pb19_nw
+2026-10-05T00:13:53Z SURV_S4_PASS r24_spn_mix4r_hsaff_pb19_nw
+2026-10-05T00:13:59Z SURV_BIJ_PASS r24_spn_mix4r_hsaff_pb19_nw (2M x 2 keys collision-free)
+2026-10-05T00:17:41Z SURV_Q1 r24_spn_mix4r_hsaff_pb19_nw sac_z5=0 bic_maxcorr=0.00855
+2026-10-05T00:17:41Z SURV_DONE r24_spn_mix4r_hsaff_pb19_nw ALL_PASS q1=[sac_z5=0 bic_maxcorr=0.00855]
+2026-10-05T00:17:41Z === SURVIVORS complete ===
+2026-10-05T00:17:55Z === SURVIVORS start ===
+2026-10-05T00:17:55Z SURV_LAUNCH r24_spn_mix4r_hsalt_pb19_nw
+2026-10-05T00:20:41Z SURV_S3_PASS r24_spn_mix4r_hsalt_pb19_nw
+2026-10-05T00:22:21Z SURV_S3B_PASS r24_spn_mix4r_hsalt_pb19_nw
+2026-10-05T00:23:13Z SURV_S4_PASS r24_spn_mix4r_hsalt_pb19_nw
+2026-10-05T00:23:21Z SURV_BIJ_PASS r24_spn_mix4r_hsalt_pb19_nw (2M x 2 keys collision-free)
+2026-10-05T00:27:53Z SURV_Q1 r24_spn_mix4r_hsalt_pb19_nw sac_z5=0 bic_maxcorr=0.00853
+2026-10-05T00:27:53Z SURV_DONE r24_spn_mix4r_hsalt_pb19_nw ALL_PASS q1=[sac_z5=0 bic_maxcorr=0.00853]
+2026-10-05T00:27:53Z === SURVIVORS complete ===
+2026-10-05T00:29:07Z COORD COMPLETE: all 16 S3 entrants resolved — 15 SURV_DONE ALL_PASS (14 frontier-eligible sac_z5=0 bic 0.00812-0.01003; b17 sac_z5=1 frontier-ineligible), 1 S4 KILL (gold32, HammingIndep p=8.3e-4). Table fully ingested (S2/S3/S4/Q1/Verdict/Winners); analysis #16 + VERDICT_SCOPE O62 written; PARETO.md untouched (parent-only). Winner: b21 (27.8u/5507/14784) Pareto-improves the r23 speed point.

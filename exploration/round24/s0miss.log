@@ -1,0 +1,11 @@
+2026-10-04T17:29:09Z === STAGE s0 ===
+2026-10-04T17:29:09Z S0_LAUNCH r24_spn_mix4r_l0717_pb19_nw
+2026-10-04T17:29:09Z S0_LAUNCH r24_spn_mix4r_l1113_pb19_nw
+2026-10-04T17:29:50Z S0_LAUNCH r24_spn_mix4r_hsaff_pb19_nw
+2026-10-04T17:29:50Z S0_LAUNCH r24_spn_mix4r_hsalt_pb19_nw
+2026-10-04T17:29:50Z --- waiting for stage s0 jobs ---
+2026-10-04T17:30:08Z S0_DONE r24_spn_mix4r_l0717_pb19_nw RESULT name=r24_spn_mix4r_l0717_pb19_nw cells=5789 area=15521 crit=26.9 delay_ratio=0.260 area_ratio=0.439 ref_crit=103.5 ref_area=35323
+2026-10-04T17:30:08Z S0_DONE r24_spn_mix4r_l1113_pb19_nw RESULT name=r24_spn_mix4r_l1113_pb19_nw cells=4944 area=13733 crit=28.5 delay_ratio=0.275 area_ratio=0.389 ref_crit=103.5 ref_area=35323
+2026-10-04T17:30:08Z S0_DONE r24_spn_mix4r_hsaff_pb19_nw RESULT name=r24_spn_mix4r_hsaff_pb19_nw cells=5206 area=14142 crit=28.2 delay_ratio=0.272 area_ratio=0.400 ref_crit=103.5 ref_area=35323
+2026-10-04T17:30:08Z S0_DONE r24_spn_mix4r_hsalt_pb19_nw RESULT name=r24_spn_mix4r_hsalt_pb19_nw cells=5174 area=14185 crit=29.0 delay_ratio=0.280 area_ratio=0.402 ref_crit=103.5 ref_area=35323
+2026-10-04T17:30:08Z ALL_STAGES_DONE s0

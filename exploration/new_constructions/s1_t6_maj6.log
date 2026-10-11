@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "/home/hatch/workspace/mix/exploration/fast_battery/src/s1_screen.py", line 122, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/hatch/workspace/mix/exploration/fast_battery/src/s1_screen.py", line 56, in main
+    mix, mix_np, meta = load_candidate(cand)
+                        ^^^^^^^^^^^^^^^^^^^^
+  File "/home/hatch/workspace/mix/exploration/fast_battery/src/s1_screen.py", line 48, in load_candidate
+    spec.loader.exec_module(m)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/hatch/workspace/mix/exploration/fast_battery/candidates/t6_maj6/model.py", line 107
+    return <lambda>(v, k)
+           ^
+SyntaxError: invalid syntax

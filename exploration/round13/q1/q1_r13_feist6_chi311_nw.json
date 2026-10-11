@@ -1,0 +1,12 @@
+{
+ "candidate": "r13_feist6_chi311_nw",
+ "key": "0x123456789abcdef0",
+ "N": 262144,
+ "sac_maxdev": 0.02142333984375,
+ "sac_meandev": 0.0010699741542339325,
+ "sac_z5": 57,
+ "bic_maxcorr": 0.023243633375762105,
+ "bic_meancorr": 0.0015696046119688081,
+ "avalanche_mean": 31.98132812976837,
+ "wall_s": 251.1
+}

@@ -1,0 +1,4 @@
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT r12_feist6_lin71319_nw: cells=6060 area=16796 crit=46.8
+RESULT name=r12_feist6_lin71319_nw cells=6060 area=16796 crit=46.8 delay_ratio=0.452 area_ratio=0.475 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)

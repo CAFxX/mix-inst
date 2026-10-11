@@ -1,0 +1,22 @@
+=== S3 standard (KEY1) ===
+S3 standard exit: 0
+[polite] 3 foreign heavies, sleeping 60s
+[polite] 2 foreign heavies, sleeping 60s
+=== S3 strided (KEY2) ===
+S3 strided exit: 0
+[polite] 2 foreign heavies, sleeping 60s
+[polite] 2 foreign heavies, sleeping 60s
+[polite] 2 foreign heavies, sleeping 60s
+[polite] 2 foreign heavies, sleeping 60s
+[polite] 2 foreign heavies, sleeping 60s
+[polite] 3 foreign heavies, sleeping 60s
+[polite] 2 foreign heavies, sleeping 60s
+[polite] 2 foreign heavies, sleeping 60s
+[polite] 4 foreign heavies, sleeping 60s
+[polite] 6 foreign heavies, sleeping 60s
+[polite] 4 foreign heavies, sleeping 60s
+[polite] 4 foreign heavies, sleeping 60s
+=== S4 SmallCrush ===
+S4 binary exit: 0
+S4-PASS
+ALL DONE: S3 std + strided + S4 PASS

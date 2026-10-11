@@ -1,0 +1,6 @@
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT r25_spn_pba19_sb_rasC1_2_nw: cells=4980 area=13247 crit=28.5
+RESULT name=r25_spn_pba19_sb_rasC1_2_nw cells=4980 area=13247 crit=28.5 delay_ratio=0.275 area_ratio=0.375 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+RTLCHECK: 1000/1000 vectors match -> PASS
+[S0 r25_spn_pba19_sb_rasC1_2_nw] delay=28.5u cells=4980 x_mult=0.275 (bar 0.9) equiv=ok -> PASS

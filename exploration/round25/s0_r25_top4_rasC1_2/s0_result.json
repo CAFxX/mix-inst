@@ -1,0 +1,17 @@
+{
+ "candidate": "r25_spn_pba19_sb_rasC1_2_nw",
+ "verdict": "PASS",
+ "delay_u": 28.5,
+ "cells": 4980,
+ "area": 13247.0,
+ "delay_ratio_vs_mult": 0.275,
+ "ratio_bar": 0.9,
+ "equiv_check": {
+  "ok": true,
+  "detail": "n=1000",
+  "nvecs": 1000
+ },
+ "flow": "yosys 0.69+ abc -genlib mini.genlib, explicit no-dretime script (see README)",
+ "time_dut_s": 30.8,
+ "time_equiv_s": 2.0
+}

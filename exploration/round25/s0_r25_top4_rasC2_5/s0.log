@@ -1,0 +1,2 @@
+[S0 r25_spn_pba19_sb_rasC2_5_nw] delay=28.1u cells=5778 x_mult=0.271 (bar 0.9) equiv=n=1000 err=0 -> PASS [ref 0s cached=True, dut 9s, equiv 42s]
+S0 EXIT: 0

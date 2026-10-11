@@ -1,0 +1,2 @@
+[S0 r25_spn_pba19_sb_midori_sb0_nw] delay=27.4u cells=5169 x_mult=0.265 (bar 0.9) equiv=n=1000 err=0 -> PASS [ref 0s cached=True, dut 4s, equiv 17s]
+S0 EXIT: 0

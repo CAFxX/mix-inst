@@ -1,0 +1,12 @@
+{
+ "candidate": "r25_spn_pba19_sb_rasC1_2_nw",
+ "key": "0x123456789abcdef0",
+ "N": 262144,
+ "sac_maxdev": 0.00325775146484375,
+ "sac_meandev": 0.0007769595831632614,
+ "sac_z5": 0,
+ "bic_maxcorr": 0.00846676818669832,
+ "bic_meancorr": 0.0015582312244878892,
+ "avalanche_mean": 31.998084783554077,
+ "wall_s": 309.8
+}

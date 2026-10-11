@@ -1,0 +1,29 @@
+{
+ "fixed_points": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  9,
+  12
+ ],
+ "n_fp": 7,
+ "fp_is_subspace": false,
+ "planes_in_fp": [
+  [
+   0,
+   1,
+   2,
+   3
+  ],
+  [
+   1,
+   4,
+   9,
+   12
+  ]
+ ],
+ "design_rule": "every output bit XORs >=2 distinct input nibbles",
+ "p_all_fp": 1.8015607760810668e-06
+}

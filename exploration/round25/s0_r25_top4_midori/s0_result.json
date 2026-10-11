@@ -1,0 +1,23 @@
+{
+ "candidate": "r25_spn_pba19_sb_midori_sb0_nw",
+ "verdict": "PASS",
+ "delay_u": 27.4,
+ "cells": 5169,
+ "area": 14170.0,
+ "delay_ratio_vs_mult": 0.2647,
+ "ratio_bar": 0.9,
+ "ref": {
+  "cells": 12645,
+  "crit": 103.5,
+  "cached": true
+ },
+ "equiv_check": {
+  "ok": true,
+  "detail": "n=1000 err=0",
+  "nvecs": 1000
+ },
+ "flow": "yosys 0.69+ abc -genlib mini.genlib, explicit no-dretime script (see README)",
+ "time_ref_s": 0.0,
+ "time_dut_s": 4.3,
+ "time_equiv_s": 17.3
+}

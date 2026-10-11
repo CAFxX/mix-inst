@@ -1,0 +1,20 @@
+=== Q1 [r13_feist6_chi311_nw] 2026-10-03T00:14:23Z
+/home/hatch/workspace/mix/exploration/round13/models/r13.py:86: RuntimeWarning: overflow encountered in scalar multiply
+  return (_rotl64_np(k, r) ^ (np.uint64(i + 1) * GOLDEN64)) & MASK64
+  bit 16/64 done (67s)
+  bit 32/64 done (117s)
+  bit 48/64 done (186s)
+  bit 64/64 done (251s)
+{
+ "candidate": "r13_feist6_chi311_nw",
+ "key": "0x123456789abcdef0",
+ "N": 262144,
+ "sac_maxdev": 0.02142333984375,
+ "sac_meandev": 0.0010699741542339325,
+ "sac_z5": 57,
+ "bic_maxcorr": 0.023243633375762105,
+ "bic_meancorr": 0.0015696046119688081,
+ "avalanche_mean": 31.98132812976837,
+ "wall_s": 251.1
+}
+=== battery S2-S4 [r13_feist6_chi311_nw] 2026-10-03T00:18:36Z

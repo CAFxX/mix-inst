@@ -1,0 +1,14 @@
+S1_DONE r14_feist6_alt713_nw rc=0 [S1 r14_feist6_alt713_nw] verdict: CAL_PASS
+S1_DONE r14_feist6_chi_s1alt_nw rc=0 [S1 r14_feist6_chi_s1alt_nw] verdict: CAL_PASS
+S1_DONE r14_feist6_alt_chinolin_nw rc=2 
+S1_DONE r14_feist6_alt_chioff_nw rc=0 [S1 r14_feist6_alt_chioff_nw] verdict: CAL_PASS
+S1_DONE r14_feist6_alt_rkhi_nw rc=0 [S1 r14_feist6_alt_rkhi_nw] verdict: CAL_PASS
+S1_DONE r14_feist4_chis1l_nw rc=2 
+S1_DONE r14_feist4_pars1chi_nw rc=2 
+S1_DONE r14_feist6_chi25_nw rc=0 [S1 r14_feist6_chi25_nw] verdict: CAL_PASS
+S1_DONE r14_feist5_s1x2_311_nw rc=0 [S1 r14_feist5_s1x2_311_nw] verdict: CAL_PASS
+S1_DONE r14_feist6_chi16_nw rc=0 [S1 r14_feist6_chi16_nw] verdict: CAL_PASS
+S1_DONE r14_feist6_r9_outdiff_nw rc=0 [S1 r14_feist6_r9_outdiff_nw] verdict: CAL_PASS
+S1_DONE r14_feist6_r9_outdiff2_nw rc=0 [S1 r14_feist6_r9_outdiff2_nw] verdict: CAL_PASS
+S1_DONE r14_feist6_s1chi_311_nw rc=0 [S1 r14_feist6_s1chi_311_nw] verdict: CAL_PASS
+ALL_S1_DONE

@@ -1,0 +1,14 @@
+S0_DONE r13_feist4_s1x2_311_nw rc=0 RESULT name=r13_feist4_s1x2_311_nw cells=6920 area=18576 crit=56.2 delay_ratio=0.543 area_ratio=0.526 ref_crit=103.5 ref
+S0_DONE r13_feist4_s1x2_713_nw rc=0 RESULT name=r13_feist4_s1x2_713_nw cells=6868 area=18525 crit=58.6 delay_ratio=0.566 area_ratio=0.524 ref_crit=103.5 ref
+S0_DONE r13_feist5_chi311_nw rc=0 RESULT name=r13_feist5_chi311_nw cells=3548 area=10175 crit=34.0 delay_ratio=0.329 area_ratio=0.288 ref_crit=103.5 ref_a
+S0_DONE r13_feist6_chi311_nw rc=0 RESULT name=r13_feist6_chi311_nw cells=4883 area=13688 crit=40.9 delay_ratio=0.395 area_ratio=0.388 ref_crit=103.5 ref_a
+S0_DONE r13_feist8_chi311_nw rc=0 RESULT name=r13_feist8_chi311_nw cells=6171 area=17810 crit=52.4 delay_ratio=0.506 area_ratio=0.504 ref_crit=103.5 ref_a
+S0_DONE r13_feist6_chis1_311_nw rc=0 RESULT name=r13_feist6_chis1_311_nw cells=5841 area=16230 crit=57.2 delay_ratio=0.553 area_ratio=0.459 ref_crit=103.5 re
+S0_DONE r13_feist6_alt_s1chi_nw rc=0 RESULT name=r13_feist6_alt_s1chi_nw cells=4563 area=13041 crit=40.1 delay_ratio=0.387 area_ratio=0.369 ref_crit=103.5 re
+S0_DONE r13_feist6_s1x3_chix3_nw rc=0 RESULT name=r13_feist6_s1x3_chix3_nw cells=4285 area=12127 crit=41.0 delay_ratio=0.396 area_ratio=0.343 ref_crit=103.5 r
+S0_DONE r13_lm4_s1_311_nw rc=0 RESULT name=r13_lm4_s1_311_nw cells=578 area=1548 crit=5.5 delay_ratio=0.053 area_ratio=0.044 ref_crit=103.5 ref_area=35
+S0_DONE r13_lm6_s1_311_nw rc=0 RESULT name=r13_lm6_s1_311_nw cells=260 area=1012 crit=6.7 delay_ratio=0.065 area_ratio=0.029 ref_crit=103.5 ref_area=35
+S0_DONE r13_feist6_s1_midk311_nw rc=0 RESULT name=r13_feist6_s1_midk311_nw cells=5192 area=14268 crit=50.3 delay_ratio=0.486 area_ratio=0.404 ref_crit=103.5 r
+S0_DONE r13_feist6_s1_rkhi311_nw rc=0 RESULT name=r13_feist6_s1_rkhi311_nw cells=4410 area=12341 crit=41.6 delay_ratio=0.402 area_ratio=0.349 ref_crit=103.5 r
+S0_DONE r13_feist6_sandw311_nw rc=0 RESULT name=r13_feist6_sandw311_nw cells=7127 area=20109 crit=59.7 delay_ratio=0.577 area_ratio=0.569 ref_crit=103.5 ref
+ALL_S0_DONE

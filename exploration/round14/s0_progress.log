@@ -1,0 +1,14 @@
+S0_DONE r14_feist6_chi_s1alt_nw rc=0 RESULT name=r14_feist6_chi_s1alt_nw cells=4797 area=13477 crit=41.4 delay_ratio=0.400 area_ratio=0.382 ref_crit=103.5 re
+S0_DONE r14_feist6_alt713_nw rc=0 RESULT name=r14_feist6_alt713_nw cells=4430 area=12728 crit=40.6 delay_ratio=0.392 area_ratio=0.360 ref_crit=103.5 ref_a
+S0_DONE r14_feist6_alt_chinolin_nw rc=0 RESULT name=r14_feist6_alt_chinolin_nw cells=3282 area=9306 crit=31.9 delay_ratio=0.308 area_ratio=0.263 ref_crit=103.5 
+S0_DONE r14_feist6_alt_chioff_nw rc=0 RESULT name=r14_feist6_alt_chioff_nw cells=4632 area=13207 crit=40.5 delay_ratio=0.391 area_ratio=0.374 ref_crit=103.5 r
+S0_DONE r14_feist6_alt_rkhi_nw rc=0 RESULT name=r14_feist6_alt_rkhi_nw cells=4563 area=13041 crit=40.1 delay_ratio=0.387 area_ratio=0.369 ref_crit=103.5 ref
+S0_DONE r14_feist4_chis1l_nw rc=0 RESULT name=r14_feist4_chis1l_nw cells=4560 area=12536 crit=43.2 delay_ratio=0.417 area_ratio=0.355 ref_crit=103.5 ref_a
+S0_DONE r14_feist4_pars1chi_nw rc=0 RESULT name=r14_feist4_pars1chi_nw cells=6542 area=18140 crit=37.3 delay_ratio=0.360 area_ratio=0.514 ref_crit=103.5 ref
+S0_DONE r14_feist5_s1x2_311_nw rc=0 RESULT name=r14_feist5_s1x2_311_nw cells=9151 area=24468 crit=70.6 delay_ratio=0.682 area_ratio=0.693 ref_crit=103.5 ref
+S0_DONE r14_feist6_chi25_nw rc=0 RESULT name=r14_feist6_chi25_nw cells=4557 area=13001 crit=41.1 delay_ratio=0.397 area_ratio=0.368 ref_crit=103.5 ref_ar
+S0_DONE r14_feist6_chi16_nw rc=0 RESULT name=r14_feist6_chi16_nw cells=4815 area=13383 crit=40.9 delay_ratio=0.395 area_ratio=0.379 ref_crit=103.5 ref_ar
+S0_DONE r14_feist6_r9_outdiff_nw rc=0 RESULT name=r14_feist6_r9_outdiff_nw cells=5138 area=14381 crit=43.1 delay_ratio=0.416 area_ratio=0.407 ref_crit=103.5 r
+S0_DONE r14_feist6_r9_outdiff2_nw rc=0 RESULT name=r14_feist6_r9_outdiff2_nw cells=5123 area=14415 crit=43.3 delay_ratio=0.418 area_ratio=0.408 ref_crit=103.5 
+S0_DONE r14_feist6_s1chi_311_nw rc=0 RESULT name=r14_feist6_s1chi_311_nw cells=6123 area=17190 crit=57.4 delay_ratio=0.555 area_ratio=0.487 ref_crit=103.5 re
+ALL_S0_DONE

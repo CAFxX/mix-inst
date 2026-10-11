@@ -1,0 +1,11 @@
+S0_DONE r12_feist5_lin31119_nw rc=0 RESULT name=r12_feist5_lin31119_nw cells=4372 area=12224 crit=39.3 delay_ratio=0.380 area_ratio=0.346 ref_crit=103.5 ref
+S0_DONE r12_feist5_lin3711_nw rc=0 RESULT name=r12_feist5_lin3711_nw cells=4775 area=13274 crit=39.5 delay_ratio=0.382 area_ratio=0.376 ref_crit=103.5 ref_
+S0_DONE r12_feist5_lin31125_nw rc=0 RESULT name=r12_feist5_lin31125_nw cells=4566 area=12768 crit=38.9 delay_ratio=0.376 area_ratio=0.361 ref_crit=103.5 ref
+S0_DONE r12_feist5_lin71319_nw rc=0 RESULT name=r12_feist5_lin71319_nw cells=4552 area=12726 crit=39.9 delay_ratio=0.386 area_ratio=0.360 ref_crit=103.5 ref
+S0_DONE r12_feist6_s1half311_nw rc=0 RESULT name=r12_feist6_s1half311_nw cells=2871 area=8437 crit=37.3 delay_ratio=0.360 area_ratio=0.239 ref_crit=103.5 ref
+S0_DONE r12_feist7_s1half311_nw rc=0 RESULT name=r12_feist7_s1half311_nw cells=3441 area=10145 crit=42.5 delay_ratio=0.411 area_ratio=0.287 ref_crit=103.5 re
+S0_DONE r12_feist8_s1half311_nw rc=0 RESULT name=r12_feist8_s1half311_nw cells=4489 area=13017 crit=47.0 delay_ratio=0.454 area_ratio=0.369 ref_crit=103.5 re
+S0_DONE r12_feist6_lin3711_nw rc=0 RESULT name=r12_feist6_lin3711_nw cells=5445 area=15301 crit=46.7 delay_ratio=0.451 area_ratio=0.433 ref_crit=103.5 ref_
+S0_DONE r12_feist6_lin71319_nw rc=0 RESULT name=r12_feist6_lin71319_nw cells=6060 area=16796 crit=46.8 delay_ratio=0.452 area_ratio=0.475 ref_crit=103.5 ref
+S0_DONE r12_feist6_s1_16rot_nw rc=0 RESULT name=r12_feist6_s1_16rot_nw cells=4041 area=11402 crit=41.6 delay_ratio=0.402 area_ratio=0.323 ref_crit=103.5 ref
+ALL_S0_DONE

@@ -22,5 +22,16 @@
 - `adder_lat/w3prime/s0/run_s0.sh` launched ~21:46 CEST, sequential via run_synth.py's global yosys flock.
 - Log: `adder_lat/w3prime/s0/s0.log`. Bar: < 123.4u (adder-like; wave-14 mission).
 
+## Battery (al_w3p_a COMPLETE — full pass)
+- al_w3p_a: S0 48.3u/18917/58806 (< 123.4u bar); S0a xcheck PASS; **S1 CAL_PASS**
+  (wave-14's LIN kill fixed by the W3' full-rank probe); **S2 PASS** (0 repeats,
+  max|z|=4.1, all 115 deltas); **S3 PASS** (PractRand 1GB, 227 tests, 0 anomalies);
+  **S3b PASS** (strided 1GB); **S4 PASS** (SmallCrush); **Q1 sac_z5=0,
+  bic_maxcorr=0.00839 (BIC-clean)**.
+  Verdict: FULL BATTERY+Q1 PASS. Dominated on implementation axes
+  (48.3u/18917/58806 vs r8 42.9u/4133/11670) — retained, not frontier.
+  First adder-latency-track design through the full battery with BIC-clean.
+- al_w3p_b/c/d: battery running sequentially (b in S1 as of 22:52Z).
+
 ## Battery (pending S0)
 - Survivors → `run_fast_battery.sh` START=1, S1→S2→S3→S4→Q1 per b33 playbook.

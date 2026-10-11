@@ -1,0 +1,18 @@
+[2026-10-11T22:50:15+00:00] backoff CLEAR -- starting batch-54 staged battery
+[2026-10-11T22:50:15+00:00] BATTERY t6_b54_h1 (start_stage=1)
+[2026-10-11T22:51:20+00:00] BATTERY t6_b54_h1 rc=2
+BATTERY-FAIL stage=S1-screen [t6_b54_h1] (see /home/hatch/workspace/mix/exploration/fast_battery/results/t6_b54_h1/battery.log)
+[2026-10-11T22:51:20+00:00] BATTERY t6_b54_h2 (start_stage=1)
+[2026-10-11T22:52:20+00:00] BATTERY t6_b54_h2 rc=2
+BATTERY-FAIL stage=S1-screen [t6_b54_h2] (see /home/hatch/workspace/mix/exploration/fast_battery/results/t6_b54_h2/battery.log)
+[2026-10-11T22:52:20+00:00] BATTERY t6_b54_h3 (start_stage=1)
+[2026-10-11T22:53:27+00:00] BATTERY t6_b54_h3 rc=2
+BATTERY-FAIL stage=S1-screen [t6_b54_h3] (see /home/hatch/workspace/mix/exploration/fast_battery/results/t6_b54_h3/battery.log)
+[2026-10-11T22:53:27+00:00] BATTERY t6_b54_h4 (start_stage=1)
+[2026-10-11T22:54:55+00:00] BATTERY t6_b54_h4 rc=2
+BATTERY-FAIL stage=S1-screen [t6_b54_h4] (see /home/hatch/workspace/mix/exploration/fast_battery/results/t6_b54_h4/battery.log)
+[2026-10-11T22:54:55+00:00] BATTERY t6_b54_h6 (start_stage=1)
+[2026-10-11T22:56:36+00:00] BATTERY t6_b54_h6 rc=2
+BATTERY-FAIL stage=S1-screen [t6_b54_h6] (see /home/hatch/workspace/mix/exploration/fast_battery/results/t6_b54_h6/battery.log)
+[2026-10-11T22:56:36+00:00] S4 survivors:
+[2026-10-11T22:56:36+00:00] batch-54 staged battery COMPLETE; survivors:

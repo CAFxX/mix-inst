@@ -1,0 +1,37 @@
+=== t6_het6a start 15:36:05Z
+  bit 16/64 done (739s)
+  bit 32/64 done (1580s)
+  bit 48/64 done (2400s)
+  bit 64/64 done (3101s)
+{
+ "candidate": "t6_het6a",
+ "key": "0x123456789abcdef0",
+ "N": 262144,
+ "sac_maxdev": 0.00372314453125,
+ "sac_meandev": 0.0007819356396794319,
+ "sac_z5": 0,
+ "bic_maxcorr": 0.008573647680393722,
+ "bic_meancorr": 0.0015605999113141036,
+ "avalanche_mean": 32.00146609544754,
+ "wall_s": 3100.7
+}
+=== t6_het6a done 16:27:46Z
+=== t6_het6b start 16:27:46Z
+  bit 16/64 done (857s)
+  bit 32/64 done (1504s)
+  bit 48/64 done (1983s)
+  bit 64/64 done (2489s)
+{
+ "candidate": "t6_het6b",
+ "key": "0x123456789abcdef0",
+ "N": 262144,
+ "sac_maxdev": 0.003467559814453125,
+ "sac_meandev": 0.0007823091000318527,
+ "sac_z5": 0,
+ "bic_maxcorr": 0.009574524577245967,
+ "bic_meancorr": 0.0015608402693131048,
+ "avalanche_mean": 32.000081300735474,
+ "wall_s": 2488.8
+}
+=== t6_het6b done 17:09:15Z
+=== t6_het6c start 17:09:15Z

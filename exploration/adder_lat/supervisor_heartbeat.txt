@@ -77,3 +77,9 @@ HB 2026-10-11T20:52Z Track3: RESUMED per user order; W3 LIN-kill MECHANISM FOUND
 2026-10-11 22:11:23 w3prime-harvest: S2 al_w3p_a 40/115 deltas, 0 kills so far, max|z| low; b/c/d queued
 2026-10-11 22:20:09 w3prime-harvest: S2 al_w3p_a 66/115, max|z|=4.1, 0 kills; steady progress
 2026-10-11 22:28:43 w3prime-harvest: S2 al_w3p_a 93/115, max|z|=4.1, 0 kills
+2026-10-11 22:37:16 w3prime-harvest: S2 al_w3p_a PASS (0 repeats, max|z|=4.1, all 115 deltas); S3 PractRand started
+2026-10-11 22:40:48 w3prime-harvest: S3 al_w3p_a 16/64/256MB all clean (147/172/199 tests, 0 anomalies); 1GB running
+2026-10-11 22:46:00 w3prime-harvest: S3 al_w3p_a PASS (1GB PractRand, 227 tests, 0 anomalies); S4 SmallCrush running
+2026-10-11 22:51:11 w3prime-harvest: S3b al_w3p_a PASS (strided 1GB); S4 SmallCrush running
+2026-10-11 22:52:56 w3prime-harvest: BATTERY-PASS al_w3p_a (S0a/S1 CAL_PASS/S2 0rep z4.1/S3 1GB/S3b strided/S4 all PASS); running Q1 for a, battery continues b
+2026-10-11 22:58:41 w3prime-harvest: Q1 al_w3p_a sac_z5=0 bic=0.00839 (BIC-clean) — FULL BATTERY+Q1 PASS; dominated on impl axes (48.3u vs r8 42.9u); battery on b (S1)

@@ -1,0 +1,26 @@
+2026-10-10T15:21:13Z backoff clear -- running batch-31 S0
+2026-10-10T15:21:13Z S0 start t6_chif5a
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT t6_chif5a: cells=5743 area=18648 crit=18.5
+RESULT name=t6_chif5a cells=5743 area=18648 crit=18.5 delay_ratio=0.179 area_ratio=0.528 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+2026-10-10T15:23:39Z S0 done t6_chif5a rc=0
+2026-10-10T15:23:39Z S0 start t6_chif5b
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT t6_chif5b: cells=5626 area=18185 crit=19.1
+RESULT name=t6_chif5b cells=5626 area=18185 crit=19.1 delay_ratio=0.185 area_ratio=0.515 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+2026-10-10T15:25:35Z S0 done t6_chif5b rc=0
+2026-10-10T15:25:35Z S0 start t6_chif4a
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT t6_chif4a: cells=4550 area=14400 crit=15.9
+RESULT name=t6_chif4a cells=4550 area=14400 crit=15.9 delay_ratio=0.154 area_ratio=0.408 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+2026-10-10T15:27:12Z S0 done t6_chif4a rc=0
+2026-10-10T15:27:12Z S0 start t6_pbox5b
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT t6_pbox5b: cells=4464 area=13747 crit=18.2
+RESULT name=t6_pbox5b cells=4464 area=13747 crit=18.2 delay_ratio=0.176 area_ratio=0.389 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+2026-10-10T15:29:04Z S0 done t6_pbox5b rc=0
+2026-10-10T15:29:04Z ALL S0 DONE

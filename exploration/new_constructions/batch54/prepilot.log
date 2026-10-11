@@ -1,0 +1,22 @@
+2026-10-11T22:11:28Z wrapper start: deadline=1791799888 now=1791756688
+2026-10-11T22:11:31Z backoff clear after 1 polls
+2026-10-11T22:11:31Z backoff clear: running calibration
+CALIBRATION exit=0
+CALIB-1 and1/b33c: maxworst|z|=3.3 (expect 3.3) PASS
+CALIB-2 mux/MU5-324: maxworst|z|=3.24 (expect KEEP z<10; b51/b52 harnesses measured 3.24) PASS
+try   0 maxworst|z|=   100.0 killkey=0x123456789abcdef kill andpos=1
+try   1 maxworst|z|=  2072.4 killkey=0xdeadbeefdeadbeef kill andpos=1
+try   2 maxworst|z|=    64.2 killkey=0xaaaaaaaaaaaaaaaa kill andpos=1
+try   3 maxworst|z|=  1079.6 killkey=0x0 kill andpos=1
+try   4 maxworst|z|=     2.6 killkey=0x123456789abcdef KEEP andpos=1
+try   5 maxworst|z|=   144.5 killkey=0xf0b52a9e7d8ba2b5 kill andpos=1
+try   6 maxworst|z|=   145.4 killkey=0x0 kill andpos=1
+try   7 maxworst|z|=    11.5 killkey=0xdeadbeefdeadbeef kill andpos=1
+try   8 maxworst|z|=  2827.9 killkey=0x123456789abcdef kill andpos=1
+try   9 maxworst|z|=    28.0 killkey=0xaaaaaaaaaaaaaaaa kill andpos=1
+try  10 maxworst|z|=   497.3 killkey=0xdeadbeefdeadbeef kill andpos=1
+try  11 maxworst|z|=    67.1 killkey=0xf0b52a9e7d8ba2b5 kill andpos=1
+=== hetMA5p1: 1/12 KEEP minz=2.6 (seed=0xb541) ===
+KEEP schedules -> prepilot_keeps.jsonl
+hetMA5p1 exit=0
+2026-10-11T22:13:39Z PRE-PILOT COMPLETE

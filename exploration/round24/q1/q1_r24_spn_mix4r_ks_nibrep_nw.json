@@ -1,0 +1,12 @@
+{
+ "candidate": "r24_spn_mix4r_ks_nibrep_nw",
+ "key": "0x123456789abcdef0",
+ "N": 262144,
+ "sac_maxdev": 0.003665924072265625,
+ "sac_meandev": 0.000786161981523037,
+ "sac_z5": 0,
+ "bic_maxcorr": 0.008451753380006304,
+ "bic_meancorr": 0.0015581626664183917,
+ "avalanche_mean": 31.99925869703293,
+ "wall_s": 72.7
+}

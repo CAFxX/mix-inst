@@ -1,0 +1,95 @@
+2026-10-11T22:14:09Z wrapper start: deadline=1791800049 now=1791756849
+2026-10-11T22:14:10Z waiting on backoff (poll 1, now=1791756850): BACKOFF: load=12.56 >= 12.0 — queue heavy work, retry later
+2026-10-11T22:19:11Z waiting on backoff (poll 2, now=1791757151): BACKOFF: load=13.19 >= 12.0 — queue heavy work, retry later
+2026-10-11T22:24:12Z waiting on backoff (poll 3, now=1791757452): BACKOFF: load=14.54 >= 12.0 — queue heavy work, retry later
+2026-10-11T22:29:15Z waiting on backoff (poll 4, now=1791757755): BACKOFF: load=12.45 >= 12.0 — queue heavy work, retry later
+2026-10-11T22:34:15Z waiting on backoff (poll 5, now=1791758055): BACKOFF: load=13.72 >= 12.0 — queue heavy work, retry later
+2026-10-11T22:39:15Z backoff clear after 6 polls
+2026-10-11T22:39:15Z backoff clear: running calibration
+CALIBRATION exit=0
+CALIB-1 and1/b33c: maxworst|z|=3.3 (expect 3.3) PASS
+CALIB-2 mux/MU5-324: maxworst|z|=3.24 (expect KEEP z<10; b51/b52 harnesses measured 3.24) PASS
+try   0 maxworst|z|=  1337.6 killkey=0xaaaaaaaaaaaaaaaa kill andpos=1
+try   1 maxworst|z|=  3186.7 killkey=0x92988f142674743 kill andpos=1
+try   2 maxworst|z|=  5494.5 killkey=0x0 kill andpos=1
+try   3 maxworst|z|=   376.3 killkey=0x123456789abcdef kill andpos=1
+try   4 maxworst|z|=     9.9 killkey=0x0 KEEP andpos=1
+try   5 maxworst|z|=    85.0 killkey=0x92988f142674743 kill andpos=1
+try   6 maxworst|z|=   267.2 killkey=0xf0b52a9e7d8ba2b5 kill andpos=1
+try   7 maxworst|z|=  1250.7 killkey=0x123456789abcdef kill andpos=1
+try   8 maxworst|z|=    13.4 killkey=0x92988f142674743 kill andpos=1
+try   9 maxworst|z|=    13.0 killkey=0xf0b52a9e7d8ba2b5 kill andpos=1
+try  10 maxworst|z|=    82.2 killkey=0x0 kill andpos=1
+try  11 maxworst|z|=    13.3 killkey=0x9e3779b97f4a7c15 kill andpos=1
+try  12 maxworst|z|=    42.7 killkey=0x9e3779b97f4a7c15 kill andpos=1
+try  13 maxworst|z|=     5.5 killkey=0xdeadbeefdeadbeef KEEP andpos=1
+try  14 maxworst|z|=    72.3 killkey=0x123456789abcdef kill andpos=1
+try  15 maxworst|z|=    18.9 killkey=0x0 kill andpos=1
+try  16 maxworst|z|=   487.1 killkey=0x92988f142674743 kill andpos=1
+try  17 maxworst|z|= 81175.5 killkey=0x0 kill andpos=1
+try  18 maxworst|z|=   104.8 killkey=0xdeadbeefdeadbeef kill andpos=1
+try  19 maxworst|z|=   509.5 killkey=0x9e3779b97f4a7c15 kill andpos=1
+try  20 maxworst|z|=   141.1 killkey=0xffffffffffffffff kill andpos=1
+try  21 maxworst|z|=     7.8 killkey=0x92988f142674743 KEEP andpos=1
+try  22 maxworst|z|=  1027.8 killkey=0x0 kill andpos=1
+try  23 maxworst|z|=    40.4 killkey=0x0 kill andpos=1
+try  24 maxworst|z|=   130.2 killkey=0xffffffffffffffff kill andpos=1
+try  25 maxworst|z|=    41.1 killkey=0x0 kill andpos=1
+try  26 maxworst|z|=   234.8 killkey=0xf0b52a9e7d8ba2b5 kill andpos=1
+try  27 maxworst|z|=   104.4 killkey=0x0 kill andpos=1
+try  28 maxworst|z|=   143.1 killkey=0xdeadbeefdeadbeef kill andpos=1
+try  29 maxworst|z|=   970.1 killkey=0x0 kill andpos=1
+try  30 maxworst|z|=   110.3 killkey=0x92988f142674743 kill andpos=1
+try  31 maxworst|z|=   133.5 killkey=0x9e3779b97f4a7c15 kill andpos=1
+try  32 maxworst|z|=   758.8 killkey=0xf0b52a9e7d8ba2b5 kill andpos=1
+try  33 maxworst|z|=   279.3 killkey=0x9e3779b97f4a7c15 kill andpos=1
+try  34 maxworst|z|=   262.3 killkey=0xdeadbeefdeadbeef kill andpos=1
+try  35 maxworst|z|=   137.3 killkey=0x0 kill andpos=1
+try  36 maxworst|z|=  1103.4 killkey=0x0 kill andpos=1
+try  37 maxworst|z|=    97.7 killkey=0x0 kill andpos=1
+try  38 maxworst|z|=    22.1 killkey=0x0 kill andpos=1
+try  39 maxworst|z|=    14.9 killkey=0x9e3779b97f4a7c15 kill andpos=1
+try  40 maxworst|z|=    92.7 killkey=0xf0b52a9e7d8ba2b5 kill andpos=1
+try  41 maxworst|z|=    35.6 killkey=0x0 kill andpos=1
+try  42 maxworst|z|=  8035.4 killkey=0xf0b52a9e7d8ba2b5 kill andpos=1
+try  43 maxworst|z|=    25.3 killkey=0xaaaaaaaaaaaaaaaa kill andpos=1
+try  44 maxworst|z|=   329.3 killkey=0x9e3779b97f4a7c15 kill andpos=1
+try  45 maxworst|z|=     4.6 killkey=0xdeadbeefdeadbeef KEEP andpos=1
+try  46 maxworst|z|= 26598.1 killkey=0x0 kill andpos=1
+try  47 maxworst|z|=    55.1 killkey=0x9e3779b97f4a7c15 kill andpos=1
+try  48 maxworst|z|=    58.8 killkey=0xf0b52a9e7d8ba2b5 kill andpos=1
+try  49 maxworst|z|=   356.2 killkey=0x0 kill andpos=1
+try  50 maxworst|z|=   120.0 killkey=0x9e3779b97f4a7c15 kill andpos=1
+try  51 maxworst|z|=   137.3 killkey=0x92988f142674743 kill andpos=1
+try  52 maxworst|z|=    23.4 killkey=0x0 kill andpos=1
+try  53 maxworst|z|=   107.0 killkey=0x92988f142674743 kill andpos=1
+try  54 maxworst|z|=    11.6 killkey=0x123456789abcdef kill andpos=1
+try  55 maxworst|z|=   479.5 killkey=0xffffffffffffffff kill andpos=1
+try  56 maxworst|z|=    80.7 killkey=0x9e3779b97f4a7c15 kill andpos=1
+try  57 maxworst|z|=    67.5 killkey=0x123456789abcdef kill andpos=1
+try  58 maxworst|z|=    97.6 killkey=0x5555555555555555 kill andpos=1
+try  59 maxworst|z|=  1854.9 killkey=0x123456789abcdef kill andpos=1
+try  60 maxworst|z|=    16.7 killkey=0x9e3779b97f4a7c15 kill andpos=1
+try  61 maxworst|z|=  2041.2 killkey=0x5555555555555555 kill andpos=1
+try  62 maxworst|z|=    24.7 killkey=0x0 kill andpos=1
+try  63 maxworst|z|=    11.8 killkey=0x92988f142674743 kill andpos=1
+try  64 maxworst|z|=   282.9 killkey=0xf0b52a9e7d8ba2b5 kill andpos=1
+try  65 maxworst|z|=   199.7 killkey=0x0 kill andpos=1
+try  66 maxworst|z|=   382.5 killkey=0x92988f142674743 kill andpos=1
+try  67 maxworst|z|=   367.6 killkey=0xdeadbeefdeadbeef kill andpos=1
+try  68 maxworst|z|=    86.8 killkey=0x0 kill andpos=1
+try  69 maxworst|z|=    17.3 killkey=0xffffffffffffffff kill andpos=1
+try  70 maxworst|z|= 29267.1 killkey=0xffffffffffffffff kill andpos=1
+try  71 maxworst|z|=  1559.5 killkey=0x0 kill andpos=1
+try  72 maxworst|z|=    29.7 killkey=0x5555555555555555 kill andpos=1
+try  73 maxworst|z|=     7.3 killkey=0x5555555555555555 KEEP andpos=1
+try  74 maxworst|z|=     3.0 killkey=0x9e3779b97f4a7c15 KEEP andpos=1
+try  75 maxworst|z|=     9.4 killkey=0xdeadbeefdeadbeef KEEP andpos=1
+try  76 maxworst|z|=     4.3 killkey=0xdeadbeefdeadbeef KEEP andpos=1
+try  77 maxworst|z|=    21.5 killkey=0x92988f142674743 kill andpos=1
+try  78 maxworst|z|=   450.5 killkey=0x92988f142674743 kill andpos=1
+try  79 maxworst|z|=  6848.9 killkey=0xf0b52a9e7d8ba2b5 kill andpos=1
+=== hetMA5p1: 8/80 KEEP minz=3.0 (seed=0xb542) ===
+KEEP schedules -> pilot_keeps.jsonl
+hetMA5p1 exit=0
+2026-10-11T22:42:45Z PILOT COMPLETE

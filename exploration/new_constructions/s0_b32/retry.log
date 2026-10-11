@@ -1,0 +1,44 @@
+2026-10-10T18:00:54Z backoff clear -- running batch-32 S0
+2026-10-10T18:00:54Z S0 start t6_lane3b
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT t6_lane3b: cells=5459 area=15556 crit=15.0
+RESULT name=t6_lane3b cells=5459 area=15556 crit=15.0 delay_ratio=0.145 area_ratio=0.440 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+2026-10-10T18:02:37Z S0 done t6_lane3b rc=0
+2026-10-10T18:02:37Z S0 start t6_lane4a
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT t6_lane4a: cells=8150 area=23677 crit=18.2
+RESULT name=t6_lane4a cells=8150 area=23677 crit=18.2 delay_ratio=0.176 area_ratio=0.670 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+2026-10-10T18:03:59Z S0 done t6_lane4a rc=0
+2026-10-10T18:03:59Z S0 start t6_sand5a
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT t6_sand5a: cells=6407 area=18808 crit=22.8
+RESULT name=t6_sand5a cells=6407 area=18808 crit=22.8 delay_ratio=0.220 area_ratio=0.532 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+2026-10-10T18:05:11Z S0 done t6_sand5a rc=0
+2026-10-10T18:05:11Z S0 start t6_sand5b
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT t6_sand5b: cells=6410 area=18848 crit=22.7
+RESULT name=t6_sand5b cells=6410 area=18848 crit=22.7 delay_ratio=0.219 area_ratio=0.534 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+2026-10-10T18:06:12Z S0 done t6_sand5b rc=0
+2026-10-10T18:06:12Z S0 start t6_sand4a
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT t6_sand4a: cells=4367 area=12936 crit=18.8
+RESULT name=t6_sand4a cells=4367 area=12936 crit=18.8 delay_ratio=0.182 area_ratio=0.366 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+2026-10-10T18:06:35Z S0 done t6_sand4a rc=0
+2026-10-10T18:06:35Z S0 start t6_skip4a
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT t6_skip4a: cells=3617 area=10296 crit=17.8
+RESULT name=t6_skip4a cells=3617 area=10296 crit=17.8 delay_ratio=0.172 area_ratio=0.291 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+2026-10-10T18:07:10Z S0 done t6_skip4a rc=0
+2026-10-10T18:07:10Z S0 start t6_skip5a
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT t6_skip5a: cells=5172 area=14569 crit=21.9
+RESULT name=t6_skip5a cells=5172 area=14569 crit=21.9 delay_ratio=0.212 area_ratio=0.412 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+2026-10-10T18:08:02Z S0 done t6_skip5a rc=0
+2026-10-10T18:08:02Z ALL S0 DONE

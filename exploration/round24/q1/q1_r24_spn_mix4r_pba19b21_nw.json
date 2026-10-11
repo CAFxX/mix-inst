@@ -1,0 +1,12 @@
+{
+ "candidate": "r24_spn_mix4r_pba19b21_nw",
+ "key": "0x123456789abcdef0",
+ "N": 262144,
+ "sac_maxdev": 0.0035858154296875,
+ "sac_meandev": 0.0007687890902161598,
+ "sac_z5": 0,
+ "bic_maxcorr": 0.008842623119420204,
+ "bic_meancorr": 0.0015620639924962072,
+ "avalanche_mean": 31.998080790042877,
+ "wall_s": 89.7
+}

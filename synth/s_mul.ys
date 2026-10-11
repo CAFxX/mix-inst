@@ -1,0 +1,8 @@
+# Relative synthesis: flatten, map with ABC to mini.genlib, dump mapped netlist.
+read_verilog mul64.v
+hierarchy -check -top mul64
+proc; opt; flatten; opt; techmap; opt
+abc -genlib mini.genlib
+opt; clean
+stat
+write_verilog -noattr mapped_mul64.v

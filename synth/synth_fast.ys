@@ -1,0 +1,8 @@
+# Relative synthesis: flatten, map with ABC to mini.genlib, dump mapped netlist.
+read_verilog SRC
+hierarchy -check -top TOP
+proc; opt; flatten; opt; techmap; opt
+abc -fast -genlib mini.genlib
+opt; clean
+stat
+write_verilog -noattr mapped_TOP.v

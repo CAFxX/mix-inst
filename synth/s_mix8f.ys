@@ -1,0 +1,8 @@
+# Relative synthesis: flatten, map with ABC to mini.genlib, dump mapped netlist.
+read_verilog ../rtl/mix_spn10.v
+hierarchy -check -top mix_spn10; chparam -set ROUNDS 8 mix_spn10; rename mix_spn10 mix_spn8
+proc; opt; flatten; opt; techmap; opt
+abc -fast -genlib mini.genlib
+opt; clean
+stat
+write_verilog -noattr mapped_mix_spn8.v

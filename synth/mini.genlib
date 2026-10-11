@@ -1,0 +1,25 @@
+# Minimal unit-delay genlib for RELATIVE area/delay comparison only.
+# Format per ABC's own generated stdcells.genlib: one line per gate.
+# Absolute numbers are meaningless; only ratios between designs mapped
+# with this identical flow are reported. Sky130 P&R needs the real PDK.
+GATE ZERO 0 Y=CONST0;
+GATE ONE 0 Y=CONST1;
+GATE INV 1 Y=!A; PIN * INV 1 999 1 0 1 0
+GATE BUF 1 Y=A; PIN * NONINV 1 999 1 0 1 0
+GATE AND2 3 Y=A*B; PIN * NONINV 1 999 1.5 0 1.5 0
+GATE AND3 4 Y=A*B*C; PIN * NONINV 1 999 1.7 0 1.7 0
+GATE AND4 5 Y=A*B*C*D; PIN * NONINV 1 999 1.9 0 1.9 0
+GATE OR2 3 Y=A+B; PIN * NONINV 1 999 1.5 0 1.5 0
+GATE OR3 4 Y=A+B+C; PIN * NONINV 1 999 1.7 0 1.7 0
+GATE OR4 5 Y=A+B+C+D; PIN * NONINV 1 999 1.9 0 1.9 0
+GATE NAND2 2 Y=!(A*B); PIN * INV 1 999 1 0 1 0
+GATE NAND3 3 Y=!(A*B*C); PIN * INV 1 999 1.2 0 1.2 0
+GATE NAND4 4 Y=!(A*B*C*D); PIN * INV 1 999 1.4 0 1.4 0
+GATE NOR2 2 Y=!(A+B); PIN * INV 1 999 1 0 1 0
+GATE NOR3 3 Y=!(A+B+C); PIN * INV 1 999 1.2 0 1.2 0
+GATE NOR4 4 Y=!(A+B+C+D); PIN * INV 1 999 1.4 0 1.4 0
+GATE XOR2 4 Y=(A*!B)+(!A*B); PIN * UNKNOWN 1 999 2 0 2 0
+GATE XNOR2 4 Y=(A*B)+(!A*!B); PIN * UNKNOWN 1 999 2 0 2 0
+GATE MUX2 4 Y=(S*A)+(!S*B); PIN * UNKNOWN 1 999 2 0 2 0
+GATE AOI21 3 Y=!((A*B)+C); PIN * UNKNOWN 1 999 1.5 0 1.5 0
+GATE OAI21 3 Y=!((A+B)*C); PIN * UNKNOWN 1 999 1.5 0 1.5 0

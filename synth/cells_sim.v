@@ -1,0 +1,22 @@
+// Functional simulation models for mini.genlib cells (for verification only).
+module INV(input A, output Y); assign Y = !A; endmodule
+module BUF(input A, output Y); assign Y = A; endmodule
+module AND2(input A,B, output Y); assign Y = A & B; endmodule
+module AND3(input A,B,C, output Y); assign Y = A & B & C; endmodule
+module AND4(input A,B,C,D, output Y); assign Y = A & B & C & D; endmodule
+module OR2(input A,B, output Y); assign Y = A | B; endmodule
+module OR3(input A,B,C, output Y); assign Y = A | B | C; endmodule
+module OR4(input A,B,C,D, output Y); assign Y = A | B | C | D; endmodule
+module NAND2(input A,B, output Y); assign Y = !(A & B); endmodule
+module NAND3(input A,B,C, output Y); assign Y = !(A & B & C); endmodule
+module NAND4(input A,B,C,D, output Y); assign Y = !(A & B & C & D); endmodule
+module NOR2(input A,B, output Y); assign Y = !(A | B); endmodule
+module NOR3(input A,B,C, output Y); assign Y = !(A | B | C); endmodule
+module NOR4(input A,B,C,D, output Y); assign Y = !(A | B | C | D); endmodule
+module XOR2(input A,B, output Y); assign Y = A ^ B; endmodule
+module XNOR2(input A,B, output Y); assign Y = !(A ^ B); endmodule
+module MUX2(input A,B,S, output Y); assign Y = S ? A : B; endmodule
+module AOI21(input A,B,C, output Y); assign Y = !((A & B) | C); endmodule
+module OAI21(input A,B,C, output Y); assign Y = !((A | B) & C); endmodule
+module ZERO(output Y); assign Y = 1'b0; endmodule
+module ONE(output Y); assign Y = 1'b1; endmodule

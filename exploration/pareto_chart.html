@@ -1,0 +1,143 @@
+<div id="pareto-chart-root" style="box-sizing:border-box;max-width:760px;margin:0 auto;font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;color:var(--hatch-widget-text);">
+<style>
+#pareto-chart-root *{box-sizing:border-box}
+#pareto-chart-root .ctl-row{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;margin:8px 0;font-size:12.5px}
+#pareto-chart-root .seg{display:inline-flex;border:1px solid var(--hatch-widget-border);border-radius:8px;overflow:hidden}
+#pareto-chart-root .seg button{background:var(--hatch-widget-surface);color:var(--hatch-widget-text);border:0;padding:5px 12px;font-size:12.5px;cursor:pointer}
+#pareto-chart-root .seg button.on{background:var(--hatch-widget-accent);color:var(--hatch-widget-on-accent);font-weight:600}
+#pareto-chart-root .chk{display:inline-flex;align-items:center;gap:6px;cursor:pointer;user-select:none;color:var(--hatch-widget-text)}
+#pareto-chart-root .legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12px;color:var(--hatch-widget-muted);margin:6px 0 2px}
+#pareto-chart-root .sw{display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:5px;vertical-align:-1px}
+#pareto-chart-root .cap{font-size:11.5px;color:var(--hatch-widget-muted);margin-top:6px;line-height:1.45}
+#pareto-chart-root svg text{font-family:inherit}
+#pareto-chart-root .pt{cursor:pointer}
+#pareto-chart-root .plbl{font-size:10.5px;fill:var(--hatch-widget-text);font-weight:600;paint-order:stroke;stroke:var(--hatch-widget-bg);stroke-width:3px}
+#pareto-chart-root .ax{font-size:11px;fill:var(--hatch-widget-muted)}
+#pareto-chart-root .axT{font-size:12px;fill:var(--hatch-widget-text);font-weight:600}
+#pareto-chart-root .grid{stroke:var(--hatch-widget-border);stroke-width:1;opacity:.55}
+#pareto-chart-root .fline{fill:none;stroke-width:2;stroke-dasharray:7 4;opacity:.85}
+#pareto-chart-root .flineQ{stroke:#8b5cf6}
+#pareto-chart-root .flineS{stroke:#2b7fff}
+#pareto-chart-root #ptip{position:absolute;pointer-events:none;background:var(--hatch-widget-surface);border:1px solid var(--hatch-widget-border);border-radius:8px;box-shadow:var(--hatch-widget-shadow);padding:8px 10px;font-size:12px;line-height:1.5;color:var(--hatch-widget-text);display:none;z-index:10;max-width:270px;white-space:nowrap}
+</style>
+<h3 style="margin:0 0 2px;font-size:15px">RV64 <code>mix</code> — Pareto frontiers vs retired candidates</h3>
+<div class="ctl-row">
+  <span class="seg" id="yseg">
+    <button data-y="cells" class="on">Cells</button><button data-y="area">Area</button>
+  </span>
+  <label class="chk"><input type="checkbox" id="cRet" checked> Retired</label>
+  <label class="chk"><input type="checkbox" id="cExc" checked> Threshold-excluded</label>
+  <label class="chk"><input type="checkbox" id="cLbl" checked> Labels</label>
+</div>
+<div style="position:relative">
+<svg id="psvg" viewBox="0 0 740 470" style="width:100%;height:auto;display:block"></svg>
+<div id="ptip"></div>
+</div>
+<div class="legend">
+  <span><span class="sw" style="background:#d4a017"></span>Frontier S+Q (r22c)</span>
+  <span><span class="sw" style="background:#2b7fff"></span>Frontier S</span>
+  <span><span class="sw" style="background:#8b5cf6"></span>Frontier Q</span>
+  <span><span class="sw" style="background:#9aa0a6"></span>Retired (off-frontier)</span>
+  <span><span class="sw" style="background:transparent;border:2px solid #9aa0a6"></span>Threshold-excluded</span>
+</div>
+<div class="cap">Lower-left is better. Dashed step lines = Pareto envelope of the live frontiers.
+r6 (86.5u) and r7 (56.5u) predate the unit-delay flow — no cells/area, off-chart.
+All 21 plotted points pass the full battery (S0–S4 + Q1 sac_z5=0); "retired" means
+off the frontier, never deleted — candidates live on for the breaking-point batteries.</div>
+<script>
+(function(){
+const root=document.getElementById('pareto-chart-root');
+const svg=document.getElementById('psvg'), tip=document.getElementById('ptip');
+const D=[
+ {n:"r23_spn_mix4r_pba19b01_nw",s:"SQ",d:27.8,c:5732,a:15374,b:0.01092,r:"23",lbl:"pba19b01 (S+Q)"},
+ {n:"wf2d_aff_a17_b17",s:"SQ",d:27.9,c:5299,a:14223,b:0.00901,r:"wf2d",lbl:"aff_a17_b17 (S+Q)"},
+ {n:"r22c_spn_mix4r_lp_nw",s:"SQ",d:28.3,c:4656,a:12949,b:0.00865,r:"O44",lbl:"r22c (S+Q)"},
+ {n:"r21_feist6_alt_notr_chioff31final_nw",s:"S",d:36.7,c:4198,a:12005,b:0.14029,r:"21",lbl:"chioff31final (S)"},
+ {n:"r21_feist6_alt_notr_3rot_ns_nw",s:"S",d:37.4,c:3667,a:10742,b:0.25384,r:"21",lbl:"3rot_ns (S)"},
+ {n:"r21b_3rot_ns_fm311_nw",s:"Q",d:38.3,c:4299,a:12356,b:0.00883,r:"r21b",lbl:"r21b (Q)"},
+ {n:"r9_feist6_rot311_nw",s:"Q",d:41.0,c:4265,a:11996,b:0.00850,r:"9",lbl:"r9 (Q)"},
+ {n:"r8_feist6_s1_1sbox_nw",s:"Q",d:42.9,c:4133,a:11670,b:0.00804,r:"8",lbl:"r8 (Q)"},
+ {n:"r13_feist6_alt_s1chi_nw",s:"R",d:40.1,c:4563,a:13041,b:0.008,r:"13"},
+ {n:"r15_feist6_parsplit_nw",s:"R",d:40.7,c:4318,a:12356,b:0.00842,r:"15"},
+ {n:"r18_feist6_alt_notr_nw",s:"R",d:37.9,c:4119,a:11621,b:0.172,r:"18"},
+ {n:"r18_feist6_alt_palk_nw",s:"R",d:40.5,c:4447,a:12905,b:0.00890,r:"18"},
+ {n:"r19_feist6_alt_notr_chioff13_nw",s:"R",d:37.4,c:4149,a:11820,b:0.142,r:"19"},
+ {n:"r19_feist6_alt_notr_fm07_nw",s:"R",d:38.8,c:5053,a:14320,b:0.00805,r:"19"},
+ {n:"r19_feist6_alt_notr_fm11_nw",s:"R",d:39.3,c:4877,a:13748,b:0.00976,r:"19"},
+ {n:"r19_feist6_alt_notr_fm311_nw",s:"R",d:39.5,c:4467,a:12769,b:0.00882,r:"19"},
+ {n:"r20_feist6_alt_notr_chioff13all_nw",s:"R",d:37.0,c:4357,a:12511,b:0.14149,r:"20"},
+ {n:"r20_feist6_alt_notr_chioff31_nw",s:"R",d:37.5,c:3863,a:11199,b:0.14092,r:"20"},
+ {n:"r20_feist6_alt_notr_keyin_nw",s:"X",d:37.2,c:4382,a:12497,b:0.17232,r:"20"},
+ {n:"r21_feist6_alt_notr_chioff13all_fm311_nw",s:"R",d:39.1,c:4485,a:12763,b:0.00860,r:"21"},
+ {n:"r21_feist6_alt_notr_chioff31_fm07_nw",s:"R",d:39.2,c:4661,a:13159,b:0.00851,r:"21"},
+ {n:"r21_feist6_alt_notr_chioff13all_fm07_nw",s:"R",d:39.4,c:4870,a:13729,b:0.00892,r:"21"},
+ {n:"r21_feist6_alt_notr_keyin31_nw",s:"X",d:36.9,c:4191,a:11986,b:0.14092,r:"21"},
+ {n:"r23_spn_mix4r_pba27b01_nw",s:"X",d:28.2,c:5093,a:13870,b:0.00853,r:"23"}
+];
+const FS=["r23_spn_mix4r_pba19b01_nw","wf2d_aff_a17_b17","r22c_spn_mix4r_lp_nw","r21_feist6_alt_notr_chioff31final_nw","r21_feist6_alt_notr_3rot_ns_nw"];
+const FQ=["r23_spn_mix4r_pba19b01_nw","wf2d_aff_a17_b17","r22c_spn_mix4r_lp_nw","r21b_3rot_ns_fm311_nw","r9_feist6_rot311_nw","r8_feist6_s1_1sbox_nw"];
+const COL={SQ:"#d4a017",S:"#2b7fff",Q:"#8b5cf6",R:"#9aa0a6",X:"#9aa0a6"};
+const STX={SQ:"Frontier S+Q",S:"Frontier S",Q:"Frontier Q",R:"Retired",X:"Threshold-excluded"};
+const W=740,H=470,ML=56,MR=14,MT=14,MB=44;
+const st=window.hatchWidget.getState({y:"cells",retired:true,excluded:true,labels:true});
+function vis(p){ if(p.s==="R")return st.retired; if(p.s==="X")return st.excluded; return true; }
+function yv(p){ return st.y==="cells"?p.c:p.a; }
+function render(){
+  const ylab=st.y==="cells"?"Cells":"Area";
+  const pts=D.filter(vis);
+  let xmin=Math.min(...pts.map(p=>p.d)),xmax=Math.max(...pts.map(p=>p.d));
+  let ymin=Math.min(...pts.map(yv)),ymax=Math.max(...pts.map(yv));
+  xmin=Math.floor(xmin)-0.5; xmax=Math.ceil(xmax)+0.5;
+  const pad=(ymax-ymin)*0.08; ymin=Math.max(0,Math.floor(ymin-pad)); ymax=Math.ceil(ymax+pad);
+  const X=v=>ML+(v-xmin)/(xmax-xmin)*(W-ML-MR);
+  const Y=v=>H-MB-(v-ymin)/(ymax-ymin)*(H-MT-MB);
+  let s="";
+  // grid + axes
+  const xt0=Math.ceil(xmin), xt1=Math.floor(xmax);
+  for(let t=xt0;t<=xt1;t+=2){ s+='<line class="grid" x1="'+X(t)+'" y1="'+MT+'" x2="'+X(t)+'" y2="'+(H-MB)+'"/><text class="ax" x="'+X(t)+'" y="'+(H-MB+16)+'" text-anchor="middle">'+t+'u</text>'; }
+  const ystep=st.y==="cells"?250:500;
+  for(let t=Math.ceil(ymin/ystep)*ystep;t<=ymax;t+=ystep){ s+='<line class="grid" x1="'+ML+'" y1="'+Y(t)+'" x2="'+(W-MR)+'" y2="'+Y(t)+'"/><text class="ax" x="'+(ML-6)+'" y="'+(Y(t)+4)+'" text-anchor="end">'+t.toLocaleString()+'</text>'; }
+  s+='<text class="axT" x="'+((ML+W-MR)/2)+'" y="'+(H-6)+'" text-anchor="middle">Delay (u)</text>';
+  s+='<text class="axT" transform="rotate(-90)" x="'+(-(MT+H-MB)/2)+'" y="14" text-anchor="middle">'+ylab+'</text>';
+  // frontier step lines (only over visible members)
+  function step(names,cls){
+    const m=names.map(n=>D.find(p=>p.n===n)).filter(p=>vis(p)).sort((a,b)=>a.d-b.d);
+    if(m.length<2)return "";
+    let d="M "+X(xmin).toFixed(1)+" "+Y(yv(m[0])).toFixed(1);
+    for(let i=0;i<m.length;i++){ d+=" H "+X(m[i].d).toFixed(1); if(i<m.length-1) d+=" V "+Y(yv(m[i+1])).toFixed(1); }
+    d+=" H "+X(xmax).toFixed(1);
+    return '<path class="fline '+cls+'" d="'+d+'"/>';
+  }
+  s+=step(FS,"flineS")+step(FQ,"flineQ");
+  // points
+  pts.forEach(p=>{
+    const r=p.s==="SQ"?8:(p.s==="S"||p.s==="Q"?7:5);
+    const fill=p.s==="X"?"none":COL[p.s];
+    const stroke=p.s==="X"?"#9aa0a6":(p.s==="R"?"#7f858d":COL[p.s]);
+    s+='<circle class="pt" data-n="'+p.n+'" cx="'+X(p.d).toFixed(1)+'" cy="'+Y(yv(p)).toFixed(1)+'" r="'+r+'" fill="'+fill+'" stroke="'+stroke+'" stroke-width="'+(p.s==="SQ"?2.5:1.5)+'" opacity="'+(p.s==="R"||p.s==="X"?0.75:1)+'"/>';
+  });
+  // labels for frontier points
+  if(st.labels){ pts.forEach(p=>{ if(p.lbl){ s+='<text class="plbl" x="'+(X(p.d)+10).toFixed(1)+'" y="'+(Y(yv(p))-8).toFixed(1)+'">'+p.lbl+'</text>'; } }); }
+  svg.innerHTML=s;
+  svg.querySelectorAll('.pt').forEach(el=>{
+    el.addEventListener('mousemove',e=>{
+      const p=D.find(q=>q.n===el.getAttribute('data-n'));
+      tip.style.display="block";
+      tip.innerHTML='<b>'+(p.lbl||p.n)+'</b><br>delay <b>'+p.d+'u</b> · '+p.c.toLocaleString()+' cells · '+p.a.toLocaleString()+' area<br>bic '+p.b+' · '+STX[p.s]+' · round '+p.r+'<br><span style="color:var(--hatch-widget-muted)">'+p.n+'</span>';
+      const rb=root.getBoundingClientRect(), eb=e.clientX-rb.left, ey=e.clientY-rb.top;
+      tip.style.left=Math.min(eb+14, rb.width-280)+'px'; tip.style.top=(ey-10)+'px';
+    });
+    el.addEventListener('mouseleave',()=>{ tip.style.display="none"; });
+  });
+}
+function sync(){ document.querySelectorAll('#yseg button').forEach(b=>b.classList.toggle('on',b.dataset.y===st.y));
+  document.getElementById('cRet').checked=st.retired; document.getElementById('cExc').checked=st.excluded; document.getElementById('cLbl').checked=st.labels; render(); }
+document.querySelectorAll('#yseg button').forEach(b=>b.addEventListener('click',()=>{ window.hatchWidget.setState(Object.assign({},st,{y:b.dataset.y})); }));
+document.getElementById('cRet').addEventListener('change',e=>window.hatchWidget.setState(Object.assign({},st,{retired:e.target.checked})));
+document.getElementById('cExc').addEventListener('change',e=>window.hatchWidget.setState(Object.assign({},st,{excluded:e.target.checked})));
+document.getElementById('cLbl').addEventListener('change',e=>window.hatchWidget.setState(Object.assign({},st,{labels:e.target.checked})));
+window.addEventListener('hatch-widget-state',e=>{ Object.assign(st,e.detail.state); sync(); });
+sync();
+})();
+</script>
+</div>

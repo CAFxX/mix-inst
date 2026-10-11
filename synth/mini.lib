@@ -1,0 +1,210 @@
+/* Minimal unit-delay liberty for RELATIVE area/delay comparison only.
+   All cells share the same arbitrary delay/area scale; ratios between two
+   designs mapped with the identical flow are meaningful, absolute numbers
+   are not. Sky130 P&R numbers must be produced with the real PDK. */
+library(mini) {
+    delay_model : table_lookup;
+    time_unit : "1ns";
+    voltage_unit : "1V";
+    current_unit : "1mA";
+    pulling_resistance_unit : "1kohm";
+    capacitive_load_unit(1,pf);
+    nom_process : 1.0;
+    nom_temperature : 25.0;
+    nom_voltage : 1.0;
+    default_cell_leakage_power : 0.0;
+    default_fanout_load : 1.0;
+    default_inout_pin_cap : 1.0;
+    default_input_pin_cap : 1.0;
+    default_output_pin_cap : 0.0;
+
+    lu_table_template(tpl_scalar) {
+        variable_1 : input_net_transition;
+        index_1 ("1.0");
+    }
+
+    cell(INV) {
+        area : 1.0;
+        pin(A) { direction : input; capacitance : 1.0; }
+        pin(Y) { direction : output; capacitance : 0.0; function : "!A";
+            timing() { related_pin : "A"; timing_sense : negative_unate;
+                cell_rise(tpl_scalar) { values("1.0"); }
+                cell_fall(tpl_scalar) { values("1.0"); } } }
+    }
+    cell(BUF) {
+        area : 1.0;
+        pin(A) { direction : input; capacitance : 1.0; }
+        pin(Y) { direction : output; capacitance : 0.0; function : "A";
+            timing() { related_pin : "A"; timing_sense : positive_unate;
+                cell_rise(tpl_scalar) { values("1.0"); }
+                cell_fall(tpl_scalar) { values("1.0"); } } }
+    }
+    cell(AND2) {
+        area : 3.0;
+        pin(A) { direction : input; capacitance : 1.0; }
+        pin(B) { direction : input; capacitance : 1.0; }
+        pin(Y) { direction : output; capacitance : 0.0; function : "A B";
+            timing() { related_pin : "A B"; timing_sense : positive_unate;
+                cell_rise(tpl_scalar) { values("1.5"); }
+                cell_fall(tpl_scalar) { values("1.5"); } } }
+    }
+    cell(AND3) {
+        area : 4.0;
+        pin(A) { direction : input; capacitance : 1.0; }
+        pin(B) { direction : input; capacitance : 1.0; }
+        pin(C) { direction : input; capacitance : 1.0; }
+        pin(Y) { direction : output; capacitance : 0.0; function : "A B C";
+            timing() { related_pin : "A B C"; timing_sense : positive_unate;
+                cell_rise(tpl_scalar) { values("1.7"); }
+                cell_fall(tpl_scalar) { values("1.7"); } } }
+    }
+    cell(AND4) {
+        area : 5.0;
+        pin(A) { direction : input; capacitance : 1.0; }
+        pin(B) { direction : input; capacitance : 1.0; }
+        pin(C) { direction : input; capacitance : 1.0; }
+        pin(D) { direction : input; capacitance : 1.0; }
+        pin(Y) { direction : output; capacitance : 0.0; function : "A B C D";
+            timing() { related_pin : "A B C D"; timing_sense : positive_unate;
+                cell_rise(tpl_scalar) { values("1.9"); }
+                cell_fall(tpl_scalar) { values("1.9"); } } }
+    }
+    cell(OR2) {
+        area : 3.0;
+        pin(A) { direction : input; capacitance : 1.0; }
+        pin(B) { direction : input; capacitance : 1.0; }
+        pin(Y) { direction : output; capacitance : 0.0; function : "A+B";
+            timing() { related_pin : "A B"; timing_sense : positive_unate;
+                cell_rise(tpl_scalar) { values("1.5"); }
+                cell_fall(tpl_scalar) { values("1.5"); } } }
+    }
+    cell(OR3) {
+        area : 4.0;
+        pin(A) { direction : input; capacitance : 1.0; }
+        pin(B) { direction : input; capacitance : 1.0; }
+        pin(C) { direction : input; capacitance : 1.0; }
+        pin(Y) { direction : output; capacitance : 0.0; function : "A+B+C";
+            timing() { related_pin : "A B C"; timing_sense : positive_unate;
+                cell_rise(tpl_scalar) { values("1.7"); }
+                cell_fall(tpl_scalar) { values("1.7"); } } }
+    }
+    cell(OR4) {
+        area : 5.0;
+        pin(A) { direction : input; capacitance : 1.0; }
+        pin(B) { direction : input; capacitance : 1.0; }
+        pin(C) { direction : input; capacitance : 1.0; }
+        pin(D) { direction : input; capacitance : 1.0; }
+        pin(Y) { direction : output; capacitance : 0.0; function : "A+B+C+D";
+            timing() { related_pin : "A B C D"; timing_sense : positive_unate;
+                cell_rise(tpl_scalar) { values("1.9"); }
+                cell_fall(tpl_scalar) { values("1.9"); } } }
+    }
+    cell(NAND2) {
+        area : 2.0;
+        pin(A) { direction : input; capacitance : 1.0; }
+        pin(B) { direction : input; capacitance : 1.0; }
+        pin(Y) { direction : output; capacitance : 0.0; function : "!(A B)";
+            timing() { related_pin : "A B"; timing_sense : negative_unate;
+                cell_rise(tpl_scalar) { values("1.0"); }
+                cell_fall(tpl_scalar) { values("1.0"); } } }
+    }
+    cell(NAND3) {
+        area : 3.0;
+        pin(A) { direction : input; capacitance : 1.0; }
+        pin(B) { direction : input; capacitance : 1.0; }
+        pin(C) { direction : input; capacitance : 1.0; }
+        pin(Y) { direction : output; capacitance : 0.0; function : "!(A B C)";
+            timing() { related_pin : "A B C"; timing_sense : negative_unate;
+                cell_rise(tpl_scalar) { values("1.2"); }
+                cell_fall(tpl_scalar) { values("1.2"); } } }
+    }
+    cell(NAND4) {
+        area : 4.0;
+        pin(A) { direction : input; capacitance : 1.0; }
+        pin(B) { direction : input; capacitance : 1.0; }
+        pin(C) { direction : input; capacitance : 1.0; }
+        pin(D) { direction : input; capacitance : 1.0; }
+        pin(Y) { direction : output; capacitance : 0.0; function : "!(A B C D)";
+            timing() { related_pin : "A B C D"; timing_sense : negative_unate;
+                cell_rise(tpl_scalar) { values("1.4"); }
+                cell_fall(tpl_scalar) { values("1.4"); } } }
+    }
+    cell(NOR2) {
+        area : 2.0;
+        pin(A) { direction : input; capacitance : 1.0; }
+        pin(B) { direction : input; capacitance : 1.0; }
+        pin(Y) { direction : output; capacitance : 0.0; function : "!(A+B)";
+            timing() { related_pin : "A B"; timing_sense : negative_unate;
+                cell_rise(tpl_scalar) { values("1.0"); }
+                cell_fall(tpl_scalar) { values("1.0"); } } }
+    }
+    cell(NOR3) {
+        area : 3.0;
+        pin(A) { direction : input; capacitance : 1.0; }
+        pin(B) { direction : input; capacitance : 1.0; }
+        pin(C) { direction : input; capacitance : 1.0; }
+        pin(Y) { direction : output; capacitance : 0.0; function : "!(A+B+C)";
+            timing() { related_pin : "A B C"; timing_sense : negative_unate;
+                cell_rise(tpl_scalar) { values("1.2"); }
+                cell_fall(tpl_scalar) { values("1.2"); } } }
+    }
+    cell(NOR4) {
+        area : 4.0;
+        pin(A) { direction : input; capacitance : 1.0; }
+        pin(B) { direction : input; capacitance : 1.0; }
+        pin(C) { direction : input; capacitance : 1.0; }
+        pin(D) { direction : input; capacitance : 1.0; }
+        pin(Y) { direction : output; capacitance : 0.0; function : "!(A+B+C+D)";
+            timing() { related_pin : "A B C D"; timing_sense : negative_unate;
+                cell_rise(tpl_scalar) { values("1.4"); }
+                cell_fall(tpl_scalar) { values("1.4"); } } }
+    }
+    cell(XOR2) {
+        area : 4.0;
+        pin(A) { direction : input; capacitance : 1.0; }
+        pin(B) { direction : input; capacitance : 1.0; }
+        pin(Y) { direction : output; capacitance : 0.0; function : "A^B";
+            timing() { related_pin : "A B"; timing_sense : non_unate;
+                cell_rise(tpl_scalar) { values("2.0"); }
+                cell_fall(tpl_scalar) { values("2.0"); } } }
+    }
+    cell(XNOR2) {
+        area : 4.0;
+        pin(A) { direction : input; capacitance : 1.0; }
+        pin(B) { direction : input; capacitance : 1.0; }
+        pin(Y) { direction : output; capacitance : 0.0; function : "!(A^B)";
+            timing() { related_pin : "A B"; timing_sense : non_unate;
+                cell_rise(tpl_scalar) { values("2.0"); }
+                cell_fall(tpl_scalar) { values("2.0"); } } }
+    }
+    cell(MUX2) {
+        area : 4.0;
+        pin(A) { direction : input; capacitance : 1.0; }
+        pin(B) { direction : input; capacitance : 1.0; }
+        pin(S) { direction : input; capacitance : 1.0; }
+        pin(Y) { direction : output; capacitance : 0.0; function : "(A S)+(B (!S))";
+            timing() { related_pin : "A B S"; timing_sense : non_unate;
+                cell_rise(tpl_scalar) { values("2.0"); }
+                cell_fall(tpl_scalar) { values("2.0"); } } }
+    }
+    cell(AOI21) {
+        area : 3.0;
+        pin(A) { direction : input; capacitance : 1.0; }
+        pin(B) { direction : input; capacitance : 1.0; }
+        pin(C) { direction : input; capacitance : 1.0; }
+        pin(Y) { direction : output; capacitance : 0.0; function : "!((A B)+C)";
+            timing() { related_pin : "A B C"; timing_sense : non_unate;
+                cell_rise(tpl_scalar) { values("1.5"); }
+                cell_fall(tpl_scalar) { values("1.5"); } } }
+    }
+    cell(OAI21) {
+        area : 3.0;
+        pin(A) { direction : input; capacitance : 1.0; }
+        pin(B) { direction : input; capacitance : 1.0; }
+        pin(C) { direction : input; capacitance : 1.0; }
+        pin(Y) { direction : output; capacitance : 0.0; function : "!((A+B) C)";
+            timing() { related_pin : "A B C"; timing_sense : non_unate;
+                cell_rise(tpl_scalar) { values("1.5"); }
+                cell_fall(tpl_scalar) { values("1.5"); } } }
+    }
+}

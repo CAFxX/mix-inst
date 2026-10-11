@@ -1,0 +1,2 @@
+fz22_cs6c: RTL-vs-model PASS
+RESULT name=fz22_cs6c cells=5462 area=15330 crit=23.8u synth_time=11s

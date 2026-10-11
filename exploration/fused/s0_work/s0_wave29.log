@@ -1,0 +1,8 @@
+RESULT name=fz29_a cells=6106 area=19118 crit=20.0u synth_time=5s
+RESULT name=fz29_b cells=5709 area=17216 crit=20.3u synth_time=2s
+RESULT name=fz29_c cells=5767 area=17602 crit=20.4u synth_time=3s
+RESULT name=fz29_d cells=5780 area=17884 crit=20.2u synth_time=2s
+RESULT name=fz29_e cells=5992 area=18687 crit=20.4u synth_time=2s
+RESULT name=fz29_f cells=5803 area=17901 crit=20.3u synth_time=4s
+RESULT name=fz29_g cells=5872 area=17800 crit=20.4u synth_time=3s
+RESULT name=fz29_h cells=5729 area=17427 crit=20.2u synth_time=2s

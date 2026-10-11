@@ -1,0 +1,16 @@
+RESULT name=wl21_add32v cells=243 area=769 crit=44.6u synth_time=0s
+RESULT name=wl21_add64v cells=340 area=978 crit=83.0u synth_time=0s
+RESULT name=wl21_addrot cells=347 area=993 crit=82.3u synth_time=0s
+RESULT name=wl21_addrot2 cells=997 area=2495 crit=138.8u synth_time=0s
+RESULT name=wl21_mul32c FAILED: analyze2.py FAILED for wl21_mul32c (not trusted):
+stdout=
+stderr=ERROR: functional assign is not mappable logic (netlist not fully mapped?): assign o[63:32] = o[31:0];
+
+RESULT name=wl21_mul32v FAILED: analyze2.py FAILED for wl21_mul32v (not trusted):
+stdout=
+stderr=ERROR: functional assign is not mappable logic (netlist not fully mapped?): assign o[63:32] = o[31:0];
+
+RESULT name=wl21_shadd1 cells=408 area=1201 crit=73.2u synth_time=1s
+RESULT name=wl21_shadd2 cells=834 area=2222 crit=79.3u synth_time=1s
+RESULT name=wl21_mul32c cells=2108 area=6000 crit=53.7u synth_time=1s
+RESULT name=wl21_mul32v cells=3615 area=10017 crit=58.5u synth_time=1s

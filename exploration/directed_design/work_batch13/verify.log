@@ -1,0 +1,13 @@
+dd13_ax1_r5_shl6: model vs C 214/214 OK
+dd13_ax1_r5_shl6: RTL vs model 52/52 (RTLCHECK: 52/52 vectors match -> PASS)
+dd13_ax1_r13_shr6: model vs C 214/214 OK
+dd13_ax1_r13_shr6: RTL vs model 52/52 (RTLCHECK: 52/52 vectors match -> PASS)
+dd13_ax1_r5_shl3: model vs C 214/214 OK
+dd13_ax1_r5_shl3: RTL vs model 52/52 (RTLCHECK: 52/52 vectors match -> PASS)
+dd13_ax1_r7_shr5: model vs C 214/214 OK
+dd13_ax1_r7_shr5: RTL vs model 52/52 (RTLCHECK: 52/52 vectors match -> PASS)
+dd13_ax2_ssss_midori_513: model vs C 214/214 OK
+dd13_ax2_ssss_midori_513: RTL vs model 52/52 (RTLCHECK: 52/52 vectors match -> PASS)
+dd13_ax2_ssss_midori_1327: model vs C 214/214 OK
+dd13_ax2_ssss_midori_1327: RTL vs model 52/52 (RTLCHECK: 52/52 vectors match -> PASS)
+VERIFY PASS

@@ -1,0 +1,9 @@
+fz22_maj5b: model-vs-C PASS
+fz22_maj5b: RTL-vs-model PASS
+RESULT name=fz22_maj5b cells=3567 area=10140 crit=21.4u synth_time=9s
+fz22_maj5c: model-vs-C PASS
+fz22_maj5c: RTL-vs-model PASS
+RESULT name=fz22_maj5c cells=6546 area=19115 crit=21.7u synth_time=16s
+fz22_maj5d: model-vs-C PASS
+fz22_maj5d: RTL-vs-model PASS
+RESULT name=fz22_maj5d cells=3136 area=8960 crit=20.5u synth_time=7s

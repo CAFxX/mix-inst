@@ -1,0 +1,3 @@
+fz22_maj4a: model-vs-C PASS
+fz22_maj4a: RTL-vs-model PASS
+RESULT name=fz22_maj4a cells=2496 area=7168 crit=16.8u synth_time=14s

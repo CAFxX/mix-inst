@@ -1,0 +1,13 @@
+RESULT name=fz27_a cells=5782 area=17724 crit=20.2u synth_time=47s
+RESULT name=fz27_b cells=4945 area=14372 crit=20.2u synth_time=31s
+RESULT name=fz27_c cells=5840 area=18071 crit=20.2u synth_time=25s
+RESULT name=fz27_d cells=5468 area=16494 crit=20.5u synth_time=45s
+RESULT name=fz27_e cells=5907 area=18312 crit=20.1u synth_time=25s
+RESULT name=fz27_f cells=5830 area=17957 crit=20.3u synth_time=39s
+RESULT name=fz27_g cells=5744 area=17783 crit=20.3u synth_time=33s
+RESULT name=fz27_h cells=5893 area=18221 crit=19.9u synth_time=31s
+RESULT name=fz27_i cells=5769 area=17805 crit=20.3u synth_time=35s
+RESULT name=fz27_j cells=5787 area=17806 crit=20.2u synth_time=50s
+RESULT name=fz28_c cells=5861 area=18309 crit=20.5u synth_time=2s
+RESULT name=fz28_d cells=5693 area=17577 crit=20.4u synth_time=7s
+RESULT name=fz28_c cells=5861 area=18309 crit=20.5u synth_time=11s

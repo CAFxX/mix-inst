@@ -1,0 +1,3 @@
+RESULT name=wl22_cs1stage cells=1403 area=4149 crit=8.6u synth_time=3s
+RESULT name=wl22_cs1stage_xor4 cells=704 area=2176 crit=5.4u synth_time=1s
+RESULT name=wl22_cs1stage_maj3 cells=512 area=1344 crit=4.4u synth_time=1s

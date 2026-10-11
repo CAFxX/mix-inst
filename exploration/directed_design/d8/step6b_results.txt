@@ -1,0 +1,17 @@
+none/all D=4096 logp=-inf
+rot13/all D=1923 logp=-inf
+lin513/all D=20 logp=-0.4
+shift1/all D=3631 logp=-inf
+shift7/all D=31 logp=-3.4
+shift31/all D=4096 logp=-inf
+rot13p63/all D=1659 logp=-inf
+rot13p0/all D=1449 logp=-inf
+pair13-27/all D=19 logp=-0.3
+pair1-2/all D=20 logp=-0.4
+pair7-19/all D=16 logp=-0.1
+rot13/sbox D=4096 logp=-inf
+rot13p63/sbox D=4096 logp=-inf
+shift1/sbox D=4096 logp=-inf
+shift7/sbox D=4096 logp=-inf
+lin513/sbox D=281 logp=-473.0
+pair13-27/sbox D=1351 logp=-inf

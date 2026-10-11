@@ -1,0 +1,54 @@
+=== S0a [r10_feist6_rot311_ksalt_nw] started 2026-10-02T20:34:23Z
+--- S0a tail:
+XCHECK r10_feist6_rot311_ksalt_nw: PASS 10000/10000 C==Python
+=== S0a [r10_feist6_rot311_ksalt_nw] rc=0 wall=10s
+=== S0 [r10_feist6_rot311_ksalt_nw] started 2026-10-02T20:34:33Z
+--- S0 tail:
+[S0 r10_feist6_rot311_ksalt_nw] delay=41.4u cells=4365 x_mult=0.400 (bar 0.9) equiv=n=1000 err=0 -> PASS [ref 0s cached=True, dut 4s, equiv 41s]
+=== S0 [r10_feist6_rot311_ksalt_nw] rc=0 wall=45s
+=== S1 [r10_feist6_rot311_ksalt_nw] started 2026-10-02T20:35:18Z
+--- S1 tail:
+  [DIFF] key=0x123456789abcdef worst|z|=1.8 fisher_logp=-0.86 bonf_logp=0.18
+  [DIFF] key=0xf0b52a9e7d8ba2b5 worst|z|=2.1 fisher_logp=-1.16 bonf_logp=-0.39
+  [DIFF] key=0x92988f142674743 worst|z|=2.9 fisher_logp=-3.41 bonf_logp=-2.65
+  LIN: PASS (rej=0)  DIFF: PASS (rej=0)
+[S1 r10_feist6_rot311_ksalt_nw] LIN/DIFF 22s: LIN PASS DIFF PASS; marginal 192s: PB rej=0 RD rej=0
+[S1 r10_feist6_rot311_ksalt_nw] verdict: CAL_PASS
+=== S1 [r10_feist6_rot311_ksalt_nw] rc=0 wall=195s
+=== S2 [r10_feist6_rot311_ksalt_nw] started 2026-10-02T20:38:33Z
+--- S2 tail:
+  0xe000000000000000      2.6      277.4            0
+  0x000000000000000f      2.2      268.3            0
+  0x00000000f0000000      2.6      254.0            0
+  0x0000000f00000000      3.4      270.2            0
+  0xf000000000000000      2.5      243.6            0
+PASS max_repeats=0 max|z|=17.4 (all 115 deltas)
+=== S2 [r10_feist6_rot311_ksalt_nw] rc=0 wall=262s
+=== S3 [r10_feist6_rot311_ksalt_nw] started 2026-10-02T20:42:55Z
+--- S3 tail:
+[S3 r10_feist6_rot311_ksalt_nw] 64MB: no FAIL (rng_test rc=0)
+[S3 r10_feist6_rot311_ksalt_nw] stage 256MB (key=0x123456789abcdef0 stride=1) ...
+[S3 r10_feist6_rot311_ksalt_nw] 256MB: no FAIL (rng_test rc=0)
+[S3 r10_feist6_rot311_ksalt_nw] stage 1GB (key=0x123456789abcdef0 stride=1) ...
+[S3 r10_feist6_rot311_ksalt_nw] 1GB: no FAIL (rng_test rc=0)
+[S3 r10_feist6_rot311_ksalt_nw] verdict: PASS (all 4 stages, no FAIL)
+=== S3 [r10_feist6_rot311_ksalt_nw] rc=0 wall=92s
+=== S3b [r10_feist6_rot311_ksalt_nw] started 2026-10-02T20:44:28Z
+--- S3b tail:
+[S3 r10_feist6_rot311_ksalt_nw_strided] 64MB: no FAIL (rng_test rc=0)
+[S3 r10_feist6_rot311_ksalt_nw_strided] stage 256MB (key=0x0 stride=0x9E3779B97F4A7C15) ...
+[S3 r10_feist6_rot311_ksalt_nw_strided] 256MB: no FAIL (rng_test rc=0)
+[S3 r10_feist6_rot311_ksalt_nw_strided] stage 1GB (key=0x0 stride=0x9E3779B97F4A7C15) ...
+[S3 r10_feist6_rot311_ksalt_nw_strided] 1GB: no FAIL (rng_test rc=0)
+[S3 r10_feist6_rot311_ksalt_nw_strided] verdict: PASS (all 4 stages, no FAIL)
+=== S3b [r10_feist6_rot311_ksalt_nw] rc=0 wall=73s
+=== S4 [r10_feist6_rot311_ksalt_nw] started 2026-10-02T20:45:41Z
+--- S4 tail:
+ Total CPU time:   00:00:14.74
+
+ All tests were passed
+
+
+
+=== S4 [r10_feist6_rot311_ksalt_nw] rc=0 wall=27s
+BATTERY-PASS [r10_feist6_rot311_ksalt_nw] all stages survived (S5 P&R+review is a manual gate)

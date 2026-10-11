@@ -1,0 +1,11 @@
+S0_DONE r11_feist6_present311_nw rc=0 RESULT name=r11_feist6_present311_nw cells=5700 area=15726 crit=49.1 delay_ratio=0.474 area_ratio=0.445 ref_crit=103.5 ref_area=35323
+S0_DONE r11_feist6_present713_nw rc=0 RESULT name=r11_feist6_present713_nw cells=5864 area=16391 crit=48.2 delay_ratio=0.466 area_ratio=0.464 ref_crit=103.5 ref_area=35323
+S0_DONE r11_feist6_gift311_nw rc=0 RESULT name=r11_feist6_gift311_nw cells=5772 area=16505 crit=43.8 delay_ratio=0.423 area_ratio=0.467 ref_crit=103.5 ref_area=35323
+S0_DONE r11_feist6_gift713_nw rc=0 RESULT name=r11_feist6_gift713_nw cells=5783 area=16404 crit=44.9 delay_ratio=0.434 area_ratio=0.464 ref_crit=103.5 ref_area=35323
+S0_DONE r11_feist6_sk4311_nw rc=0 RESULT name=r11_feist6_sk4311_nw cells=4737 area=13397 crit=45.5 delay_ratio=0.440 area_ratio=0.379 ref_crit=103.5 ref_area=35323
+S0_DONE r11_feist6_sk4713_nw rc=0 RESULT name=r11_feist6_sk4713_nw cells=5190 area=14308 crit=45.5 delay_ratio=0.440 area_ratio=0.405 ref_crit=103.5 ref_area=35323
+S0_DONE r11_feist6_piccolo311_nw rc=0 RESULT name=r11_feist6_piccolo311_nw cells=4924 area=13819 crit=44.8 delay_ratio=0.433 area_ratio=0.391 ref_crit=103.5 ref_area=35323
+S0_DONE r11_feist6_piccolo713_nw rc=0 RESULT name=r11_feist6_piccolo713_nw cells=5024 area=14001 crit=45.7 delay_ratio=0.442 area_ratio=0.396 ref_crit=103.5 ref_area=35323
+S0_DONE r11_feist6_sk8311_nw rc=0 RESULT name=r11_feist6_sk8311_nw cells=5392 area=15470 crit=67.2 delay_ratio=0.649 area_ratio=0.438 ref_crit=103.5 ref_area=35323
+S0_DONE r11_feist6_s1mix311_nw rc=0 RESULT name=r11_feist6_s1mix311_nw cells=4814 area=13457 crit=46.3 delay_ratio=0.447 area_ratio=0.381 ref_crit=103.5 ref_area=35323
+ALL_S0_DONE

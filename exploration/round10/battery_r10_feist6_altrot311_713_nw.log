@@ -1,0 +1,58 @@
+=== S0a [r10_feist6_altrot311_713_nw] started 2026-10-02T20:46:09Z
+--- S0a tail:
+/home/hatch/workspace/mix/exploration/round10/models/r10.py:58: RuntimeWarning: overflow encountered in scalar multiply
+  return (_rotl64_np(k, r) ^ (np.uint64(i + 1) * GOLDEN64)) & MASK64
+XCHECK r10_feist6_altrot311_713_nw: PASS 10000/10000 C==Python
+=== S0a [r10_feist6_altrot311_713_nw] rc=0 wall=7s
+=== S0 [r10_feist6_altrot311_713_nw] started 2026-10-02T20:46:16Z
+--- S0 tail:
+/home/hatch/workspace/mix/exploration/round10/models/r10.py:58: RuntimeWarning: overflow encountered in scalar multiply
+  return (_rotl64_np(k, r) ^ (np.uint64(i + 1) * GOLDEN64)) & MASK64
+[S0 r10_feist6_altrot311_713_nw] delay=41.9u cells=4480 x_mult=0.405 (bar 0.9) equiv=n=1000 err=0 -> PASS [ref 0s cached=True, dut 3s, equiv 32s]
+=== S0 [r10_feist6_altrot311_713_nw] rc=0 wall=35s
+=== S1 [r10_feist6_altrot311_713_nw] started 2026-10-02T20:46:51Z
+--- S1 tail:
+  [DIFF] key=0x123456789abcdef worst|z|=2.2 fisher_logp=-1.46 bonf_logp=-0.58
+  [DIFF] key=0xf0b52a9e7d8ba2b5 worst|z|=1.7 fisher_logp=-0.56 bonf_logp=0.47
+  [DIFF] key=0x92988f142674743 worst|z|=3.1 fisher_logp=-4.23 bonf_logp=-3.49
+  LIN: PASS (rej=0)  DIFF: PASS (rej=0)
+[S1 r10_feist6_altrot311_713_nw] LIN/DIFF 28s: LIN PASS DIFF PASS; marginal 173s: PB rej=0 RD rej=0
+[S1 r10_feist6_altrot311_713_nw] verdict: CAL_PASS
+=== S1 [r10_feist6_altrot311_713_nw] rc=0 wall=176s
+=== S2 [r10_feist6_altrot311_713_nw] started 2026-10-02T20:49:48Z
+--- S2 tail:
+  0xe000000000000000      3.3      248.4            0
+  0x000000000000000f      2.7      242.9            0
+  0x00000000f0000000      2.9      266.5            0
+  0x0000000f00000000      3.0      248.6            0
+  0xf000000000000000      3.3      253.7            0
+PASS max_repeats=0 max|z|=3.6 (all 115 deltas)
+=== S2 [r10_feist6_altrot311_713_nw] rc=0 wall=308s
+=== S3 [r10_feist6_altrot311_713_nw] started 2026-10-02T20:54:56Z
+--- S3 tail:
+[S3 r10_feist6_altrot311_713_nw] 64MB: no FAIL (rng_test rc=0)
+[S3 r10_feist6_altrot311_713_nw] stage 256MB (key=0x123456789abcdef0 stride=1) ...
+[S3 r10_feist6_altrot311_713_nw] 256MB: no FAIL (rng_test rc=0)
+[S3 r10_feist6_altrot311_713_nw] stage 1GB (key=0x123456789abcdef0 stride=1) ...
+[S3 r10_feist6_altrot311_713_nw] 1GB: no FAIL (rng_test rc=0)
+[S3 r10_feist6_altrot311_713_nw] verdict: PASS (all 4 stages, no FAIL)
+=== S3 [r10_feist6_altrot311_713_nw] rc=0 wall=92s
+=== S3b [r10_feist6_altrot311_713_nw] started 2026-10-02T20:56:28Z
+--- S3b tail:
+[S3 r10_feist6_altrot311_713_nw_strided] 64MB: no FAIL (rng_test rc=0)
+[S3 r10_feist6_altrot311_713_nw_strided] stage 256MB (key=0x0 stride=0x9E3779B97F4A7C15) ...
+[S3 r10_feist6_altrot311_713_nw_strided] 256MB: no FAIL (rng_test rc=0)
+[S3 r10_feist6_altrot311_713_nw_strided] stage 1GB (key=0x0 stride=0x9E3779B97F4A7C15) ...
+[S3 r10_feist6_altrot311_713_nw_strided] 1GB: no FAIL (rng_test rc=0)
+[S3 r10_feist6_altrot311_713_nw_strided] verdict: PASS (all 4 stages, no FAIL)
+=== S3b [r10_feist6_altrot311_713_nw] rc=0 wall=113s
+=== S4 [r10_feist6_altrot311_713_nw] started 2026-10-02T20:58:21Z
+--- S4 tail:
+ Total CPU time:   00:00:14.88
+
+ All tests were passed
+
+
+
+=== S4 [r10_feist6_altrot311_713_nw] rc=0 wall=28s
+BATTERY-PASS [r10_feist6_altrot311_713_nw] all stages survived (S5 P&R+review is a manual gate)

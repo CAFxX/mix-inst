@@ -1,0 +1,32 @@
+START r7_feist8_r311 13:43:12
+START r7_feist8_s1_1sbox 13:43:12
+SKIP r7_feist8_s1_1sbox (already clean)
+SKIP r7_feist8_r311 (already clean)
+START r7_feist8_r517 13:47:17
+START r7_feist8_spn_nw 13:47:17
+START r7_feist8_s1_1sbox 13:48:16
+START r7_feist8_r311 13:48:16
+DONE r7_feist8_s1_1sbox rc=0 14:22:15
+START r7_feist8_spn_nw 14:22:19
+DONE r7_feist8_r311 rc=0 14:33:37
+START r7_feist8_r517 14:33:40
+DONE r7_feist8_spn_nw rc=0 15:10:01
+START r6_feist8_spn 15:10:05
+DONE r7_feist8_r517 rc=0 15:20:48
+START r7_feist8_rksimple 15:20:56
+DONE r6_feist8_spn rc=0 15:51:32
+START r7_feist8_rkcheap 15:51:40
+DONE r7_feist8_rksimple rc=0 15:58:26
+START r7_feist8_gift 15:58:31
+SKIP r7_feist8_s1_1sbox (already 32GB clean)
+SKIP r7_feist8_r311 (already 32GB clean)
+SKIP r7_feist8_spn_nw (already 32GB clean)
+SKIP r7_feist8_r517 (already 32GB clean)
+SKIP r6_feist8_spn (already 32GB clean)
+SKIP r7_feist8_rksimple (already 32GB clean)
+START r7_feist8_rkcheap 16:02:42
+START r7_feist8_gift 16:02:42
+DONE r7_feist8_gift rc=0 16:51:08
+DONE r7_feist8_rkcheap rc=0 16:51:18
+ALL_Q3_DONE
+Q3_EXIT=0

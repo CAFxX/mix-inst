@@ -1,0 +1,16 @@
+# Round 10 battery verdicts (from battery_<cand>.log, queue completed QUEUE DONE)
+# rc=0 => S0-S4 all PASS; rc=2 => killed at noted stage.
+candidate stage_reached kill_reason S2_maxrepeats S2_max|z|
+r10_feist6_rot0211_nw S4_PASS - 1 48.6
+r10_feist6_rot0313_nw S4_PASS - 0 4.1
+r10_feist6_rot0317_nw S4_PASS - 7 330.0
+r10_feist6_rot0411_nw S4_PASS - 0 4.1
+r10_feist6_rot0307_nw S4_PASS - 1 1079.9
+r10_feist6_rot0511_nw S1_kill marginal_FLAG_RD_rej1 - -
+r10_feist6_rot311 S4_PASS - 0 15.8
+r10_feist5_s1_lin2_nw S1_kill marginal_FLAG_RD_rej1 - -
+r10_feist5_s1_2sbox_nw S4_PASS_formal Q1_FAIL_sac_z5=118 0 170.3
+r10_feist5_rot311 S1_kill marginal_FLAG_PB_rej2 - -
+r10_feist6_rot311_ksalt_nw S4_PASS - 0 17.4
+r10_feist6_rot311_ksrot_nw S4_PASS - 0 16.9
+r10_feist6_altrot311_713_nw S4_PASS - 0 3.6

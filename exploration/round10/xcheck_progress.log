@@ -1,0 +1,27 @@
+XCHECK-PASS r10_feist6_rot0313_nw
+XCHECK-PASS r10_feist6_rot0211_nw
+RTLCHECK-PASS r10_feist6_rot0313_nw
+RTLCHECK-PASS r10_feist6_rot0211_nw
+XCHECK-PASS r10_feist6_rot0411_nw
+RTLCHECK-PASS r10_feist6_rot0411_nw
+XCHECK-PASS r10_feist6_rot0317_nw
+RTLCHECK-PASS r10_feist6_rot0317_nw
+XCHECK-PASS r10_feist6_rot0307_nw
+RTLCHECK-PASS r10_feist6_rot0307_nw
+XCHECK-PASS r10_feist6_rot0511_nw
+RTLCHECK-PASS r10_feist6_rot0511_nw
+XCHECK-PASS r10_feist6_rot311
+XCHECK-PASS r10_feist5_s1_lin2_nw
+RTLCHECK-PASS r10_feist6_rot311
+RTLCHECK-PASS r10_feist5_s1_lin2_nw
+XCHECK-PASS r10_feist5_rot311
+RTLCHECK-PASS r10_feist5_rot311
+XCHECK-PASS r10_feist6_rot311_ksalt_nw
+RTLCHECK-PASS r10_feist6_rot311_ksalt_nw
+XCHECK-PASS r10_feist5_s1_2sbox_nw
+RTLCHECK-PASS r10_feist5_s1_2sbox_nw
+XCHECK-PASS r10_feist6_rot311_ksrot_nw
+RTLCHECK-PASS r10_feist6_rot311_ksrot_nw
+XCHECK-PASS r10_feist6_altrot311_713_nw
+RTLCHECK-PASS r10_feist6_altrot311_713_nw
+DONE

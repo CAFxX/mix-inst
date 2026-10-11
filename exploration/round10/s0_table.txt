@@ -1,0 +1,23 @@
+# Round 10 S0 table — authorized path only (run_synth.py, pinned Yosys 0.69,
+# hardened flow memory_map-before-techmap, analyze.py == analyze2.py agreement).
+# Columns: candidate | delay (u) | delay_ratio vs mul64 | cells | area.
+# S0 bar: delay_ratio <= 0.9. All runs re-measured the mul64 reference fresh.
+candidate                        delay_u  ratio   cells  area
+r10_feist6_rot0211_nw            41.7     0.403   4609   12854
+r10_feist6_rot0313_nw            41.4     0.400   4645   12855
+r10_feist6_rot0411_nw            42.8     0.414   4150   11847
+r10_feist6_rot0317_nw            41.5     0.401   4602   12779
+r10_feist6_rot0307_nw            41.4     0.400   4410   12349
+r10_feist6_rot0511_nw            41.9     0.405   4629   13002
+r10_feist6_rot311                42.5     0.411   4675   13154
+r10_feist5_s1_lin2_nw            49.2     0.475   5325   14885
+r10_feist5_s1_2sbox_nw           52.9     0.511   4801   13338
+r10_feist5_rot311                35.7     0.345   3743   10605
+r10_feist6_rot311_ksalt_nw       41.4     0.400   4365   12212
+r10_feist6_rot311_ksrot_nw       41.4     0.400   4554   12685
+r10_feist6_altrot311_713_nw      41.9     0.405   4480   12598
+
+multiplier reference (mul64, re-measured per run, all 13 runs identical):
+  ref_crit=103.5u, ref_area=35323, ref cells (per run logs in s0/<cand>/synth.log)
+
+S0 bar (<=0.9x multiplier): 13/13 PASS. No candidate above the bar.

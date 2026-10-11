@@ -1,0 +1,53 @@
+START r10_feist6_rot0211_nw 2026-10-02T19:49:52Z
+START r10_feist6_rot0313_nw 2026-10-02T19:49:52Z
+RESULT name=r10_feist6_rot0211_nw cells=4609 area=12854 crit=41.7 delay_ratio=0.403 area_ratio=0.364 ref_crit=103.5 ref_area=35323
+SYNTH-PASS r10_feist6_rot0211_nw
+END r10_feist6_rot0211_nw 2026-10-02T19:50:04Z
+START r10_feist6_rot0317_nw 2026-10-02T19:50:04Z
+RESULT name=r10_feist6_rot0313_nw cells=4645 area=12855 crit=41.4 delay_ratio=0.400 area_ratio=0.364 ref_crit=103.5 ref_area=35323
+SYNTH-PASS r10_feist6_rot0313_nw
+END r10_feist6_rot0313_nw 2026-10-02T19:50:04Z
+START r10_feist6_rot0411_nw 2026-10-02T19:50:04Z
+RESULT name=r10_feist6_rot0411_nw cells=4150 area=11847 crit=42.8 delay_ratio=0.414 area_ratio=0.335 ref_crit=103.5 ref_area=35323
+SYNTH-PASS r10_feist6_rot0411_nw
+END r10_feist6_rot0411_nw 2026-10-02T19:50:13Z
+START r10_feist6_rot0307_nw 2026-10-02T19:50:13Z
+RESULT name=r10_feist6_rot0317_nw cells=4602 area=12779 crit=41.5 delay_ratio=0.401 area_ratio=0.362 ref_crit=103.5 ref_area=35323
+SYNTH-PASS r10_feist6_rot0317_nw
+END r10_feist6_rot0317_nw 2026-10-02T19:50:17Z
+START r10_feist6_rot0511_nw 2026-10-02T19:50:17Z
+RESULT name=r10_feist6_rot0307_nw cells=4410 area=12349 crit=41.4 delay_ratio=0.400 area_ratio=0.350 ref_crit=103.5 ref_area=35323
+SYNTH-PASS r10_feist6_rot0307_nw
+END r10_feist6_rot0307_nw 2026-10-02T19:50:23Z
+START r10_feist6_rot311 2026-10-02T19:50:23Z
+RESULT name=r10_feist6_rot0511_nw cells=4629 area=13002 crit=41.9 delay_ratio=0.405 area_ratio=0.368 ref_crit=103.5 ref_area=35323
+SYNTH-PASS r10_feist6_rot0511_nw
+END r10_feist6_rot0511_nw 2026-10-02T19:50:29Z
+START r10_feist5_s1_lin2_nw 2026-10-02T19:50:29Z
+RESULT name=r10_feist6_rot311 cells=4675 area=13154 crit=42.5 delay_ratio=0.411 area_ratio=0.372 ref_crit=103.5 ref_area=35323
+SYNTH-PASS r10_feist6_rot311
+END r10_feist6_rot311 2026-10-02T19:50:35Z
+START r10_feist5_s1_2sbox_nw 2026-10-02T19:50:35Z
+RESULT name=r10_feist5_s1_lin2_nw cells=5325 area=14885 crit=49.2 delay_ratio=0.475 area_ratio=0.421 ref_crit=103.5 ref_area=35323
+SYNTH-PASS r10_feist5_s1_lin2_nw
+END r10_feist5_s1_lin2_nw 2026-10-02T19:50:41Z
+START r10_feist5_rot311 2026-10-02T19:50:41Z
+RESULT name=r10_feist5_s1_2sbox_nw cells=4801 area=13338 crit=52.9 delay_ratio=0.511 area_ratio=0.378 ref_crit=103.5 ref_area=35323
+SYNTH-PASS r10_feist5_s1_2sbox_nw
+END r10_feist5_s1_2sbox_nw 2026-10-02T19:50:46Z
+START r10_feist6_rot311_ksalt_nw 2026-10-02T19:50:46Z
+RESULT name=r10_feist5_rot311 cells=3743 area=10605 crit=35.7 delay_ratio=0.345 area_ratio=0.300 ref_crit=103.5 ref_area=35323
+SYNTH-PASS r10_feist5_rot311
+END r10_feist5_rot311 2026-10-02T19:50:51Z
+START r10_feist6_rot311_ksrot_nw 2026-10-02T19:50:51Z
+RESULT name=r10_feist6_rot311_ksalt_nw cells=4365 area=12212 crit=41.4 delay_ratio=0.400 area_ratio=0.346 ref_crit=103.5 ref_area=35323
+SYNTH-PASS r10_feist6_rot311_ksalt_nw
+END r10_feist6_rot311_ksalt_nw 2026-10-02T19:50:57Z
+START r10_feist6_altrot311_713_nw 2026-10-02T19:50:57Z
+RESULT name=r10_feist6_rot311_ksrot_nw cells=4554 area=12685 crit=41.4 delay_ratio=0.400 area_ratio=0.359 ref_crit=103.5 ref_area=35323
+SYNTH-PASS r10_feist6_rot311_ksrot_nw
+END r10_feist6_rot311_ksrot_nw 2026-10-02T19:51:01Z
+RESULT name=r10_feist6_altrot311_713_nw cells=4480 area=12598 crit=41.9 delay_ratio=0.405 area_ratio=0.357 ref_crit=103.5 ref_area=35323
+SYNTH-PASS r10_feist6_altrot311_713_nw
+END r10_feist6_altrot311_713_nw 2026-10-02T19:51:05Z
+QUEUE-DONE

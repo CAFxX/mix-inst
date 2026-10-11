@@ -1,0 +1,25 @@
+  [LIN] key=0x0 D=4096/4096 logp=-inf
+  [LIN] key=0xffffffffffffffff D=4096/4096 logp=-inf
+  [LIN] key=0xaaaaaaaaaaaaaaaa D=4096/4096 logp=-inf
+  [LIN] key=0x5555555555555555 D=4096/4096 logp=-inf
+  [LIN] key=0xdeadbeefdeadbeef D=4096/4096 logp=-inf
+  [LIN] key=0x9e3779b97f4a7c15 D=4096/4096 logp=-inf
+  [LIN] key=0x1234 D=4096/4096 logp=-inf
+  [LIN] key=0x123456789abcdef D=4096/4096 logp=-inf
+  [LIN] key=0xf0b52a9e7d8ba2b5 D=4096/4096 logp=-inf
+  [LIN] key=0x92988f142674743 D=4096/4096 logp=-inf
+  [DIFF] key=0x0 worst|z|=79.0 fisher_logp=-inf bonf_logp=-3123.86
+  [DIFF] key=0xffffffffffffffff worst|z|=73.9 fisher_logp=-inf bonf_logp=-2729.96
+  [DIFF] key=0xaaaaaaaaaaaaaaaa worst|z|=69.7 fisher_logp=-inf bonf_logp=-2429.30
+  [DIFF] key=0x5555555555555555 worst|z|=79.7 fisher_logp=-inf bonf_logp=-3181.22
+  [DIFF] key=0xdeadbeefdeadbeef worst|z|=64.5 fisher_logp=-inf bonf_logp=-2080.00
+  [DIFF] key=0x9e3779b97f4a7c15 worst|z|=62.6 fisher_logp=-inf bonf_logp=-1963.90
+  [DIFF] key=0x1234 worst|z|=79.0 fisher_logp=-inf bonf_logp=-3123.86
+  [DIFF] key=0x123456789abcdef worst|z|=53.5 fisher_logp=-inf bonf_logp=-1431.54
+  [DIFF] key=0xf0b52a9e7d8ba2b5 worst|z|=75.4 fisher_logp=-inf bonf_logp=-2847.30
+  [DIFF] key=0x92988f142674743 worst|z|=69.4 fisher_logp=-inf bonf_logp=-2410.62
+  LIN: FLAG (rej=10)  DIFF: FLAG (rej=10)
+[S1 al_nibchi4b] LIN/DIFF 27s: LIN FLAG DIFF FLAG; SKIPPED (LIN/DIFF kill)
+[S1 al_nibchi4b] verdict: FLAG
+
+==== STDERR ====

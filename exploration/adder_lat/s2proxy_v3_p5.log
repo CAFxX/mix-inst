@@ -1,0 +1,4 @@
+# wave=P5 sbox=SKINNY logN=16
+P5a_t3t3_psboxLx2: v3 proxy max|z|=  256.0 (d0=0x1000000000000 bit22), est=18.00u
+P5b_t3t3_psboxLx2_alt: v3 proxy max|z|=  192.5 (d0=0x200000000000000 bit29), est=18.00u
+P5c_t3t3_psboxLx2_b: v3 proxy max|z|=  256.0 (d0=0x200000000000000 bit60), est=18.00u

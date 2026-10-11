@@ -1,0 +1,224 @@
+#!/usr/bin/env python3
+"""Pivot-wave generator: and/t3/dual/sbox/sboxL stages -> model.py, impl.c, rtl.v.
+
+Stage types:
+  ('and',a,b,c)      x ^= (ra&rb)^rc
+  ('t3',a,b,c,e)     x ^= (ra&rb)^rc^re
+  ('dual',a,b,c,d,e) x ^= (ra&rb)^(rc&rd)^re
+  ('sbox',)          x = sbox64(x)            (per-nibble SBOX)
+  ('sboxL',a,b)      x = sbox64(x); x ^= ra^rb
+Key schedule: pre-whiten x^=k, post x^=rotl(k,13) (al_and6a convention).
+"""
+import os
+import sys
+import json
+import importlib.util
+import subprocess
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, HERE)
+from gen_wave1 import PY_PREAMBLE, RC, FB, vl_rotl  # noqa: E402
+
+SBOXES = {
+    'SKINNY': [0xC, 0x6, 0x9, 0x0, 0x1, 0xA, 0x7, 0xB,
+               0x3, 0xE, 0xF, 0x8, 0x4, 0xD, 0x5, 0x2],
+    'rasC2_0': [0, 1, 2, 3, 4, 6, 8, 11, 13, 9, 7, 15, 12, 10, 5, 14],
+    'TWINE':   [0xE,0x1,0xB,0x6,0xF,0xD,0x0,0xA,0x7,0x3,0xC,0x9,0x2,0x8,0x4,0x5],
+    'KLEIN':   [0x7,0x4,0xA,0x9,0x1,0xF,0xB,0x0,0xC,0x3,0x2,0x6,0x8,0xE,0xD,0x5],
+    'PRINCE':  [0xB,0xF,0x3,0x2,0xA,0xC,0x9,0x1,0x6,0x7,0x8,0x0,0xE,0x5,0xD,0x4],
+    'QARMA_s2':[0x2,0xC,0xE,0x8,0x6,0xF,0xB,0x0,0x1,0x4,0xD,0x7,0x9,0x3,0xA,0x5],
+}
+
+
+def gen_model(name, stages, desc, sbox):
+    rc = ", ".join(hex(v) for v in RC[:12])
+    s = PY_PREAMBLE % (desc, rc)
+    s += "SBOX = %s\n" % (sbox,)
+    s += "SBOX_ARR = np.array(SBOX, dtype=np.uint64)\n"
+    s += "STAGES = %s\n" % (stages,)
+    s += ("def _sbox64(x):\n"
+          "    y = np.zeros_like(x)\n"
+          "    for i in range(16):\n"
+          "        nib = (x >> np.uint64(4*i)) & np.uint64(0xF)\n"
+          "        y |= SBOX_ARR[nib] << np.uint64(4*i)\n"
+          "    return y & M64\n")
+    s += "def mix_np(V, K):\n"
+    s += "    x = np.asarray(V, dtype=np.uint64); k = np.asarray(K, dtype=np.uint64)\n"
+    s += "    x = (x ^ k) & M64\n"
+    s += "    for st in STAGES:\n"
+    s += "        t = st[0]\n"
+    s += "        if t == 'and':\n"
+    s += ("            x = (x ^ (_rotl(x, st[1]) & _rotl(x, st[2]))"
+          " ^ _rotl(x, st[3])) & M64\n")
+    s += "        elif t == 't3':\n"
+    s += ("            x = (x ^ (_rotl(x, st[1]) & _rotl(x, st[2]))"
+          " ^ _rotl(x, st[3]) ^ _rotl(x, st[4])) & M64\n")
+    s += "        elif t == 'dual':\n"
+    s += ("            x = (x ^ (_rotl(x, st[1]) & _rotl(x, st[2]))"
+          " ^ (_rotl(x, st[3]) & _rotl(x, st[4])) ^ _rotl(x, st[5])) & M64\n")
+    s += "        elif t == 'maj':\n"
+    s += ("            ra, rb, rc = _rotl(x, st[1]), _rotl(x, st[2]), _rotl(x, st[3])\n"
+          "            x = (x ^ ((ra & rb) | (rb & rc) | (ra & rc)) ^ _rotl(x, st[4])) & M64\n")
+    s += "        elif t == 'sbox':\n"
+    s += "            x = _sbox64(x)\n"
+    s += "        elif t == 'sboxL':\n"
+    s += ("            x = _sbox64(x)\n"
+          "            x = (x ^ _rotl(x, st[1]) ^ _rotl(x, st[2])) & M64\n")
+    s += "        else:\n            raise ValueError(st)\n"
+    s += "    x = (x ^ _rotl(k, 13)) & M64\n"
+    s += "    return x & M64\n"
+    s += "def mix(v, k):\n    return int(mix_np(np.uint64(v), np.uint64(k)))\n"
+    return s
+
+
+def gen_impl(name, stages, desc, sbox):
+    s = "#include <stdint.h>\n"
+    s += ("static inline uint64_t rotl64(uint64_t x, int r) {\n"
+          "    r &= 63;\n"
+          "    return r ? (x << r) | (x >> (64 - r)) : x;\n}\n")
+    s += "static const uint8_t SBOX[16] = {%s};\n" % (
+        ", ".join(str(v) for v in sbox))
+    s += ("static inline uint64_t sbox64(uint64_t x) {\n"
+          "    uint64_t y = 0;\n"
+          "    for (int i = 0; i < 16; i++)\n"
+          "        y |= (uint64_t)SBOX[(x >> (4*i)) & 0xF] << (4*i);\n"
+          "    return y;\n}\n")
+    s += f"// {desc}\n"
+    s += "uint64_t mix_hash(uint64_t val, uint64_t key) {\n"
+    s += "    uint64_t x = val ^ key;\n"
+    for st in stages:
+        t = st[0]
+        if t == 'and':
+            s += (f"    x ^= (rotl64(x,{st[1]}) & rotl64(x,{st[2]}))"
+                  f" ^ rotl64(x,{st[3]});\n")
+        elif t == 't3':
+            s += (f"    x ^= (rotl64(x,{st[1]}) & rotl64(x,{st[2]}))"
+                  f" ^ rotl64(x,{st[3]}) ^ rotl64(x,{st[4]});\n")
+        elif t == 'dual':
+            s += (f"    x ^= (rotl64(x,{st[1]}) & rotl64(x,{st[2]}))"
+                  f" ^ (rotl64(x,{st[3]}) & rotl64(x,{st[4]}))"
+                  f" ^ rotl64(x,{st[5]});\n")
+        elif t == 'maj':
+            a, b, c, d = st[1], st[2], st[3], st[4]
+            s += (f"    {{ uint64_t ra=rotl64(x,{a}), rb=rotl64(x,{b}), rc=rotl64(x,{c});\n"
+                  f"      x ^= ((ra&rb)|(rb&rc)|(ra&rc)) ^ rotl64(x,{d}); }}\n")
+        elif t == 'sbox':
+            s += "    x = sbox64(x);\n"
+        elif t == 'sboxL':
+            s += (f"    x = sbox64(x); x ^= rotl64(x,{st[1]})"
+                  f" ^ rotl64(x,{st[2]});\n")
+    s += "    x ^= rotl64(key, 13);\n    return x;\n}\n"
+    return s
+
+
+def gen_rtl(name, stages, desc, sbox):
+    s = f"// {name}: {desc} (generated by gen_waveP.py)\n"
+    s += (f"module {name}(\n    input [63:0] val,\n"
+          f"    input [63:0] key,\n    output [63:0] out\n);\n")
+    s += "    function [3:0] sbox4(input [3:0] v);\n"
+    s += "        case (v)\n"
+    for i, v in enumerate(sbox):
+        s += f"            4'h{i:X}: sbox4 = 4'h{v:X};\n"
+    s += ("        endcase\n"
+          "    endfunction\n")
+    s += "    wire [63:0] x0 = val ^ key;\n"
+    for i, st in enumerate(stages):
+        t = st[0]
+        xi, xo = f"x{i}", f"x{i+1}"
+        if t == 'and':
+            a, b, c = st[1], st[2], st[3]
+            s += (f"    wire [63:0] {xo} = {xi} ^ "
+                  f"({vl_rotl(xi, a)} & {vl_rotl(xi, b)}) ^ {vl_rotl(xi, c)};\n")
+        elif t == 't3':
+            a, b, c, e = st[1], st[2], st[3], st[4]
+            s += (f"    wire [63:0] {xo} = {xi} ^ "
+                  f"({vl_rotl(xi, a)} & {vl_rotl(xi, b)}) ^ {vl_rotl(xi, c)}"
+                  f" ^ {vl_rotl(xi, e)};\n")
+        elif t == 'dual':
+            a, b, c, d, e = st[1], st[2], st[3], st[4], st[5]
+            s += (f"    wire [63:0] {xo} = {xi} ^ "
+                  f"({vl_rotl(xi, a)} & {vl_rotl(xi, b)}) ^ "
+                  f"({vl_rotl(xi, c)} & {vl_rotl(xi, d)}) ^ {vl_rotl(xi, e)};\n")
+        elif t == 'maj':
+            a, b, c, d = st[1], st[2], st[3], st[4]
+            s += (f"    wire [63:0] {xo}_ra = {vl_rotl(xi, a)};\n"
+                  f"    wire [63:0] {xo}_rb = {vl_rotl(xi, b)};\n"
+                  f"    wire [63:0] {xo}_rc = {vl_rotl(xi, c)};\n"
+                  f"    wire [63:0] {xo} = {xi} ^ "
+                  f"(({xo}_ra & {xo}_rb) | ({xo}_rb & {xo}_rc) | ({xo}_ra & {xo}_rc))"
+                  f" ^ {vl_rotl(xi, d)};\n")
+        elif t in ('sbox', 'sboxL'):
+            s += f"    wire [63:0] {xo}_sb;\n"
+            s += f"    genvar g{i};\n"
+            s += f"    generate\n"
+            s += f"        for (g{i}=0; g{i}<16; g{i}=g{i}+1) begin : sb{i}\n"
+            s += (f"            assign {xo}_sb[4*g{i}+3:4*g{i}] = "
+                  f"sbox4({xi}[4*g{i}+3:4*g{i}]);\n")
+            s += f"        end\n"
+            s += f"    endgenerate\n"
+            if t == 'sboxL':
+                s += (f"    wire [63:0] {xo} = {xo}_sb ^ {vl_rotl(xo + '_sb', st[1])}"
+                      f" ^ {vl_rotl(xo + '_sb', st[2])};\n")
+            else:
+                s += f"    wire [63:0] {xo} = {xo}_sb;\n"
+    s += f"    wire [63:0] kr = {vl_rotl('key', 13)};\n"
+    s += f"    assign out = x{len(stages)} ^ kr;\n"
+    s += "endmodule\n"
+    return s
+
+
+def build(name, stages, desc, sbox_name='SKINNY'):
+    sbox = SBOXES[sbox_name]
+    stages = [tuple(s) for s in stages]
+    cdir = os.path.join(FB, name)
+    os.makedirs(cdir, exist_ok=True)
+    with open(os.path.join(cdir, "model.py"), "w") as f:
+        f.write(gen_model(name, stages, desc, sbox))
+    with open(os.path.join(cdir, "impl.c"), "w") as f:
+        f.write(gen_impl(name, stages, desc, sbox))
+    with open(os.path.join(cdir, "rtl.v"), "w") as f:
+        f.write(gen_rtl(name, stages, desc, sbox))
+    with open(os.path.join(cdir, "meta.json"), "w") as f:
+        json.dump({"name": name, "desc": desc, "stages": [list(s) for s in stages],
+                   "sbox": sbox_name}, f, indent=1)
+    # bit-exact: model vs impl.c
+    spec = importlib.util.spec_from_file_location(
+        f"wp_{name}", os.path.join(cdir, "model.py"))
+    m = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(m)
+    test_c = os.path.join(cdir, "test_impl.c")
+    with open(test_c, "w") as f:
+        f.write('#include <stdio.h>\n#include <stdint.h>\n'
+                'uint64_t mix_hash(uint64_t,uint64_t);\n'
+                'int main(){uint64_t vs[4]={0,1,0x123456789ABCDEF0ULL,0xFFFFFFFFFFFFFFFFULL};\n'
+                'uint64_t ks[2]={0x123456789ABCDEF0ULL,0};\n'
+                'for(int i=0;i<4;i++)for(int j=0;j<2;j++)'
+                'printf("%llx\\n",(unsigned long long)mix_hash(vs[i],ks[j]));return 0;}\n')
+    r = subprocess.run(["gcc", "-O2", "-o", os.path.join(cdir, "test_impl"),
+                        test_c, os.path.join(cdir, "impl.c")],
+                       capture_output=True, text=True)
+    assert r.returncode == 0, r.stderr
+    r = subprocess.run([os.path.join(cdir, "test_impl")],
+                       capture_output=True, text=True)
+    c_vals = r.stdout.strip().split()
+    import numpy as np
+    ok = True
+    idx = 0
+    for v in [0, 1, 0x123456789ABCDEF0, 0xFFFFFFFFFFFFFFFF]:
+        for k in [0x123456789ABCDEF0, 0]:
+            py = m.mix(v, k)
+            cc = int(c_vals[idx], 16)
+            idx += 1
+            if py != cc:
+                print(f"MISMATCH v={v:#x} k={k:#x}: py={py:#x} c={cc:#x}")
+                ok = False
+    print(f"{name}: model-vs-C {'BIT-EXACT' if ok else 'MISMATCH'}")
+    return ok
+
+
+if __name__ == '__main__':
+    # smoke test
+    ok = build("al_p_smoke",
+               [('t3', 1, 7, 13, 29), ('sboxL', 5, 13)],
+               "smoke: t3 + SKINNY sboxL")
+    sys.exit(0 if ok else 1)

@@ -1,0 +1,17 @@
+[dead] BOYAR19_GF4INV 4st z=466.6 d=0xc0000000@18 constbits=6804
+[resume 2026-10-10T19:58Z] wave-13 full triage RELAUNCHED post-19:47:25Z-reboot (nice-19, backoff CLEAR). Pre-reboot BOYAR19 4st line above retained as raw evidence; full 21-try sequence re-runs from the top (same seed -> BOYAR19 4st duplicate line expected, identical inputs). Co-designed v2: random-64 domain + nibble-transpose diffusion.
+agentwork-launch: tag=track3/wave13-triage schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+[dead] BOYAR19_GF4INV 4st z=466.6 d=0xc0000000@18 constbits=6804
+[dead] BOYAR19_GF4INV 5st z=392.0 d=0x3@57 constbits=5837
+[dead] BOYAR19_GF4INV 6st z=281.1 d=0x10000000000@23 constbits=2948
+[dead] ULBC_s1 4st z=473.9 d=0x10@33 constbits=6672
+[dead] ULBC_s1 5st z=423.5 d=0x10000@41 constbits=6116
+[dead] ULBC_s1 6st z=340.5 d=0x1@42 constbits=5106
+[dead] JIA25_12GE_R1 4st z=512.0 d=0x400@12 constbits=5491
+[dead] JIA25_12GE_R1 5st z=512.0 d=0x400@3 constbits=3696
+[dead] JIA25_12GE_R1 6st z=352.3 d=0x4000000000000000@3 constbits=1641
+[dead] LU21_SKINNY 4st z=512.0 d=0x400@8 constbits=5143
+[dead] LU21_SKINNY 5st z=512.0 d=0x400@2 constbits=2671
+[dead] LU21_SKINNY 6st z=413.5 d=0x200000@42 constbits=1181
+[dead] ORTHROS_S0 4st z=480.6 d=0x800000@39 constbits=6669
+[dead] ORTHROS_S0 5st z=449.9 d=0x80000000@43 constbits=6265

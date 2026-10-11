@@ -1,0 +1,6 @@
+al_chi6e: xcheck=OK aval_maxdev=0.0135 aval_meandev=0.00950 minidiff_zmax=4.2 -> TRIAGE-PASS (8s)
+al_chi6f: xcheck=OK aval_maxdev=0.0125 aval_meandev=0.00910 minidiff_zmax=3.1 -> TRIAGE-PASS (7s)
+al_chi6g: xcheck=OK aval_maxdev=0.0141 aval_meandev=0.00936 minidiff_zmax=3.2 -> TRIAGE-PASS (3s)
+al_trichi3: xcheck=OK aval_maxdev=0.2574 aval_meandev=0.25023 minidiff_zmax=257.5 -> TRIAGE-KILL
+al_trichi4: xcheck=OK aval_maxdev=0.0142 aval_meandev=0.00951 minidiff_zmax=5.5 -> TRIAGE-PASS
+al_trichi3b: xcheck=OK aval_maxdev=0.1947 aval_meandev=0.18761 minidiff_zmax=193.4 -> TRIAGE-KILL

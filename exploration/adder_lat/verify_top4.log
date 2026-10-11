@@ -1,0 +1,8 @@
+V1 logN=16: max|z|=3.9 (d0=0x200000000000 bit43) est=20.00u
+V1 logN=18: max|z|=6.8 (d0=0x10000000 bit24) est=20.00u
+V2 logN=16: max|z|=7.1 (d0=0x80000000000 bit38) est=20.00u
+V2 logN=18: max|z|=12.2 (d0=0x80000000000 bit38) est=20.00u
+V3 logN=16: max|z|=3.6 (d0=0x8000000000000 bit16) est=20.00u
+V3 logN=18: max|z|=4.7 (d0=0x200000000000000 bit45) est=20.00u
+V4 logN=16: max|z|=4.5 (d0=0x4000000000000000 bit17) est=20.00u
+V4 logN=18: max|z|=5.3 (d0=0x10000000 bit40) est=20.00u

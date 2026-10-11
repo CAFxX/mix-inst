@@ -1,0 +1,6 @@
+RESULT name=al_chi6 cells=5848 area=18964 crit=20.4 delay_ratio=0.197 area_ratio=0.537 ref_crit=103.5 ref_area=35323 wall_s=138
+RESULT name=al_chi8 cells=8203 area=26742 crit=26.1 delay_ratio=0.252 area_ratio=0.757 ref_crit=103.5 ref_area=35323 wall_s=125
+RESULT name=al_orand6 cells=6921 area=19251 crit=28.6 delay_ratio=0.276 area_ratio=0.545 ref_crit=103.5 ref_area=35323 wall_s=42
+RESULT name=al_triand5 cells=5477 area=15666 crit=26.5 delay_ratio=0.256 area_ratio=0.444 ref_crit=103.5 ref_area=35323 wall_s=61
+RESULT name=al_andxor10 cells=10521 area=35239 crit=30.8 delay_ratio=0.298 area_ratio=0.998 ref_crit=103.5 ref_area=35323 wall_s=52
+ALLDONE

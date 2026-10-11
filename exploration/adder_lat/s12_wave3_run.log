@@ -1,0 +1,7 @@
+al_andxor8: S1-FLAG rc=2 wall=111s ::   [DIFF] key=0x92988f142674743 worst|z|=1.4 fisher_logp=-0.16 bonf_logp=1.04 |   LIN: PASS (rej=0)  DIFF: PASS (rej=0) | [S1 al_andxor8] LIN/DIFF 27s: LIN PASS DIFF PASS; marginal 109s: PB rej=1 RD rej=0 | [S1 al_andxor8] verdict: FLAG
+al_ornot6: S1-PASS rc=0 wall=102s ::   [DIFF] key=0x92988f142674743 worst|z|=1.9 fisher_logp=-0.44 bonf_logp=0.13 |   LIN: PASS (rej=0)  DIFF: PASS (rej=0) | [S1 al_ornot6] LIN/DIFF 25s: LIN PASS DIFF PASS; marginal 101s: PB rej=0 RD rej=0 | [S1 al_ornot6] verdict: CAL_PASS
+al_ornot6: S2-PASS rc=0 wall=159s :: max|z|=156.7 repeats=0 delta=0x0000040000000000
+al_chi6k: S1-PASS rc=0 wall=100s ::   [DIFF] key=0x92988f142674743 worst|z|=2.6 fisher_logp=-2.83 bonf_logp=-1.84 |   LIN: PASS (rej=0)  DIFF: PASS (rej=0) | [S1 al_chi6k] LIN/DIFF 13s: LIN PASS DIFF PASS; marginal 98s: PB rej=0 RD rej=0 | [S1 al_chi6k] verdict: CAL_PASS
+al_chi6k: S2-PASS rc=0 wall=583s :: max|z|=103.0 repeats=0 delta=0x0010000000000000
+al_nibchi4b: S1-FLAG rc=2 wall=31s ::   [DIFF] key=0x92988f142674743 worst|z|=69.4 fisher_logp=-inf bonf_logp=-2410.62 |   LIN: FLAG (rej=10)  DIFF: FLAG (rej=10) | [S1 al_nibchi4b] LIN/DIFF 27s: LIN FLAG DIFF FLAG; SKIPPED (LIN/DIFF kill) | [S1 al_nibchi4b] verdict: FLAG
+al_hybrid6: S1-FLAG rc=2 wall=128s ::   [DIFF] key=0x92988f142674743 worst|z|=2.3 fisher_logp=-0.93 bonf_logp=-0.87 |   LIN: PASS (rej=0)  DIFF: PASS (rej=0) | [S1 al_hybrid6] LIN/DIFF 23s: LIN PASS DIFF PASS; marginal 125s: PB rej=0 RD rej=1 | [S1 al_hybrid6] verdict: FLAG

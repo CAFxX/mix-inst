@@ -1,0 +1,9 @@
+P1a_t3x3_sboxL: v3 proxy max|z|=   55.0 (d0=0x800000000 bit31), est=19.00u
+P1a2_t3x3_sbox: v3 proxy max|z|=  256.0 (d0=0x4000000000 bit21), est=17.50u
+P1b_t3t3and_sboxL: v3 proxy max|z|=  168.3 (d0=0x10000000000000 bit53), est=17.85u
+P1c_t3andand_sboxL: v3 proxy max|z|=  160.1 (d0=0x20000000 bit29), est=16.70u
+P1d_andx3_sboxL: v3 proxy max|z|=  256.0 (d0=0x10000 bit10), est=15.55u
+P1e_t3x3_dual: v3 proxy max|z|=  256.0 (d0=0x10000000 bit28), est=18.50u
+P1f_t3t3and_dual: v3 proxy max|z|=  128.0 (d0=0x4000000 bit1), est=17.35u
+P1g_t3x4: v3 proxy max|z|=  256.0 (d0=0x8000000000 bit35), est=18.00u
+P1h_majx4: v3 proxy max|z|=  256.0 (d0=0x10000000 bit34), est=17.20u

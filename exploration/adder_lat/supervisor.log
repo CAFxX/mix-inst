@@ -1,0 +1,98 @@
+2026-10-08T06:52:02Z supervisor start: taking over Track 3. State: al_cascad on frontier (25.5u); al_chi6 S2/S3/S4 PASS Q1 pending (20.4u); al_chi8 S3/S4 in progress (subagent); al_chi6b full battery in progress (subagent); 7 wave-4 S0 survivors awaiting S1/S2 (chi8b 25.3, chi6b 19.8, ornot6b 21.0, ornotand5 24.8, ornotand6 28.6, chiconst8 25.9, hybrid8 25.9, feist_chi8 36.1). Planning wave-5.
+2026-10-08T06:58:48Z wave-5 triage: 4/6 PASS (chi6c 0.0150/6.7, chi6d 0.0156/3.7, ornot6c 0.0136/3.5, ornot6d 0.0126/3.8); 2 KILL (mix5a aval 0.0584/zmax 49.4, mix5b aval 0.0973/zmax 93.7 -- 5-stage barrier holds even for mixed ops). -> S0 next for 4 survivors.
+2026-10-08T07:16:08Z wave-5 S0 COMPLETE: al_chi6c 19.8u/6093 (ties record), al_chi6d 20.1u/6031, al_ornot6c 19.8u/6164 (ties record), al_ornot6d 20.1u/6099. Three candidates at 19.8u barrier (chi6b, chi6c, ornot6c). 19.8u appears to be the 6-stage floor. Next: S1/S2 for 4 survivors (GHA offload per 2026-10-08 standing instruction).
+2026-10-08T07:39:18Z wave-6 S0: al_and6a 20.1u/6116, al_and6b 19.8u/6039 (ties record). FOUR candidates at 19.8u (chi6b, chi6c, ornot6c, and6b) across 3 different ops -- 19.8u is the 6-stage floor in Sky130. Breaking it requires <6 stages or sub-3.3u/stage op. 5-stage barrier held (mix5a/b killed at triage). Next: S1/S2 for 6 wave-5/6 survivors via GHA.
+2026-10-08T12:55Z supervisor resumed after daemon restart. State: 6 wave-5/6 survivors (chi6c/d, ornot6c/d, and6a/b) were queued for GHA S1/S2 but never submitted (GHA supervisor did not include them; GHA now has cancellation issues). Launched s12_wave.py locally for all 6 (polite load gate active). Wave-7: 3 avalanche-aware chi6 schedules (chi6e/f/g) generated to address chi6b's Q1 kill; triage running.
+2026-10-08T13:05Z wave-7 triage: all 3 avalanche-aware chi6 (e/f/g) PASS (aval_maxdev 0.0125-0.0141, zmax 3.1-4.2). S0 running in background.
+2026-10-08T13:10Z al_linchi3 (3x lin+chi, 21.8u S0): TRIAGE-KILL, minidiff_zmax=18.5. 3 chi stages insufficient for differential even with lin diffusion. 6-stage floor confirmed for chi family.
+2026-10-09T01:55:43Z wave-8 triage: al_trichi4 PASS (aval 0.0142/zmax 5.5); al_trichi3, al_trichi3b KILL (avalanche catastrophic)
+2026-10-09T03:00:42Z mix-search-status-30m: subagent-spawn infra failing (2 consecutive 'no live runtime handle' errors), so launched al_trichi4 S0 directly: nohup nice -n 10 python3 s0_wave1.py al_trichi4 (polite load gate, results -> s0_results.txt). chi6e/f/g S1/S2 still load-gated.
+=== 2026-10-10 11:08Z TRACK-3 SUPERVISOR PIVOT (new supervisor, depth-1 subagent) ===
+Predecessor declared MISSION COMPLETE 10:44Z (5-stage AND-masking axis dead:
+5-stage DIFF wall theorem, 0/500 hetero 5-stage pass, 8 design rules in
+rootcause/TRACK3_FINAL_20261010.md + DESIGN_RULES.md). No running process since;
+this is a NEW direction, not a duplicate.
+New mission: north star = adder-latency design passing ALL gates (S0-S4, Q1 sac_z5=0, BIC).
+Axes to open: (1) 4-stage non-AND nonlinearities (maj/mux/ternary, chi-early-diffusion,
+nonlinear shifts); (2) non-uniform stage widths/hetero ops at 4-5 stages;
+(3) track-6 cross-pollination (dual-AND at 4 stages: t6_dual4a 19.9u S1/S2 on GHA);
+(4) ARX/shift-heavy diffusion; (5) Rule-6 dual-AND-last-stage thesis:
+watch track-5 hyb18_dual_a/b/c rerun (campaign-rerun-20261010-110721, 3 shards S1+S2, in flight ~11:07Z).
+Frontier: al_and6a 20.1u. Triage: cheap proxy/S0 local, S1/S2 via GHA (no S3 canary-pipe).
+--- 2026-10-10 11:25Z PIVOT wave P1 results ---
+Built s2proxy_v3.py (extends v2 seq-x methodology with dual/maj/sbox/sboxL/t4/t5 stages).
+P1 (4-stage new axes) ALL KILLED at logN=16:
+  P1a [t3x3,sboxL] z=55.0 (19.0u) | P1a2 [t3x3,sbox] z=256 | P1b z=168 | P1c z=160
+  P1d [andx3,sboxL] z=256 (control, as expected) | P1e [t3x3,dual] z=256 | P1f z=128
+  P1g [t3x4] z=256 (control) | P1h [majx4] z=256
+Root causes diagnosed:
+  (a) rasC2_0 S-box is per-bit STUCK on single-bit input diffs (delta=8: bit1 always 0;
+      delta=1: bits2,3 at 4/16). Screened 14 literature 4-bit S-boxes: NONE per-bit
+      balanced (best dev=4: SKINNY/TWINE/KLEIN/PRINCE/QARMA_s2). asb5a survives only
+      because L(5,13) rescues stuck bits via live taps from other nibbles (P1a2 w/o L: 256).
+  (b) d_3 from 3 t3 stages (3^3=27) cannot cover 16 nibbles against stuck bits.
+P2 launched: high-fan-out front-ends (t4/t5: 4^2=16/5^2=25 certain coverage in 2 stages)
+  + strict-quiet last stage (sboxL/dual). P2a [t4x2,sboxL] 16.7u, P2b [t5x2,sboxL] 16.7u,
+  P2c [t4x2,dual] 16.2u, P2d [t5x2,dual] 16.2u, P2e [t3t3,sboxLx2] 20.0u, P2f [t4,t3,sboxL] 15.65u.
+CROSS-TRACK WATCH:
+  t6_dual4a (track-6, 19.9u): GHA t6-dual4a-s1-20261010-092041 DONE, S1 FLAG (LIN 10/10 +
+    DIFF 10/10, D=4096 on keys 0/0xAAAA) -- vanishing-AND-pair signature, same class as
+    batch-24 schedule bug. Per co-design-before-kill: likely KILLED-INVALID (schedule bug),
+    NOT axis kill. Track-6 to adjudicate; density hypothesis NOT falsified by this alone.
+  hyb18_dual_a/b/c (track-5, in flight run 38047303894 since 11:07Z): my v3 seq-x proxy on
+    their EXACT 5-stage specs gives z=44.8/48.4/84.9 vs their v1 random-x proxy z=6.0/7.9/8.0.
+    METHODOLOGY BUG: track-5 batch-18 used v1 random-x (proven wrong on ht51/ht53).
+    PREDICTION: GHA S1/S2 will kill all three. Watching run for actual verdict.
+--- 2026-10-10 11:35Z hyb18_dual GHA verdict HARVESTED (campaign-rerun-20261010-110721) ---
+Run 38047303894: 3/3 shards rc=0, collect OK. Verdicts (raw JSON from repo):
+  hyb18_dual_a (19.55u): S1 FLAG -- DIFF 10/10 (PB/RED/LIN clean)
+  hyb18_dual_b (19.55u): S1 FLAG -- DIFF 10/10 (PB/RED/LIN clean)
+  hyb18_dual_c (18.40u): S1 FLAG -- LIN 2/10 + DIFF 9/10
+v3 seq-x proxy prediction CONFIRMED (predicted z=44.8/48.4/84.9 -> kill).
+Caveat: rerun used --skip-canary (no canary validation on THIS run), but two
+independent methods (v3 proxy + GHA S1) agree -> terminal kill justified.
+Dual-AND-last-stage 5-stage axis (track-5 batch-18): S1-KILLED. Rule-6 thesis
+(stricter quiet breaks the wall) does NOT survive real S1 for dual-last at 5 stages.
+NOTE for track-5: batch-18 pre-screen used v1 RANDOM-x proxy (proven buggy on
+ht51/ht53) -- their z=6.0/7.9/8.0 were false-clean. Methodology lesson re-confirmed.
+--- 2026-10-10 11:50Z P2/P3 results ---
+P2 (t4/t5 high-fan-out front + strict-quiet last): P2a 256, P2b 128, P2c 256, P2d 256,
+  P2f 256 -- ALL KILLED. EXCEPT P2e [t3,t3,sboxL(5,13),sboxL(11,29)] z=14.5 (gray zone, est 20.0u).
+  Finding: cascaded S-box layers bootstrap difference weight (DDT spreads wt-1 -> wt-1..3);
+  single sbox layer insufficient regardless of front-end strength.
+P3 (SKINNY dev-4 sbox): P3a 78.2, P3b [t3,t3,sbox,sboxL] 256 (!!), P3c 256, P3d 256,
+  P3e [t3,t3,sboxL,sboxL] 32.0, P3f [t3x3,sboxL] 32.5, P3g 256.
+  Findings: (1) middle L is LOAD-BEARING (P3b w/o middle L: 256); (2) SKINNY NOT better
+  than rasC2_0 for the 2-layer shape (32.0 vs 14.5) -- but L-pair differs ((5,13)x2 vs
+  (5,13)+(11,29)): L-pair is a real dimension; (3) P3f [t3x3,sboxL] SKINNY 32.5 < P1a rasC2_0 55.
+P4 + sboxL L-pair/morphology random search (40 cfgs, logN=14) running in bg.
+--- 2026-10-10 12:05Z BREAKTHROUGH LEAD: cascaded-S-box axis ---
+Random L-pair search (40 cfgs, skeleton [t3,t3,sboxL(L1),sboxL(L2)], SKINNY, logN=14):
+  8 hits with z=3.5-4.5 (all skeleton A). Best: L1=(2,8),L2=(41,13) z=3.5.
+  L-pair is a RICH dimension: (5,13)+(11,29) z=6.5, (5,13)x2 z=32, (5,13)+(3,17) z=63.5.
+  Skeleton B [sboxLx3] and C [t3,sboxLx2]: all 128-256 (dead).
+  sdual axis: P4d [sdualx5] z=35.1 (over budget 21u), P4e/f killed -> sdual DEAD.
+V1 verified logN=16: z=3.9 (holds). logN=18 running.
+Bundles built (gen_waveP.py, NEW generator): al_psb1 [t3,t3,sboxL(2,8),sboxL(41,13)],
+  al_psb2 [t3,t3,sboxL(46,15),sboxL(24,51)]; model-vs-C BIT-EXACT; RTL 64/64 PASS.
+S0 running (run_synth.py, Yosys 0.69 pinned). Est 20.0u -- S0 decides vs 20.1u frontier.
+Design rule emerging: cascaded S-box layers bootstrap difference weight via DDT
+  (wt-1 -> wt-1..3 per nibble); middle L is load-bearing; L-pair co-design required.
+--- 2026-10-10 12:20Z cost analysis ---
+al_psb1 S0 = 24.1u (2 t3 @ 9u + 2 sboxL @ 7.55u in-context). Need sboxL < 5.55u for <20.1u.
+Component S0: SKINNY sbox alone 7.5u standalone / 10.0u sboxL(5,13); rasC2_0 sboxL(5,13) 8.5u standalone (494 vs 708 cells).
+P5 partial-S-box (8 nibbles/layer): ALL DEAD (192-256). Axis closed.
+x^(ra&rb) w/o linear term: NEVER bijective (0/6,0/15,0/28 for n=4,6,8). Cheap-stage idea dead.
+ARX: adder is 83u (ripple) in this flow -- dead on cost.
+Plan: cheapest S-box with z<9. L-pair searches (24 cfgs each) for rasC2_0/TWINE/KLEIN running;
+  sbox-alone S0 for rasC2_0/TWINE/KLEIN/PRINCE/QARMA_s2 running.
+--- 2026-10-10 12:35Z NEW AXIS: 6-stage AND schedule cost-optimization ---
+S0 varies with schedule! al_and6a sched=20.1u, var1=19.8u (z=17.8), var2=19.2u (z=256 DEAD).
+GIFT sbox: z=3.9-5.9 but 7.5u standalone (case-encoding does not exploit GIFT structure);
+  al_pg1 [t3,t3,GIFT-sboxLx2]=23.2u. S-box axis: statistically excellent (z<7) but
+  economically infeasible (23-24u vs 20.1u). AXIS PARKED (not killed -- if a cheap
+  strict-quiet layer is ever found, it revives).
+New axis: schedule-search 6-stage AND for (z<18, min S0). 120 random schedules running.
+  Rationale: 6-stage AND is PROVEN S2-clean; S0 has ~1u schedule variance; 19.8u already
+  demonstrated (var1, z=17.8~and6a).
+2026-10-10T13:10Z [status-30m cron] search_and6_120 died silently at sched 57 (log mtime 12:01:48Z, no traceback, no OOM in dmesg). Relaunched as resume_search_and6.py (seed 200, i=58..119, same RNG stream, same log) under nice-19 via agentwork-launch.sh, tag mix-track3-and6-resume. DO NOT relaunch; 3 KEEP survivors already at i=66-68 (z=6.4/8.1/7.6).

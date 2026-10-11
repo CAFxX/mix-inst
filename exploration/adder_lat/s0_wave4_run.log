@@ -1,0 +1,32 @@
+RESULT name=al_chi8b cells=8609 area=28373 crit=25.3 delay_ratio=0.244 area_ratio=0.803 ref_crit=103.5 ref_area=35323 wall_s=175
+RESULT name=al_chi6b cells=6296 area=20176 crit=19.8 delay_ratio=0.191 area_ratio=0.571 ref_crit=103.5 ref_area=35323 wall_s=125
+RESULT name=al_ornot6b cells=5696 area=18372 crit=21.0 delay_ratio=0.203 area_ratio=0.520 ref_crit=103.5 ref_area=35323 wall_s=39
+RESULT name=al_ornotand5 cells=5202 area=14636 crit=24.8 delay_ratio=0.240 area_ratio=0.414 ref_crit=103.5 ref_area=35323 wall_s=91
+RESULT name=al_ornotand6 cells=6888 area=19560 crit=28.6 delay_ratio=0.276 area_ratio=0.554 ref_crit=103.5 ref_area=35323 wall_s=51
+RESULT name=al_chiconst8 cells=8215 area=26754 crit=25.9 delay_ratio=0.250 area_ratio=0.757 ref_crit=103.5 ref_area=35323 wall_s=64
+RESULT name=al_feist_chi8 SYNTH-FAIL rc=1 wall_s=44
+
+ynth.py", line 86, in main
+    dut = synth_one(src, top, os.path.join(workdir, "_dut"))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hatch/workspace/mix/exploration/run_synth.py", line 65, in synth_one
+    raise RuntimeError(f"yosys failed for {top}:\n{r.stdout[-3000:]}\n{r.stderr[-3000:]}")
+RuntimeError: yosys failed for al_feist_chi8:
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+ (git sha1 9f09efcdb-dirty, Release, GNU /home/conda/feedstock_root/build_artifacts/bld/rattler-build_yosys_1788957668/build_env/bin/x86_64-conda-linux-gnu-c++ 15.3.0) [github.com/conda-forge/yosys-feedstock at main]
+
+-- Executing script file `/home/hatch/workspace/mix/exploration/adder_lat/s0_work/al_feist_chi8/_dut/s_al_feist_chi8.ys' --
+
+1. Executing Verilog-2005 frontend: /home/hatch/workspace/mix/exploration/fast_battery/candidates/al_feist_chi8/rtl.v
+Parsing Verilog input from `/home/hatch/workspace/mix/exploration/fast_battery/candidates/al_feist_chi8/rtl.v' to AST representation.
+
+/home/hatch/workspace/mix/exploration/fast_battery/candidates/al_feist_chi8/rtl.v:9: ERROR: syntax error, unexpected '['
+
+
+RESULT name=al_hybrid8 cells=8332 area=26963 crit=25.9 delay_ratio=0.250 area_ratio=0.763 ref_crit=103.5 ref_area=35323 wall_s=125
+RESULT name=al_feist_chi8 cells=5659 area=16019 crit=36.1 delay_ratio=0.349 area_ratio=0.454 ref_crit=103.5 ref_area=35323 wall_s=114

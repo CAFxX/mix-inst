@@ -1,0 +1,8 @@
+# wave=P3 sbox=SKINNY logN=16
+P3a_t3and_sboxLx2: v3 proxy max|z|=   78.2 (d0=0x10000000 bit0), est=18.85u
+P3b_t3t3_sbox_sboxL: v3 proxy max|z|=  256.0 (d0=0x10000 bit9), est=18.50u
+P3c_t3_sboxLx2: v3 proxy max|z|=  256.0 (d0=0x4000000 bit21), est=15.50u
+P3d_and_sboxLx3: v3 proxy max|z|=  256.0 (d0=0x4000000 bit9), est=19.85u
+P3e_t3t3_sboxLx2: v3 proxy max|z|=   32.0 (d0=0x200000000000000 bit0), est=20.00u
+P3f_t3x3_sboxL: v3 proxy max|z|=   32.5 (d0=0x20000000000000 bit13), est=19.00u
+P3g_t3t3_sboxL: v3 proxy max|z|=  256.0 (d0=0x10000 bit9), est=14.50u

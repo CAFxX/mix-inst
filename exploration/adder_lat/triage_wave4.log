@@ -1,0 +1,8 @@
+al_chi8b: xcheck=OK aval_maxdev=0.0127 aval_meandev=0.00920 minidiff_zmax=3.6 -> TRIAGE-PASS (17s)
+al_chi6b: xcheck=OK aval_maxdev=0.0150 aval_meandev=0.00932 minidiff_zmax=5.9 -> TRIAGE-PASS (11s)
+al_ornot6b: xcheck=OK aval_maxdev=0.0131 aval_meandev=0.00918 minidiff_zmax=3.0 -> TRIAGE-PASS (32s)
+al_ornotand5: xcheck=OK aval_maxdev=0.0126 aval_meandev=0.00919 minidiff_zmax=2.8 -> TRIAGE-PASS (41s)
+al_ornotand6: xcheck=OK aval_maxdev=0.0114 aval_meandev=0.00885 minidiff_zmax=3.6 -> TRIAGE-PASS (7s)
+al_chiconst8: xcheck=OK aval_maxdev=0.0125 aval_meandev=0.00902 minidiff_zmax=3.5 -> TRIAGE-PASS (8s)
+al_feist_chi8: xcheck=OK aval_maxdev=0.0130 aval_meandev=0.00923 minidiff_zmax=3.3 -> TRIAGE-PASS (13s)
+al_hybrid8: xcheck=MISMATCH vec 0: py=0xee8b2ef47bdd06b3 c=0xa5183512f9f93383

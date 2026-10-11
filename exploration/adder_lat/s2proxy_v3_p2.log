@@ -1,0 +1,6 @@
+P2a_t4x2_sboxL: v3 proxy max|z|=  256.0 (d0=0x80000 bit54), est=16.70u
+P2b_t5x2_sboxL: v3 proxy max|z|=  128.0 (d0=0x800000 bit50), est=16.70u
+P2c_t4x2_dual: v3 proxy max|z|=  256.0 (d0=0x4000000 bit0), est=16.20u
+P2d_t5x2_dual: v3 proxy max|z|=  256.0 (d0=0x4000000 bit62), est=16.20u
+P2e_t3t3_sboxLx2: v3 proxy max|z|=   14.5 (d0=0x200000000000000 bit14), est=20.00u
+P2f_t4_t3_sboxL: v3 proxy max|z|=  256.0 (d0=0x800000 bit50), est=15.60u

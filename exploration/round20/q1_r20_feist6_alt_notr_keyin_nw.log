@@ -1,0 +1,18 @@
+/home/hatch/workspace/mix/exploration/round20/models/r20.py:93: RuntimeWarning: overflow encountered in scalar multiply
+  return (_rotl64_np(k, r) ^ (np.uint64(i + 1) * GOLDEN64)) & MASK32
+  bit 16/64 done (31s)
+  bit 32/64 done (57s)
+  bit 48/64 done (79s)
+  bit 64/64 done (99s)
+{
+ "candidate": "r20_feist6_alt_notr_keyin_nw",
+ "key": "0x123456789abcdef0",
+ "N": 262144,
+ "sac_maxdev": 0.00446319580078125,
+ "sac_meandev": 0.0007956074550747871,
+ "sac_z5": 0,
+ "bic_maxcorr": 0.17232347425964098,
+ "bic_meancorr": 0.0016262881529336551,
+ "avalanche_mean": 31.999824821949005,
+ "wall_s": 99.5
+}

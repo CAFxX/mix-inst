@@ -1,0 +1,22 @@
+=== STAGE s0 ===
+S0_DONE r22_wide_spn4_nw rc=0 RESULT name=r22_wide_spn4_nw cells=5387 area=14391 crit=27.1 delay_ratio=0.262 area_ratio=0.407 ref_crit=103.5 ref_area=
+S0_DONE r22_em_chichi4_nw rc=0 RESULT name=r22_em_chichi4_nw cells=5750 area=17155 crit=23.2 delay_ratio=0.224 area_ratio=0.486 ref_crit=103.5 ref_area
+S0_DONE r22_keyed_spn6_nw rc=0 RESULT name=r22_keyed_spn6_nw cells=3796 area=10503 crit=29.3 delay_ratio=0.283 area_ratio=0.297 ref_crit=103.5 ref_area
+S0_DONE r22_em_chichi6_rot_nw rc=0 RESULT name=r22_em_chichi6_rot_nw cells=1698 area=4934 crit=16.9 delay_ratio=0.163 area_ratio=0.140 ref_crit=103.5 ref_a
+S0_DONE r22_lm5_chi_nw rc=0 RESULT name=r22_lm5_chi_nw cells=2674 area=7401 crit=21.7 delay_ratio=0.210 area_ratio=0.210 ref_crit=103.5 ref_area=353
+S0_DONE r22_benes_chichi_nw rc=0 RESULT name=r22_benes_chichi_nw cells=3810 area=10619 crit=22.2 delay_ratio=0.214 area_ratio=0.301 ref_crit=103.5 ref_ar
+ALL_STAGES_DONE s0
+=== STAGE s2 ===
+S2_DONE r22_wide_spn4_nw rc=2 # delta                  max|z|  low8_chi2 full_repeats
+KILL delta=0x0000000004000000 repeats=147031 > kill_repeats=10
+S2_DONE r22_em_chichi6_rot_nw rc=2 # delta                  max|z|  low8_chi2 full_repeats
+KILL delta=0x0000000000000400 repeats=2096880 > kill_repeats=10
+S2_DONE r22_keyed_spn6_nw rc=2 # delta                  max|z|  low8_chi2 full_repeats
+KILL delta=0x0000000000000400 repeats=2097144 > kill_repeats=10
+S2_DONE r22_em_chichi4_nw rc=2 # delta                  max|z|  low8_chi2 full_repeats
+KILL delta=0x0000000004000000 repeats=14521 > kill_repeats=10
+S2_DONE r22_lm5_chi_nw rc=2 # delta                  max|z|  low8_chi2 full_repeats
+KILL delta=0x0000000000000400 repeats=2095350 > kill_repeats=10
+S2_DONE r22_benes_chichi_nw rc=2 # delta                  max|z|  low8_chi2 full_repeats
+KILL delta=0x0000000000000400 repeats=2096184 > kill_repeats=10
+ALL_STAGES_DONE s2

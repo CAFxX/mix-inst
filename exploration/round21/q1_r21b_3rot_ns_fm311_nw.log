@@ -1,0 +1,18 @@
+/home/hatch/workspace/mix/exploration/round21/models/r21.py:106: RuntimeWarning: overflow encountered in scalar multiply
+  return (_rotl64_np(k, r) ^ (np.uint64(i + 1) * GOLDEN64)) & MASK32
+  bit 16/64 done (61s)
+  bit 32/64 done (112s)
+  bit 48/64 done (159s)
+  bit 64/64 done (224s)
+{
+ "candidate": "r21b_3rot_ns_fm311_nw",
+ "key": "0x123456789abcdef0",
+ "N": 262144,
+ "sac_maxdev": 0.003711700439453125,
+ "sac_meandev": 0.0007761893793940544,
+ "sac_z5": 0,
+ "bic_maxcorr": 0.008834760807572305,
+ "bic_meancorr": 0.0015602344953653847,
+ "avalanche_mean": 31.998569071292877,
+ "wall_s": 223.5
+}

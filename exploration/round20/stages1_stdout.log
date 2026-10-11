@@ -1,0 +1,41 @@
+XCHECK_DONE r20_feist6_alt_notr_chioff13all_nw rc=0 XCHECK r20_feist6_alt_notr_chioff13all_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r20_feist6_alt_notr_s1final_nw rc=0 XCHECK r20_feist6_alt_notr_s1final_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r20_feist6_alt_notr_keyin_nw rc=0 XCHECK r20_feist6_alt_notr_keyin_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r20_feist6_alt_notr_chioff13_517_nw rc=0 XCHECK r20_feist6_alt_notr_chioff13_517_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r20_feist6_alt_notr_drop4_nw rc=0 XCHECK r20_feist6_alt_notr_drop4_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r20_feist6_alt_notr_713_nw rc=0 XCHECK r20_feist6_alt_notr_713_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r20_feist6_alt_notr_chioff31_nw rc=0 XCHECK r20_feist6_alt_notr_chioff31_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r20_feist6_alt_notr_fm16_nw rc=0 XCHECK r20_feist6_alt_notr_fm16_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r20_feist6_alt_chioff13_nw rc=0 XCHECK r20_feist6_alt_chioff13_nw: PASS 10000/10000 C==Python
+ALL_XCHECK_DONE
+RTLCHECK_DONE r20_feist6_alt_notr_s1final_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r20_feist6_alt_notr_chioff13all_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r20_feist6_alt_notr_chioff13_517_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r20_feist6_alt_notr_keyin_nw rc=1 RuntimeError: RTL check FAILED for r20_feist6_alt_notr_keyin_nw:
+RTLCHECK_DONE r20_feist6_alt_notr_drop4_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r20_feist6_alt_notr_713_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r20_feist6_alt_notr_fm16_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r20_feist6_alt_notr_chioff31_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r20_feist6_alt_chioff13_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+ALL_RTLCHECK_DONE
+S0_DONE r20_feist6_alt_notr_s1final_nw rc=0 RESULT name=r20_feist6_alt_notr_s1final_nw cells=4091 area=11700 crit=39.4 delay_ratio=0.381 area_ratio=0.331 ref_crit=1
+S0_DONE r20_feist6_alt_notr_chioff13all_nw rc=0 RESULT name=r20_feist6_alt_notr_chioff13all_nw cells=4357 area=12511 crit=37.0 delay_ratio=0.357 area_ratio=0.354 ref_cr
+S0_DONE r20_feist6_alt_notr_keyin_nw rc=0 RESULT name=r20_feist6_alt_notr_keyin_nw cells=4371 area=12350 crit=38.0 delay_ratio=0.367 area_ratio=0.350 ref_crit=103
+S0_DONE r20_feist6_alt_notr_chioff13_517_nw rc=0 RESULT name=r20_feist6_alt_notr_chioff13_517_nw cells=4100 area=11734 crit=38.4 delay_ratio=0.371 area_ratio=0.332 ref_c
+S0_DONE r20_feist6_alt_notr_drop4_nw rc=0 RESULT name=r20_feist6_alt_notr_drop4_nw cells=4198 area=11787 crit=34.3 delay_ratio=0.331 area_ratio=0.334 ref_crit=103
+S0_DONE r20_feist6_alt_notr_713_nw rc=0 RESULT name=r20_feist6_alt_notr_713_nw cells=4058 area=11729 crit=38.6 delay_ratio=0.373 area_ratio=0.332 ref_crit=103.5
+S0_DONE r20_feist6_alt_notr_chioff31_nw rc=0 RESULT name=r20_feist6_alt_notr_chioff31_nw cells=3863 area=11199 crit=37.5 delay_ratio=0.362 area_ratio=0.317 ref_crit=
+S0_DONE r20_feist6_alt_notr_fm16_nw rc=0 RESULT name=r20_feist6_alt_notr_fm16_nw cells=4717 area=13401 crit=40.5 delay_ratio=0.391 area_ratio=0.379 ref_crit=103.
+S0_DONE r20_feist6_alt_chioff13_nw rc=0 RESULT name=r20_feist6_alt_chioff13_nw cells=4407 area=12743 crit=40.0 delay_ratio=0.386 area_ratio=0.361 ref_crit=103.5
+ALL_S0_DONE
+S1_DONE r20_feist6_alt_notr_chioff13all_nw rc=0 [S1 r20_feist6_alt_notr_chioff13all_nw] verdict: CAL_PASS
+S1_DONE r20_feist6_alt_notr_s1final_nw rc=0 [S1 r20_feist6_alt_notr_s1final_nw] verdict: CAL_PASS
+S1_DONE r20_feist6_alt_notr_chioff13_517_nw rc=0 [S1 r20_feist6_alt_notr_chioff13_517_nw] verdict: CAL_PASS
+S1_DONE r20_feist6_alt_notr_keyin_nw rc=0 [S1 r20_feist6_alt_notr_keyin_nw] verdict: CAL_PASS
+S1_DONE r20_feist6_alt_notr_drop4_nw rc=0 [S1 r20_feist6_alt_notr_drop4_nw] verdict: CAL_PASS
+S1_DONE r20_feist6_alt_notr_713_nw rc=0 [S1 r20_feist6_alt_notr_713_nw] verdict: CAL_PASS
+S1_DONE r20_feist6_alt_notr_fm16_nw rc=0 [S1 r20_feist6_alt_notr_fm16_nw] verdict: CAL_PASS
+S1_DONE r20_feist6_alt_notr_chioff31_nw rc=0 [S1 r20_feist6_alt_notr_chioff31_nw] verdict: CAL_PASS
+S1_DONE r20_feist6_alt_chioff13_nw rc=0 [S1 r20_feist6_alt_chioff13_nw] verdict: CAL_PASS
+ALL_S1_DONE
+BATTERY_STAGES_1_DONE

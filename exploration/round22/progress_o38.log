@@ -1,0 +1,38 @@
+=== O38 STAGE xcheck ===
+XCHECK_DONE r22c_spn_mix4r_lp_nw rc=0 XCHECK r22c_spn_mix4r_lp_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r22c_spn_mix5r_lp_nw rc=0 XCHECK r22c_spn_mix5r_lp_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r22c_spn_mix5r_shx_nw rc=0 XCHECK r22c_spn_mix5r_shx_nw: PASS 10000/10000 C==Python
+XCHECK_DONE r22c_spn_mix6r_lp_nw rc=0 XCHECK r22c_spn_mix6r_lp_nw: PASS 10000/10000 C==Python
+ALL_STAGES_DONE xcheck
+=== O38 STAGE rtlcheck ===
+RTLCHECK_DONE r22c_spn_mix5r_lp_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r22c_spn_mix4r_lp_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r22c_spn_mix6r_lp_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+ALL_STAGES_DONE rtlcheck
+=== O38 STAGE rtlcheck ===
+RTLCHECK_SKIP r22c_spn_mix4r_lp_nw
+RTLCHECK_SKIP r22c_spn_mix5r_lp_nw
+RTLCHECK_SKIP r22c_spn_mix6r_lp_nw
+RTLCHECK_SKIP r22c_spn_mix5r_shx_nw
+ALL_STAGES_DONE rtlcheck
+=== O38 STAGE rtlcheck ===
+RTLCHECK_SKIP r22c_spn_mix4r_lp_nw
+RTLCHECK_SKIP r22c_spn_mix5r_lp_nw
+RTLCHECK_SKIP r22c_spn_mix6r_lp_nw
+RTLCHECK_DONE r22c_spn_mix5r_shx_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+ALL_STAGES_DONE rtlcheck
+=== O38 STAGE s0 ===
+S0_DONE r22c_spn_mix4r_lp_nw rc=0 RESULT name=r22c_spn_mix4r_lp_nw cells=4656 area=12949 crit=28.3 delay_ratio=0.273 area_ratio=0.367 ref_crit=103.5 ref_a
+S0_DONE r22c_spn_mix5r_lp_nw rc=0 RESULT name=r22c_spn_mix5r_lp_nw cells=7144 area=19253 crit=34.5 delay_ratio=0.333 area_ratio=0.545 ref_crit=103.5 ref_a
+S0_DONE r22c_spn_mix6r_lp_nw rc=0 RESULT name=r22c_spn_mix6r_lp_nw cells=9187 area=24483 crit=40.5 delay_ratio=0.391 area_ratio=0.693 ref_crit=103.5 ref_a
+S0_DONE r22c_spn_mix5r_shx_nw rc=0 RESULT name=r22c_spn_mix5r_shx_nw cells=4637 area=12890 crit=29.0 delay_ratio=0.280 area_ratio=0.365 ref_crit=103.5 ref_
+ALL_STAGES_DONE s0
+=== O38 STAGE s2 ===
+S2_DONE r22c_spn_mix4r_lp_nw rc=0 # delta                  max|z|  low8_chi2 full_repeats
+PASS max_repeats=1 max|z|=13.6 (all 115 deltas)
+S2_TERMINATED r22c_spn_mix6r_lp_nw MANUALLY_KILLED_BY_COORDINATOR_TO_REDUCE_LOAD (rc=143, NOT a real S2 verdict; 40.5u delay-dominated, lowest priority probe)
+S2_DONE r22c_spn_mix5r_lp_nw rc=0 # delta                  max|z|  low8_chi2 full_repeats
+PASS max_repeats=0 max|z|=4.3 (all 115 deltas)
+S2_DONE r22c_spn_mix5r_shx_nw rc=2 # delta                  max|z|  low8_chi2 full_repeats
+KILL delta=0x0000000000000080 repeats=190 > kill_repeats=10
+ALL_STAGES_DONE s2

@@ -1,0 +1,8 @@
+# Expert-suggested candidates (2026-10-05) — all verified bijective, DU=4, NL=4 by independent Python
+# QARMA sigma tables: Avanzi, The QARMA Block Cipher Family, ToSC 2017(1):4-44, eprint 2016/444, section 3.3
+# JIA11GE / JIA12GE_EX: Jia et al., How Small Can S-boxes Be?, ToSC 2025(1), via expert note (11-GE headline table still unreachable; 12-GE example published in paper)
+QARMA_S0 00 0e 02 0a 09 0f 08 0b 06 04 03 07 0d 0c 01 05
+QARMA_S1 0a 0d 0e 06 0f 07 03 05 09 08 00 0c 0b 01 02 04
+QARMA_S2 0b 06 08 0f 0c 00 09 0e 03 07 04 05 0d 02 01 0a
+JIA25_11GE 07 02 0d 0b 06 0a 0c 03 01 00 09 08 04 0e 0f 05
+JIA25_12GE_EX 00 0b 0f 05 03 0a 0e 06 09 02 0d 07 0c 04 08 01

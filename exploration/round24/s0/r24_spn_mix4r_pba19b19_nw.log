@@ -1,0 +1,4 @@
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT r24_spn_mix4r_pba19b19_nw: cells=5135 area=13873 crit=27.8
+RESULT name=r24_spn_mix4r_pba19b19_nw cells=5135 area=13873 crit=27.8 delay_ratio=0.269 area_ratio=0.393 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)

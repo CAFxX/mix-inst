@@ -1,0 +1,38 @@
+# Low-latency 4-bit S-boxes: second literature batch (verified by coordinator 2026-10-05)
+# All rows: bijective, DU=4, NL=4 (computed locally with independent Python). Sources per name.
+# ULBC_s1: uLBC, CiC 2025(4) Table 2, https://cic.iacr.org/p/1/4/25/pdf
+# BOYAR19_GF4INV: Boyar/Find/Peralta 2019 GF(2^4) inverter circuit (x0=LSB), ANF cross-checked
+# THF_BLINK_S0: THF/Blink ToSC 2025 S5.2, https://eprint.iacr.org/2025/1314.pdf (involution)
+# LU21_*: Lu et al. INDOCRYPT 2021 (eprint 2021/1644); area-optimal circuits evaluated to tables
+# JIA25_12GE_R*: Jia et al. ToSC 2025(1) authors' repo 12GE reps (the 11GE table is unreachable)
+# ORTHROS_S0: Orthros ToSC 2021(1) Table 1, https://tosc.iacr.org/index.php/ToSC/article/view/8833
+# PRINCE_S0: PRINCE ASIACRYPT 2012, eprint 2012/529 S2
+# SAAR11_G*: Saarinen SAC 2011 Table 1, canonical reps of 16 optimal LE classes (non-dups only)
+ULBC_s1 08 00 01 05 0c 07 04 06 02 0a 03 0d 0e 0f 0b 09
+BOYAR19_GF4INV 00 04 0c 08 01 0a 0e 0d 03 0b 05 09 02 07 06 0f
+THF_BLINK_S0 01 00 09 03 08 05 0e 07 04 02 0c 0b 0a 0f 06 0d
+LU21_RECTANGLE 06 05 0c 0a 01 0e 07 09 0b 00 03 0d 08 0f 04 02
+LU21_PICCOLO 0e 04 0b 02 03 08 00 09 01 0a 07 0f 06 0c 05 0d
+LU21_SKINNY 0c 06 09 00 01 0a 02 0b 03 08 05 0d 04 0e 07 0f
+LU21_LBLOCK_S0 0e 09 0f 00 0d 04 0a 0b 01 02 08 03 07 06 0c 05
+JIA25_12GE_R1 00 04 0c 0a 05 01 0d 0b 02 07 0f 08 0e 09 06 03
+JIA25_12GE_R2 00 0b 06 0f 01 0a 0e 07 03 09 05 0d 04 0c 08 02
+JIA25_12GE_R3 00 01 04 07 06 0d 02 0a 0c 0f 09 08 0e 05 0b 03
+ORTHROS_S0 01 00 02 04 03 08 06 0d 09 0a 0b 0e 0f 0c 07 05
+PRINCE_S0 0b 0f 03 02 0a 0c 09 01 06 07 08 00 0e 05 0d 04
+SAAR11_G0 00 01 02 03 04 06 08 0a 05 0b 0c 0f 07 0e 09 0d
+SAAR11_G1 00 01 02 03 04 06 08 0a 05 0b 0c 0f 0e 0d 09 07
+SAAR11_G2 00 01 02 03 04 06 08 0a 05 0b 0c 0f 07 09 0d 0e
+SAAR11_G3 00 01 02 03 04 06 08 0b 05 0c 0d 07 0f 09 0e 0a
+SAAR11_G4 00 01 02 03 04 06 08 0b 05 0c 09 0d 0e 0a 07 0f
+SAAR11_G5 00 01 02 03 04 06 08 0b 05 0c 0d 07 0a 0f 09 0e
+SAAR11_G6 00 01 02 03 04 06 08 0b 05 0c 0d 07 09 0f 0a 0e
+SAAR11_G7 00 01 02 03 04 06 08 0c 05 09 0b 0d 0e 0a 07 0f
+SAAR11_G8 00 01 02 03 04 06 08 0a 05 0b 0c 0f 0d 0e 07 09
+SAAR11_G9 00 01 02 03 04 06 08 0b 05 09 0c 0e 0d 07 0a 0f
+SAAR11_G10 00 01 02 03 04 06 08 0c 05 09 0b 0d 0e 07 0a 0f
+SAAR11_G11 00 01 02 03 04 06 08 0c 05 09 0d 0f 0a 07 0b 0e
+SAAR11_G12 00 01 02 03 04 06 08 0b 05 0c 09 0d 0e 07 0a 0f
+SAAR11_G13 00 01 02 03 04 06 08 0b 05 09 0c 0e 0d 0a 07 0f
+SAAR11_G14 00 01 02 03 04 06 08 0b 05 09 0c 0f 07 0d 0a 0e
+SAAR11_G15 00 01 02 03 04 06 08 0a 05 0b 0c 0f 07 0d 09 0e

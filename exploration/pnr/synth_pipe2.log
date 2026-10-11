@@ -1,0 +1,579 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+ (git sha1 9f09efcdb-dirty, Release, GNU /home/conda/feedstock_root/build_artifacts/bld/rattler-build_yosys_1788957668/build_env/bin/x86_64-conda-linux-gnu-c++ 15.3.0) [github.com/conda-forge/yosys-feedstock at main]
+
+-- Running command `read_verilog ../rtl/r3/mix_pipe2_base.v; hierarchy -check -top mix_pipe2_base; proc; opt; fsm; opt; memory; opt; techmap; opt; dfflibmap -liberty /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_100C_1v80.lib; abc -liberty /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_100C_1v80.lib -constr /dev/null; clean; write_verilog -noattr -noexpr -nodec synth_pipe2.v;' --
+
+1. Executing Verilog-2005 frontend: ../rtl/r3/mix_pipe2_base.v
+Parsing Verilog input from `../rtl/r3/mix_pipe2_base.v' to AST representation.
+Generating RTLIL representation for module `\mix_pipe2_base'.
+Successfully finished Verilog frontend.
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Analyzing design hierarchy..
+Top module:  \mix_pipe2_base
+
+2.2. Analyzing design hierarchy..
+Top module:  \mix_pipe2_base
+Removed 0 unused modules.
+
+3. Executing PROC pass (convert processes to netlists).
+
+3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 3 assignments to connections.
+
+3.4. Executing PROC_INIT pass (extract init attributes).
+
+3.5. Executing PROC_ARST pass (detect async resets in processes).
+
+3.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+3.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\mix_pipe2_base.$proc$../rtl/r3/mix_pipe2_base.v:215$3082'.
+
+3.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+3.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\mix_pipe2_base.\s2_q' using process `\mix_pipe2_base.$proc$../rtl/r3/mix_pipe2_base.v:215$3082'.
+  created $dff cell `$procdff$6165' with positive edge clock.
+Creating register for signal `\mix_pipe2_base.\key_q' using process `\mix_pipe2_base.$proc$../rtl/r3/mix_pipe2_base.v:215$3082'.
+  created $dff cell `$procdff$6166' with positive edge clock.
+Creating register for signal `\mix_pipe2_base.\valid_q' using process `\mix_pipe2_base.$proc$../rtl/r3/mix_pipe2_base.v:215$3082'.
+  created $dff cell `$procdff$6167' with positive edge clock.
+
+3.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+3.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `mix_pipe2_base.$proc$../rtl/r3/mix_pipe2_base.v:215$3082'.
+Cleaned up 0 empty switches.
+
+3.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mix_pipe2_base.
+<suppressed ~5 debug messages>
+
+4. Executing OPT pass (performing simple optimizations).
+
+4.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mix_pipe2_base.
+
+4.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mix_pipe2_base'.
+Computing hashes of 6166 cells of `\mix_pipe2_base'.
+Finding duplicate cells in `\mix_pipe2_base'.
+Computing hashes of 4118 cells of `\mix_pipe2_base'.
+Finding duplicate cells in `\mix_pipe2_base'.
+Computing hashes of 3542 cells of `\mix_pipe2_base'.
+Finding duplicate cells in `\mix_pipe2_base'.
+Computing hashes of 3478 cells of `\mix_pipe2_base'.
+Finding duplicate cells in `\mix_pipe2_base'.
+<suppressed ~8064 debug messages>
+Removed a total of 2688 cells.
+
+4.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \mix_pipe2_base..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+4.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \mix_pipe2_base.
+Performed a total of 0 changes.
+
+4.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mix_pipe2_base'.
+Computing hashes of 3478 cells of `\mix_pipe2_base'.
+Finding duplicate cells in `\mix_pipe2_base'.
+Removed a total of 0 cells.
+
+4.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+4.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mix_pipe2_base..
+Removed 0 unused cells and 2962 unused wires.
+<suppressed ~1 debug messages>
+
+4.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mix_pipe2_base.
+
+4.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+4.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \mix_pipe2_base..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+4.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \mix_pipe2_base.
+Performed a total of 0 changes.
+
+4.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mix_pipe2_base'.
+Computing hashes of 3478 cells of `\mix_pipe2_base'.
+Finding duplicate cells in `\mix_pipe2_base'.
+Removed a total of 0 cells.
+
+4.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+4.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mix_pipe2_base..
+
+4.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mix_pipe2_base.
+
+4.16. Finished fast OPT passes. (There is nothing left to do.)
+
+5. Executing FSM pass (extract and optimize FSM).
+
+5.1. Executing FSM_DETECT pass (finding FSMs in design).
+
+5.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+5.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+5.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mix_pipe2_base..
+
+5.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+5.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+5.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+5.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+6. Executing OPT pass (performing simple optimizations).
+
+6.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mix_pipe2_base.
+
+6.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mix_pipe2_base'.
+Computing hashes of 3478 cells of `\mix_pipe2_base'.
+Finding duplicate cells in `\mix_pipe2_base'.
+Removed a total of 0 cells.
+
+6.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \mix_pipe2_base..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+6.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \mix_pipe2_base.
+Performed a total of 0 changes.
+
+6.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mix_pipe2_base'.
+Computing hashes of 3478 cells of `\mix_pipe2_base'.
+Finding duplicate cells in `\mix_pipe2_base'.
+Removed a total of 0 cells.
+
+6.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mix_pipe2_base..
+
+6.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mix_pipe2_base.
+
+6.9. Finished fast OPT passes. (There is nothing left to do.)
+
+7. Executing MEMORY pass.
+
+7.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+7.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+7.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+7.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+7.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+7.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mix_pipe2_base..
+
+7.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+7.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+7.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mix_pipe2_base..
+
+7.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+7.11. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+8. Executing OPT pass (performing simple optimizations).
+
+8.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mix_pipe2_base.
+
+8.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mix_pipe2_base'.
+Computing hashes of 3478 cells of `\mix_pipe2_base'.
+Finding duplicate cells in `\mix_pipe2_base'.
+Removed a total of 0 cells.
+
+8.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \mix_pipe2_base..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+8.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \mix_pipe2_base.
+Performed a total of 0 changes.
+
+8.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mix_pipe2_base'.
+Computing hashes of 3478 cells of `\mix_pipe2_base'.
+Finding duplicate cells in `\mix_pipe2_base'.
+Removed a total of 0 cells.
+
+8.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+8.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mix_pipe2_base..
+
+8.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mix_pipe2_base.
+
+8.9. Finished fast OPT passes. (There is nothing left to do.)
+
+9. Executing TECHMAP pass (map to technology primitives).
+
+9.1. Executing Verilog-2005 frontend: /home/hatch/tools/micromamba-root/envs/sky130/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/home/hatch/tools/micromamba-root/envs/sky130/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+9.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $not.
+Using extmapper simplemap for cells of type $xor.
+Using extmapper simplemap for cells of type $and.
+Using extmapper simplemap for cells of type $or.
+Using extmapper simplemap for cells of type $dff.
+No more expansions possible.
+<suppressed ~3555 debug messages>
+
+10. Executing OPT pass (performing simple optimizations).
+
+10.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mix_pipe2_base.
+<suppressed ~152 debug messages>
+
+10.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mix_pipe2_base'.
+Computing hashes of 4513 cells of `\mix_pipe2_base'.
+Finding duplicate cells in `\mix_pipe2_base'.
+Removed a total of 0 cells.
+
+10.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \mix_pipe2_base..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+10.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \mix_pipe2_base.
+Performed a total of 0 changes.
+
+10.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mix_pipe2_base'.
+Computing hashes of 4513 cells of `\mix_pipe2_base'.
+Finding duplicate cells in `\mix_pipe2_base'.
+Removed a total of 0 cells.
+
+10.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+10.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mix_pipe2_base..
+Removed 0 unused cells and 4 unused wires.
+<suppressed ~1 debug messages>
+
+10.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mix_pipe2_base.
+
+10.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+10.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \mix_pipe2_base..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+10.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \mix_pipe2_base.
+Performed a total of 0 changes.
+
+10.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mix_pipe2_base'.
+Computing hashes of 4513 cells of `\mix_pipe2_base'.
+Finding duplicate cells in `\mix_pipe2_base'.
+Removed a total of 0 cells.
+
+10.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+10.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mix_pipe2_base..
+
+10.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mix_pipe2_base.
+
+10.16. Finished fast OPT passes. (There is nothing left to do.)
+
+11. Executing DFFLIBMAP pass (mapping DFF/DLATCH cells to sequential cells from liberty file).
+  cell sky130_fd_sc_hd__dfxtp_1 (noninv, pins=3, area=20.02) is a direct match for cell type $_DFF_P_.
+  cell sky130_fd_sc_hd__dfrtn_1 (noninv, pins=4, area=25.02) is a direct match for cell type $_DFF_NN0_.
+  cell sky130_fd_sc_hd__dfrtp_1 (noninv, pins=4, area=25.02) is a direct match for cell type $_DFF_PN0_.
+  cell sky130_fd_sc_hd__dfstp_1 (noninv, pins=4, area=26.28) is a direct match for cell type $_DFF_PN1_.
+  cell sky130_fd_sc_hd__edfxtp_1 (noninv, pins=4, area=30.03) is a direct match for cell type $_DFFE_PP_.
+  cell sky130_fd_sc_hd__dfbbn_1 (noninv, pins=6, area=32.53) is a direct match for cell type $_DFFSR_NNN_.
+  cell sky130_fd_sc_hd__dfbbp_1 (noninv, pins=6, area=32.53) is a direct match for cell type $_DFFSR_PNN_.
+  cell sky130_fd_sc_hd__dlxtn_1 (noninv, pins=3, area=15.01) is a direct match for cell type $_DLATCH_N_.
+  cell sky130_fd_sc_hd__lpflow_inputisolatch_1 (noninv, pins=3, area=13.76) is a direct match for cell type $_DLATCH_P_.
+  cell sky130_fd_sc_hd__dlrtn_1 (noninv, pins=4, area=17.52) is a direct match for cell type $_DLATCH_NN0_.
+  cell sky130_fd_sc_hd__dlrtp_1 (noninv, pins=4, area=16.27) is a direct match for cell type $_DLATCH_PN0_.
+  final dff/dlatch cell mappings:
+    unmapped dff/dlatch cell: $_DFF_N_
+    \sky130_fd_sc_hd__dfxtp_1 _DFF_P_ (.CLK( C), .D( D), .Q( Q));
+    \sky130_fd_sc_hd__dfrtn_1 _DFF_NN0_ (.CLK_N( C), .D( D), .Q( Q), .RESET_B( R));
+    unmapped dff/dlatch cell: $_DFF_NN1_
+    unmapped dff/dlatch cell: $_DFF_NP0_
+    unmapped dff/dlatch cell: $_DFF_NP1_
+    \sky130_fd_sc_hd__dfrtp_1 _DFF_PN0_ (.CLK( C), .D( D), .Q( Q), .RESET_B( R));
+    \sky130_fd_sc_hd__dfstp_1 _DFF_PN1_ (.CLK( C), .D( D), .Q( Q), .SET_B( R));
+    unmapped dff/dlatch cell: $_DFF_PP0_
+    unmapped dff/dlatch cell: $_DFF_PP1_
+    unmapped dff/dlatch cell: $_DFFE_NN_
+    unmapped dff/dlatch cell: $_DFFE_NP_
+    unmapped dff/dlatch cell: $_DFFE_PN_
+    \sky130_fd_sc_hd__edfxtp_1 _DFFE_PP_ (.CLK( C), .D( D), .DE( E), .Q( Q));
+    \sky130_fd_sc_hd__dfbbn_1 _DFFSR_NNN_ (.CLK_N( C), .D( D), .Q( Q), .Q_N(~Q), .RESET_B( R), .SET_B( S));
+    unmapped dff/dlatch cell: $_DFFSR_NNP_
+    unmapped dff/dlatch cell: $_DFFSR_NPN_
+    unmapped dff/dlatch cell: $_DFFSR_NPP_
+    \sky130_fd_sc_hd__dfbbp_1 _DFFSR_PNN_ (.CLK( C), .D( D), .Q( Q), .Q_N(~Q), .RESET_B( R), .SET_B( S));
+    unmapped dff/dlatch cell: $_DFFSR_PNP_
+    unmapped dff/dlatch cell: $_DFFSR_PPN_
+    unmapped dff/dlatch cell: $_DFFSR_PPP_
+    \sky130_fd_sc_hd__dlxtn_1 _DLATCH_N_ (.D( D), .GATE_N( E), .Q( Q));
+    \sky130_fd_sc_hd__lpflow_inputisolatch_1 _DLATCH_P_ (.D( D), .Q( Q), .SLEEP_B( E));
+    \sky130_fd_sc_hd__dlrtn_1 _DLATCH_NN0_ (.D( D), .GATE_N( E), .Q( Q), .RESET_B( R));
+    unmapped dff/dlatch cell: $_DLATCH_NN1_
+    unmapped dff/dlatch cell: $_DLATCH_NP0_
+    unmapped dff/dlatch cell: $_DLATCH_NP1_
+    \sky130_fd_sc_hd__dlrtp_1 _DLATCH_PN0_ (.D( D), .GATE( E), .Q( Q), .RESET_B( R));
+    unmapped dff/dlatch cell: $_DLATCH_PN1_
+    unmapped dff/dlatch cell: $_DLATCH_PP0_
+    unmapped dff/dlatch cell: $_DLATCH_PP1_
+    unmapped dff/dlatch cell: $_DLATCHSR_NNN_
+    unmapped dff/dlatch cell: $_DLATCHSR_NNP_
+    unmapped dff/dlatch cell: $_DLATCHSR_NPN_
+    unmapped dff/dlatch cell: $_DLATCHSR_NPP_
+    unmapped dff/dlatch cell: $_DLATCHSR_PNN_
+    unmapped dff/dlatch cell: $_DLATCHSR_PNP_
+    unmapped dff/dlatch cell: $_DLATCHSR_PPN_
+    unmapped dff/dlatch cell: $_DLATCHSR_PPP_
+
+11.1. Executing DFFLEGALIZE pass (convert FFs and LATCHes to types supported by the target).
+<suppressed ~24 debug messages>
+Mapping DFF/DLATCH cells in module `\mix_pipe2_base':
+  mapped 129 $_DFF_P_ cells to \sky130_fd_sc_hd__dfxtp_1 cells.
+
+12. Executing ABC pass (technology mapping using ABC).
+
+12.1. Extracting gate netlist of module `\mix_pipe2_base' to `<abc-temp-dir>/input.blif'..
+ABC: using cached merged SCL: /tmp/yosys-liberty-scl-cache-0/yosys_merged_d594d304.scl (1 files)
+
+12.1.1. Executed ABC.
+Extracted 4384 gates and 4640 wires to a netlist network with 256 inputs and 128 outputs.
+Running ABC script: <abc-temp-dir>/abc.script
+ABC: UC Berkeley, ABC 1.01 (compiled Sep  9 2026 12:41:08)
+ABC: abc 01> empty
+ABC: abc 01> source <abc-temp-dir>/abc.script
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_scl /tmp/yosys-liberty-scl-cache-0/yosys_merged_d594d304.scl 
+ABC: Warning: Detected 9 multi-output cells (for example, "sky130_fd_sc_hd__fa_1").
+ABC: + read_constr -v /dev/null 
+ABC: + strash 
+ABC: + &get -n 
+ABC: + &fraig -x 
+ABC: + &put 
+ABC: + scorr 
+ABC: Warning: The network is combinational (run "fraig" or "fraig_sweep").
+ABC: + dc2 
+ABC: + dretime 
+ABC: + strash 
+ABC: + &get -n 
+ABC: + &dch -f 
+ABC: + &nf 
+ABC: + &put 
+ABC: + buffer 
+ABC: + upsize 
+ABC: + dnsize 
+ABC: + stime -p 
+ABC: WireLoad = "none"  Gates =   1780 (  0.8 %)   Cap =  8.1 ff ( 11.8 %)   Area =    17289.08 ( 74.4 %)   Delay =  2407.85 ps  ( 52.4 %)               
+ABC: Path  0 --     176 : 0    3 pi                       A =   0.00  Df =   0.0   -0.0 ps  S =   0.0 ps  Cin =  0.0 ff  Cout =  10.7 ff  Cmax =   0.0 ff  G =    0  
+ABC: Path  1 --    1148 : 3    8 sky130_fd_sc_hd__xnor3_2 A =  23.77  Df = 469.3   -5.0 ps  S = 168.0 ps  Cin =  3.8 ff  Cout =  28.2 ff  Cmax = 317.7 ff  G =  711  
+ABC: Path  2 --    1150 : 2    1 sky130_fd_sc_hd__xnor2_2 A =  16.27  Df = 670.8  -16.4 ps  S = 164.3 ps  Cin =  8.7 ff  Cout =   8.6 ff  Cmax = 126.4 ff  G =   97  
+ABC: Path  3 --    1151 : 2    3 sky130_fd_sc_hd__xnor2_2 A =  16.27  Df = 870.6  -33.1 ps  S = 200.5 ps  Cin =  8.7 ff  Cout =  12.0 ff  Cmax = 126.4 ff  G =  133  
+ABC: Path  4 --    1235 : 3    1 sky130_fd_sc_hd__xnor3_1 A =  22.52  Df =1258.1   -5.3 ps  S =  80.9 ps  Cin =  3.8 ff  Cout =   3.6 ff  Cmax = 163.0 ff  G =   93  
+ABC: Path  5 --    1236 : 3    7 sky130_fd_sc_hd__xor3_2  A =  25.02  Df =1602.8  -34.6 ps  S = 183.3 ps  Cin =  3.8 ff  Cout =  29.8 ff  Cmax = 301.2 ff  G =  763  
+ABC: Path  6 --    1859 : 2    3 sky130_fd_sc_hd__xor2_2  A =  16.27  Df =2248.5 -168.9 ps  S = 216.3 ps  Cin =  8.8 ff  Cout =  14.4 ff  Cmax = 134.6 ff  G =  158  
+ABC: Path  7 --    1863 : 2    1 sky130_fd_sc_hd__xnor2_1 A =   8.76  Df =2407.9 -217.8 ps  S =  62.2 ps  Cin =  4.6 ff  Cout =   0.0 ff  Cmax =  73.3 ff  G =    0  
+ABC: Start-point = pi175 (\key [52]).  End-point = po40 (\st1_s2 [37]).
+ABC: + write_blif <abc-temp-dir>/output.blif 
+ABC: 
+ABC: YOSYS_ABC_DONE 
+
+12.1.2. Re-integrating ABC results.
+ABC RESULTS:   sky130_fd_sc_hd__a211o_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a211oi_1 cells:        7
+ABC RESULTS:   sky130_fd_sc_hd__a211oi_2 cells:        7
+ABC RESULTS:   sky130_fd_sc_hd__a211oi_4 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a21bo_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__a21boi_0 cells:       12
+ABC RESULTS:   sky130_fd_sc_hd__a21boi_1 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__a21boi_2 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__a21boi_4 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a21o_1 cells:       17
+ABC RESULTS:   sky130_fd_sc_hd__a21o_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__a21oi_1 cells:       64
+ABC RESULTS:   sky130_fd_sc_hd__a21oi_2 cells:        5
+ABC RESULTS:   sky130_fd_sc_hd__a221o_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a221o_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a221oi_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a221oi_2 cells:        9
+ABC RESULTS:   sky130_fd_sc_hd__a221oi_4 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a22o_1 cells:        9
+ABC RESULTS:   sky130_fd_sc_hd__a22oi_1 cells:        9
+ABC RESULTS:   sky130_fd_sc_hd__a22oi_4 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a2bb2oi_1 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__a2bb2oi_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a311oi_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a31o_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a31o_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a31oi_1 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__a31oi_4 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__a32o_1 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__a32oi_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__and3_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__buf_4 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__inv_1 cells:       13
+ABC RESULTS:   sky130_fd_sc_hd__inv_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__lpflow_inputiso0n_1 cells:       11
+ABC RESULTS:   sky130_fd_sc_hd__lpflow_inputiso1p_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__lpflow_isobufsrc_1 cells:       22
+ABC RESULTS:   sky130_fd_sc_hd__lpflow_isobufsrc_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__mux2_4 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__mux2i_1 cells:       51
+ABC RESULTS:   sky130_fd_sc_hd__mux2i_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__nand2_1 cells:       99
+ABC RESULTS:   sky130_fd_sc_hd__nand2b_1 cells:       18
+ABC RESULTS:   sky130_fd_sc_hd__nand3_1 cells:       11
+ABC RESULTS:   sky130_fd_sc_hd__nand3b_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__nand4_1 cells:       11
+ABC RESULTS:   sky130_fd_sc_hd__nor2_1 cells:      117
+ABC RESULTS:   sky130_fd_sc_hd__nor2_2 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__nor2b_1 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__nor2b_4 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__nor3_1 cells:       15
+ABC RESULTS:   sky130_fd_sc_hd__nor3_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__nor3b_1 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__nor4_1 cells:        8
+ABC RESULTS:   sky130_fd_sc_hd__nor4b_1 cells:        6
+ABC RESULTS:   sky130_fd_sc_hd__o211a_1 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__o211ai_1 cells:       14
+ABC RESULTS:   sky130_fd_sc_hd__o211ai_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o21a_1 cells:       13
+ABC RESULTS:   sky130_fd_sc_hd__o21ai_0 cells:       45
+ABC RESULTS:   sky130_fd_sc_hd__o21ai_1 cells:       18
+ABC RESULTS:   sky130_fd_sc_hd__o21ai_2 cells:       10
+ABC RESULTS:   sky130_fd_sc_hd__o21ba_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o21bai_1 cells:        8
+ABC RESULTS:   sky130_fd_sc_hd__o21bai_4 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__o221a_2 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__o221ai_1 cells:        5
+ABC RESULTS:   sky130_fd_sc_hd__o221ai_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__o22a_1 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__o22ai_1 cells:       19
+ABC RESULTS:   sky130_fd_sc_hd__o22ai_2 cells:        7
+ABC RESULTS:   sky130_fd_sc_hd__o2bb2ai_1 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__o2bb2ai_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o31a_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o31ai_1 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__o31ai_2 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__o32a_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o32ai_1 cells:        7
+ABC RESULTS:   sky130_fd_sc_hd__o32ai_2 cells:        6
+ABC RESULTS:   sky130_fd_sc_hd__o32ai_4 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__or2_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__or2_2 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__or2_4 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__or3_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__xnor2_1 cells:      514
+ABC RESULTS:   sky130_fd_sc_hd__xnor2_2 cells:       46
+ABC RESULTS:   sky130_fd_sc_hd__xnor2_4 cells:        9
+ABC RESULTS:   sky130_fd_sc_hd__xnor3_1 cells:      118
+ABC RESULTS:   sky130_fd_sc_hd__xnor3_2 cells:       25
+ABC RESULTS:   sky130_fd_sc_hd__xor2_1 cells:      242
+ABC RESULTS:   sky130_fd_sc_hd__xor2_2 cells:       10
+ABC RESULTS:   sky130_fd_sc_hd__xor2_4 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__xor3_1 cells:       37
+ABC RESULTS:   sky130_fd_sc_hd__xor3_2 cells:       10
+ABC RESULTS:        internal signals:     4256
+ABC RESULTS:           input signals:      256
+ABC RESULTS:          output signals:      128
+Removing temp directory.
+Removing global temp directory.
+Removed 0 unused cells and 3729 unused wires.
+
+13. Executing Verilog backend.
+Dumping module `\mix_pipe2_base'.
+
+End of script. Logfile hash: 909ea64b16, time: 4.34s, user: 0.97s, system: 0.05s, MEM: 67.71 MB peak
+Yosys 0.69+ (git sha1 9f09efcdb-dirty, Release, GNU /home/conda/feedstock_root/build_artifacts/bld/rattler-build_yosys_1788957668/build_env/bin/x86_64-conda-linux-gnu-c++ 15.3.0) [github.com/conda-forge/yosys-feedstock at main]
+Time spent: 49% 1x abc (0 sec), 16% 11x opt_expr (0 sec), ...

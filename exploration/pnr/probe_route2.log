@@ -1,0 +1,155 @@
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef, created 14 layers, 25 vias
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef at line 2.
+
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef, created 437 library cells
+[WARNING IFP-0028] Core area lower left (15.000, 15.000) snapped to (15.180, 16.320).
+[INFO IFP-0001] Added 98 rows of 586 site unithd.
+Found 0 macro blocks.
+Using 2 tracks default min distance between IO pins.
+[INFO PPL-0001] Number of slots           1090
+[INFO PPL-0002] Number of I/O             192
+[INFO PPL-0003] Number of I/O w/sink      192
+[INFO PPL-0004] Number of I/O w/o sink    0
+[INFO PPL-0005] Slots per section         200
+[INFO PPL-0008] Successfully assigned pins to sections.
+[INFO PPL-0012] I/O nets HPWL: 41390.16 um.
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: (  0.460  2.720 ) um
+[INFO GPL-0004] CoreBBox: ( 15.180 16.320 ) ( 284.740 282.880 ) um
+[INFO GPL-0006] NumInstances:              1700
+[INFO GPL-0007] NumPlaceInstances:         1700
+[INFO GPL-0008] NumFixedInstances:            0
+[INFO GPL-0009] NumDummyInstances:            0
+[INFO GPL-0010] NumNets:                   1828
+[INFO GPL-0011] NumPins:                   6409
+[INFO GPL-0012] DieBBox:  (  0.000  0.000 ) ( 300.000 300.000 ) um
+[INFO GPL-0013] CoreBBox: ( 15.180 16.320 ) ( 284.740 282.880 ) um
+[INFO GPL-0016] CoreArea:             71853.914 um^2
+[INFO GPL-0017] NonPlaceInstsArea:        0.000 um^2
+[INFO GPL-0018] PlaceInstsArea:       18320.070 um^2
+[INFO GPL-0019] Util:                    25.496 %
+[INFO GPL-0020] StdInstsArea:         18320.070 um^2
+[INFO GPL-0021] MacroInstsArea:           0.000 um^2
+[InitialPlace]  Iter: 1 CG residual: 0.00000010 HPWL: 45602900
+[InitialPlace]  Iter: 2 CG residual: 0.00000012 HPWL: 29195911
+[InitialPlace]  Iter: 3 CG residual: 0.00000011 HPWL: 29086711
+[InitialPlace]  Iter: 4 CG residual: 0.00000009 HPWL: 29121739
+[InitialPlace]  Iter: 5 CG residual: 0.00000008 HPWL: 29104585
+[INFO GPL-0031] FillerInit:NumGCells:      4767
+[INFO GPL-0032] FillerInit:NumGNets:       1828
+[INFO GPL-0033] FillerInit:NumGPins:       6409
+[INFO GPL-0023] TargetDensity:            0.700
+[INFO GPL-0024] AvrgPlaceInstArea:       10.777 um^2
+[INFO GPL-0025] IdealBinArea:            15.395 um^2
+[INFO GPL-0026] IdealBinCnt:               4667
+[INFO GPL-0027] TotalBinArea:         71853.914 um^2
+[INFO GPL-0028] BinCnt:        64     64
+[INFO GPL-0029] BinSize: (  4.212  4.165 )
+[INFO GPL-0030] NumBins: 4096
+[NesterovSolve] Iter:    1 overflow: 0.969 HPWL: 23096855
+[NesterovSolve] Iter:   10 overflow: 0.957 HPWL: 26040724
+[NesterovSolve] Iter:   20 overflow: 0.956 HPWL: 26316854
+[NesterovSolve] Iter:   30 overflow: 0.956 HPWL: 26220191
+[NesterovSolve] Iter:   40 overflow: 0.956 HPWL: 26202858
+[NesterovSolve] Iter:   50 overflow: 0.956 HPWL: 26209001
+[NesterovSolve] Iter:   60 overflow: 0.956 HPWL: 26221178
+[NesterovSolve] Iter:   70 overflow: 0.956 HPWL: 26224309
+[NesterovSolve] Iter:   80 overflow: 0.956 HPWL: 26225991
+[NesterovSolve] Iter:   90 overflow: 0.956 HPWL: 26233498
+[NesterovSolve] Iter:  100 overflow: 0.956 HPWL: 26241957
+[NesterovSolve] Iter:  110 overflow: 0.956 HPWL: 26257205
+[NesterovSolve] Iter:  120 overflow: 0.956 HPWL: 26287231
+[NesterovSolve] Iter:  130 overflow: 0.956 HPWL: 26337650
+[NesterovSolve] Iter:  140 overflow: 0.955 HPWL: 26423129
+[NesterovSolve] Iter:  150 overflow: 0.954 HPWL: 26575357
+[NesterovSolve] Iter:  160 overflow: 0.952 HPWL: 26863723
+[NesterovSolve] Iter:  170 overflow: 0.949 HPWL: 27413807
+[NesterovSolve] Iter:  180 overflow: 0.942 HPWL: 28332269
+[NesterovSolve] Iter:  190 overflow: 0.932 HPWL: 29552993
+[NesterovSolve] Iter:  200 overflow: 0.917 HPWL: 31060924
+[NesterovSolve] Iter:  210 overflow: 0.898 HPWL: 33005183
+[NesterovSolve] Iter:  220 overflow: 0.873 HPWL: 35168234
+[NesterovSolve] Iter:  230 overflow: 0.843 HPWL: 37348723
+[NesterovSolve] Iter:  240 overflow: 0.805 HPWL: 39782864
+[NesterovSolve] Iter:  250 overflow: 0.766 HPWL: 42241825
+[NesterovSolve] Iter:  260 overflow: 0.720 HPWL: 44548029
+[NesterovSolve] Iter:  270 overflow: 0.672 HPWL: 46746716
+[NesterovSolve] Iter:  280 overflow: 0.616 HPWL: 48720959
+[NesterovSolve] Iter:  290 overflow: 0.554 HPWL: 50841799
+[NesterovSolve] Iter:  300 overflow: 0.493 HPWL: 53029696
+[NesterovSolve] Iter:  310 overflow: 0.430 HPWL: 54853443
+[NesterovSolve] Iter:  320 overflow: 0.380 HPWL: 56540411
+[NesterovSolve] Iter:  330 overflow: 0.340 HPWL: 57444893
+[NesterovSolve] Iter:  340 overflow: 0.318 HPWL: 57950440
+[NesterovSolve] Iter:  350 overflow: 0.290 HPWL: 58426750
+[NesterovSolve] Iter:  360 overflow: 0.269 HPWL: 58690586
+[NesterovSolve] Iter:  370 overflow: 0.246 HPWL: 58988020
+[NesterovSolve] Iter:  380 overflow: 0.221 HPWL: 59155808
+[NesterovSolve] Iter:  390 overflow: 0.199 HPWL: 59355490
+[NesterovSolve] Iter:  400 overflow: 0.178 HPWL: 59529860
+[NesterovSolve] Iter:  410 overflow: 0.158 HPWL: 59724401
+[NesterovSolve] Iter:  420 overflow: 0.134 HPWL: 59933279
+[NesterovSolve] Iter:  430 overflow: 0.117 HPWL: 60139895
+[NesterovSolve] Iter:  440 overflow: 0.098 HPWL: 60095620
+[NesterovSolve] Finished with Overflow: 0.098247
+[WARNING RSZ-0021] no estimated parasitics. Using wire load models.
+Placement Analysis
+---------------------------------
+total displacement       3840.4 u
+average displacement        2.3 u
+max displacement            9.5 u
+original HPWL           60116.5 u
+legalized HPWL          64084.5 u
+delta HPWL                    7 %
+
+[INFO GRT-0020] Min routing layer: li1
+[INFO GRT-0021] Max routing layer: met5
+[INFO GRT-0022] Global adjustment: 0%
+[INFO GRT-0023] Grid origin: (0, 0)
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0088] Layer li1     Track-Pitch = 0.4600  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met1    Track-Pitch = 0.3400  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met2    Track-Pitch = 0.4600  line-2-Via Pitch: 0.3500
+[INFO GRT-0088] Layer met3    Track-Pitch = 0.6800  line-2-Via Pitch: 0.6150
+[INFO GRT-0088] Layer met4    Track-Pitch = 0.9200  line-2-Via Pitch: 1.0400
+[INFO GRT-0088] Layer met5    Track-Pitch = 3.4000  line-2-Via Pitch: 3.1100
+[INFO GRT-0019] Found 0 clock nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 11
+[INFO GRT-0003] Macros: 0
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0004] Blockages: 47710
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+li1        Vertical        28036         22939          18.18%
+met1       Horizontal      37410         33465          10.55%
+met2       Vertical        28036         27384          2.33%
+met3       Horizontal      18705         18270          2.33%
+met4       Vertical        11309         11046          2.33%
+met5       Horizontal       3741          3654          2.33%
+---------------------------------------------------------------
+
+[INFO GRT-0197] Via related to pin nodes: 5481
+[INFO GRT-0198] Via related Steiner nodes: 219
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 7351
+[INFO GRT-0112] Final usage 3D: 32298
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+---------------------------------------------------------------------------------------
+li1              22939          1957            8.53%             0 /  0 /  0
+met1             33465          3986           11.91%             0 /  0 /  0
+met2             27384          3373           12.32%             0 /  0 /  0
+met3             18270           643            3.52%             0 /  0 /  0
+met4             11046           286            2.59%             0 /  0 /  0
+met5              3654             0            0.00%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total           116758         10245            8.77%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 100305 um
+[INFO GRT-0014] Routed nets: 1828

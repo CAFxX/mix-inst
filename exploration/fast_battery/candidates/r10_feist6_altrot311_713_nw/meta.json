@@ -1,0 +1,26 @@
+{
+ "name": "r10_feist6_altrot311_713_nw",
+ "description": "6r Feistel, F=S1+lin(3,11)/(7,13) alternating, NO whitening",
+ "composition": "6r Feistel, F=S1+lin(3,11)/(7,13) alternating, NO whitening",
+ "rtl_top": "r10_feist6_altrot311_713_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x032dda9c8e97907a"
+  },
+  {
+   "val": "0x0",
+   "key": "0x0",
+   "out": "0xefbf7ba4dfe2b66e"
+  }
+ ]
+}

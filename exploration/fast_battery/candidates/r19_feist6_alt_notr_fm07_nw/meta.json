@@ -1,0 +1,26 @@
+{
+ "name": "r19_feist6_alt_notr_fm07_nw",
+ "description": "6r alt-notr + BIC fix: F_6=(chi32(R)^rk)^rotl32(chi32(R)^rk,7), NO whitening",
+ "composition": "6r alt-notr + BIC fix: F_6=(chi32(R)^rk)^rotl32(chi32(R)^rk,7), NO whitening",
+ "rtl_top": "r19_feist6_alt_notr_fm07_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xb554c15841063b18"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x53421bb78ea9f622"
+  }
+ ]
+}

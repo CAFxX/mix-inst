@@ -1,0 +1,26 @@
+{
+ "name": "r21_feist6_alt_notr_chioff13all_fm311_nw",
+ "description": "6r alt-notr + chi (1,3) rounds 2,4,6(tr) + fm311 cure on (1,3) final chi, NO whitening",
+ "composition": "6r alt-notr + chi (1,3) rounds 2,4,6(tr) + fm311 cure on (1,3) final chi, NO whitening",
+ "rtl_top": "r21_feist6_alt_notr_chioff13all_fm311_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x247de31988172fc0"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x74ac9faa77057336"
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "name": "r18_feist6_alt_notr_nw",
+ "description": "6r Feistel, r13 alt (odd S1-F, even chi-F) but round 6 F=chi32(R)^rk (no linear layer), NO whitening",
+ "composition": "6r Feistel, r13 alt (odd S1-F, even chi-F) but round 6 F=chi32(R)^rk (no linear layer), NO whitening",
+ "rtl_top": "r18_feist6_alt_notr_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xda6b7c0d41063b18"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xd609071d8ea9f622"
+  }
+ ]
+}

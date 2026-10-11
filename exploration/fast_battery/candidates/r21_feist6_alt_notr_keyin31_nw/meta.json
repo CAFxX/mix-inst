@@ -1,0 +1,26 @@
+{
+ "name": "r21_feist6_alt_notr_keyin31_nw",
+ "description": "6r alt-notr + chi (3,1) rounds 2,4 + key inside plain final chi, NO whitening",
+ "composition": "6r alt-notr + chi (3,1) rounds 2,4 + key inside plain final chi, NO whitening",
+ "rtl_top": "r21_feist6_alt_notr_keyin31_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xca9b9bf8f28b094b"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xad8120e4bb8b5962"
+  }
+ ]
+}

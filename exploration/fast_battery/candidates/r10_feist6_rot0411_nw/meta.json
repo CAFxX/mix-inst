@@ -1,0 +1,26 @@
+{
+ "name": "r10_feist6_rot0411_nw",
+ "description": "6r Feistel, F=S1+lin(4,11), NO whitening",
+ "composition": "6r Feistel, F=S1+lin(4,11), NO whitening",
+ "rtl_top": "r10_feist6_rot0411_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x2c27ef70dca1e791"
+  },
+  {
+   "val": "0x0",
+   "key": "0x0",
+   "out": "0x78552b9579dec9b3"
+  }
+ ]
+}

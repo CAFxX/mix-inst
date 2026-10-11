@@ -1,0 +1,26 @@
+{
+ "name": "r21b_3rot_ns_fm311_nw",
+ "description": "r21b follow-up: 3rot_ns + fm311 cure (rotl(chi32,3)^rotl(chi32,11)^rk) on the plain truncated final chi -- BIC-cure play for the 0.25384 blemish, Frontier-Q size point vs r19 fm311, NO whitening",
+ "composition": "r21b follow-up: 3rot_ns + fm311 cure (rotl(chi32,3)^rotl(chi32,11)^rk) on the plain truncated final chi -- BIC-cure play for the 0.25384 blemish, Frontier-Q size point vs r19 fm311, NO whitening",
+ "rtl_top": "r21b_3rot_ns_fm311_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x584fe008fa22fbdc"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x1f1fef20cf880b89"
+  }
+ ]
+}

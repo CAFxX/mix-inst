@@ -1,0 +1,26 @@
+{
+ "name": "r18_feist6_alt_palk_nw",
+ "description": "6r Feistel, r13 alt with palindromic round keys rk_i=RK32(key,i)^RK32(key,7-i), NO whitening",
+ "composition": "6r Feistel, r13 alt with palindromic round keys rk_i=RK32(key,i)^RK32(key,7-i), NO whitening",
+ "rtl_top": "r18_feist6_alt_palk_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x1a15906d5ce50e00"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xa64fd370360d9e79"
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "name": "r21_feist6_alt_notr_chioff31final_nw",
+ "description": "6r alt-notr + chi (1,3) on rounds 2,4, (3,1) on truncated round 6, NO whitening",
+ "composition": "6r alt-notr + chi (1,3) on rounds 2,4, (3,1) on truncated round 6, NO whitening",
+ "rtl_top": "r21_feist6_alt_notr_chioff31final_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x9aa764d588172fc0"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x822ac20b77057336"
+  }
+ ]
+}

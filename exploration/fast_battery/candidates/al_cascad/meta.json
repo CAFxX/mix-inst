@@ -1,0 +1,24 @@
+{
+ "name": "al_cascad",
+ "description": "8-stage cascaded AND-rotation, no S-box",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xc6492e50e9171706"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x4c863d0772c91540"
+  }
+ ]
+}

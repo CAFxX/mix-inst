@@ -1,0 +1,26 @@
+{
+ "name": "r23_spn_mix4r_pba19b01_nw",
+ "description": "R23 P3: 4r SPN, P-box a19b01 (2cyc, validated O34 criteria); S1, L=lin(3,11).",
+ "composition": "R23 P3: 4r SPN, P-box a19b01 (2cyc, validated O34 criteria); S1, L=lin(3,11).",
+ "rtl_top": "r23_spn_mix4r_pba19b01_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xa6ed8cf09fdb3fa0"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xf7c1e1644334bdc4"
+  }
+ ]
+}

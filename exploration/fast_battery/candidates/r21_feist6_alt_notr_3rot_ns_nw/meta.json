@@ -1,0 +1,26 @@
+{
+ "name": "r21_feist6_alt_notr_3rot_ns_nw",
+ "description": "DIAGNOSIS PROBE: nonsingular 3-rotation layer R3^R7^R11 (no identity) -- tests whether the 3rot S1-LIN kill was singularity, NO whitening",
+ "composition": "DIAGNOSIS PROBE: nonsingular 3-rotation layer R3^R7^R11 (no identity) -- tests whether the 3rot S1-LIN kill was singularity, NO whitening",
+ "rtl_top": "r21_feist6_alt_notr_3rot_ns_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x3678386ffa22fbdc"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x6da8f528cf880b89"
+  }
+ ]
+}

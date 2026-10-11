@@ -1,0 +1,25 @@
+{
+  "name": "al_and6a",
+  "description": "6-stage AND-rotation cascade: x ^= (ra & rb) ^ rc",
+  "screen_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "practrand_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "goldens": [
+    {
+      "val": "0x0",
+      "key": "0x123456789abcdef0",
+      "out": "0x58b5a94c326a28ac"
+    },
+    {
+      "val": "0x123456789abcdef0",
+      "key": "0x0",
+      "out": "0xd27aba1ba9b42aea"
+    }
+  ],
+  "rtl_top": "al_and6a"
+}

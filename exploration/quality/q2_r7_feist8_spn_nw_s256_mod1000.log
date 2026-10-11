@@ -1,0 +1,61 @@
+RNG_test using PractRand version 0.96
+RNG = RNG_stdin, seed = unknown
+test set = core, folding = standard(unknown format)
+
+rng=RNG_stdin, seed=unknown
+length= 16 megabytes (2^24 bytes), time= 2.7 seconds
+  Test Name                         Raw       Processed     Evaluation       
+  BCFN(2+0,13-5U)                   R>+99999  p = 0           FAIL !!!!!!!!  
+  BCFN(2+1,13-5U)                   R>+99999  p = 0           FAIL !!!!!!!!  
+  BCFN(2+2,13-5U)                   R>+99999  p = 0           FAIL !!!!!!!!  
+  BCFN(2+3,13-5U)                   R>+99999  p = 0           FAIL !!!!!!!!  
+  BCFN(2+4,13-6U)                   R>+99999  p = 0           FAIL !!!!!!!!  
+  BCFN(2+5,13-6U)                   R>+99999  p = 0           FAIL !!!!!!!!  
+  BCFN(2+6,13-7U)                   R=+70419  p = 0           FAIL !!!!!!!!  
+  BCFN(2+7,13-8U)                   R=+41511  p = 0           FAIL !!!!!!!!  
+  BCFN(2+8,13-8U)                   R=+20637  p =  1e-5342    FAIL !!!!!!!!  
+  BCFN(2+9,13-9U)                   R=+11814  p =  5e-2661    FAIL !!!!!!!!  
+  BCFN(2+10,13-9U)                  R= +5881  p =  3e-1325    FAIL !!!!!!!!  
+  DC6-9x1Bytes-1                    R>+99999  p = 0           FAIL !!!!!!!!  
+  Gap-16:A                          R>+99999  p = 0           FAIL !!!!!!!!  
+  Gap-16:B                          R>+99999  p = 0           FAIL !!!!!!!!  
+  Gap-16:C                          R= +9539  p~=1-1e-2872    FAIL !!!!!!!!  
+  FPF/16:(0,14-1)                   R>+99999  p = 0           FAIL !!!!!!!!  
+  FPF/16:(1,14-2)                   R>+99999  p = 0           FAIL !!!!!!!!  
+  FPF/16:(2,14-2)                   R>+99999  p = 0           FAIL !!!!!!!!  
+  FPF/16:(3,14-3)                   R=+80354  p = 0           FAIL !!!!!!!!  
+  FPF/16:(4,14-4)                   R=+56879  p = 0           FAIL !!!!!!!!  
+  FPF/16:(5,14-5)                   R=+41034  p = 0           FAIL !!!!!!!!  
+  FPF/16:(6,14-5)                   R=+24624  p = 0           FAIL !!!!!!!!  
+  FPF/16:(7,14-6)                   R=+17371  p = 0           FAIL !!!!!!!!  
+  FPF/16:(8,14-7)                   R=+12479  p =  2e-9931    FAIL !!!!!!!!  
+  FPF/16:(9,14-8)                   R= +8860  p =  1e-6375    FAIL !!!!!!!!  
+  FPF/16:all                        R>+99999  p = 0           FAIL !!!!!!!!  
+  FPF/16:cross                      R=+11827  p =  3e-9283    FAIL !!!!!!!!  
+  BDayS2(4,24)[39]                  R= +5730  p~= 0           FAIL !!!!!!!!  
+  BRank(12):score:768(13)           R= +7879  p~=  1          FAIL !!!!!!!!  
+  mod3n(5):(0,9-3)                  R= +3194  p =  1e-1659    FAIL !!!!!!!!  
+  [Low1/8]BCFN(2+0,13-6U)           R=+956.7  p =  4.3e-328   FAIL !!!!!!!   
+  [Low1/8]BCFN(2+1,13-6U)           R=+952.2  p =  1.6e-326   FAIL !!!!!!    
+  [Low1/8]BCFN(2+2,13-7U)           R= +1140  p =  6.8e-340   FAIL !!!!!!!   
+  [Low1/8]BCFN(2+3,13-7U)           R= +1093  p =  1.0e-325   FAIL !!!!!!    
+  [Low1/8]BCFN(2+4,13-8U)           R= +1330  p =  5.1e-345   FAIL !!!!!!!   
+  [Low1/8]BCFN(2+5,13-8U)           R= +1284  p =  2.8e-333   FAIL !!!!!!!   
+  [Low1/8]BCFN(2+6,13-9U)           R= +1440  p =  2.5e-325   FAIL !!!!!!    
+  [Low1/8]BCFN(2+7,13-9U)           R= +1312  p =  2.0e-296   FAIL !!!!!!    
+  [Low1/8]DC6-9x1Bytes-1            R=+103.4  p =  5.9e-54    FAIL !!!!      
+  [Low1/8]FPF/16:(0,14-3)           R= +39.0  p =  6.6e-34    FAIL !!!       
+  [Low1/8]FPF/16:(1,14-4)           R= +25.2  p =  1.6e-20    FAIL !         
+  [Low1/8]FPF/16:(2,14-5)           R= +16.0  p =  3.7e-13   VERY SUSPICIOUS 
+  [Low1/8]FPF/16:all                R= +51.7  p =  1.8e-45    FAIL !!!       
+  [Low1/8]FPF/16:cross              R= +77.2  p =  2.0e-56    FAIL !!!!      
+  [Low4/32]BCFN(2+0,13-6U)          R= +13.2  p =  5.7e-5   mildly suspicious
+  [Low4/32]BCFN(2+1,13-6U)          R= +11.5  p =  2.3e-4   unusual          
+  [Low4/32]BCFN(2+2,13-7U)          R= +23.4  p =  1.2e-7   very suspicious  
+  [Low4/32]BCFN(2+3,13-7U)          R= +23.1  p =  1.5e-7   very suspicious  
+  [Low4/32]BCFN(2+5,13-8U)          R= +23.0  p =  7.8e-7   suspicious       
+  [Low4/32]BCFN(2+6,13-9U)          R= +32.5  p =  1.9e-8   very suspicious  
+  [Low4/32]BCFN(2+7,13-9U)          R= +33.2  p =  1.4e-8   very suspicious  
+  [Low4/32]FPF/16:all               R=  +6.4  p =  2.4e-5   mildly suspicious
+  ...and 93 test result(s) without anomalies
+

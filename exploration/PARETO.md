@@ -1,6 +1,7 @@
 # RV64 `mix` — Cumulative Pareto Frontier
 
-**Updated:** 2026-10-11 (324: hyb28_mu5_324 joins as new speed point 19.3u with full battery + Q1 evidence; t6_b33c demoted to second row, survives on cells/area)
+**Updated:** 2026-10-11 — tables reworked: uniform per-row Design column,
+simplified Quality column; 324 added to Frontier Q (BIC-clean).
 **Multiplier reference:** 103.5u (cells 12,645, area 35,323), re-measured per
 round in the pinned Yosys-0.69 flow. S0 bar: ≤ 0.9 × 103.5 = 93.15u.
 
@@ -22,78 +23,49 @@ for future extended-PractRand breaking-point batteries; the registry is
 
 ## Frontier S (delay, cells, area — lower is better)
 
-| Candidate | Delay | Ratio | Cells | Area | Round claimed | Quality notes |
-|---|---|---:|---:|---:|---|---|
-| **hyb28_mu5_324** | **19.3u** | **0.186×** | 6,146 | 20,001 | batch-28 | **New speed point — 0.5u faster than t6_b33c (19.8u); NOT dominating (cells/area slightly above b33c).** 5-stage MUX-rotation cascade (hyb batch-28 schedule, MU5 keep z=3.24, pre-whiten, final x^=rotl(k,13)). S0 19.3u via run_synth.py (XCHECK analyze.py == analyze2.py, ref mul64 103.5u); S1 CAL_PASS (all rejection lists empty); S2 PASS (max|z|=76.9, all 115 deltas); S3 PractRand 1GB clean + S3b strided clean; S4 SmallCrush all passed; Q1 sac_z5=0, bic_maxcorr=0.0087 (**BIC-clean — qualifies on Frontier Q**). Battery chain 2026-10-11 (results/hyb28_mu5_324/battery.log); Q1 from raw q1_hyb28_mu5_324.json. |
-| **t6_b33c** | **19.8u** | **0.191×** | 6,133 | 19,817 | batch-33 | Former speed point (2026-10-10 → 2026-10-11); survives on cells/area vs 324. 6-stage AND-rotation cascade (exact-DIFF-proxy-guided schedule selection), same stage form as as6_200 (pre-whiten; 6x x^=(ra&rb)^rc; final x^=rotl(k,13)). S0 19.8u via run_synth.py (XCHECK analyze.py == analyze2.py, ref mul64 103.5u, equiv 1000/1000); S1 CAL_PASS (all rejection lists empty, marginal 187s); S2 PASS; S3 PractRand 1GB clean (0 anomalies in 227); S4 SmallCrush all passed; Q1 sac_z5=0, bic_maxcorr=0.01002 (**BIC-clean — qualifies on Frontier Q**). Battery chain 2026-10-10 (results/t6_b33c/battery.log); Q1 verified by status report 2026-10-10 23:01 CEST from raw q1_t6_b33c.json. |
-| **t6_b33b** | **20.1u** | **0.194×** | 5,992 | 19,280 | batch-33 | **New size point — ties al_and6a on delay (20.1u) and dominates it on cells (5,992<6,116) and area (19,280<19,541).** 6-stage AND-rotation cascade (exact-DIFF-proxy-guided schedule selection), same stage form as b33c. S0 20.1u via run_synth.py (XCHECK analyze.py == analyze2.py, ref mul64 103.5u, equiv 1000/1000); S1 CAL_PASS; S2 PASS; S3 PractRand 1GB clean (16MB→1GB + strided, 0 FAIL, fail-LOUD guard passed — first S3b attempt voided by a mid-edit broken s3_practrand.sh, re-run on the fixed script); S4 SmallCrush all passed; Q1 sac_z5=0, bic_maxcorr=0.00913 (**BIC-clean — qualifies on Frontier Q**). Re-run 2026-10-10 (results/t6_b33b/battery_resubmit.log); Q1 by status report from raw q1_t6_b33b.json. |
-| **r25_spn_pba19_sb_rasC2_0_513_nw** | **26.4u** | **0.255×** | 5,385 | 14,415 | 25 | **New speed point — joins (does not replace) rasC2_0 (3,11): 0.1u faster, 260 cells / 396 area larger; genuine tradeoff, neither dominates.** 4r keyed SPN (pba19 construction, P(i)=(19i+1)%64, lin(5,13)) with the rasC2_0 S-box. S1 CAL_PASS; S2 PASS (max_repeats=1, max\|z\|=25.1, all 115 deltas); S3 PractRand 1GB clean (standard + strided) + deep 2GB→8GB PASS (GHA, 0 FAIL); S4 SmallCrush all passed; Q1 sac_z5=0, bic_maxcorr=0.00907 (**BIC-clean — qualifies on Frontier Q**). Parent-verified from raw logs 2026-10-07 (deep PractRand + local S4/Q1). |
-| **r25_spn_pba19_sb_rasC2_0_nw** | **26.5u** | **0.256×** | 5,125 | 14,019 | 25 | 4r keyed SPN (pba19 construction, P(i)=(19i+1)%64, lin(3,11)) with the rasC2_0 S-box from the Rasoolzadeh depth-3 pool. S1 CAL_PASS; S2 PASS (max_repeats=1, max\|z\|=11.3, all 115 deltas); S3 PractRand 1GB clean (standard + strided) + deep 2GB→8GB PASS (GHA, 0 FAIL); S4 SmallCrush all passed; Q1 sac_z5=0, bic_maxcorr=0.01012 (**BIC-clean — qualifies on Frontier Q**). Parent-verified from raw logs 2026-10-05 (full fast-battery re-run). |
-| **r22c_spn_mix4r_lp_nw** | **28.3u** | **0.273×** | 4,656 | 12,949 | O44 | Size point — beats rasC2_0 on cells (−9%) and area (−8%); strictly nondominated. 4-round keyed SPN x_{i+1}=L(P(S16(x_i^rk_i))), P(i)=(5i+27)%64, L=lin(3,11). S1 CAL_PASS; S2 0 kills max|z|=13.6; PractRand 1GB ×2 clean; SmallCrush all passed; Q1 sac_z5=0, bic_maxcorr=0.00865; 2M×2-key bijectivity. Parent-verified 2026-10-03. |
-| **r21_feist6_alt_notr_chioff31final_nw** | **36.7u** | **0.355×** | 4,198 | 12,005 | 21 | New speed point — **strictly dominates r20 chioff13all on all three axes** (36.7<37.0, 4,198<4,357, 12,005<12,511). 6r Feistel notr: chi(1,3) on rounds 2,4, (3,1) chi on the truncated round 6. S1 CAL_PASS; S2: 0 repeats, max\|z\|=11.2; Q1 sac_z5=0, bic_maxcorr=0.14029 (blemish class); S3 PractRand 1GB clean (both configs); S4 SmallCrush all passed. |
-| **r21_feist6_alt_notr_3rot_ns_nw** | **37.4u** | **0.361×** | **3,667** | **10,742** | 21 | New size point — **strictly dominates r20 chioff31 (37.5/3,863/11,199) and r19 chioff13 (37.4/4,149/11,820) on all three axes**. 6r Feistel notr with the NONSINGULAR 3-rotation layer lin3ns = R³x^R⁷x^R¹¹x (identity term dropped) on all five linear rounds, truncated chi final. Born as the FA1 diagnosis probe for the 3rot S1-LIN kill (even-term singularity); the fix also removed one XOR level per bit per round (−3.8u vs the singular 3rot). S1 CAL_PASS; S2: 0 repeats, max\|z\|=4.7 (round's best); Q1 sac_z5=0, bic_maxcorr=0.25384 (strongest blemish in the family — Frontier-S only); S3 PractRand 1GB clean (both configs); S4 SmallCrush all passed. |
+| Candidate | Delay | Ratio | Cells | Area | Round claimed | Design | Quality |
+|---|---|---:|---:|---:|---|---|---|
+| **hyb28_mu5_324** | **19.3u** | **0.186×** | 6,146 | 20,001 | batch-28 | 5-stage MUX-rotation cascade, pre-whiten, final x^=rotl(k,13) | Speed point; S0–S4 pass, Q1 sac_z5=0, bic 0.0087 (Frontier-Q eligible) |
+| **t6_b33c** | **19.8u** | **0.191×** | 6,133 | 19,817 | batch-33 | 6-stage AND-rotation cascade, pre-whiten, stage x^=(ra&rb)^rc, final x^=rotl(k,13) | Nondominated on cells/area; S0–S4 pass, Q1 sac_z5=0, bic 0.01002 (Frontier-Q eligible) |
+| **t6_b33b** | **20.1u** | **0.194×** | 5,992 | 19,280 | batch-33 | 6-stage AND-rotation cascade, pre-whiten, stage x^=(ra&rb)^rc, final x^=rotl(k,13) | Size point; S0–S4 pass, Q1 sac_z5=0, bic 0.00913 (Frontier-Q eligible) |
+| **r25_spn_pba19_sb_rasC2_0_513_nw** | **26.4u** | **0.255×** | 5,385 | 14,415 | 25 | 4r keyed SPN, P(i)=(19i+1)%64, lin(5,13), rasC2_0 S-box | Nondominated vs (3,11): 0.1u faster, 260 cells larger; S0–S4 pass, Q1 sac_z5=0, bic 0.00907 (Frontier-Q eligible) |
+| **r25_spn_pba19_sb_rasC2_0_nw** | **26.5u** | **0.256×** | 5,125 | 14,019 | 25 | 4r keyed SPN, P(i)=(19i+1)%64, lin(3,11), rasC2_0 S-box | Size point; S0–S4 pass, Q1 sac_z5=0, bic 0.01012 (Frontier-Q eligible) |
+| **r22c_spn_mix4r_lp_nw** | **28.3u** | **0.273×** | 4,656 | 12,949 | O44 | 4r keyed SPN, x_{i+1}=L(P(S(x_i^rk_i))), P(i)=(5i+27)%64, lin(3,11) | Nondominated on cells/area; S0–S4 pass, Q1 sac_z5=0, bic 0.00865 (Frontier-Q eligible) |
+| **r21_feist6_alt_notr_chioff31final_nw** | **36.7u** | **0.355×** | 4,198 | 12,005 | 21 | 6r Feistel, S1/chi alternating rounds, no round-6 linear, chi(3,1) final | Speed point of the Feistel tail; S0–S4 pass, Q1 sac_z5=0, bic 0.14029 (Frontier-S only) |
+| **r21_feist6_alt_notr_3rot_ns_nw** | **37.4u** | **0.361×** | **3,667** | **10,742** | 21 | 6r Feistel, R³x^R⁷x^R¹¹x on 5 linear rounds, truncated chi final | Size point; S0–S4 pass, Q1 sac_z5=0, bic 0.25384 (Frontier-S only) |
 
-The 28-MUX 324 now anchors the frontier: hyb28_mu5_324 is the speed point (19.3u),
-t6_b33c (19.8u) survives on cells/area, and b33b is the size play at 20.1u
-(141 fewer cells than b33c).
-The r25 SPN pair survives on the size axis (5,125–5,385 cells vs
-5,992–6,133 for the batch-33 pair — genuine tradeoff, neither dominates):
-(5,13) is 0.1u faster than (3,11) but 260 cells / 396 area larger;
-(3,11) is 6.4u slower than b33b but 867 cells / 5,261 area smaller.
-r22c beats chioff31final on delay by 8.4u; chioff31final is 0.7u faster
-than 3rot_ns and 458 cells smaller than r22c; 3rot_ns is 531 cells /
-1,263 area smaller than chioff31final. No point dominates another. The notr
-family's BIC blemish class (0.14–0.25) does not touch the SPN/batch-33 points
-(0.00865–0.01012). Retired 2026-10-10: al_and6a (20.1/6,116/19,541) —
-dominated by t6_b33b (delay tie, fewer cells, less area); al_cascad
-(25.5/7,891/26,566) — dominated by t6_b33c on all three axes. Retired
-2026-10-05: r23 pba19b01 (27.8/5,732/15,374) and
-wf2d aff_a17_b17 (27.9/5,299/14,223) — both strictly dominated by rasC2_0 (3,11) on
-all three axes; retained in RETAINED.md. Full evidence in
-`round21/ROUND21_TABLE.md`, `round22/ROUND22_TABLE.md` (O44 section),
-`round23/ROUND23_TABLE.md` (pba19b01), and `round25/ROUND25_TABLE.md`
-(rasC2_0). RTL
-for the Frontier-S points plus the Frontier-Q fm points in
-`~/workspace/your_files/mix_rtl_pareto/` (package tracks both frontiers per
-Carlo 2026-10-03; the r15/r9/r8 Frontier-Q points keep their existing RTL
-under `fast_battery/candidates/` and round dirs).
+hyb28_mu5_324 is the speed point (19.3u); t6_b33c survives on cells/area;
+t6_b33b is the size point at 20.1u. The r25 SPN pair holds the mid-size
+axis ((5,13) 0.1u faster, 260 cells larger — genuine tradeoff); r22c is the
+small SPN; the notr Feistel pair holds the slow/small tail. No point
+dominates another. Retired points live in [RETAINED.md](RETAINED.md).
 
-Excluded (verified but effectively dominated): r21 keyin31 (36.9u / 4,191 /
-11,986) is a near-duplicate of chioff31final with the round key mixed
-inside the (3,1) final chi instead of XORed after — fully verified (S1–S4 +
-Q1 clean, bic 0.14092) but +0.2u for a 7-cell / 19-area edge that sits
-below the flow's meaningful-tradeoff threshold (standing rule); r20 keyin
-was excluded on the same grounds in round 20.
+Threshold-excluded near-duplicates: r21 keyin31 (+0.2u/+25 cells vs
+chioff31final) and r23 pba27b01 (0.1u edge at +9% cells vs r22c) — below the
+meaningful-tradeoff bar.
+
+RTL for the frontier points in `~/workspace/your_files/mix_rtl_pareto/`
+(package tracks both frontiers; r9/r8 keep their RTL under
+[fast_battery/candidates/](fast_battery/candidates/) and the round dirs).
 
 ## Frontier Q (BIC-clean; adds bic_maxcorr ≤ 0.02)
 
-| Candidate | Delay | Ratio | Cells | Area | Round claimed | Quality notes |
-|---|---|---:|---:|---:|---|---|
-| **t6_b33c** | **19.8u** | **0.191×** | 6,133 | 19,817 | batch-33 | **New speed point — dominates al_cascad on delay and cells.** BIC-clean (0.01002 ≤ 0.02), sac_z5=0. Full battery per Frontier-S entry. |
-| **t6_b33b** | **20.1u** | **0.194×** | 5,992 | 19,280 | batch-33 | **New size point at 20.1u — dominates al_and6a on cells and area at equal delay.** BIC-clean (0.00913 ≤ 0.02), sac_z5=0. Full battery per Frontier-S entry. |
-| **r25_spn_pba19_sb_rasC2_0_513_nw** | **26.4u** | **0.255×** | 5,385 | 14,415 | 25 | **New speed point — joins (does not replace) rasC2_0 (3,11): 0.1u faster, 260 cells larger; genuine tradeoff. BIC-clean (0.00907 ≤ 0.02), sac_z5=0. Full battery per Frontier-S entry.** |
-| **r25_spn_pba19_sb_rasC2_0_nw** | **26.5u** | **0.256×** | 5,125 | 14,019 | 25 | BIC-clean (0.01012 ≤ 0.02), sac_z5=0; full battery per Frontier-S entry. |
-| **r22c_spn_mix4r_lp_nw** | **28.3u** | **0.273×** | 4,656 | 12,949 | O44 | Size point on Frontier Q: beats rasC2_0 on cells (−9%) and area (−8%); BIC-clean (0.00865); see Frontier-S entry for full evidence. |
-| **r21b_3rot_ns_fm311_nw** | **38.3u** | **0.370×** | 4,299 | 12,356 | r21b | **New mid-frontier point — strictly dominates r21 chioff13all_fm311 (39.1/4,485/12,763) and r19 fm311 (39.5/4,467/12,769) on all three axes.** 3rot_ns base + fm311 cure inside F_6 (32-bit, Feistel-bijective). Cure cost +0.9u/+632 cells (cheaper than the (1,3)-base fm311's +1.7u — fm cost scales with chi cone). S1 CAL_PASS; S2: 0 repeats, max|z|=4.7; Q1 sac_z5=0, bic_maxcorr=0.00883 (cured from 0.25384); S3 PractRand 1GB clean (both configs); S4 SmallCrush all passed — **BATTERY-PASS**. Parent-verified from raw logs 2026-10-03. |
-| r9_feist6_rot311_nw | 41.0u | 0.396× | 4,265 | 11,996 | 9 | S1–S4 + Q1 clean, bic_maxcorr=0.0085. |
-| r8_feist6_s1_1sbox_nw | 42.9u | 0.414× | 4,133 | 11,670 | 8 | S1–S4 + Q1 clean, bic_maxcorr=0.008037. Size/quality point. |
+| Candidate | Delay | Ratio | Cells | Area | Round claimed | Design | Quality |
+|---|---|---:|---:|---:|---|---|---|
+| **hyb28_mu5_324** | **19.3u** | **0.186×** | 6,146 | 20,001 | batch-28 | 5-stage MUX-rotation cascade, pre-whiten, final x^=rotl(k,13) | Speed point; bic 0.0087, sac_z5=0, full battery |
+| **t6_b33c** | **19.8u** | **0.191×** | 6,133 | 19,817 | batch-33 | 6-stage AND-rotation cascade, pre-whiten, stage x^=(ra&rb)^rc, final x^=rotl(k,13) | Nondominated on cells/area; bic 0.01002, sac_z5=0, full battery |
+| **t6_b33b** | **20.1u** | **0.194×** | 5,992 | 19,280 | batch-33 | 6-stage AND-rotation cascade, pre-whiten, stage x^=(ra&rb)^rc, final x^=rotl(k,13) | Size point; bic 0.00913, sac_z5=0, full battery |
+| **r25_spn_pba19_sb_rasC2_0_513_nw** | **26.4u** | **0.255×** | 5,385 | 14,415 | 25 | 4r keyed SPN, P(i)=(19i+1)%64, lin(5,13), rasC2_0 S-box | Nondominated vs (3,11); bic 0.00907, sac_z5=0, full battery |
+| **r25_spn_pba19_sb_rasC2_0_nw** | **26.5u** | **0.256×** | 5,125 | 14,019 | 25 | 4r keyed SPN, P(i)=(19i+1)%64, lin(3,11), rasC2_0 S-box | Size point; bic 0.01012, sac_z5=0, full battery |
+| **r22c_spn_mix4r_lp_nw** | **28.3u** | **0.273×** | 4,656 | 12,949 | O44 | 4r keyed SPN, x_{i+1}=L(P(S(x_i^rk_i))), P(i)=(5i+27)%64, lin(3,11) | Nondominated on cells/area; bic 0.00865, sac_z5=0, full battery |
+| **r21b_3rot_ns_fm311_nw** | **38.3u** | **0.370×** | 4,299 | 12,356 | r21b | 6r Feistel, R³x^R⁷x^R¹¹x linear, fm311 final-mix cure in F_6 | Mid-frontier point; bic 0.00883 (cured), sac_z5=0, full battery |
+| r9_feist6_rot311_nw | 41.0u | 0.396× | 4,265 | 11,996 | 9 | 6r Feistel, S1 S-box rounds, lin(3,11) | bic 0.0085, sac_z5=0, full battery |
+| r8_feist6_s1_1sbox_nw | 42.9u | 0.414× | 4,133 | 11,670 | 8 | 6r Feistel, single S1 S-box per round, lin(3,11) | Size/quality point; bic 0.008037, sac_z5=0, full battery |
 
-Retired in round 21: r19 fm11 (39.3u/4,877/13,748) — strictly dominated by
-r21 chioff31_fm07 (39.2/4,661/13,159) on all three axes; r21 chioff31_fm07
-itself dominated by r21 chioff13all_fm311 (39.1/4,485/12,763); r21
-chioff13all_fm07 (39.4/4,870/13,729) dominated by chioff31_fm07. Retired in
-O44: r19 fm07 (38.8u/5,053/14,320) — strictly dominated by r22c
-(28.3/4,656/12,949) on all three axes. Retired in r21b: r21
-chioff13all_fm311 (39.1u/4,485/12,763) and r19 fm311 (39.5u/4,467/12,769) —
-both strictly dominated by r21b (38.3/4,299/12,356) on all three axes;
-r15 parsplit (40.7u/4,318/12,356) — dominated by r21b (≤ on all axes,
-< on delay and cells, exact area tie). Retired in batch-33 (2026-10-10): al_cascad (25.5u/7,891/26,566, bic 0.00891) —
-strictly dominated by t6_b33c (19.8/6,133/19,817) on delay, cells, and area;
-al_and6a was never on Frontier Q as a separate point (dominated by b33b on
-Frontier S). All retired points remain in
-RETAINED.md for the future breaking-point batteries. No point dominates
-another among the four survivors. r13 alt (40.1u, bic 0.008) is dominated by
-fm311 and sits out; fm03 and chioff13_fm03 are dominated by fm311.
+Frontier Q is Frontier S minus the notr pair (BIC blemish 0.14–0.25), plus
+the BIC-cured notr derivative r21b and the slow, small, BIC-clean r9/r8.
+No point dominates another. Retired points live in
+[RETAINED.md](RETAINED.md).
 
 ## History
 
@@ -125,32 +97,32 @@ fm311 and sits out; fm03 and chioff13_fm03 are dominated by fm311.
 
 ## Qualified but dominated (selected)
 
-| Candidate | Delay | Cells | Area | Notes |
-|---|---|---:|---:|---|
-| al_and6a | 20.1u | 6,116 | 19,541 | Former speed point (2026-10-09); dominated by t6_b33b (delay tie, fewer cells, less area). Full battery PASS (S1 CAL_PASS, S2 0 repeats, S3 1GB clean, S4 all passed, Q1 sac_z5=0 bic=0.00868). |
-| al_cascad | 25.5u | 7,891 | 26,566 | Former frontier point; dominated by t6_b33c on all three axes. Full battery PASS (Q1 sac_z5=0 bic=0.00891). |
-| r20_feist6_alt_notr_keyin_nw | 37.2u | 4,382 | 12,497 | Full battery PASS (S1 CAL_PASS, S2 0 repeats |z|=10.7, Q1 sac_z5=0 bic=0.17232, PractRand 1GB clean, SmallCrush passed); near-duplicate of chioff13all, effectively dominated (+0.2u/+25 cells for a 0.1% area edge). |
-| r18_feist6_alt_notr_nw | 37.9u | 4,119 | 11,621 | Former frontier point (round 18–19); dominated on all axes by r20 chioff31. Full battery evidence in round18. |
-| r13_feist6_alt_s1chi_nw | 40.1u | 4,563 | 13,041 | Former speed point (round 13–17 frontier); dominated on all axes by r18 alt_notr. Full battery evidence in round13. |
-| r18_feist6_alt_palk_nw | 40.5u | 4,447 | 12,905 | Full battery PASS (S1 CAL_PASS, S2 0 repeats |z|=12.4, Q1 sac_z5=0 bic=0.0089, PractRand 1GB clean, SmallCrush passed); dominated by r18 alt_notr on all axes. |
-| r15_feist6_parsplit_nw | 40.7u | 4,318 | 12,356 | Former frontier point (round 15–17); dominated on all axes by r18 alt_notr. Full battery evidence in round15. |
-| r9_feist6_rot311_nw | 41.0u | 4,265 | 11,996 | Former frontier point (round 9–17); dominated on all axes by r18 alt_notr. |
-| r8_feist6_s1_1sbox_nw | 42.9u | 4,133 | 11,670 | Former frontier point (round 8–17, max-quality); dominated on all axes by r18 alt_notr. |
-| r10_feist6_rot0313_nw | 41.4u | 4,645 | 12,855 | S4 PASS, S2 |z|=4.1, Q1 clean — quality-preferred, dominated on (delay,area) |
-| r9_feist6_rot0719_nw | 41.8u | 4,602 | 12,963 | Dominated by rot311 |
-| r9_feist6_ksalt_nw | 41.8u | 4,628 | 12,946 | Dominated by rot311; clean S2 |
-| r10_feist6_altrot311_713_nw | 41.9u | 4,480 | 12,598 | S4 PASS, S2 |z|=3.6 (cleanest 6r), Q1 clean, heterogeneous — dominated |
-| r9_feist6_ksrot_nw | 42.5u | 4,777 | 13,351 | Dominated by rot311 |
-| r10_feist6_rot0411_nw | 42.8u | 4,150 | 11,847 | S4 PASS, S2 |z|=4.1, Q1 clean; 0.1u faster than r8 but larger — below P&R noise floor |
-| r9_feist6_altrot_nw | 43.2u | 4,338 | 12,239 | Heterogeneous, fully clean, dominated |
-| r9_feist6_rot517_nw | 43.2u | 6,444 | 17,638 | Clean, dominated |
-| r8_feist6_pbox | 43.5u | 4,544 | 12,929 | Dominated by r8 leader |
-| r8_feist6_s1_1sbox | 43.7u | 4,744 | 13,387 | Dominated by r8 leader |
-| r9_feist7_rot517_nw | 49.3u | 5,454 | 15,308 | 7r-nw repair, dominated |
-| r8_feist7_s1_1sbox | 50.2u | 5,452 | 15,421 | Dominated |
-| r8_feist6_s1_alt | 55.0u | 5,436 | 15,095 | Dominated |
-| r7_feist8_s1_1sbox | 56.5u | 6,063 | 17,098 | Dominated |
-| r9_feist7_s1_lin2_nw | 66.6u | 7,532 | 20,968 | Dominated |
+| Candidate | Delay | Cells | Area | Design | Notes |
+|---|---|---:|---:|---|---|
+| al_and6a | 20.1u | 6,116 | 19,541 | 6-stage AND-rotation cascade | Dominated by t6_b33b (delay tie, fewer cells, less area) |
+| al_cascad | 25.5u | 7,891 | 26,566 | AND-rotation cascade | Dominated by t6_b33c on all three axes |
+| r20_feist6_alt_notr_keyin_nw | 37.2u | 4,382 | 12,497 | 6r Feistel, S1/chi alternating, round key inside final chi | Near-duplicate of chioff13all (+0.2u/+25 cells); effectively dominated |
+| r18_feist6_alt_notr_nw | 37.9u | 4,119 | 11,621 | 6r Feistel, S1/chi alternating, no round-6 linear | Dominated on all axes by r20 chioff31 |
+| r13_feist6_alt_s1chi_nw | 40.1u | 4,563 | 13,041 | 6r Feistel, heterogeneous S1/chi alternating rounds | Dominated on all axes by r18 alt_notr |
+| r18_feist6_alt_palk_nw | 40.5u | 4,447 | 12,905 | 6r Feistel, S1/chi alternating, palindromic key schedule | Dominated by r18 alt_notr on all axes |
+| r15_feist6_parsplit_nw | 40.7u | 4,318 | 12,356 | 6r Feistel, parallel S1/chi16 split F | Dominated on all axes by r18 alt_notr |
+| r9_feist6_rot311_nw | 41.0u | 4,265 | 11,996 | 6r Feistel, S1 S-box rounds, lin(3,11) | Dominated on all axes by r18 alt_notr |
+| r8_feist6_s1_1sbox_nw | 42.9u | 4,133 | 11,670 | 6r Feistel, single S1 S-box per round, lin(3,11) | Dominated on all axes by r18 alt_notr |
+| r10_feist6_rot0313_nw | 41.4u | 4,645 | 12,855 | 6r Feistel, S1 S-box, (3,13) rotations | Dominated on (delay,area) |
+| r9_feist6_ksalt_nw | 41.8u | 4,628 | 12,946 | 6r Feistel, alternate key schedule | Dominated by rot311 |
+| r9_feist6_rot0719_nw | 41.8u | 4,602 | 12,963 | 6r Feistel, S1 S-box, (7,19) rotations | Dominated by rot311 |
+| r10_feist6_altrot311_713_nw | 41.9u | 4,480 | 12,598 | 6r Feistel, heterogeneous (3,11)/(7,13) rotations | Dominated |
+| r9_feist6_ksrot_nw | 42.5u | 4,777 | 13,351 | 6r Feistel, rotated key schedule | Dominated by rot311 |
+| r10_feist6_rot0411_nw | 42.8u | 4,150 | 11,847 | 6r Feistel, S1 S-box, (4,11) rotations | 0.1u faster than r8 but larger — below P&R noise |
+| r9_feist6_altrot_nw | 43.2u | 4,338 | 12,239 | 6r Feistel, heterogeneous rotation rounds | Dominated |
+| r9_feist6_rot517_nw | 43.2u | 6,444 | 17,638 | 6r Feistel, S1 S-box, (5,17) rotations | Dominated |
+| r8_feist6_pbox | 43.5u | 4,544 | 12,929 | 6r Feistel, P-box diffusion variant | Dominated by r8 leader |
+| r8_feist6_s1_1sbox | 43.7u | 4,744 | 13,387 | 6r Feistel, single S1 S-box per round | Dominated by r8 leader |
+| r9_feist7_rot517_nw | 49.3u | 5,454 | 15,308 | 7r Feistel, (5,17) rotations | Dominated |
+| r8_feist7_s1_1sbox | 50.2u | 5,452 | 15,421 | 7r Feistel, single S1 S-box per round | Dominated |
+| r8_feist6_s1_alt | 55.0u | 5,436 | 15,095 | 6r Feistel, alternating S1 S-box rounds | Dominated |
+| r7_feist8_s1_1sbox | 56.5u | 6,063 | 17,098 | 8r Feistel, single S1 S-box per round | Dominated |
+| r9_feist7_s1_lin2_nw | 66.6u | 7,532 | 20,968 | 7r Feistel, S1 S-box, 2-rotation linear | Dominated |
 
 ## Fast but not qualified
 

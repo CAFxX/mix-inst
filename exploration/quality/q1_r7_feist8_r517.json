@@ -1,0 +1,10 @@
+{
+  "key": "0x123456789ABCDEF0",
+  "N": 262144,
+  "sac_maxdev": 0.003677,
+  "sac_meandev": 0.000778,
+  "sac_z5": 0,
+  "bic_maxcorr": 0.008798,
+  "bic_meancorr": 0.001556,
+  "avalanche_mean": 32.0012
+}

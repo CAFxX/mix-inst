@@ -1,0 +1,10 @@
+r17_feist5_parsplit_nw
+r17_feist5_alt_s1chi_nw
+r17_feist5_alt_chifirst_nw
+r17_feist6_parmix_nw
+r17_feist6_alt_pshalf_nw
+r17_feist6_dbs1split_nw
+r17_feist6_parsplit_chioff01_nw
+r17_feist6_premix_nw
+r17_feist4_parsplit_nw
+r17_feist5_parsplit_713_nw

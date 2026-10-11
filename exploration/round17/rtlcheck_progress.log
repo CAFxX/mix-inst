@@ -1,0 +1,11 @@
+RTLCHECK_DONE r17_feist5_parsplit_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r17_feist5_alt_s1chi_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r17_feist5_alt_chifirst_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r17_feist6_parmix_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r17_feist6_dbs1split_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r17_feist6_alt_pshalf_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r17_feist6_parsplit_chioff01_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r17_feist6_premix_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r17_feist5_parsplit_713_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE r17_feist4_parsplit_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+ALL_RTLCHECK_DONE

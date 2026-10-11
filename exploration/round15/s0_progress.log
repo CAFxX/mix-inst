@@ -1,0 +1,13 @@
+S0_DONE r15_feist6_alt_s311_c713_nw rc=0 RESULT name=r15_feist6_alt_s311_c713_nw cells=4741 area=13523 crit=40.3 delay_ratio=0.389 area_ratio=0.383 ref_crit=103.
+S0_DONE r15_feist6_alt_s713_c311_nw rc=0 RESULT name=r15_feist6_alt_s713_c311_nw cells=4714 area=13502 crit=41.1 delay_ratio=0.397 area_ratio=0.382 ref_crit=103.
+S0_DONE r15_feist6_alt_2rot_nw rc=0 RESULT name=r15_feist6_alt_2rot_nw cells=4683 area=13399 crit=40.3 delay_ratio=0.389 area_ratio=0.379 ref_crit=103.5 ref
+S0_DONE r15_feist6_alt_wh_nw rc=0 RESULT name=r15_feist6_alt_wh_nw cells=4854 area=13957 crit=42.2 delay_ratio=0.408 area_ratio=0.395 ref_crit=103.5 ref_a
+S0_DONE r15_feist5_db3_nw rc=0 RESULT name=r15_feist5_db3_nw cells=4678 area=12979 crit=41.4 delay_ratio=0.400 area_ratio=0.367 ref_crit=103.5 ref_area
+S0_DONE r15_feist6_db4_nw rc=0 RESULT name=r15_feist6_db4_nw cells=5591 area=15598 crit=48.6 delay_ratio=0.470 area_ratio=0.442 ref_crit=103.5 ref_area
+S0_DONE r15_feist5_db24_nw rc=0 RESULT name=r15_feist5_db24_nw cells=5773 area=15635 crit=49.9 delay_ratio=0.482 area_ratio=0.443 ref_crit=103.5 ref_are
+S0_DONE r15_feist6_db34_nw rc=0 RESULT name=r15_feist6_db34_nw cells=6550 area=18075 crit=55.3 delay_ratio=0.534 area_ratio=0.512 ref_crit=103.5 ref_are
+S0_DONE r15_feist6_parsplit_nw rc=0 RESULT name=r15_feist6_parsplit_nw cells=4318 area=12356 crit=40.7 delay_ratio=0.393 area_ratio=0.350 ref_crit=103.5 ref
+S0_DONE r15_feist6_alt_rkdiff_nw rc=0 RESULT name=r15_feist6_alt_rkdiff_nw cells=4850 area=13959 crit=40.4 delay_ratio=0.390 area_ratio=0.395 ref_crit=103.5 r
+S0_DONE r15_feist6_alt_rksbox_nw rc=0 RESULT name=r15_feist6_alt_rksbox_nw cells=5152 area=14370 crit=41.4 delay_ratio=0.400 area_ratio=0.407 ref_crit=103.5 r
+S0_DONE r15_feist6_alt_chioff023_nw rc=0 RESULT name=r15_feist6_alt_chioff023_nw cells=4632 area=13207 crit=40.5 delay_ratio=0.391 area_ratio=0.374 ref_crit=103.
+ALL_S0_DONE

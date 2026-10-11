@@ -1,0 +1,28 @@
+=== S3 [r15_feist6_parsplit_nw] started 2026-10-03T03:41:28Z
+--- S3 tail:
+[S3 r15_feist6_parsplit_nw] 64MB: no FAIL (rng_test rc=0)
+[S3 r15_feist6_parsplit_nw] stage 256MB (key=0x123456789abcdef0 stride=1) ...
+[S3 r15_feist6_parsplit_nw] 256MB: no FAIL (rng_test rc=0)
+[S3 r15_feist6_parsplit_nw] stage 1GB (key=0x123456789abcdef0 stride=1) ...
+[S3 r15_feist6_parsplit_nw] 1GB: no FAIL (rng_test rc=0)
+[S3 r15_feist6_parsplit_nw] verdict: PASS (all 4 stages, no FAIL)
+=== S3 [r15_feist6_parsplit_nw] rc=0 wall=69s
+=== S3b [r15_feist6_parsplit_nw] started 2026-10-03T03:42:37Z
+--- S3b tail:
+[S3 r15_feist6_parsplit_nw_strided] 64MB: no FAIL (rng_test rc=0)
+[S3 r15_feist6_parsplit_nw_strided] stage 256MB (key=0x0 stride=0x9E3779B97F4A7C15) ...
+[S3 r15_feist6_parsplit_nw_strided] 256MB: no FAIL (rng_test rc=0)
+[S3 r15_feist6_parsplit_nw_strided] stage 1GB (key=0x0 stride=0x9E3779B97F4A7C15) ...
+[S3 r15_feist6_parsplit_nw_strided] 1GB: no FAIL (rng_test rc=0)
+[S3 r15_feist6_parsplit_nw_strided] verdict: PASS (all 4 stages, no FAIL)
+=== S3b [r15_feist6_parsplit_nw] rc=0 wall=70s
+=== S4 [r15_feist6_parsplit_nw] started 2026-10-03T03:43:47Z
+--- S4 tail:
+ Total CPU time:   00:00:34.52
+
+ All tests were passed
+
+
+
+=== S4 [r15_feist6_parsplit_nw] rc=0 wall=36s
+BATTERY-PASS [r15_feist6_parsplit_nw] all stages survived (S5 P&R+review is a manual gate)

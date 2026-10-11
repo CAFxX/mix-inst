@@ -1,0 +1,16 @@
+S2 kill threshold at call site: 10
+S2_DONE r15_feist6_alt_s713_c311_nw rc=0 # delta                  max|z|  low8_chi2 full_repeats
+PASS max_repeats=0 max|z|=3.5 (all 115 deltas)
+S2_DONE r15_feist6_alt_s311_c713_nw rc=0 # delta                  max|z|  low8_chi2 full_repeats
+PASS max_repeats=0 max|z|=4.1 (all 115 deltas)
+S2_DONE r15_feist6_alt_2rot_nw rc=0 # delta                  max|z|  low8_chi2 full_repeats
+PASS max_repeats=0 max|z|=6.7 (all 115 deltas)
+S2_DONE r15_feist6_parsplit_nw rc=0 # delta                  max|z|  low8_chi2 full_repeats
+PASS max_repeats=0 max|z|=18.6 (all 115 deltas)
+S2_DONE r15_feist6_alt_rkdiff_nw rc=0 # delta                  max|z|  low8_chi2 full_repeats
+PASS max_repeats=0 max|z|=11.9 (all 115 deltas)
+S2_DONE r15_feist6_alt_rksbox_nw rc=0 # delta                  max|z|  low8_chi2 full_repeats
+PASS max_repeats=0 max|z|=11.7 (all 115 deltas)
+S2_DONE r15_feist6_alt_chioff023_nw rc=0 # delta                  max|z|  low8_chi2 full_repeats
+PASS max_repeats=0 max|z|=25.9 (all 115 deltas)
+ALL_S2_DONE

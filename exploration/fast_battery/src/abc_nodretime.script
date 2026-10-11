@@ -1,0 +1,15 @@
+# fast_battery S0 ABC script: yosys's built-in default for -genlib WITHOUT dretime.
+#
+# The default script is:
+#   strash; &get -n; &fraig -x; &put; scorr; dc2; dretime; strash;
+#   &get -n; &dch -f; &nf {D}; &put
+# but in the installed yosys 0.69+ (conda-forge) the `dretime` step was PROVEN
+# (2026-10-01, SAT miter pre-abc vs post-abc: counterexample found) to produce
+# a functionally WRONG mapping for mix_h_xorspn3. This file is the default
+# with dretime removed; the no-dretime mapping was SAT-PROVEN equivalent
+# (pre-abc vs post-abc miter: "SAT proof finished - no model found: SUCCESS").
+#
+# NOTE: pass via `-script <this file>`. The `-script +cmd1,cmd2,...` string
+# form does NOT work in this build (commands aren't separated -> ABC emits
+# unmapped $lut cells).
+strash; &get -n; &fraig -x; &put; scorr; dc2; strash; &get -n; &dch -f; &nf; &put

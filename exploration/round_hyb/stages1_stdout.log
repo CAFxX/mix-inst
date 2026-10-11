@@ -1,0 +1,73 @@
+XCHECK_DONE rh_feist6_parsplit_notr31_nw rc=0 XCHECK rh_feist6_parsplit_notr31_nw: PASS 10000/10000 C==Python
+XCHECK_DONE rh_feist6_parsplit_notr_nw rc=0 XCHECK rh_feist6_parsplit_notr_nw: PASS 10000/10000 C==Python
+XCHECK_DONE rh_feist6_parsplit_chioff13_nw rc=0 XCHECK rh_feist6_parsplit_chioff13_nw: PASS 10000/10000 C==Python
+XCHECK_DONE rh_feist6_parsplit_chioff31_nw rc=0 XCHECK rh_feist6_parsplit_chioff31_nw: PASS 10000/10000 C==Python
+XCHECK_DONE rh_feist6_notr_psfinal_nw rc=0 XCHECK rh_feist6_notr_psfinal_nw: PASS 10000/10000 C==Python
+XCHECK_DONE rh_feist6_parsplit_keyin_nw rc=0 XCHECK rh_feist6_parsplit_keyin_nw: PASS 10000/10000 C==Python
+XCHECK_DONE rh_feist6_parsplit_3rot_nw rc=0 XCHECK rh_feist6_parsplit_3rot_nw: PASS 10000/10000 C==Python
+XCHECK_DONE rh_feist6_notr_psfinal31_nw rc=0 XCHECK rh_feist6_notr_psfinal31_nw: PASS 10000/10000 C==Python
+XCHECK_DONE rh_feist6_chioff31_fm11_nw rc=0 XCHECK rh_feist6_chioff31_fm11_nw: PASS 10000/10000 C==Python
+XCHECK_DONE rh_feist6_chioff13_fm11_nw rc=0 XCHECK rh_feist6_chioff13_fm11_nw: PASS 10000/10000 C==Python
+XCHECK_DONE rh_spn3_s1_nw rc=0 XCHECK rh_spn3_s1_nw: PASS 10000/10000 C==Python
+XCHECK_DONE rh_spn4_s1_nw rc=0 XCHECK rh_spn4_s1_nw: PASS 10000/10000 C==Python
+XCHECK_DONE rh_lm_chi_nw rc=0 XCHECK rh_lm_chi_nw: PASS 10000/10000 C==Python
+XCHECK_DONE rh_lm_parsplit_nw rc=0 XCHECK rh_lm_parsplit_nw: PASS 10000/10000 C==Python
+XCHECK_DONE rh_wide128_feist4_nw rc=0 XCHECK rh_wide128_feist4_nw: PASS 10000/10000 C==Python
+XCHECK_DONE rh_wide128_feist5_nw rc=0 XCHECK rh_wide128_feist5_nw: PASS 10000/10000 C==Python
+XCHECK_DONE rh_wideF_feist5_nw rc=0 XCHECK rh_wideF_feist5_nw: PASS 10000/10000 C==Python
+ALL_XCHECK_DONE
+RTLCHECK_DONE rh_feist6_parsplit_notr_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE rh_feist6_parsplit_notr31_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE rh_feist6_parsplit_chioff31_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE rh_feist6_parsplit_chioff13_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE rh_feist6_parsplit_keyin_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE rh_feist6_notr_psfinal_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE rh_feist6_parsplit_3rot_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE rh_feist6_notr_psfinal31_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE rh_feist6_chioff13_fm11_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE rh_feist6_chioff31_fm11_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE rh_spn3_s1_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE rh_spn4_s1_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE rh_lm_parsplit_nw rc=1 RuntimeError: RTL check FAILED for rh_lm_parsplit_nw:
+RTLCHECK_DONE rh_lm_chi_nw rc=1 RuntimeError: RTL check FAILED for rh_lm_chi_nw:
+RTLCHECK_DONE rh_wide128_feist4_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE rh_wide128_feist5_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+RTLCHECK_DONE rh_wideF_feist5_nw rc=0 RTLCHECK: 300/300 vectors match -> PASS
+ALL_RTLCHECK_DONE
+S0_DONE rh_feist6_parsplit_notr31_nw rc=0 RESULT name=rh_feist6_parsplit_notr31_nw cells=4213 area=12007 crit=37.5 delay_ratio=0.362 area_ratio=0.340 ref_crit=103
+S0_DONE rh_feist6_parsplit_notr_nw rc=0 RESULT name=rh_feist6_parsplit_notr_nw cells=4477 area=12774 crit=36.7 delay_ratio=0.355 area_ratio=0.362 ref_crit=103.5
+S0_DONE rh_feist6_parsplit_chioff13_nw rc=0 RESULT name=rh_feist6_parsplit_chioff13_nw cells=4879 area=13779 crit=40.8 delay_ratio=0.394 area_ratio=0.390 ref_crit=1
+S0_DONE rh_feist6_parsplit_chioff31_nw rc=0 RESULT name=rh_feist6_parsplit_chioff31_nw cells=4610 area=13022 crit=40.9 delay_ratio=0.395 area_ratio=0.369 ref_crit=1
+S0_DONE rh_feist6_parsplit_keyin_nw rc=0 RESULT name=rh_feist6_parsplit_keyin_nw cells=5304 area=15050 crit=44.9 delay_ratio=0.434 area_ratio=0.426 ref_crit=103.
+S0_DONE rh_feist6_notr_psfinal31_nw rc=0 RESULT name=rh_feist6_notr_psfinal31_nw cells=3885 area=11120 crit=38.5 delay_ratio=0.372 area_ratio=0.315 ref_crit=103.
+S0_DONE rh_feist6_parsplit_3rot_nw rc=0 RESULT name=rh_feist6_parsplit_3rot_nw cells=5703 area=16143 crit=45.9 delay_ratio=0.443 area_ratio=0.457 ref_crit=103.5
+S0_DONE rh_feist6_chioff13_fm11_nw rc=0 RESULT name=rh_feist6_chioff13_fm11_nw cells=4566 area=12915 crit=39.7 delay_ratio=0.384 area_ratio=0.366 ref_crit=103.5
+S0_DONE rh_feist6_chioff31_fm11_nw rc=0 RESULT name=rh_feist6_chioff31_fm11_nw cells=4646 area=13290 crit=39.7 delay_ratio=0.384 area_ratio=0.376 ref_crit=103.5
+S0_DONE rh_spn3_s1_nw rc=0 RESULT name=rh_spn3_s1_nw cells=3108 area=8716 crit=21.5 delay_ratio=0.208 area_ratio=0.247 ref_crit=103.5 ref_area=3532
+S0_DONE rh_spn4_s1_nw rc=0 RESULT name=rh_spn4_s1_nw cells=5531 area=14913 crit=27.2 delay_ratio=0.263 area_ratio=0.422 ref_crit=103.5 ref_area=353
+S0_DONE rh_lm_parsplit_nw rc=0 RESULT name=rh_lm_parsplit_nw cells=4957 area=13989 crit=45.5 delay_ratio=0.440 area_ratio=0.396 ref_crit=103.5 ref_area
+S0_DONE rh_lm_chi_nw rc=0 RESULT name=rh_lm_chi_nw cells=5287 area=15366 crit=43.4 delay_ratio=0.419 area_ratio=0.435 ref_crit=103.5 ref_area=3532
+S0_DONE rh_wide128_feist4_nw rc=0 RESULT name=rh_wide128_feist4_nw cells=5726 area=16532 crit=28.9 delay_ratio=0.279 area_ratio=0.468 ref_crit=103.5 ref_a
+S0_DONE rh_wide128_feist5_nw rc=0 RESULT name=rh_wide128_feist5_nw cells=7263 area=20779 crit=35.4 delay_ratio=0.342 area_ratio=0.588 ref_crit=103.5 ref_a
+S0_DONE rh_wideF_feist5_nw rc=0 RESULT name=rh_wideF_feist5_nw cells=5378 area=15265 crit=38.7 delay_ratio=0.374 area_ratio=0.432 ref_crit=103.5 ref_are
+S0_DONE rh_feist6_notr_psfinal_nw rc=0 RESULT name=rh_feist6_notr_psfinal_nw cells=3694 area=10674 crit=38.8 delay_ratio=0.375 area_ratio=0.302 ref_crit=103.5 
+ALL_S0_DONE
+S1_DONE rh_feist6_parsplit_notr_nw rc=0 [S1 rh_feist6_parsplit_notr_nw] verdict: CAL_PASS
+S1_DONE rh_feist6_parsplit_notr31_nw rc=0 [S1 rh_feist6_parsplit_notr31_nw] verdict: CAL_PASS
+S1_DONE rh_feist6_parsplit_chioff13_nw rc=0 [S1 rh_feist6_parsplit_chioff13_nw] verdict: CAL_PASS
+S1_DONE rh_feist6_parsplit_chioff31_nw rc=0 [S1 rh_feist6_parsplit_chioff31_nw] verdict: CAL_PASS
+S1_DONE rh_feist6_notr_psfinal_nw rc=0 [S1 rh_feist6_notr_psfinal_nw] verdict: CAL_PASS
+S1_DONE rh_feist6_parsplit_keyin_nw rc=0 [S1 rh_feist6_parsplit_keyin_nw] verdict: CAL_PASS
+S1_DONE rh_feist6_parsplit_3rot_nw rc=2 
+S1_DONE rh_feist6_notr_psfinal31_nw rc=0 [S1 rh_feist6_notr_psfinal31_nw] verdict: CAL_PASS
+S1_DONE rh_feist6_chioff13_fm11_nw rc=0 [S1 rh_feist6_chioff13_fm11_nw] verdict: CAL_PASS
+S1_DONE rh_spn3_s1_nw rc=2 
+S1_DONE rh_spn4_s1_nw rc=2 
+S1_DONE rh_feist6_chioff31_fm11_nw rc=0 [S1 rh_feist6_chioff31_fm11_nw] verdict: CAL_PASS
+S1_DONE rh_lm_parsplit_nw rc=0 [S1 rh_lm_parsplit_nw] verdict: CAL_PASS
+S1_DONE rh_lm_chi_nw rc=0 [S1 rh_lm_chi_nw] verdict: CAL_PASS
+S1_DONE rh_wide128_feist4_nw rc=2 
+S1_DONE rh_wide128_feist5_nw rc=2 
+S1_DONE rh_wideF_feist5_nw rc=2 
+ALL_S1_DONE
+BATTERY_STAGES_1_DONE

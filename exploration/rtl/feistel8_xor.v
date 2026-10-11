@@ -1,0 +1,60 @@
+// feistel8_xor: 8-round Feistel, 32-bit halves. (Batch C)
+// F(x,rk)=(x^rk)^ROTL32(x,7)^ROTL32(x,19): near-affine (linear-plus-keyxor) F, CRYPTOGRAPHICALLY WEAK BY CONSTRUCTION; boundary-mapping probe only.
+// S-box via 4x 16-bit LUT planes + 16:1 mux per output bit (function-free,
+// case-free: ABC optimizes; mapped netlist has no $func$/ROM hierarchy).
+module feistel8_xor(input wire [63:0] val, input wire [63:0] key, output wire [63:0] out);
+  wire [31:0] klo = key[31:0];
+  wire [31:0] khi = key[63:32];
+  wire [31:0] L0 = val[31:0] ^ klo;
+  wire [31:0] R0 = val[63:32] ^ khi;
+  // round 1: rk = ROTL32(klo,3) ^ ROTL32(khi,5) ^ 0x9E3779B9
+  wire [31:0] rk0 = ((klo << 3) | (klo >> 29)) ^ ((khi << 5) | (khi >> 27)) ^ 32'h9E3779B9;
+  wire [31:0] t0 = R0 ^ rk0;
+  wire [31:0] f0 = t0 ^ ((t0 << 7) | (t0 >> 25)) ^ ((t0 << 19) | (t0 >> 13));
+  wire [31:0] L1 = R0;
+  wire [31:0] R1 = L0 ^ f0;
+  // round 2: rk = ROTL32(klo,6) ^ ROTL32(khi,10) ^ 0x3C6EF372
+  wire [31:0] rk1 = ((klo << 6) | (klo >> 26)) ^ ((khi << 10) | (khi >> 22)) ^ 32'h3C6EF372;
+  wire [31:0] t1 = R1 ^ rk1;
+  wire [31:0] f1 = t1 ^ ((t1 << 7) | (t1 >> 25)) ^ ((t1 << 19) | (t1 >> 13));
+  wire [31:0] L2 = R1;
+  wire [31:0] R2 = L1 ^ f1;
+  // round 3: rk = ROTL32(klo,9) ^ ROTL32(khi,15) ^ 0xDAA66D2B
+  wire [31:0] rk2 = ((klo << 9) | (klo >> 23)) ^ ((khi << 15) | (khi >> 17)) ^ 32'hDAA66D2B;
+  wire [31:0] t2 = R2 ^ rk2;
+  wire [31:0] f2 = t2 ^ ((t2 << 7) | (t2 >> 25)) ^ ((t2 << 19) | (t2 >> 13));
+  wire [31:0] L3 = R2;
+  wire [31:0] R3 = L2 ^ f2;
+  // round 4: rk = ROTL32(klo,12) ^ ROTL32(khi,20) ^ 0x78DDE6E4
+  wire [31:0] rk3 = ((klo << 12) | (klo >> 20)) ^ ((khi << 20) | (khi >> 12)) ^ 32'h78DDE6E4;
+  wire [31:0] t3 = R3 ^ rk3;
+  wire [31:0] f3 = t3 ^ ((t3 << 7) | (t3 >> 25)) ^ ((t3 << 19) | (t3 >> 13));
+  wire [31:0] L4 = R3;
+  wire [31:0] R4 = L3 ^ f3;
+  // round 5: rk = ROTL32(klo,15) ^ ROTL32(khi,25) ^ 0x1715609D
+  wire [31:0] rk4 = ((klo << 15) | (klo >> 17)) ^ ((khi << 25) | (khi >> 7)) ^ 32'h1715609D;
+  wire [31:0] t4 = R4 ^ rk4;
+  wire [31:0] f4 = t4 ^ ((t4 << 7) | (t4 >> 25)) ^ ((t4 << 19) | (t4 >> 13));
+  wire [31:0] L5 = R4;
+  wire [31:0] R5 = L4 ^ f4;
+  // round 6: rk = ROTL32(klo,18) ^ ROTL32(khi,30) ^ 0xB54CDA56
+  wire [31:0] rk5 = ((klo << 18) | (klo >> 14)) ^ ((khi << 30) | (khi >> 2)) ^ 32'hB54CDA56;
+  wire [31:0] t5 = R5 ^ rk5;
+  wire [31:0] f5 = t5 ^ ((t5 << 7) | (t5 >> 25)) ^ ((t5 << 19) | (t5 >> 13));
+  wire [31:0] L6 = R5;
+  wire [31:0] R6 = L5 ^ f5;
+  // round 7: rk = ROTL32(klo,21) ^ ROTL32(khi,3) ^ 0x5384540F
+  wire [31:0] rk6 = ((klo << 21) | (klo >> 11)) ^ ((khi << 3) | (khi >> 29)) ^ 32'h5384540F;
+  wire [31:0] t6 = R6 ^ rk6;
+  wire [31:0] f6 = t6 ^ ((t6 << 7) | (t6 >> 25)) ^ ((t6 << 19) | (t6 >> 13));
+  wire [31:0] L7 = R6;
+  wire [31:0] R7 = L6 ^ f6;
+  // round 8: rk = ROTL32(klo,24) ^ ROTL32(khi,8) ^ 0xF1BBCDC8
+  wire [31:0] rk7 = ((klo << 24) | (klo >> 8)) ^ ((khi << 8) | (khi >> 24)) ^ 32'hF1BBCDC8;
+  wire [31:0] t7 = R7 ^ rk7;
+  wire [31:0] f7 = t7 ^ ((t7 << 7) | (t7 >> 25)) ^ ((t7 << 19) | (t7 >> 13));
+  wire [31:0] L8 = R7;
+  wire [31:0] R8 = L7 ^ f7;
+  // no final swap; out = {Rn^ROTL32(khi,7), Ln^ROTL32(klo,7)}
+  assign out = { R8 ^ ((khi << 7) | (khi >> 25)), L8 ^ ((klo << 7) | (klo >> 25)) };
+endmodule

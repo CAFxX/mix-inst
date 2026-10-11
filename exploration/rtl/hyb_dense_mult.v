@@ -1,0 +1,76 @@
+// hyb_dense_mult: constant-multiply + SPN hybrid (round 2). SBOX=PRESENT
+// x = val ^ key; ops: MULT (mult = (x * 0xbf58476d1ce4e5b9) mod 2^64, Wallace CSD tree)
+// S-box inline as assign-based SOP (minterm expansion from the verified table;
+// ABC minimizes). No case/function: those infer $rom, which the yosys/abc flow
+// cannot map. All net names plain identifiers (see round-1 note).
+
+module hyb_dense_mult(input wire [63:0] val, input wire [63:0] key, output wire [63:0] out);
+  wire [63:0] s0 = val ^ key;
+  wire [63:0] wm0_pp0 = (s0 << 0);
+  wire [63:0] wm0_pp1 = -(s0 << 3);
+  wire [63:0] wm0_pp2 = -(s0 << 6);
+  wire [63:0] wm0_pp3 = -(s0 << 9);
+  wire [63:0] wm0_pp4 = (s0 << 11);
+  wire [63:0] wm0_pp5 = -(s0 << 13);
+  wire [63:0] wm0_pp6 = (s0 << 16);
+  wire [63:0] wm0_pp7 = (s0 << 18);
+  wire [63:0] wm0_pp8 = -(s0 << 21);
+  wire [63:0] wm0_pp9 = (s0 << 24);
+  wire [63:0] wm0_pp10 = -(s0 << 26);
+  wire [63:0] wm0_pp11 = (s0 << 29);
+  wire [63:0] wm0_pp12 = (s0 << 32);
+  wire [63:0] wm0_pp13 = -(s0 << 34);
+  wire [63:0] wm0_pp14 = -(s0 << 36);
+  wire [63:0] wm0_pp15 = -(s0 << 39);
+  wire [63:0] wm0_pp16 = (s0 << 43);
+  wire [63:0] wm0_pp17 = (s0 << 46);
+  wire [63:0] wm0_pp18 = -(s0 << 51);
+  wire [63:0] wm0_pp19 = -(s0 << 53);
+  wire [63:0] wm0_pp20 = -(s0 << 55);
+  wire [63:0] wm0_pp21 = -(s0 << 62);
+  wire [63:0] wm0_pp22 = (s0 << 64);
+  wire [63:0] wm0_ws0_0 = wm0_pp0 ^ wm0_pp1 ^ wm0_pp2;
+  wire [63:0] wm0_wc0_0 = ((wm0_pp0 & wm0_pp1) | (wm0_pp1 & wm0_pp2) | (wm0_pp0 & wm0_pp2)) << 1;
+  wire [63:0] wm0_ws0_1 = wm0_pp3 ^ wm0_pp4 ^ wm0_pp5;
+  wire [63:0] wm0_wc0_1 = ((wm0_pp3 & wm0_pp4) | (wm0_pp4 & wm0_pp5) | (wm0_pp3 & wm0_pp5)) << 1;
+  wire [63:0] wm0_ws0_2 = wm0_pp6 ^ wm0_pp7 ^ wm0_pp8;
+  wire [63:0] wm0_wc0_2 = ((wm0_pp6 & wm0_pp7) | (wm0_pp7 & wm0_pp8) | (wm0_pp6 & wm0_pp8)) << 1;
+  wire [63:0] wm0_ws0_3 = wm0_pp9 ^ wm0_pp10 ^ wm0_pp11;
+  wire [63:0] wm0_wc0_3 = ((wm0_pp9 & wm0_pp10) | (wm0_pp10 & wm0_pp11) | (wm0_pp9 & wm0_pp11)) << 1;
+  wire [63:0] wm0_ws0_4 = wm0_pp12 ^ wm0_pp13 ^ wm0_pp14;
+  wire [63:0] wm0_wc0_4 = ((wm0_pp12 & wm0_pp13) | (wm0_pp13 & wm0_pp14) | (wm0_pp12 & wm0_pp14)) << 1;
+  wire [63:0] wm0_ws0_5 = wm0_pp15 ^ wm0_pp16 ^ wm0_pp17;
+  wire [63:0] wm0_wc0_5 = ((wm0_pp15 & wm0_pp16) | (wm0_pp16 & wm0_pp17) | (wm0_pp15 & wm0_pp17)) << 1;
+  wire [63:0] wm0_ws0_6 = wm0_pp18 ^ wm0_pp19 ^ wm0_pp20;
+  wire [63:0] wm0_wc0_6 = ((wm0_pp18 & wm0_pp19) | (wm0_pp19 & wm0_pp20) | (wm0_pp18 & wm0_pp20)) << 1;
+  wire [63:0] wm0_ws1_0 = wm0_ws0_0 ^ wm0_wc0_0 ^ wm0_ws0_1;
+  wire [63:0] wm0_wc1_0 = ((wm0_ws0_0 & wm0_wc0_0) | (wm0_wc0_0 & wm0_ws0_1) | (wm0_ws0_0 & wm0_ws0_1)) << 1;
+  wire [63:0] wm0_ws1_1 = wm0_wc0_1 ^ wm0_ws0_2 ^ wm0_wc0_2;
+  wire [63:0] wm0_wc1_1 = ((wm0_wc0_1 & wm0_ws0_2) | (wm0_ws0_2 & wm0_wc0_2) | (wm0_wc0_1 & wm0_wc0_2)) << 1;
+  wire [63:0] wm0_ws1_2 = wm0_ws0_3 ^ wm0_wc0_3 ^ wm0_ws0_4;
+  wire [63:0] wm0_wc1_2 = ((wm0_ws0_3 & wm0_wc0_3) | (wm0_wc0_3 & wm0_ws0_4) | (wm0_ws0_3 & wm0_ws0_4)) << 1;
+  wire [63:0] wm0_ws1_3 = wm0_wc0_4 ^ wm0_ws0_5 ^ wm0_wc0_5;
+  wire [63:0] wm0_wc1_3 = ((wm0_wc0_4 & wm0_ws0_5) | (wm0_ws0_5 & wm0_wc0_5) | (wm0_wc0_4 & wm0_wc0_5)) << 1;
+  wire [63:0] wm0_ws1_4 = wm0_ws0_6 ^ wm0_wc0_6 ^ wm0_pp21;
+  wire [63:0] wm0_wc1_4 = ((wm0_ws0_6 & wm0_wc0_6) | (wm0_wc0_6 & wm0_pp21) | (wm0_ws0_6 & wm0_pp21)) << 1;
+  wire [63:0] wm0_ws2_0 = wm0_ws1_0 ^ wm0_wc1_0 ^ wm0_ws1_1;
+  wire [63:0] wm0_wc2_0 = ((wm0_ws1_0 & wm0_wc1_0) | (wm0_wc1_0 & wm0_ws1_1) | (wm0_ws1_0 & wm0_ws1_1)) << 1;
+  wire [63:0] wm0_ws2_1 = wm0_wc1_1 ^ wm0_ws1_2 ^ wm0_wc1_2;
+  wire [63:0] wm0_wc2_1 = ((wm0_wc1_1 & wm0_ws1_2) | (wm0_ws1_2 & wm0_wc1_2) | (wm0_wc1_1 & wm0_wc1_2)) << 1;
+  wire [63:0] wm0_ws2_2 = wm0_ws1_3 ^ wm0_wc1_3 ^ wm0_ws1_4;
+  wire [63:0] wm0_wc2_2 = ((wm0_ws1_3 & wm0_wc1_3) | (wm0_wc1_3 & wm0_ws1_4) | (wm0_ws1_3 & wm0_ws1_4)) << 1;
+  wire [63:0] wm0_ws3_0 = wm0_ws2_0 ^ wm0_wc2_0 ^ wm0_ws2_1;
+  wire [63:0] wm0_wc3_0 = ((wm0_ws2_0 & wm0_wc2_0) | (wm0_wc2_0 & wm0_ws2_1) | (wm0_ws2_0 & wm0_ws2_1)) << 1;
+  wire [63:0] wm0_ws3_1 = wm0_wc2_1 ^ wm0_ws2_2 ^ wm0_wc2_2;
+  wire [63:0] wm0_wc3_1 = ((wm0_wc2_1 & wm0_ws2_2) | (wm0_ws2_2 & wm0_wc2_2) | (wm0_wc2_1 & wm0_wc2_2)) << 1;
+  wire [63:0] wm0_ws4_0 = wm0_ws3_0 ^ wm0_wc3_0 ^ wm0_ws3_1;
+  wire [63:0] wm0_wc4_0 = ((wm0_ws3_0 & wm0_wc3_0) | (wm0_wc3_0 & wm0_ws3_1) | (wm0_ws3_0 & wm0_ws3_1)) << 1;
+  wire [63:0] wm0_ws4_1 = wm0_wc3_1 ^ wm0_wc1_4 ^ wm0_pp22;
+  wire [63:0] wm0_wc4_1 = ((wm0_wc3_1 & wm0_wc1_4) | (wm0_wc1_4 & wm0_pp22) | (wm0_wc3_1 & wm0_pp22)) << 1;
+  wire [63:0] wm0_ws5_0 = wm0_ws4_0 ^ wm0_wc4_0 ^ wm0_ws4_1;
+  wire [63:0] wm0_wc5_0 = ((wm0_ws4_0 & wm0_wc4_0) | (wm0_wc4_0 & wm0_ws4_1) | (wm0_ws4_0 & wm0_ws4_1)) << 1;
+  wire [63:0] wm0_ws6_0 = wm0_ws5_0 ^ wm0_wc5_0 ^ wm0_wc4_1;
+  wire [63:0] wm0_wc6_0 = ((wm0_ws5_0 & wm0_wc5_0) | (wm0_wc5_0 & wm0_wc4_1) | (wm0_ws5_0 & wm0_wc4_1)) << 1;
+  wire [63:0] s1 = wm0_ws6_0 + wm0_wc6_0;
+  assign out = s1 ^ {key[50:0], key[63:51]} ^ 64'h9e3779b97f4a7c15;
+endmodule

@@ -1,0 +1,12 @@
+{
+ "candidate": "r21_feist6_alt_notr_chioff31_fm07_nw",
+ "key": "0x123456789abcdef0",
+ "N": 262144,
+ "sac_maxdev": 0.00389862060546875,
+ "sac_meandev": 0.0008041402325034142,
+ "sac_z5": 0,
+ "bic_maxcorr": 0.008506734388413659,
+ "bic_meancorr": 0.001555825738355848,
+ "avalanche_mean": 32.00121051073074,
+ "wall_s": 162.0
+}

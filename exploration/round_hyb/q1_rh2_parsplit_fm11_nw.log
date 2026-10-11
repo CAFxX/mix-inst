@@ -1,0 +1,18 @@
+/home/hatch/workspace/mix/exploration/round_hyb/models/rhyb.py:115: RuntimeWarning: overflow encountered in scalar multiply
+  return (_rotl64_np(k, r) ^ (np.uint64(i + 1) * GOLDEN64)) & MASK32
+  bit 16/64 done (67s)
+  bit 32/64 done (131s)
+  bit 48/64 done (183s)
+  bit 64/64 done (243s)
+{
+ "candidate": "rh2_parsplit_fm11_nw",
+ "key": "0x123456789abcdef0",
+ "N": 262144,
+ "sac_maxdev": 0.013477325439453125,
+ "sac_meandev": 0.0008105039596557617,
+ "sac_z5": 7,
+ "bic_maxcorr": 0.009674035146741445,
+ "bic_meancorr": 0.0015608730183534784,
+ "avalanche_mean": 31.998071551322937,
+ "wall_s": 243.1
+}

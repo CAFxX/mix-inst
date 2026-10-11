@@ -1,0 +1,58 @@
+=== S0a [r8_feist6_r311] started 2026-10-02T17:54:09Z
+--- S0a tail:
+/home/hatch/workspace/mix/exploration/round8/models/r8.py:35: RuntimeWarning: overflow encountered in scalar multiply
+  return (_rotl64_np(k, r) ^ (np.uint64(i + 1) * GOLDEN64)) & MASK64
+XCHECK r8_feist6_r311: PASS 10000/10000 C==Python
+=== S0a [r8_feist6_r311] rc=0 wall=10s
+=== S0 [r8_feist6_r311] started 2026-10-02T17:54:20Z
+--- S0 tail:
+/home/hatch/workspace/mix/exploration/round8/models/r8.py:35: RuntimeWarning: overflow encountered in scalar multiply
+  return (_rotl64_np(k, r) ^ (np.uint64(i + 1) * GOLDEN64)) & MASK64
+[S0 r8_feist6_r311] delay=64.1u cells=6163 x_mult=0.619 (bar 0.9) equiv=n=1000 err=0 -> PASS [ref 0s cached=True, dut 3s, equiv 58s]
+=== S0 [r8_feist6_r311] rc=0 wall=61s
+=== S1 [r8_feist6_r311] started 2026-10-02T17:55:21Z
+--- S1 tail:
+  [DIFF] key=0x123456789abcdef worst|z|=2.6 fisher_logp=-3.15 bonf_logp=-1.67
+  [DIFF] key=0xf0b52a9e7d8ba2b5 worst|z|=3.0 fisher_logp=-2.71 bonf_logp=-2.98
+  [DIFF] key=0x92988f142674743 worst|z|=2.2 fisher_logp=-0.25 bonf_logp=-0.59
+  LIN: PASS (rej=0)  DIFF: PASS (rej=0)
+[S1 r8_feist6_r311] LIN/DIFF 23s: LIN PASS DIFF PASS; marginal 241s: PB rej=0 RD rej=0
+[S1 r8_feist6_r311] verdict: CAL_PASS
+=== S1 [r8_feist6_r311] rc=0 wall=243s
+=== S2 [r8_feist6_r311] started 2026-10-02T17:59:24Z
+--- S2 tail:
+  0xe000000000000000      2.5      228.9            0
+  0x000000000000000f      2.5      231.0            0
+  0x00000000f0000000      2.9      266.1            0
+  0x0000000f00000000      2.7      237.6            0
+  0xf000000000000000      3.1      275.7            0
+PASS max_repeats=0 max|z|=3.7 (all 115 deltas)
+=== S2 [r8_feist6_r311] rc=0 wall=370s
+=== S3 [r8_feist6_r311] started 2026-10-02T18:05:35Z
+--- S3 tail:
+[S3 r8_feist6_r311] 64MB: no FAIL (rng_test rc=0)
+[S3 r8_feist6_r311] stage 256MB (key=0x123456789abcdef0 stride=1) ...
+[S3 r8_feist6_r311] 256MB: no FAIL (rng_test rc=0)
+[S3 r8_feist6_r311] stage 1GB (key=0x123456789abcdef0 stride=1) ...
+[S3 r8_feist6_r311] 1GB: no FAIL (rng_test rc=0)
+[S3 r8_feist6_r311] verdict: PASS (all 4 stages, no FAIL)
+=== S3 [r8_feist6_r311] rc=0 wall=106s
+=== S3b [r8_feist6_r311] started 2026-10-02T18:07:21Z
+--- S3b tail:
+[S3 r8_feist6_r311_strided] 64MB: no FAIL (rng_test rc=0)
+[S3 r8_feist6_r311_strided] stage 256MB (key=0x0 stride=0x9E3779B97F4A7C15) ...
+[S3 r8_feist6_r311_strided] 256MB: no FAIL (rng_test rc=0)
+[S3 r8_feist6_r311_strided] stage 1GB (key=0x0 stride=0x9E3779B97F4A7C15) ...
+[S3 r8_feist6_r311_strided] 1GB: no FAIL (rng_test rc=0)
+[S3 r8_feist6_r311_strided] verdict: PASS (all 4 stages, no FAIL)
+=== S3b [r8_feist6_r311] rc=0 wall=105s
+=== S4 [r8_feist6_r311] started 2026-10-02T18:09:06Z
+--- S4 tail:
+ Total CPU time:   00:00:20.44
+
+ All tests were passed
+
+
+
+=== S4 [r8_feist6_r311] rc=0 wall=42s
+BATTERY-PASS [r8_feist6_r311] all stages survived (S5 P&R+review is a manual gate)

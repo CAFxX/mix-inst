@@ -1,0 +1,18 @@
+=== S0a [r9_feist6_nork] started 2026-10-02T19:07:18Z
+--- S0a tail:
+XCHECK r9_feist6_nork: PASS 10000/10000 C==Python
+=== S0a [r9_feist6_nork] rc=0 wall=6s
+=== S0 [r9_feist6_nork] started 2026-10-02T19:07:24Z
+--- S0 tail:
+[S0 r9_feist6_nork] delay=43.0u cells=3976 x_mult=0.415 (bar 0.9) equiv=n=1000 err=0 -> PASS [ref 0s cached=True, dut 3s, equiv 26s]
+=== S0 [r9_feist6_nork] rc=0 wall=30s
+=== S1 [r9_feist6_nork] started 2026-10-02T19:07:54Z
+--- S1 tail:
+  [DIFF] key=0x123456789abcdef worst|z|=1.7 fisher_logp=-0.74 bonf_logp=0.56
+  [DIFF] key=0xf0b52a9e7d8ba2b5 worst|z|=3.5 fisher_logp=-4.80 bonf_logp=-4.92
+  [DIFF] key=0x92988f142674743 worst|z|=2.1 fisher_logp=-0.85 bonf_logp=-0.49
+  LIN: PASS (rej=0)  DIFF: PASS (rej=0)
+[S1 r9_feist6_nork] LIN/DIFF 25s: LIN PASS DIFF PASS; marginal 181s: PB rej=1 RD rej=0
+[S1 r9_feist6_nork] verdict: FLAG
+=== S1 [r9_feist6_nork] rc=2 wall=182s
+BATTERY-FAIL stage=S1-screen [r9_feist6_nork] (see /home/hatch/workspace/mix/exploration/fast_battery/results/r9_feist6_nork/battery.log)

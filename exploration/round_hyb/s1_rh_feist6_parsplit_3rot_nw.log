@@ -1,0 +1,25 @@
+/home/hatch/workspace/mix/exploration/round_hyb/models/rhyb.py:115: RuntimeWarning: overflow encountered in scalar multiply
+  return (_rotl64_np(k, r) ^ (np.uint64(i + 1) * GOLDEN64)) & MASK32
+  [LIN] key=0x0 D=156/4096 logp=-179.27
+  [LIN] key=0xffffffffffffffff D=155/4096 logp=-177.26
+  [LIN] key=0xaaaaaaaaaaaaaaaa D=152/4096 logp=-171.27
+  [LIN] key=0x5555555555555555 D=161/4096 logp=-189.41
+  [LIN] key=0xdeadbeefdeadbeef D=156/4096 logp=-179.27
+  [LIN] key=0x9e3779b97f4a7c15 D=174/4096 logp=-216.53
+  [LIN] key=0x1234 D=23/4096 logp=-0.88
+  [LIN] key=0x123456789abcdef D=140/4096 logp=-147.94
+  [LIN] key=0xf0b52a9e7d8ba2b5 D=137/4096 logp=-142.27
+  [LIN] key=0x92988f142674743 D=148/4096 logp=-163.38
+  [DIFF] key=0x0 worst|z|=2.6 fisher_logp=-1.88 bonf_logp=-1.70
+  [DIFF] key=0xffffffffffffffff worst|z|=1.7 fisher_logp=-0.18 bonf_logp=0.41
+  [DIFF] key=0xaaaaaaaaaaaaaaaa worst|z|=2.7 fisher_logp=-0.98 bonf_logp=-2.09
+  [DIFF] key=0x5555555555555555 worst|z|=1.7 fisher_logp=-0.21 bonf_logp=0.44
+  [DIFF] key=0xdeadbeefdeadbeef worst|z|=2.6 fisher_logp=-1.25 bonf_logp=-1.79
+  [DIFF] key=0x9e3779b97f4a7c15 worst|z|=2.4 fisher_logp=-0.43 bonf_logp=-1.10
+  [DIFF] key=0x1234 worst|z|=1.9 fisher_logp=-0.27 bonf_logp=0.05
+  [DIFF] key=0x123456789abcdef worst|z|=2.0 fisher_logp=-0.06 bonf_logp=-0.28
+  [DIFF] key=0xf0b52a9e7d8ba2b5 worst|z|=1.8 fisher_logp=-0.48 bonf_logp=0.29
+  [DIFF] key=0x92988f142674743 worst|z|=1.7 fisher_logp=-0.05 bonf_logp=0.53
+  LIN: FLAG (rej=9)  DIFF: PASS (rej=0)
+[S1 rh_feist6_parsplit_3rot_nw] LIN/DIFF 46s: LIN FLAG DIFF PASS; SKIPPED (LIN/DIFF kill)
+[S1 rh_feist6_parsplit_3rot_nw] verdict: FLAG

@@ -1,0 +1,22 @@
+=== S0a [r9_feist6_rot0925_nw] started 2026-10-02T18:49:47Z
+--- S0a tail:
+/home/hatch/workspace/mix/exploration/round9/models/r9.py:56: RuntimeWarning: overflow encountered in scalar multiply
+  return (_rotl64_np(k, r) ^ (np.uint64(i + 1) * GOLDEN64)) & MASK64
+XCHECK r9_feist6_rot0925_nw: PASS 10000/10000 C==Python
+=== S0a [r9_feist6_rot0925_nw] rc=0 wall=12s
+=== S0 [r9_feist6_rot0925_nw] started 2026-10-02T18:49:59Z
+--- S0 tail:
+/home/hatch/workspace/mix/exploration/round9/models/r9.py:56: RuntimeWarning: overflow encountered in scalar multiply
+  return (_rotl64_np(k, r) ^ (np.uint64(i + 1) * GOLDEN64)) & MASK64
+[S0 r9_feist6_rot0925_nw] delay=42.7u cells=4138 x_mult=0.413 (bar 0.9) equiv=n=1000 err=0 -> PASS [ref 0s cached=True, dut 4s, equiv 47s]
+=== S0 [r9_feist6_rot0925_nw] rc=0 wall=51s
+=== S1 [r9_feist6_rot0925_nw] started 2026-10-02T18:50:50Z
+--- S1 tail:
+  [DIFF] key=0x123456789abcdef worst|z|=23.6 fisher_logp=-499.17 bonf_logp=-279.23
+  [DIFF] key=0xf0b52a9e7d8ba2b5 worst|z|=49.7 fisher_logp=-inf bonf_logp=-1238.03
+  [DIFF] key=0x92988f142674743 worst|z|=114.3 fisher_logp=-inf bonf_logp=-6529.75
+  LIN: PASS (rej=0)  DIFF: FLAG (rej=10)
+[S1 r9_feist6_rot0925_nw] LIN/DIFF 23s: LIN PASS DIFF FLAG; SKIPPED (LIN/DIFF kill)
+[S1 r9_feist6_rot0925_nw] verdict: FLAG
+=== S1 [r9_feist6_rot0925_nw] rc=2 wall=27s
+BATTERY-FAIL stage=S1-screen [r9_feist6_rot0925_nw] (see /home/hatch/workspace/mix/exploration/fast_battery/results/r9_feist6_rot0925_nw/battery.log)

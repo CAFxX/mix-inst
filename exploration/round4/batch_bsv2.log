@@ -1,0 +1,21 @@
+measuring reference mul64 (fresh)...
+REF: cells=17893 area=46073.0 crit=50.8
+bar=45.7
+[blink2] crit=20.4 r_ref=0.402 cells=2634 -> delay PASS
+[blink3] crit=29.0 r_ref=0.571 cells=3508 -> delay PASS
+[blink4] crit=36.8 r_ref=0.724 cells=5138 -> delay PASS
+[midori3] crit=31.0 r_ref=0.610 cells=4661 -> delay PASS
+[speedy3] crit=127.5 r_ref=2.510 cells=11659 -> delay OUT
+[speedy4] crit=168.6 r_ref=3.319 cells=15718 -> delay OUT
+[skinny_xorlin] crit=71.6 r_ref=1.409 cells=8902 -> delay OUT
+
+=== B/S/V delay summary (bar 45.7) ===
+name             crit  x_mult   cells gate
+blink2           20.4   0.402    2634 PASS
+blink3           29.0   0.571    3508 PASS
+blink4           36.8   0.724    5138 PASS
+midori3          31.0   0.610    4661 PASS
+speedy3         127.5   2.510   11659 OUT
+speedy4         168.6   3.319   15718 OUT
+skinny_xorlin    71.6   1.409    8902 OUT
+ref_crit=50.8 ref_cells=17893

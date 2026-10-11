@@ -1,0 +1,23 @@
+  [LIN] key=0x0 D=4050/4096 logp=-inf
+  [LIN] key=0xffffffffffffffff D=4007/4096 logp=-inf
+  [LIN] key=0xaaaaaaaaaaaaaaaa D=4063/4096 logp=-inf
+  [LIN] key=0x5555555555555555 D=4070/4096 logp=-inf
+  [LIN] key=0xdeadbeefdeadbeef D=3950/4096 logp=-inf
+  [LIN] key=0x9e3779b97f4a7c15 D=4009/4096 logp=-inf
+  [LIN] key=0x1234 D=4077/4096 logp=-inf
+  [LIN] key=0x123456789abcdef D=4018/4096 logp=-inf
+  [LIN] key=0xf0b52a9e7d8ba2b5 D=4037/4096 logp=-inf
+  [LIN] key=0x92988f142674743 D=4046/4096 logp=-inf
+  [DIFF] key=0x0 worst|z|=367.5 fisher_logp=-inf bonf_logp=-67545.64
+  [DIFF] key=0xffffffffffffffff worst|z|=149.4 fisher_logp=-inf bonf_logp=-11155.95
+  [DIFF] key=0xaaaaaaaaaaaaaaaa worst|z|=402.1 fisher_logp=-inf bonf_logp=-80862.21
+  [DIFF] key=0x5555555555555555 worst|z|=1304.4 fisher_logp=-inf bonf_logp=-850710.30
+  [DIFF] key=0xdeadbeefdeadbeef worst|z|=201.9 fisher_logp=-inf bonf_logp=-20381.68
+  [DIFF] key=0x9e3779b97f4a7c15 worst|z|=167.8 fisher_logp=-inf bonf_logp=-14076.55
+  [DIFF] key=0x1234 worst|z|=757.2 fisher_logp=-inf bonf_logp=-286679.91
+  [DIFF] key=0x123456789abcdef worst|z|=256.2 fisher_logp=-inf bonf_logp=-32826.60
+  [DIFF] key=0xf0b52a9e7d8ba2b5 worst|z|=1284.4 fisher_logp=-inf bonf_logp=-824907.94
+  [DIFF] key=0x92988f142674743 worst|z|=979.5 fisher_logp=-inf bonf_logp=-479706.65
+  LIN: FLAG (rej=10)  DIFF: FLAG (rej=10)
+[S1 rh2_spn4_s1_fastlin_nw] LIN/DIFF 76s: LIN FLAG DIFF FLAG; SKIPPED (LIN/DIFF kill)
+[S1 rh2_spn4_s1_fastlin_nw] verdict: FLAG

@@ -1,0 +1,22 @@
+=== S0a [r8_feist8_midori] started 2026-10-02T17:09:47Z
+--- S0a tail:
+/home/hatch/workspace/mix/exploration/round8/models/r8.py:35: RuntimeWarning: overflow encountered in scalar multiply
+  return (_rotl64_np(k, r) ^ (np.uint64(i + 1) * GOLDEN64)) & MASK64
+XCHECK r8_feist8_midori: PASS 10000/10000 C==Python
+=== S0a [r8_feist8_midori] rc=0 wall=20s
+=== S0 [r8_feist8_midori] started 2026-10-02T17:10:07Z
+--- S0 tail:
+/home/hatch/workspace/mix/exploration/round8/models/r8.py:35: RuntimeWarning: overflow encountered in scalar multiply
+  return (_rotl64_np(k, r) ^ (np.uint64(i + 1) * GOLDEN64)) & MASK64
+[S0 r8_feist8_midori] delay=57.2u cells=5891 x_mult=0.553 (bar 0.9) equiv=n=1000 err=0 -> PASS [ref 0s cached=True, dut 6s, equiv 80s]
+=== S0 [r8_feist8_midori] rc=0 wall=86s
+=== S1 [r8_feist8_midori] started 2026-10-02T17:11:33Z
+--- S1 tail:
+  [DIFF] key=0x123456789abcdef worst|z|=1480000.0 fisher_logp=-inf bonf_logp=-1095199948875.29
+  [DIFF] key=0xf0b52a9e7d8ba2b5 worst|z|=1480000.0 fisher_logp=-inf bonf_logp=-1095199948875.29
+  [DIFF] key=0x92988f142674743 worst|z|=1480000.0 fisher_logp=-inf bonf_logp=-1095199948875.29
+  LIN: FLAG (rej=10)  DIFF: FLAG (rej=10)
+[S1 r8_feist8_midori] LIN/DIFF 35s: LIN FLAG DIFF FLAG; SKIPPED (LIN/DIFF kill)
+[S1 r8_feist8_midori] verdict: FLAG
+=== S1 [r8_feist8_midori] rc=2 wall=37s
+BATTERY-FAIL stage=S1-screen [r8_feist8_midori] (see /home/hatch/workspace/mix/exploration/fast_battery/results/r8_feist8_midori/battery.log)

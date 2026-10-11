@@ -1,0 +1,23 @@
+measuring reference mul64 (fresh)...
+REF: cells=17893 crit=50.8
+bar=44.3
+[h_sandwich2] crit=18.9 r_ref=0.372 cells=2388 -> delay PASS
+[h_chifeist6] crit=37.0 r_ref=0.728 cells=3168 -> delay PASS
+[h_multspn] crit=65.8 r_ref=1.295 cells=12409 -> delay OUT
+[h_spnmult] crit=67.2 r_ref=1.323 cells=13630 -> delay OUT
+[h_clmulspn] crit=34.2 r_ref=0.673 cells=3580 -> delay PASS
+[h_laimassey] crit=47.5 r_ref=0.935 cells=9324 -> delay OUT
+[h_xorspn] crit=25.9 r_ref=0.510 cells=2942 -> delay PASS
+[h_heterofeist] crit=40.3 r_ref=0.793 cells=3344 -> delay PASS
+
+=== hybrid delay summary (bar 44.3) ===
+name               crit  x_mult   cells gate
+h_sandwich2        18.9   0.372    2388 PASS
+h_chifeist6        37.0   0.728    3168 PASS
+h_multspn          65.8   1.295   12409 OUT
+h_spnmult          67.2   1.323   13630 OUT
+h_clmulspn         34.2   0.673    3580 PASS
+h_laimassey        47.5   0.935    9324 OUT
+h_xorspn           25.9   0.510    2942 PASS
+h_heterofeist      40.3   0.793    3344 PASS
+ref_crit=50.8 ref_cells=17893

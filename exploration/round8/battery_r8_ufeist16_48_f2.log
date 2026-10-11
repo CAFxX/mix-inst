@@ -1,0 +1,13 @@
+=== S0a [r8_ufeist16_48_f2] started 2026-10-02T17:50:31Z
+--- S0a tail:
+/home/hatch/workspace/mix/exploration/round8/models/r8.py:35: RuntimeWarning: overflow encountered in scalar multiply
+  return (_rotl64_np(k, r) ^ (np.uint64(i + 1) * GOLDEN64)) & MASK64
+XCHECK r8_ufeist16_48_f2: PASS 10000/10000 C==Python
+=== S0a [r8_ufeist16_48_f2] rc=0 wall=21s
+=== S0 [r8_ufeist16_48_f2] started 2026-10-02T17:50:52Z
+--- S0 tail:
+/home/hatch/workspace/mix/exploration/round8/models/r8.py:35: RuntimeWarning: overflow encountered in scalar multiply
+  return (_rotl64_np(k, r) ^ (np.uint64(i + 1) * GOLDEN64)) & MASK64
+[S0 r8_ufeist16_48_f2] delay=101.6u cells=6302 x_mult=0.982 (bar 0.9) equiv=n=1000 err=0 -> FAIL [ref 0s cached=True, dut 7s, equiv 154s]
+=== S0 [r8_ufeist16_48_f2] rc=2 wall=161s
+BATTERY-FAIL stage=S0-delay [r8_ufeist16_48_f2] (see /home/hatch/workspace/mix/exploration/fast_battery/results/r8_ufeist16_48_f2/battery.log)

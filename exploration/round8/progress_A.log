@@ -1,0 +1,16 @@
+=== [A] r8_feist6_s1_1sbox started 2026-10-02T17:07:03Z
+=== [A] r8_feist6_s1_1sbox rc=0 wall=765s s0_delay=43.7u
+=== [A] r8_feist7_s1_1sbox started 2026-10-02T17:19:48Z
+=== [A] r8_feist7_s1_1sbox rc=0 wall=888s s0_delay=50.2u
+=== [A] r8_feist6_s1_1sbox_nw started 2026-10-02T17:34:36Z
+=== [A] r8_feist6_s1_1sbox_nw rc=0 wall=824s s0_delay=42.9u
+=== [A] r8_feist7_s1_1sbox_nw started 2026-10-02T17:48:20Z
+=== [A] r8_feist7_s1_1sbox_nw rc=2 wall=97s s0_delay=48.6u
+=== [A] r8_feist8_s1_1sbox_nw started 2026-10-02T17:49:57Z
+=== [A] r8_feist8_s1_1sbox_nw rc=2 wall=251s s0_delay=56.0u
+=== [A] r8_feist6_r311 started 2026-10-02T17:54:08Z
+=== [A] r8_feist6_r311 rc=0 wall=940s s0_delay=64.1u
+=== [A] r8_feist6_r517 started 2026-10-02T18:09:48Z
+pbox battery rc=0
+=== [A] r8_feist6_r517 rc=0 wall=629s s0_delay=65.5u
+=== [A] QUEUE DONE

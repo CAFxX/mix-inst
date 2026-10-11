@@ -1,0 +1,58 @@
+=== S0a [r8_feist7_s1_1sbox] started 2026-10-02T17:19:49Z
+--- S0a tail:
+/home/hatch/workspace/mix/exploration/round8/models/r8.py:35: RuntimeWarning: overflow encountered in scalar multiply
+  return (_rotl64_np(k, r) ^ (np.uint64(i + 1) * GOLDEN64)) & MASK64
+XCHECK r8_feist7_s1_1sbox: PASS 10000/10000 C==Python
+=== S0a [r8_feist7_s1_1sbox] rc=0 wall=12s
+=== S0 [r8_feist7_s1_1sbox] started 2026-10-02T17:20:01Z
+--- S0 tail:
+/home/hatch/workspace/mix/exploration/round8/models/r8.py:35: RuntimeWarning: overflow encountered in scalar multiply
+  return (_rotl64_np(k, r) ^ (np.uint64(i + 1) * GOLDEN64)) & MASK64
+[S0 r8_feist7_s1_1sbox] delay=50.2u cells=5452 x_mult=0.485 (bar 0.9) equiv=n=1000 err=0 -> PASS [ref 0s cached=True, dut 6s, equiv 61s]
+=== S0 [r8_feist7_s1_1sbox] rc=0 wall=67s
+=== S1 [r8_feist7_s1_1sbox] started 2026-10-02T17:21:08Z
+--- S1 tail:
+  [DIFF] key=0x123456789abcdef worst|z|=2.8 fisher_logp=-2.89 bonf_logp=-2.24
+  [DIFF] key=0xf0b52a9e7d8ba2b5 worst|z|=1.3 fisher_logp=-0.02 bonf_logp=1.16
+  [DIFF] key=0x92988f142674743 worst|z|=1.9 fisher_logp=-0.79 bonf_logp=-0.00
+  LIN: PASS (rej=0)  DIFF: PASS (rej=0)
+[S1 r8_feist7_s1_1sbox] LIN/DIFF 29s: LIN PASS DIFF PASS; marginal 196s: PB rej=0 RD rej=0
+[S1 r8_feist7_s1_1sbox] verdict: CAL_PASS
+=== S1 [r8_feist7_s1_1sbox] rc=0 wall=200s
+=== S2 [r8_feist7_s1_1sbox] started 2026-10-02T17:24:29Z
+--- S2 tail:
+  0xe000000000000000      2.1      253.8            0
+  0x000000000000000f      2.6      270.0            0
+  0x00000000f0000000      3.0      264.1            0
+  0x0000000f00000000      2.9      273.9            0
+  0xf000000000000000      2.4      248.6            0
+PASS max_repeats=0 max|z|=4.0 (all 115 deltas)
+=== S2 [r8_feist7_s1_1sbox] rc=0 wall=350s
+=== S3 [r8_feist7_s1_1sbox] started 2026-10-02T17:30:20Z
+--- S3 tail:
+[S3 r8_feist7_s1_1sbox] 64MB: no FAIL (rng_test rc=0)
+[S3 r8_feist7_s1_1sbox] stage 256MB (key=0x123456789abcdef0 stride=1) ...
+[S3 r8_feist7_s1_1sbox] 256MB: no FAIL (rng_test rc=0)
+[S3 r8_feist7_s1_1sbox] stage 1GB (key=0x123456789abcdef0 stride=1) ...
+[S3 r8_feist7_s1_1sbox] 1GB: no FAIL (rng_test rc=0)
+[S3 r8_feist7_s1_1sbox] verdict: PASS (all 4 stages, no FAIL)
+=== S3 [r8_feist7_s1_1sbox] rc=0 wall=108s
+=== S3b [r8_feist7_s1_1sbox] started 2026-10-02T17:32:09Z
+--- S3b tail:
+[S3 r8_feist7_s1_1sbox_strided] 64MB: no FAIL (rng_test rc=0)
+[S3 r8_feist7_s1_1sbox_strided] stage 256MB (key=0x0 stride=0x9E3779B97F4A7C15) ...
+[S3 r8_feist7_s1_1sbox_strided] 256MB: no FAIL (rng_test rc=0)
+[S3 r8_feist7_s1_1sbox_strided] stage 1GB (key=0x0 stride=0x9E3779B97F4A7C15) ...
+[S3 r8_feist7_s1_1sbox_strided] 1GB: no FAIL (rng_test rc=0)
+[S3 r8_feist7_s1_1sbox_strided] verdict: PASS (all 4 stages, no FAIL)
+=== S3b [r8_feist7_s1_1sbox] rc=0 wall=107s
+=== S4 [r8_feist7_s1_1sbox] started 2026-10-02T17:33:56Z
+--- S4 tail:
+ Total CPU time:   00:00:16.32
+
+ All tests were passed
+
+
+
+=== S4 [r8_feist7_s1_1sbox] rc=0 wall=40s
+BATTERY-PASS [r8_feist7_s1_1sbox] all stages survived (S5 P&R+review is a manual gate)

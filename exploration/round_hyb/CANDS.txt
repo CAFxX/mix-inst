@@ -1,0 +1,17 @@
+rh_feist6_parsplit_notr_nw
+rh_feist6_parsplit_notr31_nw
+rh_feist6_parsplit_chioff13_nw
+rh_feist6_parsplit_chioff31_nw
+rh_feist6_parsplit_keyin_nw
+rh_feist6_notr_psfinal_nw
+rh_feist6_notr_psfinal31_nw
+rh_feist6_parsplit_3rot_nw
+rh_feist6_chioff13_fm11_nw
+rh_feist6_chioff31_fm11_nw
+rh_spn3_s1_nw
+rh_spn4_s1_nw
+rh_lm_parsplit_nw
+rh_lm_chi_nw
+rh_wide128_feist4_nw
+rh_wide128_feist5_nw
+rh_wideF_feist5_nw

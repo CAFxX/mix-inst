@@ -1,0 +1,24 @@
+agentwork-launch: tag=track8-s1-fz30j schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+  [LIN] key=0x0 D=31/4096 logp=-3.39
+  [LIN] key=0xffffffffffffffff D=22/4096 logp=-0.70
+  [LIN] key=0xaaaaaaaaaaaaaaaa D=21/4096 logp=-0.54
+  [LIN] key=0x5555555555555555 D=21/4096 logp=-0.54
+  [LIN] key=0xdeadbeefdeadbeef D=21/4096 logp=-0.54
+  [LIN] key=0x9e3779b97f4a7c15 D=21/4096 logp=-0.54
+  [LIN] key=0x1234 D=22/4096 logp=-0.70
+  [LIN] key=0x123456789abcdef D=19/4096 logp=-0.29
+  [LIN] key=0xf0b52a9e7d8ba2b5 D=17/4096 logp=-0.14
+  [LIN] key=0x92988f142674743 D=20/4096 logp=-0.40
+  [DIFF] key=0x0 worst|z|=27.6 fisher_logp=-inf bonf_logp=-380.90
+  [DIFF] key=0xffffffffffffffff worst|z|=2.1 fisher_logp=-2.30 bonf_logp=-0.33
+  [DIFF] key=0xaaaaaaaaaaaaaaaa worst|z|=24.4 fisher_logp=-290.73 bonf_logp=-297.82
+  [DIFF] key=0x5555555555555555 worst|z|=24.7 fisher_logp=-536.52 bonf_logp=-306.01
+  [DIFF] key=0xdeadbeefdeadbeef worst|z|=6.3 fisher_logp=-34.07 bonf_logp=-18.97
+  [DIFF] key=0x9e3779b97f4a7c15 worst|z|=23.6 fisher_logp=-254.15 bonf_logp=-279.43
+  [DIFF] key=0x1234 worst|z|=27.6 fisher_logp=-inf bonf_logp=-380.90
+  [DIFF] key=0x123456789abcdef worst|z|=18.8 fisher_logp=-193.40 bonf_logp=-176.26
+  [DIFF] key=0xf0b52a9e7d8ba2b5 worst|z|=7.4 fisher_logp=-28.15 bonf_logp=-26.88
+  [DIFF] key=0x92988f142674743 worst|z|=26.3 fisher_logp=-307.47 bonf_logp=-345.58
+  LIN: PASS (rej=0)  DIFF: FLAG (rej=9)
+[S1 fz30_j] LIN/DIFF 78s: LIN PASS DIFF FLAG; SKIPPED (LIN/DIFF kill)
+[S1 fz30_j] verdict: FLAG

@@ -1,0 +1,5 @@
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT fz24_o: cells=5870 area=18260 crit=20.3
+RESULT name=fz24_o cells=5870 area=18260 crit=20.3 delay_ratio=0.196 area_ratio=0.517 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+EXIT=0

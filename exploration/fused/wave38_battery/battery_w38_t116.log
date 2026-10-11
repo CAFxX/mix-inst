@@ -1,0 +1,14 @@
+=== S0a [w38_t116] started 2026-10-11T07:21:20Z
+--- S0a tail:
+XCHECK w38_t116: PASS 10000/10000 C==Python
+=== S0a [w38_t116] rc=0 wall=14s
+=== S1 [w38_t116] started 2026-10-11T07:21:34Z
+--- S1 tail:
+  [DIFF] key=0x123456789abcdef worst|z|=3.2 fisher_logp=-1.55 bonf_logp=-3.79
+  [DIFF] key=0xf0b52a9e7d8ba2b5 worst|z|=1.9 fisher_logp=-0.74 bonf_logp=0.12
+  [DIFF] key=0x92988f142674743 worst|z|=3.1 fisher_logp=-4.53 bonf_logp=-3.52
+  LIN: PASS (rej=0)  DIFF: FLAG (rej=2)
+[S1 w38_t116] LIN/DIFF 55s: LIN PASS DIFF FLAG; SKIPPED (LIN/DIFF kill)
+[S1 w38_t116] verdict: FLAG
+=== S1 [w38_t116] rc=2 wall=78s
+BATTERY-FAIL stage=S1-screen [w38_t116] (see /home/hatch/workspace/mix/exploration/fast_battery/results/w38_t116/battery.log)

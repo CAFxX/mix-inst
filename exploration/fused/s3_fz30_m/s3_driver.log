@@ -1,0 +1,7 @@
+[S3 fz30_m] stage 16MB (key=123456789abcdef0 stride=1) ...
+[S3 fz30_m] KILL at 16MB:
+  [Low1/64]BCFN(2+0,13-9U)          R= +52.2  p =  6.4e-13    FAIL           
+  [Low1/64]FPF/16:(1,14-8)          R= +36.3  p =  3.9e-26    FAIL !!        
+  [Low1/64]FPF/16:(2,14-9)          R= +21.7  p =  6.2e-14    FAIL           
+  [Low1/64]FPF/16:all               R= +39.0  p =  1.3e-25    FAIL !!        
+[S3 fz30_m] verdict: KILL@16MB

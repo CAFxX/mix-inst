@@ -1,0 +1,95 @@
+2026-10-11T16:08:37Z wrapper start: deadline=1791778117 now=1791734917
+2026-10-11T16:08:38Z waiting on backoff (poll 1, now=1791734918)
+2026-10-11T16:13:39Z waiting on backoff (poll 2, now=1791735220)
+2026-10-11T16:31:31Z wrapper start: deadline=1791779491 now=1791736291
+2026-10-11T16:31:34Z waiting on backoff (poll 1, now=1791736294)
+2026-10-11T16:36:38Z backoff clear after 2 polls
+2026-10-11T16:36:39Z backoff clear: running calibration
+CALIBRATION exit=0
+CALIBRATION and1/b33c: maxworst|z|=3.3 (expect 3.3) PASS
+try   0 maxworst|z|=    28.1 killkey=0x5555555555555555 kill
+try   1 maxworst|z|=  3085.1 killkey=0x92988f142674743 kill
+try   2 maxworst|z|=   159.6 killkey=0xdeadbeefdeadbeef kill
+try   3 maxworst|z|=  1604.3 killkey=0x5555555555555555 kill
+try   4 maxworst|z|=    62.6 killkey=0xffffffffffffffff kill
+try   5 maxworst|z|=  2274.2 killkey=0x9e3779b97f4a7c15 kill
+try   6 maxworst|z|=   585.8 killkey=0xffffffffffffffff kill
+try   7 maxworst|z|=   762.8 killkey=0xdeadbeefdeadbeef kill
+try   8 maxworst|z|=   106.4 killkey=0x5555555555555555 kill
+try   9 maxworst|z|=   910.4 killkey=0x92988f142674743 kill
+try  10 maxworst|z|=    27.2 killkey=0xf0b52a9e7d8ba2b5 kill
+try  11 maxworst|z|=   113.3 killkey=0x123456789abcdef kill
+try  12 maxworst|z|=    14.7 killkey=0xdeadbeefdeadbeef kill
+try  13 maxworst|z|=   133.1 killkey=0x123456789abcdef kill
+try  14 maxworst|z|=   274.8 killkey=0x5555555555555555 kill
+try  15 maxworst|z|=   193.9 killkey=0xffffffffffffffff kill
+try  16 maxworst|z|=    11.6 killkey=0xf0b52a9e7d8ba2b5 kill
+try  17 maxworst|z|=  1903.0 killkey=0x123456789abcdef kill
+try  18 maxworst|z|=     5.6 killkey=0xdeadbeefdeadbeef KEEP
+try  19 maxworst|z|=  5832.1 killkey=0x123456789abcdef kill
+try  20 maxworst|z|=  2900.1 killkey=0xdeadbeefdeadbeef kill
+try  21 maxworst|z|=  1913.5 killkey=0xffffffffffffffff kill
+try  22 maxworst|z|=    92.5 killkey=0x0 kill
+try  23 maxworst|z|= 26977.6 killkey=0x123456789abcdef kill
+try  24 maxworst|z|=    95.8 killkey=0x0 kill
+try  25 maxworst|z|=   157.8 killkey=0xf0b52a9e7d8ba2b5 kill
+try  26 maxworst|z|=  1099.3 killkey=0xaaaaaaaaaaaaaaaa kill
+try  27 maxworst|z|=   343.2 killkey=0xaaaaaaaaaaaaaaaa kill
+try  28 maxworst|z|=   259.4 killkey=0x9e3779b97f4a7c15 kill
+try  29 maxworst|z|=    46.8 killkey=0x5555555555555555 kill
+try  30 maxworst|z|=  7357.0 killkey=0x0 kill
+try  31 maxworst|z|=   115.6 killkey=0x9e3779b97f4a7c15 kill
+try  32 maxworst|z|=   191.6 killkey=0x123456789abcdef kill
+try  33 maxworst|z|=   292.4 killkey=0xdeadbeefdeadbeef kill
+try  34 maxworst|z|=    99.8 killkey=0x123456789abcdef kill
+try  35 maxworst|z|=   429.3 killkey=0x123456789abcdef kill
+try  36 maxworst|z|=   184.4 killkey=0xaaaaaaaaaaaaaaaa kill
+try  37 maxworst|z|=   420.5 killkey=0x92988f142674743 kill
+try  38 maxworst|z|=265520.1 killkey=0x5555555555555555 kill
+try  39 maxworst|z|=     3.1 killkey=0x92988f142674743 KEEP
+=== qlowS4: 2/40 KEEP minz=3.1 (seed=0xb503) ===
+KEEP schedules -> pilot_keeps.jsonl
+qlowS4 x40 exit=0
+try   0 maxworst|z|=128401.4 killkey=0x0 kill
+try   1 maxworst|z|= 37714.5 killkey=0x5555555555555555 kill
+try   2 maxworst|z|= 10875.4 killkey=0x9e3779b97f4a7c15 kill
+try   3 maxworst|z|= 29008.5 killkey=0x0 kill
+try   4 maxworst|z|= 14498.6 killkey=0xdeadbeefdeadbeef kill
+try   5 maxworst|z|= 66734.3 killkey=0x0 kill
+try   6 maxworst|z|= 89950.2 killkey=0x5555555555555555 kill
+try   7 maxworst|z|=101558.1 killkey=0x0 kill
+try   8 maxworst|z|= 81244.2 killkey=0xdeadbeefdeadbeef kill
+try   9 maxworst|z|= 31910.5 killkey=0x5555555555555555 kill
+try  10 maxworst|z|= 63832.3 killkey=0xaaaaaaaaaaaaaaaa kill
+try  11 maxworst|z|= 17400.6 killkey=0xffffffffffffffff kill
+try  12 maxworst|z|=739994.3 killkey=0x9e3779b97f4a7c15 kill
+try  13 maxworst|z|=275677.1 killkey=0x0 kill
+try  14 maxworst|z|= 17468.6 killkey=0x92988f142674743 kill
+try  15 maxworst|z|= 59479.4 killkey=0xf0b52a9e7d8ba2b5 kill
+try  16 maxworst|z|= 37714.5 killkey=0x9e3779b97f4a7c15 kill
+try  17 maxworst|z|= 68185.3 killkey=0xffffffffffffffff kill
+try  18 maxworst|z|= 72538.3 killkey=0xdeadbeefdeadbeef kill
+try  19 maxworst|z|= 49322.4 killkey=0x0 kill
+try  20 maxworst|z|= 98701.5 killkey=0xdeadbeefdeadbeef kill
+try  21 maxworst|z|=739994.3 killkey=0x5555555555555555 kill
+try  22 maxworst|z|=391756.4 killkey=0x0 kill
+try  23 maxworst|z|=136381.9 killkey=0x5555555555555555 kill
+try  24 maxworst|z|= 10176.8 killkey=0xffffffffffffffff kill
+try  25 maxworst|z|=458502.0 killkey=0x0 kill
+try  26 maxworst|z|=458502.0 killkey=0x0 kill
+try  27 maxworst|z|= 39165.5 killkey=0xffffffffffffffff kill
+try  28 maxworst|z|=101558.1 killkey=0x0 kill
+try  29 maxworst|z|= 24829.6 killkey=0x92988f142674743 kill
+try  30 maxworst|z|= 46420.4 killkey=0xdeadbeefdeadbeef kill
+try  31 maxworst|z|=229245.4 killkey=0x0 kill
+try  32 maxworst|z|= 89950.2 killkey=0xaaaaaaaaaaaaaaaa kill
+try  33 maxworst|z|= 55126.4 killkey=0x0 kill
+try  34 maxworst|z|= 66734.3 killkey=0x5555555555555555 kill
+try  35 maxworst|z|= 12693.7 killkey=0x5555555555555555 kill
+try  36 maxworst|z|= 20665.3 killkey=0x5555555555555555 kill
+try  37 maxworst|z|=136381.9 killkey=0x5555555555555555 kill
+try  38 maxworst|z|=  4896.7 killkey=0x123456789abcdef kill
+try  39 maxworst|z|= 68910.8 killkey=0x5555555555555555 kill
+=== qlowS3: 0/40 KEEP minz=4896.7 (seed=0xb504) ===
+qlowS3 x40 exit=0
+2026-10-11T17:00:10Z PILOT COMPLETE

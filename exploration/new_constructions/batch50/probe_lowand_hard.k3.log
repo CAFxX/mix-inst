@@ -1,0 +1,25 @@
+k=3: 20 patterns x 1 starts x 8000 steps
+pat  0 [x0x1+x0x2+x0x3] start 0: E=9.0 coll=0 DU=8 LAT=8 S0=10
+pat  1 [x0x1+x0x2+x1x2] start 0: E=17.0 coll=0 DU=16 LAT=8 S0=15
+pat  2 [x0x1+x0x2+x1x3] start 0: E=17.0 coll=0 DU=16 LAT=8 S0=5
+pat  3 [x0x1+x0x2+x2x3] start 0: E=17.0 coll=0 DU=16 LAT=8 S0=1
+pat  4 [x0x1+x0x3+x1x2] start 0: E=17.0 coll=0 DU=16 LAT=8 S0=7
+pat  5 [x0x1+x0x3+x1x3] start 0: E=17.0 coll=0 DU=16 LAT=8 S0=13
+pat  6 [x0x1+x0x3+x2x3] start 0: E=2009.0 coll=2 DU=8 LAT=8 S0=14
+pat  7 [x0x1+x1x2+x1x3] start 0: E=9.0 coll=0 DU=8 LAT=8 S0=1
+pat  8 [x0x1+x1x2+x2x3] start 0: E=17.0 coll=0 DU=16 LAT=8 S0=11
+pat  9 [x0x1+x1x3+x2x3] start 0: E=17.0 coll=0 DU=16 LAT=8 S0=12
+pat 10 [x0x2+x0x3+x1x2] start 0: E=17.0 coll=0 DU=16 LAT=8 S0=3
+pat 11 [x0x2+x0x3+x1x3] start 0: E=17.0 coll=0 DU=16 LAT=8 S0=4
+pat 12 [x0x2+x0x3+x2x3] start 0: E=17.0 coll=0 DU=16 LAT=8 S0=10
+pat 13 [x0x2+x1x2+x1x3] start 0: E=17.0 coll=0 DU=16 LAT=8 S0=8
+pat 14 [x0x2+x1x2+x2x3] start 0: E=9.0 coll=0 DU=8 LAT=8 S0=1
+pat 15 [x0x2+x1x3+x2x3] start 0: E=17.0 coll=0 DU=16 LAT=8 S0=14
+pat 16 [x0x3+x1x2+x1x3] start 0: E=17.0 coll=0 DU=16 LAT=8 S0=1
+pat 17 [x0x3+x1x2+x2x3] start 0: E=17.0 coll=0 DU=16 LAT=8 S0=12
+pat 18 [x0x3+x1x3+x2x3] start 0: E=9.0 coll=0 DU=8 LAT=8 S0=12
+pat 19 [x1x2+x1x3+x2x3] start 0: E=17.0 coll=0 DU=16 LAT=8 S0=14
+HARD-PROBE BEST[k=3]: coll=0 DU=8 LAT=8 S0zero=False pat=x0x1+x0x2+x0x3
+HARD-PROBE BEST_LUT[k=3]=[10,13,6,15,8,11,4,9,0,1,12,3,2,7,14,5]
+VIABILITY[k=3]: VIABLE
+K3 DONE rc=0

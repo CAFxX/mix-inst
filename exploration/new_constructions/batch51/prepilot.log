@@ -1,0 +1,26 @@
+2026-10-11T17:20:54Z wrapper start: deadline=1791782454 now=1791739254
+2026-10-11T17:20:59Z waiting on backoff (poll 1, now=1791739261)
+2026-10-11T17:26:03Z waiting on backoff (poll 2, now=1791739563)
+2026-10-11T17:31:03Z waiting on backoff (poll 3, now=1791739863)
+2026-10-11T17:36:37Z backoff clear after 4 polls
+2026-10-11T17:36:38Z backoff clear: running calibration
+CALIBRATION exit=0
+CALIB-1 and1/b33c: maxworst|z|=3.3 (expect 3.3) PASS
+CALIB-2 mux/MU5-324: maxworst|z|=3.24 (expect KEEP z<10; track-5 measured 2.34) PASS
+try   0 maxworst|z|= 40238.8 killkey=0x123456789abcdef kill
+try   1 maxworst|z|=  5762.8 killkey=0x123456789abcdef kill
+try   2 maxworst|z|=  3960.2 killkey=0xdeadbeefdeadbeef kill
+try   3 maxworst|z|=  3823.6 killkey=0x123456789abcdef kill
+try   4 maxworst|z|= 27682.8 killkey=0x0 kill
+try   5 maxworst|z|=142185.9 killkey=0xffffffffffffffff kill
+=== muxS4: 0/6 KEEP minz=3823.6 (seed=0xb511) ===
+muxS4 exit=0
+try   0 maxworst|z|=368540.5 killkey=0xdeadbeefdeadbeef kill
+try   1 maxworst|z|=135425.4 killkey=0xffffffffffffffff kill
+try   2 maxworst|z|=739994.3 killkey=0xffffffffffffffff kill
+try   3 maxworst|z|= 54054.4 killkey=0x92988f142674743 kill
+try   4 maxworst|z|=194421.6 killkey=0xaaaaaaaaaaaaaaaa kill
+try   5 maxworst|z|=182813.6 killkey=0xdeadbeefdeadbeef kill
+=== muxS3: 0/6 KEEP minz=54054.4 (seed=0xb512) ===
+muxS3 exit=0
+2026-10-11T17:40:48Z PRE-PILOT COMPLETE

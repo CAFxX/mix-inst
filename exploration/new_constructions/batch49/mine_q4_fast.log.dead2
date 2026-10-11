@@ -1,0 +1,16 @@
+agentwork-launch: tag=track6/b49-mine schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+start 0: energy=17.000 coll=0 DU=16 LATbias=8 compdeg=[1, 2] S0=9
+start 1: energy=17.000 coll=0 DU=16 LATbias=8 compdeg=[1, 2] S0=3
+start 2: energy=9.000 coll=0 DU=8 LATbias=8 compdeg=[1, 2] S0=3
+agentwork-launch: tag=track6/b49-mine-resume schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+start 0: energy=17.000 coll=0 DU=16 LATbias=8 compdeg=[1, 2] S0=9
+start 1: energy=17.000 coll=0 DU=16 LATbias=8 compdeg=[1, 2] S0=3
+start 2: energy=9.000 coll=0 DU=8 LATbias=8 compdeg=[1, 2] S0=3
+start 3: energy=17.000 coll=0 DU=16 LATbias=8 compdeg=[1, 2] S0=6
+start 4: energy=17.000 coll=0 DU=16 LATbias=8 compdeg=[1, 2] S0=13
+start 5: energy=17.000 coll=0 DU=16 LATbias=8 compdeg=[1, 2] S0=14
+start 6: energy=17.000 coll=0 DU=16 LATbias=8 compdeg=[1, 2] S0=7
+start 7: energy=9.000 coll=0 DU=8 LATbias=8 compdeg=[1, 2] S0=7
+start 8: energy=9.000 coll=0 DU=8 LATbias=8 compdeg=[1, 2] S0=3
+start 9: energy=17.000 coll=0 DU=16 LATbias=8 compdeg=[1, 2] S0=12
+start 10: energy=9.000 coll=0 DU=8 LATbias=8 compdeg=[1, 2] S0=6

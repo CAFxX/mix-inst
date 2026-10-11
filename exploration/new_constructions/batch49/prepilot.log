@@ -1,0 +1,23 @@
+agentwork-launch: tag=track6/b49-prepilot schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+2026-10-11T15:08:09Z waiting on backoff
+2026-10-11T15:13:14Z backoff clear: running calibration
+CALIBRATION exit=0
+CALIBRATION and1/b33c: maxworst|z|=3.3 (expect 3.3) PASS
+try   0 maxworst|z|=     3.4 killkey=0x123456789abcdef KEEP
+try   1 maxworst|z|=     3.1 killkey=0xf0b52a9e7d8ba2b5 KEEP
+try   2 maxworst|z|=    30.2 killkey=0xf0b52a9e7d8ba2b5 kill
+try   3 maxworst|z|=     3.2 killkey=0x123456789abcdef KEEP
+try   4 maxworst|z|=    11.3 killkey=0x0 kill
+try   5 maxworst|z|=     2.6 killkey=0x9e3779b97f4a7c15 KEEP
+=== q4bS4: 4/6 KEEP minz=2.6 (seed=0xb491) ===
+KEEP schedules -> prepilot_keeps.jsonl
+q4bS4 exit=0
+try   0 maxworst|z|= 50773.4 killkey=0xdeadbeefdeadbeef kill
+try   1 maxworst|z|= 29053.9 killkey=0xdeadbeefdeadbeef kill
+try   2 maxworst|z|= 18273.5 killkey=0xaaaaaaaaaaaaaaaa kill
+try   3 maxworst|z|=182813.6 killkey=0x0 kill
+try   4 maxworst|z|= 22516.7 killkey=0x0 kill
+try   5 maxworst|z|= 30377.3 killkey=0x123456789abcdef kill
+=== q4bS3: 0/6 KEEP minz=18273.5 (seed=0xb492) ===
+q4bS3 exit=0
+2026-10-11T15:18:14Z PRE-PILOT COMPLETE

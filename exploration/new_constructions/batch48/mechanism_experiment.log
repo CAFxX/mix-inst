@@ -1,0 +1,12 @@
+=== (a) rank of L_a(y) = y ^ rotl(y,a) ===
+odd  a: min rank 63, max rank 63, all==63: True
+even a: min rank 32, max rank 62
+=== (b) exact-DIFF triage on 3 odd-a draws ===
+draw 0 stages=[45, 33, 27, 43] triage maxworst|z|=156695.8 killkey=0x5555555555555555 kill
+draw 1 stages=[23, 19, 21, 43] triage maxworst|z|=1480000.0 killkey=0x0 kill
+draw 2 stages=[31, 27, 61, 59] triage maxworst|z|=113166.0 killkey=0x0 kill
+=== (c) S1 LIN rank test on 1 odd-a draw ===
+output parity constant (0) across 2^18 outputs: CONFIRMED
+S1 LIN: D=4096/4096 logp=-inf (null E[D]=21.6)
+MECHANISM-EXPERIMENT COMPLETE
+rc=0

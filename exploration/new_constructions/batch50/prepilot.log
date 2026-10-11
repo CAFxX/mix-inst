@@ -1,0 +1,24 @@
+2026-10-11T15:43:51Z waiting on backoff
+BACKOFF-FAIL: load never cleared in 12h
+2026-10-11T15:55:09Z wrapper start: deadline=1791777309 now=1791734109
+2026-10-11T15:55:12Z backoff clear after 1 polls
+2026-10-11T15:55:14Z backoff clear: running calibration
+CALIBRATION exit=0
+CALIBRATION and1/b33c: maxworst|z|=3.3 (expect 3.3) PASS
+try   0 maxworst|z|=   725.9 killkey=0x123456789abcdef kill
+try   1 maxworst|z|=  1290.6 killkey=0x5555555555555555 kill
+try   2 maxworst|z|=  3432.1 killkey=0x0 kill
+try   3 maxworst|z|=    31.2 killkey=0xf0b52a9e7d8ba2b5 kill
+try   4 maxworst|z|=  2909.3 killkey=0x92988f142674743 kill
+try   5 maxworst|z|=  9319.5 killkey=0x5555555555555555 kill
+=== qlowS4: 0/6 KEEP minz=31.2 (seed=0xb501) ===
+qlowS4 exit=0
+try   0 maxworst|z|=1480000.0 killkey=0x123456789abcdef kill
+try   1 maxworst|z|= 46420.4 killkey=0x5555555555555555 kill
+try   2 maxworst|z|= 34812.5 killkey=0xdeadbeefdeadbeef kill
+try   3 maxworst|z|=1480000.0 killkey=0x0 kill
+try   4 maxworst|z|= 37453.8 killkey=0xaaaaaaaaaaaaaaaa kill
+try   5 maxworst|z|=  8416.9 killkey=0xdeadbeefdeadbeef kill
+=== qlowS3: 0/6 KEEP minz=8416.9 (seed=0xb502) ===
+qlowS3 exit=0
+2026-10-11T16:00:25Z PRE-PILOT COMPLETE

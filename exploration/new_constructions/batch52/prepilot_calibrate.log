@@ -1,0 +1,2 @@
+CALIB-1 and1/b33c: maxworst|z|=3.3 (expect 3.3) PASS
+CALIB-2 mux/MU5-324: maxworst|z|=3.24 (expect KEEP z<10; b51 harness measured 3.24) PASS

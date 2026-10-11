@@ -1,0 +1,98 @@
+2026-10-11T19:33:47Z wrapper start: deadline=1791790427 now=1791747227
+2026-10-11T19:33:48Z waiting on backoff (poll 1, now=1791747228)
+2026-10-11T19:38:51Z backoff clear after 2 polls
+BACKOFF-FAIL: load never cleared in 12h
+2026-10-11T20:04:04Z RELAUNCH: spurious double-gate BACKOFF-FAIL on 19:33 run (backoff cleared 19:38:51Z then post-loop re-check flaked); wrapper patched with cleared-flag (no re-check), relaunching
+2026-10-11T20:04:04Z wrapper start: deadline=1791792244 now=1791749044
+2026-10-11T20:04:05Z backoff clear after 1 polls
+2026-10-11T20:04:05Z backoff clear: running calibration
+CALIBRATION exit=0
+CALIB-1 and1/b33c: maxworst|z|=3.3 (expect 3.3) PASS
+CALIB-2 mux/MU5-324: maxworst|z|=3.24 (expect KEEP z<10; b51/b52 harnesses measured 3.24) PASS
+try   0 maxworst|z|=  1447.6 killkey=0xf0b52a9e7d8ba2b5 kill andpos=3
+try   1 maxworst|z|=     9.9 killkey=0x123456789abcdef KEEP andpos=2
+try   2 maxworst|z|=     3.0 killkey=0xf0b52a9e7d8ba2b5 KEEP andpos=1
+try   3 maxworst|z|=   204.5 killkey=0x0 kill andpos=0
+try   4 maxworst|z|=  4001.7 killkey=0x0 kill andpos=1
+try   5 maxworst|z|=    30.5 killkey=0xdeadbeefdeadbeef kill andpos=1
+try   6 maxworst|z|=   187.2 killkey=0x0 kill andpos=2
+try   7 maxworst|z|=   106.7 killkey=0x123456789abcdef kill andpos=1
+try   8 maxworst|z|=    33.1 killkey=0xdeadbeefdeadbeef kill andpos=3
+try   9 maxworst|z|=    31.4 killkey=0x9e3779b97f4a7c15 kill andpos=1
+try  10 maxworst|z|=   181.4 killkey=0xdeadbeefdeadbeef kill andpos=2
+try  11 maxworst|z|=   325.4 killkey=0xdeadbeefdeadbeef kill andpos=4
+try  12 maxworst|z|=     3.0 killkey=0x0 KEEP andpos=3
+try  13 maxworst|z|=   561.5 killkey=0x92988f142674743 kill andpos=2
+try  14 maxworst|z|=  1106.5 killkey=0xf0b52a9e7d8ba2b5 kill andpos=3
+try  15 maxworst|z|=     6.4 killkey=0xaaaaaaaaaaaaaaaa KEEP andpos=0
+try  16 maxworst|z|=   652.1 killkey=0xf0b52a9e7d8ba2b5 kill andpos=1
+try  17 maxworst|z|=   116.9 killkey=0x92988f142674743 kill andpos=0
+try  18 maxworst|z|=   355.0 killkey=0xf0b52a9e7d8ba2b5 kill andpos=3
+try  19 maxworst|z|=   410.4 killkey=0x0 kill andpos=1
+try  20 maxworst|z|=    37.9 killkey=0x5555555555555555 kill andpos=1
+try  21 maxworst|z|=   176.8 killkey=0x9e3779b97f4a7c15 kill andpos=3
+try  22 maxworst|z|=    17.4 killkey=0xdeadbeefdeadbeef kill andpos=1
+try  23 maxworst|z|=  3309.0 killkey=0x123456789abcdef kill andpos=3
+try  24 maxworst|z|=    78.8 killkey=0xdeadbeefdeadbeef kill andpos=4
+try  25 maxworst|z|=   338.9 killkey=0x123456789abcdef kill andpos=3
+try  26 maxworst|z|=   343.9 killkey=0xaaaaaaaaaaaaaaaa kill andpos=3
+try  27 maxworst|z|=    96.9 killkey=0xdeadbeefdeadbeef kill andpos=1
+try  28 maxworst|z|=    76.4 killkey=0x123456789abcdef kill andpos=2
+try  29 maxworst|z|=   685.3 killkey=0xffffffffffffffff kill andpos=3
+try  30 maxworst|z|=   302.5 killkey=0x123456789abcdef kill andpos=4
+try  31 maxworst|z|=     9.2 killkey=0x123456789abcdef KEEP andpos=4
+try  32 maxworst|z|=   501.4 killkey=0xaaaaaaaaaaaaaaaa kill andpos=2
+try  33 maxworst|z|=    70.2 killkey=0x92988f142674743 kill andpos=4
+try  34 maxworst|z|=   670.1 killkey=0xaaaaaaaaaaaaaaaa kill andpos=1
+try  35 maxworst|z|=   500.8 killkey=0x92988f142674743 kill andpos=3
+try  36 maxworst|z|=    66.5 killkey=0x123456789abcdef kill andpos=2
+try  37 maxworst|z|=  2108.8 killkey=0x0 kill andpos=1
+try  38 maxworst|z|=  1451.3 killkey=0xdeadbeefdeadbeef kill andpos=3
+try  39 maxworst|z|= 28742.9 killkey=0x0 kill andpos=0
+=== hetMA5: 5/40 KEEP minz=3.0 (seed=0xb533) ===
+KEEP schedules -> pilot_keeps.jsonl
+hetMA5 exit=0
+try   0 maxworst|z|=   176.1 killkey=0xf0b52a9e7d8ba2b5 kill
+try   1 maxworst|z|=   845.1 killkey=0x0 kill
+try   2 maxworst|z|=   194.7 killkey=0xaaaaaaaaaaaaaaaa kill
+try   3 maxworst|z|=    32.4 killkey=0xf0b52a9e7d8ba2b5 kill
+try   4 maxworst|z|=   660.9 killkey=0x92988f142674743 kill
+try   5 maxworst|z|=   303.1 killkey=0xffffffffffffffff kill
+try   6 maxworst|z|=   342.6 killkey=0x9e3779b97f4a7c15 kill
+try   7 maxworst|z|=   884.4 killkey=0x92988f142674743 kill
+try   8 maxworst|z|=     9.7 killkey=0xf0b52a9e7d8ba2b5 KEEP
+try   9 maxworst|z|=     6.5 killkey=0x0 KEEP
+try  10 maxworst|z|=     3.3 killkey=0xffffffffffffffff KEEP
+try  11 maxworst|z|=  1363.4 killkey=0xffffffffffffffff kill
+try  12 maxworst|z|=    59.3 killkey=0x123456789abcdef kill
+try  13 maxworst|z|=    32.1 killkey=0xffffffffffffffff kill
+try  14 maxworst|z|=    18.2 killkey=0x9e3779b97f4a7c15 kill
+try  15 maxworst|z|=    19.2 killkey=0x5555555555555555 kill
+try  16 maxworst|z|=     9.4 killkey=0xdeadbeefdeadbeef KEEP
+try  17 maxworst|z|=     3.8 killkey=0x92988f142674743 KEEP
+try  18 maxworst|z|=   560.1 killkey=0xffffffffffffffff kill
+try  19 maxworst|z|=    80.9 killkey=0xffffffffffffffff kill
+try  20 maxworst|z|=     8.6 killkey=0x123456789abcdef KEEP
+try  21 maxworst|z|=    32.7 killkey=0x9e3779b97f4a7c15 kill
+try  22 maxworst|z|=     2.7 killkey=0x9e3779b97f4a7c15 KEEP
+try  23 maxworst|z|=     7.1 killkey=0x9e3779b97f4a7c15 KEEP
+try  24 maxworst|z|=    64.6 killkey=0xf0b52a9e7d8ba2b5 kill
+try  25 maxworst|z|=    41.7 killkey=0x9e3779b97f4a7c15 kill
+try  26 maxworst|z|=     4.2 killkey=0x9e3779b97f4a7c15 KEEP
+try  27 maxworst|z|=     7.2 killkey=0x92988f142674743 KEEP
+try  28 maxworst|z|=   166.4 killkey=0x0 kill
+try  29 maxworst|z|=  2668.2 killkey=0x123456789abcdef kill
+try  30 maxworst|z|=     7.3 killkey=0x9e3779b97f4a7c15 KEEP
+try  31 maxworst|z|=     6.3 killkey=0x9e3779b97f4a7c15 KEEP
+try  32 maxworst|z|=     4.5 killkey=0x123456789abcdef KEEP
+try  33 maxworst|z|=   123.7 killkey=0x9e3779b97f4a7c15 kill
+try  34 maxworst|z|=   813.9 killkey=0x92988f142674743 kill
+try  35 maxworst|z|=     3.0 killkey=0xdeadbeefdeadbeef KEEP
+try  36 maxworst|z|=    27.4 killkey=0x92988f142674743 kill
+try  37 maxworst|z|=    10.0 killkey=0x92988f142674743 KEEP
+try  38 maxworst|z|=   124.6 killkey=0x92988f142674743 kill
+try  39 maxworst|z|=    12.8 killkey=0x0 kill
+=== muxS5d: 15/40 KEEP minz=2.7 (seed=0xb534) ===
+KEEP schedules -> pilot_keeps.jsonl
+muxS5d exit=0
+2026-10-11T20:11:52Z PILOT COMPLETE

@@ -1,0 +1,3 @@
+2026-10-11T20:04:50Z
+2026-10-11T20:04:50Z
+2026-10-11T21:04Z mix-search-status-30m: h0 staged battery LIVE — S1 CAL_PASS, S2 PASS (max|z|=89.7, 367s), S3 PractRand in flight (16MB clean, 64MB started 20:53:45Z). Runner pid 162878 + gen 199495 healthy.

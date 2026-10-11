@@ -1,0 +1,19 @@
+=== K=2 ===
+start 0: energy=2137.000 coll=2 DU=8 LATbias=8 AND=4 S0=10
+start 1: energy=649.000 coll=0 DU=8 LATbias=8 AND=12 S0=8
+start 2: energy=145.000 coll=0 DU=16 LATbias=8 AND=4 S0=10
+BEST[K=2] coll=0 DU=8 LATbias=8 AND=12 S0=8
+BEST_LUT[K=2]=[8,3,12,14,9,1,7,6,4,10,5,2,0,13,11,15]
+=== K=3 ===
+start 0: energy=81.000 coll=0 DU=16 LATbias=8 AND=4 S0=9
+start 1: energy=465.000 coll=0 DU=16 LATbias=8 AND=10 S0=15
+start 2: energy=2137.000 coll=2 DU=8 LATbias=8 AND=5 S0=14
+BEST[K=3] coll=0 DU=16 LATbias=8 AND=4 S0=9
+BEST_LUT[K=3]=[9,13,10,7,15,11,12,1,5,2,6,8,3,4,0,14]
+=== K=4 ===
+start 0: energy=145.000 coll=0 DU=16 LATbias=8 AND=6 S0=12
+start 1: energy=209.000 coll=0 DU=16 LATbias=8 AND=7 S0=2
+start 2: energy=2264.500 coll=2 DU=8 LATbias=4 AND=8 S0=1
+BEST[K=4] coll=0 DU=16 LATbias=8 AND=6 S0=12
+BEST_LUT[K=4]=[12,11,2,4,8,15,7,1,6,9,14,0,10,5,3,13]
+DONE

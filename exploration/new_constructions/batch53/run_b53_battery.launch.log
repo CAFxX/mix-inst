@@ -1,0 +1,30 @@
+agentwork-launch: tag=track6/b53-escal schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+[2026-10-11T20:43:19+00:00] backoff CLEAR -- starting batch-53 staged battery
+[2026-10-11T20:43:19+00:00] BATTERY t6_b53_h0 (start_stage=1)
+[2026-10-11T21:15:49+00:00] BATTERY t6_b53_h0 rc=0
+[S1 t6_b53_h0] verdict: CAL_PASS
+[S3 t6_b53_h0] 64MB: no FAIL (rng_test rc=0)
+[S3 t6_b53_h0] 256MB: no FAIL (rng_test rc=0)
+[S3 t6_b53_h0] 1GB: no FAIL (rng_test rc=0)
+[S3 t6_b53_h0] verdict: PASS (all 4 stages, no FAIL)
+[S3 t6_b53_h0_strided] 64MB: no FAIL (rng_test rc=0)
+[S3 t6_b53_h0_strided] 256MB: no FAIL (rng_test rc=0)
+[S3 t6_b53_h0_strided] 1GB: no FAIL (rng_test rc=0)
+[S3 t6_b53_h0_strided] verdict: PASS (all 4 stages, no FAIL)
+[2026-10-11T21:15:50+00:00] BATTERY t6_b53_h1 (start_stage=1)
+[2026-10-11T21:18:05+00:00] BATTERY t6_b53_h1 rc=2
+BATTERY-FAIL stage=S1-screen [t6_b53_h1] (see /home/hatch/workspace/mix/exploration/fast_battery/results/t6_b53_h1/battery.log)
+[2026-10-11T21:18:05+00:00] BATTERY t6_b53_h3 (start_stage=1)
+[2026-10-11T21:21:49+00:00] BATTERY t6_b53_h3 rc=2
+BATTERY-FAIL stage=S1-screen [t6_b53_h3] (see /home/hatch/workspace/mix/exploration/fast_battery/results/t6_b53_h3/battery.log)
+[2026-10-11T21:21:49+00:00] BATTERY t6_b53_h4 (start_stage=1)
+[2026-10-11T21:24:48+00:00] BATTERY t6_b53_h4 rc=2
+BATTERY-FAIL stage=S1-screen [t6_b53_h4] (see /home/hatch/workspace/mix/exploration/fast_battery/results/t6_b53_h4/battery.log)
+[2026-10-11T21:24:48+00:00] S4 survivors: t6_b53_h0
+[2026-10-11T21:24:48+00:00] Q1 t6_b53_h0
+ "bic_maxcorr": 0.00905590724981017,
+ "bic_meancorr": 0.0015582801177668137,
+ "avalanche_mean": 32.002209544181824,
+ "wall_s": 589.5
+}
+[2026-10-11T21:34:42+00:00] batch-53 staged battery COMPLETE; survivors: t6_b53_h0

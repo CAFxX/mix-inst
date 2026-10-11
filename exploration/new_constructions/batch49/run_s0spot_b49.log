@@ -1,0 +1,15 @@
+agentwork-launch: tag=track6/b49-s0spot schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+[2026-10-11T15:24:53+00:00] backoff CLEAR -- starting batch-49 S0 spot-check
+[2026-10-11T15:24:53+00:00] backoff CLEAR -- starting batch-49 S0 spot-check
+[2026-10-11T15:24:53+00:00] S0 t6_q4S4a
+[2026-10-11T15:24:53+00:00] S0 t6_q4S4a
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT t6_q4S4a: cells=3364 area=9802 crit=29.0
+RESULT name=t6_q4S4a cells=3364 area=9802 crit=29.0 delay_ratio=0.280 area_ratio=0.277 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT t6_q4S4a: cells=3364 area=9802 crit=29.0
+RESULT name=t6_q4S4a cells=3364 area=9802 crit=29.0 delay_ratio=0.280 area_ratio=0.277 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+[2026-10-11T15:26:12+00:00] batch-49 S0 spot-check COMPLETE
+[2026-10-11T15:26:12+00:00] batch-49 S0 spot-check COMPLETE

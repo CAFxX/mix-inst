@@ -1,0 +1,26 @@
+agentwork-launch: tag=track6/b53-prepilot schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+2026-10-11T19:13:30Z wrapper start: deadline=1791789209 now=1791746010
+2026-10-11T19:13:35Z waiting on backoff (poll 1, now=1791746015)
+2026-10-11T19:18:36Z backoff clear after 2 polls
+2026-10-11T19:18:36Z backoff clear: running calibration
+CALIBRATION exit=0
+CALIB-1 and1/b33c: maxworst|z|=3.3 (expect 3.3) PASS
+CALIB-2 mux/MU5-324: maxworst|z|=3.24 (expect KEEP z<10; b51/b52 harnesses measured 3.24) PASS
+try   0 maxworst|z|=   194.3 killkey=0x123456789abcdef kill andpos=0
+try   1 maxworst|z|=   330.0 killkey=0xaaaaaaaaaaaaaaaa kill andpos=4
+try   2 maxworst|z|=   108.1 killkey=0x0 kill andpos=1
+try   3 maxworst|z|=   243.7 killkey=0x123456789abcdef kill andpos=3
+try   4 maxworst|z|=  8535.8 killkey=0x0 kill andpos=4
+try   5 maxworst|z|=    14.5 killkey=0x9e3779b97f4a7c15 kill andpos=3
+=== hetMA5: 0/6 KEEP minz=14.5 (seed=0xb531) ===
+hetMA5 exit=0
+try   0 maxworst|z|=739994.3 killkey=0xdeadbeefdeadbeef kill
+try   1 maxworst|z|=     3.4 killkey=0x0 KEEP
+try   2 maxworst|z|=    39.0 killkey=0x5555555555555555 kill
+try   3 maxworst|z|=     7.8 killkey=0xdeadbeefdeadbeef KEEP
+try   4 maxworst|z|=   953.3 killkey=0x0 kill
+try   5 maxworst|z|=    33.8 killkey=0xdeadbeefdeadbeef kill
+=== muxS5d: 2/6 KEEP minz=3.4 (seed=0xb532) ===
+KEEP schedules -> prepilot_keeps.jsonl
+muxS5d exit=0
+2026-10-11T19:19:21Z PRE-PILOT COMPLETE

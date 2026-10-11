@@ -1,0 +1,17 @@
+[2026-10-11T20:36:37+00:00] backoff CLEAR -- starting batch-53 S0 escalation
+[2026-10-11T20:36:37+00:00] S0 t6_b53_h0
+RESULT name=t6_b53_h0 cells=5507 area=16995 crit=19.1 delay_ratio=0.185 area_ratio=0.481 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+[2026-10-11T20:37:15+00:00] S0 t6_b53_h1
+RESULT name=t6_b53_h1 cells=5650 area=16727 crit=19.2 delay_ratio=0.186 area_ratio=0.474 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+[2026-10-11T20:38:07+00:00] S0 t6_b53_h2
+RESULT name=t6_b53_h2 cells=5555 area=17159 crit=19.7 delay_ratio=0.190 area_ratio=0.486 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+[2026-10-11T20:38:50+00:00] S0 t6_b53_h3
+RESULT name=t6_b53_h3 cells=5695 area=18927 crit=18.9 delay_ratio=0.183 area_ratio=0.536 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+[2026-10-11T20:39:19+00:00] S0 t6_b53_h4
+RESULT name=t6_b53_h4 cells=5870 area=19523 crit=18.7 delay_ratio=0.181 area_ratio=0.553 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+[2026-10-11T20:39:51+00:00] batch-53 S0 escalation COMPLETE

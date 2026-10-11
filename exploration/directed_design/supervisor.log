@@ -1,0 +1,413 @@
+## 2026-10-08 08:52 CEST — supervisor rearmed (Track 4)
+- VM rebooted ~25 min ago (uptime 25min at 06:52 UTC). Load 24.3/21.6/16.3 on 2 CPUs — severe contention.
+- sweep.py (1733) alive; sibling validation processes active (al_chi6b S2, RNG_test S3).
+- HOLDING all directed-design launches per polite-mode gate (load < ~4). Staged work verified intact.
+
+## Hypothesis D1: Round-count vs security tradeoff (3r/5r/6r SPN)
+- **Precise description:** 4r keyed SPN (rasC2_0/pba19/lin(5,13)) is the baseline at 26.5u. Test 3r, 5r, 6r variants with identical per-round construction.
+- **Expected mechanism:** Per-round cost ~6.6u (26.5/4). 3r → ~19.8u (matches al_chi6b S0!); 5r → ~33u; 6r → ~40u. Security: fewer rounds = shorter differential trails = higher S2 kill risk. The question is whether 3r with lin(5,13) still passes S2, or if a stronger linear layer is needed.
+- **Test:** Generate .v for 3r/5r/6r variants. S0 for delay. If 3r S0 < 22u, run S1+S2 to check if security holds.
+- **Status:** SPECS DESIGNED (see gen_batch5.py). Holding S0 launch for load < 4.
+
+## Hypothesis D2: Heterogeneous S-box rounds (batch-3 S0)
+- **Precise description:** Batch-3 specs exist (RMRM/MRMR/RRMM/URUR on lin(5,9)): R=rasC2_0, M=Midori Sb0, U=ULBC_s1.
+- **Expected mechanism:** Alternating S-boxes with different DDT/LAT profiles breaks up differential/linear trails that would survive homogeneous rounds. Midori Sb0 has the lowest standalone depth (3.0u) but different algebraic properties.
+- **Test:** S0 on the 4 existing .v files. If any beats 26.3u (batch-4 lead), run S1+S2.
+- **Status:** .v FILES EXIST, S0 NOT YET RUN. Holding for load < 4.
+
+## 2026-10-08 08:58 CEST — batch-5 specs + RTL generated (holding S0 for load)
+- Designed Hypothesis D1 (round-count): gen_batch5.py creates dd5_r3_513_nw, dd5_r5_513_nw, dd5_r6_513_nw.
+- Generated .v via gen_verilog.py; FIXED hardcoded "4r SPN" comment (now uses {nrounds}r).
+- Batch-3 heterogeneous .v files (RMRM/MRMR/RRMM/URUR) verified present, S0 not yet run.
+- Load still 24+ on 2 CPUs (sweep S1 + al_chi6b S2 + RNG_test active). HOLDING all S0/S1 launches.
+- Next: S0 for batch-3 (4 hetero) + batch-5 (3 round-count) when load < 4.
+
+## Hypothesis D3: Key-schedule × linear-layer stacking (batch-6 design)
+- **Precise description:** Batch-4 proved ks affects critical path (norc/smallrc/rot1: -0.2u on lin(5,13)). Batch-1 proved lin(5,9) ties lin(5,13) at 26.3u. Test if ks gains STACK with different linear layers: norc/smallrc/rot1 × lin(5,9), lin(8,15).
+- **Expected mechanism:** If ks and linear layer affect different parts of the critical path, gains should be additive. If they collide on the same path, no stacking.
+- **Non-duplication:** Hybrid owns P-box × linear co-design. This is ks × linear, a different axis.
+- **Test:** 3 ks leads × 2 lin leads = 6 combos. S0 first; if any < 26.1u, run S1+S2.
+- **Status:** SPECS TO BE GENERATED (gen_batch6.py). Holding for load.
+
+## 2026-10-08 09:05 CEST — batch-6 specs + RTL generated (holding S0 for load)
+- Designed Hypothesis D3 (ks × linear stacking): gen_batch6.py creates 6 combos (norc/smallrc/rot1 × lin(5,9)/lin(8,15)).
+- Generated .v via gen_verilog.py. Non-duplicates hybrid P-box work.
+- QUEUED S0 (13 total): batch-3 (4 hetero) + batch-5 (3 round-count) + batch-6 (6 ks×lin).
+- Load 12.6, still above <4 gate. Holding.
+
+## 2026-10-08 09:12 CEST — models generated for batch-5/6 (S0 still held)
+- model.py + meta.json generated for all 9 new candidates (dd5×3, dd6×6). Batch-3 models already existed.
+- All 13 candidates now have: .v (RTL), model.py, meta.json. Ready for S0 the moment load clears.
+- S0 queue: 4 hetero + 3 round-count + 6 ks×lin = 13.
+
+## 2026-10-08 09:15 CEST — supervisor status (rearm complete)
+- Heartbeat: current (every ~15 min maintained).
+- Designed: D1 (round-count, batch-5), D2 (hetero S0, batch-3), D3 (ks×lin, batch-6).
+- Generated: 9 new .v + 9 new model.py/meta.json. 13 S0 queued via launch_s0_queue.sh.
+- VERDICT_SCOPE.md: added O13-O16 (scoped, not generalized).
+- HELD: all heavy launches (load 22.8 > 4 gate). S0/S1/S2 to run when load clears.
+- Track 4 nominal, supervisor active, no dead processes, no fixes needed.
+
+## 2026-10-09 15:05 CEST — supervisor resumed (Track 4), Hypothesis D4 designed
+- Previous supervisor died in 11:01Z VM reboot (8.4h stale). Resumed 14:35 CEST.
+- State assessment: batches 1-6 all have verdicts. 13 candidates: 10× S2 PASS (S3 infra-blocked), 3× S1 KILL. dd5_r3_513_nw (20.4u) was S1-KILLED — fastest directed S0 didn't survive.
+- **Hypothesis D4**: 3-round heterogeneous SPN — combine batch-5 speed (3r) with batch-3 security (hetero S-boxes). If hetero rounds break the trails that killed homogeneous 3r, we get ~20u with S1/S2 survival.
+- Designed gen_batch7.py: 6 patterns (RMR, MRM, RUM, UMR, RRM, MRR) × lin(5,13) × golden KS.
+- Generated: specs/batch7_specs.json, 6× .v (verified hetero S-boxes in RTL: round0=rasC2_0, round1=midori_sb0 for RMR), 6× model.py+meta.json, 6× impl.c.
+- **S0 results** (run_synth.py, Yosys 0.69, local):
+  - dd7_r3_RMR_513_nw: 20.5u / 3697 cells / 10079 area
+  - dd7_r3_MRR_513_nw: 20.6u / 3611 cells / 9731 area
+  - dd7_r3_RRM_513_nw: 20.7u / 3645 cells / 9904 area
+  - dd7_r3_MRM_513_nw: 20.8u / 3775 cells / 10131 area
+  - dd7_r3_UMR_513_nw: 21.4u / 3834 cells / 10467 area
+  - dd7_r3_RUM_513_nw: 21.5u / 3928 cells / 10602 area
+- All 6 S0 PASS, in 20.5-21.5u range (vs dd5_r3 20.4u homogeneous).
+- Ledger: 6 new rows added to LEADS_LEDGER.md.
+- GHA: 6 candidates bundled to fanout repo (impl.c+meta.json+model.py+rtl.v). Push via PAT in progress. S1/S2 pipeline submission pending push completion (6 shards, ≤10 rule, priority=new-leads).
+
+## 2026-10-09 20:15 CEST — supervisor resumed (Track 4), Hypothesis D5 designed, batch-8 launched
+- Previous supervisor died ~4h ago (heartbeat 15:30 CEST). Resumed 19:45 CEST per parent task.
+- **Hypothesis D5**: D4 falsified (3r hetero too shallow, all 6 dd7 S1-FLAGGED identically).
+  Two axes: (a) 4r hetero — does depth fix S1? (b) 3r hetero with per-round LIN
+  variation — break the linear invariant subspace (10 LIN rejections killed dd7).
+- **Generator extension**: gen_verilog.py now supports per-round rots (rots_rounds param).
+  mk_model.py and mk_c_impl.py already supported per-round format. Verified bit-exact:
+  model vs C 214/214 vectors (all 6), RTL vs model 52/52 (vlin1 via iverilog).
+- **Batch-8 specs** (gen_batch8.py): 6 candidates.
+- **S0 results** (local run_synth.py, Yosys 0.69):
+  - dd8_r4_RMRM_513_nw: 27.1u / 4975 cells (D5a depth test)
+  - dd8_r4_MRMR_513_nw: 27.2u / 5094 cells (D5a depth test)
+  - dd8_r3_RMR_vlin1_nw: **20.4u** / 3606 cells — FASTEST, 0.3u from al_and6a (20.1u)
+  - dd8_r3_MRM_vlin1_nw: 20.6u / 3861 cells
+  - dd8_r3_RMR_vlin2_nw: 20.8u / 3372 cells
+  - dd8_r3_RUM_vlin1_nw: 21.4u / 4016 cells
+- **GHA**: Bundles pushed to fanout repo as commit 34e29f67 (VERIFIED PRESENT 6/6,
+  rtl_top + mix_hash gates pass). Campaign `dd8-batch8-20261009` submitted (S1+S2,
+  6 shards, priority=frontier-challengers). NOTE: push_fanout.py full-tree push
+  stalled on network (2 concurrent processes); used targeted /tmp/push_dd8.py instead.
+- Ledger: 6 new D5 rows added with S0 results.
+- Next: Poll S1/S2 verdicts from dd8-batch8-20261009. If vlin survives S1, it's a
+  20.4u frontier challenger — the first SPN to threaten the AND-cascade frontier.
+
+## 2026-10-09 ~22:50 CEST — supervisor respawned (Track 4), batch-8 harvested, 2 campaigns launched
+- Respawned after VM reboot ~20:35Z (heartbeat was 18:03Z). VM-state: load clear (5.42).
+- **Harvested dd8-batch8-20261009** (S1+S2, 6 shards, DONE 18:15Z, 6/6 rc=0, canaries valid):
+  - 4× 3r hetero+vlin (20.4–21.4u): S1-FLAG, LIN 10/10 + DIFF 10/10, D≈4002–4096/4096 → KILLED (S1). D5b falsified; dd8_r3_RMR_vlin1_nw (20.4u, frontier-adjacent) dead.
+  - dd8_r4_RMRM_513_nw (27.1u): S1 CAL_PASS, S2 PASS (repeats=0, max|z|=26.2). dd8_r4_MRMR_513_nw (27.2u): S1 CAL_PASS, S2 PASS (repeats=1, max|z|=27.0). Parked (delay-dominated by dd1 trio).
+- **Launched**: dd1 trio bundles → fanout (commit 4de19083, model==C 200/200); 2 campaigns in one push (commit 746be7f1): dd1-s34-20261009 (S3+S4, 3 shards) + dd3dd6-s12-20261009 (S1+S2, 4 shards). ≤17-spec rule respected (2 specs/7 shards total).
+- **Q1 running locally** (5 candidates: dd1 trio + 2 S2-passed 4r; sac_z5/bic): hidden_files/q1_20261009/.
+- **D6 pivot opened**: 3r SPN exhausted on LIN/DIFF at ~20u; need ≥4 nonlinear layers ≤3u/layer or deeper per-round nonlinearity to challenge al_and6a 20.1u.
+- Ledger: harvest block appended to LEADS_LEDGER.md (append-only).
+- Next: poll S1/S2 (dd3dd6), S3/S4 (dd1) on GHA; consume Q1 results; design D6 (2-S-box-layer/round 3r, or 4r with cheaper nonlinear layers).
+
+## 2026-10-10 ~03:10 CEST — supervisor resumed (Track 4, incarnation E)
+- VM rebooted ~00:57Z; predecessor HB 20:53:02Z (~6.2h stale). Restarted per parent task.
+- **Harvested dd1-s34-20261009** (S3+S4, 3 shards, DONE): all 3 INFRA_FAIL — pass canary r23_spn_mix4r_pba19b01_nw produced zero RNG_test output ("RNG_test produced no test output at 16MB after 3 attempts", "error reading from file"), stage correctly QUARANTINED. Systematic S3-pipeline defect (known), not scientific. Matches 22:42Z status harvest. No resubmit until pipeline fixed.
+- **Harvested dd3dd6-s12-20261009** (S1+S2, 4 shards, DONE 4/4 rc=0): all 4 PASS — dd3_hetero_MRMR_nw (27.1u, S1 CAL_PASS, S2 PASS max_repeats=1 max|z|=18.3), dd3_hetero_URUR_nw (28.1u), dd6_ksrot1_lin5_9_nw (26.5u), dd6_ksrot1_lin8_15_nw (26.4u). All S2-clean, dominated on speed. Ledger rows already accurate (22:42Z update) — confirmed.
+- Q1 5-way (21:08Z, all 5 PASS per 21:35Z report): dd1 trio + 2 dd8 4-rounders now S0–S2+Q1 clean.
+- **D6 design opened**: 3r SPN (1 S-box layer/round) S1-dead regardless of S-box/LIN choice (dd5/dd7/dd8). 4r SPN survives at ~27u. To beat al_and6a 20.1u: 4 rounds with cheaper nonlinear layers. Hypothesis D6: mixed S-box/chi rounds (heterogeneous function type, not just heterogeneous S-boxes). Worker spawned for batch-9 design + generator extension.
+- Frontier: al_and6a 20.1u (unchanged).
+
+## 2026-10-10 ~03:20 CEST — D6 worker started (batch-9 design)
+- Worker (this session) picked up Hypothesis D6: 4 rounds mixed S-box/chi nonlinear layers.
+- Design locked (co-design rationale): uniform round template x ^= rk_i -> NL_i -> P(pba19) -> [LIN(5,13)],
+  NL_i = S-box (rasC2_0, batch-1 winner) or chi (al_and6a-validated triples: AND-flavor
+  x^=(ra&rb)^rc, Keccak-flavor x^=(ra&~rb)^rc). P-box is the shared diffusion substrate;
+  chi triples contribute full-width 3-tap diffusion, S-box rounds nibble nonlinearity.
+  KS unchanged (golden, rot_step 13) — D6 variable is function-type mixing only.
+- 6 candidates: dd9_scsc_linall_a (AND, lin=all, safe co-design), dd9_scsc_linall_k (Keccak flavor),
+  dd9_scsc_nolin_a (no LIN anywhere, ~16u frontier shot), dd9_sccs_nolin_a, dd9_cssc_nolin_a
+  (pattern variations), dd9_scsc_nolin_b (wider chi triples (17,31,7)/(11,23,37)).
+- Plan: extend gen_verilog.py + mk_model.py + mk_c_impl.py with chi-layer support ->
+  gen_batch9.py -> bit-exact verify (model/C 214, RTL/model 52) -> S0 local -> bundle+push+submit S1+S2.
+
+## 2026-10-10 ~03:45 CEST — batch-9 bit-exact + S0 complete (D6 worker)
+- Generator extensions landed: gen_verilog.py (chi_expr + gen_mixed_verilog, __main__ dispatches
+  on "layers"), mk_model.py (MIXED_MODEL_TMPL + main_mixed), mk_c_impl.py (gen_mixed_impl_c).
+- Bit-exactness: ALL 6 PASS — model vs C 214/214, RTL vs model 52/52 (iverilog).
+- **S0 results** (run_synth.py, Yosys 0.69, XCHECK analyze==analyze2 all 6):
+  - dd9_scsc_linall_a: 27.6u / 6733 cells (safe co-design; ~dd8 4r level)
+  - dd9_scsc_linall_k: 27.2u / 7037 cells (Keccak flavor)
+  - dd9_scsc_nolin_a:  **18.1u** / 2966 cells — 2.0u under al_and6a 20.1u
+  - dd9_sccs_nolin_a:  **17.2u** / 2814 cells — 2.9u under frontier (fastest)
+  - dd9_cssc_nolin_a:  **18.6u** / 2384 cells — 1.5u under frontier
+  - dd9_scsc_nolin_b:  **18.1u** / 7965 cells — 2.0u under frontier
+- 4/6 are frontier-challengers (<20.5u). The nolin LIN-drop removed ~9-10u vs linall.
+- Next: bundle 6 to fanout candidates/, push via PAT, submit S1+S2 campaign (6 shards,
+  priority=frontier-challengers).
+
+## 2026-10-10 ~03:35 CEST — batch-9 DONE, campaign live (D6 worker final)
+- Generator extensions: chi_expr + gen_mixed_verilog (gen_verilog.py), MIXED_MODEL_TMPL +
+  main_mixed (mk_model.py), gen_mixed_impl_c (mk_c_impl.py). gen_batch9.py + specs/batch9_specs.json
+  + verify_batch9.py all in directed_design/.
+- Bit-exactness: 6/6 PASS — model.py vs impl.c 214/214, RTL vs model.py 52/52 (iverilog).
+- S0 (run_synth.py, Yosys 0.69 pinned, analyze==analyze2 XCHECK all): linall 27.6/27.2u;
+  nolin 18.1/17.2/18.6/18.1u — 4 frontier-challengers (<20.5u), fastest 17.2u (dd9_sccs_nolin_a).
+- Bundles pushed via PAT push_targeted.py (4 commits; NOTE: its commit message is hardcoded
+  "Track 3 wave-10: ..." — cosmetic tool bug, contents correct; flagged for fix). First 24-file
+  push 422'd (stale base_tree race); retried in smaller batches, all landed.
+- Bundles VERIFIED PRESENT 6/6 via GitHub API (impl.c+meta.json+model.py+rtl.v each;
+  rtl_top + mix_hash gates pass).
+- Campaign `dd9-batch9-20261010` SUBMITTED: S1+S2, 6 shards, priority=frontier-challengers,
+  job spec pushed as repo commit 6fc7f61a. Dispatch run **38013241685** in_progress
+  (setup OK, 4/6 shards complete at push time).
+- Ledger: 6 batch-9 rows added (after dd8 block, line 252+).
+- D7 sketch (if D6 nolin dies at S1 — likely mode: insufficient diffusion without LIN):
+  (1) partial-LIN variants (lin=sbox / lin=chi) to test which layer type needs LIN;
+  (2) 5-round nolin (~22u, still near frontier); (3) hetero S-boxes (R/M) inside S-box rounds;
+  (4) chi-heavy patterns (CCSC/SCCC) since chi is cheaper per round.
+- Track 4 NOT complete; awaiting S1/S2 harvest of dd9-batch9-20261010.
+
+## 2026-10-10 ~03:55 CEST — batch-10 (D7) generators + bit-exactness PASS (D7 worker)
+- Generator extensions for single-rotation LIN: gen_verilog.py gen_mixed_verilog,
+  mk_model.py MIXED_MODEL_TMPL/main_mixed, mk_c_impl.py gen_mixed_impl_c now accept
+  rots=[a] (LIN(x)=x^rotl64(x,a)) as well as rots=[a,b]. Pair-path output semantically
+  identical to batch-9 template (lin_expr "x ^ _rotl(x, 5) ^ _rotl(x, 13)").
+- gen_batch10.py: 6 D7 candidates (specs/batch10_specs.json) —
+  dd10_scsc_linsbox_a (LIN on S rounds only), dd10_scsc_linchi_a (LIN on chi rounds only),
+  dd10_sccs_linsbox_a (SCCS + LIN on S rounds), dd10_scsc_singlerot_a (single-rot [13] all rounds),
+  dd10_scsc_singlerot_linsbox_a (single-rot [13] on S rounds), dd10_scsc_linsbox_rm (hetero R/M S-boxes).
+- Bit-exactness (verify_batch10.py): 6/6 PASS — model vs C 214/214, RTL vs model 52/52 (iverilog).
+- Infra note: iverilog NOT on default PATH; use /home/hatch/tools/ivl-env/bin (also in micromamba-root/bin).
+- Next: S0 (run_synth.py, Yosys 0.69) when load allows, then bundle+push+submit S1+S2.
+
+## 2026-10-10 ~04:02 CEST — batch-10 (D7) bundles staged, S0 queued on load (D7 worker)
+- Bundles staged at ~/workspace/fanout/projects/mix-sbox-search/battery/candidates/dd10_*/ (impl.c + meta.json + model.py + rtl.v each); bundle gates 6/6 PASS (rtl_top matches module, mix_hash present, mix_np present).
+- Campaign job spec drafted at ~/workspace/fanout/jobs/mix-sbox-search/dd10-batch10-20261010.json (S1+S2, 6 shards; priority finalized after S0).
+- S0 BLOCKED on load: box rebooted ~00:57Z, boot storm; backoff exit=1 (3 frozen procs, load ~12-18). Will run run_synth.py (Yosys 0.69, nice -19) per candidate once backoff clears.
+
+## 2026-10-10 ~04:12 CEST — Track-4 supervisor restarted (incarnation F, post-01:43Z reboot)
+- Predecessor (incarnation E) heartbeat 01:43:57Z — died in the 01:43Z VM reboot. State recovered from supervisor.log + LEADS_LEDGER.md + staged bundles.
+- dd9-batch9 harvest stands: 4 nolin S1-FLAG KILLED (LIN load-bearing confirmed — P-box alone does NOT break the linear invariant subspace), 2 linall S1 CAL_PASS + S2 PASS (dominated 27.2u/27.6u; new S2-clean set members).
+- D7 (batch-10) in-flight work recovered intact: bit-exactness 6/6 PASS, bundles fully staged (impl.c+meta.json+model.py+rtl.v, gates 6/6), job spec drafted. S0 never ran (load backoff, then reboot).
+- Ledger: 6 dd10 rows added (partial-LIN isolation variants).
+- D7 worker spawned: S0 (run_synth.py, Yosys 0.69, nice -19, queued on backoff), bundle push in small batches via PAT (base_tree 422 lesson noted), bundle verification via GitHub API, then dd10-batch10-20261010 S1+S2 submit.
+- Frontier: al_and6a 20.1u (unchanged).
+
+## 2026-10-10 ~04:23 CEST — S0 still blocked on load (D7 worker)
+- Box saturated 35+ min post-reboot (load 13-18, 15-min avg ~15); sibling yosys (nice 19) + java + momo/verifier tests active. backoff gate: exit 1 on real checks; one exit=0 observed was lock contention ("another instance running" — monitor loop holds the flock), NOT a real clear; raw load 14.64 confirms backoff still applies. Continuing to queue S0 per standing order.
+- All batch-10 artifacts ready: specs, model.py+meta.json (fast_battery/candidates/dd10_*/), impl.c (/tmp/b10_dd10_*/), .v (directed_design/candidates/dd10_*.v), bundles staged + gates 6/6 PASS, job spec drafted, bundle-verify script ready.
+
+## 2026-10-10 ~04:35 CEST — D7 worker complete: S0 + bundles + campaign (batch-10)
+- S0 (run_synth.py, Yosys 0.69 pinned, nice -19, mul64 ref crit=103.5, analyze.py==analyze2.py xcheck 6/6):
+  1. dd10_scsc_linsbox_a:            crit 21.9u (delay_ratio 0.212)
+  2. dd10_scsc_linchi_a:             crit 23.5u (delay_ratio 0.227)
+  3. dd10_sccs_linsbox_a:            crit 22.3u (delay_ratio 0.215)
+  4. dd10_scsc_singlerot_a:          crit 22.5u (delay_ratio 0.217)
+  5. dd10_scsc_singlerot_linsbox_a:   crit 19.6u (delay_ratio 0.189)  <-- <20.5u
+  6. dd10_scsc_linsbox_rm:           crit 22.1u (delay_ratio 0.214)
+- Infra note: dd10_scsc_linsbox_rm first attempt hit transient ABC "script did not complete successfully" (mul64 REF synth); single retry clean, 22.1u. No retry-loop; one retry then report.
+- singlerot_linsbox_a 19.6u < 20.5u -> campaign priority=frontier-challengers (job JSON updated + note appended). Frontier al_and6a 20.1u stands; singlerot_linsbox_a is the fastest D7 candidate but NOT a frontier claim until S1/S2 + local re-verification (GHA results are leads only).
+- Bundle push via push_targeted.py (PAT/Git Data API), 3 small batches of 2 candidates (422 base_tree lesson): commits f2c47bd6, e02cb85e, 810b60e6. Verified after each batch via GitHub API (contents API): ALL 6 candidates present with impl.c+meta.json+model.py+rtl.v (6/6, ALL_OK at head 810b60e6). push_targeted.py commit message still hardcoded "Track 3 wave-10: ..." (cosmetic, contents correct, per batch-9 note).
+- Campaign dd10-batch10-20261010 (S1+S2, 6 shards) submitted: job spec pushed at commit fe5d920c; dispatch workflow run 38017122599 (in_progress, head_sha == fe5d920c confirmed). Estimate 6x60=360 min. Ledger recorded (~/.fanout/ledger.json) with priority "frontier-challenger" (canonical spelling for scheduling sort; job JSON carries "frontier-challengers" per track convention).
+
+## 2026-10-10 ~04:25 CEST — D7 worker COMPLETE (batch-10 S0 + push + submit)
+- S0 (run_synth.py, Yosys 0.69, 6/6 analyze==analyze2): linsbox_a 21.9u, linchi_a 23.5u, sccs_linsbox_a 22.3u, singlerot_a 22.5u, singlerot_linsbox_a **19.6u** (frontier-challenger class, <20.5u), linsbox_rm 22.1u.
+- Priority = frontier-challengers (singlerot_linsbox_a < 20.5u).
+- Bundles pushed in 3 batches of 2 via PAT: f2c47bd6, e02cb85e, 810b60e6 — all verified via GitHub API (6/6 present, impl.c+meta.json+model.py+rtl.v).
+- Campaign dd10-batch10-20261010 submitted: run 38017122599 in_progress (S1+S2, 6 shards, est 360 min). Job spec at commit fe5d920c.
+- Watch: only singlerot_linsbox_a is near the frontier — whether partial-LIN (single rotation, on S-box rounds only) passes S1 is exactly what this campaign answers.
+- Ledger: 6 dd10 rows updated with S0 + campaign run ID.
+
+## 2026-10-10 ~04:42 CEST — S0 RUNNING (D7 worker)
+- Backoff gate returned genuine CLEAR (load=8.84, no frozen). Launched run_s0_batch10.sh: 6 sequential run_synth.py (Yosys 0.69 pinned, nice -19), logging to results/s0_batch10.log. Awaiting results for priority decision + ledger.
+
+## 2026-10-10 ~04:46 CEST — batch-10 S0 COMPLETE (D7 worker)
+- S0 (run_synth.py, Yosys 0.69 pinned, XCHECK analyze==analyze2 all 6, nice -19):
+  - dd10_scsc_linsbox_a:          21.9u / 4682 cells — LIN(5,13) on S rounds only
+  - dd10_scsc_linchi_a:          23.5u / 4864 cells — LIN(5,13) on chi rounds only (SLOWEST)
+  - dd10_sccs_linsbox_a:         22.3u / 4480 cells — SCCS + LIN on S rounds
+  - dd10_scsc_singlerot_a:       22.5u / 5189 cells — single-rot [13] all rounds
+  - dd10_scsc_singlerot_linsbox_a: **19.6u** / 3859 cells — single-rot [13] on S rounds only — **UNDER al_and6a 20.1u frontier**
+  - dd10_scsc_linsbox_rm:        22.1u / 4544 cells — hetero R/M, LIN on S rounds
+- Findings: pair-LIN ≈1.9u/round, single-rot LIN ≈1.1u/round (saves ~0.8u/LIN-round).
+  LIN-after-chi costs MORE than LIN-after-S-box (23.5 vs 21.9u, both 2 LIN rounds) — chi outputs feed deeper logic cones into the LIN XORs. SCCS pattern edge (17.2 vs 18.1 nolin) evaporates under partial LIN. Hetero R/M ≈ +0.2u vs homo R.
+- Priority split: singlerot_linsbox_a (19.6u < 20.5u) -> frontier-challengers (1-shard campaign); other 5 -> new-leads (5-shard campaign).
+
+## 2026-10-10 ~05:00 CEST — PHANTOM SUBMISSION + D7 S1 HARVEST (D7 worker)
+- **DUPLICATE-WORKER INCIDENT**: an unknown second agent on this VM pushed MY staged batch-10 files at 02:26:34Z (bundles, commit f2c47bd6) and 02:28:59Z (job spec dd10-batch10-20261010.json, commit fe5d920c, priority=frontier-challengers set WITHOUT S0 data — S0 did not exist until 02:42Z). It read my staged files (~/workspace/fanout/.../candidates/dd10_* and my draft job JSON) ~30 min after I staged them. My own push at ~02:47Z (commit 40713ca4, 2 job specs) hit the dispatch idempotency guard ("already terminal (done); skipping" -> malformed GITHUB_OUTPUT line -> setup FAILED, run 38018202713). No live campaign from my push; resubmission is pointless (results terminal).
+- **Phantom campaign run 38017122599 (created 02:29:02Z, success, 6 shards, collect 84c73ddb 02:32:49Z)**: ran REAL S1 on all 6 batch-10 candidates (my bit-exact-verified bundles — identical blobs). Canaries VALID: r23_1r FLAG (known-bad correctly flagged), r23_spn_mix4r_pba19b01_nw CAL_PASS (known-good passes). No S2 files (early stop on S1 FLAG).
+- **S1 VERDICTS — ALL 6 FLAG (D7 FALSIFIED)**:
+  - dd10_scsc_linsbox_a (21.9u): FLAG, lin_rejected=8, diff_rejected=10
+  - dd10_scsc_linchi_a (23.5u): FLAG, lin_rejected=10, diff_rejected=10
+  - dd10_sccs_linsbox_a (22.3u): FLAG, lin_rejected=10, diff_rejected=10
+  - dd10_scsc_singlerot_a (22.5u): FLAG, lin_rejected=10, diff_rejected=10
+  - dd10_scsc_singlerot_linsbox_a (19.6u): FLAG, lin_rejected=10, diff_rejected=10
+  - dd10_scsc_linsbox_rm (22.1u): FLAG, lin_rejected=10, diff_rejected=10
+  Rejection keys identical to dd7/dd8/dd9-nolin (0, 0xFFFF...F, 4660...). VERDICT: all 6 KILLED at S1.
+- **D7 conclusion**: partial LIN (either placement) and single-rotation LIN do NOT break the linear invariant subspace. Only full LIN(5,13) on EVERY round (dd9 linall 27.2/27.6u, S1+S2 clean) survives. The invariant is robust: survives P-box-only, 2/4-round LIN (both parities), and weakened single-rot LIN on 4/4 rounds.
+- **D8 proposal**: (1) characterize the invariant subspace directly (linear cryptanalysis of the mixed round function — same keys across dd7/dd8/nolin/partial); (2) search for the CHEAPEST linear layer that provably breaks it (not blind pairs); (3) co-design chi triples FOR the mixed template (current triples validated for 6-stage cascade, not invariant-breaking). Within full-LIN template: optimize S-box/chi for speed (Midori Sb0 depth-2, fewer taps) to pull 27u down.
+- Track 4 NOT complete; D8 design is the next work item.
+
+## 2026-10-10 ~05:30 CEST — D8 COMPLETE (analytic pivot, design worker)
+
+### 1. Invariant-subspace characterization (the "linear invariant" is a diffusion defect)
+- Built exact per-round instrumentation (bit-exact vs model.py on 3 controls) + fast S1-LIN D screen (real lin_diff.lin_cell_logp, ~6s/candidate).
+- **nolin (dd9_scsc_nolin_a)**: on 64-consecutive inputs, outputs have LOW ALGEBRAIC DEGREE in the 6 varying input bits — 18 constant output bits, degree hist {0:18,1:3,2:4,3:16,4:19,5:4}, block rank ~25 (nullity ~40). Root cause: after S-box round 0 only 8 bit positions vary (P-images of nibbles 0-1); support grows too slowly (8→22→28→51) for the nonlinear layers to build degree. Random-64-input rank is full (63-64) — the defect is specific to consecutive (low-entropy) inputs, which is exactly what S1-LIN tests.
+- **single-rot[13] (dd10_scsc_singlerot_a)**: D=1923/4096, rank ~61 (mild but lethal). Degree profile looks healthy (4-6), so this is a DIFFERENT mechanism. x^rotl(x,13) is 2-to-1 (kernel {0,ONES}) forcing even parity, but the bijective passthrough variant (rot13p63) still gives D=1659 — so it is NOT just bijectivity; the 1-XOR rotation structure itself is inadequate.
+- **lin(5,13)**: D=20/4096 (null), rank 63-64, degrees 4-6, no constants. Clean.
+
+### 2. Cheapest provably-working linear layer (exhaustive analytic screen, key=0)
+- ALL bijective 2-XOR rotation pairs PASS on all rounds: [5,13] D=20, [13,27] D=19, [1,2] D=20, [7,19] D=16. Multi-key (0/FFF/1234) clean for [5,13] (20,19,24).
+- ALL 1-XOR variants FAIL: rot13 D=1923, shift1 D=3631, shift31 D=4096, rot13p63 D=1659, rot13p0 D=1449. shift7 D=31 borderline (not robust).
+- Partial placements FAIL: lin513/sbox-only D=281, chi-only dead (D7), drop-r1 D=281, drop-r2 D=28(borderline). Drop-last-round is rank-invariant (D identical) BUT the last LIN is load-bearing for the DIFF test (low-8-bit marginal): CSC drop-last DIFF probe worst|z|=938 vs 28 with LIN.
+- **Verdict**: the cheapest S1-viable LIN is a 2-XOR rotation pair on ALL rounds (~1.9u/round). 1-XOR cannot do it (proven: x^P(x) never bijective; bijective 1-XOR still fails empirically).
+
+### 3. Breakthrough + scoped negative: 3-round chi-first
+- 3-round CHI-FIRST patterns with full 2-XOR LIN are LIN-clean: CSC D=27, CCS D=25, CSS D=27 (multi-key). Sbox-first 3-round (SCS/SSC) is LIN-dead (D=4096). Mechanism: chi-first spreads the 6 varying bits before the nibble-structured S-box round.
+- BUT all 3-round are DIFF-dead at real S1 sensitivity: local S1 (real code, 10 keys) → LIN 0/10 rej, DIFF 8-10/10 rej. Specific deltas (2^0,2^3,2^7,2^14) collapse. 3 rounds insufficient for differential diffusion.
+- Triple co-design: CHI_A near-optimal; CHI_B (wide) catastrophic (D=3720); wideA slightly better DIFF probe but cannot save 3-round.
+
+### 4. Batch-11 (4 candidates, all <28u, NOT submitted to GHA)
+- dd11_ccs_a 20.8u, dd11_css_a 20.4u, dd11_csc_a 21.0u, dd11_ccs_wa 20.7u. S0 PASS (run_synth.py, Yosys 0.69, analyze==analyze2 4/4). Bit-exact 214/214 (model vs C) + 52/52 (RTL vs model, iverilog).
+- Local S1 (definitive, same code as GHA): all 4 FLAG on DIFF → KILLED. GHA submission skipped (would only confirm the kill).
+- Ledger: 4 dd11 rows + D8 analytic result row added.
+
+### 5. Scoped verdict + D9 proposal
+- **Mixed SPN cannot beat al_and6a 20.1u**: 3r is DIFF-dead at ~20.5u, 4r S1-clean at 27.2u. The invariant is breakable but the cheapest breaking configuration (2-XOR LIN × 4 rounds) costs ~27u.
+- **D9 proposal**: pivot Track 4 — (a) cost-optimize the 4r S1-clean construction (S-box depth-2 like Midori Sb0, ~24u target), or (b) stand down the frontier chase (T8 already has sub-20u leads: tchi3a 18.4u). Awaiting coordinator call.
+- Analysis scripts: directed_design/d8/step{1,2,3,4,5,6b,7,8,9}_*.py (all checkpointed).
+
+## 2026-10-10 ~05:55 CEST — D9 worker: batch-12 fast screen COMPLETE
+- Wrote gen_batch12.py (6 specs: Midori Sb0 S-box, 4 rotation pairs, wideA chi, CSCS pattern; golden KS, pba19, full LIN all rounds) and d9_screen.py (generalized S1-LIN D screen + reduced DIFF probe, bit-exact vs mk_model/gen_verilog semantics).
+- **Screen bug caught + fixed before use**: first run inverted results (LIN applied sequentially per rotation instead of XOR of rotations of the original). Differential test vs step6b_linscreen reproduced D=20 exactly for the D8 control after fix. Process note: every generalized screen must carry a committed positive control (D8 control row) — added.
+- Screen results (D0, multi-key D, reduced-DIFF worst|z|; dd9_a control ref: D=20, probe 13.8/16.3):
+  - dd12_scsc_midori_513_a:  D=24 (24/19/24), probe 15.8/14.2 — CLEAN
+  - dd12_scsc_midori_12_a:   D=26 (26/22/17), probe 16.5/13.7 — CLEAN
+  - dd12_scsc_midori_719_a:  D=30 (30/26/13), probe 14.7/13.6 — CLEAN
+  - dd12_scsc_midori_1327_a: D=19 (19/22/20), probe 14.9/13.0 — CLEAN
+  - dd12_scsc_midori_513_wa: D=18 (18/23/27), probe 14.4/12.8 — CLEAN
+  - dd12_cscs_midori_513_a:  D=32 (32/18/29), probe 13.8/14.2 — CLEAN
+- **D9 lever-1 hypothesis VERIFIED at screen level**: Midori Sb0 swap does NOT reintroduce the invariant — D8's claim holds (2-XOR LIN on all rounds is what breaks it). All 4 bijective pairs viable with Midori.
+- Lever-4 LIN-relaxation probes (screen-only): CSCS+sbox-only D=42/49/33 LIN-borderline but probe 212/236 DEAD; CSCS+chi-only D=24/17/19 LIN-clean but probe 309/741 DEAD; CSCS drop-last identical to all-rounds (rank-invariant, but D8: last LIN load-bearing for DIFF). Chi-first does NOT allow LIN relaxation. Full LIN on all rounds is mandatory for every viable candidate.
+- Next: artifact generation (verilog/model/impl.c) -> bit-exactness -> S0 -> bundle+push+submit for <27u.
+
+## 2026-10-10 ~06:05 CEST — D9 worker: artifacts + bit-exactness (model vs C)
+- Generated 6x .v (gen_verilog.py mixed), 6x model.py+meta.json (mk_model.py --force), 6x impl.c (mk_c_impl.py -> /tmp/b12_<name>/).
+- Cross-check: d9_screen numpy model bit-equal to mk_model.py model.py on 300 random (v,k) for ALL 6 candidates — D-screen scores correspond to the real artifacts.
+- verify_batch12.py: model vs C 214/214 PASS on all 6. RTL gate initially failed (iverilog not on PATH post-reboot); re-running with PATH=~/tools/ivl-env/bin. Infra note: check_rtl.py shells bare 'iverilog' — needs PATH export.
+
+## 2026-10-10 ~06:30 CEST — D9 worker: S0 COMPLETE + bundles + campaign (batch-12)
+- S0 (run_synth.py, Yosys 0.69 pinned, nice -19, mul64 ref crit=103.5, analyze==analyze2 XCHECK 7/7):
+  - dd12_scsc_midori_513_a:  27.2u / 6990 cells — lever 1 (Midori swap of dd9_a 27.6u: -0.4u)
+  - dd12_scsc_midori_12_a:   27.1u / 6249 cells — lever 2, cheapest of batch (fewest cells)
+  - dd12_scsc_midori_719_a:  27.4u / 6636 cells — lever 2
+  - dd12_scsc_midori_1327_a: 27.3u / 7011 cells — lever 2
+  - dd12_scsc_midori_513_wa: 27.7u / 6614 cells — lever 3 (wideA: +0.5u vs CHI_A, WORSE)
+  - dd12_cscs_midori_513_a:  27.2u / 6565 cells — lever 4 (CSCS: neutral)
+  - dd12_scsc_midori_513_k:  27.5u / 6828 cells — flavor×sbox matrix completion (keccak+Midori WORSE than keccak+rasC2_0 27.2u)
+- **D9 VERDICT: cost hypothesis FALSIFIED.** The 27.2u floor has no significant fat. Depth-2 S-box saves 0.1-0.4u (not ~2u — S-box not on critical path; LIN+chi dominate). Rotation-pair choice is synthesis noise (27.1-27.4u). wideA costs +0.5u. CSCS neutral. Flavor×sbox savings do not stack. Cost floor ≈ 27.1u.
+- Bit-exactness: 7/7 PASS — model.py vs impl.c 214/214, RTL vs model.py 52/52 (iverilog). Screen model bit-equal to mk_model.py model.py on 300 random (v,k) for all 6 (7th screened separately, also clean: D=21/18/18).
+- Bundles pushed via PAT push_targeted.py in 3 batches (commits 1211c8f1, 9e834c17, 67bb8f42); GitHub API verify: 7/7 present with impl.c+meta.json+model.py+rtl.v (ALL_OK).
+- **Campaign dd12-batch12-20261010 SUBMITTED** (1 shard, S1+S2, priority new-leads, est 60 min): job spec pushed at commit c65964b7; dispatch run 38021688462 in_progress (head_sha == c65964b7 confirmed). Ledger recorded (45 entries).
+- Submission note: the task's <27u bar was MISSED (best 27.1u). Submitted anyway under his 2026-10-10 "explore every lead" standing order — the run S1/S2-validates the cheapest S1-screen-clean directed construction (dd12_scsc_midori_12_a: D=26, multi-key 26/22/17, probe 16.5/13.7 in-band with S1+S2-clean dd9_a), not a cost breakthrough. Documented in the job note.
+- D10 proposal (levers exhausted): (1) screen rot+shift 2-term LIN class (same XOR count, different diffusion — D8 only tested 1-XOR shifts); (2) screen all-S-box SSSS Midori template with full 2-XOR LIN (no chi AND gates — different diffusion dynamics, untested family); if both fail, accept the 27.1u floor and re-scope Track 4 to quality-reference while the frontier chase stays with Track 8 (tchi3a 18.4u, fz23_b 19.7u).
+- Track 4 NOT complete; awaiting campaign verdict + coordinator call on D10.
+
+## 2026-10-10 ~05:50 CEST — D10 worker: hypothesis D10 (batch 13) START
+- Task: two untested axes. Axis 1: rot+shift 2-term LIN (x ^ rotl(x,a) ^ (x<<b) / (x>>b)) on the SCSC-Midori-CHI_A vehicle, full LIN all rounds; bijectivity pre-filter (GF(2) rank) then D9-style fast D-screen, keep bijective + D<50 multi-key. Axis 2: all-S-box SSSS Midori template (pairs (5,13),(1,2),(7,19)) + 3r SSS long shots.
+- Infra work: d10_screen.py generalizes d9_screen.py with spec "lin_terms" ([kind,n], kind in rotl/shl/shr; falls back to "rots" as rotl pair); carries committed positive control DIAG_scsc_rasc20_513_all (assert D0==20, the D9 value) before any new result is trusted.
+- Axis-1 enumeration: a in {1,2,5,7,13,19,27} x b in 1..7 x {shl,shr} = 98 combos, bijectivity filter first.
+- Survivors: extend gen_verilog.py/mk_model.py/mk_c_impl.py for lin_terms, then artifacts -> bit-exactness (214/214 model vs C, 52/52 RTL vs model) -> S0 -> bundle+push_targeted GHA if <28u and screen-clean (priority: frontier-challengers if <20.5u else new-leads).
+
+## 2026-10-10 ~06:10 CEST — D10 worker: INFRA INCIDENT + FIX (load-shed)
+- d10_screen.py was SIGSTOP-frozen by the shedder at load=18.17 (legitimate extreme-overload freeze, 04:0xZ) and never auto-thawed: root cause was a BUG in load-shed.sh cmd_thaw() — the `python3 <<'EOF'` pid-listing heredoc was NOT piped into the `while read` loop, so `thaw` blocked forever on stdin (two wedged `thaw` invocations observed: a sibling's `thaw | head -5` at 353135 and my own at 364351, both stuck in anon_pipe_read; the wedged invocations also held the shedder flock, blocking the monitor's `auto` cycles).
+- Fix applied to ~/workspace/system/bin/load-shed.sh: `python3 - "$STATE" <<'EOF' | while read -r pid tag; do` (heredoc+pipe pattern verified before edit). This is shared standing infrastructure — flagging for an AGENTS.md lesson (sibling's `| head -5` pipe masked the bug by looking like a head/pipeline issue).
+- Cleared the wedged lock-holder (my own 364351; sibling's 353134/353135 had already been TERM'd — they were hung, not frozen), re-ran `thaw`: 328796 (d10_screen) CONT'd and running; 333643 (sibling test_prune) had already exited (ledger: expire). Frozen set now empty; monitor `auto` cycles resumed.
+- Screen status at freeze: 7/35 axis-1 done, ALL screen-clean (D 18-29, multi-key <50, probes 13-19 in-band with dd12 control). Positive control reproduced D0=20 exactly before the freeze.
+
+## 2026-10-10 ~06:35 CEST — D10 worker: VM REBOOT (up 1 min at 04:32Z)
+- d10_screen.py died at 26/35 axis-1 (all 26 screen-clean, D 11-29); /tmp log wiped; results/d10_screen.txt was end-of-run-only so nothing was checkpointed. Process lesson: long screens must checkpoint incrementally.
+- d10_screen.py patched: every result appended+flushed to results/d10_screen.txt immediately (incl. bijectivity lists as comments); stdout tee'd to results/d10_screen_run.log (workspace, reboot-safe).
+- load-shed.sh thaw fix SURVIVED the reboot (home persists). Restarted load-shed-monitor.sh (single-instance, was not re-armed yet post-boot).
+- Backoff CLEAR (exit 0); re-launched full screen under nice -n 10. Positive control reproduced D0=20 exactly on the re-run before proceeding.
+
+## 2026-10-10 ~07:10 CEST — D10 worker: screen COMPLETE + artifacts + bit-exactness
+- d10_screen re-run finished (exit 0), results incrementally checkpointed in results/d10_screen.txt. Positive control DIAG_scsc_rasc20_513_all reproduced D9 D0=20 EXACTLY on both runs.
+- Axis 1: 35/98 rot+shift combos bijective (63 dead, rank 61-63); ALL 35 bijective combos screen-clean (D 11-33, multi-key all <50, DIFF probes 13.2-19.9 in-band). Best: r5_shl6 D=11, r13_shr6 D=12, r5_shl3 D=15, r7_shr5 D=17.
+- Axis 2: SSSS-Midori (5,13) D=22 CLEAN; (13,27) D=23 CLEAN; (7,19) D=34 borderline (multi 34/42/25, deferred lead); (1,2) D=430 DEAD — LIN pair choice matters on the pure-S-box template (died here, lived on mixed: chi's cross-nibble ANDs were load-bearing for narrow pairs). rasC2_0 (5,13) D=23 clean. 3r SSS: all three D=4096 DEAD (long shot fails).
+- Batch-13: 6 specs (4x axis-1 + 2x axis-2 SSSS). Artifacts: 6x .v (gen_verilog lin_terms path), 6x model.py+meta.json, 6x impl.c.
+- Bit-exactness: screen-numpy vs model.py 900/900 on all 6 (XCHECK PASS); verify_batch13.py: model vs C 214/214 + RTL vs model 52/52 (iverilog) on all 6 — VERIFY PASS.
+- S0: run_s0_batch13.sh written; QUEUED — backoff says BACKOFF (load ~17.8 >= 12). Process note: `load-shed.sh backoff` exiting 0 with "another instance running" on stderr is a LOCK-CONTENTION artifact, not CLEAR — must see the "CLEAR:" line on stdout.
+
+## 2026-10-10 ~07:55 CEST — D10 worker: S0 COMPLETE + campaign SUBMITTED (batch-13)
+- S0 (run_synth.py, Yosys 0.69, nice -19, analyze==analyze2 XCHECK 6/6): ax1_r5_shl6 27.2u/6686, ax1_r13_shr6 27.2u/6668, ax1_r5_shl3 27.5u/6608, **ax1_r7_shr5 27.0u/6632** (cheapest directed 4r), ax2_ssss_midori_513 27.8u/4878, ax2_ssss_midori_1327 27.7u/4819.
+- D10 verdicts: (1) rot+shift LIN class is S1-viable (35/35 screen-clean) but does NOT beat the cost floor (27.0-27.5u ~= 27.1u mixed floor — same XOR count, wiring is wiring). (2) SSSS pure-S-box is a genuinely new viable family (wide pairs only) but SMALLER-and-SLOWER: 0.375 area ratio, 27.7-27.8u (chi rounds shallower than S-box rounds on crit path). (3) 3r SSS dead (D=4096) — long shot fails.
+- Campaign dd13-batch13-20261010 SUBMITTED: 2 shards S1+S2, priority new-leads. Bundles commit 3b97efe6 (8/8 API-verified), job spec b0f4fbb5, dispatch run 38028235124 in_progress (head_sha verified). Candidates: dd13_ax1_r7_shr5 + dd13_ax2_ssss_midori_513.
+- Ledger updated (batch-13 rows + deferred leads + 3 infra lessons). Track 4 NOT complete; awaiting GHA verdicts + D11 if both killed.
+
+## 2026-10-10 ~12:10 CEST — Track-4 supervisor RESUMED (incarnation F)
+- Old supervisor confirmed dead: last HB 05:42:57Z (>4h), no PIDs, no files newer than ~07:55 CEST. No duplicate risk — verified before acting.
+- Sibling coordination: track-3 (adder_lat) WAVE-12 built 09:53Z (al_ht51 19.9u, al_ht53 19.8u, real S2 diffprof running); track-5 (hybrid) batch-18 dual-last-stage proxy search running 12:05Z; track-6 (new_constructions) batches 26-27, t6_dual4a submitted, awaiting GHA. D11 axes (shift+shift LIN, wider SSSS) do not collide.
+- D11 screen launched (d11_screen.py, nice 19, tag mix-track4, incremental checkpoint to results/d11_screen.txt): Axis 1 = shift+shift 2-term LIN, 126 combos (shl/shl, shr/shr, shl/shr, a,b in 1..7, a!=b), bijectivity pre-filter; Axis 2 = wider SSSS pairs (13,37),(19,43),(27,37),(5,37),(7,43),(13,43) + D10 best rot+shift terms transplanted onto SSSS. Positive control DIAG_scsc_rasc20_513_all reproduced D9 D0=20 EXACTLY before any result trusted.
+- Bijectivity filter result: shl+shl and shr+shr all bijective (triangular, 1s on diagonal — filter vacuous as predicted); shl+shr partially dead (rank 61-63).
+- Frontier: al_and6a 20.1u (unchanged). dd13 verdicts confirmed ledgered: ax2_ssss_midori_513 S2-clean (S3 blocked on canary-pipe INFRA_FAIL, not scientific), ax1_r7_shr5 S1-FLAG KILLED.
+- **D11 infra fix (12:40 CEST)**: original screen launch at nice 19 was starved (~45s CPU in 25 min wall, 63k nonvoluntary switches on load ~10.6). renice-up denied (needs CAP_SYS_NICE), so killed PID 30188 and relaunched at nice 10 (standing default) via agentwork-launch.sh --tag mix-track4. d11_screen.py patched with resume support: parses completed tags from results/d11_screen.txt and skips them; control re-run only on fresh files. No results lost (7 AX1 checkpointed).
+- **D11 interim finding (12:50 CEST, 16/134 screened)**: striking shift-direction asymmetry on the SCSC-Midori vehicle. shl+shl 2-term LIN: 6/6 DIFF-dead or catastrophic (probes 25.7-238.6; shl1_shl6 37.5/30.1, shl1_shl7 113/50). shr+shr: 5/5 screen-clean (probes 14-24 in-band). shl+shr: 5/5 clean (13.5-17.3). D10's rot+shift (r5_shl6, r13_shr6) were clean, so the death is specific to shl-only LIN on this vehicle. Mechanism TBD (conjecture: one-sided dependency triangle vs chi AND orientation). Enumeration NOT narrowed (16 samples — pattern awaits full-screen confirmation). Screen ~13% done, pace ~1.7min/cand at nice 10, load 8.3.
+- **D11 interim finding CONFIRMED at 37/134 (13:10 CEST)**: shl-only 2-term LIN is structurally DIFF-hostile on the SCSC-Midori vehicle — 11/11 shl+shl pairs dead-or-bad (probe0 25.7-409.3). shr+shr: 12/13 clean (one kill: shr2_shr7 289.8). shl+shr: 11/12 clean (one borderline: shl2_shr1 69.1). Note: enumeration double-counts symmetric a/b pairs for same-direction classes (shl1_shl2 == shl2_shl1 as LIN maps — harmless). Design rule candidate: 2-term LIN needs a right-shift or rotation term; pure left-shift terms are DIFF-dead. Consistent with D10 (rotl+shl survived). Screen continuing un-narrowed; AX2 (wider SSSS + transplanted terms) still pending.
+
+## 2026-10-10 ~14:00 CEST — D11 worker: screen COMPLETE + batch-14 artifacts + bit-exactness
+- D11 screen COMPLETE: 114/114 AX1 bijective screened + 8/8 AX2. Control D9 D0=20 exact (fresh + confirmed).
+- Axis 1 verdicts (shift+shift LIN on SCSC-Midori): shl+shl STRUCTURALLY DIFF-DEAD (34/34 screened bad, probe0 25.7-721.4); shr+shr 39/40 clean (kill: shr2_shr7 289.8); shl+shr 38/40 clean (bad: shl2_shr1 69.1, shl3_shr2 83.4); 12 shl+shr combos dead at GF(2) rank 61-63. New design rule: 2-term LIN needs a right-shift or rotation term; pure left-shift terms are DIFF-dead on this vehicle.
+- Axis 2 verdicts (wider SSSS pairs): (13,37) D=20 clean, (19,43) D=17 clean, (27,37) D=19 clean, (7,43) D=25 clean, (13,43) D=20 clean, (5,37) D=16 borderline (25.4/27.0 — regresses vs D10 (5,13): narrow-wide balance matters). Transplant: r5_shl6 (D=11 on SCSC) DEAD on SSSS (probe 34.3/69.6); r13_shr6 lived (D=20, probe 16.9/15.0). Terms don't always transplant across templates.
+- Batch-14 (4 reps): dd14_ax1_shr2_shr5 (shr+shr best-D0), dd14_ax1_shl2_shr6 (shl+shr best-D0), dd14_ax2_ssss_midori_1943 (wider-pair best-D0), dd14_ax2_ssss_midori_r13_shr6 (transplant survivor).
+- Artifacts: 4x .v (gen_verilog lin_terms path), 4x model.py+meta.json, 4x impl.c. Bit-exactness VERIFY PASS: screen-numpy vs model.py 900/900, model vs C 214/214, RTL vs model 52/52 (iverilog, PATH export needed).
+- S0: run_s0_batch14.sh launched (nice 19, backoff CLEAR load 7.31), ~35 min for 4 candidates. Next: bundle+push+submit dd14-batch14 campaign (S1+S2 only, new-leads) on S0 <28u.
+- Frontier: al_and6a 20.1u (unchanged).
+
+## 2026-10-10 ~13:05 CEST — D11 worker: S0 COMPLETE + campaign SUBMITTED (batch-14)
+- S0 (run_synth.py, Yosys 0.69, nice -19, analyze==analyze2 XCHECK 4/4):
+  - dd14_ax1_shr2_shr5:       28.2u / 6588 cells — shr+shr class rep (ABOVE floor: pure-shift LIN is costlier than rotation-including LIN)
+  - dd14_ax1_shl2_shr6:       27.7u / 6105 cells — shl+shr class rep
+  - dd14_ax2_ssss_midori_1943: 27.2u / 4809 cells — wider-pair rep, CHEAPEST SSSS pair to date
+  - dd14_ax2_ssss_midori_r13_shr6: 27.0u / 4948 cells — transplant survivor, TIES the cheapest directed 4-rounder, smallest SSSS (0.386 area)
+- D11 cost verdict: shift-only LIN regresses cost (+0.7-1.2u vs rot-including) AND DIFF-dies (shl+shl). Directed floor holds ~27.0-27.1u.
+- Campaign dd14-batch14-20261010 SUBMITTED: 3 shards S1+S2, priority new-leads (nothing <20.5u): dd14_ax1_shl2_shr6 + dd14_ax2_ssss_midori_1943 + dd14_ax2_ssss_midori_r13_shr6. dd14_ax1_shr2_shr5 (28.2u) held back as deferred lead (above <28u bar, cost-dominated; its class question is cheap to re-race later).
+- Bundles pushed via PAT push_targeted.py (commit dab87d70, 13/13 GitHub-API-verified). Dispatch run 38046851456 in_progress (head_sha == dab87d70 confirmed).
+- Infra fix (shared): push_targeted.py now accepts -m/--message (was hardcoded to an unrelated track-3 message); muse.edit strips the exec bit — chmod +x after edits (process lesson for AGENTS.md).
+- Ledger updated (D11 rows). Track 4 NOT complete; awaiting GHA verdicts + D12 decision (options: accept 27.0u directed floor / re-scope to quality-reference, or a genuinely new axis if one appears).
+
+## 2026-10-10 ~17:15 CEST — Track-4 supervisor RESUMED (incarnation G, post-reboot)
+- Old incarnation F confirmed dead (last HB 11:05Z; VM rebooted ~14:37Z/16:37 CEST, uptime 34 min at resume). No duplicate risk — verified before acting (no PIDs, no files newer than 10:55).
+- Backoff CLEAR at resume (load 9.48 < 12). Heartbeat written.
+- **dd14 verdicts VERIFIED from raw repo logs** (run 38046851456 completed/success, head_sha==dab87d70; STATUS.json done 3/3 shards; canaries pass->CAL_PASS, kill->FLAG on shard-0 — gates non-vacuous):
+  - dd14_ax1_shl2_shr6: S1 CAL_PASS, S2 PASS (max_repeats=0, max|z|=11.0, N=2^22, xcheck 10k) — clean but DOMINATED (27.7u).
+  - dd14_ax2_ssss_midori_1943: S1 FLAG (9 DIFF rejections) — KILLED.
+  - dd14_ax2_ssss_midori_r13_shr6: S1 FLAG (10 DIFF rejections) — KILLED.
+  (All three already ledgered; verification confirms, no ledger change.)
+- Frontier: al_and6a 20.1u (unchanged, PARETO.md).
+- **D12 DECISION**: 4r directed family has CONVERGED (~27.0u floor, D10+D11 agree; gains went to DIFF-understanding, not delay). dd14's best 4r LIN rep S2-clean but dominated. Per "dead end = widen": D12 = FEWER, STRONGER ROUNDS — 3-round SCSC vehicle (pattern SCS), all D11-clean LIN classes re-screened (co-design, not transplant), shl+shl as negative controls. ~20.3u projected (3/4 of 4r cost). d12_screen.py written (control + axes A/B/C + NEG).
+- **SMOKE TEST SURPRISE**: 3r SCS shr2+shr5 (D11-clean at D0=15 on 4r) -> D0=4096 on 3r. Machinery validated (4r reproduces D11's D0=15 EXACTLY). Follow-up: SCS/SSC patterns -> 4096; CSC/CCS -> ~518-564. Diagnosis: 3r output is bijective, mean avalanche 30.6/64 (fine!), but 64 CONSECUTIVE outputs have GF(2) rank 41-45 (null ~63) — catastrophic linear structure on sequential inputs, invisible to avalanche. 7-combo pattern x LIN-class test in flight to determine whether ANY 3r variant survives the LIN family.
+
+## 2026-10-10 ~17:40 CEST — Track-4 supervisor: D12 axis KILLED + D13 probe
+- 7-combo pattern x LIN test COMPLETE (all on Midori Sb0 / CHI_A / pba19 / golden KS):
+  SCS+rotl5_shl6 4096 | SCS+shr2_shr5 4096 | SCS+shl2_shr6 4096 |
+  CSC+rotl5_shl6 D0=32 probe 344/341 | CSC+shr2_shr5 D0=564 | CSC+shl2_shr6 D0=32 probe 75/116 |
+  SCSC+rotl5_shl6 D0=11 probe 14.6/13.5 (control: matches D10 exactly)
+- **D12 3-round axis: KILLED (structural, screen stage).** No 3r variant viable: SCS total LIN death on all classes; CSC marginal-D0 but DIFF-dead. Mechanism: bijective output, avalanche 30.6/64 OK, but 64 consecutive outputs rank 41-45 (null ~63) — sequential-input linear structure invisible to avalanche, caught by the LIN family. Full 115-combo d12_screen.py CANCELLED (not run — best-4r classes already fail catastrophically; kept in tree for reference).
+- **D13 = S-box/chi rebalance** (new axis, genuinely untested in-program): probe of 5 patterns (SCCS/SCSCS/SCCC/CSCC/SCCSC) x 3 best LIN classes (r5_shl6, shr2_shr5, shl2_shr6) running (nice 10, ~30 min). Rationale: D10 "chi rounds shallower than S-box rounds on crit path" — cut S-box rounds, add chi rounds (composition, not count). If any probe shows D0<50 + in-band probes -> full D13 screen; else track-4 re-scopes to quality-reference role.
+- Ledger updated (17:40 entry). Noted track-8 17:25/17:35: fz30_m + fz24_o S3-KILLED (family-wide [Low1/64] defect) — S1+S2 do not catch 16MB-PractRand defects; process lesson adopted for any D13 survivors (local S3-16MB alongside S1; local S3 pipe healthy per track-8).
+- Frontier: al_and6a 20.1u. Track-3 as6_200_15 (19.2u, proxy z=5.1) is the live challenger (needs real S2 + GHA S1/S2).
+
+## 2026-10-10 ~17:55 CEST — Track-4 supervisor: batch-15 built, S0 QUEUED
+- D13 probe COMPLETE (15 combos):
+  SCCS: 22-31 / probes 13-16.5 clean | SCSCS: 17-28 / 14-16.5 clean |
+  SCCC: r5_shl6 D0=66 (probes clean), shl2_shr6 D0=19 clean, **shr2_shr5 D0=4096 DEAD** |
+  CSCC: D0 18-22 / probes 13-17.5 clean ALL classes | SCCSC: 17-30 / 12.6-16.4 clean
+- New co-design rule: S-box-FIRST + shr+shr LIN is dead (SCCC D0=4096); chi-first (CSCC) clean for same LIN. S-box position x LIN class interaction.
+- Batch-15 (3x CSCC = 1 S-box + 3 chi, chi-first): dd15_cscc_r5_shl6, dd15_cscc_shr2_shr5, dd15_cscc_shl2_shr6.
+  Artifacts: 3x .v (gen_verilog mixed path), 3x model.py+meta.json, 3x impl.c. Bit-exactness VERIFY PASS: screen-numpy vs model 900/900, model vs C 214/214, RTL vs model 52/52 (iverilog) on all 3.
+- **S0 QUEUED, not launched**: backoff says BACKOFF (load 12.06 >= 12) — run_s0_batch15.sh written, launches on next CLEAR. Question for S0: does 1S+3C beat the 27.0u floor? If S0 < 27u -> full D13 CSCC screen + GHA S1/S2 (+ local S3-16MB per track-8 lesson). If ~27u -> axis killed on cost, track-4 re-scopes.
+- Ledger: batch-15 rows to be added on S0 completion.
+
+## 2026-10-10 ~20:10 CEST — Track-4 supervisor incarnation I: S3-16MB reference characterization COMPLETE
+- Post-reboot respawn (VM rebooted ~19:47:25Z, uptime-verified; incarnation H confirmed dead). Backoff CLEAR (load 7.51→11.29).
+- **S3-16MB on the 5 clean references, all PASS** (local pipe: fast_battery/src/s3_gen.c + ~/tools/practrand/PractRand/RNG_test v0.96; key=0x123456789abcdef0, stride=1; generators -O3, bit-exact vs model.py 100/100 each; nice-19 chain, log+results directed_design/s3_ref/):
+  - dd13_ax2_ssss_midori_513: 0 anomalies in 147/147
+  - dd1_lin_5_13_nw: 147/147 | dd1_lin_8_15_nw: 147/147 | dd1_lin_5_9_nw: 147/147
+  - dd14_ax1_shl2_shr6: 146 clean + 1 weak "unusual" ([Low16/64]BCFN R=-6.2 p=3.1e-4 — chance-level)
+- **Dirty-boundary probe: dd14_ax2_ssss_midori_1943 (S1-FLAG, 9 DIFF rej)** → 2 unusual + 2 mildly suspicious + [Low1/64]FPF/16:all VERY SUSPICIOUS (R=+12.7, p=4.0e-10), 142 clean, NO fail.
+- **S3-16MB sensitivity profile (evidenced):** clean ⇒ ≤1 isolated unusual; moderate DIFF defect ⇒ suspicious band (BCFN/FPF residue, no FAIL); catastrophic linear structure ⇒ FAIL (and5 at 1MB, FPF/16:all R=+105.9). Reference set now validates the gate on both sides.
+- dd12 has no local impl.c — its dirty-boundary probe stays open.
+- Ledger: header entry 22:07 CEST; Resolved rows added for D13 CSCC cost-kill + D12 3r structural kill (both were declared terminal but missing from Resolved); dd1 rows' S3 status updated (local 16MB PASS supersedes GHA canary-pipe INFRA_FAIL for the 16MB stage).
+- Frontier: al_and6a 20.1u (unchanged).

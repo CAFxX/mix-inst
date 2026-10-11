@@ -1,0 +1,2 @@
+filters: marg2 PASS + DIFFproxy z<25@16
+TRY 9: HIT marg=+0.1 DIFFz= 21.5 body=[(1, 8, 12, 29), (4, 9, 20, 38), (6, 13, 21), (10, 25, 41)]

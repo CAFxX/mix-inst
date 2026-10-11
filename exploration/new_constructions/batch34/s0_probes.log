@@ -1,0 +1,579 @@
+2026-10-10T23:18:07Z S0 start stg_and1
+Traceback (most recent call last):
+  File "/home/hatch/workspace/mix/exploration/run_synth.py", line 98, in <module>
+    main()
+  File "/home/hatch/workspace/mix/exploration/run_synth.py", line 85, in main
+    ref = synth_one(REF_V, "mul64", os.path.join(workdir, "_ref"))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hatch/workspace/mix/exploration/run_synth.py", line 65, in synth_one
+    raise RuntimeError(f"yosys failed for {top}:\n{r.stdout[-3000:]}\n{r.stderr[-3000:]}")
+RuntimeError: yosys failed for mul64:
+paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000001000000 for cells of type $lcu.
+Using extmapper simplemap for cells of type $pos.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $not.
+No more expansions possible.
+<suppressed ~1013 debug messages>
+
+10. Executing OPT pass (performing simple optimizations).
+
+10.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mul64.
+<suppressed ~12170 debug messages>
+
+10.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mul64'.
+Computing hashes of 12578 cells of `\mul64'.
+Finding duplicate cells in `\mul64'.
+Removed a total of 0 cells.
+
+10.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \mul64..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+10.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \mul64.
+Performed a total of 0 changes.
+
+10.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mul64'.
+Computing hashes of 12578 cells of `\mul64'.
+Finding duplicate cells in `\mul64'.
+Removed a total of 0 cells.
+
+10.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+10.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mul64..
+Removed 267 unused cells and 688 unused wires.
+<suppressed ~268 debug messages>
+
+10.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mul64.
+
+10.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+10.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \mul64..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+10.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \mul64.
+Performed a total of 0 changes.
+
+10.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mul64'.
+Computing hashes of 12311 cells of `\mul64'.
+Finding duplicate cells in `\mul64'.
+Removed a total of 0 cells.
+
+10.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+10.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mul64..
+
+10.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mul64.
+
+10.16. Finished fast OPT passes. (There is nothing left to do.)
+
+11. Executing ABC pass (technology mapping using ABC).
+
+11.1. Extracting gate netlist of module `\mul64' to `<abc-temp-dir>/input.blif'..
+
+11.1.1. Executed ABC.
+Extracted 12311 gates and 12439 wires to a netlist network with 128 inputs and 64 outputs.
+Running ABC script: <abc-temp-dir>/abc.script
+ABC: UC Berkeley, ABC 1.01 (compiled Sep  9 2026 12:41:08)
+ABC: abc 01> empty
+ABC: abc 01> source <abc-temp-dir>/abc.script
+
+ERROR: ABC script did not complete successfully
+
+2026-10-10T23:18:17Z S0 done stg_and1 rc=0
+2026-10-10T23:18:17Z S0 start stg_a3
+Traceback (most recent call last):
+  File "/home/hatch/workspace/mix/exploration/run_synth.py", line 98, in <module>
+    main()
+  File "/home/hatch/workspace/mix/exploration/run_synth.py", line 85, in main
+    ref = synth_one(REF_V, "mul64", os.path.join(workdir, "_ref"))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hatch/workspace/mix/exploration/run_synth.py", line 65, in synth_one
+    raise RuntimeError(f"yosys failed for {top}:\n{r.stdout[-3000:]}\n{r.stderr[-3000:]}")
+RuntimeError: yosys failed for mul64:
+paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000001000000 for cells of type $lcu.
+Using extmapper simplemap for cells of type $pos.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $not.
+No more expansions possible.
+<suppressed ~1013 debug messages>
+
+10. Executing OPT pass (performing simple optimizations).
+
+10.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mul64.
+<suppressed ~12170 debug messages>
+
+10.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mul64'.
+Computing hashes of 12578 cells of `\mul64'.
+Finding duplicate cells in `\mul64'.
+Removed a total of 0 cells.
+
+10.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \mul64..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+10.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \mul64.
+Performed a total of 0 changes.
+
+10.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mul64'.
+Computing hashes of 12578 cells of `\mul64'.
+Finding duplicate cells in `\mul64'.
+Removed a total of 0 cells.
+
+10.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+10.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mul64..
+Removed 267 unused cells and 688 unused wires.
+<suppressed ~268 debug messages>
+
+10.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mul64.
+
+10.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+10.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \mul64..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+10.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \mul64.
+Performed a total of 0 changes.
+
+10.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mul64'.
+Computing hashes of 12311 cells of `\mul64'.
+Finding duplicate cells in `\mul64'.
+Removed a total of 0 cells.
+
+10.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+10.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mul64..
+
+10.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mul64.
+
+10.16. Finished fast OPT passes. (There is nothing left to do.)
+
+11. Executing ABC pass (technology mapping using ABC).
+
+11.1. Extracting gate netlist of module `\mul64' to `<abc-temp-dir>/input.blif'..
+
+11.1.1. Executed ABC.
+Extracted 12311 gates and 12439 wires to a netlist network with 128 inputs and 64 outputs.
+Running ABC script: <abc-temp-dir>/abc.script
+ABC: UC Berkeley, ABC 1.01 (compiled Sep  9 2026 12:41:08)
+ABC: abc 01> empty
+ABC: abc 01> source <abc-temp-dir>/abc.script
+
+ERROR: ABC script did not complete successfully
+
+2026-10-10T23:18:31Z S0 done stg_a3 rc=0
+2026-10-10T23:18:31Z S0 start stg_d2a3
+Traceback (most recent call last):
+  File "/home/hatch/workspace/mix/exploration/run_synth.py", line 98, in <module>
+    main()
+  File "/home/hatch/workspace/mix/exploration/run_synth.py", line 85, in main
+    ref = synth_one(REF_V, "mul64", os.path.join(workdir, "_ref"))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hatch/workspace/mix/exploration/run_synth.py", line 65, in synth_one
+    raise RuntimeError(f"yosys failed for {top}:\n{r.stdout[-3000:]}\n{r.stderr[-3000:]}")
+RuntimeError: yosys failed for mul64:
+paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000001000000 for cells of type $lcu.
+Using extmapper simplemap for cells of type $pos.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $not.
+No more expansions possible.
+<suppressed ~1013 debug messages>
+
+10. Executing OPT pass (performing simple optimizations).
+
+10.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mul64.
+<suppressed ~12170 debug messages>
+
+10.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mul64'.
+Computing hashes of 12578 cells of `\mul64'.
+Finding duplicate cells in `\mul64'.
+Removed a total of 0 cells.
+
+10.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \mul64..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+10.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \mul64.
+Performed a total of 0 changes.
+
+10.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mul64'.
+Computing hashes of 12578 cells of `\mul64'.
+Finding duplicate cells in `\mul64'.
+Removed a total of 0 cells.
+
+10.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+10.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mul64..
+Removed 267 unused cells and 688 unused wires.
+<suppressed ~268 debug messages>
+
+10.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mul64.
+
+10.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+10.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \mul64..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+10.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \mul64.
+Performed a total of 0 changes.
+
+10.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mul64'.
+Computing hashes of 12311 cells of `\mul64'.
+Finding duplicate cells in `\mul64'.
+Removed a total of 0 cells.
+
+10.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+10.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mul64..
+
+10.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mul64.
+
+10.16. Finished fast OPT passes. (There is nothing left to do.)
+
+11. Executing ABC pass (technology mapping using ABC).
+
+11.1. Extracting gate netlist of module `\mul64' to `<abc-temp-dir>/input.blif'..
+
+11.1.1. Executed ABC.
+Extracted 12311 gates and 12439 wires to a netlist network with 128 inputs and 64 outputs.
+Running ABC script: <abc-temp-dir>/abc.script
+ABC: UC Berkeley, ABC 1.01 (compiled Sep  9 2026 12:41:08)
+ABC: abc 01> empty
+ABC: abc 01> source <abc-temp-dir>/abc.script
+
+ERROR: ABC script did not complete successfully
+
+2026-10-10T23:18:36Z S0 done stg_d2a3 rc=0
+2026-10-10T23:18:36Z S0 start stg_aoi
+Traceback (most recent call last):
+  File "/home/hatch/workspace/mix/exploration/run_synth.py", line 98, in <module>
+    main()
+  File "/home/hatch/workspace/mix/exploration/run_synth.py", line 85, in main
+    ref = synth_one(REF_V, "mul64", os.path.join(workdir, "_ref"))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hatch/workspace/mix/exploration/run_synth.py", line 65, in synth_one
+    raise RuntimeError(f"yosys failed for {top}:\n{r.stdout[-3000:]}\n{r.stderr[-3000:]}")
+RuntimeError: yosys failed for mul64:
+paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000001000000 for cells of type $lcu.
+Using extmapper simplemap for cells of type $pos.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $not.
+No more expansions possible.
+<suppressed ~1013 debug messages>
+
+10. Executing OPT pass (performing simple optimizations).
+
+10.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mul64.
+<suppressed ~12170 debug messages>
+
+10.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mul64'.
+Computing hashes of 12578 cells of `\mul64'.
+Finding duplicate cells in `\mul64'.
+Removed a total of 0 cells.
+
+10.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \mul64..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+10.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \mul64.
+Performed a total of 0 changes.
+
+10.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mul64'.
+Computing hashes of 12578 cells of `\mul64'.
+Finding duplicate cells in `\mul64'.
+Removed a total of 0 cells.
+
+10.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+10.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mul64..
+Removed 267 unused cells and 688 unused wires.
+<suppressed ~268 debug messages>
+
+10.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mul64.
+
+10.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+10.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \mul64..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+10.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \mul64.
+Performed a total of 0 changes.
+
+10.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mul64'.
+Computing hashes of 12311 cells of `\mul64'.
+Finding duplicate cells in `\mul64'.
+Removed a total of 0 cells.
+
+10.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+10.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mul64..
+
+10.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mul64.
+
+10.16. Finished fast OPT passes. (There is nothing left to do.)
+
+11. Executing ABC pass (technology mapping using ABC).
+
+11.1. Extracting gate netlist of module `\mul64' to `<abc-temp-dir>/input.blif'..
+
+11.1.1. Executed ABC.
+Extracted 12311 gates and 12439 wires to a netlist network with 128 inputs and 64 outputs.
+Running ABC script: <abc-temp-dir>/abc.script
+ABC: UC Berkeley, ABC 1.01 (compiled Sep  9 2026 12:41:08)
+ABC: abc 01> empty
+ABC: abc 01> source <abc-temp-dir>/abc.script
+
+ERROR: ABC script did not complete successfully
+
+2026-10-10T23:18:38Z S0 done stg_aoi rc=0
+2026-10-10T23:18:38Z S0 start stg_add16
+Traceback (most recent call last):
+  File "/home/hatch/workspace/mix/exploration/run_synth.py", line 98, in <module>
+    main()
+  File "/home/hatch/workspace/mix/exploration/run_synth.py", line 85, in main
+    ref = synth_one(REF_V, "mul64", os.path.join(workdir, "_ref"))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hatch/workspace/mix/exploration/run_synth.py", line 65, in synth_one
+    raise RuntimeError(f"yosys failed for {top}:\n{r.stdout[-3000:]}\n{r.stderr[-3000:]}")
+RuntimeError: yosys failed for mul64:
+paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000001000000 for cells of type $lcu.
+Using extmapper simplemap for cells of type $pos.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $not.
+No more expansions possible.
+<suppressed ~1013 debug messages>
+
+10. Executing OPT pass (performing simple optimizations).
+
+10.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mul64.
+<suppressed ~12170 debug messages>
+
+10.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mul64'.
+Computing hashes of 12578 cells of `\mul64'.
+Finding duplicate cells in `\mul64'.
+Removed a total of 0 cells.
+
+10.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \mul64..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+10.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \mul64.
+Performed a total of 0 changes.
+
+10.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mul64'.
+Computing hashes of 12578 cells of `\mul64'.
+Finding duplicate cells in `\mul64'.
+Removed a total of 0 cells.
+
+10.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+10.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mul64..
+Removed 267 unused cells and 688 unused wires.
+<suppressed ~268 debug messages>
+
+10.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mul64.
+
+10.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+10.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \mul64..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+10.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \mul64.
+Performed a total of 0 changes.
+
+10.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mul64'.
+Computing hashes of 12311 cells of `\mul64'.
+Finding duplicate cells in `\mul64'.
+Removed a total of 0 cells.
+
+10.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+10.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mul64..
+
+10.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mul64.
+
+10.16. Finished fast OPT passes. (There is nothing left to do.)
+
+11. Executing ABC pass (technology mapping using ABC).
+
+11.1. Extracting gate netlist of module `\mul64' to `<abc-temp-dir>/input.blif'..
+
+11.1.1. Executed ABC.
+Extracted 12311 gates and 12439 wires to a netlist network with 128 inputs and 64 outputs.
+Running ABC script: <abc-temp-dir>/abc.script
+ABC: UC Berkeley, ABC 1.01 (compiled Sep  9 2026 12:41:08)
+ABC: abc 01> empty
+ABC: abc 01> source <abc-temp-dir>/abc.script
+
+ERROR: ABC script did not complete successfully
+
+2026-10-10T23:18:39Z S0 done stg_add16 rc=0
+2026-10-10T23:18:39Z ALL S0 PROBES DONE
+2026-10-10T23:33:48Z S0 start stg_and1
+Traceback (most recent call last):
+  File "/home/hatch/workspace/mix/exploration/run_synth.py", line 98, in <module>
+    main()
+  File "/home/hatch/workspace/mix/exploration/run_synth.py", line 85, in main
+    ref = synth_one(REF_V, "mul64", os.path.join(workdir, "_ref"))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hatch/workspace/mix/exploration/run_synth.py", line 65, in synth_one
+    raise RuntimeError(f"yosys failed for {top}:\n{r.stdout[-3000:]}\n{r.stderr[-3000:]}")
+RuntimeError: yosys failed for mul64:
+or cells of type $fa.
+Using template $paramod$039520c137afc9cd69dd56c3fb11a4e1fbe5f664\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $and.
+Using extmapper simplemap for cells of type $or.
+Using extmapper simplemap for cells of type $xor.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000001000000 for cells of type $lcu.
+Using extmapper simplemap for cells of type $pos.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $not.
+No more expansions possible.
+<suppressed ~1013 debug messages>
+
+10. Executing OPT pass (performing simple optimizations).
+
+10.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mul64.
+<suppressed ~12170 debug messages>
+
+10.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mul64'.
+Computing hashes of 12578 cells of `\mul64'.
+Finding duplicate cells in `\mul64'.
+Removed a total of 0 cells.
+
+10.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \mul64..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+10.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \mul64.
+Performed a total of 0 changes.
+
+10.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mul64'.
+Computing hashes of 12578 cells of `\mul64'.
+Finding duplicate cells in `\mul64'.
+Removed a total of 0 cells.
+
+10.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+10.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mul64..
+Removed 267 unused cells and 688 unused wires.
+<suppressed ~268 debug messages>
+
+10.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mul64.
+
+10.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+10.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \mul64..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+10.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \mul64.
+Performed a total of 0 changes.
+
+10.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mul64'.
+Computing hashes of 12311 cells of `\mul64'.
+Finding duplicate cells in `\mul64'.
+Removed a total of 0 cells.
+
+10.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+10.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mul64..
+
+10.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mul64.
+
+10.16. Finished fast OPT passes. (There is nothing left to do.)
+
+11. Executing ABC pass (technology mapping using ABC).
+
+11.1. Extracting gate netlist of module `\mul64' to `<abc-temp-dir>/input.blif'..
+
+

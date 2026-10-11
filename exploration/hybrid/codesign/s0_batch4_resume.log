@@ -1,0 +1,51 @@
+SKIP cd2_p_a43b1_l513_nw (already done)
+SKIP cd2_p_a43b7_l513_nw (already done)
+SKIP cd2_p_a53b1_l513_nw (already done)
+=== S0 cd2_p_a53b7_l513_nw ===
+[S0 cd2_p_a53b7_l513_nw] delay=26.4u cells=5423 x_mult=0.255 (bar 0.9) equiv=n=1000 err=0 -> PASS [ref 0s cached=True, dut 70s, equiv 182s]
+=== S0 cd2_p_a21b1_l513_nw ===
+[S0 cd2_p_a21b1_l513_nw] delay=26.4u cells=5264 x_mult=0.255 (bar 0.9) equiv=n=1000 err=0 -> PASS [ref 0s cached=True, dut 65s, equiv 263s]
+=== S0 cd2_p_a21b5_l513_nw ===
+[S0 cd2_p_a21b5_l513_nw] delay=26.9u cells=4770 x_mult=0.260 (bar 0.9) equiv=n=1000 err=0 -> PASS [ref 0s cached=True, dut 60s, equiv 117s]
+=== S0 cd2_p_a29b1_l513_nw ===
+[S0 cd2_p_a29b1_l513_nw] delay=26.5u cells=5342 x_mult=0.256 (bar 0.9) equiv=n=1000 err=0 -> PASS [ref 0s cached=True, dut 53s, equiv 243s]
+=== S0 cd2_p_a35b7_l513_nw ===
+[S0 cd2_p_a35b7_l513_nw] delay=26.4u cells=5229 x_mult=0.255 (bar 0.9) equiv=n=1000 err=0 -> PASS [ref 0s cached=True, dut 87s, equiv 190s]
+=== S0 cd2_p_a3b7_l513_nw ===
+[S0 cd2_p_a3b7_l513_nw] delay=26.2u cells=5513 x_mult=0.253 (bar 0.9) equiv=n=1000 err=0 -> PASS [ref 0s cached=True, dut 80s, equiv 195s]
+=== S0 cd2_p_a61b1_l513_nw ===
+[S0 cd2_p_a61b1_l513_nw] delay=26.3u cells=5611 x_mult=0.254 (bar 0.9) equiv=n=1000 err=0 -> PASS [ref 0s cached=True, dut 41s, equiv 90s]
+=== S0 cd2_p_a11b7_l311_nw ===
+[S0 cd2_p_a11b7_l311_nw] delay=26.2u cells=5451 x_mult=0.253 (bar 0.9) equiv=n=1000 err=0 -> PASS [ref 0s cached=True, dut 6s, equiv 31s]
+=== S0 cd2_p_a11b3_l311_nw ===
+[S0 cd2_p_a11b3_l311_nw] delay=26.3u cells=5538 x_mult=0.254 (bar 0.9) equiv=n=1000 err=0 -> PASS [ref 0s cached=True, dut 5s, equiv 27s]
+=== S0 cd2_p_a3b1_l311_nw ===
+[S0 cd2_p_a3b1_l311_nw] delay=26.1u cells=5388 x_mult=0.252 (bar 0.9) equiv=n=1000 err=0 -> PASS [ref 0s cached=True, dut 4s, equiv 24s]
+=== S0 cd2_p_a3b5_l311_nw ===
+[S0 cd2_p_a3b5_l311_nw] delay=26.6u cells=4998 x_mult=0.257 (bar 0.9) equiv=n=1000 err=0 -> PASS [ref 0s cached=True, dut 3s, equiv 12s]
+=== S0 cd2_p_a53b1_l311_nw ===
+[S0 cd2_p_a53b1_l311_nw] delay=26.3u cells=5340 x_mult=0.254 (bar 0.9) equiv=n=1000 err=0 -> PASS [ref 0s cached=True, dut 2s, equiv 14s]
+=== S0 cd2_p_a53b2_l311_nw ===
+[S0 cd2_p_a53b2_l311_nw] delay=26.3u cells=5354 x_mult=0.254 (bar 0.9) equiv=n=1000 err=0 -> PASS [ref 0s cached=True, dut 3s, equiv 12s]
+=== S0 cd2_p_a61b1_l311_nw ===
+[S0 cd2_p_a61b1_l311_nw] delay=26.3u cells=5110 x_mult=0.254 (bar 0.9) equiv=n=1000 err=0 -> PASS [ref 0s cached=True, dut 3s, equiv 16s]
+=== S0 cd2_p_a9b1_l311_nw ===
+[S0 cd2_p_a9b1_l311_nw] delay=26.3u cells=5342 x_mult=0.254 (bar 0.9) equiv=n=1000 err=0 -> PASS [ref 0s cached=True, dut 9s, equiv 19s]
+=== S0 cd2_p_a29b2_l311_nw ===
+[S0 cd2_p_a29b2_l311_nw] delay=26.5u cells=5505 x_mult=0.256 (bar 0.9) equiv=n=1000 err=0 -> PASS [ref 0s cached=True, dut 4s, equiv 19s]
+=== S0 cd2_p_a21b1_l311_nw ===
+[S0 cd2_p_a21b1_l311_nw] delay=26.4u cells=5289 x_mult=0.255 (bar 0.9) equiv=n=1000 err=0 -> PASS [ref 0s cached=True, dut 5s, equiv 16s]
+ALLDONE
+=== S1 cd2_p_a43b7_l513_nw ===
+  File "/home/hatch/workspace/mix/exploration/fast_battery/src/s1_screen.py", line 111, in main
+    with open(os.path.join(outdir, "s1_result.json"), "w") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 's1_results/cd2_p_a43b7_l513_nw/s1_result.json'
+S1 rc=0 cd2_p_a43b7_l513_nw
+=== S1 cd2_p_a53b1_l513_nw ===
+  [DIFF] key=0x92988f142674743 worst|z|=4.1 fisher_logp=-8.66 bonf_logp=-7.13
+  LIN: PASS (rej=0)  DIFF: FLAG (rej=1)
+[S1 cd2_p_a53b1_l513_nw] LIN/DIFF 23s: LIN PASS DIFF FLAG; SKIPPED (LIN/DIFF kill)
+[S1 cd2_p_a53b1_l513_nw] verdict: FLAG
+S1 rc=0 cd2_p_a53b1_l513_nw
+BATCH4_RESUME_ALLDONE

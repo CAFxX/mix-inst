@@ -1,0 +1,12 @@
+{
+ "candidate": "hyb5_casc8_p43",
+ "key": "0x123456789abcdef0",
+ "N": 262144,
+ "sac_maxdev": 0.004070281982421875,
+ "sac_meandev": 0.000764261931180954,
+ "sac_z5": 0,
+ "bic_maxcorr": 0.009048790856866735,
+ "bic_meancorr": 0.001556842878699125,
+ "avalanche_mean": 31.999635934829712,
+ "wall_s": 568.0
+}

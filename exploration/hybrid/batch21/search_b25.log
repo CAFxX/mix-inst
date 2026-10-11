@@ -1,0 +1,467 @@
+agentwork-launch: tag=track5/b25 schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+POSCTRL b33c: worst|z|=3.34 killkey=0x9e3779b97f4a7c15 -> KEEP-OK
+Traceback (most recent call last):
+  File "/home/hatch/workspace/mix/exploration/hybrid/batch21/search_b25.py", line 187, in <module>
+    main()
+  File "/home/hatch/workspace/mix/exploration/hybrid/batch21/search_b25.py", line 170, in main
+    allr += run_arm(rng, "P7", "pnl", 7, 150)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hatch/workspace/mix/exploration/hybrid/batch21/search_b25.py", line 125, in run_arm
+    extra = {"masks": [hex(m) for m in masks]}
+                       ^^^^^^
+TypeError: 'numpy.float64' object cannot be interpreted as an integer
+=== RUN2 2026-10-11T00:52:40Z mask-bug fixed (float64 corrupt), relaunch ===
+agentwork-launch: tag=track5/b25 schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+POSCTRL b33c: worst|z|=3.34 killkey=0x9e3779b97f4a7c15 -> KEEP-OK
+try P7   0 maxworst|z|=       2.9 killkey=0x5555555555555555 KEEP LINPROXY-D=27@0x0
+try P7   1 maxworst|z|=       2.9 killkey=0x0 KEEP LINPROXY-D=20@0xffffffffffffffff
+try P7   2 maxworst|z|=       2.8 killkey=0x9e3779b97f4a7c15 KEEP LINPROXY-D=25@0x0
+try P7   3 maxworst|z|=       3.7 killkey=0xffffffffffffffff KEEP LINPROXY-D=26@0xffffffffffffffff
+try P7   4 maxworst|z|=       2.7 killkey=0x123456789abcdef KEEP LINPROXY-D=24@0x0
+try P7   5 maxworst|z|=       2.5 killkey=0x0 KEEP LINPROXY-D=29@0x0
+try P7   6 maxworst|z|=       3.6 killkey=0x123456789abcdef KEEP LINPROXY-D=25@0xffffffffffffffff
+try P7   7 maxworst|z|=       3.2 killkey=0xdeadbeefdeadbeef KEEP LINPROXY-D=16@0x0
+try P7   8 maxworst|z|=       2.4 killkey=0x0 KEEP LINPROXY-D=24@0xffffffffffffffff
+try P7   9 maxworst|z|=       3.1 killkey=0xaaaaaaaaaaaaaaaa KEEP LINPROXY-D=33@0xffffffffffffffff
+try P7  10 maxworst|z|=       2.4 killkey=0xf0b52a9e7d8ba2b5 KEEP LINPROXY-D=25@0xffffffffffffffff
+try P7  11 maxworst|z|=       3.2 killkey=0xaaaaaaaaaaaaaaaa KEEP LINPROXY-D=23@0x0
+try P7  12 maxworst|z|=       3.1 killkey=0xffffffffffffffff KEEP LINPROXY-D=19@0x0
+try P7  13 maxworst|z|=       2.9 killkey=0x123456789abcdef KEEP LINPROXY-D=17@0x0
+try P7  14 maxworst|z|=       3.1 killkey=0x0 KEEP LINPROXY-D=24@0x0
+try P7  15 maxworst|z|=       2.9 killkey=0x0 KEEP LINPROXY-D=29@0x0
+try P7  16 maxworst|z|=       2.2 killkey=0xffffffffffffffff KEEP LINPROXY-D=26@0xffffffffffffffff
+try P7  17 maxworst|z|=       2.8 killkey=0xffffffffffffffff KEEP LINPROXY-D=23@0xffffffffffffffff
+try P7  18 maxworst|z|=       3.1 killkey=0x123456789abcdef KEEP LINPROXY-D=23@0xffffffffffffffff
+try P7  19 maxworst|z|=       2.8 killkey=0x9e3779b97f4a7c15 KEEP LINPROXY-D=28@0xffffffffffffffff
+try P7  20 maxworst|z|=       2.7 killkey=0x5555555555555555 KEEP LINPROXY-D=23@0x0
+try P7  21 maxworst|z|=       3.2 killkey=0xffffffffffffffff KEEP LINPROXY-D=19@0x0
+try P7  22 maxworst|z|=       2.6 killkey=0xaaaaaaaaaaaaaaaa KEEP LINPROXY-D=23@0x0
+try P7  23 maxworst|z|=       2.6 killkey=0xf0b52a9e7d8ba2b5 KEEP LINPROXY-D=23@0x0
+try P7  24 maxworst|z|=       3.3 killkey=0x0 KEEP LINPROXY-D=28@0x0
+try P7  25 maxworst|z|=       2.4 killkey=0x5555555555555555 KEEP LINPROXY-D=22@0x0
+try P7  26 maxworst|z|=       2.5 killkey=0xaaaaaaaaaaaaaaaa KEEP LINPROXY-D=24@0x0
+try P7  27 maxworst|z|=       3.2 killkey=0x92988f142674743 KEEP LINPROXY-D=28@0xffffffffffffffff
+try P7  28 maxworst|z|=       2.5 killkey=0xffffffffffffffff KEEP LINPROXY-D=32@0x0
+try P7  29 maxworst|z|=       2.7 killkey=0x92988f142674743 KEEP LINPROXY-D=19@0xffffffffffffffff
+try P7  30 maxworst|z|=       2.8 killkey=0x0 KEEP LINPROXY-D=28@0xffffffffffffffff
+try P7  31 maxworst|z|=       2.8 killkey=0x0 KEEP LINPROXY-D=31@0x0
+try P7  32 maxworst|z|=       3.0 killkey=0xdeadbeefdeadbeef KEEP LINPROXY-D=22@0xffffffffffffffff
+try P7  33 maxworst|z|=       2.5 killkey=0x0 KEEP LINPROXY-D=22@0x0
+try P7  34 maxworst|z|=       3.4 killkey=0x9e3779b97f4a7c15 KEEP LINPROXY-D=25@0xffffffffffffffff
+try P7  35 maxworst|z|=       3.3 killkey=0x92988f142674743 KEEP LINPROXY-D=21@0x0
+try P7  36 maxworst|z|=       3.7 killkey=0x9e3779b97f4a7c15 KEEP LINPROXY-D=21@0xffffffffffffffff
+try P7  37 maxworst|z|=       2.7 killkey=0xffffffffffffffff KEEP LINPROXY-D=20@0xffffffffffffffff
+try P7  38 maxworst|z|=       2.7 killkey=0x92988f142674743 KEEP LINPROXY-D=29@0xffffffffffffffff
+try P7  39 maxworst|z|=       3.1 killkey=0x5555555555555555 KEEP LINPROXY-D=26@0x0
+try P7  40 maxworst|z|=       3.4 killkey=0xf0b52a9e7d8ba2b5 KEEP LINPROXY-D=21@0x0
+try P7  41 maxworst|z|=       3.0 killkey=0x123456789abcdef KEEP LINPROXY-D=20@0xffffffffffffffff
+try P7  42 maxworst|z|=       3.2 killkey=0x123456789abcdef KEEP LINPROXY-D=21@0x0
+try P7  43 maxworst|z|=       2.4 killkey=0x92988f142674743 KEEP LINPROXY-D=26@0x0
+try P7  44 maxworst|z|=       3.5 killkey=0xdeadbeefdeadbeef KEEP LINPROXY-D=22@0x0
+try P7  45 maxworst|z|=       2.7 killkey=0x9e3779b97f4a7c15 KEEP LINPROXY-D=27@0xffffffffffffffff
+try P7  46 maxworst|z|=       3.0 killkey=0x0 KEEP LINPROXY-D=24@0x0
+try P7  47 maxworst|z|=       3.0 killkey=0x5555555555555555 KEEP LINPROXY-D=24@0x0
+try P7  48 maxworst|z|=       2.7 killkey=0xffffffffffffffff KEEP LINPROXY-D=29@0x0
+try P7  49 maxworst|z|=       2.4 killkey=0x9e3779b97f4a7c15 KEEP LINPROXY-D=18@0x0
+try P7  50 maxworst|z|=       2.5 killkey=0x5555555555555555 KEEP LINPROXY-D=26@0xffffffffffffffff
+try P7  51 maxworst|z|=       3.3 killkey=0x0 KEEP LINPROXY-D=19@0xffffffffffffffff
+try P7  52 maxworst|z|=       3.3 killkey=0xdeadbeefdeadbeef KEEP LINPROXY-D=21@0xffffffffffffffff
+try P7  53 maxworst|z|=       2.4 killkey=0x92988f142674743 KEEP LINPROXY-D=27@0x0
+try P7  54 maxworst|z|=       3.5 killkey=0x9e3779b97f4a7c15 KEEP LINPROXY-D=24@0xffffffffffffffff
+try P7  55 maxworst|z|=       3.0 killkey=0xffffffffffffffff KEEP LINPROXY-D=29@0xffffffffffffffff
+try P7  56 maxworst|z|=       2.5 killkey=0xffffffffffffffff KEEP LINPROXY-D=26@0xffffffffffffffff
+try P7  57 maxworst|z|=       2.6 killkey=0xdeadbeefdeadbeef KEEP LINPROXY-D=28@0x0
+try P7  58 maxworst|z|=       3.6 killkey=0x123456789abcdef KEEP LINPROXY-D=19@0xffffffffffffffff
+try P7  59 maxworst|z|=       2.7 killkey=0x92988f142674743 KEEP LINPROXY-D=24@0x0
+try P7  60 maxworst|z|=       2.6 killkey=0x92988f142674743 KEEP LINPROXY-D=29@0xffffffffffffffff
+try P7  61 maxworst|z|=       3.3 killkey=0xf0b52a9e7d8ba2b5 KEEP LINPROXY-D=20@0xffffffffffffffff
+try P7  62 maxworst|z|=       2.9 killkey=0x9e3779b97f4a7c15 KEEP LINPROXY-D=21@0x0
+try P7  63 maxworst|z|=       2.6 killkey=0x0 KEEP LINPROXY-D=24@0xffffffffffffffff
+try P7  64 maxworst|z|=       2.6 killkey=0xf0b52a9e7d8ba2b5 KEEP LINPROXY-D=26@0xffffffffffffffff
+try P7  65 maxworst|z|=       2.7 killkey=0xffffffffffffffff KEEP LINPROXY-D=27@0x0
+try P7  66 maxworst|z|=       2.8 killkey=0x5555555555555555 KEEP LINPROXY-D=24@0xffffffffffffffff
+try P7  67 maxworst|z|=       2.4 killkey=0xdeadbeefdeadbeef KEEP LINPROXY-D=23@0x0
+try P7  68 maxworst|z|=       2.9 killkey=0xffffffffffffffff KEEP LINPROXY-D=23@0x0
+try P7  69 maxworst|z|=       3.0 killkey=0x123456789abcdef KEEP LINPROXY-D=25@0xffffffffffffffff
+try P7  70 maxworst|z|=       2.7 killkey=0xdeadbeefdeadbeef KEEP LINPROXY-D=17@0xffffffffffffffff
+try P7  71 maxworst|z|=       3.4 killkey=0xaaaaaaaaaaaaaaaa KEEP LINPROXY-D=28@0xffffffffffffffff
+try P7  72 maxworst|z|=       2.7 killkey=0x9e3779b97f4a7c15 KEEP LINPROXY-D=24@0x0
+try P7  73 maxworst|z|=       3.1 killkey=0x0 KEEP LINPROXY-D=28@0xffffffffffffffff
+try P7  74 maxworst|z|=       3.3 killkey=0xf0b52a9e7d8ba2b5 KEEP LINPROXY-D=21@0xffffffffffffffff
+try P7  75 maxworst|z|=       2.6 killkey=0x92988f142674743 KEEP LINPROXY-D=15@0xffffffffffffffff
+try P7  76 maxworst|z|=       3.6 killkey=0x92988f142674743 KEEP LINPROXY-D=17@0xffffffffffffffff
+try P7  77 maxworst|z|=       3.2 killkey=0x5555555555555555 KEEP LINPROXY-D=22@0x0
+try P7  78 maxworst|z|=       2.5 killkey=0xf0b52a9e7d8ba2b5 KEEP LINPROXY-D=22@0x0
+try P7  79 maxworst|z|=       2.4 killkey=0xffffffffffffffff KEEP LINPROXY-D=21@0xffffffffffffffff
+try P7  80 maxworst|z|=       3.3 killkey=0x0 KEEP LINPROXY-D=27@0x0
+try P7  81 maxworst|z|=       2.8 killkey=0x9e3779b97f4a7c15 KEEP LINPROXY-D=24@0x0
+try P7  82 maxworst|z|=       2.6 killkey=0x9e3779b97f4a7c15 KEEP LINPROXY-D=29@0x0
+try P7  83 maxworst|z|=       2.7 killkey=0x9e3779b97f4a7c15 KEEP LINPROXY-D=20@0x0
+try P7  84 maxworst|z|=       2.7 killkey=0x0 KEEP LINPROXY-D=20@0x0
+try P7  85 maxworst|z|=       2.5 killkey=0x92988f142674743 KEEP LINPROXY-D=26@0xffffffffffffffff
+try P7  86 maxworst|z|=       2.8 killkey=0xffffffffffffffff KEEP LINPROXY-D=24@0x0
+try P7  87 maxworst|z|=       3.6 killkey=0xdeadbeefdeadbeef KEEP LINPROXY-D=26@0xffffffffffffffff
+try P7  88 maxworst|z|=       3.0 killkey=0xaaaaaaaaaaaaaaaa KEEP LINPROXY-D=19@0xffffffffffffffff
+try P7  89 maxworst|z|=       2.5 killkey=0x123456789abcdef KEEP LINPROXY-D=25@0xffffffffffffffff
+try P7  90 maxworst|z|=       2.6 killkey=0x92988f142674743 KEEP LINPROXY-D=25@0x0
+try P7  91 maxworst|z|=       3.3 killkey=0xffffffffffffffff KEEP LINPROXY-D=22@0xffffffffffffffff
+try P7  92 maxworst|z|=       2.7 killkey=0x5555555555555555 KEEP LINPROXY-D=17@0xffffffffffffffff
+try P7  93 maxworst|z|=       2.7 killkey=0xaaaaaaaaaaaaaaaa KEEP LINPROXY-D=17@0x0
+try P7  94 maxworst|z|=       2.7 killkey=0xffffffffffffffff KEEP LINPROXY-D=30@0xffffffffffffffff
+try P7  95 maxworst|z|=       2.6 killkey=0x9e3779b97f4a7c15 KEEP LINPROXY-D=26@0xffffffffffffffff
+try P7  96 maxworst|z|=       3.0 killkey=0xf0b52a9e7d8ba2b5 KEEP LINPROXY-D=23@0x0
+try P7  97 maxworst|z|=       2.5 killkey=0x123456789abcdef KEEP LINPROXY-D=25@0xffffffffffffffff
+try P7  98 maxworst|z|=       2.4 killkey=0xaaaaaaaaaaaaaaaa KEEP LINPROXY-D=30@0x0
+try P7  99 maxworst|z|=       2.8 killkey=0x5555555555555555 KEEP LINPROXY-D=21@0x0
+try P7 100 maxworst|z|=       4.2 killkey=0x9e3779b97f4a7c15 KEEP LINPROXY-D=28@0xffffffffffffffff
+try P7 101 maxworst|z|=       2.9 killkey=0x5555555555555555 KEEP LINPROXY-D=20@0x0
+try P7 102 maxworst|z|=       2.5 killkey=0x123456789abcdef KEEP LINPROXY-D=26@0x0
+try P7 103 maxworst|z|=       2.5 killkey=0xffffffffffffffff KEEP LINPROXY-D=26@0xffffffffffffffff
+try P7 104 maxworst|z|=       2.5 killkey=0x92988f142674743 KEEP LINPROXY-D=24@0x0
+try P7 105 maxworst|z|=       2.6 killkey=0x0 KEEP LINPROXY-D=14@0xffffffffffffffff
+try P7 106 maxworst|z|=       2.6 killkey=0xffffffffffffffff KEEP LINPROXY-D=25@0xffffffffffffffff
+try P7 107 maxworst|z|=       2.9 killkey=0x9e3779b97f4a7c15 KEEP LINPROXY-D=27@0xffffffffffffffff
+try P7 108 maxworst|z|=       2.6 killkey=0x5555555555555555 KEEP LINPROXY-D=31@0x0
+try P7 109 maxworst|z|=       2.7 killkey=0xffffffffffffffff KEEP LINPROXY-D=24@0x0
+try P7 110 maxworst|z|=       3.4 killkey=0x123456789abcdef KEEP LINPROXY-D=24@0x0
+try P7 111 maxworst|z|=       3.7 killkey=0x9e3779b97f4a7c15 KEEP LINPROXY-D=24@0xffffffffffffffff
+try P7 112 maxworst|z|=       3.0 killkey=0x9e3779b97f4a7c15 KEEP LINPROXY-D=16@0x0
+try P7 113 maxworst|z|=       3.1 killkey=0xaaaaaaaaaaaaaaaa KEEP LINPROXY-D=25@0x0
+try P7 114 maxworst|z|=       2.3 killkey=0xffffffffffffffff KEEP LINPROXY-D=21@0x0
+try P7 115 maxworst|z|=       2.8 killkey=0xaaaaaaaaaaaaaaaa KEEP LINPROXY-D=21@0x0
+try P7 116 maxworst|z|=       2.6 killkey=0xffffffffffffffff KEEP LINPROXY-D=22@0x0
+try P7 117 maxworst|z|=       2.9 killkey=0xf0b52a9e7d8ba2b5 KEEP LINPROXY-D=33@0xffffffffffffffff
+try P7 118 maxworst|z|=       3.1 killkey=0xffffffffffffffff KEEP LINPROXY-D=22@0x0
+try P7 119 maxworst|z|=       2.6 killkey=0x123456789abcdef KEEP LINPROXY-D=20@0x0
+try P7 120 maxworst|z|=       3.0 killkey=0x0 KEEP LINPROXY-D=20@0xffffffffffffffff
+try P7 121 maxworst|z|=       3.5 killkey=0x5555555555555555 KEEP LINPROXY-D=16@0xffffffffffffffff
+try P7 122 maxworst|z|=       2.9 killkey=0x9e3779b97f4a7c15 KEEP LINPROXY-D=28@0xffffffffffffffff
+try P7 123 maxworst|z|=       2.7 killkey=0xaaaaaaaaaaaaaaaa KEEP LINPROXY-D=24@0xffffffffffffffff
+try P7 124 maxworst|z|=       2.7 killkey=0xffffffffffffffff KEEP LINPROXY-D=27@0xffffffffffffffff
+try P7 125 maxworst|z|=       2.9 killkey=0xf0b52a9e7d8ba2b5 KEEP LINPROXY-D=27@0x0
+try P7 126 maxworst|z|=       3.0 killkey=0x92988f142674743 KEEP LINPROXY-D=28@0x0
+try P7 127 maxworst|z|=       3.1 killkey=0xffffffffffffffff KEEP LINPROXY-D=18@0x0
+try P7 128 maxworst|z|=       2.8 killkey=0x0 KEEP LINPROXY-D=24@0xffffffffffffffff
+try P7 129 maxworst|z|=       2.9 killkey=0x92988f142674743 KEEP LINPROXY-D=24@0x0
+try P7 130 maxworst|z|=       3.1 killkey=0x5555555555555555 KEEP LINPROXY-D=26@0xffffffffffffffff
+try P7 131 maxworst|z|=       3.1 killkey=0x92988f142674743 KEEP LINPROXY-D=23@0xffffffffffffffff
+try P7 132 maxworst|z|=       2.6 killkey=0x5555555555555555 KEEP LINPROXY-D=33@0xffffffffffffffff
+try P7 133 maxworst|z|=       2.5 killkey=0x0 KEEP LINPROXY-D=24@0x0
+try P7 134 maxworst|z|=       3.2 killkey=0x123456789abcdef KEEP LINPROXY-D=27@0xffffffffffffffff
+try P7 135 maxworst|z|=       3.1 killkey=0x92988f142674743 KEEP LINPROXY-D=20@0xffffffffffffffff
+try P7 136 maxworst|z|=       2.9 killkey=0xaaaaaaaaaaaaaaaa KEEP LINPROXY-D=35@0xffffffffffffffff
+try P7 137 maxworst|z|=       2.6 killkey=0xf0b52a9e7d8ba2b5 KEEP LINPROXY-D=16@0xffffffffffffffff
+try P7 138 maxworst|z|=       3.2 killkey=0xf0b52a9e7d8ba2b5 KEEP LINPROXY-D=20@0xffffffffffffffff
+try P7 139 maxworst|z|=       3.4 killkey=0xffffffffffffffff KEEP LINPROXY-D=23@0x0
+try P7 140 maxworst|z|=       2.4 killkey=0x92988f142674743 KEEP LINPROXY-D=27@0xffffffffffffffff
+try P7 141 maxworst|z|=       2.7 killkey=0xaaaaaaaaaaaaaaaa KEEP LINPROXY-D=19@0x0
+try P7 142 maxworst|z|=       3.1 killkey=0x0 KEEP LINPROXY-D=29@0x0
+try P7 143 maxworst|z|=       2.5 killkey=0xaaaaaaaaaaaaaaaa KEEP LINPROXY-D=22@0x0
+try P7 144 maxworst|z|=       2.5 killkey=0xf0b52a9e7d8ba2b5 KEEP LINPROXY-D=21@0x0
+try P7 145 maxworst|z|=       2.5 killkey=0x0 KEEP LINPROXY-D=17@0xffffffffffffffff
+try P7 146 maxworst|z|=       2.4 killkey=0xf0b52a9e7d8ba2b5 KEEP LINPROXY-D=28@0x0
+try P7 147 maxworst|z|=       2.7 killkey=0x9e3779b97f4a7c15 KEEP LINPROXY-D=20@0xffffffffffffffff
+try P7 148 maxworst|z|=       2.3 killkey=0x0 KEEP LINPROXY-D=26@0xffffffffffffffff
+try P7 149 maxworst|z|=       2.5 killkey=0xf0b52a9e7d8ba2b5 KEEP LINPROXY-D=21@0x0
+=== P7: 150/150 KEEP ===
+KEEP P7 z=2.22 D=26 [(50, 14, 48, 62), (20, 24, 52, 49), (23, 56, 38, 62), (51, 31, 41, 8), (59, 30, 3, 22), (2, 18, 21, 57), (35, 10, 61, 40)]
+KEEP P7 z=2.32 D=26 [(16, 25, 5, 13), (33, 46, 24, 22), (19, 4, 60, 1), (2, 41, 3, 44), (8, 24, 46, 35), (13, 57, 16, 25), (28, 1, 15, 43)]
+KEEP P7 z=2.34 D=21 [(61, 51, 26, 27), (14, 24, 58, 13), (41, 16, 9, 6), (27, 4, 30, 19), (1, 42, 5, 14), (61, 17, 9, 6), (20, 57, 10, 46)]
+KEEP P7 z=2.36 D=26 [(12, 48, 59, 61), (12, 19, 52, 24), (22, 12, 43, 1), (7, 10, 60, 6), (63, 54, 51, 59), (45, 63, 53, 21), (26, 28, 4, 15)]
+KEEP P7 z=2.37 D=21 [(1, 51, 52, 43), (34, 52, 55, 29), (13, 25, 34, 49), (15, 4, 49, 43), (49, 17, 50, 30), (31, 61, 59, 1), (5, 7, 28, 24)]
+KEEP P7 z=2.37 D=22 [(23, 41, 31, 42), (20, 9, 34, 54), (61, 21, 14, 44), (42, 3, 49, 58), (5, 54, 3, 36), (34, 41, 61, 31), (4, 32, 1, 43)]
+KEEP P7 z=2.38 D=27 [(10, 58, 62, 60), (23, 50, 4, 59), (57, 8, 29, 59), (13, 3, 58, 56), (1, 12, 50, 36), (40, 28, 44, 50), (63, 41, 27, 54)]
+KEEP P7 z=2.39 D=30 [(56, 11, 1, 37), (12, 57, 11, 35), (60, 46, 5, 57), (43, 48, 20, 61), (50, 37, 28, 14), (15, 36, 57, 29), (48, 5, 24, 52)]
+KEEP P7 z=2.41 D=23 [(23, 28, 40, 6), (46, 32, 2, 19), (52, 15, 19, 53), (13, 62, 40, 43), (56, 19, 63, 58), (15, 13, 31, 52), (60, 15, 31, 44)]
+KEEP P7 z=2.42 D=24 [(4, 37, 11, 43), (62, 55, 58, 40), (34, 15, 50, 4), (8, 45, 4, 10), (19, 57, 37, 35), (43, 42, 2, 47), (21, 59, 14, 51)]
+SUMMARY P7: 150/150 keep, min z=2.2, median z=2.8
+try P8   0 maxworst|z|=       3.5 killkey=0x5555555555555555 KEEP LINPROXY-D=23@0x0
+try P8   1 maxworst|z|=       2.9 killkey=0xdeadbeefdeadbeef KEEP LINPROXY-D=28@0xffffffffffffffff
+try P8   2 maxworst|z|=       3.1 killkey=0xf0b52a9e7d8ba2b5 KEEP LINPROXY-D=21@0xffffffffffffffff
+try P8   3 maxworst|z|=       2.9 killkey=0x0 KEEP LINPROXY-D=19@0x0
+try P8   4 maxworst|z|=       2.9 killkey=0x5555555555555555 KEEP LINPROXY-D=19@0xffffffffffffffff
+try P8   5 maxworst|z|=       3.3 killkey=0x123456789abcdef KEEP LINPROXY-D=23@0xffffffffffffffff
+try P8   6 maxworst|z|=       3.1 killkey=0x5555555555555555 KEEP LINPROXY-D=22@0xffffffffffffffff
+try P8   7 maxworst|z|=       2.7 killkey=0x123456789abcdef KEEP LINPROXY-D=24@0x0
+try P8   8 maxworst|z|=       2.8 killkey=0x123456789abcdef KEEP LINPROXY-D=26@0xffffffffffffffff
+try P8   9 maxworst|z|=       4.0 killkey=0x5555555555555555 KEEP LINPROXY-D=24@0xffffffffffffffff
+try P8  10 maxworst|z|=       2.6 killkey=0x9e3779b97f4a7c15 KEEP LINPROXY-D=26@0xffffffffffffffff
+try P8  11 maxworst|z|=       3.3 killkey=0x123456789abcdef KEEP LINPROXY-D=19@0xffffffffffffffff
+try P8  12 maxworst|z|=       2.7 killkey=0x123456789abcdef KEEP LINPROXY-D=32@0xffffffffffffffff
+try P8  13 maxworst|z|=       4.0 killkey=0xffffffffffffffff KEEP LINPROXY-D=17@0xffffffffffffffff
+try P8  14 maxworst|z|=       2.7 killkey=0xdeadbeefdeadbeef KEEP LINPROXY-D=20@0x0
+try P8  15 maxworst|z|=       3.2 killkey=0xf0b52a9e7d8ba2b5 KEEP LINPROXY-D=23@0xffffffffffffffff
+try P8  16 maxworst|z|=       2.5 killkey=0x92988f142674743 KEEP LINPROXY-D=22@0x0
+try P8  17 maxworst|z|=       2.5 killkey=0xdeadbeefdeadbeef KEEP LINPROXY-D=24@0x0
+try P8  18 maxworst|z|=       3.0 killkey=0xf0b52a9e7d8ba2b5 KEEP LINPROXY-D=21@0x0
+try P8  19 maxworst|z|=       3.2 killkey=0x9e3779b97f4a7c15 KEEP LINPROXY-D=20@0x0
+try P8  20 maxworst|z|=       3.0 killkey=0xaaaaaaaaaaaaaaaa KEEP LINPROXY-D=17@0xffffffffffffffff
+try P8  21 maxworst|z|=       3.2 killkey=0xaaaaaaaaaaaaaaaa KEEP LINPROXY-D=21@0xffffffffffffffff
+try P8  22 maxworst|z|=       2.8 killkey=0x5555555555555555 KEEP LINPROXY-D=26@0xffffffffffffffff
+try P8  23 maxworst|z|=       3.8 killkey=0xffffffffffffffff KEEP LINPROXY-D=19@0x0
+try P8  24 maxworst|z|=       2.7 killkey=0x5555555555555555 KEEP LINPROXY-D=32@0xffffffffffffffff
+try P8  25 maxworst|z|=       3.3 killkey=0xdeadbeefdeadbeef KEEP LINPROXY-D=25@0x0
+try P8  26 maxworst|z|=       3.0 killkey=0x123456789abcdef KEEP LINPROXY-D=24@0x0
+try P8  27 maxworst|z|=       2.9 killkey=0xf0b52a9e7d8ba2b5 KEEP LINPROXY-D=22@0x0
+try P8  28 maxworst|z|=       2.5 killkey=0xaaaaaaaaaaaaaaaa KEEP LINPROXY-D=21@0xffffffffffffffff
+try P8  29 maxworst|z|=       3.2 killkey=0x92988f142674743 KEEP LINPROXY-D=29@0x0
+try P8  30 maxworst|z|=       3.0 killkey=0xdeadbeefdeadbeef KEEP LINPROXY-D=21@0x0
+try P8  31 maxworst|z|=       3.2 killkey=0xffffffffffffffff KEEP LINPROXY-D=24@0xffffffffffffffff
+try P8  32 maxworst|z|=       2.3 killkey=0xdeadbeefdeadbeef KEEP LINPROXY-D=32@0xffffffffffffffff
+try P8  33 maxworst|z|=       2.8 killkey=0x92988f142674743 KEEP LINPROXY-D=23@0x0
+try P8  34 maxworst|z|=       3.0 killkey=0x5555555555555555 KEEP LINPROXY-D=20@0x0
+try P8  35 maxworst|z|=       3.4 killkey=0xf0b52a9e7d8ba2b5 KEEP LINPROXY-D=23@0xffffffffffffffff
+try P8  36 maxworst|z|=       3.0 killkey=0x123456789abcdef KEEP LINPROXY-D=29@0xffffffffffffffff
+try P8  37 maxworst|z|=       2.7 killkey=0xf0b52a9e7d8ba2b5 KEEP LINPROXY-D=23@0xffffffffffffffff
+try P8  38 maxworst|z|=       2.5 killkey=0xffffffffffffffff KEEP LINPROXY-D=27@0xffffffffffffffff
+try P8  39 maxworst|z|=       2.9 killkey=0x0 KEEP LINPROXY-D=23@0x0
+try P8  40 maxworst|z|=       2.3 killkey=0xffffffffffffffff KEEP LINPROXY-D=27@0xffffffffffffffff
+try P8  41 maxworst|z|=       2.7 killkey=0xdeadbeefdeadbeef KEEP LINPROXY-D=18@0x0
+try P8  42 maxworst|z|=       2.7 killkey=0x92988f142674743 KEEP LINPROXY-D=21@0x0
+try P8  43 maxworst|z|=       3.8 killkey=0xdeadbeefdeadbeef KEEP LINPROXY-D=22@0x0
+try P8  44 maxworst|z|=       3.0 killkey=0x9e3779b97f4a7c15 KEEP LINPROXY-D=22@0xffffffffffffffff
+try P8  45 maxworst|z|=       2.8 killkey=0x0 KEEP LINPROXY-D=24@0xffffffffffffffff
+try P8  46 maxworst|z|=       2.6 killkey=0xaaaaaaaaaaaaaaaa KEEP LINPROXY-D=23@0x0
+try P8  47 maxworst|z|=       2.5 killkey=0x123456789abcdef KEEP LINPROXY-D=30@0xffffffffffffffff
+try P8  48 maxworst|z|=       2.9 killkey=0x123456789abcdef KEEP LINPROXY-D=30@0xffffffffffffffff
+try P8  49 maxworst|z|=       2.9 killkey=0xaaaaaaaaaaaaaaaa KEEP LINPROXY-D=21@0xffffffffffffffff
+try P8  50 maxworst|z|=       2.8 killkey=0xaaaaaaaaaaaaaaaa KEEP LINPROXY-D=23@0xffffffffffffffff
+try P8  51 maxworst|z|=       2.9 killkey=0xffffffffffffffff KEEP LINPROXY-D=21@0x0
+try P8  52 maxworst|z|=       3.8 killkey=0x5555555555555555 KEEP LINPROXY-D=26@0xffffffffffffffff
+try P8  53 maxworst|z|=       2.5 killkey=0xffffffffffffffff KEEP LINPROXY-D=21@0x0
+try P8  54 maxworst|z|=       2.4 killkey=0x0 KEEP LINPROXY-D=25@0xffffffffffffffff
+try P8  55 maxworst|z|=       3.3 killkey=0xf0b52a9e7d8ba2b5 KEEP LINPROXY-D=28@0xffffffffffffffff
+try P8  56 maxworst|z|=       3.2 killkey=0x92988f142674743 KEEP LINPROXY-D=32@0x0
+try P8  57 maxworst|z|=       3.5 killkey=0x5555555555555555 KEEP LINPROXY-D=16@0xffffffffffffffff
+try P8  58 maxworst|z|=       2.4 killkey=0x9e3779b97f4a7c15 KEEP LINPROXY-D=30@0x0
+try P8  59 maxworst|z|=       2.5 killkey=0x9e3779b97f4a7c15 KEEP LINPROXY-D=30@0xffffffffffffffff
+try P8  60 maxworst|z|=       3.5 killkey=0x0 KEEP LINPROXY-D=28@0x0
+try P8  61 maxworst|z|=       2.6 killkey=0xffffffffffffffff KEEP LINPROXY-D=19@0xffffffffffffffff
+try P8  62 maxworst|z|=       4.3 killkey=0xaaaaaaaaaaaaaaaa KEEP LINPROXY-D=30@0x0
+try P8  63 maxworst|z|=       2.4 killkey=0x0 KEEP LINPROXY-D=21@0xffffffffffffffff
+try P8  64 maxworst|z|=       2.5 killkey=0x123456789abcdef KEEP LINPROXY-D=29@0xffffffffffffffff
+try P8  65 maxworst|z|=       3.1 killkey=0x0 KEEP LINPROXY-D=24@0xffffffffffffffff
+try P8  66 maxworst|z|=       3.0 killkey=0x5555555555555555 KEEP LINPROXY-D=28@0xffffffffffffffff
+try P8  67 maxworst|z|=       3.2 killkey=0x0 KEEP LINPROXY-D=29@0xffffffffffffffff
+try P8  68 maxworst|z|=       2.6 killkey=0xaaaaaaaaaaaaaaaa KEEP LINPROXY-D=23@0xffffffffffffffff
+try P8  69 maxworst|z|=       3.0 killkey=0x92988f142674743 KEEP LINPROXY-D=21@0x0
+try P8  70 maxworst|z|=       3.4 killkey=0x5555555555555555 KEEP LINPROXY-D=21@0xffffffffffffffff
+try P8  71 maxworst|z|=       3.3 killkey=0x9e3779b97f4a7c15 KEEP LINPROXY-D=18@0xffffffffffffffff
+try P8  72 maxworst|z|=       2.6 killkey=0xffffffffffffffff KEEP LINPROXY-D=22@0xffffffffffffffff
+try P8  73 maxworst|z|=       4.6 killkey=0xf0b52a9e7d8ba2b5 KEEP LINPROXY-D=25@0x0
+try P8  74 maxworst|z|=       2.8 killkey=0x92988f142674743 KEEP LINPROXY-D=28@0x0
+try P8  75 maxworst|z|=       2.9 killkey=0xffffffffffffffff KEEP LINPROXY-D=20@0x0
+try P8  76 maxworst|z|=       2.7 killkey=0x5555555555555555 KEEP LINPROXY-D=25@0xffffffffffffffff
+try P8  77 maxworst|z|=       3.5 killkey=0x9e3779b97f4a7c15 KEEP LINPROXY-D=14@0xffffffffffffffff
+try P8  78 maxworst|z|=       3.2 killkey=0xffffffffffffffff KEEP LINPROXY-D=26@0x0
+try P8  79 maxworst|z|=       3.0 killkey=0x0 KEEP LINPROXY-D=26@0xffffffffffffffff
+=== P8: 80/80 KEEP ===
+KEEP P8 z=2.30 D=27 [(62, 57, 47, 49), (47, 34, 61, 5), (52, 25, 42, 54), (63, 4, 43, 15), (25, 50, 41, 16), (62, 8, 10, 18), (27, 3, 41, 33), (34, 31, 36, 11)]
+KEEP P8 z=2.33 D=32 [(58, 53, 22, 12), (5, 6, 41, 37), (1, 63, 43, 62), (33, 48, 22, 14), (21, 39, 20, 40), (5, 54, 49, 12), (55, 42, 43, 30), (57, 53, 59, 33)]
+KEEP P8 z=2.37 D=25 [(48, 1, 27, 32), (23, 21, 9, 8), (59, 50, 3, 56), (31, 49, 37, 61), (9, 47, 33, 44), (26, 30, 32, 63), (1, 12, 11, 59), (38, 29, 12, 40)]
+KEEP P8 z=2.39 D=21 [(4, 26, 18, 9), (8, 60, 15, 24), (3, 36, 6, 19), (53, 29, 45, 42), (62, 61, 40, 11), (25, 60, 63, 10), (15, 34, 57, 62), (52, 24, 46, 23)]
+KEEP P8 z=2.45 D=30 [(15, 34, 30, 47), (12, 40, 45, 30), (6, 35, 58, 63), (53, 36, 6, 48), (6, 38, 23, 40), (55, 13, 1, 9), (17, 60, 52, 38), (8, 60, 11, 24)]
+KEEP P8 z=2.46 D=30 [(49, 16, 48, 25), (32, 20, 41, 12), (53, 3, 59, 31), (25, 12, 62, 5), (13, 60, 9, 3), (43, 1, 5, 63), (3, 50, 47, 41), (8, 3, 7, 29)]
+KEEP P8 z=2.47 D=27 [(51, 48, 15, 57), (46, 45, 62, 40), (46, 36, 21, 6), (15, 53, 34, 57), (22, 7, 47, 1), (19, 40, 58, 57), (5, 15, 60, 17), (59, 3, 61, 40)]
+KEEP P8 z=2.47 D=21 [(26, 4, 63, 31), (40, 55, 12, 29), (32, 9, 14, 38), (2, 12, 1, 27), (1, 56, 43, 41), (7, 3, 55, 6), (15, 26, 38, 60), (28, 14, 7, 22)]
+KEEP P8 z=2.47 D=24 [(8, 17, 16, 46), (58, 5, 56, 35), (22, 29, 60, 8), (12, 36, 59, 43), (26, 14, 23, 56), (7, 28, 52, 62), (54, 53, 56, 37), (61, 7, 37, 47)]
+KEEP P8 z=2.49 D=30 [(7, 60, 63, 10), (29, 3, 7, 12), (28, 13, 51, 7), (19, 55, 53, 20), (52, 31, 12, 10), (30, 32, 52, 51), (37, 36, 16, 60), (12, 22, 43, 5)]
+SUMMARY P8: 80/80 keep, min z=2.3, median z=2.9
+try X5   0 maxworst|z|=    2384.3 killkey=0x0 kill
+try X5   1 maxworst|z|=     855.4 killkey=0x0 kill
+try X5   2 maxworst|z|=      74.5 killkey=0xdeadbeefdeadbeef kill
+try X5   3 maxworst|z|=      99.2 killkey=0x0 kill
+try X5   4 maxworst|z|=     769.5 killkey=0x0 kill
+try X5   5 maxworst|z|=   15044.4 killkey=0x0 kill
+try X5   6 maxworst|z|=   12470.8 killkey=0x0 kill
+try X5   7 maxworst|z|=     769.8 killkey=0x0 kill
+try X5   8 maxworst|z|=    2990.0 killkey=0x0 kill
+try X5   9 maxworst|z|=     274.2 killkey=0x0 kill
+try X5  10 maxworst|z|=     233.9 killkey=0x9e3779b97f4a7c15 kill
+try X5  11 maxworst|z|=   10164.5 killkey=0x0 kill
+try X5  12 maxworst|z|=    3222.2 killkey=0x0 kill
+try X5  13 maxworst|z|=    4729.3 killkey=0x0 kill
+try X5  14 maxworst|z|=     313.7 killkey=0x0 kill
+try X5  15 maxworst|z|=     255.5 killkey=0x0 kill
+try X5  16 maxworst|z|=   11648.0 killkey=0x0 kill
+try X5  17 maxworst|z|=    3818.7 killkey=0x0 kill
+try X5  18 maxworst|z|=     605.5 killkey=0x0 kill
+try X5  19 maxworst|z|=    1068.0 killkey=0x92988f142674743 kill
+try X5  20 maxworst|z|=    4970.2 killkey=0x0 kill
+try X5  21 maxworst|z|=     894.3 killkey=0x0 kill
+try X5  22 maxworst|z|=    8818.5 killkey=0x0 kill
+try X5  23 maxworst|z|=   35392.3 killkey=0x0 kill
+try X5  24 maxworst|z|=     373.2 killkey=0x0 kill
+try X5  25 maxworst|z|=     134.0 killkey=0x0 kill
+try X5  26 maxworst|z|=    4420.1 killkey=0x0 kill
+try X5  27 maxworst|z|=    2493.0 killkey=0x0 kill
+try X5  28 maxworst|z|=    1262.3 killkey=0x0 kill
+try X5  29 maxworst|z|=    1553.5 killkey=0x123456789abcdef kill
+try X5  30 maxworst|z|=     992.9 killkey=0x0 kill
+try X5  31 maxworst|z|=    1998.2 killkey=0x0 kill
+try X5  32 maxworst|z|=     498.4 killkey=0x0 kill
+try X5  33 maxworst|z|=    2090.7 killkey=0x0 kill
+try X5  34 maxworst|z|=     532.8 killkey=0x0 kill
+try X5  35 maxworst|z|=     894.1 killkey=0x0 kill
+try X5  36 maxworst|z|=   19411.1 killkey=0x0 kill
+try X5  37 maxworst|z|=    1478.9 killkey=0x0 kill
+try X5  38 maxworst|z|=    6808.7 killkey=0x0 kill
+try X5  39 maxworst|z|=    2769.6 killkey=0x0 kill
+try X5  40 maxworst|z|=     176.8 killkey=0x0 kill
+try X5  41 maxworst|z|=     903.3 killkey=0x0 kill
+try X5  42 maxworst|z|=    3546.3 killkey=0x0 kill
+try X5  43 maxworst|z|=     426.1 killkey=0x0 kill
+try X5  44 maxworst|z|=    3388.5 killkey=0x0 kill
+try X5  45 maxworst|z|=    1624.9 killkey=0x0 kill
+try X5  46 maxworst|z|=    1908.4 killkey=0x0 kill
+try X5  47 maxworst|z|=    1363.2 killkey=0x0 kill
+try X5  48 maxworst|z|=     346.3 killkey=0x0 kill
+try X5  49 maxworst|z|=     543.4 killkey=0x0 kill
+try X5  50 maxworst|z|=     459.8 killkey=0x0 kill
+try X5  51 maxworst|z|=    2917.4 killkey=0x0 kill
+try X5  52 maxworst|z|=    1026.2 killkey=0x0 kill
+try X5  53 maxworst|z|=    9691.5 killkey=0x0 kill
+try X5  54 maxworst|z|=     184.1 killkey=0x0 kill
+try X5  55 maxworst|z|=     163.1 killkey=0x123456789abcdef kill
+try X5  56 maxworst|z|=     334.3 killkey=0x0 kill
+try X5  57 maxworst|z|=     405.5 killkey=0x0 kill
+try X5  58 maxworst|z|=    2935.3 killkey=0x0 kill
+try X5  59 maxworst|z|=   20858.6 killkey=0x0 kill
+=== X5: 0/60 KEEP ===
+SUMMARY X5: 0/60 keep, min z=74.5, median z=1363.2
+try X6   0 maxworst|z|=      19.1 killkey=0x0 kill
+try X6   1 maxworst|z|=       3.2 killkey=0x5555555555555555 KEEP LINPROXY-D=29@0x0
+try X6   2 maxworst|z|=       3.0 killkey=0x0 KEEP LINPROXY-D=27@0x0
+try X6   3 maxworst|z|=       3.2 killkey=0x123456789abcdef KEEP LINPROXY-D=38@0x0
+try X6   4 maxworst|z|=       3.1 killkey=0x92988f142674743 KEEP LINPROXY-D=25@0xffffffffffffffff
+try X6   5 maxworst|z|=       2.9 killkey=0x9e3779b97f4a7c15 KEEP LINPROXY-D=19@0xffffffffffffffff
+try X6   6 maxworst|z|=       3.1 killkey=0xf0b52a9e7d8ba2b5 KEEP LINPROXY-D=22@0xffffffffffffffff
+try X6   7 maxworst|z|=       2.8 killkey=0x92988f142674743 KEEP LINPROXY-D=18@0x0
+try X6   8 maxworst|z|=       3.5 killkey=0x0 KEEP LINPROXY-D=29@0xffffffffffffffff
+try X6   9 maxworst|z|=      13.3 killkey=0x0 kill
+try X6  10 maxworst|z|=      31.0 killkey=0x0 kill
+try X6  11 maxworst|z|=       2.4 killkey=0x123456789abcdef KEEP LINPROXY-D=27@0xffffffffffffffff
+try X6  12 maxworst|z|=       4.5 killkey=0x0 KEEP LINPROXY-D=23@0x0
+try X6  13 maxworst|z|=       5.7 killkey=0x0 KEEP LINPROXY-D=30@0x0
+try X6  14 maxworst|z|=       6.9 killkey=0x0 KEEP LINPROXY-D=20@0x0
+try X6  15 maxworst|z|=      14.9 killkey=0x0 kill
+try X6  16 maxworst|z|=       2.6 killkey=0x0 KEEP LINPROXY-D=23@0x0
+try X6  17 maxworst|z|=       3.3 killkey=0x123456789abcdef KEEP LINPROXY-D=26@0xffffffffffffffff
+try X6  18 maxworst|z|=       4.3 killkey=0x0 KEEP LINPROXY-D=21@0xffffffffffffffff
+try X6  19 maxworst|z|=       3.4 killkey=0xffffffffffffffff KEEP LINPROXY-D=16@0x0
+try X6  20 maxworst|z|=      33.7 killkey=0x0 kill
+try X6  21 maxworst|z|=       4.7 killkey=0x0 KEEP LINPROXY-D=22@0xffffffffffffffff
+try X6  22 maxworst|z|=      18.8 killkey=0x0 kill
+try X6  23 maxworst|z|=      59.3 killkey=0x0 kill
+try X6  24 maxworst|z|=       2.5 killkey=0xf0b52a9e7d8ba2b5 KEEP LINPROXY-D=27@0x0
+try X6  25 maxworst|z|=       3.7 killkey=0xf0b52a9e7d8ba2b5 KEEP LINPROXY-D=24@0xffffffffffffffff
+try X6  26 maxworst|z|=      18.5 killkey=0x0 kill
+try X6  27 maxworst|z|=      13.3 killkey=0x123456789abcdef kill
+try X6  28 maxworst|z|=       4.0 killkey=0x0 KEEP LINPROXY-D=24@0x0
+try X6  29 maxworst|z|=       4.0 killkey=0x0 KEEP LINPROXY-D=29@0xffffffffffffffff
+try X6  30 maxworst|z|=       3.1 killkey=0x123456789abcdef KEEP LINPROXY-D=30@0x0
+try X6  31 maxworst|z|=       3.3 killkey=0xaaaaaaaaaaaaaaaa KEEP LINPROXY-D=30@0x0
+try X6  32 maxworst|z|=      97.5 killkey=0x0 kill
+try X6  33 maxworst|z|=      13.6 killkey=0x0 kill
+try X6  34 maxworst|z|=      10.2 killkey=0x0 kill
+try X6  35 maxworst|z|=      12.2 killkey=0x0 kill
+try X6  36 maxworst|z|=       3.6 killkey=0x5555555555555555 KEEP LINPROXY-D=36@0xffffffffffffffff
+try X6  37 maxworst|z|=     164.0 killkey=0x0 kill
+try X6  38 maxworst|z|=    1612.0 killkey=0x0 kill
+try X6  39 maxworst|z|=       7.2 killkey=0x0 KEEP LINPROXY-D=29@0x0
+try X6  40 maxworst|z|=      13.2 killkey=0x0 kill
+try X6  41 maxworst|z|=       2.8 killkey=0xdeadbeefdeadbeef KEEP LINPROXY-D=27@0x0
+try X6  42 maxworst|z|=       2.7 killkey=0x0 KEEP LINPROXY-D=28@0xffffffffffffffff
+try X6  43 maxworst|z|=       2.9 killkey=0x0 KEEP LINPROXY-D=25@0x0
+try X6  44 maxworst|z|=       4.2 killkey=0x0 KEEP LINPROXY-D=19@0x0
+try X6  45 maxworst|z|=     951.7 killkey=0x0 kill
+try X6  46 maxworst|z|=     162.5 killkey=0x0 kill
+try X6  47 maxworst|z|=      26.2 killkey=0x0 kill
+try X6  48 maxworst|z|=      29.1 killkey=0x0 kill
+try X6  49 maxworst|z|=      54.7 killkey=0x0 kill
+try X6  50 maxworst|z|=      64.2 killkey=0x0 kill
+try X6  51 maxworst|z|=       3.9 killkey=0x0 KEEP LINPROXY-D=20@0xffffffffffffffff
+try X6  52 maxworst|z|=       8.7 killkey=0x0 KEEP LINPROXY-D=21@0xffffffffffffffff
+try X6  53 maxworst|z|=      29.8 killkey=0x0 kill
+try X6  54 maxworst|z|=      87.0 killkey=0x0 kill
+try X6  55 maxworst|z|=      16.7 killkey=0x0 kill
+try X6  56 maxworst|z|=      19.0 killkey=0x0 kill
+try X6  57 maxworst|z|=      10.2 killkey=0x0 kill
+try X6  58 maxworst|z|=     438.9 killkey=0x0 kill
+try X6  59 maxworst|z|=      77.3 killkey=0x0 kill
+=== X6: 31/60 KEEP ===
+KEEP X6 z=2.44 D=27 [(2, 10, 53, 28, 48), (42, 17, 10, 38, 13), (14, 41, 35, 11, 25), (33, 59, 25, 1, 26), (41, 53, 57, 16, 23), (31, 24, 58, 46, 21)]
+KEEP X6 z=2.45 D=27 [(15, 16, 28, 51, 59), (57, 40, 55, 1, 38), (11, 47, 52, 26, 57), (50, 10, 12, 18, 29), (16, 10, 7, 44, 52), (19, 18, 14, 6, 8)]
+KEEP X6 z=2.64 D=23 [(41, 59, 5, 15, 23), (58, 21, 19, 50, 36), (33, 45, 6, 54, 24), (20, 39, 35, 17, 27), (11, 27, 46, 42, 48), (19, 13, 21, 28, 52)]
+KEEP X6 z=2.69 D=28 [(38, 12, 29, 17, 22), (15, 60, 4, 56, 33), (41, 10, 54, 47, 21), (62, 10, 39, 56, 32), (1, 42, 26, 9, 38), (23, 13, 43, 36, 3)]
+KEEP X6 z=2.82 D=18 [(48, 50, 10, 44, 9), (45, 24, 27, 8, 4), (54, 47, 3, 32, 27), (36, 62, 8, 19, 43), (49, 59, 46, 33, 24), (34, 1, 59, 5, 38)]
+KEEP X6 z=2.82 D=27 [(2, 14, 44, 8, 43), (35, 60, 9, 41, 51), (39, 48, 47, 31, 56), (46, 21, 37, 38, 6), (56, 47, 16, 58, 50), (3, 4, 31, 32, 37)]
+KEEP X6 z=2.87 D=19 [(63, 9, 20, 13, 46), (52, 56, 31, 3, 23), (11, 52, 56, 17, 42), (8, 11, 55, 62, 35), (49, 21, 37, 50, 57), (17, 37, 43, 41, 50)]
+KEEP X6 z=2.92 D=25 [(30, 21, 11, 23, 10), (35, 25, 55, 19, 11), (55, 27, 14, 62, 6), (5, 39, 48, 13, 17), (18, 5, 13, 16, 33), (20, 12, 31, 21, 25)]
+KEEP X6 z=3.00 D=27 [(32, 14, 41, 19, 1), (46, 63, 39, 54, 43), (5, 34, 19, 9, 39), (24, 18, 63, 2, 51), (4, 18, 12, 43, 63), (33, 13, 58, 27, 61)]
+KEEP X6 z=3.09 D=25 [(40, 35, 15, 56, 49), (20, 45, 26, 17, 11), (19, 30, 58, 10, 61), (43, 9, 1, 6, 5), (25, 55, 16, 45, 3), (8, 34, 26, 21, 20)]
+SUMMARY X6: 31/60 keep, min z=2.4, median z=8.7
+try C5   0 maxworst|z|=    4052.1 killkey=0x0 kill
+try C5   1 maxworst|z|=   20506.6 killkey=0x0 kill
+try C5   2 maxworst|z|=    4625.3 killkey=0x0 kill
+try C5   3 maxworst|z|=     634.6 killkey=0x0 kill
+try C5   4 maxworst|z|=    1322.8 killkey=0x0 kill
+try C5   5 maxworst|z|=   33292.1 killkey=0x0 kill
+try C5   6 maxworst|z|=    4493.0 killkey=0x0 kill
+try C5   7 maxworst|z|=     322.3 killkey=0xdeadbeefdeadbeef kill
+try C5   8 maxworst|z|=    2023.1 killkey=0x0 kill
+try C5   9 maxworst|z|=    2341.5 killkey=0x0 kill
+try C5  10 maxworst|z|=     382.1 killkey=0x0 kill
+try C5  11 maxworst|z|=     716.3 killkey=0x0 kill
+try C5  12 maxworst|z|=    2035.7 killkey=0x0 kill
+try C5  13 maxworst|z|=    2935.5 killkey=0x0 kill
+try C5  14 maxworst|z|=    4378.6 killkey=0x5555555555555555 kill
+try C5  15 maxworst|z|=   80700.1 killkey=0xaaaaaaaaaaaaaaaa kill
+try C5  16 maxworst|z|=    1188.6 killkey=0x0 kill
+try C5  17 maxworst|z|=    5913.3 killkey=0x0 kill
+try C5  18 maxworst|z|=    3960.1 killkey=0x0 kill
+try C5  19 maxworst|z|=   11639.2 killkey=0x0 kill
+try C5  20 maxworst|z|=    2347.6 killkey=0x0 kill
+try C5  21 maxworst|z|=     717.1 killkey=0x5555555555555555 kill
+try C5  22 maxworst|z|=    1105.6 killkey=0xaaaaaaaaaaaaaaaa kill
+try C5  23 maxworst|z|=    3164.3 killkey=0x0 kill
+try C5  24 maxworst|z|=     248.3 killkey=0x0 kill
+try C5  25 maxworst|z|=   27601.5 killkey=0x0 kill
+try C5  26 maxworst|z|=   13345.2 killkey=0x0 kill
+try C5  27 maxworst|z|=    2159.8 killkey=0x0 kill
+try C5  28 maxworst|z|=    1997.7 killkey=0x9e3779b97f4a7c15 kill
+try C5  29 maxworst|z|=    1855.2 killkey=0x0 kill
+try C5  30 maxworst|z|=    2594.9 killkey=0x0 kill
+try C5  31 maxworst|z|=    4898.9 killkey=0x0 kill
+try C5  32 maxworst|z|=     587.8 killkey=0x0 kill
+try C5  33 maxworst|z|=     810.6 killkey=0x0 kill
+try C5  34 maxworst|z|=    1042.8 killkey=0x5555555555555555 kill
+try C5  35 maxworst|z|=    2249.0 killkey=0x0 kill
+try C5  36 maxworst|z|=    2129.8 killkey=0x0 kill
+try C5  37 maxworst|z|=    1020.6 killkey=0x0 kill
+try C5  38 maxworst|z|=   24621.8 killkey=0x0 kill
+try C5  39 maxworst|z|=    4380.6 killkey=0x0 kill
+try C5  40 maxworst|z|=  255363.2 killkey=0x0 kill
+try C5  41 maxworst|z|=     736.1 killkey=0x0 kill
+try C5  42 maxworst|z|=     808.9 killkey=0x0 kill
+try C5  43 maxworst|z|=     762.5 killkey=0x0 kill
+try C5  44 maxworst|z|=     743.7 killkey=0x0 kill
+try C5  45 maxworst|z|=    2291.5 killkey=0x9e3779b97f4a7c15 kill
+try C5  46 maxworst|z|=    4450.3 killkey=0x0 kill
+try C5  47 maxworst|z|=   28151.0 killkey=0x0 kill
+try C5  48 maxworst|z|=    3766.6 killkey=0x123456789abcdef kill
+try C5  49 maxworst|z|=    2960.0 killkey=0x0 kill
+try C5  50 maxworst|z|=     569.5 killkey=0x92988f142674743 kill
+try C5  51 maxworst|z|=    1107.8 killkey=0x0 kill
+try C5  52 maxworst|z|=    2501.9 killkey=0x0 kill
+try C5  53 maxworst|z|=    9650.0 killkey=0x0 kill
+try C5  54 maxworst|z|=  368540.5 killkey=0x0 kill
+try C5  55 maxworst|z|=    4619.2 killkey=0x0 kill
+try C5  56 maxworst|z|=    1269.7 killkey=0x0 kill
+try C5  57 maxworst|z|=     848.7 killkey=0xdeadbeefdeadbeef kill
+try C5  58 maxworst|z|=    2567.1 killkey=0x92988f142674743 kill
+try C5  59 maxworst|z|=    3534.7 killkey=0x0 kill
+=== C5: 0/60 KEEP ===
+SUMMARY C5: 0/60 keep, min z=248.3, median z=2347.6
+TOTAL: 410 draws, 261 keep, 149 kill (4790.8s)
+GATE CHECKS PASS: non-vacuous (149 kills), draw count exact.

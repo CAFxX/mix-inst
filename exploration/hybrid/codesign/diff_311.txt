@@ -1,0 +1,2049 @@
+# lin(3,11): worst-rounds, avg-rounds for full bit diffusion (cap 13=never)
+  ( 5, 0)  worst= 2 avg=2.00
+  ( 5, 1)  worst= 2 avg=2.00
+  ( 5, 3)  worst= 2 avg=2.00
+  ( 5, 4)  worst= 2 avg=2.00
+  ( 5, 5)  worst= 2 avg=2.00
+  ( 5, 7)  worst= 2 avg=2.00
+  ( 5, 8)  worst= 2 avg=2.00
+  ( 5, 9)  worst= 2 avg=2.00
+  ( 5,11)  worst= 2 avg=2.00
+  ( 5,12)  worst= 2 avg=2.00
+  ( 5,13)  worst= 2 avg=2.00
+  ( 5,15)  worst= 2 avg=2.00
+  ( 5,16)  worst= 2 avg=2.00
+  ( 5,17)  worst= 2 avg=2.00
+  ( 5,19)  worst= 2 avg=2.00
+  ( 5,20)  worst= 2 avg=2.00
+  ( 5,21)  worst= 2 avg=2.00
+  ( 5,23)  worst= 2 avg=2.00
+  ( 5,24)  worst= 2 avg=2.00
+  ( 5,25)  worst= 2 avg=2.00
+  ( 5,27)  worst= 2 avg=2.00
+  ( 5,28)  worst= 2 avg=2.00
+  ( 5,29)  worst= 2 avg=2.00
+  ( 5,31)  worst= 2 avg=2.00
+  ( 5,32)  worst= 2 avg=2.00
+  ( 5,33)  worst= 2 avg=2.00
+  ( 5,35)  worst= 2 avg=2.00
+  ( 5,36)  worst= 2 avg=2.00
+  ( 5,37)  worst= 2 avg=2.00
+  ( 5,39)  worst= 2 avg=2.00
+  ( 5,40)  worst= 2 avg=2.00
+  ( 5,41)  worst= 2 avg=2.00
+  ( 5,43)  worst= 2 avg=2.00
+  ( 5,44)  worst= 2 avg=2.00
+  ( 5,45)  worst= 2 avg=2.00
+  ( 5,47)  worst= 2 avg=2.00
+  ( 5,48)  worst= 2 avg=2.00
+  ( 5,49)  worst= 2 avg=2.00
+  ( 5,51)  worst= 2 avg=2.00
+  ( 5,52)  worst= 2 avg=2.00
+  ( 5,53)  worst= 2 avg=2.00
+  ( 5,55)  worst= 2 avg=2.00
+  ( 5,56)  worst= 2 avg=2.00
+  ( 5,57)  worst= 2 avg=2.00
+  ( 5,59)  worst= 2 avg=2.00
+  ( 5,60)  worst= 2 avg=2.00
+  ( 5,61)  worst= 2 avg=2.00
+  ( 5,63)  worst= 2 avg=2.00
+  ( 7, 3)  worst= 2 avg=2.00
+  ( 7, 7)  worst= 2 avg=2.00
+  ( 7,11)  worst= 2 avg=2.00
+  ( 7,15)  worst= 2 avg=2.00
+  ( 7,19)  worst= 2 avg=2.00
+  ( 7,23)  worst= 2 avg=2.00
+  ( 7,27)  worst= 2 avg=2.00
+  ( 7,31)  worst= 2 avg=2.00
+  ( 7,35)  worst= 2 avg=2.00
+  ( 7,39)  worst= 2 avg=2.00
+  ( 7,43)  worst= 2 avg=2.00
+  ( 7,47)  worst= 2 avg=2.00
+  ( 7,51)  worst= 2 avg=2.00
+  ( 7,55)  worst= 2 avg=2.00
+  ( 7,59)  worst= 2 avg=2.00
+  ( 7,63)  worst= 2 avg=2.00
+  (15, 1)  worst= 2 avg=2.00
+  (15, 2)  worst= 2 avg=2.00
+  (15, 3)  worst= 2 avg=2.00
+  (15, 5)  worst= 2 avg=2.00
+  (15, 6)  worst= 2 avg=2.00
+  (15, 7)  worst= 2 avg=2.00
+  (15, 9)  worst= 2 avg=2.00
+  (15,10)  worst= 2 avg=2.00
+  (15,11)  worst= 2 avg=2.00
+  (15,13)  worst= 2 avg=2.00
+  (15,14)  worst= 2 avg=2.00
+  (15,15)  worst= 2 avg=2.00
+  (15,17)  worst= 2 avg=2.00
+  (15,18)  worst= 2 avg=2.00
+  (15,19)  worst= 2 avg=2.00
+  (15,21)  worst= 2 avg=2.00
+  (15,22)  worst= 2 avg=2.00
+  (15,23)  worst= 2 avg=2.00
+  (15,25)  worst= 2 avg=2.00
+  (15,26)  worst= 2 avg=2.00
+  (15,27)  worst= 2 avg=2.00
+  (15,29)  worst= 2 avg=2.00
+  (15,30)  worst= 2 avg=2.00
+  (15,31)  worst= 2 avg=2.00
+  (15,33)  worst= 2 avg=2.00
+  (15,34)  worst= 2 avg=2.00
+  (15,35)  worst= 2 avg=2.00
+  (15,37)  worst= 2 avg=2.00
+  (15,38)  worst= 2 avg=2.00
+  (15,39)  worst= 2 avg=2.00
+  (15,41)  worst= 2 avg=2.00
+  (15,42)  worst= 2 avg=2.00
+  (15,43)  worst= 2 avg=2.00
+  (15,45)  worst= 2 avg=2.00
+  (15,46)  worst= 2 avg=2.00
+  (15,47)  worst= 2 avg=2.00
+  (15,49)  worst= 2 avg=2.00
+  (15,50)  worst= 2 avg=2.00
+  (15,51)  worst= 2 avg=2.00
+  (15,53)  worst= 2 avg=2.00
+  (15,54)  worst= 2 avg=2.00
+  (15,55)  worst= 2 avg=2.00
+  (15,57)  worst= 2 avg=2.00
+  (15,58)  worst= 2 avg=2.00
+  (15,59)  worst= 2 avg=2.00
+  (15,61)  worst= 2 avg=2.00
+  (15,62)  worst= 2 avg=2.00
+  (15,63)  worst= 2 avg=2.00
+  (17, 0)  worst= 2 avg=2.00
+  (17, 4)  worst= 2 avg=2.00
+  (17, 8)  worst= 2 avg=2.00
+  (17,12)  worst= 2 avg=2.00
+  (17,16)  worst= 2 avg=2.00
+  (17,20)  worst= 2 avg=2.00
+  (17,24)  worst= 2 avg=2.00
+  (17,28)  worst= 2 avg=2.00
+  (17,32)  worst= 2 avg=2.00
+  (17,36)  worst= 2 avg=2.00
+  (17,40)  worst= 2 avg=2.00
+  (17,44)  worst= 2 avg=2.00
+  (17,48)  worst= 2 avg=2.00
+  (17,52)  worst= 2 avg=2.00
+  (17,56)  worst= 2 avg=2.00
+  (17,60)  worst= 2 avg=2.00
+  (41, 0)  worst= 2 avg=2.00
+  (41, 1)  worst= 2 avg=2.00
+  (41, 4)  worst= 2 avg=2.00
+  (41, 5)  worst= 2 avg=2.00
+  (41, 8)  worst= 2 avg=2.00
+  (41, 9)  worst= 2 avg=2.00
+  (41,12)  worst= 2 avg=2.00
+  (41,13)  worst= 2 avg=2.00
+  (41,16)  worst= 2 avg=2.00
+  (41,17)  worst= 2 avg=2.00
+  (41,20)  worst= 2 avg=2.00
+  (41,21)  worst= 2 avg=2.00
+  (41,24)  worst= 2 avg=2.00
+  (41,25)  worst= 2 avg=2.00
+  (41,28)  worst= 2 avg=2.00
+  (41,29)  worst= 2 avg=2.00
+  (41,32)  worst= 2 avg=2.00
+  (41,33)  worst= 2 avg=2.00
+  (41,36)  worst= 2 avg=2.00
+  (41,37)  worst= 2 avg=2.00
+  (41,40)  worst= 2 avg=2.00
+  (41,41)  worst= 2 avg=2.00
+  (41,44)  worst= 2 avg=2.00
+  (41,45)  worst= 2 avg=2.00
+  (41,48)  worst= 2 avg=2.00
+  (41,49)  worst= 2 avg=2.00
+  (41,52)  worst= 2 avg=2.00
+  (41,53)  worst= 2 avg=2.00
+  (41,56)  worst= 2 avg=2.00
+  (41,57)  worst= 2 avg=2.00
+  (41,60)  worst= 2 avg=2.00
+  (41,61)  worst= 2 avg=2.00
+  (47, 3)  worst= 2 avg=2.00
+  (47, 7)  worst= 2 avg=2.00
+  (47,11)  worst= 2 avg=2.00
+  (47,15)  worst= 2 avg=2.00
+  (47,19)  worst= 2 avg=2.00
+  (47,23)  worst= 2 avg=2.00
+  (47,27)  worst= 2 avg=2.00
+  (47,31)  worst= 2 avg=2.00
+  (47,35)  worst= 2 avg=2.00
+  (47,39)  worst= 2 avg=2.00
+  (47,43)  worst= 2 avg=2.00
+  (47,47)  worst= 2 avg=2.00
+  (47,51)  worst= 2 avg=2.00
+  (47,55)  worst= 2 avg=2.00
+  (47,59)  worst= 2 avg=2.00
+  (47,63)  worst= 2 avg=2.00
+  (49, 0)  worst= 2 avg=2.00
+  (49, 2)  worst= 2 avg=2.00
+  (49, 3)  worst= 2 avg=2.00
+  (49, 4)  worst= 2 avg=2.00
+  (49, 6)  worst= 2 avg=2.00
+  (49, 7)  worst= 2 avg=2.00
+  (49, 8)  worst= 2 avg=2.00
+  (49,10)  worst= 2 avg=2.00
+  (49,11)  worst= 2 avg=2.00
+  (49,12)  worst= 2 avg=2.00
+  (49,14)  worst= 2 avg=2.00
+  (49,15)  worst= 2 avg=2.00
+  (49,16)  worst= 2 avg=2.00
+  (49,18)  worst= 2 avg=2.00
+  (49,19)  worst= 2 avg=2.00
+  (49,20)  worst= 2 avg=2.00
+  (49,22)  worst= 2 avg=2.00
+  (49,23)  worst= 2 avg=2.00
+  (49,24)  worst= 2 avg=2.00
+  (49,26)  worst= 2 avg=2.00
+  (49,27)  worst= 2 avg=2.00
+  (49,28)  worst= 2 avg=2.00
+  (49,30)  worst= 2 avg=2.00
+  (49,31)  worst= 2 avg=2.00
+  (49,32)  worst= 2 avg=2.00
+  (49,34)  worst= 2 avg=2.00
+  (49,35)  worst= 2 avg=2.00
+  (49,36)  worst= 2 avg=2.00
+  (49,38)  worst= 2 avg=2.00
+  (49,39)  worst= 2 avg=2.00
+  (49,40)  worst= 2 avg=2.00
+  (49,42)  worst= 2 avg=2.00
+  (49,43)  worst= 2 avg=2.00
+  (49,44)  worst= 2 avg=2.00
+  (49,46)  worst= 2 avg=2.00
+  (49,47)  worst= 2 avg=2.00
+  (49,48)  worst= 2 avg=2.00
+  (49,50)  worst= 2 avg=2.00
+  (49,51)  worst= 2 avg=2.00
+  (49,52)  worst= 2 avg=2.00
+  (49,54)  worst= 2 avg=2.00
+  (49,55)  worst= 2 avg=2.00
+  (49,56)  worst= 2 avg=2.00
+  (49,58)  worst= 2 avg=2.00
+  (49,59)  worst= 2 avg=2.00
+  (49,60)  worst= 2 avg=2.00
+  (49,62)  worst= 2 avg=2.00
+  (49,63)  worst= 2 avg=2.00
+  (57, 0)  worst= 2 avg=2.00
+  (57, 4)  worst= 2 avg=2.00
+  (57, 8)  worst= 2 avg=2.00
+  (57,12)  worst= 2 avg=2.00
+  (57,16)  worst= 2 avg=2.00
+  (57,20)  worst= 2 avg=2.00
+  (57,24)  worst= 2 avg=2.00
+  (57,28)  worst= 2 avg=2.00
+  (57,32)  worst= 2 avg=2.00
+  (57,36)  worst= 2 avg=2.00
+  (57,40)  worst= 2 avg=2.00
+  (57,44)  worst= 2 avg=2.00
+  (57,48)  worst= 2 avg=2.00
+  (57,52)  worst= 2 avg=2.00
+  (57,56)  worst= 2 avg=2.00
+  (57,60)  worst= 2 avg=2.00
+  (59, 0)  worst= 2 avg=2.00
+  (59, 2)  worst= 2 avg=2.00
+  (59, 3)  worst= 2 avg=2.00
+  (59, 4)  worst= 2 avg=2.00
+  (59, 6)  worst= 2 avg=2.00
+  (59, 7)  worst= 2 avg=2.00
+  (59, 8)  worst= 2 avg=2.00
+  (59,10)  worst= 2 avg=2.00
+  (59,11)  worst= 2 avg=2.00
+  (59,12)  worst= 2 avg=2.00
+  (59,14)  worst= 2 avg=2.00
+  (59,15)  worst= 2 avg=2.00
+  (59,16)  worst= 2 avg=2.00
+  (59,18)  worst= 2 avg=2.00
+  (59,19)  worst= 2 avg=2.00
+  (59,20)  worst= 2 avg=2.00
+  (59,22)  worst= 2 avg=2.00
+  (59,23)  worst= 2 avg=2.00
+  (59,24)  worst= 2 avg=2.00
+  (59,26)  worst= 2 avg=2.00
+  (59,27)  worst= 2 avg=2.00
+  (59,28)  worst= 2 avg=2.00
+  (59,30)  worst= 2 avg=2.00
+  (59,31)  worst= 2 avg=2.00
+  (59,32)  worst= 2 avg=2.00
+  (59,34)  worst= 2 avg=2.00
+  (59,35)  worst= 2 avg=2.00
+  (59,36)  worst= 2 avg=2.00
+  (59,38)  worst= 2 avg=2.00
+  (59,39)  worst= 2 avg=2.00
+  (59,40)  worst= 2 avg=2.00
+  (59,42)  worst= 2 avg=2.00
+  (59,43)  worst= 2 avg=2.00
+  (59,44)  worst= 2 avg=2.00
+  (59,46)  worst= 2 avg=2.00
+  (59,47)  worst= 2 avg=2.00
+  (59,48)  worst= 2 avg=2.00
+  (59,50)  worst= 2 avg=2.00
+  (59,51)  worst= 2 avg=2.00
+  (59,52)  worst= 2 avg=2.00
+  (59,54)  worst= 2 avg=2.00
+  (59,55)  worst= 2 avg=2.00
+  (59,56)  worst= 2 avg=2.00
+  (59,58)  worst= 2 avg=2.00
+  (59,59)  worst= 2 avg=2.00
+  (59,60)  worst= 2 avg=2.00
+  (59,62)  worst= 2 avg=2.00
+  (59,63)  worst= 2 avg=2.00
+  ( 3, 0)  worst= 3 avg=3.00
+  ( 3, 1)  worst= 3 avg=3.00
+  ( 3, 2)  worst= 3 avg=3.00
+  ( 3, 3)  worst= 3 avg=3.00
+  ( 3, 4)  worst= 3 avg=3.00
+  ( 3, 5)  worst= 3 avg=3.00
+  ( 3, 6)  worst= 3 avg=3.00
+  ( 3, 7)  worst= 3 avg=3.00
+  ( 3, 8)  worst= 3 avg=3.00
+  ( 3, 9)  worst= 3 avg=3.00
+  ( 3,10)  worst= 3 avg=3.00
+  ( 3,11)  worst= 3 avg=3.00
+  ( 3,12)  worst= 3 avg=3.00
+  ( 3,13)  worst= 3 avg=3.00
+  ( 3,14)  worst= 3 avg=3.00
+  ( 3,15)  worst= 3 avg=3.00
+  ( 3,16)  worst= 3 avg=3.00
+  ( 3,17)  worst= 3 avg=3.00
+  ( 3,18)  worst= 3 avg=3.00
+  ( 3,19)  worst= 3 avg=3.00
+  ( 3,20)  worst= 3 avg=3.00
+  ( 3,21)  worst= 3 avg=3.00
+  ( 3,22)  worst= 3 avg=3.00
+  ( 3,23)  worst= 3 avg=3.00
+  ( 3,24)  worst= 3 avg=3.00
+  ( 3,25)  worst= 3 avg=3.00
+  ( 3,26)  worst= 3 avg=3.00
+  ( 3,27)  worst= 3 avg=3.00
+  ( 3,28)  worst= 3 avg=3.00
+  ( 3,29)  worst= 3 avg=3.00
+  ( 3,30)  worst= 3 avg=3.00
+  ( 3,31)  worst= 3 avg=3.00
+  ( 3,32)  worst= 3 avg=3.00
+  ( 3,33)  worst= 3 avg=3.00
+  ( 3,34)  worst= 3 avg=3.00
+  ( 3,35)  worst= 3 avg=3.00
+  ( 3,36)  worst= 3 avg=3.00
+  ( 3,37)  worst= 3 avg=3.00
+  ( 3,38)  worst= 3 avg=3.00
+  ( 3,39)  worst= 3 avg=3.00
+  ( 3,40)  worst= 3 avg=3.00
+  ( 3,41)  worst= 3 avg=3.00
+  ( 3,42)  worst= 3 avg=3.00
+  ( 3,43)  worst= 3 avg=3.00
+  ( 3,44)  worst= 3 avg=3.00
+  ( 3,45)  worst= 3 avg=3.00
+  ( 3,46)  worst= 3 avg=3.00
+  ( 3,47)  worst= 3 avg=3.00
+  ( 3,48)  worst= 3 avg=3.00
+  ( 3,49)  worst= 3 avg=3.00
+  ( 3,50)  worst= 3 avg=3.00
+  ( 3,51)  worst= 3 avg=3.00
+  ( 3,52)  worst= 3 avg=3.00
+  ( 3,53)  worst= 3 avg=3.00
+  ( 3,54)  worst= 3 avg=3.00
+  ( 3,55)  worst= 3 avg=3.00
+  ( 3,56)  worst= 3 avg=3.00
+  ( 3,57)  worst= 3 avg=3.00
+  ( 3,58)  worst= 3 avg=3.00
+  ( 3,59)  worst= 3 avg=3.00
+  ( 3,60)  worst= 3 avg=3.00
+  ( 3,61)  worst= 3 avg=3.00
+  ( 3,62)  worst= 3 avg=3.00
+  ( 3,63)  worst= 3 avg=3.00
+  ( 5, 2)  worst= 3 avg=3.00
+  ( 5, 6)  worst= 3 avg=3.00
+  ( 5,10)  worst= 3 avg=3.00
+  ( 5,14)  worst= 3 avg=3.00
+  ( 5,18)  worst= 3 avg=3.00
+  ( 5,22)  worst= 3 avg=3.00
+  ( 5,26)  worst= 3 avg=3.00
+  ( 5,30)  worst= 3 avg=3.00
+  ( 5,34)  worst= 3 avg=3.00
+  ( 5,38)  worst= 3 avg=3.00
+  ( 5,42)  worst= 3 avg=3.00
+  ( 5,46)  worst= 3 avg=3.00
+  ( 5,50)  worst= 3 avg=3.00
+  ( 5,54)  worst= 3 avg=3.00
+  ( 5,58)  worst= 3 avg=3.00
+  ( 5,62)  worst= 3 avg=3.00
+  ( 7, 0)  worst= 3 avg=3.00
+  ( 7, 1)  worst= 3 avg=3.00
+  ( 7, 2)  worst= 3 avg=3.00
+  ( 7, 4)  worst= 3 avg=3.00
+  ( 7, 5)  worst= 3 avg=3.00
+  ( 7, 6)  worst= 3 avg=3.00
+  ( 7, 8)  worst= 3 avg=3.00
+  ( 7, 9)  worst= 3 avg=3.00
+  ( 7,10)  worst= 3 avg=3.00
+  ( 7,12)  worst= 3 avg=3.00
+  ( 7,13)  worst= 3 avg=3.00
+  ( 7,14)  worst= 3 avg=3.00
+  ( 7,16)  worst= 3 avg=3.00
+  ( 7,17)  worst= 3 avg=3.00
+  ( 7,18)  worst= 3 avg=3.00
+  ( 7,20)  worst= 3 avg=3.00
+  ( 7,21)  worst= 3 avg=3.00
+  ( 7,22)  worst= 3 avg=3.00
+  ( 7,24)  worst= 3 avg=3.00
+  ( 7,25)  worst= 3 avg=3.00
+  ( 7,26)  worst= 3 avg=3.00
+  ( 7,28)  worst= 3 avg=3.00
+  ( 7,29)  worst= 3 avg=3.00
+  ( 7,30)  worst= 3 avg=3.00
+  ( 7,32)  worst= 3 avg=3.00
+  ( 7,33)  worst= 3 avg=3.00
+  ( 7,34)  worst= 3 avg=3.00
+  ( 7,36)  worst= 3 avg=3.00
+  ( 7,37)  worst= 3 avg=3.00
+  ( 7,38)  worst= 3 avg=3.00
+  ( 7,40)  worst= 3 avg=3.00
+  ( 7,41)  worst= 3 avg=3.00
+  ( 7,42)  worst= 3 avg=3.00
+  ( 7,44)  worst= 3 avg=3.00
+  ( 7,45)  worst= 3 avg=3.00
+  ( 7,46)  worst= 3 avg=3.00
+  ( 7,48)  worst= 3 avg=3.00
+  ( 7,49)  worst= 3 avg=3.00
+  ( 7,50)  worst= 3 avg=3.00
+  ( 7,52)  worst= 3 avg=3.00
+  ( 7,53)  worst= 3 avg=3.00
+  ( 7,54)  worst= 3 avg=3.00
+  ( 7,56)  worst= 3 avg=3.00
+  ( 7,57)  worst= 3 avg=3.00
+  ( 7,58)  worst= 3 avg=3.00
+  ( 7,60)  worst= 3 avg=3.00
+  ( 7,61)  worst= 3 avg=3.00
+  ( 7,62)  worst= 3 avg=3.00
+  ( 9, 0)  worst= 3 avg=3.00
+  ( 9, 1)  worst= 3 avg=3.00
+  ( 9, 2)  worst= 3 avg=3.00
+  ( 9, 3)  worst= 3 avg=3.00
+  ( 9, 4)  worst= 3 avg=3.00
+  ( 9, 5)  worst= 3 avg=3.00
+  ( 9, 6)  worst= 3 avg=3.00
+  ( 9, 7)  worst= 3 avg=3.00
+  ( 9, 8)  worst= 3 avg=3.00
+  ( 9, 9)  worst= 3 avg=3.00
+  ( 9,10)  worst= 3 avg=3.00
+  ( 9,11)  worst= 3 avg=3.00
+  ( 9,12)  worst= 3 avg=3.00
+  ( 9,13)  worst= 3 avg=3.00
+  ( 9,14)  worst= 3 avg=3.00
+  ( 9,15)  worst= 3 avg=3.00
+  ( 9,16)  worst= 3 avg=3.00
+  ( 9,17)  worst= 3 avg=3.00
+  ( 9,18)  worst= 3 avg=3.00
+  ( 9,19)  worst= 3 avg=3.00
+  ( 9,20)  worst= 3 avg=3.00
+  ( 9,21)  worst= 3 avg=3.00
+  ( 9,22)  worst= 3 avg=3.00
+  ( 9,23)  worst= 3 avg=3.00
+  ( 9,24)  worst= 3 avg=3.00
+  ( 9,25)  worst= 3 avg=3.00
+  ( 9,26)  worst= 3 avg=3.00
+  ( 9,27)  worst= 3 avg=3.00
+  ( 9,28)  worst= 3 avg=3.00
+  ( 9,29)  worst= 3 avg=3.00
+  ( 9,30)  worst= 3 avg=3.00
+  ( 9,31)  worst= 3 avg=3.00
+  ( 9,32)  worst= 3 avg=3.00
+  ( 9,33)  worst= 3 avg=3.00
+  ( 9,34)  worst= 3 avg=3.00
+  ( 9,35)  worst= 3 avg=3.00
+  ( 9,36)  worst= 3 avg=3.00
+  ( 9,37)  worst= 3 avg=3.00
+  ( 9,38)  worst= 3 avg=3.00
+  ( 9,39)  worst= 3 avg=3.00
+  ( 9,40)  worst= 3 avg=3.00
+  ( 9,41)  worst= 3 avg=3.00
+  ( 9,42)  worst= 3 avg=3.00
+  ( 9,43)  worst= 3 avg=3.00
+  ( 9,44)  worst= 3 avg=3.00
+  ( 9,45)  worst= 3 avg=3.00
+  ( 9,46)  worst= 3 avg=3.00
+  ( 9,47)  worst= 3 avg=3.00
+  ( 9,48)  worst= 3 avg=3.00
+  ( 9,49)  worst= 3 avg=3.00
+  ( 9,50)  worst= 3 avg=3.00
+  ( 9,51)  worst= 3 avg=3.00
+  ( 9,52)  worst= 3 avg=3.00
+  ( 9,53)  worst= 3 avg=3.00
+  ( 9,54)  worst= 3 avg=3.00
+  ( 9,55)  worst= 3 avg=3.00
+  ( 9,56)  worst= 3 avg=3.00
+  ( 9,57)  worst= 3 avg=3.00
+  ( 9,58)  worst= 3 avg=3.00
+  ( 9,59)  worst= 3 avg=3.00
+  ( 9,60)  worst= 3 avg=3.00
+  ( 9,61)  worst= 3 avg=3.00
+  ( 9,62)  worst= 3 avg=3.00
+  ( 9,63)  worst= 3 avg=3.00
+  (11, 0)  worst= 3 avg=3.00
+  (11, 1)  worst= 3 avg=3.00
+  (11, 2)  worst= 3 avg=3.00
+  (11, 3)  worst= 3 avg=3.00
+  (11, 4)  worst= 3 avg=3.00
+  (11, 5)  worst= 3 avg=3.00
+  (11, 6)  worst= 3 avg=3.00
+  (11, 7)  worst= 3 avg=3.00
+  (11, 8)  worst= 3 avg=3.00
+  (11, 9)  worst= 3 avg=3.00
+  (11,10)  worst= 3 avg=3.00
+  (11,11)  worst= 3 avg=3.00
+  (11,12)  worst= 3 avg=3.00
+  (11,13)  worst= 3 avg=3.00
+  (11,14)  worst= 3 avg=3.00
+  (11,15)  worst= 3 avg=3.00
+  (11,16)  worst= 3 avg=3.00
+  (11,17)  worst= 3 avg=3.00
+  (11,18)  worst= 3 avg=3.00
+  (11,19)  worst= 3 avg=3.00
+  (11,20)  worst= 3 avg=3.00
+  (11,21)  worst= 3 avg=3.00
+  (11,22)  worst= 3 avg=3.00
+  (11,23)  worst= 3 avg=3.00
+  (11,24)  worst= 3 avg=3.00
+  (11,25)  worst= 3 avg=3.00
+  (11,26)  worst= 3 avg=3.00
+  (11,27)  worst= 3 avg=3.00
+  (11,28)  worst= 3 avg=3.00
+  (11,29)  worst= 3 avg=3.00
+  (11,30)  worst= 3 avg=3.00
+  (11,31)  worst= 3 avg=3.00
+  (11,32)  worst= 3 avg=3.00
+  (11,33)  worst= 3 avg=3.00
+  (11,34)  worst= 3 avg=3.00
+  (11,35)  worst= 3 avg=3.00
+  (11,36)  worst= 3 avg=3.00
+  (11,37)  worst= 3 avg=3.00
+  (11,38)  worst= 3 avg=3.00
+  (11,39)  worst= 3 avg=3.00
+  (11,40)  worst= 3 avg=3.00
+  (11,41)  worst= 3 avg=3.00
+  (11,42)  worst= 3 avg=3.00
+  (11,43)  worst= 3 avg=3.00
+  (11,44)  worst= 3 avg=3.00
+  (11,45)  worst= 3 avg=3.00
+  (11,46)  worst= 3 avg=3.00
+  (11,47)  worst= 3 avg=3.00
+  (11,48)  worst= 3 avg=3.00
+  (11,49)  worst= 3 avg=3.00
+  (11,50)  worst= 3 avg=3.00
+  (11,51)  worst= 3 avg=3.00
+  (11,52)  worst= 3 avg=3.00
+  (11,53)  worst= 3 avg=3.00
+  (11,54)  worst= 3 avg=3.00
+  (11,55)  worst= 3 avg=3.00
+  (11,56)  worst= 3 avg=3.00
+  (11,57)  worst= 3 avg=3.00
+  (11,58)  worst= 3 avg=3.00
+  (11,59)  worst= 3 avg=3.00
+  (11,60)  worst= 3 avg=3.00
+  (11,61)  worst= 3 avg=3.00
+  (11,62)  worst= 3 avg=3.00
+  (11,63)  worst= 3 avg=3.00
+  (13, 0)  worst= 3 avg=3.00
+  (13, 1)  worst= 3 avg=3.00
+  (13, 2)  worst= 3 avg=3.00
+  (13, 3)  worst= 3 avg=3.00
+  (13, 4)  worst= 3 avg=3.00
+  (13, 5)  worst= 3 avg=3.00
+  (13, 6)  worst= 3 avg=3.00
+  (13, 7)  worst= 3 avg=3.00
+  (13, 8)  worst= 3 avg=3.00
+  (13, 9)  worst= 3 avg=3.00
+  (13,10)  worst= 3 avg=3.00
+  (13,11)  worst= 3 avg=3.00
+  (13,12)  worst= 3 avg=3.00
+  (13,13)  worst= 3 avg=3.00
+  (13,14)  worst= 3 avg=3.00
+  (13,15)  worst= 3 avg=3.00
+  (13,16)  worst= 3 avg=3.00
+  (13,17)  worst= 3 avg=3.00
+  (13,18)  worst= 3 avg=3.00
+  (13,19)  worst= 3 avg=3.00
+  (13,20)  worst= 3 avg=3.00
+  (13,21)  worst= 3 avg=3.00
+  (13,22)  worst= 3 avg=3.00
+  (13,23)  worst= 3 avg=3.00
+  (13,24)  worst= 3 avg=3.00
+  (13,25)  worst= 3 avg=3.00
+  (13,26)  worst= 3 avg=3.00
+  (13,27)  worst= 3 avg=3.00
+  (13,28)  worst= 3 avg=3.00
+  (13,29)  worst= 3 avg=3.00
+  (13,30)  worst= 3 avg=3.00
+  (13,31)  worst= 3 avg=3.00
+  (13,32)  worst= 3 avg=3.00
+  (13,33)  worst= 3 avg=3.00
+  (13,34)  worst= 3 avg=3.00
+  (13,35)  worst= 3 avg=3.00
+  (13,36)  worst= 3 avg=3.00
+  (13,37)  worst= 3 avg=3.00
+  (13,38)  worst= 3 avg=3.00
+  (13,39)  worst= 3 avg=3.00
+  (13,40)  worst= 3 avg=3.00
+  (13,41)  worst= 3 avg=3.00
+  (13,42)  worst= 3 avg=3.00
+  (13,43)  worst= 3 avg=3.00
+  (13,44)  worst= 3 avg=3.00
+  (13,45)  worst= 3 avg=3.00
+  (13,46)  worst= 3 avg=3.00
+  (13,47)  worst= 3 avg=3.00
+  (13,48)  worst= 3 avg=3.00
+  (13,49)  worst= 3 avg=3.00
+  (13,50)  worst= 3 avg=3.00
+  (13,51)  worst= 3 avg=3.00
+  (13,52)  worst= 3 avg=3.00
+  (13,53)  worst= 3 avg=3.00
+  (13,54)  worst= 3 avg=3.00
+  (13,55)  worst= 3 avg=3.00
+  (13,56)  worst= 3 avg=3.00
+  (13,57)  worst= 3 avg=3.00
+  (13,58)  worst= 3 avg=3.00
+  (13,59)  worst= 3 avg=3.00
+  (13,60)  worst= 3 avg=3.00
+  (13,61)  worst= 3 avg=3.00
+  (13,62)  worst= 3 avg=3.00
+  (13,63)  worst= 3 avg=3.00
+  (15, 0)  worst= 3 avg=3.00
+  (15, 4)  worst= 3 avg=3.00
+  (15, 8)  worst= 3 avg=3.00
+  (15,12)  worst= 3 avg=3.00
+  (15,16)  worst= 3 avg=3.00
+  (15,20)  worst= 3 avg=3.00
+  (15,24)  worst= 3 avg=3.00
+  (15,28)  worst= 3 avg=3.00
+  (15,32)  worst= 3 avg=3.00
+  (15,36)  worst= 3 avg=3.00
+  (15,40)  worst= 3 avg=3.00
+  (15,44)  worst= 3 avg=3.00
+  (15,48)  worst= 3 avg=3.00
+  (15,52)  worst= 3 avg=3.00
+  (15,56)  worst= 3 avg=3.00
+  (15,60)  worst= 3 avg=3.00
+  (17, 1)  worst= 3 avg=3.00
+  (17, 2)  worst= 3 avg=3.00
+  (17, 3)  worst= 3 avg=3.00
+  (17, 5)  worst= 3 avg=3.00
+  (17, 6)  worst= 3 avg=3.00
+  (17, 7)  worst= 3 avg=3.00
+  (17, 9)  worst= 3 avg=3.00
+  (17,10)  worst= 3 avg=3.00
+  (17,11)  worst= 3 avg=3.00
+  (17,13)  worst= 3 avg=3.00
+  (17,14)  worst= 3 avg=3.00
+  (17,15)  worst= 3 avg=3.00
+  (17,17)  worst= 3 avg=3.00
+  (17,18)  worst= 3 avg=3.00
+  (17,19)  worst= 3 avg=3.00
+  (17,21)  worst= 3 avg=3.00
+  (17,22)  worst= 3 avg=3.00
+  (17,23)  worst= 3 avg=3.00
+  (17,25)  worst= 3 avg=3.00
+  (17,26)  worst= 3 avg=3.00
+  (17,27)  worst= 3 avg=3.00
+  (17,29)  worst= 3 avg=3.00
+  (17,30)  worst= 3 avg=3.00
+  (17,31)  worst= 3 avg=3.00
+  (17,33)  worst= 3 avg=3.00
+  (17,34)  worst= 3 avg=3.00
+  (17,35)  worst= 3 avg=3.00
+  (17,37)  worst= 3 avg=3.00
+  (17,38)  worst= 3 avg=3.00
+  (17,39)  worst= 3 avg=3.00
+  (17,41)  worst= 3 avg=3.00
+  (17,42)  worst= 3 avg=3.00
+  (17,43)  worst= 3 avg=3.00
+  (17,45)  worst= 3 avg=3.00
+  (17,46)  worst= 3 avg=3.00
+  (17,47)  worst= 3 avg=3.00
+  (17,49)  worst= 3 avg=3.00
+  (17,50)  worst= 3 avg=3.00
+  (17,51)  worst= 3 avg=3.00
+  (17,53)  worst= 3 avg=3.00
+  (17,54)  worst= 3 avg=3.00
+  (17,55)  worst= 3 avg=3.00
+  (17,57)  worst= 3 avg=3.00
+  (17,58)  worst= 3 avg=3.00
+  (17,59)  worst= 3 avg=3.00
+  (17,61)  worst= 3 avg=3.00
+  (17,62)  worst= 3 avg=3.00
+  (17,63)  worst= 3 avg=3.00
+  (19, 0)  worst= 3 avg=3.00
+  (19, 1)  worst= 3 avg=3.00
+  (19, 2)  worst= 3 avg=3.00
+  (19, 3)  worst= 3 avg=3.00
+  (19, 4)  worst= 3 avg=3.00
+  (19, 5)  worst= 3 avg=3.00
+  (19, 6)  worst= 3 avg=3.00
+  (19, 7)  worst= 3 avg=3.00
+  (19, 8)  worst= 3 avg=3.00
+  (19, 9)  worst= 3 avg=3.00
+  (19,10)  worst= 3 avg=3.00
+  (19,11)  worst= 3 avg=3.00
+  (19,12)  worst= 3 avg=3.00
+  (19,13)  worst= 3 avg=3.00
+  (19,14)  worst= 3 avg=3.00
+  (19,15)  worst= 3 avg=3.00
+  (19,16)  worst= 3 avg=3.00
+  (19,17)  worst= 3 avg=3.00
+  (19,18)  worst= 3 avg=3.00
+  (19,19)  worst= 3 avg=3.00
+  (19,20)  worst= 3 avg=3.00
+  (19,21)  worst= 3 avg=3.00
+  (19,22)  worst= 3 avg=3.00
+  (19,23)  worst= 3 avg=3.00
+  (19,24)  worst= 3 avg=3.00
+  (19,25)  worst= 3 avg=3.00
+  (19,26)  worst= 3 avg=3.00
+  (19,27)  worst= 3 avg=3.00
+  (19,28)  worst= 3 avg=3.00
+  (19,29)  worst= 3 avg=3.00
+  (19,30)  worst= 3 avg=3.00
+  (19,31)  worst= 3 avg=3.00
+  (19,32)  worst= 3 avg=3.00
+  (19,33)  worst= 3 avg=3.00
+  (19,34)  worst= 3 avg=3.00
+  (19,35)  worst= 3 avg=3.00
+  (19,36)  worst= 3 avg=3.00
+  (19,37)  worst= 3 avg=3.00
+  (19,38)  worst= 3 avg=3.00
+  (19,39)  worst= 3 avg=3.00
+  (19,40)  worst= 3 avg=3.00
+  (19,41)  worst= 3 avg=3.00
+  (19,42)  worst= 3 avg=3.00
+  (19,43)  worst= 3 avg=3.00
+  (19,44)  worst= 3 avg=3.00
+  (19,45)  worst= 3 avg=3.00
+  (19,46)  worst= 3 avg=3.00
+  (19,47)  worst= 3 avg=3.00
+  (19,48)  worst= 3 avg=3.00
+  (19,49)  worst= 3 avg=3.00
+  (19,50)  worst= 3 avg=3.00
+  (19,51)  worst= 3 avg=3.00
+  (19,52)  worst= 3 avg=3.00
+  (19,53)  worst= 3 avg=3.00
+  (19,54)  worst= 3 avg=3.00
+  (19,55)  worst= 3 avg=3.00
+  (19,56)  worst= 3 avg=3.00
+  (19,57)  worst= 3 avg=3.00
+  (19,58)  worst= 3 avg=3.00
+  (19,59)  worst= 3 avg=3.00
+  (19,60)  worst= 3 avg=3.00
+  (19,61)  worst= 3 avg=3.00
+  (19,62)  worst= 3 avg=3.00
+  (19,63)  worst= 3 avg=3.00
+  (21, 0)  worst= 3 avg=3.00
+  (21, 1)  worst= 3 avg=3.00
+  (21, 2)  worst= 3 avg=3.00
+  (21, 3)  worst= 3 avg=3.00
+  (21, 4)  worst= 3 avg=3.00
+  (21, 5)  worst= 3 avg=3.00
+  (21, 6)  worst= 3 avg=3.00
+  (21, 7)  worst= 3 avg=3.00
+  (21, 8)  worst= 3 avg=3.00
+  (21, 9)  worst= 3 avg=3.00
+  (21,10)  worst= 3 avg=3.00
+  (21,11)  worst= 3 avg=3.00
+  (21,12)  worst= 3 avg=3.00
+  (21,13)  worst= 3 avg=3.00
+  (21,14)  worst= 3 avg=3.00
+  (21,15)  worst= 3 avg=3.00
+  (21,16)  worst= 3 avg=3.00
+  (21,17)  worst= 3 avg=3.00
+  (21,18)  worst= 3 avg=3.00
+  (21,19)  worst= 3 avg=3.00
+  (21,20)  worst= 3 avg=3.00
+  (21,21)  worst= 3 avg=3.00
+  (21,22)  worst= 3 avg=3.00
+  (21,23)  worst= 3 avg=3.00
+  (21,24)  worst= 3 avg=3.00
+  (21,25)  worst= 3 avg=3.00
+  (21,26)  worst= 3 avg=3.00
+  (21,27)  worst= 3 avg=3.00
+  (21,28)  worst= 3 avg=3.00
+  (21,29)  worst= 3 avg=3.00
+  (21,30)  worst= 3 avg=3.00
+  (21,31)  worst= 3 avg=3.00
+  (21,32)  worst= 3 avg=3.00
+  (21,33)  worst= 3 avg=3.00
+  (21,34)  worst= 3 avg=3.00
+  (21,35)  worst= 3 avg=3.00
+  (21,36)  worst= 3 avg=3.00
+  (21,37)  worst= 3 avg=3.00
+  (21,38)  worst= 3 avg=3.00
+  (21,39)  worst= 3 avg=3.00
+  (21,40)  worst= 3 avg=3.00
+  (21,41)  worst= 3 avg=3.00
+  (21,42)  worst= 3 avg=3.00
+  (21,43)  worst= 3 avg=3.00
+  (21,44)  worst= 3 avg=3.00
+  (21,45)  worst= 3 avg=3.00
+  (21,46)  worst= 3 avg=3.00
+  (21,47)  worst= 3 avg=3.00
+  (21,48)  worst= 3 avg=3.00
+  (21,49)  worst= 3 avg=3.00
+  (21,50)  worst= 3 avg=3.00
+  (21,51)  worst= 3 avg=3.00
+  (21,52)  worst= 3 avg=3.00
+  (21,53)  worst= 3 avg=3.00
+  (21,54)  worst= 3 avg=3.00
+  (21,55)  worst= 3 avg=3.00
+  (21,56)  worst= 3 avg=3.00
+  (21,57)  worst= 3 avg=3.00
+  (21,58)  worst= 3 avg=3.00
+  (21,59)  worst= 3 avg=3.00
+  (21,60)  worst= 3 avg=3.00
+  (21,61)  worst= 3 avg=3.00
+  (21,62)  worst= 3 avg=3.00
+  (21,63)  worst= 3 avg=3.00
+  (23, 0)  worst= 3 avg=3.00
+  (23, 1)  worst= 3 avg=3.00
+  (23, 2)  worst= 3 avg=3.00
+  (23, 3)  worst= 3 avg=3.00
+  (23, 4)  worst= 3 avg=3.00
+  (23, 5)  worst= 3 avg=3.00
+  (23, 6)  worst= 3 avg=3.00
+  (23, 7)  worst= 3 avg=3.00
+  (23, 8)  worst= 3 avg=3.00
+  (23, 9)  worst= 3 avg=3.00
+  (23,10)  worst= 3 avg=3.00
+  (23,11)  worst= 3 avg=3.00
+  (23,12)  worst= 3 avg=3.00
+  (23,13)  worst= 3 avg=3.00
+  (23,14)  worst= 3 avg=3.00
+  (23,15)  worst= 3 avg=3.00
+  (23,16)  worst= 3 avg=3.00
+  (23,17)  worst= 3 avg=3.00
+  (23,18)  worst= 3 avg=3.00
+  (23,19)  worst= 3 avg=3.00
+  (23,20)  worst= 3 avg=3.00
+  (23,21)  worst= 3 avg=3.00
+  (23,22)  worst= 3 avg=3.00
+  (23,23)  worst= 3 avg=3.00
+  (23,24)  worst= 3 avg=3.00
+  (23,25)  worst= 3 avg=3.00
+  (23,26)  worst= 3 avg=3.00
+  (23,27)  worst= 3 avg=3.00
+  (23,28)  worst= 3 avg=3.00
+  (23,29)  worst= 3 avg=3.00
+  (23,30)  worst= 3 avg=3.00
+  (23,31)  worst= 3 avg=3.00
+  (23,32)  worst= 3 avg=3.00
+  (23,33)  worst= 3 avg=3.00
+  (23,34)  worst= 3 avg=3.00
+  (23,35)  worst= 3 avg=3.00
+  (23,36)  worst= 3 avg=3.00
+  (23,37)  worst= 3 avg=3.00
+  (23,38)  worst= 3 avg=3.00
+  (23,39)  worst= 3 avg=3.00
+  (23,40)  worst= 3 avg=3.00
+  (23,41)  worst= 3 avg=3.00
+  (23,42)  worst= 3 avg=3.00
+  (23,43)  worst= 3 avg=3.00
+  (23,44)  worst= 3 avg=3.00
+  (23,45)  worst= 3 avg=3.00
+  (23,46)  worst= 3 avg=3.00
+  (23,47)  worst= 3 avg=3.00
+  (23,48)  worst= 3 avg=3.00
+  (23,49)  worst= 3 avg=3.00
+  (23,50)  worst= 3 avg=3.00
+  (23,51)  worst= 3 avg=3.00
+  (23,52)  worst= 3 avg=3.00
+  (23,53)  worst= 3 avg=3.00
+  (23,54)  worst= 3 avg=3.00
+  (23,55)  worst= 3 avg=3.00
+  (23,56)  worst= 3 avg=3.00
+  (23,57)  worst= 3 avg=3.00
+  (23,58)  worst= 3 avg=3.00
+  (23,59)  worst= 3 avg=3.00
+  (23,60)  worst= 3 avg=3.00
+  (23,61)  worst= 3 avg=3.00
+  (23,62)  worst= 3 avg=3.00
+  (23,63)  worst= 3 avg=3.00
+  (25, 0)  worst= 3 avg=3.00
+  (25, 1)  worst= 3 avg=3.00
+  (25, 2)  worst= 3 avg=3.00
+  (25, 3)  worst= 3 avg=3.00
+  (25, 4)  worst= 3 avg=3.00
+  (25, 5)  worst= 3 avg=3.00
+  (25, 6)  worst= 3 avg=3.00
+  (25, 7)  worst= 3 avg=3.00
+  (25, 8)  worst= 3 avg=3.00
+  (25, 9)  worst= 3 avg=3.00
+  (25,10)  worst= 3 avg=3.00
+  (25,11)  worst= 3 avg=3.00
+  (25,12)  worst= 3 avg=3.00
+  (25,13)  worst= 3 avg=3.00
+  (25,14)  worst= 3 avg=3.00
+  (25,15)  worst= 3 avg=3.00
+  (25,16)  worst= 3 avg=3.00
+  (25,17)  worst= 3 avg=3.00
+  (25,18)  worst= 3 avg=3.00
+  (25,19)  worst= 3 avg=3.00
+  (25,20)  worst= 3 avg=3.00
+  (25,21)  worst= 3 avg=3.00
+  (25,22)  worst= 3 avg=3.00
+  (25,23)  worst= 3 avg=3.00
+  (25,24)  worst= 3 avg=3.00
+  (25,25)  worst= 3 avg=3.00
+  (25,26)  worst= 3 avg=3.00
+  (25,27)  worst= 3 avg=3.00
+  (25,28)  worst= 3 avg=3.00
+  (25,29)  worst= 3 avg=3.00
+  (25,30)  worst= 3 avg=3.00
+  (25,31)  worst= 3 avg=3.00
+  (25,32)  worst= 3 avg=3.00
+  (25,33)  worst= 3 avg=3.00
+  (25,34)  worst= 3 avg=3.00
+  (25,35)  worst= 3 avg=3.00
+  (25,36)  worst= 3 avg=3.00
+  (25,37)  worst= 3 avg=3.00
+  (25,38)  worst= 3 avg=3.00
+  (25,39)  worst= 3 avg=3.00
+  (25,40)  worst= 3 avg=3.00
+  (25,41)  worst= 3 avg=3.00
+  (25,42)  worst= 3 avg=3.00
+  (25,43)  worst= 3 avg=3.00
+  (25,44)  worst= 3 avg=3.00
+  (25,45)  worst= 3 avg=3.00
+  (25,46)  worst= 3 avg=3.00
+  (25,47)  worst= 3 avg=3.00
+  (25,48)  worst= 3 avg=3.00
+  (25,49)  worst= 3 avg=3.00
+  (25,50)  worst= 3 avg=3.00
+  (25,51)  worst= 3 avg=3.00
+  (25,52)  worst= 3 avg=3.00
+  (25,53)  worst= 3 avg=3.00
+  (25,54)  worst= 3 avg=3.00
+  (25,55)  worst= 3 avg=3.00
+  (25,56)  worst= 3 avg=3.00
+  (25,57)  worst= 3 avg=3.00
+  (25,58)  worst= 3 avg=3.00
+  (25,59)  worst= 3 avg=3.00
+  (25,60)  worst= 3 avg=3.00
+  (25,61)  worst= 3 avg=3.00
+  (25,62)  worst= 3 avg=3.00
+  (25,63)  worst= 3 avg=3.00
+  (27, 0)  worst= 3 avg=3.00
+  (27, 1)  worst= 3 avg=3.00
+  (27, 2)  worst= 3 avg=3.00
+  (27, 3)  worst= 3 avg=3.00
+  (27, 4)  worst= 3 avg=3.00
+  (27, 5)  worst= 3 avg=3.00
+  (27, 6)  worst= 3 avg=3.00
+  (27, 7)  worst= 3 avg=3.00
+  (27, 8)  worst= 3 avg=3.00
+  (27, 9)  worst= 3 avg=3.00
+  (27,10)  worst= 3 avg=3.00
+  (27,11)  worst= 3 avg=3.00
+  (27,12)  worst= 3 avg=3.00
+  (27,13)  worst= 3 avg=3.00
+  (27,14)  worst= 3 avg=3.00
+  (27,15)  worst= 3 avg=3.00
+  (27,16)  worst= 3 avg=3.00
+  (27,17)  worst= 3 avg=3.00
+  (27,18)  worst= 3 avg=3.00
+  (27,19)  worst= 3 avg=3.00
+  (27,20)  worst= 3 avg=3.00
+  (27,21)  worst= 3 avg=3.00
+  (27,22)  worst= 3 avg=3.00
+  (27,23)  worst= 3 avg=3.00
+  (27,24)  worst= 3 avg=3.00
+  (27,25)  worst= 3 avg=3.00
+  (27,26)  worst= 3 avg=3.00
+  (27,27)  worst= 3 avg=3.00
+  (27,28)  worst= 3 avg=3.00
+  (27,29)  worst= 3 avg=3.00
+  (27,30)  worst= 3 avg=3.00
+  (27,31)  worst= 3 avg=3.00
+  (27,32)  worst= 3 avg=3.00
+  (27,33)  worst= 3 avg=3.00
+  (27,34)  worst= 3 avg=3.00
+  (27,35)  worst= 3 avg=3.00
+  (27,36)  worst= 3 avg=3.00
+  (27,37)  worst= 3 avg=3.00
+  (27,38)  worst= 3 avg=3.00
+  (27,39)  worst= 3 avg=3.00
+  (27,40)  worst= 3 avg=3.00
+  (27,41)  worst= 3 avg=3.00
+  (27,42)  worst= 3 avg=3.00
+  (27,43)  worst= 3 avg=3.00
+  (27,44)  worst= 3 avg=3.00
+  (27,45)  worst= 3 avg=3.00
+  (27,46)  worst= 3 avg=3.00
+  (27,47)  worst= 3 avg=3.00
+  (27,48)  worst= 3 avg=3.00
+  (27,49)  worst= 3 avg=3.00
+  (27,50)  worst= 3 avg=3.00
+  (27,51)  worst= 3 avg=3.00
+  (27,52)  worst= 3 avg=3.00
+  (27,53)  worst= 3 avg=3.00
+  (27,54)  worst= 3 avg=3.00
+  (27,55)  worst= 3 avg=3.00
+  (27,56)  worst= 3 avg=3.00
+  (27,57)  worst= 3 avg=3.00
+  (27,58)  worst= 3 avg=3.00
+  (27,59)  worst= 3 avg=3.00
+  (27,60)  worst= 3 avg=3.00
+  (27,61)  worst= 3 avg=3.00
+  (27,62)  worst= 3 avg=3.00
+  (27,63)  worst= 3 avg=3.00
+  (29, 0)  worst= 3 avg=3.00
+  (29, 1)  worst= 3 avg=3.00
+  (29, 2)  worst= 3 avg=3.00
+  (29, 3)  worst= 3 avg=3.00
+  (29, 4)  worst= 3 avg=3.00
+  (29, 5)  worst= 3 avg=3.00
+  (29, 6)  worst= 3 avg=3.00
+  (29, 7)  worst= 3 avg=3.00
+  (29, 8)  worst= 3 avg=3.00
+  (29, 9)  worst= 3 avg=3.00
+  (29,10)  worst= 3 avg=3.00
+  (29,11)  worst= 3 avg=3.00
+  (29,12)  worst= 3 avg=3.00
+  (29,13)  worst= 3 avg=3.00
+  (29,14)  worst= 3 avg=3.00
+  (29,15)  worst= 3 avg=3.00
+  (29,16)  worst= 3 avg=3.00
+  (29,17)  worst= 3 avg=3.00
+  (29,18)  worst= 3 avg=3.00
+  (29,19)  worst= 3 avg=3.00
+  (29,20)  worst= 3 avg=3.00
+  (29,21)  worst= 3 avg=3.00
+  (29,22)  worst= 3 avg=3.00
+  (29,23)  worst= 3 avg=3.00
+  (29,24)  worst= 3 avg=3.00
+  (29,25)  worst= 3 avg=3.00
+  (29,26)  worst= 3 avg=3.00
+  (29,27)  worst= 3 avg=3.00
+  (29,28)  worst= 3 avg=3.00
+  (29,29)  worst= 3 avg=3.00
+  (29,30)  worst= 3 avg=3.00
+  (29,31)  worst= 3 avg=3.00
+  (29,32)  worst= 3 avg=3.00
+  (29,33)  worst= 3 avg=3.00
+  (29,34)  worst= 3 avg=3.00
+  (29,35)  worst= 3 avg=3.00
+  (29,36)  worst= 3 avg=3.00
+  (29,37)  worst= 3 avg=3.00
+  (29,38)  worst= 3 avg=3.00
+  (29,39)  worst= 3 avg=3.00
+  (29,40)  worst= 3 avg=3.00
+  (29,41)  worst= 3 avg=3.00
+  (29,42)  worst= 3 avg=3.00
+  (29,43)  worst= 3 avg=3.00
+  (29,44)  worst= 3 avg=3.00
+  (29,45)  worst= 3 avg=3.00
+  (29,46)  worst= 3 avg=3.00
+  (29,47)  worst= 3 avg=3.00
+  (29,48)  worst= 3 avg=3.00
+  (29,49)  worst= 3 avg=3.00
+  (29,50)  worst= 3 avg=3.00
+  (29,51)  worst= 3 avg=3.00
+  (29,52)  worst= 3 avg=3.00
+  (29,53)  worst= 3 avg=3.00
+  (29,54)  worst= 3 avg=3.00
+  (29,55)  worst= 3 avg=3.00
+  (29,56)  worst= 3 avg=3.00
+  (29,57)  worst= 3 avg=3.00
+  (29,58)  worst= 3 avg=3.00
+  (29,59)  worst= 3 avg=3.00
+  (29,60)  worst= 3 avg=3.00
+  (29,61)  worst= 3 avg=3.00
+  (29,62)  worst= 3 avg=3.00
+  (29,63)  worst= 3 avg=3.00
+  (31, 0)  worst= 3 avg=3.00
+  (31, 1)  worst= 3 avg=3.00
+  (31, 2)  worst= 3 avg=3.00
+  (31, 3)  worst= 3 avg=3.00
+  (31, 4)  worst= 3 avg=3.00
+  (31, 5)  worst= 3 avg=3.00
+  (31, 6)  worst= 3 avg=3.00
+  (31, 7)  worst= 3 avg=3.00
+  (31, 8)  worst= 3 avg=3.00
+  (31, 9)  worst= 3 avg=3.00
+  (31,10)  worst= 3 avg=3.00
+  (31,11)  worst= 3 avg=3.00
+  (31,12)  worst= 3 avg=3.00
+  (31,13)  worst= 3 avg=3.00
+  (31,14)  worst= 3 avg=3.00
+  (31,15)  worst= 3 avg=3.00
+  (31,16)  worst= 3 avg=3.00
+  (31,17)  worst= 3 avg=3.00
+  (31,18)  worst= 3 avg=3.00
+  (31,19)  worst= 3 avg=3.00
+  (31,20)  worst= 3 avg=3.00
+  (31,21)  worst= 3 avg=3.00
+  (31,22)  worst= 3 avg=3.00
+  (31,23)  worst= 3 avg=3.00
+  (31,24)  worst= 3 avg=3.00
+  (31,25)  worst= 3 avg=3.00
+  (31,26)  worst= 3 avg=3.00
+  (31,27)  worst= 3 avg=3.00
+  (31,28)  worst= 3 avg=3.00
+  (31,29)  worst= 3 avg=3.00
+  (31,30)  worst= 3 avg=3.00
+  (31,31)  worst= 3 avg=3.00
+  (31,32)  worst= 3 avg=3.00
+  (31,33)  worst= 3 avg=3.00
+  (31,34)  worst= 3 avg=3.00
+  (31,35)  worst= 3 avg=3.00
+  (31,36)  worst= 3 avg=3.00
+  (31,37)  worst= 3 avg=3.00
+  (31,38)  worst= 3 avg=3.00
+  (31,39)  worst= 3 avg=3.00
+  (31,40)  worst= 3 avg=3.00
+  (31,41)  worst= 3 avg=3.00
+  (31,42)  worst= 3 avg=3.00
+  (31,43)  worst= 3 avg=3.00
+  (31,44)  worst= 3 avg=3.00
+  (31,45)  worst= 3 avg=3.00
+  (31,46)  worst= 3 avg=3.00
+  (31,47)  worst= 3 avg=3.00
+  (31,48)  worst= 3 avg=3.00
+  (31,49)  worst= 3 avg=3.00
+  (31,50)  worst= 3 avg=3.00
+  (31,51)  worst= 3 avg=3.00
+  (31,52)  worst= 3 avg=3.00
+  (31,53)  worst= 3 avg=3.00
+  (31,54)  worst= 3 avg=3.00
+  (31,55)  worst= 3 avg=3.00
+  (31,56)  worst= 3 avg=3.00
+  (31,57)  worst= 3 avg=3.00
+  (31,58)  worst= 3 avg=3.00
+  (31,59)  worst= 3 avg=3.00
+  (31,60)  worst= 3 avg=3.00
+  (31,61)  worst= 3 avg=3.00
+  (31,62)  worst= 3 avg=3.00
+  (31,63)  worst= 3 avg=3.00
+  (33, 0)  worst= 3 avg=3.00
+  (33, 2)  worst= 3 avg=3.00
+  (33, 3)  worst= 3 avg=3.00
+  (33, 4)  worst= 3 avg=3.00
+  (33, 6)  worst= 3 avg=3.00
+  (33, 7)  worst= 3 avg=3.00
+  (33, 8)  worst= 3 avg=3.00
+  (33,10)  worst= 3 avg=3.00
+  (33,11)  worst= 3 avg=3.00
+  (33,12)  worst= 3 avg=3.00
+  (33,14)  worst= 3 avg=3.00
+  (33,15)  worst= 3 avg=3.00
+  (33,16)  worst= 3 avg=3.00
+  (33,18)  worst= 3 avg=3.00
+  (33,19)  worst= 3 avg=3.00
+  (33,20)  worst= 3 avg=3.00
+  (33,22)  worst= 3 avg=3.00
+  (33,23)  worst= 3 avg=3.00
+  (33,24)  worst= 3 avg=3.00
+  (33,26)  worst= 3 avg=3.00
+  (33,27)  worst= 3 avg=3.00
+  (33,28)  worst= 3 avg=3.00
+  (33,30)  worst= 3 avg=3.00
+  (33,31)  worst= 3 avg=3.00
+  (33,32)  worst= 3 avg=3.00
+  (33,34)  worst= 3 avg=3.00
+  (33,35)  worst= 3 avg=3.00
+  (33,36)  worst= 3 avg=3.00
+  (33,38)  worst= 3 avg=3.00
+  (33,39)  worst= 3 avg=3.00
+  (33,40)  worst= 3 avg=3.00
+  (33,42)  worst= 3 avg=3.00
+  (33,43)  worst= 3 avg=3.00
+  (33,44)  worst= 3 avg=3.00
+  (33,46)  worst= 3 avg=3.00
+  (33,47)  worst= 3 avg=3.00
+  (33,48)  worst= 3 avg=3.00
+  (33,50)  worst= 3 avg=3.00
+  (33,51)  worst= 3 avg=3.00
+  (33,52)  worst= 3 avg=3.00
+  (33,54)  worst= 3 avg=3.00
+  (33,55)  worst= 3 avg=3.00
+  (33,56)  worst= 3 avg=3.00
+  (33,58)  worst= 3 avg=3.00
+  (33,59)  worst= 3 avg=3.00
+  (33,60)  worst= 3 avg=3.00
+  (33,62)  worst= 3 avg=3.00
+  (33,63)  worst= 3 avg=3.00
+  (35, 0)  worst= 3 avg=3.00
+  (35, 1)  worst= 3 avg=3.00
+  (35, 2)  worst= 3 avg=3.00
+  (35, 3)  worst= 3 avg=3.00
+  (35, 4)  worst= 3 avg=3.00
+  (35, 5)  worst= 3 avg=3.00
+  (35, 6)  worst= 3 avg=3.00
+  (35, 7)  worst= 3 avg=3.00
+  (35, 8)  worst= 3 avg=3.00
+  (35, 9)  worst= 3 avg=3.00
+  (35,10)  worst= 3 avg=3.00
+  (35,11)  worst= 3 avg=3.00
+  (35,12)  worst= 3 avg=3.00
+  (35,13)  worst= 3 avg=3.00
+  (35,14)  worst= 3 avg=3.00
+  (35,15)  worst= 3 avg=3.00
+  (35,16)  worst= 3 avg=3.00
+  (35,17)  worst= 3 avg=3.00
+  (35,18)  worst= 3 avg=3.00
+  (35,19)  worst= 3 avg=3.00
+  (35,20)  worst= 3 avg=3.00
+  (35,21)  worst= 3 avg=3.00
+  (35,22)  worst= 3 avg=3.00
+  (35,23)  worst= 3 avg=3.00
+  (35,24)  worst= 3 avg=3.00
+  (35,25)  worst= 3 avg=3.00
+  (35,26)  worst= 3 avg=3.00
+  (35,27)  worst= 3 avg=3.00
+  (35,28)  worst= 3 avg=3.00
+  (35,29)  worst= 3 avg=3.00
+  (35,30)  worst= 3 avg=3.00
+  (35,31)  worst= 3 avg=3.00
+  (35,32)  worst= 3 avg=3.00
+  (35,33)  worst= 3 avg=3.00
+  (35,34)  worst= 3 avg=3.00
+  (35,35)  worst= 3 avg=3.00
+  (35,36)  worst= 3 avg=3.00
+  (35,37)  worst= 3 avg=3.00
+  (35,38)  worst= 3 avg=3.00
+  (35,39)  worst= 3 avg=3.00
+  (35,40)  worst= 3 avg=3.00
+  (35,41)  worst= 3 avg=3.00
+  (35,42)  worst= 3 avg=3.00
+  (35,43)  worst= 3 avg=3.00
+  (35,44)  worst= 3 avg=3.00
+  (35,45)  worst= 3 avg=3.00
+  (35,46)  worst= 3 avg=3.00
+  (35,47)  worst= 3 avg=3.00
+  (35,48)  worst= 3 avg=3.00
+  (35,49)  worst= 3 avg=3.00
+  (35,50)  worst= 3 avg=3.00
+  (35,51)  worst= 3 avg=3.00
+  (35,52)  worst= 3 avg=3.00
+  (35,53)  worst= 3 avg=3.00
+  (35,54)  worst= 3 avg=3.00
+  (35,55)  worst= 3 avg=3.00
+  (35,56)  worst= 3 avg=3.00
+  (35,57)  worst= 3 avg=3.00
+  (35,58)  worst= 3 avg=3.00
+  (35,59)  worst= 3 avg=3.00
+  (35,60)  worst= 3 avg=3.00
+  (35,61)  worst= 3 avg=3.00
+  (35,62)  worst= 3 avg=3.00
+  (35,63)  worst= 3 avg=3.00
+  (37, 0)  worst= 3 avg=3.00
+  (37, 1)  worst= 3 avg=3.00
+  (37, 2)  worst= 3 avg=3.00
+  (37, 3)  worst= 3 avg=3.00
+  (37, 4)  worst= 3 avg=3.00
+  (37, 5)  worst= 3 avg=3.00
+  (37, 6)  worst= 3 avg=3.00
+  (37, 7)  worst= 3 avg=3.00
+  (37, 8)  worst= 3 avg=3.00
+  (37, 9)  worst= 3 avg=3.00
+  (37,10)  worst= 3 avg=3.00
+  (37,11)  worst= 3 avg=3.00
+  (37,12)  worst= 3 avg=3.00
+  (37,13)  worst= 3 avg=3.00
+  (37,14)  worst= 3 avg=3.00
+  (37,15)  worst= 3 avg=3.00
+  (37,16)  worst= 3 avg=3.00
+  (37,17)  worst= 3 avg=3.00
+  (37,18)  worst= 3 avg=3.00
+  (37,19)  worst= 3 avg=3.00
+  (37,20)  worst= 3 avg=3.00
+  (37,21)  worst= 3 avg=3.00
+  (37,22)  worst= 3 avg=3.00
+  (37,23)  worst= 3 avg=3.00
+  (37,24)  worst= 3 avg=3.00
+  (37,25)  worst= 3 avg=3.00
+  (37,26)  worst= 3 avg=3.00
+  (37,27)  worst= 3 avg=3.00
+  (37,28)  worst= 3 avg=3.00
+  (37,29)  worst= 3 avg=3.00
+  (37,30)  worst= 3 avg=3.00
+  (37,31)  worst= 3 avg=3.00
+  (37,32)  worst= 3 avg=3.00
+  (37,33)  worst= 3 avg=3.00
+  (37,34)  worst= 3 avg=3.00
+  (37,35)  worst= 3 avg=3.00
+  (37,36)  worst= 3 avg=3.00
+  (37,37)  worst= 3 avg=3.00
+  (37,38)  worst= 3 avg=3.00
+  (37,39)  worst= 3 avg=3.00
+  (37,40)  worst= 3 avg=3.00
+  (37,41)  worst= 3 avg=3.00
+  (37,42)  worst= 3 avg=3.00
+  (37,43)  worst= 3 avg=3.00
+  (37,44)  worst= 3 avg=3.00
+  (37,45)  worst= 3 avg=3.00
+  (37,46)  worst= 3 avg=3.00
+  (37,47)  worst= 3 avg=3.00
+  (37,48)  worst= 3 avg=3.00
+  (37,49)  worst= 3 avg=3.00
+  (37,50)  worst= 3 avg=3.00
+  (37,51)  worst= 3 avg=3.00
+  (37,52)  worst= 3 avg=3.00
+  (37,53)  worst= 3 avg=3.00
+  (37,54)  worst= 3 avg=3.00
+  (37,55)  worst= 3 avg=3.00
+  (37,56)  worst= 3 avg=3.00
+  (37,57)  worst= 3 avg=3.00
+  (37,58)  worst= 3 avg=3.00
+  (37,59)  worst= 3 avg=3.00
+  (37,60)  worst= 3 avg=3.00
+  (37,61)  worst= 3 avg=3.00
+  (37,62)  worst= 3 avg=3.00
+  (37,63)  worst= 3 avg=3.00
+  (39, 0)  worst= 3 avg=3.00
+  (39, 1)  worst= 3 avg=3.00
+  (39, 2)  worst= 3 avg=3.00
+  (39, 3)  worst= 3 avg=3.00
+  (39, 4)  worst= 3 avg=3.00
+  (39, 5)  worst= 3 avg=3.00
+  (39, 6)  worst= 3 avg=3.00
+  (39, 7)  worst= 3 avg=3.00
+  (39, 8)  worst= 3 avg=3.00
+  (39, 9)  worst= 3 avg=3.00
+  (39,10)  worst= 3 avg=3.00
+  (39,11)  worst= 3 avg=3.00
+  (39,12)  worst= 3 avg=3.00
+  (39,13)  worst= 3 avg=3.00
+  (39,14)  worst= 3 avg=3.00
+  (39,15)  worst= 3 avg=3.00
+  (39,16)  worst= 3 avg=3.00
+  (39,17)  worst= 3 avg=3.00
+  (39,18)  worst= 3 avg=3.00
+  (39,19)  worst= 3 avg=3.00
+  (39,20)  worst= 3 avg=3.00
+  (39,21)  worst= 3 avg=3.00
+  (39,22)  worst= 3 avg=3.00
+  (39,23)  worst= 3 avg=3.00
+  (39,24)  worst= 3 avg=3.00
+  (39,25)  worst= 3 avg=3.00
+  (39,26)  worst= 3 avg=3.00
+  (39,27)  worst= 3 avg=3.00
+  (39,28)  worst= 3 avg=3.00
+  (39,29)  worst= 3 avg=3.00
+  (39,30)  worst= 3 avg=3.00
+  (39,31)  worst= 3 avg=3.00
+  (39,32)  worst= 3 avg=3.00
+  (39,33)  worst= 3 avg=3.00
+  (39,34)  worst= 3 avg=3.00
+  (39,35)  worst= 3 avg=3.00
+  (39,36)  worst= 3 avg=3.00
+  (39,37)  worst= 3 avg=3.00
+  (39,38)  worst= 3 avg=3.00
+  (39,39)  worst= 3 avg=3.00
+  (39,40)  worst= 3 avg=3.00
+  (39,41)  worst= 3 avg=3.00
+  (39,42)  worst= 3 avg=3.00
+  (39,43)  worst= 3 avg=3.00
+  (39,44)  worst= 3 avg=3.00
+  (39,45)  worst= 3 avg=3.00
+  (39,46)  worst= 3 avg=3.00
+  (39,47)  worst= 3 avg=3.00
+  (39,48)  worst= 3 avg=3.00
+  (39,49)  worst= 3 avg=3.00
+  (39,50)  worst= 3 avg=3.00
+  (39,51)  worst= 3 avg=3.00
+  (39,52)  worst= 3 avg=3.00
+  (39,53)  worst= 3 avg=3.00
+  (39,54)  worst= 3 avg=3.00
+  (39,55)  worst= 3 avg=3.00
+  (39,56)  worst= 3 avg=3.00
+  (39,57)  worst= 3 avg=3.00
+  (39,58)  worst= 3 avg=3.00
+  (39,59)  worst= 3 avg=3.00
+  (39,60)  worst= 3 avg=3.00
+  (39,61)  worst= 3 avg=3.00
+  (39,62)  worst= 3 avg=3.00
+  (39,63)  worst= 3 avg=3.00
+  (41, 2)  worst= 3 avg=3.00
+  (41, 3)  worst= 3 avg=3.00
+  (41, 6)  worst= 3 avg=3.00
+  (41, 7)  worst= 3 avg=3.00
+  (41,10)  worst= 3 avg=3.00
+  (41,11)  worst= 3 avg=3.00
+  (41,14)  worst= 3 avg=3.00
+  (41,15)  worst= 3 avg=3.00
+  (41,18)  worst= 3 avg=3.00
+  (41,19)  worst= 3 avg=3.00
+  (41,22)  worst= 3 avg=3.00
+  (41,23)  worst= 3 avg=3.00
+  (41,26)  worst= 3 avg=3.00
+  (41,27)  worst= 3 avg=3.00
+  (41,30)  worst= 3 avg=3.00
+  (41,31)  worst= 3 avg=3.00
+  (41,34)  worst= 3 avg=3.00
+  (41,35)  worst= 3 avg=3.00
+  (41,38)  worst= 3 avg=3.00
+  (41,39)  worst= 3 avg=3.00
+  (41,42)  worst= 3 avg=3.00
+  (41,43)  worst= 3 avg=3.00
+  (41,46)  worst= 3 avg=3.00
+  (41,47)  worst= 3 avg=3.00
+  (41,50)  worst= 3 avg=3.00
+  (41,51)  worst= 3 avg=3.00
+  (41,54)  worst= 3 avg=3.00
+  (41,55)  worst= 3 avg=3.00
+  (41,58)  worst= 3 avg=3.00
+  (41,59)  worst= 3 avg=3.00
+  (41,62)  worst= 3 avg=3.00
+  (41,63)  worst= 3 avg=3.00
+  (43, 0)  worst= 3 avg=3.00
+  (43, 1)  worst= 3 avg=3.00
+  (43, 2)  worst= 3 avg=3.00
+  (43, 3)  worst= 3 avg=3.00
+  (43, 4)  worst= 3 avg=3.00
+  (43, 5)  worst= 3 avg=3.00
+  (43, 6)  worst= 3 avg=3.00
+  (43, 7)  worst= 3 avg=3.00
+  (43, 8)  worst= 3 avg=3.00
+  (43, 9)  worst= 3 avg=3.00
+  (43,10)  worst= 3 avg=3.00
+  (43,11)  worst= 3 avg=3.00
+  (43,12)  worst= 3 avg=3.00
+  (43,13)  worst= 3 avg=3.00
+  (43,14)  worst= 3 avg=3.00
+  (43,15)  worst= 3 avg=3.00
+  (43,16)  worst= 3 avg=3.00
+  (43,17)  worst= 3 avg=3.00
+  (43,18)  worst= 3 avg=3.00
+  (43,19)  worst= 3 avg=3.00
+  (43,20)  worst= 3 avg=3.00
+  (43,21)  worst= 3 avg=3.00
+  (43,22)  worst= 3 avg=3.00
+  (43,23)  worst= 3 avg=3.00
+  (43,24)  worst= 3 avg=3.00
+  (43,25)  worst= 3 avg=3.00
+  (43,26)  worst= 3 avg=3.00
+  (43,27)  worst= 3 avg=3.00
+  (43,28)  worst= 3 avg=3.00
+  (43,29)  worst= 3 avg=3.00
+  (43,30)  worst= 3 avg=3.00
+  (43,31)  worst= 3 avg=3.00
+  (43,32)  worst= 3 avg=3.00
+  (43,33)  worst= 3 avg=3.00
+  (43,34)  worst= 3 avg=3.00
+  (43,35)  worst= 3 avg=3.00
+  (43,36)  worst= 3 avg=3.00
+  (43,37)  worst= 3 avg=3.00
+  (43,38)  worst= 3 avg=3.00
+  (43,39)  worst= 3 avg=3.00
+  (43,40)  worst= 3 avg=3.00
+  (43,41)  worst= 3 avg=3.00
+  (43,42)  worst= 3 avg=3.00
+  (43,43)  worst= 3 avg=3.00
+  (43,44)  worst= 3 avg=3.00
+  (43,45)  worst= 3 avg=3.00
+  (43,46)  worst= 3 avg=3.00
+  (43,47)  worst= 3 avg=3.00
+  (43,48)  worst= 3 avg=3.00
+  (43,49)  worst= 3 avg=3.00
+  (43,50)  worst= 3 avg=3.00
+  (43,51)  worst= 3 avg=3.00
+  (43,52)  worst= 3 avg=3.00
+  (43,53)  worst= 3 avg=3.00
+  (43,54)  worst= 3 avg=3.00
+  (43,55)  worst= 3 avg=3.00
+  (43,56)  worst= 3 avg=3.00
+  (43,57)  worst= 3 avg=3.00
+  (43,58)  worst= 3 avg=3.00
+  (43,59)  worst= 3 avg=3.00
+  (43,60)  worst= 3 avg=3.00
+  (43,61)  worst= 3 avg=3.00
+  (43,62)  worst= 3 avg=3.00
+  (43,63)  worst= 3 avg=3.00
+  (45, 0)  worst= 3 avg=3.00
+  (45, 1)  worst= 3 avg=3.00
+  (45, 2)  worst= 3 avg=3.00
+  (45, 3)  worst= 3 avg=3.00
+  (45, 4)  worst= 3 avg=3.00
+  (45, 5)  worst= 3 avg=3.00
+  (45, 6)  worst= 3 avg=3.00
+  (45, 7)  worst= 3 avg=3.00
+  (45, 8)  worst= 3 avg=3.00
+  (45, 9)  worst= 3 avg=3.00
+  (45,10)  worst= 3 avg=3.00
+  (45,11)  worst= 3 avg=3.00
+  (45,12)  worst= 3 avg=3.00
+  (45,13)  worst= 3 avg=3.00
+  (45,14)  worst= 3 avg=3.00
+  (45,15)  worst= 3 avg=3.00
+  (45,16)  worst= 3 avg=3.00
+  (45,17)  worst= 3 avg=3.00
+  (45,18)  worst= 3 avg=3.00
+  (45,19)  worst= 3 avg=3.00
+  (45,20)  worst= 3 avg=3.00
+  (45,21)  worst= 3 avg=3.00
+  (45,22)  worst= 3 avg=3.00
+  (45,23)  worst= 3 avg=3.00
+  (45,24)  worst= 3 avg=3.00
+  (45,25)  worst= 3 avg=3.00
+  (45,26)  worst= 3 avg=3.00
+  (45,27)  worst= 3 avg=3.00
+  (45,28)  worst= 3 avg=3.00
+  (45,29)  worst= 3 avg=3.00
+  (45,30)  worst= 3 avg=3.00
+  (45,31)  worst= 3 avg=3.00
+  (45,32)  worst= 3 avg=3.00
+  (45,33)  worst= 3 avg=3.00
+  (45,34)  worst= 3 avg=3.00
+  (45,35)  worst= 3 avg=3.00
+  (45,36)  worst= 3 avg=3.00
+  (45,37)  worst= 3 avg=3.00
+  (45,38)  worst= 3 avg=3.00
+  (45,39)  worst= 3 avg=3.00
+  (45,40)  worst= 3 avg=3.00
+  (45,41)  worst= 3 avg=3.00
+  (45,42)  worst= 3 avg=3.00
+  (45,43)  worst= 3 avg=3.00
+  (45,44)  worst= 3 avg=3.00
+  (45,45)  worst= 3 avg=3.00
+  (45,46)  worst= 3 avg=3.00
+  (45,47)  worst= 3 avg=3.00
+  (45,48)  worst= 3 avg=3.00
+  (45,49)  worst= 3 avg=3.00
+  (45,50)  worst= 3 avg=3.00
+  (45,51)  worst= 3 avg=3.00
+  (45,52)  worst= 3 avg=3.00
+  (45,53)  worst= 3 avg=3.00
+  (45,54)  worst= 3 avg=3.00
+  (45,55)  worst= 3 avg=3.00
+  (45,56)  worst= 3 avg=3.00
+  (45,57)  worst= 3 avg=3.00
+  (45,58)  worst= 3 avg=3.00
+  (45,59)  worst= 3 avg=3.00
+  (45,60)  worst= 3 avg=3.00
+  (45,61)  worst= 3 avg=3.00
+  (45,62)  worst= 3 avg=3.00
+  (45,63)  worst= 3 avg=3.00
+  (47, 0)  worst= 3 avg=3.00
+  (47, 1)  worst= 3 avg=3.00
+  (47, 2)  worst= 3 avg=3.00
+  (47, 4)  worst= 3 avg=3.00
+  (47, 5)  worst= 3 avg=3.00
+  (47, 6)  worst= 3 avg=3.00
+  (47, 8)  worst= 3 avg=3.00
+  (47, 9)  worst= 3 avg=3.00
+  (47,10)  worst= 3 avg=3.00
+  (47,12)  worst= 3 avg=3.00
+  (47,13)  worst= 3 avg=3.00
+  (47,14)  worst= 3 avg=3.00
+  (47,16)  worst= 3 avg=3.00
+  (47,17)  worst= 3 avg=3.00
+  (47,18)  worst= 3 avg=3.00
+  (47,20)  worst= 3 avg=3.00
+  (47,21)  worst= 3 avg=3.00
+  (47,22)  worst= 3 avg=3.00
+  (47,24)  worst= 3 avg=3.00
+  (47,25)  worst= 3 avg=3.00
+  (47,26)  worst= 3 avg=3.00
+  (47,28)  worst= 3 avg=3.00
+  (47,29)  worst= 3 avg=3.00
+  (47,30)  worst= 3 avg=3.00
+  (47,32)  worst= 3 avg=3.00
+  (47,33)  worst= 3 avg=3.00
+  (47,34)  worst= 3 avg=3.00
+  (47,36)  worst= 3 avg=3.00
+  (47,37)  worst= 3 avg=3.00
+  (47,38)  worst= 3 avg=3.00
+  (47,40)  worst= 3 avg=3.00
+  (47,41)  worst= 3 avg=3.00
+  (47,42)  worst= 3 avg=3.00
+  (47,44)  worst= 3 avg=3.00
+  (47,45)  worst= 3 avg=3.00
+  (47,46)  worst= 3 avg=3.00
+  (47,48)  worst= 3 avg=3.00
+  (47,49)  worst= 3 avg=3.00
+  (47,50)  worst= 3 avg=3.00
+  (47,52)  worst= 3 avg=3.00
+  (47,53)  worst= 3 avg=3.00
+  (47,54)  worst= 3 avg=3.00
+  (47,56)  worst= 3 avg=3.00
+  (47,57)  worst= 3 avg=3.00
+  (47,58)  worst= 3 avg=3.00
+  (47,60)  worst= 3 avg=3.00
+  (47,61)  worst= 3 avg=3.00
+  (47,62)  worst= 3 avg=3.00
+  (49, 1)  worst= 3 avg=3.00
+  (49, 5)  worst= 3 avg=3.00
+  (49, 9)  worst= 3 avg=3.00
+  (49,13)  worst= 3 avg=3.00
+  (49,17)  worst= 3 avg=3.00
+  (49,21)  worst= 3 avg=3.00
+  (49,25)  worst= 3 avg=3.00
+  (49,29)  worst= 3 avg=3.00
+  (49,33)  worst= 3 avg=3.00
+  (49,37)  worst= 3 avg=3.00
+  (49,41)  worst= 3 avg=3.00
+  (49,45)  worst= 3 avg=3.00
+  (49,49)  worst= 3 avg=3.00
+  (49,53)  worst= 3 avg=3.00
+  (49,57)  worst= 3 avg=3.00
+  (49,61)  worst= 3 avg=3.00
+  (51, 0)  worst= 3 avg=3.00
+  (51, 1)  worst= 3 avg=3.00
+  (51, 2)  worst= 3 avg=3.00
+  (51, 3)  worst= 3 avg=3.00
+  (51, 4)  worst= 3 avg=3.00
+  (51, 5)  worst= 3 avg=3.00
+  (51, 6)  worst= 3 avg=3.00
+  (51, 7)  worst= 3 avg=3.00
+  (51, 8)  worst= 3 avg=3.00
+  (51, 9)  worst= 3 avg=3.00
+  (51,10)  worst= 3 avg=3.00
+  (51,11)  worst= 3 avg=3.00
+  (51,12)  worst= 3 avg=3.00
+  (51,13)  worst= 3 avg=3.00
+  (51,14)  worst= 3 avg=3.00
+  (51,15)  worst= 3 avg=3.00
+  (51,16)  worst= 3 avg=3.00
+  (51,17)  worst= 3 avg=3.00
+  (51,18)  worst= 3 avg=3.00
+  (51,19)  worst= 3 avg=3.00
+  (51,20)  worst= 3 avg=3.00
+  (51,21)  worst= 3 avg=3.00
+  (51,22)  worst= 3 avg=3.00
+  (51,23)  worst= 3 avg=3.00
+  (51,24)  worst= 3 avg=3.00
+  (51,25)  worst= 3 avg=3.00
+  (51,26)  worst= 3 avg=3.00
+  (51,27)  worst= 3 avg=3.00
+  (51,28)  worst= 3 avg=3.00
+  (51,29)  worst= 3 avg=3.00
+  (51,30)  worst= 3 avg=3.00
+  (51,31)  worst= 3 avg=3.00
+  (51,32)  worst= 3 avg=3.00
+  (51,33)  worst= 3 avg=3.00
+  (51,34)  worst= 3 avg=3.00
+  (51,35)  worst= 3 avg=3.00
+  (51,36)  worst= 3 avg=3.00
+  (51,37)  worst= 3 avg=3.00
+  (51,38)  worst= 3 avg=3.00
+  (51,39)  worst= 3 avg=3.00
+  (51,40)  worst= 3 avg=3.00
+  (51,41)  worst= 3 avg=3.00
+  (51,42)  worst= 3 avg=3.00
+  (51,43)  worst= 3 avg=3.00
+  (51,44)  worst= 3 avg=3.00
+  (51,45)  worst= 3 avg=3.00
+  (51,46)  worst= 3 avg=3.00
+  (51,47)  worst= 3 avg=3.00
+  (51,48)  worst= 3 avg=3.00
+  (51,49)  worst= 3 avg=3.00
+  (51,50)  worst= 3 avg=3.00
+  (51,51)  worst= 3 avg=3.00
+  (51,52)  worst= 3 avg=3.00
+  (51,53)  worst= 3 avg=3.00
+  (51,54)  worst= 3 avg=3.00
+  (51,55)  worst= 3 avg=3.00
+  (51,56)  worst= 3 avg=3.00
+  (51,57)  worst= 3 avg=3.00
+  (51,58)  worst= 3 avg=3.00
+  (51,59)  worst= 3 avg=3.00
+  (51,60)  worst= 3 avg=3.00
+  (51,61)  worst= 3 avg=3.00
+  (51,62)  worst= 3 avg=3.00
+  (51,63)  worst= 3 avg=3.00
+  (53, 0)  worst= 3 avg=3.00
+  (53, 1)  worst= 3 avg=3.00
+  (53, 2)  worst= 3 avg=3.00
+  (53, 3)  worst= 3 avg=3.00
+  (53, 4)  worst= 3 avg=3.00
+  (53, 5)  worst= 3 avg=3.00
+  (53, 6)  worst= 3 avg=3.00
+  (53, 7)  worst= 3 avg=3.00
+  (53, 8)  worst= 3 avg=3.00
+  (53, 9)  worst= 3 avg=3.00
+  (53,10)  worst= 3 avg=3.00
+  (53,11)  worst= 3 avg=3.00
+  (53,12)  worst= 3 avg=3.00
+  (53,13)  worst= 3 avg=3.00
+  (53,14)  worst= 3 avg=3.00
+  (53,15)  worst= 3 avg=3.00
+  (53,16)  worst= 3 avg=3.00
+  (53,17)  worst= 3 avg=3.00
+  (53,18)  worst= 3 avg=3.00
+  (53,19)  worst= 3 avg=3.00
+  (53,20)  worst= 3 avg=3.00
+  (53,21)  worst= 3 avg=3.00
+  (53,22)  worst= 3 avg=3.00
+  (53,23)  worst= 3 avg=3.00
+  (53,24)  worst= 3 avg=3.00
+  (53,25)  worst= 3 avg=3.00
+  (53,26)  worst= 3 avg=3.00
+  (53,27)  worst= 3 avg=3.00
+  (53,28)  worst= 3 avg=3.00
+  (53,29)  worst= 3 avg=3.00
+  (53,30)  worst= 3 avg=3.00
+  (53,31)  worst= 3 avg=3.00
+  (53,32)  worst= 3 avg=3.00
+  (53,33)  worst= 3 avg=3.00
+  (53,34)  worst= 3 avg=3.00
+  (53,35)  worst= 3 avg=3.00
+  (53,36)  worst= 3 avg=3.00
+  (53,37)  worst= 3 avg=3.00
+  (53,38)  worst= 3 avg=3.00
+  (53,39)  worst= 3 avg=3.00
+  (53,40)  worst= 3 avg=3.00
+  (53,41)  worst= 3 avg=3.00
+  (53,42)  worst= 3 avg=3.00
+  (53,43)  worst= 3 avg=3.00
+  (53,44)  worst= 3 avg=3.00
+  (53,45)  worst= 3 avg=3.00
+  (53,46)  worst= 3 avg=3.00
+  (53,47)  worst= 3 avg=3.00
+  (53,48)  worst= 3 avg=3.00
+  (53,49)  worst= 3 avg=3.00
+  (53,50)  worst= 3 avg=3.00
+  (53,51)  worst= 3 avg=3.00
+  (53,52)  worst= 3 avg=3.00
+  (53,53)  worst= 3 avg=3.00
+  (53,54)  worst= 3 avg=3.00
+  (53,55)  worst= 3 avg=3.00
+  (53,56)  worst= 3 avg=3.00
+  (53,57)  worst= 3 avg=3.00
+  (53,58)  worst= 3 avg=3.00
+  (53,59)  worst= 3 avg=3.00
+  (53,60)  worst= 3 avg=3.00
+  (53,61)  worst= 3 avg=3.00
+  (53,62)  worst= 3 avg=3.00
+  (53,63)  worst= 3 avg=3.00
+  (55, 0)  worst= 3 avg=3.00
+  (55, 1)  worst= 3 avg=3.00
+  (55, 2)  worst= 3 avg=3.00
+  (55, 3)  worst= 3 avg=3.00
+  (55, 4)  worst= 3 avg=3.00
+  (55, 5)  worst= 3 avg=3.00
+  (55, 6)  worst= 3 avg=3.00
+  (55, 7)  worst= 3 avg=3.00
+  (55, 8)  worst= 3 avg=3.00
+  (55, 9)  worst= 3 avg=3.00
+  (55,10)  worst= 3 avg=3.00
+  (55,11)  worst= 3 avg=3.00
+  (55,12)  worst= 3 avg=3.00
+  (55,13)  worst= 3 avg=3.00
+  (55,14)  worst= 3 avg=3.00
+  (55,15)  worst= 3 avg=3.00
+  (55,16)  worst= 3 avg=3.00
+  (55,17)  worst= 3 avg=3.00
+  (55,18)  worst= 3 avg=3.00
+  (55,19)  worst= 3 avg=3.00
+  (55,20)  worst= 3 avg=3.00
+  (55,21)  worst= 3 avg=3.00
+  (55,22)  worst= 3 avg=3.00
+  (55,23)  worst= 3 avg=3.00
+  (55,24)  worst= 3 avg=3.00
+  (55,25)  worst= 3 avg=3.00
+  (55,26)  worst= 3 avg=3.00
+  (55,27)  worst= 3 avg=3.00
+  (55,28)  worst= 3 avg=3.00
+  (55,29)  worst= 3 avg=3.00
+  (55,30)  worst= 3 avg=3.00
+  (55,31)  worst= 3 avg=3.00
+  (55,32)  worst= 3 avg=3.00
+  (55,33)  worst= 3 avg=3.00
+  (55,34)  worst= 3 avg=3.00
+  (55,35)  worst= 3 avg=3.00
+  (55,36)  worst= 3 avg=3.00
+  (55,37)  worst= 3 avg=3.00
+  (55,38)  worst= 3 avg=3.00
+  (55,39)  worst= 3 avg=3.00
+  (55,40)  worst= 3 avg=3.00
+  (55,41)  worst= 3 avg=3.00
+  (55,42)  worst= 3 avg=3.00
+  (55,43)  worst= 3 avg=3.00
+  (55,44)  worst= 3 avg=3.00
+  (55,45)  worst= 3 avg=3.00
+  (55,46)  worst= 3 avg=3.00
+  (55,47)  worst= 3 avg=3.00
+  (55,48)  worst= 3 avg=3.00
+  (55,49)  worst= 3 avg=3.00
+  (55,50)  worst= 3 avg=3.00
+  (55,51)  worst= 3 avg=3.00
+  (55,52)  worst= 3 avg=3.00
+  (55,53)  worst= 3 avg=3.00
+  (55,54)  worst= 3 avg=3.00
+  (55,55)  worst= 3 avg=3.00
+  (55,56)  worst= 3 avg=3.00
+  (55,57)  worst= 3 avg=3.00
+  (55,58)  worst= 3 avg=3.00
+  (55,59)  worst= 3 avg=3.00
+  (55,60)  worst= 3 avg=3.00
+  (55,61)  worst= 3 avg=3.00
+  (55,62)  worst= 3 avg=3.00
+  (55,63)  worst= 3 avg=3.00
+  (57, 1)  worst= 3 avg=3.00
+  (57, 2)  worst= 3 avg=3.00
+  (57, 3)  worst= 3 avg=3.00
+  (57, 5)  worst= 3 avg=3.00
+  (57, 6)  worst= 3 avg=3.00
+  (57, 7)  worst= 3 avg=3.00
+  (57, 9)  worst= 3 avg=3.00
+  (57,10)  worst= 3 avg=3.00
+  (57,11)  worst= 3 avg=3.00
+  (57,13)  worst= 3 avg=3.00
+  (57,14)  worst= 3 avg=3.00
+  (57,15)  worst= 3 avg=3.00
+  (57,17)  worst= 3 avg=3.00
+  (57,18)  worst= 3 avg=3.00
+  (57,19)  worst= 3 avg=3.00
+  (57,21)  worst= 3 avg=3.00
+  (57,22)  worst= 3 avg=3.00
+  (57,23)  worst= 3 avg=3.00
+  (57,25)  worst= 3 avg=3.00
+  (57,26)  worst= 3 avg=3.00
+  (57,27)  worst= 3 avg=3.00
+  (57,29)  worst= 3 avg=3.00
+  (57,30)  worst= 3 avg=3.00
+  (57,31)  worst= 3 avg=3.00
+  (57,33)  worst= 3 avg=3.00
+  (57,34)  worst= 3 avg=3.00
+  (57,35)  worst= 3 avg=3.00
+  (57,37)  worst= 3 avg=3.00
+  (57,38)  worst= 3 avg=3.00
+  (57,39)  worst= 3 avg=3.00
+  (57,41)  worst= 3 avg=3.00
+  (57,42)  worst= 3 avg=3.00
+  (57,43)  worst= 3 avg=3.00
+  (57,45)  worst= 3 avg=3.00
+  (57,46)  worst= 3 avg=3.00
+  (57,47)  worst= 3 avg=3.00
+  (57,49)  worst= 3 avg=3.00
+  (57,50)  worst= 3 avg=3.00
+  (57,51)  worst= 3 avg=3.00
+  (57,53)  worst= 3 avg=3.00
+  (57,54)  worst= 3 avg=3.00
+  (57,55)  worst= 3 avg=3.00
+  (57,57)  worst= 3 avg=3.00
+  (57,58)  worst= 3 avg=3.00
+  (57,59)  worst= 3 avg=3.00
+  (57,61)  worst= 3 avg=3.00
+  (57,62)  worst= 3 avg=3.00
+  (57,63)  worst= 3 avg=3.00
+  (59, 1)  worst= 3 avg=3.00
+  (59, 5)  worst= 3 avg=3.00
+  (59, 9)  worst= 3 avg=3.00
+  (59,13)  worst= 3 avg=3.00
+  (59,17)  worst= 3 avg=3.00
+  (59,21)  worst= 3 avg=3.00
+  (59,25)  worst= 3 avg=3.00
+  (59,29)  worst= 3 avg=3.00
+  (59,33)  worst= 3 avg=3.00
+  (59,37)  worst= 3 avg=3.00
+  (59,41)  worst= 3 avg=3.00
+  (59,45)  worst= 3 avg=3.00
+  (59,49)  worst= 3 avg=3.00
+  (59,53)  worst= 3 avg=3.00
+  (59,57)  worst= 3 avg=3.00
+  (59,61)  worst= 3 avg=3.00
+  (61, 0)  worst= 3 avg=3.00
+  (61, 1)  worst= 3 avg=3.00
+  (61, 2)  worst= 3 avg=3.00
+  (61, 3)  worst= 3 avg=3.00
+  (61, 4)  worst= 3 avg=3.00
+  (61, 5)  worst= 3 avg=3.00
+  (61, 6)  worst= 3 avg=3.00
+  (61, 7)  worst= 3 avg=3.00
+  (61, 8)  worst= 3 avg=3.00
+  (61, 9)  worst= 3 avg=3.00
+  (61,10)  worst= 3 avg=3.00
+  (61,11)  worst= 3 avg=3.00
+  (61,12)  worst= 3 avg=3.00
+  (61,13)  worst= 3 avg=3.00
+  (61,14)  worst= 3 avg=3.00
+  (61,15)  worst= 3 avg=3.00
+  (61,16)  worst= 3 avg=3.00
+  (61,17)  worst= 3 avg=3.00
+  (61,18)  worst= 3 avg=3.00
+  (61,19)  worst= 3 avg=3.00
+  (61,20)  worst= 3 avg=3.00
+  (61,21)  worst= 3 avg=3.00
+  (61,22)  worst= 3 avg=3.00
+  (61,23)  worst= 3 avg=3.00
+  (61,24)  worst= 3 avg=3.00
+  (61,25)  worst= 3 avg=3.00
+  (61,26)  worst= 3 avg=3.00
+  (61,27)  worst= 3 avg=3.00
+  (61,28)  worst= 3 avg=3.00
+  (61,29)  worst= 3 avg=3.00
+  (61,30)  worst= 3 avg=3.00
+  (61,31)  worst= 3 avg=3.00
+  (61,32)  worst= 3 avg=3.00
+  (61,33)  worst= 3 avg=3.00
+  (61,34)  worst= 3 avg=3.00
+  (61,35)  worst= 3 avg=3.00
+  (61,36)  worst= 3 avg=3.00
+  (61,37)  worst= 3 avg=3.00
+  (61,38)  worst= 3 avg=3.00
+  (61,39)  worst= 3 avg=3.00
+  (61,40)  worst= 3 avg=3.00
+  (61,41)  worst= 3 avg=3.00
+  (61,42)  worst= 3 avg=3.00
+  (61,43)  worst= 3 avg=3.00
+  (61,44)  worst= 3 avg=3.00
+  (61,45)  worst= 3 avg=3.00
+  (61,46)  worst= 3 avg=3.00
+  (61,47)  worst= 3 avg=3.00
+  (61,48)  worst= 3 avg=3.00
+  (61,49)  worst= 3 avg=3.00
+  (61,50)  worst= 3 avg=3.00
+  (61,51)  worst= 3 avg=3.00
+  (61,52)  worst= 3 avg=3.00
+  (61,53)  worst= 3 avg=3.00
+  (61,54)  worst= 3 avg=3.00
+  (61,55)  worst= 3 avg=3.00
+  (61,56)  worst= 3 avg=3.00
+  (61,57)  worst= 3 avg=3.00
+  (61,58)  worst= 3 avg=3.00
+  (61,59)  worst= 3 avg=3.00
+  (61,60)  worst= 3 avg=3.00
+  (61,61)  worst= 3 avg=3.00
+  (61,62)  worst= 3 avg=3.00
+  (61,63)  worst= 3 avg=3.00
+  (33, 1)  worst= 4 avg=4.00
+  (33, 5)  worst= 4 avg=4.00
+  (33, 9)  worst= 4 avg=4.00
+  (33,13)  worst= 4 avg=4.00
+  (33,17)  worst= 4 avg=4.00
+  (33,21)  worst= 4 avg=4.00
+  (33,25)  worst= 4 avg=4.00
+  (33,29)  worst= 4 avg=4.00
+  (33,33)  worst= 4 avg=4.00
+  (33,37)  worst= 4 avg=4.00
+  (33,41)  worst= 4 avg=4.00
+  (33,45)  worst= 4 avg=4.00
+  (33,49)  worst= 4 avg=4.00
+  (33,53)  worst= 4 avg=4.00
+  (33,57)  worst= 4 avg=4.00
+  (33,61)  worst= 4 avg=4.00
+  ( 1, 2)  worst= 5 avg=5.00
+  ( 1, 3)  worst= 5 avg=5.00
+  ( 1, 6)  worst= 5 avg=5.00
+  ( 1, 7)  worst= 5 avg=5.00
+  ( 1,10)  worst= 5 avg=5.00
+  ( 1,11)  worst= 5 avg=5.00
+  ( 1,14)  worst= 5 avg=5.00
+  ( 1,15)  worst= 5 avg=5.00
+  ( 1,18)  worst= 5 avg=5.00
+  ( 1,19)  worst= 5 avg=5.00
+  ( 1,22)  worst= 5 avg=5.00
+  ( 1,23)  worst= 5 avg=5.00
+  ( 1,26)  worst= 5 avg=5.00
+  ( 1,27)  worst= 5 avg=5.00
+  ( 1,30)  worst= 5 avg=5.00
+  ( 1,31)  worst= 5 avg=5.00
+  ( 1,34)  worst= 5 avg=5.00
+  ( 1,35)  worst= 5 avg=5.00
+  ( 1,38)  worst= 5 avg=5.00
+  ( 1,39)  worst= 5 avg=5.00
+  ( 1,42)  worst= 5 avg=5.00
+  ( 1,43)  worst= 5 avg=5.00
+  ( 1,46)  worst= 5 avg=5.00
+  ( 1,47)  worst= 5 avg=5.00
+  ( 1,50)  worst= 5 avg=5.00
+  ( 1,51)  worst= 5 avg=5.00
+  ( 1,54)  worst= 5 avg=5.00
+  ( 1,55)  worst= 5 avg=5.00
+  ( 1,58)  worst= 5 avg=5.00
+  ( 1,59)  worst= 5 avg=5.00
+  ( 1,62)  worst= 5 avg=5.00
+  ( 1,63)  worst= 5 avg=5.00
+  (63, 1)  worst= 5 avg=5.00
+  (63, 2)  worst= 5 avg=5.00
+  (63, 5)  worst= 5 avg=5.00
+  (63, 6)  worst= 5 avg=5.00
+  (63, 9)  worst= 5 avg=5.00
+  (63,10)  worst= 5 avg=5.00
+  (63,13)  worst= 5 avg=5.00
+  (63,14)  worst= 5 avg=5.00
+  (63,17)  worst= 5 avg=5.00
+  (63,18)  worst= 5 avg=5.00
+  (63,21)  worst= 5 avg=5.00
+  (63,22)  worst= 5 avg=5.00
+  (63,25)  worst= 5 avg=5.00
+  (63,26)  worst= 5 avg=5.00
+  (63,29)  worst= 5 avg=5.00
+  (63,30)  worst= 5 avg=5.00
+  (63,33)  worst= 5 avg=5.00
+  (63,34)  worst= 5 avg=5.00
+  (63,37)  worst= 5 avg=5.00
+  (63,38)  worst= 5 avg=5.00
+  (63,41)  worst= 5 avg=5.00
+  (63,42)  worst= 5 avg=5.00
+  (63,45)  worst= 5 avg=5.00
+  (63,46)  worst= 5 avg=5.00
+  (63,49)  worst= 5 avg=5.00
+  (63,50)  worst= 5 avg=5.00
+  (63,53)  worst= 5 avg=5.00
+  (63,54)  worst= 5 avg=5.00
+  (63,57)  worst= 5 avg=5.00
+  (63,58)  worst= 5 avg=5.00
+  (63,61)  worst= 5 avg=5.00
+  (63,62)  worst= 5 avg=5.00
+  ( 1, 0)  worst= 6 avg=6.00
+  ( 1, 1)  worst= 6 avg=6.00
+  ( 1, 4)  worst= 6 avg=6.00
+  ( 1, 5)  worst= 6 avg=6.00
+  ( 1, 8)  worst= 6 avg=6.00
+  ( 1, 9)  worst= 6 avg=6.00
+  ( 1,12)  worst= 6 avg=6.00
+  ( 1,13)  worst= 6 avg=6.00
+  ( 1,16)  worst= 6 avg=6.00
+  ( 1,17)  worst= 6 avg=6.00
+  ( 1,20)  worst= 6 avg=6.00
+  ( 1,21)  worst= 6 avg=6.00
+  ( 1,24)  worst= 6 avg=6.00
+  ( 1,25)  worst= 6 avg=6.00
+  ( 1,28)  worst= 6 avg=6.00
+  ( 1,29)  worst= 6 avg=6.00
+  ( 1,32)  worst= 6 avg=6.00
+  ( 1,33)  worst= 6 avg=6.00
+  ( 1,36)  worst= 6 avg=6.00
+  ( 1,37)  worst= 6 avg=6.00
+  ( 1,40)  worst= 6 avg=6.00
+  ( 1,41)  worst= 6 avg=6.00
+  ( 1,44)  worst= 6 avg=6.00
+  ( 1,45)  worst= 6 avg=6.00
+  ( 1,48)  worst= 6 avg=6.00
+  ( 1,49)  worst= 6 avg=6.00
+  ( 1,52)  worst= 6 avg=6.00
+  ( 1,53)  worst= 6 avg=6.00
+  ( 1,56)  worst= 6 avg=6.00
+  ( 1,57)  worst= 6 avg=6.00
+  ( 1,60)  worst= 6 avg=6.00
+  ( 1,61)  worst= 6 avg=6.00
+  (63, 0)  worst= 6 avg=6.00
+  (63, 3)  worst= 6 avg=6.00
+  (63, 4)  worst= 6 avg=6.00
+  (63, 7)  worst= 6 avg=6.00
+  (63, 8)  worst= 6 avg=6.00
+  (63,11)  worst= 6 avg=6.00
+  (63,12)  worst= 6 avg=6.00
+  (63,15)  worst= 6 avg=6.00
+  (63,16)  worst= 6 avg=6.00
+  (63,19)  worst= 6 avg=6.00
+  (63,20)  worst= 6 avg=6.00
+  (63,23)  worst= 6 avg=6.00
+  (63,24)  worst= 6 avg=6.00
+  (63,27)  worst= 6 avg=6.00
+  (63,28)  worst= 6 avg=6.00
+  (63,31)  worst= 6 avg=6.00
+  (63,32)  worst= 6 avg=6.00
+  (63,35)  worst= 6 avg=6.00
+  (63,36)  worst= 6 avg=6.00
+  (63,39)  worst= 6 avg=6.00
+  (63,40)  worst= 6 avg=6.00
+  (63,43)  worst= 6 avg=6.00
+  (63,44)  worst= 6 avg=6.00
+  (63,47)  worst= 6 avg=6.00
+  (63,48)  worst= 6 avg=6.00
+  (63,51)  worst= 6 avg=6.00
+  (63,52)  worst= 6 avg=6.00
+  (63,55)  worst= 6 avg=6.00
+  (63,56)  worst= 6 avg=6.00
+  (63,59)  worst= 6 avg=6.00
+  (63,60)  worst= 6 avg=6.00
+  (63,63)  worst= 6 avg=6.00

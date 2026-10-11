@@ -1,0 +1,113 @@
+agentwork-launch: tag=track5/b21d-screen schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+try lin2   0 maxworst|z|=       3.0 killkey=0x123456789abcdef KEEP
+try lin2   1 maxworst|z|=       3.1 killkey=0xdeadbeefdeadbeef KEEP
+try lin2   2 maxworst|z|=       3.5 killkey=0x0 KEEP
+try lin2   3 maxworst|z|=     217.5 killkey=0x0 kill
+try lin2   4 maxworst|z|=       3.2 killkey=0x9e3779b97f4a7c15 KEEP
+try lin2   5 maxworst|z|=       3.3 killkey=0xaaaaaaaaaaaaaaaa KEEP
+try lin2   6 maxworst|z|=      10.8 killkey=0x0 kill
+try lin2   7 maxworst|z|=       2.6 killkey=0x5555555555555555 KEEP
+try lin2   8 maxworst|z|=       2.4 killkey=0xf0b52a9e7d8ba2b5 KEEP
+try lin2   9 maxworst|z|=      63.0 killkey=0x0 kill
+try lin2  10 maxworst|z|=       2.6 killkey=0x0 KEEP
+try lin2  11 maxworst|z|=       3.1 killkey=0xaaaaaaaaaaaaaaaa KEEP
+try lin2  12 maxworst|z|=      25.0 killkey=0x0 kill
+try lin2  13 maxworst|z|=       5.2 killkey=0x92988f142674743 KEEP
+try lin2  14 maxworst|z|=     529.0 killkey=0x92988f142674743 kill
+try lin2  15 maxworst|z|=       3.0 killkey=0xf0b52a9e7d8ba2b5 KEEP
+try lin2  16 maxworst|z|=       2.5 killkey=0x5555555555555555 KEEP
+try lin2  17 maxworst|z|=      35.9 killkey=0xf0b52a9e7d8ba2b5 kill
+try lin2  18 maxworst|z|=       6.4 killkey=0x0 KEEP
+try lin2  19 maxworst|z|=       2.8 killkey=0x5555555555555555 KEEP
+try lin2  20 maxworst|z|=       3.3 killkey=0xaaaaaaaaaaaaaaaa KEEP
+try lin2  21 maxworst|z|=       8.5 killkey=0x0 KEEP
+try lin2  22 maxworst|z|=       3.0 killkey=0x0 KEEP
+try lin2  23 maxworst|z|=      38.4 killkey=0x0 kill
+try lin2  24 maxworst|z|=      15.1 killkey=0x0 kill
+try lin2  25 maxworst|z|=      26.7 killkey=0xf0b52a9e7d8ba2b5 kill
+try lin2  26 maxworst|z|=       4.6 killkey=0x0 KEEP
+try lin2  27 maxworst|z|=       2.8 killkey=0x0 KEEP
+try lin2  28 maxworst|z|=       4.2 killkey=0x0 KEEP
+try lin2  29 maxworst|z|=      10.1 killkey=0x123456789abcdef kill
+try lin2  30 maxworst|z|=       9.3 killkey=0x0 KEEP
+try lin2  31 maxworst|z|=       3.6 killkey=0x123456789abcdef KEEP
+try lin2  32 maxworst|z|=      10.9 killkey=0x92988f142674743 kill
+try lin2  33 maxworst|z|=       2.9 killkey=0x0 KEEP
+try lin2  34 maxworst|z|=       2.8 killkey=0x9e3779b97f4a7c15 KEEP
+try lin2  35 maxworst|z|=    9427.5 killkey=0x0 kill
+try lin2  36 maxworst|z|=     105.9 killkey=0x0 kill
+try lin2  37 maxworst|z|=     160.9 killkey=0x0 kill
+try lin2  38 maxworst|z|=      25.7 killkey=0x0 kill
+try lin2  39 maxworst|z|=      16.8 killkey=0x123456789abcdef kill
+try lin2  40 maxworst|z|=     108.2 killkey=0x0 kill
+try lin2  41 maxworst|z|=       2.5 killkey=0xf0b52a9e7d8ba2b5 KEEP
+try lin2  42 maxworst|z|=      13.8 killkey=0x92988f142674743 kill
+try lin2  43 maxworst|z|=       2.5 killkey=0x92988f142674743 KEEP
+try lin2  44 maxworst|z|=      32.7 killkey=0xf0b52a9e7d8ba2b5 kill
+try lin2  45 maxworst|z|=      14.3 killkey=0x123456789abcdef kill
+try lin2  46 maxworst|z|=       2.9 killkey=0x9e3779b97f4a7c15 KEEP
+try lin2  47 maxworst|z|=       2.9 killkey=0x9e3779b97f4a7c15 KEEP
+try lin2  48 maxworst|z|=     130.6 killkey=0x9e3779b97f4a7c15 kill
+try lin2  49 maxworst|z|=     109.6 killkey=0x0 kill
+try lin2  50 maxworst|z|=       3.1 killkey=0x0 KEEP
+try lin2  51 maxworst|z|=       6.4 killkey=0x0 KEEP
+try lin2  52 maxworst|z|=       3.5 killkey=0x0 KEEP
+try lin2  53 maxworst|z|=      12.6 killkey=0x0 kill
+try lin2  54 maxworst|z|=      28.0 killkey=0x0 kill
+try lin2  55 maxworst|z|=       3.0 killkey=0xdeadbeefdeadbeef KEEP
+try lin2  56 maxworst|z|=     182.4 killkey=0x92988f142674743 kill
+try lin2  57 maxworst|z|=       4.3 killkey=0x0 KEEP
+try lin2  58 maxworst|z|=       3.3 killkey=0xf0b52a9e7d8ba2b5 KEEP
+try lin2  59 maxworst|z|=       2.7 killkey=0x5555555555555555 KEEP
+try lin2  60 maxworst|z|=       2.9 killkey=0x123456789abcdef KEEP
+try lin2  61 maxworst|z|=       4.1 killkey=0x0 KEEP
+try lin2  62 maxworst|z|=      14.6 killkey=0x92988f142674743 kill
+try lin2  63 maxworst|z|=       3.5 killkey=0xf0b52a9e7d8ba2b5 KEEP
+try lin2  64 maxworst|z|=     124.1 killkey=0x0 kill
+try lin2  65 maxworst|z|=     400.1 killkey=0x5555555555555555 kill
+try lin2  66 maxworst|z|=       2.6 killkey=0x5555555555555555 KEEP
+try lin2  67 maxworst|z|=      45.9 killkey=0x123456789abcdef kill
+try lin2  68 maxworst|z|=      48.1 killkey=0xaaaaaaaaaaaaaaaa kill
+try lin2  69 maxworst|z|=      59.4 killkey=0x0 kill
+try lin2  70 maxworst|z|=       2.6 killkey=0x92988f142674743 KEEP
+try lin2  71 maxworst|z|=       2.6 killkey=0x0 KEEP
+try lin2  72 maxworst|z|=     354.1 killkey=0xaaaaaaaaaaaaaaaa kill
+try lin2  73 maxworst|z|=      11.5 killkey=0xf0b52a9e7d8ba2b5 kill
+try lin2  74 maxworst|z|=       3.4 killkey=0x5555555555555555 KEEP
+try lin2  75 maxworst|z|=      28.5 killkey=0x0 kill
+try lin2  76 maxworst|z|=       2.6 killkey=0x92988f142674743 KEEP
+try lin2  77 maxworst|z|=      11.7 killkey=0x0 kill
+try lin2  78 maxworst|z|=       3.6 killkey=0x0 KEEP
+try lin2  79 maxworst|z|=      18.1 killkey=0xdeadbeefdeadbeef kill
+try lin2  80 maxworst|z|=      32.6 killkey=0x123456789abcdef kill
+try lin2  81 maxworst|z|=     118.4 killkey=0x0 kill
+try lin2  82 maxworst|z|=       3.5 killkey=0x0 KEEP
+try lin2  83 maxworst|z|=       2.9 killkey=0xf0b52a9e7d8ba2b5 KEEP
+try lin2  84 maxworst|z|=     761.0 killkey=0x5555555555555555 kill
+try lin2  85 maxworst|z|=      46.0 killkey=0x0 kill
+try lin2  86 maxworst|z|=       3.1 killkey=0xf0b52a9e7d8ba2b5 KEEP
+try lin2  87 maxworst|z|=       3.0 killkey=0x9e3779b97f4a7c15 KEEP
+try lin2  88 maxworst|z|=     107.3 killkey=0x0 kill
+try lin2  89 maxworst|z|=       8.0 killkey=0x0 KEEP
+try lin2  90 maxworst|z|=       3.9 killkey=0xaaaaaaaaaaaaaaaa KEEP
+try lin2  91 maxworst|z|=     373.5 killkey=0x0 kill
+try lin2  92 maxworst|z|=       3.2 killkey=0xf0b52a9e7d8ba2b5 KEEP
+try lin2  93 maxworst|z|=       3.0 killkey=0xaaaaaaaaaaaaaaaa KEEP
+try lin2  94 maxworst|z|=       2.7 killkey=0x0 KEEP
+try lin2  95 maxworst|z|=       2.5 killkey=0xffffffffffffffff KEEP
+try lin2  96 maxworst|z|=       6.5 killkey=0x5555555555555555 KEEP
+try lin2  97 maxworst|z|=    1445.3 killkey=0x0 kill
+try lin2  98 maxworst|z|=       2.9 killkey=0x0 KEEP
+try lin2  99 maxworst|z|=      56.3 killkey=0x123456789abcdef kill
+=== 56/100 KEEP (75.5s) ===
+KEEP z=2.38 [(11, 63, 18, 52), (25, 8, 20, 51), (5, 31, 14, 34), (50, 6, 1, 54), (14, 1, 62, 39)]
+KEEP z=2.48 [(29, 54, 38, 39), (10, 4, 46, 6), (37, 5, 57, 49), (10, 29, 35, 33), (30, 17, 44, 50)]
+KEEP z=2.48 [(54, 57, 52, 30), (35, 37, 55, 38), (50, 28, 44, 59), (54, 3, 31, 19), (29, 62, 47, 20)]
+KEEP z=2.54 [(51, 60, 17, 25), (55, 12, 54, 47), (6, 45, 23, 7), (11, 9, 30, 10), (10, 56, 32, 14)]
+KEEP z=2.54 [(17, 26, 48, 9), (50, 1, 56, 42), (3, 4, 50, 22), (44, 11, 7, 6), (25, 18, 35, 1)]
+KEEP z=2.56 [(10, 49, 5, 20), (48, 17, 9, 49), (24, 13, 61, 26), (15, 32, 39, 45), (24, 8, 10, 48)]
+KEEP z=2.60 [(26, 17, 19, 57), (25, 59, 4, 46), (21, 60, 17, 37), (27, 58, 32, 13), (27, 30, 47, 10)]
+KEEP z=2.61 [(46, 40, 52, 29), (13, 39, 32, 42), (21, 11, 8, 29), (29, 62, 17, 56), (6, 27, 43, 58)]
+KEEP z=2.62 [(60, 53, 59, 40), (41, 47, 25, 52), (21, 1, 38, 4), (14, 27, 53, 46), (44, 29, 45, 20)]
+KEEP z=2.62 [(9, 17, 16, 54), (51, 37, 20, 58), (63, 62, 40, 8), (19, 20, 0, 15), (13, 15, 33, 42)]
+SUMMARY lin2-5st: 56/100 keep, min z=2.4, median z=6.4

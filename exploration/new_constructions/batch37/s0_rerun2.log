@@ -1,0 +1,14 @@
+2026-10-11T02:42:18Z S0-RERUN2 start
+2026-10-11T02:42:18Z S0-RERUN2 start stg_and1
+RESULT name=stg_and1 cells=192 area=640 crit=4.0
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+2026-10-11T02:42:20Z S0-RERUN2 done stg_and1 rc=0
+2026-10-11T02:42:20Z S0-RERUN2 start stg_shand
+RESULT name=stg_shand cells=164 area=556 crit=4.0
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+2026-10-11T02:42:22Z S0-RERUN2 done stg_shand rc=0
+2026-10-11T02:42:22Z S0-RERUN2 start stg_shand_nm
+RESULT name=stg_shand_nm cells=100 area=300 crit=3.0
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+2026-10-11T02:42:23Z S0-RERUN2 done stg_shand_nm rc=0
+2026-10-11T02:42:23Z S0-RERUN2 ALL DONE

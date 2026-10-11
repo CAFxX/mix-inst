@@ -1,0 +1,65 @@
+=== S1 rest-batch start Wed Oct  7 20:23:11 UTC 2026 ===
+=== S1 cd2_p_a43b7_l513_nw ===
+  [DIFF] key=0x92988f142674743 worst|z|=2.6 fisher_logp=-3.47 bonf_logp=-1.90
+  LIN: PASS (rej=0)  DIFF: PASS (rej=0)
+[S1 cd2_p_a43b7_l513_nw] LIN/DIFF 39s: LIN PASS DIFF PASS; marginal 750s: PB rej=0 RD rej=0
+[S1 cd2_p_a43b7_l513_nw] verdict: CAL_PASS
+--- cd2_p_a43b7_l513_nw done rc=0 Wed Oct  7 20:35:46 UTC 2026 ---
+=== S1 cd2_p_a3b7_l513_nw ===
+=== S1 rest-batch start Wed Oct  7 20:54:04 UTC 2026 ===
+SKIP cd2_p_a43b7_l513_nw (already done)
+=== S1 cd2_p_a3b7_l513_nw ===
+  [DIFF] key=0x92988f142674743 worst|z|=2.0 fisher_logp=-0.18 bonf_logp=-0.23
+  LIN: PASS (rej=0)  DIFF: PASS (rej=0)
+[S1 cd2_p_a3b7_l513_nw] LIN/DIFF 28s: LIN PASS DIFF PASS; marginal 1266s: PB rej=0 RD rej=0
+[S1 cd2_p_a3b7_l513_nw] verdict: CAL_PASS
+--- cd2_p_a3b7_l513_nw done rc=0 Wed Oct  7 20:56:56 UTC 2026 ---
+=== S1 cd2_p_a61b1_l513_nw ===
+  [DIFF] key=0x92988f142674743 worst|z|=2.0 fisher_logp=-0.28 bonf_logp=-0.14
+  LIN: PASS (rej=0)  DIFF: PASS (rej=0)
+[S1 cd2_p_a61b1_l513_nw] LIN/DIFF 101s: LIN PASS DIFF PASS; marginal 519s: PB rej=0 RD rej=0
+[S1 cd2_p_a61b1_l513_nw] verdict: CAL_PASS
+--- cd2_p_a61b1_l513_nw done rc=0 Wed Oct  7 21:05:39 UTC 2026 ---
+=== S1 cd2_p_a11b7_l311_nw ===
+  [DIFF] key=0x92988f142674743 worst|z|=3.3 fisher_logp=-4.49 bonf_logp=-4.03
+  LIN: PASS (rej=0)  DIFF: FLAG (rej=4)
+[S1 cd2_p_a11b7_l311_nw] LIN/DIFF 22s: LIN PASS DIFF FLAG; SKIPPED (LIN/DIFF kill)
+[S1 cd2_p_a11b7_l311_nw] verdict: FLAG
+--- cd2_p_a11b7_l311_nw done rc=0 Wed Oct  7 21:06:03 UTC 2026 ---
+=== S1 cd2_p_a11b3_l311_nw ===
+  [DIFF] key=0x92988f142674743 worst|z|=19.1 fisher_logp=-345.30 bonf_logp=-183.24
+  LIN: PASS (rej=0)  DIFF: FLAG (rej=9)
+[S1 cd2_p_a11b3_l311_nw] LIN/DIFF 24s: LIN PASS DIFF FLAG; SKIPPED (LIN/DIFF kill)
+[S1 cd2_p_a11b3_l311_nw] verdict: FLAG
+--- cd2_p_a11b3_l311_nw done rc=0 Wed Oct  7 21:06:29 UTC 2026 ---
+=== S1 cd2_p_a3b1_l311_nw ===
+  [DIFF] key=0x92988f142674743 worst|z|=12.8 fisher_logp=-125.97 bonf_logp=-81.42
+  LIN: PASS (rej=0)  DIFF: FLAG (rej=9)
+[S1 cd2_p_a3b1_l311_nw] LIN/DIFF 40s: LIN PASS DIFF FLAG; SKIPPED (LIN/DIFF kill)
+[S1 cd2_p_a3b1_l311_nw] verdict: FLAG
+--- cd2_p_a3b1_l311_nw done rc=0 Wed Oct  7 21:07:10 UTC 2026 ---
+=== S1 cd2_p_a53b1_l311_nw ===
+  [DIFF] key=0x92988f142674743 worst|z|=21.8 fisher_logp=-245.92 bonf_logp=-238.78
+  LIN: PASS (rej=0)  DIFF: FLAG (rej=9)
+[S1 cd2_p_a53b1_l311_nw] LIN/DIFF 52s: LIN PASS DIFF FLAG; SKIPPED (LIN/DIFF kill)
+[S1 cd2_p_a53b1_l311_nw] verdict: FLAG
+--- cd2_p_a53b1_l311_nw done rc=0 Wed Oct  7 21:08:23 UTC 2026 ---
+=== S1 cd2_p_a53b2_l311_nw ===
+  [DIFF] key=0x92988f142674743 worst|z|=3.5 fisher_logp=-8.97 bonf_logp=-4.60
+  LIN: PASS (rej=0)  DIFF: FLAG (rej=3)
+[S1 cd2_p_a53b2_l311_nw] LIN/DIFF 41s: LIN PASS DIFF FLAG; SKIPPED (LIN/DIFF kill)
+[S1 cd2_p_a53b2_l311_nw] verdict: FLAG
+--- cd2_p_a53b2_l311_nw done rc=0 Wed Oct  7 21:09:05 UTC 2026 ---
+=== S1 cd2_p_a61b1_l311_nw ===
+  [DIFF] key=0x92988f142674743 worst|z|=1.9 fisher_logp=-0.57 bonf_logp=-0.06
+  LIN: PASS (rej=0)  DIFF: FLAG (rej=4)
+[S1 cd2_p_a61b1_l311_nw] LIN/DIFF 26s: LIN PASS DIFF FLAG; SKIPPED (LIN/DIFF kill)
+[S1 cd2_p_a61b1_l311_nw] verdict: FLAG
+--- cd2_p_a61b1_l311_nw done rc=0 Wed Oct  7 21:09:33 UTC 2026 ---
+=== S1 cd2_p_a9b1_l311_nw ===
+  [DIFF] key=0x92988f142674743 worst|z|=1.7 fisher_logp=-0.14 bonf_logp=0.53
+  LIN: PASS (rej=0)  DIFF: PASS (rej=0)
+[S1 cd2_p_a9b1_l311_nw] LIN/DIFF 40s: LIN PASS DIFF PASS; marginal 307s: PB rej=0 RD rej=0
+[S1 cd2_p_a9b1_l311_nw] verdict: CAL_PASS
+--- cd2_p_a9b1_l311_nw done rc=0 Wed Oct  7 21:14:43 UTC 2026 ---
+S1_REST_ALLDONE

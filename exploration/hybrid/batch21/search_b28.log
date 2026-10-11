@@ -1,0 +1,69 @@
+agentwork-launch: tag=track5/b28 schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+POSCTRL b33c: worst|z|=3.34 killkey=0x9e3779b97f4a7c15 -> KEEP-OK
+try MU5   0 maxworst|z|=       3.5 killkey=0xffffffffffffffff KEEP LINPROXY-D=27@0xffffffffffffffff
+try MU5   1 maxworst|z|=       3.3 killkey=0x92988f142674743 KEEP LINPROXY-D=23@0xffffffffffffffff
+try MU5   2 maxworst|z|=     165.3 killkey=0xdeadbeefdeadbeef kill
+try MU5   3 maxworst|z|=      13.4 killkey=0xf0b52a9e7d8ba2b5 kill
+try MU5   4 maxworst|z|=      15.8 killkey=0xaaaaaaaaaaaaaaaa kill
+try MU5   5 maxworst|z|=      23.9 killkey=0x9e3779b97f4a7c15 kill
+try MU5   6 maxworst|z|=     123.8 killkey=0x5555555555555555 kill
+try MU5   7 maxworst|z|=       4.8 killkey=0xaaaaaaaaaaaaaaaa KEEP LINPROXY-D=25@0x0
+try MU5   8 maxworst|z|=     187.5 killkey=0x9e3779b97f4a7c15 kill
+try MU5   9 maxworst|z|=       3.4 killkey=0x0 KEEP LINPROXY-D=22@0x0
+try MU5  10 maxworst|z|=       3.3 killkey=0xffffffffffffffff KEEP LINPROXY-D=30@0x0
+try MU5  11 maxworst|z|=      28.2 killkey=0x0 kill
+try MU5  12 maxworst|z|=       5.7 killkey=0xf0b52a9e7d8ba2b5 KEEP LINPROXY-D=24@0xffffffffffffffff
+try MU5  13 maxworst|z|=     185.7 killkey=0xdeadbeefdeadbeef kill
+try MU5  14 maxworst|z|=       3.0 killkey=0xaaaaaaaaaaaaaaaa KEEP LINPROXY-D=28@0x0
+try MU5  15 maxworst|z|=       4.4 killkey=0x92988f142674743 KEEP LINPROXY-D=21@0xffffffffffffffff
+try MU5  16 maxworst|z|=       3.2 killkey=0x9e3779b97f4a7c15 KEEP LINPROXY-D=26@0xffffffffffffffff
+try MU5  17 maxworst|z|=      46.9 killkey=0x9e3779b97f4a7c15 kill
+try MU5  18 maxworst|z|=       2.3 killkey=0x9e3779b97f4a7c15 KEEP LINPROXY-D=20@0x0
+try MU5  19 maxworst|z|=       3.0 killkey=0x123456789abcdef KEEP LINPROXY-D=28@0xffffffffffffffff
+try MU5  20 maxworst|z|=       3.3 killkey=0xdeadbeefdeadbeef KEEP LINPROXY-D=22@0x0
+try MU5  21 maxworst|z|=      28.2 killkey=0x9e3779b97f4a7c15 kill
+try MU5  22 maxworst|z|=       2.7 killkey=0x92988f142674743 KEEP LINPROXY-D=27@0x0
+try MU5  23 maxworst|z|=       6.2 killkey=0x123456789abcdef KEEP LINPROXY-D=23@0xffffffffffffffff
+try MU5  24 maxworst|z|=       4.7 killkey=0x9e3779b97f4a7c15 KEEP LINPROXY-D=22@0xffffffffffffffff
+try MU5  25 maxworst|z|=      28.9 killkey=0xdeadbeefdeadbeef kill
+try MU5  26 maxworst|z|=      25.9 killkey=0xdeadbeefdeadbeef kill
+try MU5  27 maxworst|z|=      14.9 killkey=0xdeadbeefdeadbeef kill
+try MU5  28 maxworst|z|=      12.0 killkey=0xf0b52a9e7d8ba2b5 kill
+try MU5  29 maxworst|z|=      15.1 killkey=0x123456789abcdef kill
+try MU5  30 maxworst|z|=       2.7 killkey=0xf0b52a9e7d8ba2b5 KEEP LINPROXY-D=24@0x0
+try MU5  31 maxworst|z|=      12.8 killkey=0x123456789abcdef kill
+try MU5  32 maxworst|z|=       2.8 killkey=0x92988f142674743 KEEP LINPROXY-D=27@0x0
+try MU5  33 maxworst|z|=       3.2 killkey=0x9e3779b97f4a7c15 KEEP LINPROXY-D=27@0xffffffffffffffff
+try MU5  34 maxworst|z|=      54.3 killkey=0xffffffffffffffff kill
+try MU5  35 maxworst|z|=      56.5 killkey=0x9e3779b97f4a7c15 kill
+try MU5  36 maxworst|z|=      11.1 killkey=0xdeadbeefdeadbeef kill
+try MU5  37 maxworst|z|=     114.3 killkey=0xdeadbeefdeadbeef kill
+try MU5  38 maxworst|z|=       5.7 killkey=0x92988f142674743 KEEP LINPROXY-D=18@0xffffffffffffffff
+try MU5  39 maxworst|z|=      55.8 killkey=0xdeadbeefdeadbeef kill
+=== MU5: 19/40 KEEP ===
+KEEP MU5 z=2.34 D=20 [(48, 8, 49, 10), (42, 41, 48, 55), (5, 45, 43, 14), (49, 12, 1, 63), (31, 2, 16, 39)]
+KEEP MU5 z=2.66 D=27 [(24, 19, 61, 46), (20, 12, 30, 22), (4, 45, 56, 31), (53, 48, 18, 32), (46, 3, 37, 49)]
+KEEP MU5 z=2.66 D=24 [(56, 27, 53, 29), (48, 23, 15, 20), (7, 47, 2, 37), (31, 16, 57, 30), (2, 53, 21, 43)]
+KEEP MU5 z=2.82 D=27 [(50, 57, 56, 12), (27, 22, 62, 7), (18, 10, 19, 55), (61, 38, 36, 49), (16, 26, 35, 59)]
+KEEP MU5 z=3.04 D=28 [(39, 27, 37, 26), (15, 33, 52, 28), (37, 33, 7, 10), (56, 2, 58, 50), (53, 24, 37, 9)]
+KEEP MU5 z=3.04 D=28 [(33, 48, 16, 39), (54, 60, 51, 44), (34, 37, 30, 3), (48, 19, 43, 26), (42, 33, 61, 32)]
+KEEP MU5 z=3.23 D=26 [(30, 57, 51, 25), (6, 9, 47, 23), (33, 60, 9, 58), (8, 5, 36, 31), (27, 16, 51, 37)]
+KEEP MU5 z=3.24 D=27 [(62, 50, 55, 2), (48, 58, 23, 30), (44, 45, 7, 40), (49, 26, 32, 35), (46, 51, 43, 44)]
+KEEP MU5 z=3.25 D=22 [(39, 61, 24, 4), (57, 43, 58, 6), (36, 24, 20, 40), (53, 23, 47, 12), (17, 60, 49, 18)]
+KEEP MU5 z=3.26 D=23 [(15, 17, 6, 21), (44, 12, 19, 8), (15, 1, 31, 18), (7, 36, 46, 55), (32, 13, 52, 25)]
+SUMMARY MU5: 19/40 keep, min z=2.3, median z=12.0
+try MU6   0 maxworst|z|=       2.7 killkey=0xf0b52a9e7d8ba2b5 KEEP LINPROXY-D=26@0x0
+try MU6   1 maxworst|z|=       2.2 killkey=0x123456789abcdef KEEP LINPROXY-D=24@0x0
+try MU6   2 maxworst|z|=       2.9 killkey=0x123456789abcdef KEEP LINPROXY-D=28@0x0
+try MU6   3 maxworst|z|=       3.0 killkey=0xdeadbeefdeadbeef KEEP LINPROXY-D=22@0x0
+try MU6   4 maxworst|z|=       3.5 killkey=0x0 KEEP LINPROXY-D=26@0x0
+try MU6   5 maxworst|z|=       3.0 killkey=0xdeadbeefdeadbeef KEEP LINPROXY-D=21@0x0
+try MU6   6 maxworst|z|=       3.4 killkey=0xf0b52a9e7d8ba2b5 KEEP LINPROXY-D=25@0x0
+try MU6   7 maxworst|z|=       3.2 killkey=0xffffffffffffffff KEEP LINPROXY-D=23@0x0
+try MU6   8 maxworst|z|=       2.5 killkey=0xaaaaaaaaaaaaaaaa KEEP LINPROXY-D=18@0x0
+try MU6   9 maxworst|z|=       3.6 killkey=0x92988f142674743 KEEP LINPROXY-D=32@0x0
+try MU6  10 maxworst|z|=       2.4 killkey=0x5555555555555555 KEEP LINPROXY-D=28@0x0
+try MU6  11 maxworst|z|=       2.6 killkey=0xf0b52a9e7d8ba2b5 KEEP LINPROXY-D=23@0x0
+try MU6  12 maxworst|z|=       2.8 killkey=0x123456789abcdef KEEP LINPROXY-D=21@0xffffffffffffffff
+try MU6  13 maxworst|z|=       2.8 killkey=0xaaaaaaaaaaaaaaaa KEEP LINPROXY-D=25@0xffffffffffffffff
+try MU6  14 maxworst|z|=       2.9 killkey=0xf0b52a9e7d8ba2b5 KEEP LINPROXY-D=21@0xffffffffffffffff

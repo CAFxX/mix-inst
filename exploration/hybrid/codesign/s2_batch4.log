@@ -1,0 +1,34 @@
+=== S2 batch-4 driver start Wed Oct  7 20:56:07 UTC 2026 ===
+=== S2 batch-4 driver start Wed Oct  7 21:34:23 UTC 2026 ===
+S1 batch marker seen after 0min wait
+=== S2 cd2_p_a43b7_l513_nw (S1=CAL_PASS) ===
+--- cd2_p_a43b7_l513_nw: PASS max_repeats=0 max|z|=12.2 (all 115 deltas)
+=== S2 cd2_p_a53b1_l513_nw (S1=FLAG) ===
+=== S2 batch-4 driver start Wed Oct  7 23:05:35 UTC 2026 ===
+S1 batch marker seen after 0min wait
+SKIP cd2_p_a43b7_l513_nw (s2 done: PASS max_repeats=0 max|z|=12.2 (all 115 deltas))
+=== S2 cd2_p_a53b1_l513_nw (S1=FLAG) ===
+=== S2 batch-4 driver start Thu Oct  8 00:42:46 UTC 2026 ===
+S1 batch marker seen after 0min wait
+SKIP cd2_p_a43b7_l513_nw (s2 done: PASS max_repeats=0 max|z|=12.2 (all 115 deltas))
+=== S2 cd2_p_a53b1_l513_nw (S1=FLAG) ===
+--- cd2_p_a53b1_l513_nw: PASS max_repeats=0 max|z|=13.9 (all 115 deltas)
+=== S2 cd2_p_a3b7_l513_nw (S1=CAL_PASS) ===
+=== S2 batch-4 driver start Thu Oct  8 01:37:02 UTC 2026 ===
+S1 batch marker seen after 0min wait
+SKIP cd2_p_a43b7_l513_nw (s2 done: PASS max_repeats=0 max|z|=12.2 (all 115 deltas))
+SKIP cd2_p_a53b1_l513_nw (s2 done: PASS max_repeats=0 max|z|=13.9 (all 115 deltas))
+=== S2 cd2_p_a3b7_l513_nw (S1=CAL_PASS) ===
+--- cd2_p_a3b7_l513_nw: PASS max_repeats=0 max|z|=5.4 (all 115 deltas)
+=== S2 cd2_p_a61b1_l513_nw (S1=CAL_PASS) ===
+--- cd2_p_a61b1_l513_nw: PASS max_repeats=0 max|z|=5.7 (all 115 deltas)
+SKIP cd2_p_a11b7_l311_nw (S1=FLAG)
+SKIP cd2_p_a11b3_l311_nw (S1=FLAG)
+SKIP cd2_p_a3b1_l311_nw (S1=FLAG)
+SKIP cd2_p_a53b1_l311_nw (S1=FLAG)
+SKIP cd2_p_a53b2_l311_nw (S1=FLAG)
+SKIP cd2_p_a61b1_l311_nw (S1=FLAG)
+=== S2 cd2_p_a9b1_l311_nw (S1=CAL_PASS) ===
+Terminated
+--- cd2_p_a9b1_l311_nw: 
+S2_BATCH4_ALLDONE

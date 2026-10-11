@@ -1,0 +1,134 @@
+agentwork-launch: tag=track5/b21f-screen schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+try mix   0 nlin2=1 maxworst|z|=      95.1 killkey=0x0 kill
+try mix   1 nlin2=4 maxworst|z|=     390.9 killkey=0xaaaaaaaaaaaaaaaa kill
+try mix   2 nlin2=3 maxworst|z|=    2538.3 killkey=0x0 kill
+try mix   3 nlin2=4 maxworst|z|=       2.7 killkey=0x92988f142674743 KEEP
+try mix   4 nlin2=2 maxworst|z|=    1018.4 killkey=0xdeadbeefdeadbeef kill
+try mix   5 nlin2=0 maxworst|z|=    4160.3 killkey=0x0 kill
+try mix   6 nlin2=3 maxworst|z|=     163.2 killkey=0x0 kill
+try mix   7 nlin2=3 maxworst|z|=      49.5 killkey=0xf0b52a9e7d8ba2b5 kill
+try mix   8 nlin2=2 maxworst|z|=      55.9 killkey=0x0 kill
+try mix   9 nlin2=2 maxworst|z|=    1588.4 killkey=0x0 kill
+try mix  10 nlin2=3 maxworst|z|=      24.7 killkey=0x0 kill
+try mix  11 nlin2=3 maxworst|z|=      93.6 killkey=0xf0b52a9e7d8ba2b5 kill
+try mix  12 nlin2=2 maxworst|z|=     620.7 killkey=0x0 kill
+try mix  13 nlin2=3 maxworst|z|=      32.9 killkey=0x123456789abcdef kill
+try mix  14 nlin2=0 maxworst|z|=    1336.9 killkey=0x0 kill
+try mix  15 nlin2=1 maxworst|z|=   11360.6 killkey=0x0 kill
+try mix  16 nlin2=2 maxworst|z|=     948.1 killkey=0x0 kill
+try mix  17 nlin2=4 maxworst|z|=       3.3 killkey=0xaaaaaaaaaaaaaaaa KEEP
+try mix  18 nlin2=3 maxworst|z|=     108.3 killkey=0x0 kill
+try mix  19 nlin2=4 maxworst|z|=      77.5 killkey=0x0 kill
+try mix  20 nlin2=2 maxworst|z|=     439.5 killkey=0x0 kill
+try mix  21 nlin2=2 maxworst|z|=     112.6 killkey=0x0 kill
+try mix  22 nlin2=3 maxworst|z|=      44.8 killkey=0x0 kill
+try mix  23 nlin2=2 maxworst|z|=     231.0 killkey=0x0 kill
+try mix  24 nlin2=2 maxworst|z|=     428.5 killkey=0x0 kill
+try mix  25 nlin2=1 maxworst|z|=     194.1 killkey=0x0 kill
+try mix  26 nlin2=2 maxworst|z|=    9252.1 killkey=0x0 kill
+try mix  27 nlin2=3 maxworst|z|=     298.8 killkey=0x9e3779b97f4a7c15 kill
+try mix  28 nlin2=3 maxworst|z|=      60.5 killkey=0x0 kill
+try mix  29 nlin2=0 maxworst|z|=     892.3 killkey=0x0 kill
+try mix  30 nlin2=0 maxworst|z|=    5455.8 killkey=0x0 kill
+try mix  31 nlin2=1 maxworst|z|=     102.0 killkey=0x0 kill
+try mix  32 nlin2=0 maxworst|z|=   34262.7 killkey=0x0 kill
+try mix  33 nlin2=3 maxworst|z|=    4276.6 killkey=0x0 kill
+try mix  34 nlin2=1 maxworst|z|=     348.2 killkey=0x5555555555555555 kill
+try mix  35 nlin2=3 maxworst|z|=      64.8 killkey=0x0 kill
+try mix  36 nlin2=2 maxworst|z|=   17413.7 killkey=0x9e3779b97f4a7c15 kill
+try mix  37 nlin2=2 maxworst|z|=    1723.2 killkey=0x123456789abcdef kill
+try mix  38 nlin2=1 maxworst|z|=  195147.1 killkey=0x0 kill
+try mix  39 nlin2=1 maxworst|z|=     465.0 killkey=0x0 kill
+try mix  40 nlin2=4 maxworst|z|=     197.2 killkey=0x92988f142674743 kill
+try mix  41 nlin2=2 maxworst|z|=     407.6 killkey=0x0 kill
+try mix  42 nlin2=1 maxworst|z|=    5434.5 killkey=0x0 kill
+try mix  43 nlin2=1 maxworst|z|=     379.6 killkey=0x0 kill
+try mix  44 nlin2=2 maxworst|z|=     184.5 killkey=0xffffffffffffffff kill
+try mix  45 nlin2=3 maxworst|z|=     280.2 killkey=0x92988f142674743 kill
+try mix  46 nlin2=0 maxworst|z|=    9055.6 killkey=0x0 kill
+try mix  47 nlin2=0 maxworst|z|=    1055.8 killkey=0x0 kill
+try mix  48 nlin2=2 maxworst|z|=      90.9 killkey=0x0 kill
+try mix  49 nlin2=4 maxworst|z|=     188.7 killkey=0x0 kill
+try mix  50 nlin2=1 maxworst|z|=    1126.5 killkey=0x5555555555555555 kill
+try mix  51 nlin2=4 maxworst|z|=     395.4 killkey=0xf0b52a9e7d8ba2b5 kill
+try mix  52 nlin2=2 maxworst|z|=    1177.0 killkey=0x0 kill
+try mix  53 nlin2=2 maxworst|z|=    1205.5 killkey=0x0 kill
+try mix  54 nlin2=4 maxworst|z|=     124.5 killkey=0xf0b52a9e7d8ba2b5 kill
+try mix  55 nlin2=4 maxworst|z|=       4.4 killkey=0x0 KEEP
+try mix  56 nlin2=1 maxworst|z|=    2560.7 killkey=0x0 kill
+try mix  57 nlin2=2 maxworst|z|=      74.5 killkey=0x0 kill
+try mix  58 nlin2=1 maxworst|z|=     443.1 killkey=0x92988f142674743 kill
+try mix  59 nlin2=2 maxworst|z|=      54.5 killkey=0x92988f142674743 kill
+try mix  60 nlin2=2 maxworst|z|=     131.0 killkey=0x0 kill
+try mix  61 nlin2=1 maxworst|z|=    2438.0 killkey=0x0 kill
+try mix  62 nlin2=0 maxworst|z|=    4530.4 killkey=0x0 kill
+try mix  63 nlin2=1 maxworst|z|=    6521.8 killkey=0x0 kill
+try mix  64 nlin2=3 maxworst|z|=     774.4 killkey=0x0 kill
+try mix  65 nlin2=1 maxworst|z|=    1039.6 killkey=0x0 kill
+try mix  66 nlin2=0 maxworst|z|=     780.9 killkey=0x9e3779b97f4a7c15 kill
+try mix  67 nlin2=1 maxworst|z|=   29939.1 killkey=0x0 kill
+try mix  68 nlin2=3 maxworst|z|=      78.1 killkey=0x0 kill
+try mix  69 nlin2=3 maxworst|z|=       8.3 killkey=0x5555555555555555 KEEP
+try mix  70 nlin2=3 maxworst|z|=     290.8 killkey=0x0 kill
+try mix  71 nlin2=2 maxworst|z|=    1132.7 killkey=0x0 kill
+try mix  72 nlin2=3 maxworst|z|=      87.3 killkey=0x0 kill
+try mix  73 nlin2=4 maxworst|z|=      16.1 killkey=0x123456789abcdef kill
+try mix  74 nlin2=2 maxworst|z|=  385543.0 killkey=0x0 kill
+try mix  75 nlin2=2 maxworst|z|=     319.7 killkey=0x0 kill
+try mix  76 nlin2=1 maxworst|z|=     788.9 killkey=0x0 kill
+try mix  77 nlin2=1 maxworst|z|=     754.4 killkey=0x0 kill
+try mix  78 nlin2=1 maxworst|z|=     341.9 killkey=0x0 kill
+try mix  79 nlin2=3 maxworst|z|=       3.7 killkey=0xdeadbeefdeadbeef KEEP
+try mix  80 nlin2=2 maxworst|z|=      51.7 killkey=0x92988f142674743 kill
+try mix  81 nlin2=2 maxworst|z|=     303.8 killkey=0x0 kill
+try mix  82 nlin2=1 maxworst|z|=   25217.3 killkey=0x0 kill
+try mix  83 nlin2=1 maxworst|z|=    1479.2 killkey=0x92988f142674743 kill
+try mix  84 nlin2=3 maxworst|z|=  739994.3 killkey=0x0 kill
+try mix  85 nlin2=2 maxworst|z|=     994.1 killkey=0x0 kill
+try mix  86 nlin2=1 maxworst|z|=    2068.3 killkey=0x5555555555555555 kill
+try mix  87 nlin2=2 maxworst|z|=     754.8 killkey=0xaaaaaaaaaaaaaaaa kill
+try mix  88 nlin2=3 maxworst|z|=    2637.1 killkey=0xaaaaaaaaaaaaaaaa kill
+try mix  89 nlin2=2 maxworst|z|=     147.3 killkey=0xaaaaaaaaaaaaaaaa kill
+try mix  90 nlin2=2 maxworst|z|=      88.7 killkey=0x9e3779b97f4a7c15 kill
+try mix  91 nlin2=0 maxworst|z|=   15435.3 killkey=0x0 kill
+try mix  92 nlin2=0 maxworst|z|=   36020.2 killkey=0x0 kill
+try mix  93 nlin2=2 maxworst|z|=      54.4 killkey=0x0 kill
+try mix  94 nlin2=2 maxworst|z|=      26.7 killkey=0x123456789abcdef kill
+try mix  95 nlin2=2 maxworst|z|=    4724.7 killkey=0x0 kill
+try mix  96 nlin2=3 maxworst|z|=      26.9 killkey=0x0 kill
+try mix  97 nlin2=2 maxworst|z|=     162.8 killkey=0x0 kill
+try mix  98 nlin2=2 maxworst|z|=      14.4 killkey=0x123456789abcdef kill
+try mix  99 nlin2=2 maxworst|z|=    9315.9 killkey=0x0 kill
+try mix 100 nlin2=2 maxworst|z|=     742.6 killkey=0x0 kill
+try mix 101 nlin2=0 maxworst|z|=    3597.4 killkey=0x0 kill
+try mix 102 nlin2=3 maxworst|z|=      12.1 killkey=0x0 kill
+try mix 103 nlin2=3 maxworst|z|=     813.0 killkey=0x0 kill
+try mix 104 nlin2=0 maxworst|z|=     928.5 killkey=0x0 kill
+try mix 105 nlin2=4 maxworst|z|=       2.5 killkey=0xaaaaaaaaaaaaaaaa KEEP
+try mix 106 nlin2=3 maxworst|z|=      29.0 killkey=0x9e3779b97f4a7c15 kill
+try mix 107 nlin2=2 maxworst|z|=    3084.4 killkey=0x92988f142674743 kill
+try mix 108 nlin2=3 maxworst|z|=       3.5 killkey=0x0 KEEP
+try mix 109 nlin2=1 maxworst|z|=     863.6 killkey=0x0 kill
+try mix 110 nlin2=2 maxworst|z|=   43518.5 killkey=0x0 kill
+try mix 111 nlin2=1 maxworst|z|=     824.9 killkey=0x5555555555555555 kill
+try mix 112 nlin2=1 maxworst|z|=   19716.0 killkey=0x0 kill
+try mix 113 nlin2=3 maxworst|z|=     222.4 killkey=0x0 kill
+try mix 114 nlin2=2 maxworst|z|=     377.1 killkey=0x123456789abcdef kill
+try mix 115 nlin2=2 maxworst|z|=     747.3 killkey=0x0 kill
+try mix 116 nlin2=2 maxworst|z|=      73.4 killkey=0x0 kill
+try mix 117 nlin2=1 maxworst|z|=     748.9 killkey=0x0 kill
+try mix 118 nlin2=2 maxworst|z|=     334.0 killkey=0x0 kill
+try mix 119 nlin2=2 maxworst|z|=    2013.6 killkey=0x0 kill
+=== 7/120 KEEP (387.3s) ===
+KEEP nlin2=4 z=2.51 [('lin2', [1, 50, 27, 30]), ('lin2', [56, 21, 18, 58]), ('lin2', [53, 21, 10, 11]), ('std', [41, 27, 59]), ('lin2', [30, 60, 58, 5])]
+KEEP nlin2=4 z=2.72 [('lin2', [32, 46, 4, 5]), ('lin2', [55, 24, 52, 31]), ('lin2', [17, 21, 6, 53]), ('std', [26, 34, 52]), ('lin2', [37, 36, 28, 19])]
+KEEP nlin2=4 z=3.32 [('lin2', [50, 42, 31, 26]), ('lin2', [5, 53, 32, 39]), ('lin2', [10, 57, 28, 48]), ('std', [61, 13, 24]), ('lin2', [4, 10, 55, 26])]
+KEEP nlin2=3 z=3.49 [('lin2', [5, 46, 15, 35]), ('std', [23, 40, 12]), ('lin2', [30, 63, 40, 57]), ('std', [28, 9, 43]), ('lin2', [38, 14, 22, 20])]
+KEEP nlin2=3 z=3.66 [('lin2', [61, 47, 43, 48]), ('lin2', [5, 17, 10, 49]), ('std', [16, 57, 45]), ('std', [2, 29, 21]), ('lin2', [54, 35, 58, 50])]
+KEEP nlin2=4 z=4.41 [('lin2', [41, 12, 19, 6]), ('std', [60, 52, 21]), ('lin2', [3, 39, 57, 44]), ('lin2', [61, 28, 3, 4]), ('lin2', [14, 42, 10, 21])]
+KEEP nlin2=3 z=8.31 [('std', [41, 35, 13]), ('lin2', [9, 17, 63, 49]), ('std', [52, 57, 22]), ('lin2', [8, 28, 45, 44]), ('lin2', [35, 25, 22, 58])]
+SUMMARY nlin2=0: 0/13 keep, min z=780.9
+SUMMARY nlin2=1: 0/26 keep, min z=95.1
+SUMMARY nlin2=2: 0/43 keep, min z=14.4
+SUMMARY nlin2=3: 3/27 keep, min z=3.5
+SUMMARY nlin2=4: 4/11 keep, min z=2.5

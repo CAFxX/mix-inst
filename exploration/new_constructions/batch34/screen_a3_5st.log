@@ -1,0 +1,202 @@
+agentwork-launch: tag=track6/b34-screen-a3 schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+try   0 maxworst|z|=224334.0 killkey=0x0 kill
+try   1 maxworst|z|= 11504.1 killkey=0x0 kill
+try   2 maxworst|z|= 43308.5 killkey=0x0 kill
+try   3 maxworst|z|= 22510.0 killkey=0x0 kill
+try   4 maxworst|z|= 45996.3 killkey=0x0 kill
+try   5 maxworst|z|= 17365.0 killkey=0x0 kill
+try   6 maxworst|z|= 10664.5 killkey=0x0 kill
+try   7 maxworst|z|= 30763.4 killkey=0x0 kill
+try   8 maxworst|z|=  6130.1 killkey=0x0 kill
+try   9 maxworst|z|= 79733.6 killkey=0x0 kill
+try  10 maxworst|z|= 12633.7 killkey=0x0 kill
+try  11 maxworst|z|= 12833.9 killkey=0x0 kill
+try  12 maxworst|z|=  7118.4 killkey=0x0 kill
+try  13 maxworst|z|=403421.1 killkey=0x0 kill
+try  14 maxworst|z|=324325.7 killkey=0x0 kill
+try  15 maxworst|z|= 39354.0 killkey=0x0 kill
+try  16 maxworst|z|= 56946.1 killkey=0x0 kill
+try  17 maxworst|z|=  5399.9 killkey=0x0 kill
+try  18 maxworst|z|= 27034.2 killkey=0x0 kill
+try  19 maxworst|z|= 33798.0 killkey=0x0 kill
+try  20 maxworst|z|= 51863.5 killkey=0x0 kill
+try  21 maxworst|z|=331604.1 killkey=0x0 kill
+try  22 maxworst|z|= 33113.0 killkey=0x0 kill
+try  23 maxworst|z|= 39492.5 killkey=0x0 kill
+try  24 maxworst|z|=121844.4 killkey=0x0 kill
+try  25 maxworst|z|=922819.3 killkey=0x0 kill
+try  26 maxworst|z|= 37029.4 killkey=0x0 kill
+try  27 maxworst|z|= 16984.2 killkey=0x0 kill
+try  28 maxworst|z|=121438.3 killkey=0x0 kill
+try  29 maxworst|z|= 18868.9 killkey=0x0 kill
+try  30 maxworst|z|= 14241.1 killkey=0x0 kill
+try  31 maxworst|z|= 85588.9 killkey=0x0 kill
+try  32 maxworst|z|= 19416.7 killkey=0x0 kill
+try  33 maxworst|z|=213553.7 killkey=0x0 kill
+try  34 maxworst|z|=  8323.9 killkey=0x0 kill
+try  35 maxworst|z|= 51923.8 killkey=0x0 kill
+try  36 maxworst|z|= 38740.0 killkey=0x0 kill
+try  37 maxworst|z|=1330251.4 killkey=0x0 kill
+try  38 maxworst|z|= 23500.6 killkey=0x0 kill
+try  39 maxworst|z|=  9311.4 killkey=0x0 kill
+try  40 maxworst|z|=356039.9 killkey=0x0 kill
+try  41 maxworst|z|= 94155.7 killkey=0x0 kill
+try  42 maxworst|z|= 51955.0 killkey=0x0 kill
+try  43 maxworst|z|=  7137.9 killkey=0x0 kill
+try  44 maxworst|z|= 27427.8 killkey=0x0 kill
+try  45 maxworst|z|= 19479.6 killkey=0x0 kill
+try  46 maxworst|z|=137212.2 killkey=0x0 kill
+try  47 maxworst|z|= 36150.4 killkey=0x0 kill
+try  48 maxworst|z|= 21731.7 killkey=0x0 kill
+try  49 maxworst|z|= 13699.1 killkey=0x0 kill
+try  50 maxworst|z|= 23153.2 killkey=0x0 kill
+try  51 maxworst|z|= 10467.7 killkey=0x0 kill
+try  52 maxworst|z|=411398.2 killkey=0x0 kill
+try  53 maxworst|z|= 58296.6 killkey=0x0 kill
+try  54 maxworst|z|=329374.4 killkey=0x0 kill
+try  55 maxworst|z|= 11318.6 killkey=0x0 kill
+try  56 maxworst|z|= 13913.6 killkey=0x0 kill
+try  57 maxworst|z|= 20520.5 killkey=0x123456789abcdef kill
+try  58 maxworst|z|= 15517.6 killkey=0x0 kill
+try  59 maxworst|z|= 31829.7 killkey=0x0 kill
+try  60 maxworst|z|= 40556.0 killkey=0x0 kill
+try  61 maxworst|z|=144562.8 killkey=0x0 kill
+try  62 maxworst|z|=  7071.7 killkey=0x0 kill
+try  63 maxworst|z|= 91287.3 killkey=0xdeadbeefdeadbeef kill
+try  64 maxworst|z|=  6920.6 killkey=0x0 kill
+try  65 maxworst|z|= 21246.0 killkey=0x0 kill
+try  66 maxworst|z|=157022.0 killkey=0xaaaaaaaaaaaaaaaa kill
+try  67 maxworst|z|= 42990.4 killkey=0x0 kill
+try  68 maxworst|z|=  5436.4 killkey=0x0 kill
+try  69 maxworst|z|= 22338.4 killkey=0x0 kill
+try  70 maxworst|z|=  5450.1 killkey=0x0 kill
+try  71 maxworst|z|=252795.4 killkey=0x0 kill
+try  72 maxworst|z|= 12113.7 killkey=0x0 kill
+try  73 maxworst|z|= 24981.5 killkey=0x0 kill
+try  74 maxworst|z|= 13357.6 killkey=0x0 kill
+try  75 maxworst|z|=  5917.6 killkey=0x0 kill
+try  76 maxworst|z|=121216.7 killkey=0x0 kill
+try  77 maxworst|z|= 95210.0 killkey=0x0 kill
+try  78 maxworst|z|= 42284.1 killkey=0x0 kill
+try  79 maxworst|z|= 13088.3 killkey=0x0 kill
+try  80 maxworst|z|= 16101.7 killkey=0x0 kill
+try  81 maxworst|z|=  7010.9 killkey=0x0 kill
+try  82 maxworst|z|=127350.0 killkey=0x0 kill
+try  83 maxworst|z|= 10782.2 killkey=0x0 kill
+try  84 maxworst|z|=  4719.1 killkey=0x0 kill
+try  85 maxworst|z|= 24862.7 killkey=0x0 kill
+try  86 maxworst|z|= 34057.4 killkey=0x0 kill
+try  87 maxworst|z|=139283.9 killkey=0x0 kill
+try  88 maxworst|z|= 14307.4 killkey=0x0 kill
+try  89 maxworst|z|= 25673.1 killkey=0x0 kill
+try  90 maxworst|z|= 11494.6 killkey=0x0 kill
+try  91 maxworst|z|= 27386.1 killkey=0x0 kill
+try  92 maxworst|z|= 47781.1 killkey=0x0 kill
+try  93 maxworst|z|=841395.1 killkey=0x0 kill
+try  94 maxworst|z|=1480000.0 killkey=0x0 kill
+try  95 maxworst|z|= 23970.2 killkey=0x0 kill
+try  96 maxworst|z|=  6223.3 killkey=0xaaaaaaaaaaaaaaaa kill
+try  97 maxworst|z|= 18888.3 killkey=0x0 kill
+try  98 maxworst|z|= 15762.1 killkey=0x0 kill
+try  99 maxworst|z|= 45707.5 killkey=0xaaaaaaaaaaaaaaaa kill
+try 100 maxworst|z|= 37881.3 killkey=0x0 kill
+try 101 maxworst|z|= 14457.8 killkey=0x0 kill
+try 102 maxworst|z|= 16333.5 killkey=0x0 kill
+try 103 maxworst|z|=131236.7 killkey=0x0 kill
+try 104 maxworst|z|=  7336.4 killkey=0x0 kill
+try 105 maxworst|z|=157716.0 killkey=0x0 kill
+try 106 maxworst|z|=165190.4 killkey=0x0 kill
+try 107 maxworst|z|= 33913.6 killkey=0x0 kill
+try 108 maxworst|z|= 14073.2 killkey=0x0 kill
+try 109 maxworst|z|= 19448.3 killkey=0x5555555555555555 kill
+try 110 maxworst|z|= 10975.7 killkey=0x0 kill
+try 111 maxworst|z|= 12419.7 killkey=0x0 kill
+try 112 maxworst|z|= 90968.4 killkey=0x0 kill
+try 113 maxworst|z|= 49374.4 killkey=0x0 kill
+try 114 maxworst|z|= 17285.9 killkey=0x0 kill
+try 115 maxworst|z|=  6397.5 killkey=0x0 kill
+try 116 maxworst|z|= 12950.8 killkey=0x0 kill
+try 117 maxworst|z|=  6289.9 killkey=0x0 kill
+try 118 maxworst|z|= 16577.7 killkey=0x0 kill
+try 119 maxworst|z|= 13692.1 killkey=0x0 kill
+try 120 maxworst|z|= 42952.6 killkey=0x0 kill
+try 121 maxworst|z|=220902.2 killkey=0x0 kill
+try 122 maxworst|z|= 71726.9 killkey=0x0 kill
+try 123 maxworst|z|=190805.3 killkey=0x0 kill
+try 124 maxworst|z|=1480000.0 killkey=0x0 kill
+try 125 maxworst|z|= 27272.7 killkey=0x0 kill
+try 126 maxworst|z|=  7269.4 killkey=0x0 kill
+try 127 maxworst|z|= 60460.4 killkey=0x0 kill
+try 128 maxworst|z|= 32310.5 killkey=0x0 kill
+try 129 maxworst|z|= 29102.0 killkey=0x0 kill
+try 130 maxworst|z|= 14394.1 killkey=0x0 kill
+try 131 maxworst|z|= 34691.8 killkey=0x0 kill
+try 132 maxworst|z|= 18185.0 killkey=0x0 kill
+try 133 maxworst|z|=  5179.2 killkey=0x0 kill
+try 134 maxworst|z|= 29879.6 killkey=0x0 kill
+try 135 maxworst|z|=  7876.3 killkey=0x0 kill
+try 136 maxworst|z|=  7815.0 killkey=0x0 kill
+try 137 maxworst|z|=  4128.2 killkey=0x0 kill
+try 138 maxworst|z|=  4491.6 killkey=0x0 kill
+try 139 maxworst|z|= 22991.2 killkey=0x0 kill
+try 140 maxworst|z|=  7142.5 killkey=0x92988f142674743 kill
+try 141 maxworst|z|= 35641.3 killkey=0x0 kill
+try 142 maxworst|z|=650852.6 killkey=0x0 kill
+try 143 maxworst|z|= 20447.7 killkey=0x123456789abcdef kill
+try 144 maxworst|z|= 40631.7 killkey=0x0 kill
+try 145 maxworst|z|=1480000.0 killkey=0x0 kill
+try 146 maxworst|z|=547375.2 killkey=0x0 kill
+try 147 maxworst|z|= 35415.4 killkey=0x5555555555555555 kill
+try 148 maxworst|z|=119259.3 killkey=0x0 kill
+try 149 maxworst|z|= 27743.0 killkey=0x0 kill
+try 150 maxworst|z|= 13657.4 killkey=0x0 kill
+try 151 maxworst|z|= 37140.0 killkey=0x0 kill
+try 152 maxworst|z|= 66413.6 killkey=0x0 kill
+try 153 maxworst|z|=  9886.1 killkey=0x0 kill
+try 154 maxworst|z|= 34343.8 killkey=0x0 kill
+try 155 maxworst|z|=133734.3 killkey=0x0 kill
+try 156 maxworst|z|=  5552.0 killkey=0x0 kill
+try 157 maxworst|z|=  9838.9 killkey=0x5555555555555555 kill
+try 158 maxworst|z|=287285.0 killkey=0x0 kill
+try 159 maxworst|z|= 51017.8 killkey=0x0 kill
+try 160 maxworst|z|= 55334.3 killkey=0xaaaaaaaaaaaaaaaa kill
+try 161 maxworst|z|= 12114.1 killkey=0x0 kill
+try 162 maxworst|z|= 54562.0 killkey=0x0 kill
+try 163 maxworst|z|=122375.4 killkey=0x0 kill
+try 164 maxworst|z|= 21940.9 killkey=0x0 kill
+try 165 maxworst|z|=  9433.1 killkey=0x0 kill
+try 166 maxworst|z|= 12696.2 killkey=0x0 kill
+try 167 maxworst|z|=  7542.0 killkey=0x0 kill
+try 168 maxworst|z|= 88413.6 killkey=0x0 kill
+try 169 maxworst|z|= 37112.6 killkey=0x0 kill
+try 170 maxworst|z|= 71697.3 killkey=0x0 kill
+try 171 maxworst|z|=105356.1 killkey=0x0 kill
+try 172 maxworst|z|= 11861.7 killkey=0x0 kill
+try 173 maxworst|z|=  7004.7 killkey=0x0 kill
+try 174 maxworst|z|= 65720.9 killkey=0x0 kill
+try 175 maxworst|z|= 24345.8 killkey=0x0 kill
+try 176 maxworst|z|=461404.0 killkey=0x0 kill
+try 177 maxworst|z|= 14867.2 killkey=0x0 kill
+try 178 maxworst|z|= 11166.7 killkey=0x0 kill
+try 179 maxworst|z|=573311.7 killkey=0x0 kill
+try 180 maxworst|z|= 12829.0 killkey=0x0 kill
+try 181 maxworst|z|= 67329.9 killkey=0x0 kill
+try 182 maxworst|z|= 49957.2 killkey=0x0 kill
+try 183 maxworst|z|= 27635.9 killkey=0x0 kill
+try 184 maxworst|z|= 47142.1 killkey=0x0 kill
+try 185 maxworst|z|= 27206.9 killkey=0x0 kill
+try 186 maxworst|z|= 30269.9 killkey=0x0 kill
+try 187 maxworst|z|=213261.0 killkey=0x0 kill
+try 188 maxworst|z|=1480000.0 killkey=0x0 kill
+try 189 maxworst|z|= 17559.1 killkey=0x0 kill
+try 190 maxworst|z|= 35187.2 killkey=0x0 kill
+try 191 maxworst|z|= 23488.3 killkey=0x0 kill
+try 192 maxworst|z|= 25611.8 killkey=0x0 kill
+try 193 maxworst|z|= 26766.1 killkey=0x0 kill
+try 194 maxworst|z|= 23638.6 killkey=0x0 kill
+try 195 maxworst|z|= 17571.9 killkey=0x0 kill
+try 196 maxworst|z|= 30342.1 killkey=0x0 kill
+try 197 maxworst|z|=  4741.4 killkey=0x0 kill
+try 198 maxworst|z|=  7948.6 killkey=0x0 kill
+try 199 maxworst|z|= 18040.7 killkey=0x5555555555555555 kill
+=== a3-5: 0/200 KEEP (seed=0xb34) ===

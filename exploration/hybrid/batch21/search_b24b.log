@@ -1,0 +1,14 @@
+agentwork-launch: tag=track5/b24b-climb schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+climb k4-s0 start z=53.6
+climb k4-s0 iter 2 NEW BEST z=49.25
+climb k4-s0 iter 29 NEW BEST z=37.88
+climb k4-s0 iter 32 NEW BEST z=35.55
+climb k4-s0 iter 71 NEW BEST z=34.66
+climb k4-s0 iter 75 NEW BEST z=23.12
+climb k4-s0 iter 122 NEW BEST z=21.79
+climb k4-s0 iter 159 NEW BEST z=19.56
+climb k4-s0 iter 176 NEW BEST z=17.01
+climb k4-s0 iter 181 NEW BEST z=7.16
+climb k4-s0 CLEARED THE BAR at iter 181
+B24B TOTAL: 1 climbs, 1 cleared (<10), 172.7s
+best k4 seed_z=53.6 -> 7.16 keep=True

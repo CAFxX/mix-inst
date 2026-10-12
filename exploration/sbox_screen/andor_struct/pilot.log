@@ -1,0 +1,44 @@
+agentwork-launch: tag=track2/andor-struct schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+try   0 Q/H1 ANDOR(14, 24, 40, 53)             inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|=737092.4 min_fisher=   -inf worstkey=0xdeadbeefdeadbeef inner-kill
+try   1 Q/H1 ANDOR(2, 29, 44, 51)              inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|=739994.3 min_fisher=   -inf worstkey=0xffffffffffffffff inner-kill
+try   2 Q/H1 ANDOR(15, 22, 36, 52)             inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|=380148.5 min_fisher=   -inf worstkey=0xffffffffffffffff inner-kill
+try   3 Q/H1 ANDOR(9, 29, 41, 58)              inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|=739994.3 min_fisher=   -inf worstkey=0x0 inner-kill
+try   4 Q/H1 ANDOR(10, 29, 34, 51)             inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|=739994.3 min_fisher=   -inf worstkey=0x0 inner-kill
+try   5 Q/H1 ANDOR(13, 24, 35, 51)             inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|=739994.3 min_fisher=   -inf worstkey=0x0 inner-kill
+try   6 Q/H1 ANDOR(13, 22, 40, 62)             inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|=739994.3 min_fisher=   -inf worstkey=0xffffffffffffffff inner-kill
+try   7 Q/H1 ANDOR(7, 23, 43, 58)              inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|=922819.3 min_fisher=   -inf worstkey=0xffffffffffffffff inner-kill
+try   8 Q/H3 ANDOR(14, 31, 45, 52)             inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|= 84519.3 min_fisher=   -inf worstkey=0xffffffffffffffff inner-kill
+try   9 Q/H3 ANDOR(12, 25, 43, 60)             inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|=144113.0 min_fisher=   -inf worstkey=0xffffffffffffffff inner-kill
+try  10 Q/H3 ANDOR(5, 31, 35, 58)              inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|= 46827.9 min_fisher=   -inf worstkey=0x0 inner-kill
+try  11 Q/H3 ANDOR(13, 30, 40, 61)             inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|= 98656.1 min_fisher=   -inf worstkey=0x0 inner-kill
+try  12 Q/H3 ANDOR(1, 23, 41, 52)              inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|= 89587.4 min_fisher=   -inf worstkey=0x123456789abcdef inner-kill
+try  13 Q/H3 ANDOR(10, 22, 35, 51)             inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|= 60938.6 min_fisher=   -inf worstkey=0xffffffffffffffff inner-kill
+try  14 Q/H3 ANDOR(10, 23, 34, 52)             inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|=142242.5 min_fisher=   -inf worstkey=0x92988f142674743 inner-kill
+try  15 Q/H3 ANDOR(3, 21, 36, 60)              inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|=153793.8 min_fisher=   -inf worstkey=0x0 inner-kill
+try  16 P/H1 ANDOR(31, 33, 20, 44)             inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|=753778.8 min_fisher=   -inf worstkey=0x92988f142674743 inner-kill
+try  17 P/H1 ANDOR(7, 57, 9, 55)               inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|=739994.3 min_fisher=   -inf worstkey=0x0 inner-kill
+try  18 P/H1 ANDOR(16, 48, 9, 55)              inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|=1480000.0 min_fisher=   -inf worstkey=0x0 inner-kill
+try  19 P/H1 ANDOR(9, 55, 7, 57)               inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|=1480000.0 min_fisher=   -inf worstkey=0x5555555555555555 inner-kill
+try  20 P/H1 ANDOR(25, 39, 24, 40)             inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|=739994.3 min_fisher=   -inf worstkey=0x0 inner-kill
+try  21 P/H1 ANDOR(8, 56, 26, 38)              inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|=719680.5 min_fisher=   -inf worstkey=0xffffffffffffffff inner-kill
+try  22 P/H3 ANDOR(28, 36, 7, 57)              inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|= 93214.9 min_fisher=   -inf worstkey=0xffffffffffffffff inner-kill
+try  23 P/H3 ANDOR(21, 43, 3, 61)              inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|=211833.5 min_fisher=   -inf worstkey=0xaaaaaaaaaaaaaaaa inner-kill
+try  24 P/H3 ANDOR(25, 39, 30, 34)             inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|=104947.7 min_fisher=   -inf worstkey=0x5555555555555555 inner-kill
+try  25 P/H3 ANDOR(7, 57, 18, 46)              inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|=146997.9 min_fisher=   -inf worstkey=0x5555555555555555 inner-kill
+try  26 P/H3 ANDOR(4, 60, 12, 52)              inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|= 37021.8 min_fisher=   -inf worstkey=0x0 inner-kill
+try  27 P/H3 ANDOR(19, 45, 12, 52)             inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|=142185.9 min_fisher=   -inf worstkey=0x0 inner-kill
+try  28 R/H1 ANDOR(27, 5, 62, 22)              inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|=1480000.0 min_fisher=   -inf worstkey=0x0 inner-kill
+try  29 R/H1 ANDOR(0, 12, 54, 36)              inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|=739994.3 min_fisher=   -inf worstkey=0x0 inner-kill
+try  30 R/H1 ANDOR(32, 61, 54, 43)             inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|=739994.3 min_fisher=   -inf worstkey=0x0 inner-kill
+try  31 R/H1 ANDOR(33, 44, 42, 22)             inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|=461404.0 min_fisher=   -inf worstkey=0x0 inner-kill
+try  32 R/H3 ANDOR(39, 41, 26, 51)             inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|= 49649.5 min_fisher=   -inf worstkey=0xffffffffffffffff inner-kill
+try  33 R/H3 ANDOR(49, 15, 18, 7)              inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|= 63563.5 min_fisher=   -inf worstkey=0x123456789abcdef inner-kill
+try  34 R/H3 ANDOR(40, 28, 37, 36)             inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|=  6990.1 min_fisher=   -inf worstkey=0x0 inner-kill
+try  35 R/H3 ANDOR(42, 49, 14, 51)             inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|= 26350.2 min_fisher=   -inf worstkey=0x9e3779b97f4a7c15 inner-kill
+=== andor_struct: 0/36 KEEP (inner_kills=36 fisher_kills=0) (seed=0xb804) ===
+    minz[P/H1]=719680.5
+    minz[P/H3]=37021.8
+    minz[Q/H1]=380148.5
+    minz[Q/H3]=46827.9
+    minz[R/H1]=461404.0
+    minz[R/H3]=6990.1

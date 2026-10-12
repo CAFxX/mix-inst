@@ -1,0 +1,4 @@
+selected rank 28: form=muxD5f z=3.35 n_reject=0 stages=[('MUXD', 17, 22, 10, 55), ('MUXD', 63, 62, 49, 57), ('MUXD', 29, 39, 35, 6), ('MUXD', 62, 4, 44, 36), ('MUXD', 5, 54, 31, 46)]
+bit-exact C-vs-Python: 2000/2000 OK
+screener-vs-bundle: 500/500 OK
+bundle t6_b62_28 written (form=muxD5f weakness-gated triage z=3.35 n_reject=0)

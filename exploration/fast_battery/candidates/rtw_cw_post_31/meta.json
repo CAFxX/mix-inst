@@ -1,0 +1,26 @@
+{
+ "name": "rtw_cw_post_31",
+ "description": "tweak Z3: chioff31 constant whitening post=GOLDEN64",
+ "composition": "tweak Z3: chioff31 constant whitening post=GOLDEN64",
+ "rtl_top": "rtw_cw_post_31",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x124ab0598dc1755e"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x81b48a11c4c12577"
+  }
+ ]
+}

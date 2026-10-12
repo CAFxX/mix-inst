@@ -1,0 +1,14 @@
+=== S0a [hyb29_mu5_018] started 2026-10-12T10:34:42Z
+--- S0a tail:
+XCHECK hyb29_mu5_018: PASS 10000/10000 C==Python
+=== S0a [hyb29_mu5_018] rc=0 wall=6s
+=== S1 [hyb29_mu5_018] started 2026-10-12T10:34:49Z
+--- S1 tail:
+  [DIFF] key=0x123456789abcdef worst|z|=2.0 fisher_logp=-1.54 bonf_logp=-0.19
+  [DIFF] key=0xf0b52a9e7d8ba2b5 worst|z|=1.7 fisher_logp=-0.72 bonf_logp=0.56
+  [DIFF] key=0x92988f142674743 worst|z|=1.6 fisher_logp=-0.36 bonf_logp=0.59
+  LIN: PASS (rej=0)  DIFF: PASS (rej=0)
+[S1 hyb29_mu5_018] LIN/DIFF 74s: LIN PASS DIFF PASS; marginal 418s: PB rej=2 RD rej=0
+[S1 hyb29_mu5_018] verdict: FLAG
+=== S1 [hyb29_mu5_018] rc=2 wall=427s
+BATTERY-FAIL stage=S1-screen [hyb29_mu5_018] (see /home/hatch/workspace/mix/exploration/fast_battery/results/hyb29_mu5_018/battery.log)

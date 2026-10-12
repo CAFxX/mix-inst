@@ -1,0 +1,4 @@
+2026-10-12T10:38:34Z poll 1 rc=1: BACKOFF: load=12.78 >= 12.0 — queue heavy work, retry later
+2026-10-12T10:39:35Z poll 2 rc=0: CLEAR: load=10.22, no frozen processes
+2026-10-12T10:39:35Z BACKOFF CLEAR after 2 polls; launching pilot
+error: work item already exists: track2-andor-struct (use heartbeat/done)

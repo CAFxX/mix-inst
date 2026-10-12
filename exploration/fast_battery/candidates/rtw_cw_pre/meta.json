@@ -1,0 +1,26 @@
+{
+ "name": "rtw_cw_pre",
+ "description": "tweak Z3: chioff13all constant whitening pre=GOLDEN64",
+ "composition": "tweak Z3: chioff13all constant whitening pre=GOLDEN64",
+ "rtl_top": "rtw_cw_pre",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xa0bfa356f5cb1b54"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xd8e92c092665e933"
+  }
+ ]
+}

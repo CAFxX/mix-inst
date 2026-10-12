@@ -1,0 +1,242 @@
+2026-10-12T10:32:56Z wrapper start: ranks 0..36 nkeeps=37 deadline=1791844376
+2026-10-12T10:32:56Z backoff clear after 1 polls
+2026-10-12T10:32:56Z backoff clear: S0 sweep ranks 0..36
+2026-10-12T10:32:56Z rank 0: bundling t6_b62_0
+rank 0 bundle exit=0
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT t6_b62_0: cells=6890 area=21906 crit=19.0
+RESULT name=t6_b62_0 cells=6890 area=21906 crit=19.0 delay_ratio=0.184 area_ratio=0.620 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+rank 0 (t6_b62_0) run_synth exit=0
+2026-10-12T10:33:52Z rank 1: bundling t6_b62_1
+rank 1 bundle exit=0
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT t6_b62_1: cells=6362 area=20604 crit=19.1
+RESULT name=t6_b62_1 cells=6362 area=20604 crit=19.1 delay_ratio=0.185 area_ratio=0.583 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+rank 1 (t6_b62_1) run_synth exit=0
+2026-10-12T10:34:47Z rank 2: bundling t6_b62_2
+rank 2 bundle exit=0
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT t6_b62_2: cells=6419 area=20730 crit=19.1
+RESULT name=t6_b62_2 cells=6419 area=20730 crit=19.1 delay_ratio=0.185 area_ratio=0.587 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+rank 2 (t6_b62_2) run_synth exit=0
+2026-10-12T10:35:57Z rank 3: bundling t6_b62_3
+rank 3 bundle exit=0
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT t6_b62_3: cells=5765 area=16849 crit=19.6
+RESULT name=t6_b62_3 cells=5765 area=16849 crit=19.6 delay_ratio=0.189 area_ratio=0.477 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+rank 3 (t6_b62_3) run_synth exit=0
+2026-10-12T10:36:50Z rank 4: bundling t6_b62_4
+rank 4 bundle exit=0
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT t6_b62_4: cells=6257 area=20468 crit=19.2
+RESULT name=t6_b62_4 cells=6257 area=20468 crit=19.2 delay_ratio=0.186 area_ratio=0.579 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+rank 4 (t6_b62_4) run_synth exit=0
+2026-10-12T10:38:28Z rank 5: bundling t6_b62_5
+rank 5 bundle exit=0
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT t6_b62_5: cells=6117 area=19712 crit=19.3
+RESULT name=t6_b62_5 cells=6117 area=19712 crit=19.3 delay_ratio=0.186 area_ratio=0.558 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+rank 5 (t6_b62_5) run_synth exit=0
+2026-10-12T10:39:10Z rank 6: bundling t6_b62_6
+rank 6 bundle exit=0
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT t6_b62_6: cells=5907 area=19321 crit=19.7
+RESULT name=t6_b62_6 cells=5907 area=19321 crit=19.7 delay_ratio=0.190 area_ratio=0.547 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+rank 6 (t6_b62_6) run_synth exit=0
+2026-10-12T10:39:49Z rank 7: bundling t6_b62_7
+rank 7 bundle exit=0
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT t6_b62_7: cells=6640 area=21183 crit=19.0
+RESULT name=t6_b62_7 cells=6640 area=21183 crit=19.0 delay_ratio=0.184 area_ratio=0.600 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+rank 7 (t6_b62_7) run_synth exit=0
+2026-10-12T10:40:52Z rank 8: bundling t6_b62_8
+rank 8 bundle exit=0
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT t6_b62_8: cells=6691 area=21998 crit=18.7
+RESULT name=t6_b62_8 cells=6691 area=21998 crit=18.7 delay_ratio=0.181 area_ratio=0.623 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+rank 8 (t6_b62_8) run_synth exit=0
+2026-10-12T10:42:10Z rank 9: bundling t6_b62_9
+rank 9 bundle exit=0
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT t6_b62_9: cells=5847 area=19631 crit=19.2
+RESULT name=t6_b62_9 cells=5847 area=19631 crit=19.2 delay_ratio=0.186 area_ratio=0.556 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+rank 9 (t6_b62_9) run_synth exit=0
+2026-10-12T10:43:16Z rank 10: bundling t6_b62_10
+rank 10 bundle exit=0
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT t6_b62_10: cells=6653 area=21837 crit=18.6
+RESULT name=t6_b62_10 cells=6653 area=21837 crit=18.6 delay_ratio=0.180 area_ratio=0.618 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+rank 10 (t6_b62_10) run_synth exit=0
+2026-10-12T10:44:04Z rank 11: bundling t6_b62_11
+rank 11 bundle exit=0
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT t6_b62_11: cells=5986 area=19248 crit=19.4
+RESULT name=t6_b62_11 cells=5986 area=19248 crit=19.4 delay_ratio=0.187 area_ratio=0.545 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+rank 11 (t6_b62_11) run_synth exit=0
+2026-10-12T10:44:46Z rank 12: bundling t6_b62_12
+rank 12 bundle exit=0
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT t6_b62_12: cells=6142 area=20357 crit=19.2
+RESULT name=t6_b62_12 cells=6142 area=20357 crit=19.2 delay_ratio=0.186 area_ratio=0.576 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+rank 12 (t6_b62_12) run_synth exit=0
+2026-10-12T10:45:50Z rank 13: bundling t6_b62_13
+rank 13 bundle exit=0
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT t6_b62_13: cells=6123 area=20396 crit=19.3
+RESULT name=t6_b62_13 cells=6123 area=20396 crit=19.3 delay_ratio=0.186 area_ratio=0.577 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+rank 13 (t6_b62_13) run_synth exit=0
+2026-10-12T10:46:58Z rank 14: bundling t6_b62_14
+rank 14 bundle exit=0
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT t6_b62_14: cells=6240 area=20631 crit=19.1
+RESULT name=t6_b62_14 cells=6240 area=20631 crit=19.1 delay_ratio=0.185 area_ratio=0.584 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+rank 14 (t6_b62_14) run_synth exit=0
+2026-10-12T10:48:03Z rank 15: bundling t6_b62_15
+rank 15 bundle exit=0
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT t6_b62_15: cells=6648 area=21490 crit=19.1
+RESULT name=t6_b62_15 cells=6648 area=21490 crit=19.1 delay_ratio=0.185 area_ratio=0.608 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+rank 15 (t6_b62_15) run_synth exit=0
+2026-10-12T10:48:57Z rank 16: bundling t6_b62_16
+rank 16 bundle exit=0
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT t6_b62_16: cells=6493 area=20940 crit=19.1
+RESULT name=t6_b62_16 cells=6493 area=20940 crit=19.1 delay_ratio=0.185 area_ratio=0.593 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+rank 16 (t6_b62_16) run_synth exit=0
+2026-10-12T10:50:04Z rank 17: bundling t6_b62_17
+rank 17 bundle exit=0
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT t6_b62_17: cells=5980 area=19681 crit=19.0
+RESULT name=t6_b62_17 cells=5980 area=19681 crit=19.0 delay_ratio=0.184 area_ratio=0.557 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+rank 17 (t6_b62_17) run_synth exit=0
+2026-10-12T10:50:49Z rank 18: bundling t6_b62_18
+rank 18 bundle exit=0
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT t6_b62_18: cells=6653 area=21044 crit=19.2
+RESULT name=t6_b62_18 cells=6653 area=21044 crit=19.2 delay_ratio=0.186 area_ratio=0.596 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+rank 18 (t6_b62_18) run_synth exit=0
+2026-10-12T10:51:28Z rank 19: bundling t6_b62_19
+rank 19 bundle exit=0
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT t6_b62_19: cells=5943 area=19174 crit=19.4
+RESULT name=t6_b62_19 cells=5943 area=19174 crit=19.4 delay_ratio=0.187 area_ratio=0.543 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+rank 19 (t6_b62_19) run_synth exit=0
+2026-10-12T10:52:07Z rank 20: bundling t6_b62_20
+rank 20 bundle exit=0
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT t6_b62_20: cells=6381 area=20656 crit=19.1
+RESULT name=t6_b62_20 cells=6381 area=20656 crit=19.1 delay_ratio=0.185 area_ratio=0.585 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+rank 20 (t6_b62_20) run_synth exit=0
+2026-10-12T10:52:51Z rank 21: bundling t6_b62_21
+rank 21 bundle exit=0
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT t6_b62_21: cells=5598 area=18566 crit=19.8
+RESULT name=t6_b62_21 cells=5598 area=18566 crit=19.8 delay_ratio=0.191 area_ratio=0.526 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+rank 21 (t6_b62_21) run_synth exit=0
+2026-10-12T10:53:35Z rank 22: bundling t6_b62_22
+rank 22 bundle exit=0
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT t6_b62_22: cells=6619 area=21740 crit=18.7
+RESULT name=t6_b62_22 cells=6619 area=21740 crit=18.7 delay_ratio=0.181 area_ratio=0.615 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+rank 22 (t6_b62_22) run_synth exit=0
+2026-10-12T10:54:20Z rank 23: bundling t6_b62_23
+rank 23 bundle exit=0
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT t6_b62_23: cells=6498 area=20762 crit=19.2
+RESULT name=t6_b62_23 cells=6498 area=20762 crit=19.2 delay_ratio=0.186 area_ratio=0.588 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+rank 23 (t6_b62_23) run_synth exit=0
+2026-10-12T10:54:54Z rank 24: bundling t6_b62_24
+rank 24 bundle exit=0
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT t6_b62_24: cells=6359 area=20154 crit=19.2
+RESULT name=t6_b62_24 cells=6359 area=20154 crit=19.2 delay_ratio=0.186 area_ratio=0.571 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+rank 24 (t6_b62_24) run_synth exit=0
+2026-10-12T10:55:41Z rank 25: bundling t6_b62_25
+rank 25 bundle exit=0
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT t6_b62_25: cells=6291 area=20401 crit=18.9
+RESULT name=t6_b62_25 cells=6291 area=20401 crit=18.9 delay_ratio=0.183 area_ratio=0.578 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+rank 25 (t6_b62_25) run_synth exit=0
+2026-10-12T10:56:25Z rank 26: bundling t6_b62_26
+rank 26 bundle exit=0
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT t6_b62_26: cells=6272 area=20327 crit=19.1
+RESULT name=t6_b62_26 cells=6272 area=20327 crit=19.1 delay_ratio=0.185 area_ratio=0.575 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+rank 26 (t6_b62_26) run_synth exit=0
+2026-10-12T10:56:57Z rank 27: bundling t6_b62_27
+rank 27 bundle exit=0
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT t6_b62_27: cells=6871 area=21868 crit=19.0
+RESULT name=t6_b62_27 cells=6871 area=21868 crit=19.0 delay_ratio=0.184 area_ratio=0.619 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+rank 27 (t6_b62_27) run_synth exit=0
+2026-10-12T10:57:45Z rank 28: bundling t6_b62_28
+rank 28 bundle exit=0
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT t6_b62_28: cells=6224 area=19851 crit=19.2
+RESULT name=t6_b62_28 cells=6224 area=19851 crit=19.2 delay_ratio=0.186 area_ratio=0.562 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+rank 28 (t6_b62_28) run_synth exit=0
+2026-10-12T10:58:30Z rank 29: bundling t6_b62_29
+rank 29 bundle exit=0
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT t6_b62_29: cells=6407 area=20345 crit=19.2
+RESULT name=t6_b62_29 cells=6407 area=20345 crit=19.2 delay_ratio=0.186 area_ratio=0.576 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+rank 29 (t6_b62_29) run_synth exit=0
+2026-10-12T10:59:11Z rank 30: bundling t6_b62_30
+rank 30 bundle exit=0
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT t6_b62_30: cells=6239 area=20602 crit=19.1
+RESULT name=t6_b62_30 cells=6239 area=20602 crit=19.1 delay_ratio=0.185 area_ratio=0.583 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+rank 30 (t6_b62_30) run_synth exit=0
+2026-10-12T11:00:35Z rank 31: bundling t6_b62_31
+rank 31 bundle exit=0
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT t6_b62_31: cells=6412 area=20679 crit=19.1
+RESULT name=t6_b62_31 cells=6412 area=20679 crit=19.1 delay_ratio=0.185 area_ratio=0.585 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+rank 31 (t6_b62_31) run_synth exit=0
+2026-10-12T11:01:23Z rank 32: bundling t6_b62_32
+rank 32 bundle exit=0
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT t6_b62_32: cells=6667 area=21877 crit=18.6
+RESULT name=t6_b62_32 cells=6667 area=21877 crit=18.6 delay_ratio=0.180 area_ratio=0.619 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+rank 32 (t6_b62_32) run_synth exit=0
+2026-10-12T11:02:03Z rank 33: bundling t6_b62_33
+rank 33 bundle exit=0
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT t6_b62_33: cells=5820 area=19338 crit=19.0
+RESULT name=t6_b62_33 cells=5820 area=19338 crit=19.0 delay_ratio=0.184 area_ratio=0.547 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+rank 33 (t6_b62_33) run_synth exit=0
+2026-10-12T11:02:40Z rank 34: bundling t6_b62_34

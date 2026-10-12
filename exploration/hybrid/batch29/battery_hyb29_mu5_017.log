@@ -3,3 +3,12 @@
 XCHECK hyb29_mu5_017: PASS 10000/10000 C==Python
 === S0a [hyb29_mu5_017] rc=0 wall=8s
 === S1 [hyb29_mu5_017] started 2026-10-12T10:27:39Z
+--- S1 tail:
+  [DIFF] key=0x123456789abcdef worst|z|=1.3 fisher_logp=-0.01 bonf_logp=1.21
+  [DIFF] key=0xf0b52a9e7d8ba2b5 worst|z|=1.8 fisher_logp=-0.06 bonf_logp=0.32
+  [DIFF] key=0x92988f142674743 worst|z|=2.0 fisher_logp=-0.48 bonf_logp=-0.24
+  LIN: PASS (rej=0)  DIFF: PASS (rej=0)
+[S1 hyb29_mu5_017] LIN/DIFF 67s: LIN PASS DIFF PASS; marginal 405s: PB rej=1 RD rej=0
+[S1 hyb29_mu5_017] verdict: FLAG
+=== S1 [hyb29_mu5_017] rc=2 wall=415s
+BATTERY-FAIL stage=S1-screen [hyb29_mu5_017] (see /home/hatch/workspace/mix/exploration/fast_battery/results/hyb29_mu5_017/battery.log)

@@ -1,0 +1,24 @@
+{
+ "name": "fz_ch_6",
+ "description": "6-stage Ch replacement",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x38f77791bd3dcaa1"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xb23864c626e3c8e7"
+  }
+ ]
+}

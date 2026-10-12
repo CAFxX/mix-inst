@@ -1,0 +1,5 @@
+{
+  "name": "fz33_a",
+  "description": "5-stage [and,and,and,and,chi]: minimal linear + chi final",
+  "rtl_top": "fz33_a"
+}

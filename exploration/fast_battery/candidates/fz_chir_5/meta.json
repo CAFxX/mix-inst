@@ -1,0 +1,13 @@
+{
+ "name": "fz_chir_5",
+ "description": "5-stage pure chi replacement: x = chi(ra,rb,rc)^chi(rd,re,rf)^chi(rg,rh,ri)",
+ "rtl_top": "fz_chir_5",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ]
+}

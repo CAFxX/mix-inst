@@ -1,0 +1,5 @@
+{
+  "name": "fz32_b",
+  "description": "5-stage [t3,t3,and,and,and3]: and3 final on hetero prefix",
+  "rtl_top": "fz32_b"
+}

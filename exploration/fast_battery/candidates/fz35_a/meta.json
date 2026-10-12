@@ -1,0 +1,5 @@
+{
+  "name": "fz35_a",
+  "description": "5-stage [t3,t3,and,chi,chi]: double chi final",
+  "rtl_top": "fz35_a"
+}

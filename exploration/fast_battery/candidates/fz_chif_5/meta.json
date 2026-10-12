@@ -1,0 +1,12 @@
+{
+ "name": "fz_chif_5",
+ "description": "5-stage fused chi: x ^= chi(x,ra,rb)^chi(rc,rd,re)^chi(rf,rg,rh)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ]
+}

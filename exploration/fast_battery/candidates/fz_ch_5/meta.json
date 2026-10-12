@@ -1,0 +1,24 @@
+{
+ "name": "fz_ch_5",
+ "description": "5-stage Ch replacement: x = Ch(x,ra,rb)^Ch(rc,rd,re)^Ch(rf,rg,rh)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x94fcf70b9bcacab0"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x1e33e45c0014c8f6"
+  }
+ ]
+}

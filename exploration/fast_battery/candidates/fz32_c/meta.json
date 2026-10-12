@@ -1,0 +1,5 @@
+{
+  "name": "fz32_c",
+  "description": "5-stage pure and3",
+  "rtl_top": "fz32_c"
+}

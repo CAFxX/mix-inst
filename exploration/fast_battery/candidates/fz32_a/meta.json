@@ -1,0 +1,5 @@
+{
+  "name": "fz32_a",
+  "description": "5-stage [and,and,and,and,and3]: 3-input AND final",
+  "rtl_top": "fz32_a"
+}

@@ -1,0 +1,5 @@
+{
+  "name": "fz31_s3",
+  "description": "t3 + S-box + and fused (cost probe)",
+  "rtl_top": "fz31_s3"
+}

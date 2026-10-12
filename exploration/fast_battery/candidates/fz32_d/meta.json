@@ -1,0 +1,5 @@
+{
+  "name": "fz32_d",
+  "description": "5-stage interleaved [and,and3,and,and3,and]",
+  "rtl_top": "fz32_d"
+}

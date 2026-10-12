@@ -1,0 +1,24 @@
+{
+ "name": "fz_aor2w_2",
+ "description": "2-stage fused 4x2-AND-OR",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xf5b01a84aa1efac"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x859412ffd17fedea"
+  }
+ ]
+}

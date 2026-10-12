@@ -1,0 +1,13 @@
+{
+ "name": "fz_chir_6",
+ "description": "6-stage pure chi replacement",
+ "rtl_top": "fz_chir_6",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ]
+}

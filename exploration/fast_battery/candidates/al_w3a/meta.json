@@ -1,0 +1,25 @@
+{
+ "name": "al_w3a",
+ "description": "wave-14 W3 GF-diffused word-AND, 3 stages, P=0xbf58476d1ce4e5b9 (screen z_seq=2.52 z_rnd=2.48)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xf4bd11296acf175d"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x7e72027ef111151b"
+  }
+ ],
+ "rtl_top": "al_w3a"
+}

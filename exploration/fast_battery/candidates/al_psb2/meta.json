@@ -1,0 +1,31 @@
+{
+ "name": "al_psb2",
+ "desc": "PIVOT wave: [t3,t3,SKINNY-sboxL(46,15),SKINNY-sboxL(24,51)], proxy z=3.7@logN14, est 20.0u",
+ "stages": [
+  [
+   "t3",
+   1,
+   7,
+   13,
+   29
+  ],
+  [
+   "t3",
+   3,
+   11,
+   19,
+   37
+  ],
+  [
+   "sboxL",
+   46,
+   15
+  ],
+  [
+   "sboxL",
+   24,
+   51
+  ]
+ ],
+ "sbox": "SKINNY"
+}

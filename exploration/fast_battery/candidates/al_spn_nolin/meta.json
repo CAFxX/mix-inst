@@ -1,0 +1,24 @@
+{
+ "name": "al_spn_nolin",
+ "description": "4-round SPN no-linear (S+P only), rasC2_0, pba19",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x49cfbbf9ef5b17f8"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xd644f1e7bf92c1fa"
+  }
+ ]
+}

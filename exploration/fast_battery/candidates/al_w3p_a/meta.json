@@ -1,0 +1,25 @@
+{
+ "name": "al_w3p_a",
+ "description": "W3' d-constrained 3-stage word-AND, P=0x94d049bb133111eb (screen z_seq=2.38 z_rnd=3.31)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xfc72df081bc1d50e"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x76bdcc5f801fd748"
+  }
+ ],
+ "rtl_top": "al_w3p_a"
+}

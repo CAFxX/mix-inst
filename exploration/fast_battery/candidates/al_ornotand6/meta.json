@@ -1,0 +1,24 @@
+{
+ "name": "al_ornotand6",
+ "description": "6-stage OR-NOT/AND: x ^= ((~ra)|rb) ^ (rc&rd) ^ re",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x7cf307d85505898f"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xf63c148fcedb8bc9"
+  }
+ ]
+}

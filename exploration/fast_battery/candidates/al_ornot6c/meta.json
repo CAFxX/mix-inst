@@ -1,0 +1,25 @@
+{
+  "name": "al_ornot6c",
+  "description": "6-stage ornot cascade, schedule C",
+  "screen_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "practrand_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "goldens": [
+    {
+      "val": "0x0",
+      "key": "0x123456789abcdef0",
+      "out": "0xedcc0e57686b84cc"
+    },
+    {
+      "val": "0x123456789abcdef0",
+      "key": "0x0",
+      "out": "0x67031d00f3b5868a"
+    }
+  ],
+  "rtl_top": "al_ornot6c"
+}

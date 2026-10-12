@@ -1,0 +1,24 @@
+{
+ "name": "al_spn_1xor",
+ "description": "4r SPN single-XOR lin, rasC2_0, pba19",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xa4f32872175ef63f"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x49d50f072e167b9"
+  }
+ ]
+}

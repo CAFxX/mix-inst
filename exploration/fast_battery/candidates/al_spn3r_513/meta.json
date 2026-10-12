@@ -1,0 +1,24 @@
+{
+ "name": "al_spn3r_513",
+ "description": "3-round SPN, rasC2_0, pba19, lin(5,13) - adder-latency probe",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x931f0880a7847355"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xbbe595bb8c1326bc"
+  }
+ ]
+}

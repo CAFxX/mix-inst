@@ -1,0 +1,24 @@
+{
+ "name": "al_trichi3",
+ "description": "3-stage triple-chi: x ^= ((~ra)&rb)^((~rc)&rd)^((~re)&rf)^rg (fan-in 7)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xf5c9c0795f539a2f"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x7f06d32ec48d9869"
+  }
+ ]
+}

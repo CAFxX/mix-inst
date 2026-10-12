@@ -1,0 +1,24 @@
+{
+ "name": "al_ornot6b",
+ "description": "6-stage OR-NOT, alternate rotation schedule",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x5cff7462acaa1dc5"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xd630673537741f83"
+  }
+ ]
+}

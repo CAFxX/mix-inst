@@ -1,0 +1,19 @@
+{
+ "name": "al_p_smoke",
+ "desc": "smoke: t3 + SKINNY sboxL",
+ "stages": [
+  [
+   "t3",
+   1,
+   7,
+   13,
+   29
+  ],
+  [
+   "sboxL",
+   5,
+   13
+  ]
+ ],
+ "sbox": "SKINNY"
+}

@@ -1,0 +1,26 @@
+{
+ "name": "ga_g08_087",
+ "description": "GA 6r Feistel F=[s1_311,chi32v_517,s1_311,chi_311,s1_311,chi_notr] no whitening",
+ "composition": "GA 6r Feistel F=[s1_311,chi32v_517,s1_311,chi_311,s1_311,chi_notr] no whitening",
+ "rtl_top": "ga_g08_087",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xa34e3c6fd03d0736"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x978bb780b656d5b0"
+  }
+ ]
+}

@@ -1,0 +1,80 @@
+agentwork-launch: tag=track3/b2sparse-screen schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+[2026-10-12T06:14:39Z] backoff CLEAR -- starting (b2) sparse-GF screen
+[2026-10-12T06:14:39Z] backoff CLEAR -- starting (b2) sparse-GF screen
+=== canary gate ===
+=== positive controls ===
+[KILL-canary as6_200_106] seq: maxworst|z|=    71.4 killkey=0x0 | rnd64: maxworst|z|=     2.5 killkey=0x0 -> kill
+[KEEP-canary t6_b33b] seq: maxworst|z|=     3.0 killkey=0x92988f142674743 | rnd64: maxworst|z|=     3.2 killkey=0x92988f142674743 -> KEEP
+[KEEP-canary al_and6a] seq: maxworst|z|=     3.2 killkey=0xf0b52a9e7d8ba2b5 | rnd64: maxworst|z|=     2.6 killkey=0x9e3779b97f4a7c15 -> KEEP
+=== canaries PASS ===
+=== calibration (al_w3p_a + (p,q) discrimination) ===
+CALIB-1 al_w3p_a: lin=PASS diff=PASS -> KEEP
+CALIB-2 (p,q) discrimination on b2 form: (29,36)->fr=57 (expect <62), (57,1)->fr=63 (expect 63) -> PASS
+[000] REJECT-affine AND (0, 1, 29, 24)
+[001] REJECT-affine AND (0, 0, 24, 19)
+[002] REJECT-affine AND (1, 0, 49, 44)
+[003] REJECT-affine AND (0, 0, 5, 10)
+[004] REJECT-affine AND (1, 0, 33, 38)
+[005] REJECT-affine AND (1, 1, 8, 13)
+[006] REJECT-affine AND (0, 1, 63, 61)
+[007] kill-rank fr=60
+[008] REJECT-affine AND (1, 0, 44, 39)
+[009] REJECT-affine AND (1, 1, 24, 29)
+[010] REJECT-affine AND (2, 0, 59, 63)
+[011] REJECT-affine AND (0, 0, 41, 46)
+[012] REJECT-affine AND (1, 0, 55, 60)
+[013] REJECT-affine AND (0, 0, 48, 43)
+[014] REJECT-affine AND (0, 1, 32, 37)
+[015] REJECT-affine AND (0, 0, 1, 60)
+[016] REJECT-affine AND (0, 0, 9, 14)
+[017] REJECT-affine AND (0, 1, 55, 50)
+[018] REJECT-affine AND (0, 1, 40, 35)
+[019] KEEP fr=63 lin=PASS diff=PASS nrej=0
+[020] REJECT-affine AND (2, 0, 17, 22)
+[021] REJECT-affine AND (0, 1, 30, 25)
+[022] REJECT-affine AND (0, 1, 56, 51)
+[023] REJECT-affine AND (2, 0, 58, 53)
+[024] REJECT-affine AND (2, 0, 5, 10)
+[025] REJECT-affine AND (1, 0, 63, 0)
+[026] REJECT-affine AND (2, 1, 8, 3)
+[027] KEEP fr=62 lin=PASS diff=PASS nrej=0
+[028] REJECT-affine AND (1, 1, 1, 6)
+[029] REJECT-affine AND (1, 1, 0, 2)
+[030] REJECT-affine AND (2, 0, 32, 27)
+[031] REJECT-affine AND (1, 1, 0, 3)
+[032] REJECT-affine AND (1, 0, 3, 63)
+[033] REJECT-affine AND (1, 0, 13, 18)
+[034] REJECT-affine AND (0, 0, 51, 56)
+[035] kill-rank fr=55
+[036] kill-rank fr=57
+[037] REJECT-affine AND (1, 1, 57, 52)
+[038] REJECT-affine AND (1, 0, 44, 49)
+[039] REJECT-affine AND (1, 0, 22, 17)
+[040] REJECT-affine AND (0, 0, 15, 10)
+[041] REJECT-affine AND (0, 1, 13, 8)
+[042] REJECT-affine AND (1, 1, 15, 10)
+[043] REJECT-affine AND (2, 0, 55, 50)
+[044] KEEP fr=62 lin=PASS diff=PASS nrej=0
+[045] REJECT-affine AND (0, 1, 36, 31)
+[046] KEEP fr=62 lin=PASS diff=PASS nrej=0
+[047] REJECT-affine AND (1, 1, 35, 40)
+[048] REJECT-affine AND (2, 1, 3, 1)
+[049] REJECT-affine AND (2, 1, 59, 63)
+[050] REJECT-affine AND (0, 1, 8, 3)
+[051] REJECT-affine AND (0, 1, 0, 1)
+[052] REJECT-affine AND (1, 0, 19, 24)
+[053] kill-rank fr=58
+[054] REJECT-affine AND (0, 0, 49, 54)
+[055] kill-rank fr=49
+[056] REJECT-affine AND (0, 0, 31, 26)
+[057] REJECT-affine AND (2, 1, 1, 61)
+[058] REJECT-affine AND (1, 0, 49, 54)
+[059] KEEP fr=62 lin=PASS diff=PASS nrej=0
+[060] REJECT-affine AND (1, 0, 27, 32)
+[061] REJECT-affine AND (2, 0, 26, 21)
+[062] REJECT-affine AND (0, 1, 22, 27)
+[063] REJECT-affine AND (1, 0, 16, 21)
+[064] REJECT-affine AND (0, 0, 63, 58)
+[065] REJECT-affine AND (1, 1, 48, 43)
+[066] REJECT-affine AND (0, 0, 21, 26)
+[067] REJECT-affine AND (2, 1, 56, 51)

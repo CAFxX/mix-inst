@@ -3985,3 +3985,11 @@ agentwork-launch: tag=track1/sweep-restart schedulers:[none [mq-deadline]  ] ion
 [sweep 05:50:00] backoff: 2 heavy pipelines active, sleeping 300s
 [sweep 05:55:00] backoff: 3 heavy pipelines active, sleeping 300s
 [sweep 06:00:01] backoff: 2 heavy pipelines active, sleeping 300s
+[sweep 06:05:01] backoff: 4 heavy pipelines active, sleeping 300s
+[sweep 06:10:01] backoff: 2 heavy pipelines active, sleeping 300s
+[sweep 06:15:01] backoff: 4 heavy pipelines active, sleeping 300s
+[sweep 06:20:01] backoff: 2 heavy pipelines active, sleeping 300s
+[sweep 06:25:04]   S0 rtw_ab0408_pb2io: 37.0u / 3548 / 10490
+[sweep 06:29:14]   S1 rtw_ab0408_pb2io: CAL_PASS lin_rej=0 diff_rej=0
+[sweep 06:29:14] backoff: 2 heavy pipelines active, sleeping 300s
+[sweep 06:34:14] backoff: 2 heavy pipelines active, sleeping 300s

@@ -23,3 +23,9 @@
 [2026-10-12T05:55:24Z] S0 t6_xorh5_18 rc=0
 [2026-10-12T05:55:41Z] S0 t6_xorh5_19 rc=0
 [2026-10-12T06:03:06Z] S0 wide sweep COMPLETE 16/16 (run_synth.py, XCHECK analyzers agree, ref 103.5u). Adjudication vs Frontier S: ELIGIBLE 13 (t6_xorh5_4,5,7,8,9,10,11,12,14,15,16,17,18) — incl. 9/16/18 dominating t6_b33b/t6_b33c on all axes, 5 dominating r25_nw; S0-KILLED 3 (6 dominated by b33b; 13 dominated by b33c/b33b; 19 dominated by t6_b59_41/hyb28_mu5_324). Launching battery chain (xcheck->S1->S2->S3->S4) for the 13 eligible, dominators first.
+[2026-10-12T06:05:41Z] battery t6_xorh5_18 rc=2 (0=pass,2=killed,1=infra)
+[2026-10-12T06:06:06Z] battery t6_xorh5_16 rc=2 (0=pass,2=killed,1=infra)
+[2026-10-12T06:06:33Z] battery t6_xorh5_9 rc=2 (0=pass,2=killed,1=infra)
+[2026-10-12T06:09:50Z] battery t6_xorh5_5 rc=2 (0=pass,2=killed,1=infra)
+[2026-10-12T06:26:01Z] battery t6_xorh5_4 rc=0 (0=pass,2=killed,1=infra)
+[2026-10-12T06:32:38Z] battery t6_xorh5_7 rc=2 (0=pass,2=killed,1=infra)

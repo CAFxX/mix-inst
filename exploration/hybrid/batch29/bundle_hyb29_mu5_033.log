@@ -1,0 +1,4 @@
+selected rank 33: form=muxD5f base=hyb28_mu5_324 z=5.14 n_reject=0 stages=[('MUXD', 62, 50, 55, 41), ('MUXD', 48, 58, 23, 30), ('MUXD', 44, 45, 7, 40), ('MUXD', 49, 26, 30, 35), ('MUXD', 21, 51, 43, 44)]
+bit-exact C-vs-Python: 2000/2000 OK
+screener-vs-bundle: 500/500 OK
+bundle hyb29_mu5_033 written (form=muxD5f base=hyb28_mu5_324 fisher triage z=5.14 n_reject=0)

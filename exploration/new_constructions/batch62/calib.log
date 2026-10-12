@@ -1,0 +1,5 @@
+agentwork-launch: tag=track6/b62-calib2 schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+CALIB 1 and1/b33c z=3.3 EXACT: PASS maxworst|z|=3.3
+CALIB 2a MU5-324 fisher KEEP: PASS n_reject=0 z=3.24
+CALIB 2b linear-4 fisher REJECT: PASS n_reject=10 z=1480000.0
+CALIB 3a t6_b59_47 inner CAL_PASS: PASS verdict=CAL_PASS rej=0

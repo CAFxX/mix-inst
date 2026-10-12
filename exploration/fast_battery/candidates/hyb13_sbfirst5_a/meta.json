@@ -1,0 +1,13 @@
+{
+ "name": "hyb13_sbfirst5_a",
+ "description": "SBOX -> 5xAND (1-5) + L(5,13): sbox-first quality control (dominated)",
+ "rtl_top": "hyb13_sbfirst5_a",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ]
+}

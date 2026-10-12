@@ -1,0 +1,40 @@
+{
+ "name": "hyb18_dual_c",
+ "desc": "5-stage [and,and,and,and,dual]: cheapest dual-last-stage, proxy z=8.0, est 18.40u",
+ "track": "5/hybrid",
+ "batch": 18,
+ "stages": [
+  [
+   "and",
+   59,
+   15,
+   57
+  ],
+  [
+   "and",
+   18,
+   12,
+   6
+  ],
+  [
+   "and",
+   37,
+   49,
+   53
+  ],
+  [
+   "and",
+   20,
+   41,
+   40
+  ],
+  [
+   "dual",
+   39,
+   63,
+   2,
+   11,
+   50
+  ]
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "name": "hyb16_3and5_A",
+ "description": "5x3AND schedule A: co-designed, 5 stages",
+ "rtl_top": "hyb16_3and5_A",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ]
+}

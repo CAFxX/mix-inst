@@ -1,0 +1,13 @@
+{
+ "name": "hyb13_rotalign_a",
+ "description": "4xAND (1-4) -> ROT(2) -> SBOX -> L(5,13): nibble-alignment control",
+ "rtl_top": "hyb13_rotalign_a",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "name": "hyb14_3and4s_a",
+ "description": "4x3AND + SBOX + L(5,13): hybrid with stronger base",
+ "rtl_top": "hyb14_3and4s_a",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ]
+}

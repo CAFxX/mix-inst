@@ -1,0 +1,13 @@
+{
+ "name": "hyb14_3and5_a",
+ "description": "5x3AND (no S-box): calibration of 3-AND strength",
+ "rtl_top": "hyb14_3and5_a",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ]
+}

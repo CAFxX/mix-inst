@@ -1,0 +1,25 @@
+{
+ "name": "hyb21_fat5a",
+ "description": "batch-21b proxy-guided 5-stage fat-AND schedule (triage z=2.42)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x85d315d5747733fd"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xf1c0682efa931bb"
+  }
+ ],
+ "rtl_top": "hyb21_fat5a"
+}

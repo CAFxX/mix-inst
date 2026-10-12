@@ -1,0 +1,13 @@
+{
+ "name": "hyb15_3and4_A",
+ "description": "4x3AND schedule A: spread triples, progressive",
+ "rtl_top": "hyb15_3and4_A",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ]
+}

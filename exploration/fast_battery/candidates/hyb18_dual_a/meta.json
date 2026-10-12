@@ -1,0 +1,41 @@
+{
+ "name": "hyb18_dual_a",
+ "desc": "5-stage [t3,and,and,and,dual]: dual-last-stage breaks wall, proxy z=6.0, est 19.55u",
+ "track": "5/hybrid",
+ "batch": 18,
+ "stages": [
+  [
+   "t3",
+   19,
+   18,
+   9,
+   7
+  ],
+  [
+   "and",
+   21,
+   39,
+   56
+  ],
+  [
+   "and",
+   15,
+   59,
+   38
+  ],
+  [
+   "and",
+   51,
+   63,
+   56
+  ],
+  [
+   "dual",
+   10,
+   5,
+   55,
+   41,
+   3
+  ]
+ ]
+}

@@ -1,0 +1,66 @@
+{
+ "name": "hyb20_dm4a",
+ "description": "batch-20 fused maj+chi [dm4]: dm(47,26,63,62,7,8) -> dm(63,47,4,59,25,45) -> dm(45,43,18,11,49,62) -> dm(47,11,53,34,10,23) (hill-climbed proxy z=6.6, est=18.80u)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x39e8db2b8d21a609"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x39e8db2b8d21a609"
+  }
+ ],
+ "rtl_top": "hyb20_dm4a",
+ "hyp": "dm4",
+ "proxy_z": 6.640625,
+ "proxy_cost_u": 18.8,
+ "stages": [
+  [
+   "dm",
+   47,
+   26,
+   63,
+   62,
+   7,
+   8
+  ],
+  [
+   "dm",
+   63,
+   47,
+   4,
+   59,
+   25,
+   45
+  ],
+  [
+   "dm",
+   45,
+   43,
+   18,
+   11,
+   49,
+   62
+  ],
+  [
+   "dm",
+   47,
+   11,
+   53,
+   34,
+   10,
+   23
+  ]
+ ]
+}

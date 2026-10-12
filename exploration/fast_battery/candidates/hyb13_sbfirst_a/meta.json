@@ -1,0 +1,13 @@
+{
+ "name": "hyb13_sbfirst_a",
+ "description": "SBOX -> 4xAND (triplets 1-4) + L(5,13): sbox-first arrangement",
+ "rtl_top": "hyb13_sbfirst_a",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ]
+}

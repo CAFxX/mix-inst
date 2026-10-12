@@ -1,0 +1,13 @@
+{
+ "name": "hyb13_minispn_a",
+ "description": "3xAND (1-3) -> SBOX -> ROT(2) -> SBOX -> L(5,13): mini-SPN double sbox",
+ "rtl_top": "hyb13_minispn_a",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ]
+}

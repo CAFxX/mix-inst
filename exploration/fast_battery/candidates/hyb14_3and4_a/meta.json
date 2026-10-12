@@ -1,0 +1,13 @@
+{
+ "name": "hyb14_3and4_a",
+ "description": "4x3AND (no S-box): do 4 strong stages suffice alone?",
+ "rtl_top": "hyb14_3and4_a",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ]
+}

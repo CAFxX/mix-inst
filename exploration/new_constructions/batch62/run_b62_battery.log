@@ -3,3 +3,14 @@
 [2026-10-12T11:17:54+00:00] BATTERY t6_b62_22 rc=2
 BATTERY-FAIL stage=S1-screen [t6_b62_22] (see /home/hatch/workspace/mix/exploration/fast_battery/results/t6_b62_22/battery.log)
 [2026-10-12T11:17:54+00:00] BATTERY t6_b62_25 (start_stage=1)
+[2026-10-12T11:44:03+00:00] BATTERY t6_b62_25 rc=143
+[S1 t6_b62_25] verdict: CAL_PASS
+[S3 t6_b62_25] 64MB: no FAIL (rng_test rc=0)
+[S3 t6_b62_25] 256MB: no FAIL (rng_test rc=0)
+[S3 t6_b62_25] 1GB: no FAIL (rng_test rc=0)
+[S3 t6_b62_25] verdict: PASS (all 4 stages, no FAIL)
+[2026-10-12T11:44:03+00:00] BATTERY t6_b62_33 (start_stage=1)
+[2026-10-12T12:00:35+00:00] backoff CLEAR -- starting batch-62 staged battery for: t6_b62_33 t6_b62_17 t6_b62_26 t6_b62_9 t6_b62_3 t6_b62_6 t6_b62_21 t6_b62_36
+[2026-10-12T12:00:35+00:00] BATTERY t6_b62_33 (start_stage=1)
+[2026-10-12T12:09:43+00:00] backoff CLEAR -- starting batch-62 staged battery for: t6_b62_33 t6_b62_17 t6_b62_26 t6_b62_9 t6_b62_3 t6_b62_6 t6_b62_21 t6_b62_36
+[2026-10-12T12:09:44+00:00] BATTERY t6_b62_33 (start_stage=1)

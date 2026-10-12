@@ -1,0 +1,32 @@
+=== S0a [hyb29_mu5_030] started 2026-10-12T11:32:44Z
+--- S0a tail:
+XCHECK hyb29_mu5_030: PASS 10000/10000 C==Python
+=== S0a [hyb29_mu5_030] rc=0 wall=5s
+=== S1 [hyb29_mu5_030] started 2026-10-12T11:32:49Z
+--- S1 tail:
+  [DIFF] key=0x123456789abcdef worst|z|=3.4 fisher_logp=-1.06 bonf_logp=-4.36
+  [DIFF] key=0xf0b52a9e7d8ba2b5 worst|z|=3.8 fisher_logp=-4.24 bonf_logp=-5.91
+  [DIFF] key=0x92988f142674743 worst|z|=1.8 fisher_logp=-0.35 bonf_logp=0.22
+  LIN: PASS (rej=0)  DIFF: PASS (rej=0)
+[S1 hyb29_mu5_030] LIN/DIFF 60s: LIN PASS DIFF PASS; marginal 328s: PB rej=0 RD rej=0
+[S1 hyb29_mu5_030] verdict: CAL_PASS
+=== S1 [hyb29_mu5_030] rc=0 wall=335s
+=== S2 [hyb29_mu5_030] started 2026-10-12T11:38:24Z
+--- S2 tail:
+  0xe000000000000000      2.7      294.4            0
+  0x000000000000000f      2.6      262.0            0
+  0x00000000f0000000      1.8      221.0            0
+  0x0000000f00000000      3.3      242.9            0
+  0xf000000000000000      2.1      255.6            0
+PASS max_repeats=0 max|z|=58.0 (all 115 deltas)
+=== S2 [hyb29_mu5_030] rc=0 wall=496s
+=== S3 [hyb29_mu5_030] started 2026-10-12T11:46:40Z
+--- S3 tail:
+[S3 hyb29_mu5_030] KILL at 64MB:
+  [Low4/64]FPF/16:(0,14-2)          R= +15.7  p =  1.7e-13    FAIL           
+  [Low4/64]FPF/16:all               R= +16.7  p =  1.1e-14    FAIL           
+  [Low1/64]FPF/16:all               R= +18.5  p =  2.0e-15    FAIL !         
+  [Low1/64]FPF/16:cross             R= +21.2  p =  9.5e-17    FAIL !         
+[S3 hyb29_mu5_030] verdict: KILL@64MB
+=== S3 [hyb29_mu5_030] rc=2 wall=81s
+BATTERY-FAIL stage=S3-practrand [hyb29_mu5_030] (see /home/hatch/workspace/mix/exploration/fast_battery/results/hyb29_mu5_030/battery.log)

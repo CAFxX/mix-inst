@@ -1,0 +1,26 @@
+V3 Fisher triage: BASE stages=[(0, 7, 29), (13, 31, 53), (5, 19, 43), (11, 23, 47)]
+seq gen: 1.0s
+  [LIN] key=0x0 D=4096/4096 logp=-inf
+  [LIN] key=0xffffffffffffffff D=4096/4096 logp=-inf
+  [LIN] key=0xaaaaaaaaaaaaaaaa D=4096/4096 logp=-inf
+  [LIN] key=0x5555555555555555 D=4096/4096 logp=-inf
+  [LIN] key=0xdeadbeefdeadbeef D=4096/4096 logp=-inf
+  [LIN] key=0x9e3779b97f4a7c15 D=4096/4096 logp=-inf
+  [LIN] key=0x1234 D=4096/4096 logp=-inf
+  [LIN] key=0x123456789abcdef D=4096/4096 logp=-inf
+  [LIN] key=0xf0b52a9e7d8ba2b5 D=4096/4096 logp=-inf
+  [LIN] key=0x92988f142674743 D=4096/4096 logp=-inf
+  [DIFF] key=0x0 worst|z|=1390038.5 fisher_logp=-inf bonf_logp=-966103511420.42
+  [DIFF] key=0xffffffffffffffff worst|z|=1480000.0 fisher_logp=-inf bonf_logp=-1095199948875.29
+  [DIFF] key=0xaaaaaaaaaaaaaaaa worst|z|=1480000.0 fisher_logp=-inf bonf_logp=-1095199948875.29
+  [DIFF] key=0x5555555555555555 worst|z|=739994.3 fisher_logp=-inf bonf_logp=-273795809354.60
+  [DIFF] key=0xdeadbeefdeadbeef worst|z|=955971.0 fisher_logp=-inf bonf_logp=-456940286274.07
+  [DIFF] key=0x9e3779b97f4a7c15 worst|z|=937669.2 fisher_logp=-inf bonf_logp=-439611808693.25
+  [DIFF] key=0x1234 worst|z|=1390038.5 fisher_logp=-inf bonf_logp=-966103511420.42
+  [DIFF] key=0x123456789abcdef worst|z|=739994.3 fisher_logp=-inf bonf_logp=-273795809354.60
+  [DIFF] key=0xf0b52a9e7d8ba2b5 worst|z|=922819.3 fisher_logp=-inf bonf_logp=-425797690478.96
+  [DIFF] key=0x92988f142674743 worst|z|=1347234.2 fisher_logp=-inf bonf_logp=-907520061852.52
+  LIN: FLAG (rej=10)  DIFF: FLAG (rej=10)
+screen: 34.1s
+VERDICT lin=FLAG diff=FLAG nrej_lin=10 nrej_diff=10
+wrote fisher_BASE.json

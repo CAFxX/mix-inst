@@ -1,0 +1,6 @@
+w=(8,4,2) seed=0x5eed nvary=[49, 51, 46, 48] LIN D=[4096, 4096] DIFF worst|z|=1390038.5 (15s)
+w=(8,4,2) seed=0xbeef nvary=[33, 33, 45, 45] LIN D=[4096, 4096] DIFF worst|z|=1305881.0 (11s)
+w=(12,4,1) seed=0x5eed nvary=[46, 41, 45, 51] LIN D=[4096, 4096] DIFF worst|z|=928663.4 (15s)
+w=(12,4,1) seed=0xbeef nvary=[61, 62, 60, 62] LIN D=[4096, 4096] DIFF worst|z|=739994.3 (13s)
+w=(16,4,1) seed=0x5eed nvary=[64, 64, 64, 64] LIN D=[4010, 4053] DIFF worst|z|=701850.5 (10s)
+w=(16,4,1) seed=0xbeef nvary=[52, 54, 52, 54] LIN D=[4096, 4096] DIFF worst|z|=739994.3 (12s)

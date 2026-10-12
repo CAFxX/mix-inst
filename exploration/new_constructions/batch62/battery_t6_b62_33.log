@@ -1,0 +1,14 @@
+=== S0a [t6_b62_33] started 2026-10-12T12:10:19Z
+--- S0a tail:
+XCHECK t6_b62_33: PASS 10000/10000 C==Python
+=== S0a [t6_b62_33] rc=0 wall=26s
+=== S1 [t6_b62_33] started 2026-10-12T12:10:48Z
+--- S1 tail:
+  [DIFF] key=0x123456789abcdef worst|z|=2.6 fisher_logp=-1.65 bonf_logp=-1.74
+  [DIFF] key=0xf0b52a9e7d8ba2b5 worst|z|=3.0 fisher_logp=-2.74 bonf_logp=-2.90
+  [DIFF] key=0x92988f142674743 worst|z|=2.1 fisher_logp=-1.11 bonf_logp=-0.43
+  LIN: PASS (rej=0)  DIFF: PASS (rej=0)
+[S1 t6_b62_33] LIN/DIFF 278s: LIN PASS DIFF PASS; marginal 1458s: PB rej=0 RD rej=0
+[S1 t6_b62_33] verdict: CAL_PASS
+=== S1 [t6_b62_33] rc=0 wall=1527s
+=== S2 [t6_b62_33] started 2026-10-12T12:36:18Z

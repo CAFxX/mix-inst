@@ -1,0 +1,6 @@
+D1 seed=0x5eed LIN D=[4096, 4096] DIFF worst|z|=1480000.0 (21s)
+D1 seed=0xbeef LIN D=[4096, 4096] DIFF worst|z|=1480000.0 (10s)
+D2 seed=0x5eed LIN D=[4096, 3856] DIFF worst|z|=1345397.8 (13s)
+D2 seed=0xbeef LIN D=[4096, 4096] DIFF worst|z|=900708.6 (12s)
+D3 seed=0x5eed LIN D=[4096, 3952] DIFF worst|z|=1480000.0 (15s)
+D3 seed=0xbeef LIN D=[4096, 4096] DIFF worst|z|=1480000.0 (11s)

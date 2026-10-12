@@ -4045,3 +4045,16 @@ agentwork-launch: tag=track1/sweep-restart schedulers:[none [mq-deadline]  ] ion
 [sweep 11:18:23] backoff: 5 heavy pipelines active, sleeping 300s
 [sweep 11:23:23] backoff: 4 heavy pipelines active, sleeping 300s
 [sweep 11:28:23] backoff: 4 heavy pipelines active, sleeping 300s
+[sweep 11:33:23] backoff: 4 heavy pipelines active, sleeping 300s
+[sweep 11:38:23] backoff: 4 heavy pipelines active, sleeping 300s
+[sweep 11:43:23] backoff: 9 heavy pipelines active, sleeping 300s
+[sweep 11:48:23] backoff: 8 heavy pipelines active, sleeping 300s
+[sweep 11:53:23] backoff: 4 heavy pipelines active, sleeping 300s
+[sweep 11:58:23] backoff: 4 heavy pipelines active, sleeping 300s
+[sweep 12:07:07] 1220 specs; 1220 already probed
+[sweep 12:07:07] PROBE rtw_ab0408_pb2io [N9] prio=11214 boosted_by=[]
+[sweep 12:07:29]   S0 rtw_ab0408_pb2io: 37.0u / 3548 / 10490
+[sweep 12:23:33]   S1 rtw_ab0408_pb2io: CAL_PASS lin_rej=0 diff_rej=0
+[sweep 12:23:34] backoff: 4 heavy pipelines active, sleeping 300s
+[sweep 12:28:34] backoff: 4 heavy pipelines active, sleeping 300s
+[sweep 12:33:34] backoff: 4 heavy pipelines active, sleeping 300s

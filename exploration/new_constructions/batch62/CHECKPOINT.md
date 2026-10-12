@@ -66,3 +66,74 @@ The PractRand prescreen compiles a per-try gen binary into
   (was stale "S0 STRICTLY <18.6u" wording).
 - Next O-number: O142 (claimed at verdict write time).
 - workreg track6-batch62 heartbeat'd 11:09:20Z; heartbeat.txt live.
+
+## Battery escalation resumed (supervisor, 2026-10-12 13:39 CEST)
+
+- PREVIOUS SUPERVISOR DIED ~11:39 UTC (runtime vanished, VM/daemon
+  instability). Its launcher + checkpoint survived; resumed from disk,
+  no work redone. workreg re-heartbeat'd 11:39:57Z; heartbeat.txt live.
+- Launcher LIVE, untouched: PIDs 187658/187660, tag
+  track6/b62-battery, nice-19, setsid. battery_launch.out adjudicated RAW:
+  - t6_b62_22: KILLED S1 (battery.log 11:17:54Z rc=2: verdict FLAG --
+    PB rejected SINGLE-BIT key=0x0000000000000000; raw worst perbit
+    z=4.55, red z=3.18; LIN/DIFF pass but marginal FLAG).
+  - t6_b62_25: S0a PASS (XCHECK 10000/10000); S1 CAL_PASS
+    (pb/red/lin/diff rej=0; raw worst perbit z=4.11, red z=3.04);
+    S2 PASS (11:35, rc=0, max|z|=257.4 all 115 deltas);
+    S3 PractRand 1GB in flight 11:35:56Z (64/128/256MB: no anomalies
+    at 11:39Z).
+- Queue standing by: 33, 17, 26, 9, 3, 6, 21, 36 (z-order). Deferred:
+  5, 11, 12, 13, 14, 19, 24, 28, 30, 35 (escalate only if strong ten
+  all fail). Dominated (no battery): 0,1,2,4,7,15,16,18,20,23,27,29,
+  31,32,34.
+
+## Battery verdicts (raw-adjudicated 13:4x CEST)
+
+- t6_b62_22: KILLED S1 (11:17:54Z rc=2, FLAG: PB rej SINGLE-BIT
+  key=0x0; raw worst perbit z=4.55).
+- t6_b62_25: **KILLED S3 PractRand** — adjudicated RAW from
+  `fast_battery/results/t6_b62_25/s3_practrand_1GB.log` (1GB block
+  COMPLETE): no FAIL, but **six p<1e-3 low-bit results** —
+  [Low4/64]FPF/16:all R=+7.5 p=1.5e-6 SUSPICIOUS,
+  [Low4/64]FPF/16:(0,14-0) R=+7.7 p=9.6e-7 mildly suspicious,
+  [Low1/64]FPF/16:all p=2.5e-4, [Low1/64]BCFN(2+1) p=6.3e-4,
+  [Low1/64]BCFN(2+2) p=5.6e-4, full BCFN(2+0) p=2.0e-5 mildly
+  suspicious; family-clustered FPF/16+BCFN low-bit signature
+  growing with depth (512MB: single unusual p=2.8e-4). Basis:
+  DESIGN.md gate-4 pre-registered rule (REJECT [Low1/64] on
+  "suspicious" p<1e-3 — THREE [Low1/64] lines <1e-3 at 1GB) +
+  O62 precedent (S4 kill at SmallCrush p=8.3e-4<0.001) + O140
+  (G4 reject at p=8.1e-4). The mechanical FAIL-grep does not
+  catch this; the verdict history is unambiguous. Supervisor
+  terminated the S3b-strided run (PID 189915, + orphans) to save
+  compute; wrapper logged rc=143 and moved on.
+- Launcher now on t6_b62_33 (11:44:03Z). In flight: 33.
+- t6_b62_33: S1 **CAL_PASS** (11:49:43Z, rc=0, wall=328s; raw-verified
+  s1_result.json: pb/red/lin/diff rej all empty; raw worst perbit
+  z=4.75). S2 differential in flight (started 11:49:43Z).
+
+## VM reboot recovery (12:00Z)
+
+- VM REBOOTED ~11:59Z (uptime "up 1 min" at 12:00:18Z) — killed the
+  launcher (PID 187660) + 33's diffprof mid-S2 (s2.out ends 11:59,
+  no PASS verdict line). Load 6.49 post-reboot, backoff CLEAR, no
+  frozen procs. dmesg unreadable (no perms) but timing = reboot.
+- Recovery per resume pattern: skipped adjudicated 22/25; relaunched
+  remaining queue 12:00:35Z — setsid agentwork-launch.sh --nice 19
+  --tag track6/b62-battery -- bash run_b62_battery.sh
+  t6_b62_33 t6_b62_17 t6_b62_26 t6_b62_9 t6_b62_3 t6_b62_6 t6_b62_21
+  t6_b62_36 (PID 3606; script's internal cleared-flag backoff ran
+  CLEAR). 33 re-runs S0a+S1 deterministically (~6 min), then S2.
+- workreg re-heartbeat'd post-reboot; heartbeat.txt touched.
+
+## Resume-agent check 12:27Z (no action taken)
+
+- A fresh resume subagent was dispatched (registry said "launcher died
+  ~12:02Z, PIDs 11531/11532/11653 all dead"). Disk+ps truth: the
+  12:09:43Z relaunch is LIVE — PID 11531 (setsid agentwork-launch,
+  tag track6/b62-battery) and PID 11532 (run_b62_battery.sh) both
+  running; t6_b62_33 S1 started 12:10:48Z with a live python3 worker.
+  NO relaunch was performed. Backoff currently gates dispatch anyway
+  (load 16.2 >= 12).
+- Takeaway for future recovery runs: verify with `pgrep -f run_b62_battery`
+  / ps before trusting a registry note's "dead" claim.

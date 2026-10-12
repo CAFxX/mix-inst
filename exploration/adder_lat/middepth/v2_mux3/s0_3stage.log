@@ -1,0 +1,4 @@
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT muxd3_nod: cells=2012 area=5589 crit=11.8
+RESULT name=muxd3_nod cells=2012 area=5589 crit=11.8 delay_ratio=0.114 area_ratio=0.158 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)

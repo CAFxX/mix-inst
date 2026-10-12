@@ -146,3 +146,15 @@ BATTERY-FAIL stage=S1-screen [hyb29_mu5_021] (see /home/hatch/workspace/mix/expl
 BATTERY-FAIL stage=S1-screen [hyb29_mu5_026] (see /home/hatch/workspace/mix/exploration/fast_battery/results/hyb29_mu5_026/battery.log)
 === hyb29_mu5_026 battery rc=2 2026-10-12T11:08:38Z ===
 === ESCALATE hyb29_mu5_029 2026-10-12T11:08:39Z ===
+[S3 hyb29_mu5_029] verdict: KILL@256MB
+=== S3 [hyb29_mu5_029] rc=2 wall=141s
+BATTERY-FAIL stage=S3-practrand [hyb29_mu5_029] (see /home/hatch/workspace/mix/exploration/fast_battery/results/hyb29_mu5_029/battery.log)
+=== hyb29_mu5_029 battery rc=2 2026-10-12T11:32:38Z ===
+=== ESCALATE hyb29_mu5_030 2026-10-12T11:32:39Z ===
+[S3 hyb29_mu5_030] verdict: KILL@64MB
+=== S3 [hyb29_mu5_030] rc=2 wall=81s
+BATTERY-FAIL stage=S3-practrand [hyb29_mu5_030] (see /home/hatch/workspace/mix/exploration/fast_battery/results/hyb29_mu5_030/battery.log)
+=== hyb29_mu5_030 battery rc=2 2026-10-12T11:48:01Z ===
+=== ESCALATE hyb29_mu5_031 2026-10-12T11:48:02Z ===
+agentwork-launch: tag=track5/batch29-escalate schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+=== ESCALATE hyb29_mu5_031 2026-10-12T12:10:14Z ===

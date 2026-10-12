@@ -21,3 +21,12 @@ XCHECK hyb29_mu5_029: PASS 10000/10000 C==Python
 PASS max_repeats=0 max|z|=84.4 (all 115 deltas)
 === S2 [hyb29_mu5_029] rc=0 wall=795s
 === S3 [hyb29_mu5_029] started 2026-10-12T11:30:17Z
+--- S3 tail:
+[S3 hyb29_mu5_029] stage 64MB (key=0x123456789abcdef0 stride=1) ...
+[S3 hyb29_mu5_029] 64MB: no FAIL (rng_test rc=0)
+[S3 hyb29_mu5_029] stage 256MB (key=0x123456789abcdef0 stride=1) ...
+[S3 hyb29_mu5_029] KILL at 256MB:
+  [Low1/64]FPF/16:all               R= +14.0  p =  3.5e-12    FAIL           
+[S3 hyb29_mu5_029] verdict: KILL@256MB
+=== S3 [hyb29_mu5_029] rc=2 wall=141s
+BATTERY-FAIL stage=S3-practrand [hyb29_mu5_029] (see /home/hatch/workspace/mix/exploration/fast_battery/results/hyb29_mu5_029/battery.log)

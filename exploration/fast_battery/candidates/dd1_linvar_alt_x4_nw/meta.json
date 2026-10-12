@@ -1,0 +1,25 @@
+{
+ "name": "dd1_linvar_alt_x4_nw",
+ "description": "Directed Design 1b (renamed: duplicate name in spec): per-round rots [[3,11],[5,13],[3,11],[5,13]]",
+ "batch": "batch1",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xfd1bc7092c4b5a9c"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x86bf8f6d9072f072"
+  }
+ ]
+}

@@ -1,0 +1,25 @@
+{
+ "name": "dd1_lin_6_15_nw",
+ "description": "Directed Design 1a: lin(6,15) - mixed",
+ "batch": "batch1",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x5a5c7e35bf0b3611"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x3312cbdc83fef3ef"
+  }
+ ]
+}

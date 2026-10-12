@@ -1,0 +1,26 @@
+{
+ "name": "dd1_lin_8_15_nw",
+ "description": "Directed Design 1a: lin(8,15) - branch4 spread6 - ties (5,13)",
+ "batch": "batch4",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "rtl_top": "dd1_lin_8_15_nw",
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xa6e1d998ed53a146"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x3d9d4486a02b8025"
+  }
+ ]
+}

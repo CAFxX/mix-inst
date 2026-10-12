@@ -1,0 +1,25 @@
+{
+ "name": "dd3_hetero_RMRM_nw",
+ "description": "Directed Design 3: heterogeneous S-box alternating rasc2/midori",
+ "batch": "batch3",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x2e8df71b62a752ba"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x6a1a1a65352e6c24"
+  }
+ ]
+}

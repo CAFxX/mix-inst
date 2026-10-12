@@ -1,0 +1,26 @@
+{
+ "name": "dd1_lin_5_13_nw",
+ "description": "Directed Design 1a: lin(5,13) - branch4 spread6 - current frontier",
+ "batch": "batch4",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "rtl_top": "dd1_lin_5_13_nw",
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xe5bf39cebc1c2154"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xee937efab297ce2c"
+  }
+ ]
+}

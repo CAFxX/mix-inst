@@ -1,0 +1,25 @@
+{
+ "name": "dd2_pb21_7_lin5_9_nw",
+ "description": "Directed Design 2: P(21,7) + lin(5,9)",
+ "batch": "batch2",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x15056ca721e89a31"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x97e666ca52f8d5e2"
+  }
+ ]
+}

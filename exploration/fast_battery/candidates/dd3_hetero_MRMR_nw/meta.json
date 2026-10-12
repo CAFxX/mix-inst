@@ -1,0 +1,25 @@
+{
+ "name": "dd3_hetero_MRMR_nw",
+ "description": "Directed Design 3: heterogeneous S-box alternating midori/rasc2",
+ "batch": "batch3",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x9865df932efa42ce"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x385fb9364df7d88"
+  }
+ ]
+}

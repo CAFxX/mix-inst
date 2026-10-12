@@ -1,0 +1,25 @@
+{
+ "name": "dd1_lin_4_9_nw",
+ "description": "Directed Design 1a: lin(4,9) - small rotations, branch4?",
+ "batch": "batch1",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xeaed658b0329f8e0"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x2af67d7f249b48a2"
+  }
+ ]
+}

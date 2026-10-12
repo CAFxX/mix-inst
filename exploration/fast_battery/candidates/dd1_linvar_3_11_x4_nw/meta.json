@@ -1,0 +1,25 @@
+{
+ "name": "dd1_linvar_3_11_x4_nw",
+ "description": "Directed Design 1b: varying rotations - alternating 311/513",
+ "batch": "batch1",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x1c815c20c0e6385a"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xe6cd44afabef84a4"
+  }
+ ]
+}

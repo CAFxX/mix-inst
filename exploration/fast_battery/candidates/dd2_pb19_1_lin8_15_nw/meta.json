@@ -1,0 +1,25 @@
+{
+ "name": "dd2_pb19_1_lin8_15_nw",
+ "description": "Directed Design 2: P(19,1) + lin(8,15)",
+ "batch": "batch2",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xa6e1d998ed53a146"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x3d9d4486a02b8025"
+  }
+ ]
+}

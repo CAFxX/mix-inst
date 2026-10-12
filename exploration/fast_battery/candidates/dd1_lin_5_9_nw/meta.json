@@ -1,0 +1,26 @@
+{
+ "name": "dd1_lin_5_9_nw",
+ "description": "Directed Design 1a: lin(5,9) - branch4 spread5",
+ "batch": "batch4",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "rtl_top": "dd1_lin_5_9_nw",
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x416ccdf6788fc42d"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xcfe678954453033f"
+  }
+ ]
+}

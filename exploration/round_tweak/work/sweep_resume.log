@@ -4098,3 +4098,7 @@ agentwork-launch: tag=track1/sweep schedulers:[none [mq-deadline]  ] ionice=best
 [sweep 17:08:33] 1220 specs; 1220 already probed
 [sweep 17:08:33] PROBE rtw_ab0408_pb2io [N9] prio=11214 boosted_by=[]
 [sweep 17:08:39] backoff: 2 heavy pipelines active, sleeping 300s
+[sweep 17:13:39] backoff: 2 heavy pipelines active, sleeping 300s
+[sweep 17:18:39] backoff: 2 heavy pipelines active, sleeping 300s
+[sweep 17:23:39] backoff: 2 heavy pipelines active, sleeping 300s
+[sweep 17:28:46]   S0 rtw_ab0408_pb2io: 37.0u / 3548 / 10490

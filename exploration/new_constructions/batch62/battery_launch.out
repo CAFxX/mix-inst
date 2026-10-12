@@ -35,3 +35,14 @@ agentwork-launch: tag=track6/b62-battery schedulers:[none [mq-deadline]  ] ionic
 [S3 t6_b62_26_strided] 1GB: no FAIL (rng_test rc=0)
 [S3 t6_b62_26_strided] verdict: PASS (all 4 stages, no FAIL)
 [2026-10-12T17:09:02+00:00] BATTERY t6_b62_9 (start_stage=1)
+[2026-10-12T17:29:36+00:00] BATTERY t6_b62_9 rc=0
+[S1 t6_b62_9] verdict: CAL_PASS
+[S3 t6_b62_9] 64MB: no FAIL (rng_test rc=0)
+[S3 t6_b62_9] 256MB: no FAIL (rng_test rc=0)
+[S3 t6_b62_9] 1GB: no FAIL (rng_test rc=0)
+[S3 t6_b62_9] verdict: PASS (all 4 stages, no FAIL)
+[S3 t6_b62_9_strided] 64MB: no FAIL (rng_test rc=0)
+[S3 t6_b62_9_strided] 256MB: no FAIL (rng_test rc=0)
+[S3 t6_b62_9_strided] 1GB: no FAIL (rng_test rc=0)
+[S3 t6_b62_9_strided] verdict: PASS (all 4 stages, no FAIL)
+[2026-10-12T17:29:38+00:00] BATTERY t6_b62_3 (start_stage=1)

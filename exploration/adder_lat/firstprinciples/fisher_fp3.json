@@ -1,0 +1,8 @@
+{
+  "lin_rejected": "[('LIN', 0)]",
+  "diff_rejected": "[('DIFF', 0)]",
+  "lin_detail": "{\"('LIN', 0)\": {'D': 4096, 'logp': -inf}}",
+  "diff_detail": "{\"('DIFF', 0)\": {'worst_z': 739994.3369293443, 'fisher_logp': -inf, 'bonf_logp': -273795809354.59982}}",
+  "lin_verdict": "FLAG",
+  "diff_verdict": "FLAG"
+}

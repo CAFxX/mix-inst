@@ -58,3 +58,14 @@ it 363667: new best 24 (T=1.623)
 it 398899: new best 23 (T=1.361)
 it 400000: cur 34 best 23 T=1.3533
 it 405357: new best 22 (T=1.318)
+it 415998: new best 21 (T=1.249)
+it 416132: new best 20 (T=1.248)
+it 426716: new best 19 (T=1.184)
+it 426719: new best 18 (T=1.184)
+it 443228: new best 17 (T=1.090)
+it 443290: new best 16 (T=1.090)
+it 443291: new best 15 (T=1.090)
+it 450000: cur 30 best 15 T=1.0540
+it 500000: cur 23 best 15 T=0.8208
+final best: 15
+EXIT: 0

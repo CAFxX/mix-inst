@@ -78,8 +78,10 @@ x_i = 1..8, y_j = 9..16; each entry expanded to its 8×8 binary
 
 **Known limitation**: the Cauchy M has row-restriction collisions (a few per
 byte-block), causing perfect avalanche correlation (corr=1.0) for a handful of
-output pairs. A simulated-annealing repair (`m_anneal.py`) is reducing
-collisions. If it reaches 0, `M64_bic.npy` supersedes `M64.npy`.
+output pairs. Simulated annealing (`m_anneal.py`, 500k iterations) reduced
+collisions from 138 to 15 rows but plateaued — perfect BIC via this route
+appears hard. `M64_bic.npy` was not produced; `M64.npy` stands with the
+limitation noted.
 
 ### F properties (derived mathematically)
 
@@ -124,8 +126,8 @@ but this F achieves byte branch 9 (vs AES's 5) in a single linear layer.
 ## 5. Open points (for parent)
 
 1. Statistical SAC/BIC of F: SAC worst |flip−0.5| = 0.072 (good); BIC has
-   corr=1.0 on a few pairs due to M collisions — `m_anneal.py` repairing
-   (was at 37 colliding rows and falling; saves `M64_bic.npy` if it hits 0).
+   corr=1.0 on a few pairs due to M collisions — annealing reduced 138→15
+   rows but plateaued; perfect BIC needs a different M construction.
 2. Two-round variant (S–M–S–M) would square the component NL
    (2⁶³−2³⁹ → ~2⁶³−2¹⁹) at 2 S-box + 12 XOR levels, if needed.
 3. PractRand on F requires a circuit or C implementation — out of scope for

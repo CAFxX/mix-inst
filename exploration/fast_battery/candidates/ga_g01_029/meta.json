@@ -1,0 +1,26 @@
+{
+ "name": "ga_g01_029",
+ "description": "GA 6r Feistel F=[chi32v_311,chi_311,s1_311,chi_311,s1_311,chi_keyin_notr] no whitening",
+ "composition": "GA 6r Feistel F=[chi32v_311,chi_311,s1_311,chi_311,s1_311,chi_keyin_notr] no whitening",
+ "rtl_top": "ga_g01_029",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xe88b7f0d41063b18"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x036701e5e11f5f7f"
+  }
+ ]
+}

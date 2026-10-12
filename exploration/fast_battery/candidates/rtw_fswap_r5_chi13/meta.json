@@ -1,0 +1,26 @@
+{
+ "name": "rtw_fswap_r5_chi13",
+ "description": "tweak N5: chioff13all round 5 F ('s1',) -> ('chi', 1, 3)",
+ "composition": "tweak N5: chioff13all round 5 F ('s1',) -> ('chi', 1, 3)",
+ "rtl_top": "rtw_fswap_r5_chi13",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x7b8460a40cbcbb81"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xd22d6da83000dc9d"
+  }
+ ]
+}

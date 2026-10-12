@@ -1,0 +1,26 @@
+{
+ "name": "rtw_fm311_31",
+ "description": "tweak N3: chioff31 + fm311-style rotl3^rotl11 final mixing",
+ "composition": "tweak N3: chioff31 + fm311-style rotl3^rotl11 final mixing",
+ "rtl_top": "rtw_fm311_31",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x81461587f28b094b"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x833bf11fbb8b5962"
+  }
+ ]
+}

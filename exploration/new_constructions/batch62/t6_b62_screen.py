@@ -230,11 +230,6 @@ def eval_low1(stages, tag):
     except subprocess.TimeoutExpired:
         return False, "PRACTRAND-TIMEOUT"
     text = open(log_path).read()
-    if "256 megabytes" not in text:
-        # Hardened guard: the target length must actually have been
-        # reached. ("length=" alone is insufficient: the
-        # out-of-bounds error line contains "length=" too.)
-        return False, "LOUD INFRA FAILURE: RNG_test did not reach 256MB"
     worst_p = 1.0
     worst_line = ""
     hits = []
@@ -250,7 +245,16 @@ def eval_low1(stages, tag):
         if bad:
             hits.append(line.strip())
     if hits:
+        # Note: PractRand defaults to -tlfail, so a FAIL halts the run
+        # early (it may never reach 256MB). That is a real detection,
+        # not an infra failure.
         return False, "LOW1-REJECT worst_p=%.2e :: %s" % (worst_p, hits[0][:120])
+    if "256 megabytes" not in text:
+        # Hardened guard: the target length must actually have been
+        # reached when nothing was detected. ("length=" alone is
+        # insufficient: the out-of-bounds error line contains
+        # "length=" too.)
+        return False, "LOUD INFRA FAILURE: RNG_test did not reach 256MB"
     return True, "LOW1-PASS worst_p=%.2e" % worst_p
 
 

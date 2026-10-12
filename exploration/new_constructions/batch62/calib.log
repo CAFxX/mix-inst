@@ -1,5 +1,13 @@
-agentwork-launch: tag=track6/b62-calib2 schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+agentwork-launch: tag=track6/b62-calib3 schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
 CALIB 1 and1/b33c z=3.3 EXACT: PASS maxworst|z|=3.3
 CALIB 2a MU5-324 fisher KEEP: PASS n_reject=0 z=3.24
 CALIB 2b linear-4 fisher REJECT: PASS n_reject=10 z=1480000.0
 CALIB 3a t6_b59_47 inner CAL_PASS: PASS verdict=CAL_PASS rej=0
+CALIB 3b t6_b61_56 inner CAL_FLAG on 0xffff..+0xaa..: PASS verdict=CAL_FLAG rej_diff=[('DIFF-SEQ', '0xffffffffffffffff'), ('DIFF-SEQ', '0xaaaaaaaaaaaaaaaa')]
+CALIB 3c t6_b61_24 inner CAL_PASS (no over-reject): PASS verdict=CAL_PASS rej=0
+CALIB 3d t6_b61_24 RD-SEQ REJECT: PASS n_reject=1 rej=['RD-SEQ']
+CALIB 3e t6_b59_47 RD-SEQ no-reject (positive): PASS n_reject=0
+CALIB 4a t6_b61_38 Low1 prescreen REJECT: PASS LOW1-REJECT worst_p=3.70e-05 :: [Low1/64]Gap-16:A                 R=  +6.9  p =  3.7e-5   mildly suspicious
+CALIB 4b t6_b59_47 Low1 prescreen PASS: PASS LOW1-PASS worst_p=1.00e+00
+CALIB 4c t6_b57_0 Low1 prescreen REJECT: PASS LOW1-REJECT worst_p=3.30e-12 :: [Low1/64]Gap-16:A                 R= +11.7  p =  5.7e-9    VERY SUSPICIOUS
+CALIBRATION PASS

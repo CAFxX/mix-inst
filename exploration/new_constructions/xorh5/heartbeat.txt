@@ -29,3 +29,5 @@
 [2026-10-12T06:09:50Z] battery t6_xorh5_5 rc=2 (0=pass,2=killed,1=infra)
 [2026-10-12T06:26:01Z] battery t6_xorh5_4 rc=0 (0=pass,2=killed,1=infra)
 [2026-10-12T06:32:38Z] battery t6_xorh5_7 rc=2 (0=pass,2=killed,1=infra)
+[2026-10-12T06:47:56Z] battery t6_xorh5_8 rc=0 (0=pass,2=killed,1=infra)
+[2026-10-12T06:50:58Z] battery t6_xorh5_10 rc=2 (0=pass,2=killed,1=infra)

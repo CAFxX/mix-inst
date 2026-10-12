@@ -1,0 +1,26 @@
+{
+ "name": "ga_g14_145",
+ "description": "GA 6r Feistel F=[s1_311,chi32w_311,s1_517,s1_311,chi32w_311,chi_notr] pbox:between64/interleave64 mask:r3_0F no whitening",
+ "composition": "GA 6r Feistel F=[s1_311,chi32w_311,s1_517,s1_311,chi32w_311,chi_notr] pbox:between64/interleave64 mask:r3_0F no whitening",
+ "rtl_top": "ga_g14_145",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xf0085aa532aaf135"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x600a3c573d0589ec"
+  }
+ ]
+}

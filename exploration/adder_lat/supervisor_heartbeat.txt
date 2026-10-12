@@ -110,3 +110,5 @@ HB 2026-10-11T20:52Z Track3: RESUMED per user order; W3 LIN-kill MECHANISM FOUND
 2026-10-12 06:14:53 b2sparse-screen: screen start N=300 seed=0xb200
 2026-10-12 06:15:53 b2sparse-screen: canary gate PASS
 2026-10-12 06:18:31 b2sparse-screen: calibration PASS
+2026-10-12 06:45:30 b2sparse-screen: ADOPTED by replacement supervisor; screen alive RNs nice-19, 155/300 rows, 9 KEEP / 14 kill-rank / 132 REJECT-affine; backoff CLEAR
+2026-10-12 06:54:37 b2sparse-screen: screen DONE keeps=14 elapsed=40m

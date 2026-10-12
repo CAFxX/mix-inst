@@ -145,3 +145,89 @@ XCHECK t6_xorh5_8: PASS 10000/10000 C==Python
 [S1 t6_xorh5_8] verdict: CAL_PASS
 === S1 [t6_xorh5_8] rc=0 wall=214s
 === S2 [t6_xorh5_8] started 2026-10-12T06:36:16Z
+--- S2 tail:
+  0xe000000000000000      2.8      244.7            0
+  0x000000000000000f      2.3      277.6            0
+  0x00000000f0000000      2.7      249.4            0
+  0x0000000f00000000      3.0      225.0            0
+  0xf000000000000000      2.0      236.8            0
+PASS max_repeats=0 max|z|=17.7 (all 115 deltas)
+=== S2 [t6_xorh5_8] rc=0 wall=296s
+=== S3 [t6_xorh5_8] started 2026-10-12T06:41:12Z
+--- S3 tail:
+[S3 t6_xorh5_8] 64MB: no FAIL (rng_test rc=0)
+[S3 t6_xorh5_8] stage 256MB (key=0x123456789abcdef0 stride=1) ...
+[S3 t6_xorh5_8] 256MB: no FAIL (rng_test rc=0)
+[S3 t6_xorh5_8] stage 1GB (key=0x123456789abcdef0 stride=1) ...
+[S3 t6_xorh5_8] 1GB: no FAIL (rng_test rc=0)
+[S3 t6_xorh5_8] verdict: PASS (all 4 stages, no FAIL)
+=== S3 [t6_xorh5_8] rc=0 wall=194s
+=== S3b [t6_xorh5_8] started 2026-10-12T06:44:26Z
+--- S3b tail:
+[S3 t6_xorh5_8_strided] 64MB: no FAIL (rng_test rc=0)
+[S3 t6_xorh5_8_strided] stage 256MB (key=0x0 stride=0x9E3779B97F4A7C15) ...
+[S3 t6_xorh5_8_strided] 256MB: no FAIL (rng_test rc=0)
+[S3 t6_xorh5_8_strided] stage 1GB (key=0x0 stride=0x9E3779B97F4A7C15) ...
+[S3 t6_xorh5_8_strided] 1GB: no FAIL (rng_test rc=0)
+[S3 t6_xorh5_8_strided] verdict: PASS (all 4 stages, no FAIL)
+=== S3b [t6_xorh5_8] rc=0 wall=184s
+=== S4 [t6_xorh5_8] started 2026-10-12T06:47:30Z
+--- S4 tail:
+ Total CPU time:   00:00:08.19
+
+ All tests were passed
+
+
+
+=== S4 [t6_xorh5_8] rc=0 wall=26s
+BATTERY-PASS [t6_xorh5_8] all stages survived (S5 P&R+review is a manual gate)
+=== CHAIN battery t6_xorh5_8 rc=0 END 2026-10-12T06:47:56Z
+=== CHAIN battery t6_xorh5_10 START 2026-10-12T06:47:57Z
+=== S0a [t6_xorh5_10] started 2026-10-12T06:48:02Z
+--- S0a tail:
+XCHECK t6_xorh5_10: PASS 10000/10000 C==Python
+=== S0a [t6_xorh5_10] rc=0 wall=3s
+=== S1 [t6_xorh5_10] started 2026-10-12T06:48:05Z
+--- S1 tail:
+  [DIFF] key=0x123456789abcdef worst|z|=2.4 fisher_logp=-1.42 bonf_logp=-1.11
+  [DIFF] key=0xf0b52a9e7d8ba2b5 worst|z|=1.3 fisher_logp=-0.05 bonf_logp=1.18
+  [DIFF] key=0x92988f142674743 worst|z|=2.1 fisher_logp=-2.08 bonf_logp=-0.51
+  LIN: PASS (rej=0)  DIFF: PASS (rej=0)
+[S1 t6_xorh5_10] LIN/DIFF 38s: LIN PASS DIFF PASS; marginal 167s: PB rej=1 RD rej=0
+[S1 t6_xorh5_10] verdict: FLAG
+=== S1 [t6_xorh5_10] rc=2 wall=173s
+BATTERY-FAIL stage=S1-screen [t6_xorh5_10] (see /home/hatch/workspace/mix/exploration/fast_battery/results/t6_xorh5_10/battery.log)
+=== CHAIN battery t6_xorh5_10 rc=2 END 2026-10-12T06:50:58Z
+=== CHAIN battery t6_xorh5_11 START 2026-10-12T06:50:58Z
+=== S0a [t6_xorh5_11] started 2026-10-12T06:51:00Z
+--- S0a tail:
+XCHECK t6_xorh5_11: PASS 10000/10000 C==Python
+=== S0a [t6_xorh5_11] rc=0 wall=2s
+=== S1 [t6_xorh5_11] started 2026-10-12T06:51:02Z
+--- S1 tail:
+  [DIFF] key=0x123456789abcdef worst|z|=1.7 fisher_logp=-0.35 bonf_logp=0.42
+  [DIFF] key=0xf0b52a9e7d8ba2b5 worst|z|=2.0 fisher_logp=-0.68 bonf_logp=-0.09
+  [DIFF] key=0x92988f142674743 worst|z|=2.0 fisher_logp=-1.23 bonf_logp=-0.11
+  LIN: PASS (rej=0)  DIFF: PASS (rej=0)
+[S1 t6_xorh5_11] LIN/DIFF 32s: LIN PASS DIFF PASS; marginal 170s: PB rej=0 RD rej=0
+[S1 t6_xorh5_11] verdict: CAL_PASS
+=== S1 [t6_xorh5_11] rc=0 wall=173s
+=== S2 [t6_xorh5_11] started 2026-10-12T06:53:55Z
+--- S2 tail:
+  0xe000000000000000      2.2      237.6            0
+  0x000000000000000f      2.0      237.1            0
+  0x00000000f0000000      2.9      280.1            0
+  0x0000000f00000000      2.9      252.5            0
+  0xf000000000000000      2.1      241.5            0
+PASS max_repeats=0 max|z|=4.1 (all 115 deltas)
+=== S2 [t6_xorh5_11] rc=0 wall=250s
+=== S3 [t6_xorh5_11] started 2026-10-12T06:58:06Z
+--- S3 tail:
+[S3 t6_xorh5_11] 64MB: no FAIL (rng_test rc=0)
+[S3 t6_xorh5_11] stage 256MB (key=0x123456789abcdef0 stride=1) ...
+[S3 t6_xorh5_11] 256MB: no FAIL (rng_test rc=0)
+[S3 t6_xorh5_11] stage 1GB (key=0x123456789abcdef0 stride=1) ...
+[S3 t6_xorh5_11] 1GB: no FAIL (rng_test rc=0)
+[S3 t6_xorh5_11] verdict: PASS (all 4 stages, no FAIL)
+=== S3 [t6_xorh5_11] rc=0 wall=147s
+=== S3b [t6_xorh5_11] started 2026-10-12T07:00:34Z

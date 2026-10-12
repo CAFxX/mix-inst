@@ -1,0 +1,49 @@
+RNG_test using PractRand version 0.96
+RNG = RNG_stdin64, seed = unknown
+test set = core, folding = standard (64 bit)
+
+rng=RNG_stdin64, seed=unknown
+length= 32 megabytes (2^25 bytes), time= 2.2 seconds
+  no anomalies in 159 test result(s)
+
+rng=RNG_stdin64, seed=unknown
+length= 64 megabytes (2^26 bytes), time= 13.1 seconds
+  no anomalies in 172 test result(s)
+
+rng=RNG_stdin64, seed=unknown
+length= 128 megabytes (2^27 bytes), time= 23.0 seconds
+  Test Name                         Raw       Processed     Evaluation       
+  [Low4/64]FPF/16:all               R=  +6.5  p =  1.6e-5   mildly suspicious
+  ...and 184 test result(s) without anomalies
+
+rng=RNG_stdin64, seed=unknown
+length= 256 megabytes (2^28 bytes), time= 52.5 seconds
+  Test Name                         Raw       Processed     Evaluation       
+  [Low4/64]FPF/16:all               R=  +6.8  p =  8.1e-6   mildly suspicious
+  [Low1/64]FPF/16:cross             R=  +4.8  p =  2.4e-4   unusual          
+  ...and 197 test result(s) without anomalies
+
+rng=RNG_stdin64, seed=unknown
+length= 512 megabytes (2^29 bytes), time= 134 seconds
+  Test Name                         Raw       Processed     Evaluation       
+  [Low4/64]FPF/16:all               R= +10.8  p =  1.2e-9    VERY SUSPICIOUS 
+  [Low1/64]DC6-9x1Bytes-1           R=  +6.7  p =  1.8e-3   unusual          
+  [Low1/64]FPF/16:all               R=  +5.6  p =  1.1e-4   unusual          
+  [Low1/64]FPF/16:cross             R=  +8.2  p =  4.6e-7   very suspicious  
+  ...and 209 test result(s) without anomalies
+
+rng=RNG_stdin64, seed=unknown
+length= 1 gigabyte (2^30 bytes), time= 287 seconds
+  Test Name                         Raw       Processed     Evaluation       
+  [Low4/64]FPF/16:(0,14-0)          R=  +8.0  p =  5.3e-7   mildly suspicious
+  [Low4/64]FPF/16:(1,14-0)          R= +18.8  p =  5.5e-17    FAIL !         
+  [Low4/64]FPF/16:(2,14-1)          R= +14.7  p =  8.9e-13   VERY SUSPICIOUS 
+  [Low4/64]FPF/16:(3,14-2)          R=  +7.6  p =  1.9e-6   unusual          
+  [Low4/64]FPF/16:all               R= +24.6  p =  1.5e-22    FAIL !!        
+  [Low4/64]FPF/16:cross             R=  +4.5  p =  3.2e-4   unusual          
+  [Low1/64]DC6-9x1Bytes-1           R=  +6.6  p =  1.5e-3   unusual          
+  [Low1/64]FPF/16:(0,14-1)          R=  +6.7  p =  1.1e-5   unusual          
+  [Low1/64]FPF/16:all               R=  +8.2  p =  3.4e-7   very suspicious  
+  [Low1/64]FPF/16:cross             R= +10.7  p =  7.2e-9   very suspicious  
+  ...and 217 test result(s) without anomalies
+

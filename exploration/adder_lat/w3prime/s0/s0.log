@@ -1,0 +1,25 @@
+=== S0 al_w3p_a 21:45:58 ===
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT al_w3p_a: cells=18917 area=58806 crit=48.3
+RESULT name=al_w3p_a cells=18917 area=58806 crit=48.3 delay_ratio=0.467 area_ratio=1.665 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+rc=0 ===
+=== S0 al_w3p_b 21:48:03 ===
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT al_w3p_b: cells=18322 area=57155 crit=50.6
+RESULT name=al_w3p_b cells=18322 area=57155 crit=50.6 delay_ratio=0.489 area_ratio=1.618 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+rc=0 ===
+=== S0 al_w3p_c 21:51:17 ===
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT al_w3p_c: cells=18119 area=56361 crit=49.0
+RESULT name=al_w3p_c cells=18119 area=56361 crit=49.0 delay_ratio=0.473 area_ratio=1.596 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+rc=0 ===
+=== S0 al_w3p_d 21:52:57 ===
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT al_w3p_d: cells=18983 area=58731 crit=48.7
+RESULT name=al_w3p_d cells=18983 area=58731 crit=48.7 delay_ratio=0.471 area_ratio=1.663 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+rc=0 ===
+S0-ALLDONE 21:54:50

@@ -1,0 +1,9 @@
+agentwork-launch: tag=track3/wave13-sboxcost2 schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+[BOYAR19_GF4INV] pure=4.2 pre=6.4
+[ULBC_s1] pure=3.5 pre=4.5
+[JIA25_12GE_R1] pure=3.9 pre=5.5
+[LU21_SKINNY] pure=5.0 pre=6.7
+[ORTHROS_S0] pure=3.5 pre=5.0
+[PRINCE_S0] pure=4.5 pre=5.7
+[THF_BLINK_S0] pure=3.7 pre=5.7
+SWEEP DONE 2026-10-10T21:13:49Z

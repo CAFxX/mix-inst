@@ -1,0 +1,30 @@
+Traceback (most recent call last):
+  File "/home/hatch/workspace/mix/exploration/adder_lat/wave14/run_calib.py", line 65, in <module>
+    main()
+  File "/home/hatch/workspace/mix/exploration/adder_lat/wave14/run_calib.py", line 48, in main
+    d = synth(top)
+        ^^^^^^^^^^
+  File "/home/hatch/workspace/mix/exploration/adder_lat/wave14/run_calib.py", line 29, in synth
+    raise RuntimeError(f"run_synth failed for {top}:\n{out[-3000:]}")
+RuntimeError: run_synth failed for w_add64:
+Traceback (most recent call last):
+  File "/home/hatch/workspace/mix/exploration/run_synth.py", line 98, in <module>
+    main()
+  File "/home/hatch/workspace/mix/exploration/run_synth.py", line 85, in main
+    ref = synth_one(REF_V, "mul64", os.path.join(workdir, "_ref"))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hatch/workspace/mix/exploration/run_synth.py", line 62, in synth_one
+    r = subprocess.run([YOSYS, "-s", ys], capture_output=True, text=True,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 550, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 1209, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 2116, in _communicate
+    self._check_timeout(endtime, orig_timeout, stdout, stderr)
+  File "/usr/lib/python3.12/subprocess.py", line 1253, in _check_timeout
+    raise TimeoutExpired(
+subprocess.TimeoutExpired: Command '['/home/hatch/tools/micromamba-root/envs/sky130/bin/yosys', '-s', '/home/hatch/workspace/mix/exploration/adder_lat/wave14/work/calib_w_add64/_ref/s_mul64.ys']' timed out after 900 seconds
+

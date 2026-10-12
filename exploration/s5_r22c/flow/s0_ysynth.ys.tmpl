@@ -1,0 +1,10 @@
+# S5 stage 0: yosys synthesis to sky130 (pinned yosys 0.69, ABC -liberty).
+# Template — ${RTL} ${TOP} ${WORK} ${PDK_LIB} substituted by the driver via envsubst.
+read_verilog ${RTL}
+hierarchy -check -top ${TOP}
+proc; opt; flatten; opt
+memory_map; opt
+techmap; opt
+abc -liberty ${PDK_LIB}
+opt; clean
+write_verilog -noattr ${WORK}/ysynth.v

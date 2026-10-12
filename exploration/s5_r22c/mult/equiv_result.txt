@@ -1,0 +1,2 @@
+EQUIV-PASS 20000/20000
+tb_equiv_mult.v:21: $finish called at 200000000000000000 (1ps)

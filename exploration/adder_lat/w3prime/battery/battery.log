@@ -1,0 +1,173 @@
+=== BATTERY al_w3p_a 21:55:10 ===
+=== S0a [al_w3p_a] started 2026-10-11T21:55:14Z
+--- S0a tail:
+XCHECK al_w3p_a: PASS 10000/10000 C==Python
+=== S0a [al_w3p_a] rc=0 wall=42s
+=== S1 [al_w3p_a] started 2026-10-11T21:55:56Z
+--- S1 tail:
+  [DIFF] key=0x123456789abcdef worst|z|=2.1 fisher_logp=-0.70 bonf_logp=-0.51
+  [DIFF] key=0xf0b52a9e7d8ba2b5 worst|z|=2.4 fisher_logp=-0.36 bonf_logp=-1.16
+  [DIFF] key=0x92988f142674743 worst|z|=1.9 fisher_logp=-0.34 bonf_logp=-0.02
+  LIN: PASS (rej=0)  DIFF: PASS (rej=0)
+[S1 al_w3p_a] LIN/DIFF 77s: LIN PASS DIFF PASS; marginal 456s: PB rej=0 RD rej=0
+[S1 al_w3p_a] verdict: CAL_PASS
+=== S1 [al_w3p_a] rc=0 wall=470s
+=== S2 [al_w3p_a] started 2026-10-11T22:03:47Z
+--- S2 tail:
+  0xe000000000000000      2.8      238.8            0
+  0x000000000000000f      2.9      240.8            0
+  0x00000000f0000000      3.4      286.9            0
+  0x0000000f00000000      2.9      224.4            0
+  0xf000000000000000      2.4      221.3            0
+PASS max_repeats=0 max|z|=4.1 (all 115 deltas)
+=== S2 [al_w3p_a] rc=0 wall=1994s
+=== S3 [al_w3p_a] started 2026-10-11T22:37:05Z
+--- S3 tail:
+[S3 al_w3p_a] 64MB: no FAIL (rng_test rc=0)
+[S3 al_w3p_a] stage 256MB (key=0x123456789abcdef0 stride=1) ...
+[S3 al_w3p_a] 256MB: no FAIL (rng_test rc=0)
+[S3 al_w3p_a] stage 1GB (key=0x123456789abcdef0 stride=1) ...
+[S3 al_w3p_a] 1GB: no FAIL (rng_test rc=0)
+[S3 al_w3p_a] verdict: PASS (all 4 stages, no FAIL)
+=== S3 [al_w3p_a] rc=0 wall=420s
+=== S3b [al_w3p_a] started 2026-10-11T22:44:05Z
+--- S3b tail:
+[S3 al_w3p_a_strided] 64MB: no FAIL (rng_test rc=0)
+[S3 al_w3p_a_strided] stage 256MB (key=0x0 stride=0x9E3779B97F4A7C15) ...
+[S3 al_w3p_a_strided] 256MB: no FAIL (rng_test rc=0)
+[S3 al_w3p_a_strided] stage 1GB (key=0x0 stride=0x9E3779B97F4A7C15) ...
+[S3 al_w3p_a_strided] 1GB: no FAIL (rng_test rc=0)
+[S3 al_w3p_a_strided] verdict: PASS (all 4 stages, no FAIL)
+=== S3b [al_w3p_a] rc=0 wall=328s
+=== S4 [al_w3p_a] started 2026-10-11T22:49:33Z
+--- S4 tail:
+ Total CPU time:   00:00:45.85
+
+ All tests were passed
+
+
+
+=== S4 [al_w3p_a] rc=0 wall=141s
+BATTERY-PASS [al_w3p_a] all stages survived (S5 P&R+review is a manual gate)
+battery al_w3p_a rc=0 ===
+=== BATTERY al_w3p_b 22:51:54 ===
+=== S0a [al_w3p_b] started 2026-10-11T22:51:57Z
+--- S0a tail:
+XCHECK al_w3p_b: PASS 10000/10000 C==Python
+=== S0a [al_w3p_b] rc=0 wall=25s
+=== S1 [al_w3p_b] started 2026-10-11T22:52:22Z
+--- S1 tail:
+  [DIFF] key=0x123456789abcdef worst|z|=2.0 fisher_logp=-0.84 bonf_logp=-0.14
+  [DIFF] key=0xf0b52a9e7d8ba2b5 worst|z|=1.5 fisher_logp=-0.13 bonf_logp=0.79
+  [DIFF] key=0x92988f142674743 worst|z|=2.1 fisher_logp=-0.97 bonf_logp=-0.48
+  LIN: PASS (rej=0)  DIFF: PASS (rej=0)
+[S1 al_w3p_b] LIN/DIFF 91s: LIN PASS DIFF PASS; marginal 613s: PB rej=0 RD rej=0
+[S1 al_w3p_b] verdict: CAL_PASS
+=== S1 [al_w3p_b] rc=0 wall=620s
+=== S2 [al_w3p_b] started 2026-10-11T23:02:42Z
+--- S2 tail:
+  0xe000000000000000      2.6      268.5            0
+  0x000000000000000f      2.5      271.8            0
+  0x00000000f0000000      3.2      265.0            0
+  0x0000000f00000000      3.4      273.9            0
+  0xf000000000000000      2.3      252.5            0
+PASS max_repeats=0 max|z|=3.9 (all 115 deltas)
+=== S2 [al_w3p_b] rc=0 wall=655s
+=== S3 [al_w3p_b] started 2026-10-11T23:13:37Z
+--- S3 tail:
+[S3 al_w3p_b] 64MB: no FAIL (rng_test rc=0)
+[S3 al_w3p_b] stage 256MB (key=0x123456789abcdef0 stride=1) ...
+[S3 al_w3p_b] 256MB: no FAIL (rng_test rc=0)
+[S3 al_w3p_b] stage 1GB (key=0x123456789abcdef0 stride=1) ...
+[S3 al_w3p_b] 1GB: no FAIL (rng_test rc=0)
+[S3 al_w3p_b] verdict: PASS (all 4 stages, no FAIL)
+=== S3 [al_w3p_b] rc=0 wall=172s
+=== S3b [al_w3p_b] started 2026-10-11T23:16:29Z
+--- S3b tail:
+[S3 al_w3p_b_strided] 64MB: no FAIL (rng_test rc=0)
+[S3 al_w3p_b_strided] stage 256MB (key=0x0 stride=0x9E3779B97F4A7C15) ...
+[S3 al_w3p_b_strided] 256MB: no FAIL (rng_test rc=0)
+[S3 al_w3p_b_strided] stage 1GB (key=0x0 stride=0x9E3779B97F4A7C15) ...
+[S3 al_w3p_b_strided] 1GB: no FAIL (rng_test rc=0)
+[S3 al_w3p_b_strided] verdict: PASS (all 4 stages, no FAIL)
+=== S3b [al_w3p_b] rc=0 wall=140s
+=== S4 [al_w3p_b] started 2026-10-11T23:18:49Z
+--- S4 tail:
+ Total CPU time:   00:00:45.50
+
+ All tests were passed
+
+
+
+=== S4 [al_w3p_b] rc=0 wall=70s
+BATTERY-PASS [al_w3p_b] all stages survived (S5 P&R+review is a manual gate)
+battery al_w3p_b rc=0 ===
+=== BATTERY al_w3p_c 23:19:59 ===
+=== S0a [al_w3p_c] started 2026-10-11T23:20:00Z
+--- S0a tail:
+XCHECK al_w3p_c: PASS 10000/10000 C==Python
+=== S0a [al_w3p_c] rc=0 wall=10s
+=== S1 [al_w3p_c] started 2026-10-11T23:20:10Z
+--- S1 tail:
+  [DIFF] key=0x123456789abcdef worst|z|=2.4 fisher_logp=-3.06 bonf_logp=-1.31
+  [DIFF] key=0xf0b52a9e7d8ba2b5 worst|z|=2.2 fisher_logp=-1.13 bonf_logp=-0.65
+  [DIFF] key=0x92988f142674743 worst|z|=2.4 fisher_logp=-0.52 bonf_logp=-1.22
+  LIN: FLAG (rej=1)  DIFF: PASS (rej=0)
+[S1 al_w3p_c] LIN/DIFF 21s: LIN FLAG DIFF PASS; SKIPPED (LIN/DIFF kill)
+[S1 al_w3p_c] verdict: FLAG
+=== S1 [al_w3p_c] rc=2 wall=24s
+BATTERY-FAIL stage=S1-screen [al_w3p_c] (see /home/hatch/workspace/mix/exploration/fast_battery/results/al_w3p_c/battery.log)
+battery al_w3p_c rc=2 ===
+=== BATTERY al_w3p_d 23:20:34 ===
+=== S0a [al_w3p_d] started 2026-10-11T23:20:34Z
+--- S0a tail:
+XCHECK al_w3p_d: PASS 10000/10000 C==Python
+=== S0a [al_w3p_d] rc=0 wall=12s
+=== S1 [al_w3p_d] started 2026-10-11T23:20:46Z
+--- S1 tail:
+  [DIFF] key=0x123456789abcdef worst|z|=1.6 fisher_logp=-0.18 bonf_logp=0.67
+  [DIFF] key=0xf0b52a9e7d8ba2b5 worst|z|=1.5 fisher_logp=-0.08 bonf_logp=0.80
+  [DIFF] key=0x92988f142674743 worst|z|=2.1 fisher_logp=-0.33 bonf_logp=-0.56
+  LIN: PASS (rej=0)  DIFF: PASS (rej=0)
+[S1 al_w3p_d] LIN/DIFF 28s: LIN PASS DIFF PASS; marginal 346s: PB rej=0 RD rej=0
+[S1 al_w3p_d] verdict: CAL_PASS
+=== S1 [al_w3p_d] rc=0 wall=352s
+=== S2 [al_w3p_d] started 2026-10-11T23:26:39Z
+--- S2 tail:
+  0xe000000000000000      3.2      268.6            0
+  0x000000000000000f      2.1      279.0            0
+  0x00000000f0000000      2.9      245.4            0
+  0x0000000f00000000      2.3      252.9            0
+  0xf000000000000000      2.5      243.2            0
+PASS max_repeats=0 max|z|=3.9 (all 115 deltas)
+=== S2 [al_w3p_d] rc=0 wall=571s
+=== S3 [al_w3p_d] started 2026-10-11T23:36:11Z
+--- S3 tail:
+[S3 al_w3p_d] 64MB: no FAIL (rng_test rc=0)
+[S3 al_w3p_d] stage 256MB (key=0x123456789abcdef0 stride=1) ...
+[S3 al_w3p_d] 256MB: no FAIL (rng_test rc=0)
+[S3 al_w3p_d] stage 1GB (key=0x123456789abcdef0 stride=1) ...
+[S3 al_w3p_d] 1GB: no FAIL (rng_test rc=0)
+[S3 al_w3p_d] verdict: PASS (all 4 stages, no FAIL)
+=== S3 [al_w3p_d] rc=0 wall=170s
+=== S3b [al_w3p_d] started 2026-10-11T23:39:01Z
+--- S3b tail:
+[S3 al_w3p_d_strided] 64MB: no FAIL (rng_test rc=0)
+[S3 al_w3p_d_strided] stage 256MB (key=0x0 stride=0x9E3779B97F4A7C15) ...
+[S3 al_w3p_d_strided] 256MB: no FAIL (rng_test rc=0)
+[S3 al_w3p_d_strided] stage 1GB (key=0x0 stride=0x9E3779B97F4A7C15) ...
+[S3 al_w3p_d_strided] 1GB: no FAIL (rng_test rc=0)
+[S3 al_w3p_d_strided] verdict: PASS (all 4 stages, no FAIL)
+=== S3b [al_w3p_d] rc=0 wall=246s
+=== S4 [al_w3p_d] started 2026-10-11T23:43:07Z
+--- S4 tail:
+ Total CPU time:   00:00:44.81
+
+ All tests were passed
+
+
+
+=== S4 [al_w3p_d] rc=0 wall=81s
+BATTERY-PASS [al_w3p_d] all stages survived (S5 P&R+review is a manual gate)
+battery al_w3p_d rc=0 ===
+BATTERY-ALLDONE 23:44:28

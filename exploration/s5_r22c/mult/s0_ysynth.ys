@@ -1,0 +1,10 @@
+# S5 stage 0: yosys synthesis to sky130 (pinned yosys 0.69, ABC -liberty).
+# Template — /home/hatch/workspace/mix/synth/mul64.v mul64 /home/hatch/workspace/mix/exploration/s5_r22c/mult /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_100C_1v80.lib substituted by the driver via envsubst.
+read_verilog /home/hatch/workspace/mix/synth/mul64.v
+hierarchy -check -top mul64
+proc; opt; flatten; opt
+memory_map; opt
+techmap; opt
+abc -liberty /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_100C_1v80.lib
+opt; clean
+write_verilog -noattr /home/hatch/workspace/mix/exploration/s5_r22c/mult/ysynth.v

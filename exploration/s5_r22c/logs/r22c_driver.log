@@ -1,0 +1,8 @@
+[2026-10-04T05:14:51Z] r22c stage s0_ysynth: SKIP
+[2026-10-04T05:14:51Z] r22c stage s1_link: SKIP
+[2026-10-04T05:14:51Z] r22c stage s2_floor: SKIP
+[2026-10-04T05:14:51Z] r22c stage s3_place: START
+[2026-10-04T05:15:19Z] r22c stage s3_place: DONE
+[2026-10-04T05:15:19Z] r22c stage s4_route: START
+Terminated
+[2026-10-04T06:33:11Z] r22c: FATAL: stage s4_route finished without checkpoint /home/hatch/workspace/mix/exploration/s5_r22c/r22c/routed.def

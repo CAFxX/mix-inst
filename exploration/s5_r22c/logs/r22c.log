@@ -1,0 +1,2437 @@
+[2026-10-04T04:34:18Z] r22c stage s1_synth: START
+Tcl_Eval failed: tclreadlineInit.tcl not found in any of the directories in auto_path
+Failed to load tclreadline
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef, created 14 layers, 25 vias
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef at line 2.
+
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef, created 437 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_pr/lef/sky130_fd_pr.lef at line 18.
+
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_pr/lef/sky130_fd_pr.lef, created 288 library cells
+[ERROR STA-0164] /home/hatch/workspace/your_files/mix_rtl_pareto/mix_r22c_spn_mix4r_lp_nw.v line 11, syntax error
+Error: s1_synth.tcl, 4 STA-0164
+application-specific initialization failed: can't read "auto_index(::tclreadline::ScriptCompleter)": no such element in array
+[2026-10-04T04:34:22Z] r22c stage s1_synth: EXIT rc=0
+[2026-10-04T04:34:22Z] r22c stage s2_floor: START
+Tcl_Eval failed: tclreadlineInit.tcl not found in any of the directories in auto_path
+Failed to load tclreadline
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef, created 14 layers, 25 vias
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef at line 2.
+
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef, created 437 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_pr/lef/sky130_fd_pr.lef at line 18.
+
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_pr/lef/sky130_fd_pr.lef, created 288 library cells
+Error: s2_floorplan.tcl, 4 cannot read file /home/hatch/workspace/mix/exploration/s5_r22c/r22c/synth.v.
+application-specific initialization failed: can't read "auto_index(::tclreadline::ScriptCompleter)": no such element in array
+[2026-10-04T04:34:27Z] r22c stage s2_floor: EXIT rc=0
+[2026-10-04T04:34:27Z] r22c stage s3_place: START
+Tcl_Eval failed: tclreadlineInit.tcl not found in any of the directories in auto_path
+Failed to load tclreadline
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef, created 14 layers, 25 vias
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef at line 2.
+
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef, created 437 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_pr/lef/sky130_fd_pr.lef at line 18.
+
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_pr/lef/sky130_fd_pr.lef, created 288 library cells
+Error: s3_place.tcl, 4 cannot read file /home/hatch/workspace/mix/exploration/s5_r22c/r22c/synth.v.
+application-specific initialization failed: can't read "auto_index(::tclreadline::ScriptCompleter)": no such element in array
+[2026-10-04T04:34:31Z] r22c stage s3_place: EXIT rc=0
+[2026-10-04T04:34:31Z] r22c stage s4_route: START
+Tcl_Eval failed: tclreadlineInit.tcl not found in any of the directories in auto_path
+Failed to load tclreadline
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef, created 14 layers, 25 vias
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef at line 2.
+
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef, created 437 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_pr/lef/sky130_fd_pr.lef at line 18.
+
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_pr/lef/sky130_fd_pr.lef, created 288 library cells
+Error: s4_route.tcl, 4 cannot read file /home/hatch/workspace/mix/exploration/s5_r22c/r22c/synth.v.
+application-specific initialization failed: can't read "auto_index(::tclreadline::ScriptCompleter)": no such element in array
+[2026-10-04T04:34:34Z] r22c stage s4_route: EXIT rc=0
+[2026-10-04T04:34:34Z] r22c stage s5_report: START
+Tcl_Eval failed: tclreadlineInit.tcl not found in any of the directories in auto_path
+Failed to load tclreadline
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef, created 14 layers, 25 vias
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef at line 2.
+
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef, created 437 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_pr/lef/sky130_fd_pr.lef at line 18.
+
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_pr/lef/sky130_fd_pr.lef, created 288 library cells
+Error: s5_reports.tcl, 5 cannot read file /home/hatch/workspace/mix/exploration/s5_r22c/r22c/final.v.
+application-specific initialization failed: can't read "auto_index(::tclreadline::ScriptCompleter)": no such element in array
+[2026-10-04T04:34:36Z] r22c stage s5_report: EXIT rc=0
+[2026-10-04T04:34:36Z] r22c: ALL STAGES COMPLETE
+[2026-10-04T04:53:09Z] r22c stage s0_ysynth: SKIP
+[2026-10-04T04:53:09Z] r22c stage s1_link: START
+Tcl_Eval failed: tclreadlineInit.tcl not found in any of the directories in auto_path
+Failed to load tclreadline
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef, created 14 layers, 25 vias
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef at line 2.
+
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef, created 437 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_pr/lef/sky130_fd_pr.lef at line 18.
+
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_pr/lef/sky130_fd_pr.lef, created 288 library cells
+S5-S1-LINK-DONE cells=1459
+application-specific initialization failed: can't read "auto_index(::tclreadline::ScriptCompleter)": no such element in array
+[2026-10-04T04:53:14Z] r22c: FATAL: stage s1_link finished without checkpoint /home/hatch/workspace/mix/exploration/s5_r22c/r22c/linked.ok
+[2026-10-04T04:53:40Z] r22c stage s0_ysynth: SKIP
+[2026-10-04T04:53:40Z] r22c stage s1_link: START
+Tcl_Eval failed: tclreadlineInit.tcl not found in any of the directories in auto_path
+Failed to load tclreadline
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef, created 14 layers, 25 vias
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef at line 2.
+
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef, created 437 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_pr/lef/sky130_fd_pr.lef at line 18.
+
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_pr/lef/sky130_fd_pr.lef, created 288 library cells
+S5-S1-LINK-DONE cells=1459
+application-specific initialization failed: can't read "auto_index(::tclreadline::ScriptCompleter)": no such element in array
+[2026-10-04T04:53:43Z] r22c stage s1_link: DONE
+[2026-10-04T04:53:43Z] r22c stage s2_floor: START
+Tcl_Eval failed: tclreadlineInit.tcl not found in any of the directories in auto_path
+Failed to load tclreadline
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef, created 14 layers, 25 vias
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef at line 2.
+
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef, created 437 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_pr/lef/sky130_fd_pr.lef at line 18.
+
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_pr/lef/sky130_fd_pr.lef, created 288 library cells
+[ERROR STA-0564] initialize_floorplan positional arguments not supported.
+Error: s2_floorplan.tcl, 7 STA-0564
+application-specific initialization failed: can't read "auto_index(::tclreadline::ScriptCompleter)": no such element in array
+[2026-10-04T04:53:45Z] r22c: FATAL: stage s2_floor finished without checkpoint /home/hatch/workspace/mix/exploration/s5_r22c/r22c/floorplan.def
+[2026-10-04T04:55:18Z] r22c stage s0_ysynth: SKIP
+[2026-10-04T04:55:18Z] r22c stage s1_link: SKIP
+[2026-10-04T04:55:18Z] r22c stage s2_floor: START
+Tcl_Eval failed: tclreadlineInit.tcl not found in any of the directories in auto_path
+Failed to load tclreadline
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef, created 14 layers, 25 vias
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef at line 2.
+
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef, created 437 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_pr/lef/sky130_fd_pr.lef at line 18.
+
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_pr/lef/sky130_fd_pr.lef, created 288 library cells
+[ERROR IFP-0011] use -site to add placement rows.
+Error: s2_floorplan.tcl, 7 IFP-0011
+application-specific initialization failed: can't read "auto_index(::tclreadline::ScriptCompleter)": no such element in array
+[2026-10-04T04:55:24Z] r22c: FATAL: stage s2_floor finished without checkpoint /home/hatch/workspace/mix/exploration/s5_r22c/r22c/floorplan.def
+[2026-10-04T04:57:12Z] r22c stage s0_ysynth: SKIP
+[2026-10-04T04:57:12Z] r22c stage s1_link: SKIP
+[2026-10-04T04:57:12Z] r22c stage s2_floor: START
+Tcl_Eval failed: tclreadlineInit.tcl not found in any of the directories in auto_path
+Failed to load tclreadline
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef, created 14 layers, 25 vias
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef at line 2.
+
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef, created 437 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_pr/lef/sky130_fd_pr.lef at line 18.
+
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_pr/lef/sky130_fd_pr.lef, created 288 library cells
+[WARNING IFP-0028] Core area lower left (2.000, 2.000) snapped to (2.300, 2.720).
+[INFO IFP-0001] Added 52 rows of 309 site unithd.
+Found 0 macro blocks.
+Using 2 tracks default min distance between IO pins.
+[ERROR PPL-0045] Layer met4 preferred direction is not horizontal.
+Error: s2_floorplan.tcl, 9 PPL-0045
+application-specific initialization failed: can't read "auto_index(::tclreadline::ScriptCompleter)": no such element in array
+[2026-10-04T04:57:15Z] r22c: FATAL: stage s2_floor finished without checkpoint /home/hatch/workspace/mix/exploration/s5_r22c/r22c/floorplan.def
+[2026-10-04T04:59:18Z] r22c stage s0_ysynth: SKIP
+[2026-10-04T04:59:18Z] r22c stage s1_link: SKIP
+[2026-10-04T04:59:18Z] r22c stage s2_floor: START
+Tcl_Eval failed: tclreadlineInit.tcl not found in any of the directories in auto_path
+Failed to load tclreadline
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef, created 14 layers, 25 vias
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef at line 2.
+
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef, created 437 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_pr/lef/sky130_fd_pr.lef at line 18.
+
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_pr/lef/sky130_fd_pr.lef, created 288 library cells
+[WARNING IFP-0028] Core area lower left (2.000, 2.000) snapped to (2.300, 2.720).
+[INFO IFP-0001] Added 52 rows of 309 site unithd.
+Found 0 macro blocks.
+Using 2 tracks default min distance between IO pins.
+[INFO PPL-0001] Number of slots           530
+[INFO PPL-0002] Number of I/O             192
+[INFO PPL-0003] Number of I/O w/sink      192
+[INFO PPL-0004] Number of I/O w/o sink    0
+[INFO PPL-0005] Slots per section         200
+[INFO PPL-0008] Successfully assigned pins to sections.
+[INFO PPL-0012] I/O nets HPWL: 20013.30 um.
+[ERROR TAP-0010] Master sky130_fd_sc_hd__tapvpwrvg_1 not found.
+Error: s2_floorplan.tcl, 12 TAP-0010
+application-specific initialization failed: can't read "auto_index(::tclreadline::ScriptCompleter)": no such element in array
+[2026-10-04T04:59:26Z] r22c: FATAL: stage s2_floor finished without checkpoint /home/hatch/workspace/mix/exploration/s5_r22c/r22c/floorplan.def
+[2026-10-04T05:01:28Z] r22c stage s0_ysynth: SKIP
+[2026-10-04T05:01:28Z] r22c stage s1_link: SKIP
+[2026-10-04T05:01:28Z] r22c stage s2_floor: START
+Tcl_Eval failed: tclreadlineInit.tcl not found in any of the directories in auto_path
+Failed to load tclreadline
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef, created 14 layers, 25 vias
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef at line 2.
+
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef, created 437 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_pr/lef/sky130_fd_pr.lef at line 18.
+
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_pr/lef/sky130_fd_pr.lef, created 288 library cells
+[WARNING IFP-0028] Core area lower left (2.000, 2.000) snapped to (2.300, 2.720).
+[INFO IFP-0001] Added 52 rows of 309 site unithd.
+Found 0 macro blocks.
+Using 2 tracks default min distance between IO pins.
+[INFO PPL-0001] Number of slots           530
+[INFO PPL-0002] Number of I/O             192
+[INFO PPL-0003] Number of I/O w/sink      192
+[INFO PPL-0004] Number of I/O w/o sink    0
+[INFO PPL-0005] Slots per section         200
+[INFO PPL-0008] Successfully assigned pins to sections.
+[INFO PPL-0012] I/O nets HPWL: 20013.30 um.
+[INFO TAP-0004] Inserted 104 endcaps.
+[INFO TAP-0005] Inserted 270 tapcells.
+[ERROR STA-0562] pdngen -config_file is not a known keyword or flag.
+Error: s2_floorplan.tcl, 13 STA-0562
+application-specific initialization failed: can't read "auto_index(::tclreadline::ScriptCompleter)": no such element in array
+[2026-10-04T05:01:32Z] r22c: FATAL: stage s2_floor finished without checkpoint /home/hatch/workspace/mix/exploration/s5_r22c/r22c/floorplan.def
+[2026-10-04T05:03:30Z] r22c stage s0_ysynth: SKIP
+[2026-10-04T05:03:30Z] r22c stage s1_link: SKIP
+[2026-10-04T05:03:30Z] r22c stage s2_floor: START
+Tcl_Eval failed: tclreadlineInit.tcl not found in any of the directories in auto_path
+Failed to load tclreadline
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef, created 14 layers, 25 vias
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef at line 2.
+
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef, created 437 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_pr/lef/sky130_fd_pr.lef at line 18.
+
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_pr/lef/sky130_fd_pr.lef, created 288 library cells
+[WARNING IFP-0028] Core area lower left (2.000, 2.000) snapped to (2.300, 2.720).
+[INFO IFP-0001] Added 52 rows of 309 site unithd.
+Found 0 macro blocks.
+Using 2 tracks default min distance between IO pins.
+[INFO PPL-0001] Number of slots           530
+[INFO PPL-0002] Number of I/O             192
+[INFO PPL-0003] Number of I/O w/sink      192
+[INFO PPL-0004] Number of I/O w/o sink    0
+[INFO PPL-0005] Slots per section         200
+[INFO PPL-0008] Successfully assigned pins to sections.
+[INFO PPL-0012] I/O nets HPWL: 20013.30 um.
+[INFO TAP-0004] Inserted 104 endcaps.
+[INFO TAP-0005] Inserted 270 tapcells.
+[ERROR PDN-1002] Unable to find power net: VPWR
+Error: pdn.cfg, 3 PDN-1002
+application-specific initialization failed: can't read "auto_index(::tclreadline::ScriptCompleter)": no such element in array
+[2026-10-04T05:03:34Z] r22c: FATAL: stage s2_floor finished without checkpoint /home/hatch/workspace/mix/exploration/s5_r22c/r22c/floorplan.def
+[2026-10-04T05:05:38Z] r22c stage s0_ysynth: SKIP
+[2026-10-04T05:05:38Z] r22c stage s1_link: SKIP
+[2026-10-04T05:05:38Z] r22c stage s2_floor: START
+Tcl_Eval failed: tclreadlineInit.tcl not found in any of the directories in auto_path
+Failed to load tclreadline
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef, created 14 layers, 25 vias
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef at line 2.
+
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef, created 437 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_pr/lef/sky130_fd_pr.lef at line 18.
+
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_pr/lef/sky130_fd_pr.lef, created 288 library cells
+[WARNING IFP-0028] Core area lower left (2.000, 2.000) snapped to (2.300, 2.720).
+[INFO IFP-0001] Added 52 rows of 309 site unithd.
+Found 0 macro blocks.
+Using 2 tracks default min distance between IO pins.
+[INFO PPL-0001] Number of slots           530
+[INFO PPL-0002] Number of I/O             192
+[INFO PPL-0003] Number of I/O w/sink      192
+[INFO PPL-0004] Number of I/O w/o sink    0
+[INFO PPL-0005] Slots per section         200
+[INFO PPL-0008] Successfully assigned pins to sections.
+[INFO PPL-0012] I/O nets HPWL: 20013.30 um.
+[INFO TAP-0004] Inserted 104 endcaps.
+[INFO TAP-0005] Inserted 270 tapcells.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_0_Right_0/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_0_Right_0/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_1_Right_1/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_1_Right_1/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_2_Right_2/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_2_Right_2/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_3_Right_3/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_3_Right_3/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_4_Right_4/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_4_Right_4/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_5_Right_5/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_5_Right_5/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_6_Right_6/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_6_Right_6/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_7_Right_7/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_7_Right_7/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_8_Right_8/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_8_Right_8/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_9_Right_9/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_9_Right_9/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_10_Right_10/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_10_Right_10/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_11_Right_11/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_11_Right_11/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_12_Right_12/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_12_Right_12/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_13_Right_13/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_13_Right_13/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_14_Right_14/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_14_Right_14/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_15_Right_15/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_15_Right_15/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_16_Right_16/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_16_Right_16/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_17_Right_17/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_17_Right_17/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_18_Right_18/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_18_Right_18/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_19_Right_19/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_19_Right_19/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_20_Right_20/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_20_Right_20/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_21_Right_21/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_21_Right_21/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_22_Right_22/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_22_Right_22/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_23_Right_23/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_23_Right_23/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_24_Right_24/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_24_Right_24/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_25_Right_25/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_25_Right_25/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_26_Right_26/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_26_Right_26/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_27_Right_27/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_27_Right_27/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_28_Right_28/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_28_Right_28/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_29_Right_29/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_29_Right_29/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_30_Right_30/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_30_Right_30/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_31_Right_31/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_31_Right_31/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_32_Right_32/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_32_Right_32/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_33_Right_33/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_33_Right_33/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_34_Right_34/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_34_Right_34/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_35_Right_35/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_35_Right_35/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_36_Right_36/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_36_Right_36/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_37_Right_37/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_37_Right_37/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_38_Right_38/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_38_Right_38/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_39_Right_39/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_39_Right_39/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_40_Right_40/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_40_Right_40/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_41_Right_41/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_41_Right_41/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_42_Right_42/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_42_Right_42/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_43_Right_43/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_43_Right_43/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_44_Right_44/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_44_Right_44/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_45_Right_45/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_45_Right_45/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_46_Right_46/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_46_Right_46/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_47_Right_47/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_47_Right_47/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_48_Right_48/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_48_Right_48/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_49_Right_49/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_49_Right_49/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_50_Right_50/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_50_Right_50/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_51_Right_51/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_51_Right_51/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_0_Left_52/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_0_Left_52/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_1_Left_53/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_1_Left_53/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_2_Left_54/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_2_Left_54/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_3_Left_55/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_3_Left_55/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_4_Left_56/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_4_Left_56/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_5_Left_57/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_5_Left_57/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_6_Left_58/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_6_Left_58/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_7_Left_59/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_7_Left_59/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_8_Left_60/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_8_Left_60/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_9_Left_61/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_9_Left_61/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_10_Left_62/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_10_Left_62/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_11_Left_63/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_11_Left_63/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_12_Left_64/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_12_Left_64/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_13_Left_65/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_13_Left_65/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_14_Left_66/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_14_Left_66/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_15_Left_67/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_15_Left_67/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_16_Left_68/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_16_Left_68/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_17_Left_69/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_17_Left_69/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_18_Left_70/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_18_Left_70/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_19_Left_71/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_19_Left_71/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_20_Left_72/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_20_Left_72/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_21_Left_73/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_21_Left_73/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_22_Left_74/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_22_Left_74/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_23_Left_75/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_23_Left_75/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_24_Left_76/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_24_Left_76/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_25_Left_77/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_25_Left_77/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_26_Left_78/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_26_Left_78/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_27_Left_79/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_27_Left_79/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_28_Left_80/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_28_Left_80/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_29_Left_81/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_29_Left_81/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_30_Left_82/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_30_Left_82/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_31_Left_83/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_31_Left_83/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_32_Left_84/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_32_Left_84/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_33_Left_85/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_33_Left_85/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_34_Left_86/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_34_Left_86/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_35_Left_87/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_35_Left_87/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_36_Left_88/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_36_Left_88/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_37_Left_89/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_37_Left_89/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_38_Left_90/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_38_Left_90/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_39_Left_91/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_39_Left_91/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_40_Left_92/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_40_Left_92/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_41_Left_93/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_41_Left_93/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_42_Left_94/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_42_Left_94/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_43_Left_95/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_43_Left_95/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_44_Left_96/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_44_Left_96/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_45_Left_97/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_45_Left_97/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_46_Left_98/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_46_Left_98/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_47_Left_99/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_47_Left_99/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_48_Left_100/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_48_Left_100/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_49_Left_101/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_49_Left_101/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_50_Left_102/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_50_Left_102/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_51_Left_103/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_51_Left_103/VPB is not connected to any net.
+[INFO PDN-0001] Inserting grid: stdcell_grid
+[INFO PDN-0001] Inserting grid: core_grid
+S5-S2-FLOORPLAN-DONE
+application-specific initialization failed: can't read "auto_index(::tclreadline::ScriptCompleter)": no such element in array
+[2026-10-04T05:05:44Z] r22c stage s2_floor: DONE
+[2026-10-04T05:05:44Z] r22c stage s3_place: START
+Tcl_Eval failed: tclreadlineInit.tcl not found in any of the directories in auto_path
+Failed to load tclreadline
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef, created 14 layers, 25 vias
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef at line 2.
+
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef, created 437 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_pr/lef/sky130_fd_pr.lef at line 18.
+
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_pr/lef/sky130_fd_pr.lef, created 288 library cells
+[INFO ORD-0048] Loading an additional DEF.
+[ERROR ODB-0251] Chip already exists
+Error: s3_place.tcl, 7 ODB-0251
+application-specific initialization failed: can't read "auto_index(::tclreadline::ScriptCompleter)": no such element in array
+[2026-10-04T05:05:47Z] r22c: FATAL: stage s3_place finished without checkpoint /home/hatch/workspace/mix/exploration/s5_r22c/r22c/placed.def
+[2026-10-04T05:08:05Z] r22c stage s0_ysynth: SKIP
+[2026-10-04T05:08:05Z] r22c stage s1_link: SKIP
+[2026-10-04T05:08:05Z] r22c stage s2_floor: SKIP
+[2026-10-04T05:08:05Z] r22c stage s3_place: START
+Tcl_Eval failed: tclreadlineInit.tcl not found in any of the directories in auto_path
+Failed to load tclreadline
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef, created 14 layers, 25 vias
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef at line 2.
+
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef, created 437 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_pr/lef/sky130_fd_pr.lef at line 18.
+
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_pr/lef/sky130_fd_pr.lef, created 288 library cells
+[INFO ODB-0127] Reading DEF file: /home/hatch/workspace/mix/exploration/s5_r22c/r22c/floorplan.def
+[INFO ODB-0128] Design: r22c_spn_mix4r_lp_nw
+[INFO ODB-0130]     Created 194 pins.
+[INFO ODB-0131]     Created 1833 components and 11895 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 3666 connections.
+[INFO ODB-0133]     Created 1587 nets and 5103 connections.
+[INFO ODB-0134] Finished DEF file: /home/hatch/workspace/mix/exploration/s5_r22c/r22c/floorplan.def
+[INFO ORD-0030] Using 2 thread(s).
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: (  0.460  2.720 ) um
+[INFO GPL-0004] CoreBBox: (  2.300  2.720 ) ( 144.440 144.160 ) um
+[WARNING GPL-0001] val[9] toplevel port is not placed!
+       Replace will regard val[9] is placed in (0, 0)
+[WARNING GPL-0001] val[8] toplevel port is not placed!
+       Replace will regard val[8] is placed in (0, 0)
+[WARNING GPL-0001] val[7] toplevel port is not placed!
+       Replace will regard val[7] is placed in (0, 0)
+[WARNING GPL-0001] val[6] toplevel port is not placed!
+       Replace will regard val[6] is placed in (0, 0)
+[WARNING GPL-0001] val[63] toplevel port is not placed!
+       Replace will regard val[63] is placed in (0, 0)
+[WARNING GPL-0001] val[62] toplevel port is not placed!
+       Replace will regard val[62] is placed in (0, 0)
+[WARNING GPL-0001] val[61] toplevel port is not placed!
+       Replace will regard val[61] is placed in (0, 0)
+[WARNING GPL-0001] val[60] toplevel port is not placed!
+       Replace will regard val[60] is placed in (0, 0)
+[WARNING GPL-0001] val[5] toplevel port is not placed!
+       Replace will regard val[5] is placed in (0, 0)
+[WARNING GPL-0001] val[59] toplevel port is not placed!
+       Replace will regard val[59] is placed in (0, 0)
+[WARNING GPL-0001] val[58] toplevel port is not placed!
+       Replace will regard val[58] is placed in (0, 0)
+[WARNING GPL-0001] val[57] toplevel port is not placed!
+       Replace will regard val[57] is placed in (0, 0)
+[WARNING GPL-0001] val[56] toplevel port is not placed!
+       Replace will regard val[56] is placed in (0, 0)
+[WARNING GPL-0001] val[55] toplevel port is not placed!
+       Replace will regard val[55] is placed in (0, 0)
+[WARNING GPL-0001] val[54] toplevel port is not placed!
+       Replace will regard val[54] is placed in (0, 0)
+[WARNING GPL-0001] val[53] toplevel port is not placed!
+       Replace will regard val[53] is placed in (0, 0)
+[WARNING GPL-0001] val[52] toplevel port is not placed!
+       Replace will regard val[52] is placed in (0, 0)
+[WARNING GPL-0001] val[51] toplevel port is not placed!
+       Replace will regard val[51] is placed in (0, 0)
+[WARNING GPL-0001] val[50] toplevel port is not placed!
+       Replace will regard val[50] is placed in (0, 0)
+[WARNING GPL-0001] val[4] toplevel port is not placed!
+       Replace will regard val[4] is placed in (0, 0)
+[WARNING GPL-0001] val[49] toplevel port is not placed!
+       Replace will regard val[49] is placed in (0, 0)
+[WARNING GPL-0001] val[48] toplevel port is not placed!
+       Replace will regard val[48] is placed in (0, 0)
+[WARNING GPL-0001] val[47] toplevel port is not placed!
+       Replace will regard val[47] is placed in (0, 0)
+[WARNING GPL-0001] val[46] toplevel port is not placed!
+       Replace will regard val[46] is placed in (0, 0)
+[WARNING GPL-0001] val[45] toplevel port is not placed!
+       Replace will regard val[45] is placed in (0, 0)
+[WARNING GPL-0001] val[44] toplevel port is not placed!
+       Replace will regard val[44] is placed in (0, 0)
+[WARNING GPL-0001] val[43] toplevel port is not placed!
+       Replace will regard val[43] is placed in (0, 0)
+[WARNING GPL-0001] val[42] toplevel port is not placed!
+       Replace will regard val[42] is placed in (0, 0)
+[WARNING GPL-0001] val[41] toplevel port is not placed!
+       Replace will regard val[41] is placed in (0, 0)
+[WARNING GPL-0001] val[40] toplevel port is not placed!
+       Replace will regard val[40] is placed in (0, 0)
+[WARNING GPL-0001] val[3] toplevel port is not placed!
+       Replace will regard val[3] is placed in (0, 0)
+[WARNING GPL-0001] val[39] toplevel port is not placed!
+       Replace will regard val[39] is placed in (0, 0)
+[WARNING GPL-0001] val[38] toplevel port is not placed!
+       Replace will regard val[38] is placed in (0, 0)
+[WARNING GPL-0001] val[37] toplevel port is not placed!
+       Replace will regard val[37] is placed in (0, 0)
+[WARNING GPL-0001] val[36] toplevel port is not placed!
+       Replace will regard val[36] is placed in (0, 0)
+[WARNING GPL-0001] val[35] toplevel port is not placed!
+       Replace will regard val[35] is placed in (0, 0)
+[WARNING GPL-0001] val[34] toplevel port is not placed!
+       Replace will regard val[34] is placed in (0, 0)
+[WARNING GPL-0001] val[33] toplevel port is not placed!
+       Replace will regard val[33] is placed in (0, 0)
+[WARNING GPL-0001] val[32] toplevel port is not placed!
+       Replace will regard val[32] is placed in (0, 0)
+[WARNING GPL-0001] val[31] toplevel port is not placed!
+       Replace will regard val[31] is placed in (0, 0)
+[WARNING GPL-0001] val[30] toplevel port is not placed!
+       Replace will regard val[30] is placed in (0, 0)
+[WARNING GPL-0001] val[2] toplevel port is not placed!
+       Replace will regard val[2] is placed in (0, 0)
+[WARNING GPL-0001] val[29] toplevel port is not placed!
+       Replace will regard val[29] is placed in (0, 0)
+[WARNING GPL-0001] val[28] toplevel port is not placed!
+       Replace will regard val[28] is placed in (0, 0)
+[WARNING GPL-0001] val[27] toplevel port is not placed!
+       Replace will regard val[27] is placed in (0, 0)
+[WARNING GPL-0001] val[26] toplevel port is not placed!
+       Replace will regard val[26] is placed in (0, 0)
+[WARNING GPL-0001] val[25] toplevel port is not placed!
+       Replace will regard val[25] is placed in (0, 0)
+[WARNING GPL-0001] val[24] toplevel port is not placed!
+       Replace will regard val[24] is placed in (0, 0)
+[WARNING GPL-0001] val[23] toplevel port is not placed!
+       Replace will regard val[23] is placed in (0, 0)
+[WARNING GPL-0001] val[22] toplevel port is not placed!
+       Replace will regard val[22] is placed in (0, 0)
+[WARNING GPL-0001] val[21] toplevel port is not placed!
+       Replace will regard val[21] is placed in (0, 0)
+[WARNING GPL-0001] val[20] toplevel port is not placed!
+       Replace will regard val[20] is placed in (0, 0)
+[WARNING GPL-0001] val[1] toplevel port is not placed!
+       Replace will regard val[1] is placed in (0, 0)
+[WARNING GPL-0001] val[19] toplevel port is not placed!
+       Replace will regard val[19] is placed in (0, 0)
+[WARNING GPL-0001] val[18] toplevel port is not placed!
+       Replace will regard val[18] is placed in (0, 0)
+[WARNING GPL-0001] val[17] toplevel port is not placed!
+       Replace will regard val[17] is placed in (0, 0)
+[WARNING GPL-0001] val[16] toplevel port is not placed!
+       Replace will regard val[16] is placed in (0, 0)
+[WARNING GPL-0001] val[15] toplevel port is not placed!
+       Replace will regard val[15] is placed in (0, 0)
+[WARNING GPL-0001] val[14] toplevel port is not placed!
+       Replace will regard val[14] is placed in (0, 0)
+[WARNING GPL-0001] val[13] toplevel port is not placed!
+       Replace will regard val[13] is placed in (0, 0)
+[WARNING GPL-0001] val[12] toplevel port is not placed!
+       Replace will regard val[12] is placed in (0, 0)
+[WARNING GPL-0001] val[11] toplevel port is not placed!
+       Replace will regard val[11] is placed in (0, 0)
+[WARNING GPL-0001] val[10] toplevel port is not placed!
+       Replace will regard val[10] is placed in (0, 0)
+[WARNING GPL-0001] val[0] toplevel port is not placed!
+       Replace will regard val[0] is placed in (0, 0)
+[WARNING GPL-0001] out[9] toplevel port is not placed!
+       Replace will regard out[9] is placed in (0, 0)
+[WARNING GPL-0001] out[8] toplevel port is not placed!
+       Replace will regard out[8] is placed in (0, 0)
+[WARNING GPL-0001] out[7] toplevel port is not placed!
+       Replace will regard out[7] is placed in (0, 0)
+[WARNING GPL-0001] out[6] toplevel port is not placed!
+       Replace will regard out[6] is placed in (0, 0)
+[WARNING GPL-0001] out[63] toplevel port is not placed!
+       Replace will regard out[63] is placed in (0, 0)
+[WARNING GPL-0001] out[62] toplevel port is not placed!
+       Replace will regard out[62] is placed in (0, 0)
+[WARNING GPL-0001] out[61] toplevel port is not placed!
+       Replace will regard out[61] is placed in (0, 0)
+[WARNING GPL-0001] out[60] toplevel port is not placed!
+       Replace will regard out[60] is placed in (0, 0)
+[WARNING GPL-0001] out[5] toplevel port is not placed!
+       Replace will regard out[5] is placed in (0, 0)
+[WARNING GPL-0001] out[59] toplevel port is not placed!
+       Replace will regard out[59] is placed in (0, 0)
+[WARNING GPL-0001] out[58] toplevel port is not placed!
+       Replace will regard out[58] is placed in (0, 0)
+[WARNING GPL-0001] out[57] toplevel port is not placed!
+       Replace will regard out[57] is placed in (0, 0)
+[WARNING GPL-0001] out[56] toplevel port is not placed!
+       Replace will regard out[56] is placed in (0, 0)
+[WARNING GPL-0001] out[55] toplevel port is not placed!
+       Replace will regard out[55] is placed in (0, 0)
+[WARNING GPL-0001] out[54] toplevel port is not placed!
+       Replace will regard out[54] is placed in (0, 0)
+[WARNING GPL-0001] out[53] toplevel port is not placed!
+       Replace will regard out[53] is placed in (0, 0)
+[WARNING GPL-0001] out[52] toplevel port is not placed!
+       Replace will regard out[52] is placed in (0, 0)
+[WARNING GPL-0001] out[51] toplevel port is not placed!
+       Replace will regard out[51] is placed in (0, 0)
+[WARNING GPL-0001] out[50] toplevel port is not placed!
+       Replace will regard out[50] is placed in (0, 0)
+[WARNING GPL-0001] out[4] toplevel port is not placed!
+       Replace will regard out[4] is placed in (0, 0)
+[WARNING GPL-0001] out[49] toplevel port is not placed!
+       Replace will regard out[49] is placed in (0, 0)
+[WARNING GPL-0001] out[48] toplevel port is not placed!
+       Replace will regard out[48] is placed in (0, 0)
+[WARNING GPL-0001] out[47] toplevel port is not placed!
+       Replace will regard out[47] is placed in (0, 0)
+[WARNING GPL-0001] out[46] toplevel port is not placed!
+       Replace will regard out[46] is placed in (0, 0)
+[WARNING GPL-0001] out[45] toplevel port is not placed!
+       Replace will regard out[45] is placed in (0, 0)
+[WARNING GPL-0001] out[44] toplevel port is not placed!
+       Replace will regard out[44] is placed in (0, 0)
+[WARNING GPL-0001] out[43] toplevel port is not placed!
+       Replace will regard out[43] is placed in (0, 0)
+[WARNING GPL-0001] out[42] toplevel port is not placed!
+       Replace will regard out[42] is placed in (0, 0)
+[WARNING GPL-0001] out[41] toplevel port is not placed!
+       Replace will regard out[41] is placed in (0, 0)
+[WARNING GPL-0001] out[40] toplevel port is not placed!
+       Replace will regard out[40] is placed in (0, 0)
+[WARNING GPL-0001] out[3] toplevel port is not placed!
+       Replace will regard out[3] is placed in (0, 0)
+[WARNING GPL-0001] out[39] toplevel port is not placed!
+       Replace will regard out[39] is placed in (0, 0)
+[WARNING GPL-0001] out[38] toplevel port is not placed!
+       Replace will regard out[38] is placed in (0, 0)
+[WARNING GPL-0001] out[37] toplevel port is not placed!
+       Replace will regard out[37] is placed in (0, 0)
+[WARNING GPL-0001] out[36] toplevel port is not placed!
+       Replace will regard out[36] is placed in (0, 0)
+[WARNING GPL-0001] out[35] toplevel port is not placed!
+       Replace will regard out[35] is placed in (0, 0)
+[WARNING GPL-0001] out[34] toplevel port is not placed!
+       Replace will regard out[34] is placed in (0, 0)
+[WARNING GPL-0001] out[33] toplevel port is not placed!
+       Replace will regard out[33] is placed in (0, 0)
+[WARNING GPL-0001] out[32] toplevel port is not placed!
+       Replace will regard out[32] is placed in (0, 0)
+[WARNING GPL-0001] out[31] toplevel port is not placed!
+       Replace will regard out[31] is placed in (0, 0)
+[WARNING GPL-0001] out[30] toplevel port is not placed!
+       Replace will regard out[30] is placed in (0, 0)
+[WARNING GPL-0001] out[2] toplevel port is not placed!
+       Replace will regard out[2] is placed in (0, 0)
+[WARNING GPL-0001] out[29] toplevel port is not placed!
+       Replace will regard out[29] is placed in (0, 0)
+[WARNING GPL-0001] out[28] toplevel port is not placed!
+       Replace will regard out[28] is placed in (0, 0)
+[WARNING GPL-0001] out[27] toplevel port is not placed!
+       Replace will regard out[27] is placed in (0, 0)
+[WARNING GPL-0001] out[26] toplevel port is not placed!
+       Replace will regard out[26] is placed in (0, 0)
+[WARNING GPL-0001] out[25] toplevel port is not placed!
+       Replace will regard out[25] is placed in (0, 0)
+[WARNING GPL-0001] out[24] toplevel port is not placed!
+       Replace will regard out[24] is placed in (0, 0)
+[WARNING GPL-0001] out[23] toplevel port is not placed!
+       Replace will regard out[23] is placed in (0, 0)
+[WARNING GPL-0001] out[22] toplevel port is not placed!
+       Replace will regard out[22] is placed in (0, 0)
+[WARNING GPL-0001] out[21] toplevel port is not placed!
+       Replace will regard out[21] is placed in (0, 0)
+[WARNING GPL-0001] out[20] toplevel port is not placed!
+       Replace will regard out[20] is placed in (0, 0)
+[WARNING GPL-0001] out[1] toplevel port is not placed!
+       Replace will regard out[1] is placed in (0, 0)
+[WARNING GPL-0001] out[19] toplevel port is not placed!
+       Replace will regard out[19] is placed in (0, 0)
+[WARNING GPL-0001] out[18] toplevel port is not placed!
+       Replace will regard out[18] is placed in (0, 0)
+[WARNING GPL-0001] out[17] toplevel port is not placed!
+       Replace will regard out[17] is placed in (0, 0)
+[WARNING GPL-0001] out[16] toplevel port is not placed!
+       Replace will regard out[16] is placed in (0, 0)
+[WARNING GPL-0001] out[15] toplevel port is not placed!
+       Replace will regard out[15] is placed in (0, 0)
+[WARNING GPL-0001] out[14] toplevel port is not placed!
+       Replace will regard out[14] is placed in (0, 0)
+[WARNING GPL-0001] out[13] toplevel port is not placed!
+       Replace will regard out[13] is placed in (0, 0)
+[WARNING GPL-0001] out[12] toplevel port is not placed!
+       Replace will regard out[12] is placed in (0, 0)
+[WARNING GPL-0001] out[11] toplevel port is not placed!
+       Replace will regard out[11] is placed in (0, 0)
+[WARNING GPL-0001] out[10] toplevel port is not placed!
+       Replace will regard out[10] is placed in (0, 0)
+[WARNING GPL-0001] out[0] toplevel port is not placed!
+       Replace will regard out[0] is placed in (0, 0)
+[WARNING GPL-0001] key[9] toplevel port is not placed!
+       Replace will regard key[9] is placed in (0, 0)
+[WARNING GPL-0001] key[8] toplevel port is not placed!
+       Replace will regard key[8] is placed in (0, 0)
+[WARNING GPL-0001] key[7] toplevel port is not placed!
+       Replace will regard key[7] is placed in (0, 0)
+[WARNING GPL-0001] key[6] toplevel port is not placed!
+       Replace will regard key[6] is placed in (0, 0)
+[WARNING GPL-0001] key[63] toplevel port is not placed!
+       Replace will regard key[63] is placed in (0, 0)
+[WARNING GPL-0001] key[62] toplevel port is not placed!
+       Replace will regard key[62] is placed in (0, 0)
+[WARNING GPL-0001] key[61] toplevel port is not placed!
+       Replace will regard key[61] is placed in (0, 0)
+[WARNING GPL-0001] key[60] toplevel port is not placed!
+       Replace will regard key[60] is placed in (0, 0)
+[WARNING GPL-0001] key[5] toplevel port is not placed!
+       Replace will regard key[5] is placed in (0, 0)
+[WARNING GPL-0001] key[59] toplevel port is not placed!
+       Replace will regard key[59] is placed in (0, 0)
+[WARNING GPL-0001] key[58] toplevel port is not placed!
+       Replace will regard key[58] is placed in (0, 0)
+[WARNING GPL-0001] key[57] toplevel port is not placed!
+       Replace will regard key[57] is placed in (0, 0)
+[WARNING GPL-0001] key[56] toplevel port is not placed!
+       Replace will regard key[56] is placed in (0, 0)
+[WARNING GPL-0001] key[55] toplevel port is not placed!
+       Replace will regard key[55] is placed in (0, 0)
+[WARNING GPL-0001] key[54] toplevel port is not placed!
+       Replace will regard key[54] is placed in (0, 0)
+[WARNING GPL-0001] key[53] toplevel port is not placed!
+       Replace will regard key[53] is placed in (0, 0)
+[WARNING GPL-0001] key[52] toplevel port is not placed!
+       Replace will regard key[52] is placed in (0, 0)
+[WARNING GPL-0001] key[51] toplevel port is not placed!
+       Replace will regard key[51] is placed in (0, 0)
+[WARNING GPL-0001] key[50] toplevel port is not placed!
+       Replace will regard key[50] is placed in (0, 0)
+[WARNING GPL-0001] key[4] toplevel port is not placed!
+       Replace will regard key[4] is placed in (0, 0)
+[WARNING GPL-0001] key[49] toplevel port is not placed!
+       Replace will regard key[49] is placed in (0, 0)
+[WARNING GPL-0001] key[48] toplevel port is not placed!
+       Replace will regard key[48] is placed in (0, 0)
+[WARNING GPL-0001] key[47] toplevel port is not placed!
+       Replace will regard key[47] is placed in (0, 0)
+[WARNING GPL-0001] key[46] toplevel port is not placed!
+       Replace will regard key[46] is placed in (0, 0)
+[WARNING GPL-0001] key[45] toplevel port is not placed!
+       Replace will regard key[45] is placed in (0, 0)
+[WARNING GPL-0001] key[44] toplevel port is not placed!
+       Replace will regard key[44] is placed in (0, 0)
+[WARNING GPL-0001] key[43] toplevel port is not placed!
+       Replace will regard key[43] is placed in (0, 0)
+[WARNING GPL-0001] key[42] toplevel port is not placed!
+       Replace will regard key[42] is placed in (0, 0)
+[WARNING GPL-0001] key[41] toplevel port is not placed!
+       Replace will regard key[41] is placed in (0, 0)
+[WARNING GPL-0001] key[40] toplevel port is not placed!
+       Replace will regard key[40] is placed in (0, 0)
+[WARNING GPL-0001] key[3] toplevel port is not placed!
+       Replace will regard key[3] is placed in (0, 0)
+[WARNING GPL-0001] key[39] toplevel port is not placed!
+       Replace will regard key[39] is placed in (0, 0)
+[WARNING GPL-0001] key[38] toplevel port is not placed!
+       Replace will regard key[38] is placed in (0, 0)
+[WARNING GPL-0001] key[37] toplevel port is not placed!
+       Replace will regard key[37] is placed in (0, 0)
+[WARNING GPL-0001] key[36] toplevel port is not placed!
+       Replace will regard key[36] is placed in (0, 0)
+[WARNING GPL-0001] key[35] toplevel port is not placed!
+       Replace will regard key[35] is placed in (0, 0)
+[WARNING GPL-0001] key[34] toplevel port is not placed!
+       Replace will regard key[34] is placed in (0, 0)
+[WARNING GPL-0001] key[33] toplevel port is not placed!
+       Replace will regard key[33] is placed in (0, 0)
+[WARNING GPL-0001] key[32] toplevel port is not placed!
+       Replace will regard key[32] is placed in (0, 0)
+[WARNING GPL-0001] key[31] toplevel port is not placed!
+       Replace will regard key[31] is placed in (0, 0)
+[WARNING GPL-0001] key[30] toplevel port is not placed!
+       Replace will regard key[30] is placed in (0, 0)
+[WARNING GPL-0001] key[2] toplevel port is not placed!
+       Replace will regard key[2] is placed in (0, 0)
+[WARNING GPL-0001] key[29] toplevel port is not placed!
+       Replace will regard key[29] is placed in (0, 0)
+[WARNING GPL-0001] key[28] toplevel port is not placed!
+       Replace will regard key[28] is placed in (0, 0)
+[WARNING GPL-0001] key[27] toplevel port is not placed!
+       Replace will regard key[27] is placed in (0, 0)
+[WARNING GPL-0001] key[26] toplevel port is not placed!
+       Replace will regard key[26] is placed in (0, 0)
+[WARNING GPL-0001] key[25] toplevel port is not placed!
+       Replace will regard key[25] is placed in (0, 0)
+[WARNING GPL-0001] key[24] toplevel port is not placed!
+       Replace will regard key[24] is placed in (0, 0)
+[WARNING GPL-0001] key[23] toplevel port is not placed!
+       Replace will regard key[23] is placed in (0, 0)
+[WARNING GPL-0001] key[22] toplevel port is not placed!
+       Replace will regard key[22] is placed in (0, 0)
+[WARNING GPL-0001] key[21] toplevel port is not placed!
+       Replace will regard key[21] is placed in (0, 0)
+[WARNING GPL-0001] key[20] toplevel port is not placed!
+       Replace will regard key[20] is placed in (0, 0)
+[WARNING GPL-0001] key[1] toplevel port is not placed!
+       Replace will regard key[1] is placed in (0, 0)
+[WARNING GPL-0001] key[19] toplevel port is not placed!
+       Replace will regard key[19] is placed in (0, 0)
+[WARNING GPL-0001] key[18] toplevel port is not placed!
+       Replace will regard key[18] is placed in (0, 0)
+[WARNING GPL-0001] key[17] toplevel port is not placed!
+       Replace will regard key[17] is placed in (0, 0)
+[WARNING GPL-0001] key[16] toplevel port is not placed!
+       Replace will regard key[16] is placed in (0, 0)
+[WARNING GPL-0001] key[15] toplevel port is not placed!
+       Replace will regard key[15] is placed in (0, 0)
+[WARNING GPL-0001] key[14] toplevel port is not placed!
+       Replace will regard key[14] is placed in (0, 0)
+[WARNING GPL-0001] key[13] toplevel port is not placed!
+       Replace will regard key[13] is placed in (0, 0)
+[WARNING GPL-0001] key[12] toplevel port is not placed!
+       Replace will regard key[12] is placed in (0, 0)
+[WARNING GPL-0001] key[11] toplevel port is not placed!
+       Replace will regard key[11] is placed in (0, 0)
+[WARNING GPL-0001] key[10] toplevel port is not placed!
+       Replace will regard key[10] is placed in (0, 0)
+[WARNING GPL-0001] key[0] toplevel port is not placed!
+       Replace will regard key[0] is placed in (0, 0)
+[INFO GPL-0006] NumInstances:              1459
+[INFO GPL-0007] NumPlaceInstances:         1459
+[INFO GPL-0008] NumFixedInstances:            0
+[INFO GPL-0009] NumDummyInstances:            0
+[INFO GPL-0010] NumNets:                   1587
+[INFO GPL-0011] NumPins:                   5295
+[INFO GPL-0012] DieBBox:  (  0.000  0.000 ) ( 146.480 146.480 ) um
+[INFO GPL-0013] CoreBBox: (  2.300  2.720 ) ( 144.440 144.160 ) um
+[INFO GPL-0016] CoreArea:             20104.282 um^2
+[INFO GPL-0017] NonPlaceInstsArea:        0.000 um^2
+[INFO GPL-0018] PlaceInstsArea:       11165.709 um^2
+[INFO GPL-0019] Util:                    55.539 %
+[INFO GPL-0020] StdInstsArea:         11165.709 um^2
+[INFO GPL-0021] MacroInstsArea:           0.000 um^2
+[InitialPlace]  Iter: 1 CG residual: 0.00000011 HPWL: 9452540
+[InitialPlace]  Iter: 2 CG residual: 0.00000012 HPWL: 10630550
+[InitialPlace]  Iter: 3 CG residual: 0.00000011 HPWL: 10376602
+[InitialPlace]  Iter: 4 CG residual: 0.00000010 HPWL: 10351850
+[InitialPlace]  Iter: 5 CG residual: 0.00000007 HPWL: 10330549
+[INFO GPL-0031] FillerInit:NumGCells:      1837
+[INFO GPL-0032] FillerInit:NumGNets:       1587
+[INFO GPL-0033] FillerInit:NumGPins:       5295
+[INFO GPL-0023] TargetDensity:            0.700
+[INFO GPL-0024] AvrgPlaceInstArea:        7.653 um^2
+[INFO GPL-0025] IdealBinArea:            10.933 um^2
+[INFO GPL-0026] IdealBinCnt:               1838
+[INFO GPL-0027] TotalBinArea:         20104.282 um^2
+[INFO GPL-0028] BinCnt:        32     32
+[INFO GPL-0029] BinSize: (  4.442  4.420 )
+[INFO GPL-0030] NumBins: 1024
+[NesterovSolve] Iter:    1 overflow: 0.995 HPWL: 4110120
+[NesterovSolve] Iter:   10 overflow: 0.995 HPWL: 3975223
+[NesterovSolve] Iter:   20 overflow: 0.995 HPWL: 3974824
+[NesterovSolve] Iter:   30 overflow: 0.995 HPWL: 3975375
+[NesterovSolve] Iter:   40 overflow: 0.995 HPWL: 3974894
+[NesterovSolve] Iter:   50 overflow: 0.995 HPWL: 3975124
+[NesterovSolve] Iter:   60 overflow: 0.995 HPWL: 3975189
+[NesterovSolve] Iter:   70 overflow: 0.995 HPWL: 3975104
+[NesterovSolve] Iter:   80 overflow: 0.995 HPWL: 3975451
+[NesterovSolve] Iter:   90 overflow: 0.995 HPWL: 3975826
+[NesterovSolve] Iter:  100 overflow: 0.995 HPWL: 3976551
+[NesterovSolve] Iter:  110 overflow: 0.995 HPWL: 3978297
+[NesterovSolve] Iter:  120 overflow: 0.995 HPWL: 3982630
+[NesterovSolve] Iter:  130 overflow: 0.995 HPWL: 3995626
+[NesterovSolve] Iter:  140 overflow: 0.995 HPWL: 4030856
+[NesterovSolve] Iter:  150 overflow: 0.994 HPWL: 4113187
+[NesterovSolve] Iter:  160 overflow: 0.994 HPWL: 4280296
+[NesterovSolve] Iter:  170 overflow: 0.992 HPWL: 4607558
+[NesterovSolve] Iter:  180 overflow: 0.988 HPWL: 5311094
+[NesterovSolve] Iter:  190 overflow: 0.986 HPWL: 6273870
+[NesterovSolve] Iter:  200 overflow: 0.982 HPWL: 7372312
+[NesterovSolve] Iter:  210 overflow: 0.976 HPWL: 8827660
+[NesterovSolve] Iter:  220 overflow: 0.964 HPWL: 10742327
+[NesterovSolve] Iter:  230 overflow: 0.949 HPWL: 12626090
+[NesterovSolve] Iter:  240 overflow: 0.935 HPWL: 15187691
+[NesterovSolve] Iter:  250 overflow: 0.912 HPWL: 18190071
+[NesterovSolve] Iter:  260 overflow: 0.886 HPWL: 20768139
+[NesterovSolve] Iter:  270 overflow: 0.856 HPWL: 23791564
+[NesterovSolve] Iter:  280 overflow: 0.820 HPWL: 26721213
+[NesterovSolve] Iter:  290 overflow: 0.778 HPWL: 29491250
+[NesterovSolve] Iter:  300 overflow: 0.734 HPWL: 32202719
+[NesterovSolve] Iter:  310 overflow: 0.690 HPWL: 34724994
+[NesterovSolve] Iter:  320 overflow: 0.636 HPWL: 37073256
+[NesterovSolve] Iter:  330 overflow: 0.579 HPWL: 39057962
+[NesterovSolve] Iter:  340 overflow: 0.515 HPWL: 40879779
+[NesterovSolve] Iter:  350 overflow: 0.437 HPWL: 42056732
+[NesterovSolve] Iter:  360 overflow: 0.365 HPWL: 42832383
+[NesterovSolve] Iter:  370 overflow: 0.311 HPWL: 43184839
+[NesterovSolve] Iter:  380 overflow: 0.272 HPWL: 43222391
+[NesterovSolve] Iter:  390 overflow: 0.249 HPWL: 43492432
+[NesterovSolve] Iter:  400 overflow: 0.221 HPWL: 43586969
+[NesterovSolve] Iter:  410 overflow: 0.194 HPWL: 43699549
+[NesterovSolve] Iter:  420 overflow: 0.180 HPWL: 43785958
+[NesterovSolve] Iter:  430 overflow: 0.164 HPWL: 43861897
+[NesterovSolve] Iter:  440 overflow: 0.147 HPWL: 43903067
+[NesterovSolve] Iter:  450 overflow: 0.137 HPWL: 43985560
+[NesterovSolve] Iter:  460 overflow: 0.120 HPWL: 44070064
+[NesterovSolve] Iter:  470 overflow: 0.103 HPWL: 44115997
+[NesterovSolve] Finished with Overflow: 0.099679
+Placement Analysis
+---------------------------------
+total displacement       3879.3 u
+average displacement        2.7 u
+max displacement            8.8 u
+original HPWL           33540.2 u
+legalized HPWL          37602.1 u
+delta HPWL                   12 %
+
+[ERROR STA-0565] filler_placement requires one positional argument.
+Error: s3_place.tcl, 12 STA-0565
+application-specific initialization failed: can't read "auto_index(::tclreadline::ScriptCompleter)": no such element in array
+[2026-10-04T05:08:34Z] r22c: FATAL: stage s3_place finished without checkpoint /home/hatch/workspace/mix/exploration/s5_r22c/r22c/placed.def
+[2026-10-04T05:10:13Z] r22c stage s0_ysynth: SKIP
+[2026-10-04T05:10:13Z] r22c stage s1_link: SKIP
+[2026-10-04T05:10:13Z] r22c stage s2_floor: SKIP
+[2026-10-04T05:10:13Z] r22c stage s3_place: START
+Tcl_Eval failed: tclreadlineInit.tcl not found in any of the directories in auto_path
+Failed to load tclreadline
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef, created 14 layers, 25 vias
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef at line 2.
+
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef, created 437 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_pr/lef/sky130_fd_pr.lef at line 18.
+
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_pr/lef/sky130_fd_pr.lef, created 288 library cells
+[INFO ODB-0127] Reading DEF file: /home/hatch/workspace/mix/exploration/s5_r22c/r22c/floorplan.def
+[INFO ODB-0128] Design: r22c_spn_mix4r_lp_nw
+[INFO ODB-0130]     Created 194 pins.
+[INFO ODB-0131]     Created 1833 components and 11895 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 3666 connections.
+[INFO ODB-0133]     Created 1587 nets and 5103 connections.
+[INFO ODB-0134] Finished DEF file: /home/hatch/workspace/mix/exploration/s5_r22c/r22c/floorplan.def
+[INFO ORD-0030] Using 2 thread(s).
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: (  0.460  2.720 ) um
+[INFO GPL-0004] CoreBBox: (  2.300  2.720 ) ( 144.440 144.160 ) um
+[WARNING GPL-0001] val[9] toplevel port is not placed!
+       Replace will regard val[9] is placed in (0, 0)
+[WARNING GPL-0001] val[8] toplevel port is not placed!
+       Replace will regard val[8] is placed in (0, 0)
+[WARNING GPL-0001] val[7] toplevel port is not placed!
+       Replace will regard val[7] is placed in (0, 0)
+[WARNING GPL-0001] val[6] toplevel port is not placed!
+       Replace will regard val[6] is placed in (0, 0)
+[WARNING GPL-0001] val[63] toplevel port is not placed!
+       Replace will regard val[63] is placed in (0, 0)
+[WARNING GPL-0001] val[62] toplevel port is not placed!
+       Replace will regard val[62] is placed in (0, 0)
+[WARNING GPL-0001] val[61] toplevel port is not placed!
+       Replace will regard val[61] is placed in (0, 0)
+[WARNING GPL-0001] val[60] toplevel port is not placed!
+       Replace will regard val[60] is placed in (0, 0)
+[WARNING GPL-0001] val[5] toplevel port is not placed!
+       Replace will regard val[5] is placed in (0, 0)
+[WARNING GPL-0001] val[59] toplevel port is not placed!
+       Replace will regard val[59] is placed in (0, 0)
+[WARNING GPL-0001] val[58] toplevel port is not placed!
+       Replace will regard val[58] is placed in (0, 0)
+[WARNING GPL-0001] val[57] toplevel port is not placed!
+       Replace will regard val[57] is placed in (0, 0)
+[WARNING GPL-0001] val[56] toplevel port is not placed!
+       Replace will regard val[56] is placed in (0, 0)
+[WARNING GPL-0001] val[55] toplevel port is not placed!
+       Replace will regard val[55] is placed in (0, 0)
+[WARNING GPL-0001] val[54] toplevel port is not placed!
+       Replace will regard val[54] is placed in (0, 0)
+[WARNING GPL-0001] val[53] toplevel port is not placed!
+       Replace will regard val[53] is placed in (0, 0)
+[WARNING GPL-0001] val[52] toplevel port is not placed!
+       Replace will regard val[52] is placed in (0, 0)
+[WARNING GPL-0001] val[51] toplevel port is not placed!
+       Replace will regard val[51] is placed in (0, 0)
+[WARNING GPL-0001] val[50] toplevel port is not placed!
+       Replace will regard val[50] is placed in (0, 0)
+[WARNING GPL-0001] val[4] toplevel port is not placed!
+       Replace will regard val[4] is placed in (0, 0)
+[WARNING GPL-0001] val[49] toplevel port is not placed!
+       Replace will regard val[49] is placed in (0, 0)
+[WARNING GPL-0001] val[48] toplevel port is not placed!
+       Replace will regard val[48] is placed in (0, 0)
+[WARNING GPL-0001] val[47] toplevel port is not placed!
+       Replace will regard val[47] is placed in (0, 0)
+[WARNING GPL-0001] val[46] toplevel port is not placed!
+       Replace will regard val[46] is placed in (0, 0)
+[WARNING GPL-0001] val[45] toplevel port is not placed!
+       Replace will regard val[45] is placed in (0, 0)
+[WARNING GPL-0001] val[44] toplevel port is not placed!
+       Replace will regard val[44] is placed in (0, 0)
+[WARNING GPL-0001] val[43] toplevel port is not placed!
+       Replace will regard val[43] is placed in (0, 0)
+[WARNING GPL-0001] val[42] toplevel port is not placed!
+       Replace will regard val[42] is placed in (0, 0)
+[WARNING GPL-0001] val[41] toplevel port is not placed!
+       Replace will regard val[41] is placed in (0, 0)
+[WARNING GPL-0001] val[40] toplevel port is not placed!
+       Replace will regard val[40] is placed in (0, 0)
+[WARNING GPL-0001] val[3] toplevel port is not placed!
+       Replace will regard val[3] is placed in (0, 0)
+[WARNING GPL-0001] val[39] toplevel port is not placed!
+       Replace will regard val[39] is placed in (0, 0)
+[WARNING GPL-0001] val[38] toplevel port is not placed!
+       Replace will regard val[38] is placed in (0, 0)
+[WARNING GPL-0001] val[37] toplevel port is not placed!
+       Replace will regard val[37] is placed in (0, 0)
+[WARNING GPL-0001] val[36] toplevel port is not placed!
+       Replace will regard val[36] is placed in (0, 0)
+[WARNING GPL-0001] val[35] toplevel port is not placed!
+       Replace will regard val[35] is placed in (0, 0)
+[WARNING GPL-0001] val[34] toplevel port is not placed!
+       Replace will regard val[34] is placed in (0, 0)
+[WARNING GPL-0001] val[33] toplevel port is not placed!
+       Replace will regard val[33] is placed in (0, 0)
+[WARNING GPL-0001] val[32] toplevel port is not placed!
+       Replace will regard val[32] is placed in (0, 0)
+[WARNING GPL-0001] val[31] toplevel port is not placed!
+       Replace will regard val[31] is placed in (0, 0)
+[WARNING GPL-0001] val[30] toplevel port is not placed!
+       Replace will regard val[30] is placed in (0, 0)
+[WARNING GPL-0001] val[2] toplevel port is not placed!
+       Replace will regard val[2] is placed in (0, 0)
+[WARNING GPL-0001] val[29] toplevel port is not placed!
+       Replace will regard val[29] is placed in (0, 0)
+[WARNING GPL-0001] val[28] toplevel port is not placed!
+       Replace will regard val[28] is placed in (0, 0)
+[WARNING GPL-0001] val[27] toplevel port is not placed!
+       Replace will regard val[27] is placed in (0, 0)
+[WARNING GPL-0001] val[26] toplevel port is not placed!
+       Replace will regard val[26] is placed in (0, 0)
+[WARNING GPL-0001] val[25] toplevel port is not placed!
+       Replace will regard val[25] is placed in (0, 0)
+[WARNING GPL-0001] val[24] toplevel port is not placed!
+       Replace will regard val[24] is placed in (0, 0)
+[WARNING GPL-0001] val[23] toplevel port is not placed!
+       Replace will regard val[23] is placed in (0, 0)
+[WARNING GPL-0001] val[22] toplevel port is not placed!
+       Replace will regard val[22] is placed in (0, 0)
+[WARNING GPL-0001] val[21] toplevel port is not placed!
+       Replace will regard val[21] is placed in (0, 0)
+[WARNING GPL-0001] val[20] toplevel port is not placed!
+       Replace will regard val[20] is placed in (0, 0)
+[WARNING GPL-0001] val[1] toplevel port is not placed!
+       Replace will regard val[1] is placed in (0, 0)
+[WARNING GPL-0001] val[19] toplevel port is not placed!
+       Replace will regard val[19] is placed in (0, 0)
+[WARNING GPL-0001] val[18] toplevel port is not placed!
+       Replace will regard val[18] is placed in (0, 0)
+[WARNING GPL-0001] val[17] toplevel port is not placed!
+       Replace will regard val[17] is placed in (0, 0)
+[WARNING GPL-0001] val[16] toplevel port is not placed!
+       Replace will regard val[16] is placed in (0, 0)
+[WARNING GPL-0001] val[15] toplevel port is not placed!
+       Replace will regard val[15] is placed in (0, 0)
+[WARNING GPL-0001] val[14] toplevel port is not placed!
+       Replace will regard val[14] is placed in (0, 0)
+[WARNING GPL-0001] val[13] toplevel port is not placed!
+       Replace will regard val[13] is placed in (0, 0)
+[WARNING GPL-0001] val[12] toplevel port is not placed!
+       Replace will regard val[12] is placed in (0, 0)
+[WARNING GPL-0001] val[11] toplevel port is not placed!
+       Replace will regard val[11] is placed in (0, 0)
+[WARNING GPL-0001] val[10] toplevel port is not placed!
+       Replace will regard val[10] is placed in (0, 0)
+[WARNING GPL-0001] val[0] toplevel port is not placed!
+       Replace will regard val[0] is placed in (0, 0)
+[WARNING GPL-0001] out[9] toplevel port is not placed!
+       Replace will regard out[9] is placed in (0, 0)
+[WARNING GPL-0001] out[8] toplevel port is not placed!
+       Replace will regard out[8] is placed in (0, 0)
+[WARNING GPL-0001] out[7] toplevel port is not placed!
+       Replace will regard out[7] is placed in (0, 0)
+[WARNING GPL-0001] out[6] toplevel port is not placed!
+       Replace will regard out[6] is placed in (0, 0)
+[WARNING GPL-0001] out[63] toplevel port is not placed!
+       Replace will regard out[63] is placed in (0, 0)
+[WARNING GPL-0001] out[62] toplevel port is not placed!
+       Replace will regard out[62] is placed in (0, 0)
+[WARNING GPL-0001] out[61] toplevel port is not placed!
+       Replace will regard out[61] is placed in (0, 0)
+[WARNING GPL-0001] out[60] toplevel port is not placed!
+       Replace will regard out[60] is placed in (0, 0)
+[WARNING GPL-0001] out[5] toplevel port is not placed!
+       Replace will regard out[5] is placed in (0, 0)
+[WARNING GPL-0001] out[59] toplevel port is not placed!
+       Replace will regard out[59] is placed in (0, 0)
+[WARNING GPL-0001] out[58] toplevel port is not placed!
+       Replace will regard out[58] is placed in (0, 0)
+[WARNING GPL-0001] out[57] toplevel port is not placed!
+       Replace will regard out[57] is placed in (0, 0)
+[WARNING GPL-0001] out[56] toplevel port is not placed!
+       Replace will regard out[56] is placed in (0, 0)
+[WARNING GPL-0001] out[55] toplevel port is not placed!
+       Replace will regard out[55] is placed in (0, 0)
+[WARNING GPL-0001] out[54] toplevel port is not placed!
+       Replace will regard out[54] is placed in (0, 0)
+[WARNING GPL-0001] out[53] toplevel port is not placed!
+       Replace will regard out[53] is placed in (0, 0)
+[WARNING GPL-0001] out[52] toplevel port is not placed!
+       Replace will regard out[52] is placed in (0, 0)
+[WARNING GPL-0001] out[51] toplevel port is not placed!
+       Replace will regard out[51] is placed in (0, 0)
+[WARNING GPL-0001] out[50] toplevel port is not placed!
+       Replace will regard out[50] is placed in (0, 0)
+[WARNING GPL-0001] out[4] toplevel port is not placed!
+       Replace will regard out[4] is placed in (0, 0)
+[WARNING GPL-0001] out[49] toplevel port is not placed!
+       Replace will regard out[49] is placed in (0, 0)
+[WARNING GPL-0001] out[48] toplevel port is not placed!
+       Replace will regard out[48] is placed in (0, 0)
+[WARNING GPL-0001] out[47] toplevel port is not placed!
+       Replace will regard out[47] is placed in (0, 0)
+[WARNING GPL-0001] out[46] toplevel port is not placed!
+       Replace will regard out[46] is placed in (0, 0)
+[WARNING GPL-0001] out[45] toplevel port is not placed!
+       Replace will regard out[45] is placed in (0, 0)
+[WARNING GPL-0001] out[44] toplevel port is not placed!
+       Replace will regard out[44] is placed in (0, 0)
+[WARNING GPL-0001] out[43] toplevel port is not placed!
+       Replace will regard out[43] is placed in (0, 0)
+[WARNING GPL-0001] out[42] toplevel port is not placed!
+       Replace will regard out[42] is placed in (0, 0)
+[WARNING GPL-0001] out[41] toplevel port is not placed!
+       Replace will regard out[41] is placed in (0, 0)
+[WARNING GPL-0001] out[40] toplevel port is not placed!
+       Replace will regard out[40] is placed in (0, 0)
+[WARNING GPL-0001] out[3] toplevel port is not placed!
+       Replace will regard out[3] is placed in (0, 0)
+[WARNING GPL-0001] out[39] toplevel port is not placed!
+       Replace will regard out[39] is placed in (0, 0)
+[WARNING GPL-0001] out[38] toplevel port is not placed!
+       Replace will regard out[38] is placed in (0, 0)
+[WARNING GPL-0001] out[37] toplevel port is not placed!
+       Replace will regard out[37] is placed in (0, 0)
+[WARNING GPL-0001] out[36] toplevel port is not placed!
+       Replace will regard out[36] is placed in (0, 0)
+[WARNING GPL-0001] out[35] toplevel port is not placed!
+       Replace will regard out[35] is placed in (0, 0)
+[WARNING GPL-0001] out[34] toplevel port is not placed!
+       Replace will regard out[34] is placed in (0, 0)
+[WARNING GPL-0001] out[33] toplevel port is not placed!
+       Replace will regard out[33] is placed in (0, 0)
+[WARNING GPL-0001] out[32] toplevel port is not placed!
+       Replace will regard out[32] is placed in (0, 0)
+[WARNING GPL-0001] out[31] toplevel port is not placed!
+       Replace will regard out[31] is placed in (0, 0)
+[WARNING GPL-0001] out[30] toplevel port is not placed!
+       Replace will regard out[30] is placed in (0, 0)
+[WARNING GPL-0001] out[2] toplevel port is not placed!
+       Replace will regard out[2] is placed in (0, 0)
+[WARNING GPL-0001] out[29] toplevel port is not placed!
+       Replace will regard out[29] is placed in (0, 0)
+[WARNING GPL-0001] out[28] toplevel port is not placed!
+       Replace will regard out[28] is placed in (0, 0)
+[WARNING GPL-0001] out[27] toplevel port is not placed!
+       Replace will regard out[27] is placed in (0, 0)
+[WARNING GPL-0001] out[26] toplevel port is not placed!
+       Replace will regard out[26] is placed in (0, 0)
+[WARNING GPL-0001] out[25] toplevel port is not placed!
+       Replace will regard out[25] is placed in (0, 0)
+[WARNING GPL-0001] out[24] toplevel port is not placed!
+       Replace will regard out[24] is placed in (0, 0)
+[WARNING GPL-0001] out[23] toplevel port is not placed!
+       Replace will regard out[23] is placed in (0, 0)
+[WARNING GPL-0001] out[22] toplevel port is not placed!
+       Replace will regard out[22] is placed in (0, 0)
+[WARNING GPL-0001] out[21] toplevel port is not placed!
+       Replace will regard out[21] is placed in (0, 0)
+[WARNING GPL-0001] out[20] toplevel port is not placed!
+       Replace will regard out[20] is placed in (0, 0)
+[WARNING GPL-0001] out[1] toplevel port is not placed!
+       Replace will regard out[1] is placed in (0, 0)
+[WARNING GPL-0001] out[19] toplevel port is not placed!
+       Replace will regard out[19] is placed in (0, 0)
+[WARNING GPL-0001] out[18] toplevel port is not placed!
+       Replace will regard out[18] is placed in (0, 0)
+[WARNING GPL-0001] out[17] toplevel port is not placed!
+       Replace will regard out[17] is placed in (0, 0)
+[WARNING GPL-0001] out[16] toplevel port is not placed!
+       Replace will regard out[16] is placed in (0, 0)
+[WARNING GPL-0001] out[15] toplevel port is not placed!
+       Replace will regard out[15] is placed in (0, 0)
+[WARNING GPL-0001] out[14] toplevel port is not placed!
+       Replace will regard out[14] is placed in (0, 0)
+[WARNING GPL-0001] out[13] toplevel port is not placed!
+       Replace will regard out[13] is placed in (0, 0)
+[WARNING GPL-0001] out[12] toplevel port is not placed!
+       Replace will regard out[12] is placed in (0, 0)
+[WARNING GPL-0001] out[11] toplevel port is not placed!
+       Replace will regard out[11] is placed in (0, 0)
+[WARNING GPL-0001] out[10] toplevel port is not placed!
+       Replace will regard out[10] is placed in (0, 0)
+[WARNING GPL-0001] out[0] toplevel port is not placed!
+       Replace will regard out[0] is placed in (0, 0)
+[WARNING GPL-0001] key[9] toplevel port is not placed!
+       Replace will regard key[9] is placed in (0, 0)
+[WARNING GPL-0001] key[8] toplevel port is not placed!
+       Replace will regard key[8] is placed in (0, 0)
+[WARNING GPL-0001] key[7] toplevel port is not placed!
+       Replace will regard key[7] is placed in (0, 0)
+[WARNING GPL-0001] key[6] toplevel port is not placed!
+       Replace will regard key[6] is placed in (0, 0)
+[WARNING GPL-0001] key[63] toplevel port is not placed!
+       Replace will regard key[63] is placed in (0, 0)
+[WARNING GPL-0001] key[62] toplevel port is not placed!
+       Replace will regard key[62] is placed in (0, 0)
+[WARNING GPL-0001] key[61] toplevel port is not placed!
+       Replace will regard key[61] is placed in (0, 0)
+[WARNING GPL-0001] key[60] toplevel port is not placed!
+       Replace will regard key[60] is placed in (0, 0)
+[WARNING GPL-0001] key[5] toplevel port is not placed!
+       Replace will regard key[5] is placed in (0, 0)
+[WARNING GPL-0001] key[59] toplevel port is not placed!
+       Replace will regard key[59] is placed in (0, 0)
+[WARNING GPL-0001] key[58] toplevel port is not placed!
+       Replace will regard key[58] is placed in (0, 0)
+[WARNING GPL-0001] key[57] toplevel port is not placed!
+       Replace will regard key[57] is placed in (0, 0)
+[WARNING GPL-0001] key[56] toplevel port is not placed!
+       Replace will regard key[56] is placed in (0, 0)
+[WARNING GPL-0001] key[55] toplevel port is not placed!
+       Replace will regard key[55] is placed in (0, 0)
+[WARNING GPL-0001] key[54] toplevel port is not placed!
+       Replace will regard key[54] is placed in (0, 0)
+[WARNING GPL-0001] key[53] toplevel port is not placed!
+       Replace will regard key[53] is placed in (0, 0)
+[WARNING GPL-0001] key[52] toplevel port is not placed!
+       Replace will regard key[52] is placed in (0, 0)
+[WARNING GPL-0001] key[51] toplevel port is not placed!
+       Replace will regard key[51] is placed in (0, 0)
+[WARNING GPL-0001] key[50] toplevel port is not placed!
+       Replace will regard key[50] is placed in (0, 0)
+[WARNING GPL-0001] key[4] toplevel port is not placed!
+       Replace will regard key[4] is placed in (0, 0)
+[WARNING GPL-0001] key[49] toplevel port is not placed!
+       Replace will regard key[49] is placed in (0, 0)
+[WARNING GPL-0001] key[48] toplevel port is not placed!
+       Replace will regard key[48] is placed in (0, 0)
+[WARNING GPL-0001] key[47] toplevel port is not placed!
+       Replace will regard key[47] is placed in (0, 0)
+[WARNING GPL-0001] key[46] toplevel port is not placed!
+       Replace will regard key[46] is placed in (0, 0)
+[WARNING GPL-0001] key[45] toplevel port is not placed!
+       Replace will regard key[45] is placed in (0, 0)
+[WARNING GPL-0001] key[44] toplevel port is not placed!
+       Replace will regard key[44] is placed in (0, 0)
+[WARNING GPL-0001] key[43] toplevel port is not placed!
+       Replace will regard key[43] is placed in (0, 0)
+[WARNING GPL-0001] key[42] toplevel port is not placed!
+       Replace will regard key[42] is placed in (0, 0)
+[WARNING GPL-0001] key[41] toplevel port is not placed!
+       Replace will regard key[41] is placed in (0, 0)
+[WARNING GPL-0001] key[40] toplevel port is not placed!
+       Replace will regard key[40] is placed in (0, 0)
+[WARNING GPL-0001] key[3] toplevel port is not placed!
+       Replace will regard key[3] is placed in (0, 0)
+[WARNING GPL-0001] key[39] toplevel port is not placed!
+       Replace will regard key[39] is placed in (0, 0)
+[WARNING GPL-0001] key[38] toplevel port is not placed!
+       Replace will regard key[38] is placed in (0, 0)
+[WARNING GPL-0001] key[37] toplevel port is not placed!
+       Replace will regard key[37] is placed in (0, 0)
+[WARNING GPL-0001] key[36] toplevel port is not placed!
+       Replace will regard key[36] is placed in (0, 0)
+[WARNING GPL-0001] key[35] toplevel port is not placed!
+       Replace will regard key[35] is placed in (0, 0)
+[WARNING GPL-0001] key[34] toplevel port is not placed!
+       Replace will regard key[34] is placed in (0, 0)
+[WARNING GPL-0001] key[33] toplevel port is not placed!
+       Replace will regard key[33] is placed in (0, 0)
+[WARNING GPL-0001] key[32] toplevel port is not placed!
+       Replace will regard key[32] is placed in (0, 0)
+[WARNING GPL-0001] key[31] toplevel port is not placed!
+       Replace will regard key[31] is placed in (0, 0)
+[WARNING GPL-0001] key[30] toplevel port is not placed!
+       Replace will regard key[30] is placed in (0, 0)
+[WARNING GPL-0001] key[2] toplevel port is not placed!
+       Replace will regard key[2] is placed in (0, 0)
+[WARNING GPL-0001] key[29] toplevel port is not placed!
+       Replace will regard key[29] is placed in (0, 0)
+[WARNING GPL-0001] key[28] toplevel port is not placed!
+       Replace will regard key[28] is placed in (0, 0)
+[WARNING GPL-0001] key[27] toplevel port is not placed!
+       Replace will regard key[27] is placed in (0, 0)
+[WARNING GPL-0001] key[26] toplevel port is not placed!
+       Replace will regard key[26] is placed in (0, 0)
+[WARNING GPL-0001] key[25] toplevel port is not placed!
+       Replace will regard key[25] is placed in (0, 0)
+[WARNING GPL-0001] key[24] toplevel port is not placed!
+       Replace will regard key[24] is placed in (0, 0)
+[WARNING GPL-0001] key[23] toplevel port is not placed!
+       Replace will regard key[23] is placed in (0, 0)
+[WARNING GPL-0001] key[22] toplevel port is not placed!
+       Replace will regard key[22] is placed in (0, 0)
+[WARNING GPL-0001] key[21] toplevel port is not placed!
+       Replace will regard key[21] is placed in (0, 0)
+[WARNING GPL-0001] key[20] toplevel port is not placed!
+       Replace will regard key[20] is placed in (0, 0)
+[WARNING GPL-0001] key[1] toplevel port is not placed!
+       Replace will regard key[1] is placed in (0, 0)
+[WARNING GPL-0001] key[19] toplevel port is not placed!
+       Replace will regard key[19] is placed in (0, 0)
+[WARNING GPL-0001] key[18] toplevel port is not placed!
+       Replace will regard key[18] is placed in (0, 0)
+[WARNING GPL-0001] key[17] toplevel port is not placed!
+       Replace will regard key[17] is placed in (0, 0)
+[WARNING GPL-0001] key[16] toplevel port is not placed!
+       Replace will regard key[16] is placed in (0, 0)
+[WARNING GPL-0001] key[15] toplevel port is not placed!
+       Replace will regard key[15] is placed in (0, 0)
+[WARNING GPL-0001] key[14] toplevel port is not placed!
+       Replace will regard key[14] is placed in (0, 0)
+[WARNING GPL-0001] key[13] toplevel port is not placed!
+       Replace will regard key[13] is placed in (0, 0)
+[WARNING GPL-0001] key[12] toplevel port is not placed!
+       Replace will regard key[12] is placed in (0, 0)
+[WARNING GPL-0001] key[11] toplevel port is not placed!
+       Replace will regard key[11] is placed in (0, 0)
+[WARNING GPL-0001] key[10] toplevel port is not placed!
+       Replace will regard key[10] is placed in (0, 0)
+[WARNING GPL-0001] key[0] toplevel port is not placed!
+       Replace will regard key[0] is placed in (0, 0)
+[INFO GPL-0006] NumInstances:              1459
+[INFO GPL-0007] NumPlaceInstances:         1459
+[INFO GPL-0008] NumFixedInstances:            0
+[INFO GPL-0009] NumDummyInstances:            0
+[INFO GPL-0010] NumNets:                   1587
+[INFO GPL-0011] NumPins:                   5295
+[INFO GPL-0012] DieBBox:  (  0.000  0.000 ) ( 146.480 146.480 ) um
+[INFO GPL-0013] CoreBBox: (  2.300  2.720 ) ( 144.440 144.160 ) um
+[INFO GPL-0016] CoreArea:             20104.282 um^2
+[INFO GPL-0017] NonPlaceInstsArea:        0.000 um^2
+[INFO GPL-0018] PlaceInstsArea:       11165.709 um^2
+[INFO GPL-0019] Util:                    55.539 %
+[INFO GPL-0020] StdInstsArea:         11165.709 um^2
+[INFO GPL-0021] MacroInstsArea:           0.000 um^2
+[InitialPlace]  Iter: 1 CG residual: 0.00000011 HPWL: 9452540
+[InitialPlace]  Iter: 2 CG residual: 0.00000012 HPWL: 10630550
+[InitialPlace]  Iter: 3 CG residual: 0.00000011 HPWL: 10376602
+[InitialPlace]  Iter: 4 CG residual: 0.00000010 HPWL: 10351850
+[InitialPlace]  Iter: 5 CG residual: 0.00000007 HPWL: 10330549
+[INFO GPL-0031] FillerInit:NumGCells:      1837
+[INFO GPL-0032] FillerInit:NumGNets:       1587
+[INFO GPL-0033] FillerInit:NumGPins:       5295
+[INFO GPL-0023] TargetDensity:            0.700
+[INFO GPL-0024] AvrgPlaceInstArea:        7.653 um^2
+[INFO GPL-0025] IdealBinArea:            10.933 um^2
+[INFO GPL-0026] IdealBinCnt:               1838
+[INFO GPL-0027] TotalBinArea:         20104.282 um^2
+[INFO GPL-0028] BinCnt:        32     32
+[INFO GPL-0029] BinSize: (  4.442  4.420 )
+[INFO GPL-0030] NumBins: 1024
+[NesterovSolve] Iter:    1 overflow: 0.995 HPWL: 4110120
+[NesterovSolve] Iter:   10 overflow: 0.995 HPWL: 3975223
+[NesterovSolve] Iter:   20 overflow: 0.995 HPWL: 3974824
+[NesterovSolve] Iter:   30 overflow: 0.995 HPWL: 3975375
+[NesterovSolve] Iter:   40 overflow: 0.995 HPWL: 3974894
+[NesterovSolve] Iter:   50 overflow: 0.995 HPWL: 3975124
+[NesterovSolve] Iter:   60 overflow: 0.995 HPWL: 3975189
+[NesterovSolve] Iter:   70 overflow: 0.995 HPWL: 3975104
+[NesterovSolve] Iter:   80 overflow: 0.995 HPWL: 3975451
+[NesterovSolve] Iter:   90 overflow: 0.995 HPWL: 3975826
+[NesterovSolve] Iter:  100 overflow: 0.995 HPWL: 3976551
+[NesterovSolve] Iter:  110 overflow: 0.995 HPWL: 3978297
+[NesterovSolve] Iter:  120 overflow: 0.995 HPWL: 3982630
+[NesterovSolve] Iter:  130 overflow: 0.995 HPWL: 3995626
+[NesterovSolve] Iter:  140 overflow: 0.995 HPWL: 4030856
+[NesterovSolve] Iter:  150 overflow: 0.994 HPWL: 4113187
+[NesterovSolve] Iter:  160 overflow: 0.994 HPWL: 4280296
+[NesterovSolve] Iter:  170 overflow: 0.992 HPWL: 4607558
+[NesterovSolve] Iter:  180 overflow: 0.988 HPWL: 5311094
+[NesterovSolve] Iter:  190 overflow: 0.986 HPWL: 6273870
+[NesterovSolve] Iter:  200 overflow: 0.982 HPWL: 7372312
+[NesterovSolve] Iter:  210 overflow: 0.976 HPWL: 8827660
+[NesterovSolve] Iter:  220 overflow: 0.964 HPWL: 10742327
+[NesterovSolve] Iter:  230 overflow: 0.949 HPWL: 12626090
+[NesterovSolve] Iter:  240 overflow: 0.935 HPWL: 15187691
+[NesterovSolve] Iter:  250 overflow: 0.912 HPWL: 18190071
+[NesterovSolve] Iter:  260 overflow: 0.886 HPWL: 20768139
+[NesterovSolve] Iter:  270 overflow: 0.856 HPWL: 23791564
+[NesterovSolve] Iter:  280 overflow: 0.820 HPWL: 26721213
+[NesterovSolve] Iter:  290 overflow: 0.778 HPWL: 29491250
+[NesterovSolve] Iter:  300 overflow: 0.734 HPWL: 32202719
+[NesterovSolve] Iter:  310 overflow: 0.690 HPWL: 34724994
+[NesterovSolve] Iter:  320 overflow: 0.636 HPWL: 37073256
+[NesterovSolve] Iter:  330 overflow: 0.579 HPWL: 39057962
+[NesterovSolve] Iter:  340 overflow: 0.515 HPWL: 40879779
+[NesterovSolve] Iter:  350 overflow: 0.437 HPWL: 42056732
+[NesterovSolve] Iter:  360 overflow: 0.365 HPWL: 42832383
+[NesterovSolve] Iter:  370 overflow: 0.311 HPWL: 43184839
+[NesterovSolve] Iter:  380 overflow: 0.272 HPWL: 43222391
+[NesterovSolve] Iter:  390 overflow: 0.249 HPWL: 43492432
+[NesterovSolve] Iter:  400 overflow: 0.221 HPWL: 43586969
+[NesterovSolve] Iter:  410 overflow: 0.194 HPWL: 43699549
+[NesterovSolve] Iter:  420 overflow: 0.180 HPWL: 43785958
+[NesterovSolve] Iter:  430 overflow: 0.164 HPWL: 43861897
+[NesterovSolve] Iter:  440 overflow: 0.147 HPWL: 43903067
+[NesterovSolve] Iter:  450 overflow: 0.137 HPWL: 43985560
+[NesterovSolve] Iter:  460 overflow: 0.120 HPWL: 44070064
+[NesterovSolve] Iter:  470 overflow: 0.103 HPWL: 44115997
+[NesterovSolve] Finished with Overflow: 0.099679
+Placement Analysis
+---------------------------------
+total displacement       3879.3 u
+average displacement        2.7 u
+max displacement            8.8 u
+original HPWL           33540.2 u
+legalized HPWL          37602.1 u
+delta HPWL                   12 %
+
+[INFO DPL-0001] Placed 1613 filler instances.
+S5-S3-PLACE-DONE
+application-specific initialization failed: can't read "auto_index(::tclreadline::ScriptCompleter)": no such element in array
+[2026-10-04T05:10:43Z] r22c stage s3_place: DONE
+[2026-10-04T05:10:43Z] r22c stage s4_route: START
+Tcl_Eval failed: tclreadlineInit.tcl not found in any of the directories in auto_path
+Failed to load tclreadline
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef, created 14 layers, 25 vias
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef at line 2.
+
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef, created 437 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_pr/lef/sky130_fd_pr.lef at line 18.
+
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_pr/lef/sky130_fd_pr.lef, created 288 library cells
+[INFO ODB-0127] Reading DEF file: /home/hatch/workspace/mix/exploration/s5_r22c/r22c/placed.def
+[INFO ODB-0128] Design: r22c_spn_mix4r_lp_nw
+[INFO ODB-0130]     Created 192 pins.
+[INFO ODB-0131]     Created 3072 components and 17391 component-terminals.
+[INFO ODB-0133]     Created 1587 nets and 5103 connections.
+[INFO ODB-0134] Finished DEF file: /home/hatch/workspace/mix/exploration/s5_r22c/r22c/placed.def
+[INFO ORD-0030] Using 2 thread(s).
+[ERROR GRT-0010] Instance _1551_ is not placed.
+Error: s4_route.tcl, 9 GRT-0010
+application-specific initialization failed: can't read "auto_index(::tclreadline::ScriptCompleter)": no such element in array
+[2026-10-04T05:10:49Z] r22c: FATAL: stage s4_route finished without checkpoint /home/hatch/workspace/mix/exploration/s5_r22c/r22c/routed.def
+[2026-10-04T05:12:27Z] r22c stage s0_ysynth: SKIP
+[2026-10-04T05:12:27Z] r22c stage s1_link: SKIP
+[2026-10-04T05:12:27Z] r22c stage s2_floor: SKIP
+[2026-10-04T05:12:27Z] r22c stage s3_place: SKIP
+[2026-10-04T05:12:28Z] r22c stage s4_route: START
+Tcl_Eval failed: tclreadlineInit.tcl not found in any of the directories in auto_path
+Failed to load tclreadline
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef, created 14 layers, 25 vias
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef at line 2.
+
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef, created 437 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_pr/lef/sky130_fd_pr.lef at line 18.
+
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_pr/lef/sky130_fd_pr.lef, created 288 library cells
+[INFO ODB-0127] Reading DEF file: /home/hatch/workspace/mix/exploration/s5_r22c/r22c/placed.def
+[INFO ODB-0128] Design: r22c_spn_mix4r_lp_nw
+[INFO ODB-0130]     Created 192 pins.
+[INFO ODB-0131]     Created 3072 components and 17391 component-terminals.
+[INFO ODB-0133]     Created 1587 nets and 5103 connections.
+[INFO ODB-0134] Finished DEF file: /home/hatch/workspace/mix/exploration/s5_r22c/r22c/placed.def
+[INFO ORD-0030] Using 2 thread(s).
+[ERROR GRT-0042] Pin key[0] does not have geometries in a valid routing layer.
+Error: s4_route.tcl, 8 GRT-0042
+application-specific initialization failed: can't read "auto_index(::tclreadline::ScriptCompleter)": no such element in array
+[2026-10-04T05:12:32Z] r22c: FATAL: stage s4_route finished without checkpoint /home/hatch/workspace/mix/exploration/s5_r22c/r22c/routed.def
+[2026-10-04T05:14:51Z] r22c stage s0_ysynth: SKIP
+[2026-10-04T05:14:51Z] r22c stage s1_link: SKIP
+[2026-10-04T05:14:51Z] r22c stage s2_floor: SKIP
+[2026-10-04T05:14:51Z] r22c stage s3_place: START
+Tcl_Eval failed: tclreadlineInit.tcl not found in any of the directories in auto_path
+Failed to load tclreadline
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef, created 14 layers, 25 vias
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef at line 2.
+
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef, created 437 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_pr/lef/sky130_fd_pr.lef at line 18.
+
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_pr/lef/sky130_fd_pr.lef, created 288 library cells
+[INFO ODB-0127] Reading DEF file: /home/hatch/workspace/mix/exploration/s5_r22c/r22c/floorplan.def
+[INFO ODB-0128] Design: r22c_spn_mix4r_lp_nw
+[INFO ODB-0130]     Created 194 pins.
+[INFO ODB-0131]     Created 1833 components and 11895 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 3666 connections.
+[INFO ODB-0133]     Created 1587 nets and 5103 connections.
+[INFO ODB-0134] Finished DEF file: /home/hatch/workspace/mix/exploration/s5_r22c/r22c/floorplan.def
+[INFO ORD-0030] Using 2 thread(s).
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: (  0.460  2.720 ) um
+[INFO GPL-0004] CoreBBox: (  2.300  2.720 ) ( 144.440 144.160 ) um
+[INFO GPL-0006] NumInstances:              1833
+[INFO GPL-0007] NumPlaceInstances:         1459
+[INFO GPL-0008] NumFixedInstances:          374
+[INFO GPL-0009] NumDummyInstances:            0
+[INFO GPL-0010] NumNets:                   1587
+[INFO GPL-0011] NumPins:                   5295
+[INFO GPL-0012] DieBBox:  (  0.000  0.000 ) ( 146.480 146.480 ) um
+[INFO GPL-0013] CoreBBox: (  2.300  2.720 ) ( 144.440 144.160 ) um
+[INFO GPL-0016] CoreArea:             20104.282 um^2
+[INFO GPL-0017] NonPlaceInstsArea:      728.198 um^2
+[INFO GPL-0018] PlaceInstsArea:       11165.709 um^2
+[INFO GPL-0019] Util:                    57.626 %
+[INFO GPL-0020] StdInstsArea:         11165.709 um^2
+[INFO GPL-0021] MacroInstsArea:           0.000 um^2
+[InitialPlace]  Iter: 1 CG residual: 0.00000010 HPWL: 27870420
+[InitialPlace]  Iter: 2 CG residual: 0.00000011 HPWL: 24396348
+[InitialPlace]  Iter: 3 CG residual: 0.00000010 HPWL: 21908046
+[InitialPlace]  Iter: 4 CG residual: 0.00000009 HPWL: 21277851
+[InitialPlace]  Iter: 5 CG residual: 0.00000009 HPWL: 21190155
+[INFO GPL-0031] FillerInit:NumGCells:      1771
+[INFO GPL-0032] FillerInit:NumGNets:       1587
+[INFO GPL-0033] FillerInit:NumGPins:       5295
+[INFO GPL-0023] TargetDensity:            0.700
+[INFO GPL-0024] AvrgPlaceInstArea:        7.653 um^2
+[INFO GPL-0025] IdealBinArea:            10.933 um^2
+[INFO GPL-0026] IdealBinCnt:               1838
+[INFO GPL-0027] TotalBinArea:         20104.282 um^2
+[INFO GPL-0028] BinCnt:        32     32
+[INFO GPL-0029] BinSize: (  4.442  4.420 )
+[INFO GPL-0030] NumBins: 1024
+[NesterovSolve] Iter:    1 overflow: 0.962 HPWL: 16343702
+[NesterovSolve] Iter:   10 overflow: 0.906 HPWL: 21222209
+[NesterovSolve] Iter:   20 overflow: 0.887 HPWL: 22286602
+[NesterovSolve] Iter:   30 overflow: 0.881 HPWL: 22672832
+[NesterovSolve] Iter:   40 overflow: 0.879 HPWL: 22771774
+[NesterovSolve] Iter:   50 overflow: 0.881 HPWL: 22550672
+[NesterovSolve] Iter:   60 overflow: 0.882 HPWL: 22404395
+[NesterovSolve] Iter:   70 overflow: 0.881 HPWL: 22471260
+[NesterovSolve] Iter:   80 overflow: 0.881 HPWL: 22569375
+[NesterovSolve] Iter:   90 overflow: 0.881 HPWL: 22575361
+[NesterovSolve] Iter:  100 overflow: 0.881 HPWL: 22524038
+[NesterovSolve] Iter:  110 overflow: 0.881 HPWL: 22502783
+[NesterovSolve] Iter:  120 overflow: 0.881 HPWL: 22545066
+[NesterovSolve] Iter:  130 overflow: 0.880 HPWL: 22607188
+[NesterovSolve] Iter:  140 overflow: 0.880 HPWL: 22655964
+[NesterovSolve] Iter:  150 overflow: 0.879 HPWL: 22716867
+[NesterovSolve] Iter:  160 overflow: 0.878 HPWL: 22836667
+[NesterovSolve] Iter:  170 overflow: 0.875 HPWL: 23044447
+[NesterovSolve] Iter:  180 overflow: 0.870 HPWL: 23333752
+[NesterovSolve] Iter:  190 overflow: 0.865 HPWL: 23733161
+[NesterovSolve] Iter:  200 overflow: 0.854 HPWL: 24248487
+[NesterovSolve] Iter:  210 overflow: 0.839 HPWL: 24957901
+[NesterovSolve] Iter:  220 overflow: 0.822 HPWL: 25849884
+[NesterovSolve] Iter:  230 overflow: 0.798 HPWL: 26873642
+[NesterovSolve] Iter:  240 overflow: 0.770 HPWL: 28025291
+[NesterovSolve] Iter:  250 overflow: 0.737 HPWL: 29237925
+[NesterovSolve] Iter:  260 overflow: 0.699 HPWL: 30540555
+[NesterovSolve] Iter:  270 overflow: 0.657 HPWL: 31848959
+[NesterovSolve] Iter:  280 overflow: 0.612 HPWL: 33268245
+[NesterovSolve] Iter:  290 overflow: 0.558 HPWL: 34755386
+[NesterovSolve] Iter:  300 overflow: 0.503 HPWL: 36042902
+[NesterovSolve] Iter:  310 overflow: 0.447 HPWL: 37237545
+[NesterovSolve] Iter:  320 overflow: 0.377 HPWL: 38163908
+[NesterovSolve] Iter:  330 overflow: 0.324 HPWL: 38601106
+[NesterovSolve] Iter:  340 overflow: 0.288 HPWL: 38527909
+[NesterovSolve] Iter:  350 overflow: 0.256 HPWL: 38754385
+[NesterovSolve] Iter:  360 overflow: 0.230 HPWL: 38850634
+[NesterovSolve] Iter:  370 overflow: 0.209 HPWL: 39010121
+[NesterovSolve] Iter:  380 overflow: 0.191 HPWL: 39120587
+[NesterovSolve] Iter:  390 overflow: 0.175 HPWL: 39248305
+[NesterovSolve] Iter:  400 overflow: 0.157 HPWL: 39326457
+[NesterovSolve] Iter:  410 overflow: 0.140 HPWL: 39423937
+[NesterovSolve] Iter:  420 overflow: 0.127 HPWL: 39578259
+[NesterovSolve] Iter:  430 overflow: 0.108 HPWL: 39710586
+[NesterovSolve] Finished with Overflow: 0.098718
+[WARNING DPL-0037] Use remove_fillers before detailed placement.
+Placement Analysis
+---------------------------------
+total displacement       3981.1 u
+average displacement        2.2 u
+max displacement            9.4 u
+original HPWL           39797.9 u
+legalized HPWL          44154.2 u
+delta HPWL                   11 %
+
+[INFO DPL-0001] Placed 1746 filler instances.
+S5-S3-PLACE-DONE
+application-specific initialization failed: can't read "auto_index(::tclreadline::ScriptCompleter)": no such element in array
+[2026-10-04T05:15:19Z] r22c stage s3_place: DONE
+[2026-10-04T05:15:19Z] r22c stage s4_route: START
+Tcl_Eval failed: tclreadlineInit.tcl not found in any of the directories in auto_path
+Failed to load tclreadline
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef, created 14 layers, 25 vias
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef at line 2.
+
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef, created 437 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_pr/lef/sky130_fd_pr.lef at line 18.
+
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_pr/lef/sky130_fd_pr.lef, created 288 library cells
+[INFO ODB-0127] Reading DEF file: /home/hatch/workspace/mix/exploration/s5_r22c/r22c/placed.def
+[INFO ODB-0128] Design: r22c_spn_mix4r_lp_nw
+[INFO ODB-0130]     Created 194 pins.
+[INFO ODB-0131]     Created 3579 components and 18879 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 7158 connections.
+[INFO ODB-0133]     Created 1587 nets and 5103 connections.
+[INFO ODB-0134] Finished DEF file: /home/hatch/workspace/mix/exploration/s5_r22c/r22c/placed.def
+[INFO ORD-0030] Using 2 thread(s).
+[INFO DRT-0149] Reading tech and libs.
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer mcon
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer mcon
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via2
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via2
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via3
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via3
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via4
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via4
+
+Units:                1000
+Number of layers:     13
+Number of macros:     725
+Number of vias:       32
+Number of viarulegen: 25
+
+[INFO DRT-0150] Reading design.
+
+Design:                   r22c_spn_mix4r_lp_nw
+Die area:                 ( 0 0 ) ( 146480 146480 )
+Number of track patterns: 12
+Number of DEF vias:       0
+Number of components:     3579
+Number of terminals:      194
+Number of snets:          2
+Number of nets:           1587
+
+[INFO DRT-0167] List of default vias:
+  Layer mcon
+    default via: L1M1_PR
+  Layer via
+    default via: M1M2_PR
+  Layer via2
+    default via: M2M3_PR
+  Layer via3
+    default via: M3M4_PR
+  Layer via4
+    default via: M4M5_PR
+[INFO DRT-0162] Library cell analysis.
+[INFO DRT-0163] Instance analysis.
+[INFO DRT-0164] Number of unique instances = 112.
+[INFO DRT-0168] Init region query.
+[INFO DRT-0024]   Complete FR_MASTERSLICE.
+[INFO DRT-0024]   Complete licon.
+[INFO DRT-0024]   Complete li1.
+[INFO DRT-0024]   Complete mcon.
+[INFO DRT-0024]   Complete met1.
+[INFO DRT-0024]   Complete via.
+[INFO DRT-0024]   Complete met2.
+[INFO DRT-0024]   Complete via2.
+[INFO DRT-0024]   Complete met3.
+[INFO DRT-0024]   Complete via3.
+[INFO DRT-0024]   Complete met4.
+[INFO DRT-0024]   Complete via4.
+[INFO DRT-0024]   Complete met5.
+[INFO DRT-0033] FR_MASTERSLICE shape region query size = 0.
+[INFO DRT-0033] licon shape region query size = 0.
+[INFO DRT-0033] li1 shape region query size = 41851.
+[INFO DRT-0033] mcon shape region query size = 0.
+[INFO DRT-0033] met1 shape region query size = 7971.
+[INFO DRT-0033] via shape region query size = 3061.
+[INFO DRT-0033] met2 shape region query size = 2063.
+[INFO DRT-0033] via2 shape region query size = 2466.
+[INFO DRT-0033] met3 shape region query size = 1914.
+[INFO DRT-0033] via3 shape region query size = 2466.
+[INFO DRT-0033] met4 shape region query size = 773.
+[INFO DRT-0033] via4 shape region query size = 105.
+[INFO DRT-0033] met5 shape region query size = 133.
+[INFO DRT-0165] Start pin access.
+[INFO DRT-0078]   Complete 870 pins.
+[INFO DRT-0079]   Complete 100 unique inst patterns.
+[INFO DRT-0081]   Complete 112 unique inst patterns.
+[INFO DRT-0084]   Complete 716 groups.
+#scanned instances     = 3579
+#unique  instances     = 112
+#stdCellGenAp          = 3002
+#stdCellValidPlanarAp  = 0
+#stdCellValidViaAp     = 2491
+#stdCellPinNoAp        = 0
+#stdCellPinCnt         = 5103
+#instTermValidViaApCnt = 0
+#macroGenAp            = 0
+#macroValidPlanarAp    = 0
+#macroValidViaAp       = 0
+#macroNoAp             = 0
+[INFO DRT-0166] Complete pin access.
+[INFO DRT-0267] cpu time = 00:00:54, elapsed time = 00:02:30, memory = 173.04 (MB), peak = 230.10 (MB)
+
+[INFO DRT-0157] Number of guides:     8462
+
+[INFO DRT-0169] Post process guides.
+[INFO DRT-0176] GCELLGRID X 0 DO 21 STEP 6900 ;
+[INFO DRT-0177] GCELLGRID Y 0 DO 21 STEP 6900 ;
+[INFO DRT-0028]   Complete FR_MASTERSLICE.
+[INFO DRT-0028]   Complete licon.
+[INFO DRT-0028]   Complete li1.
+[INFO DRT-0028]   Complete mcon.
+[INFO DRT-0028]   Complete met1.
+[INFO DRT-0028]   Complete via.
+[INFO DRT-0028]   Complete met2.
+[INFO DRT-0028]   Complete via2.
+[INFO DRT-0028]   Complete met3.
+[INFO DRT-0028]   Complete via3.
+[INFO DRT-0028]   Complete met4.
+[INFO DRT-0028]   Complete via4.
+[INFO DRT-0028]   Complete met5.
+[INFO DRT-0178] Init guide query.
+[INFO DRT-0035]   Complete FR_MASTERSLICE (guide).
+[INFO DRT-0035]   Complete licon (guide).
+[INFO DRT-0035]   Complete li1 (guide).
+[INFO DRT-0035]   Complete mcon (guide).
+[INFO DRT-0035]   Complete met1 (guide).
+[INFO DRT-0035]   Complete via (guide).
+[INFO DRT-0035]   Complete met2 (guide).
+[INFO DRT-0035]   Complete via2 (guide).
+[INFO DRT-0035]   Complete met3 (guide).
+[INFO DRT-0035]   Complete via3 (guide).
+[INFO DRT-0035]   Complete met4 (guide).
+[INFO DRT-0035]   Complete via4 (guide).
+[INFO DRT-0035]   Complete met5 (guide).
+[INFO DRT-0036] FR_MASTERSLICE guide region query size = 0.
+[INFO DRT-0036] licon guide region query size = 0.
+[INFO DRT-0036] li1 guide region query size = 3307.
+[INFO DRT-0036] mcon guide region query size = 0.
+[INFO DRT-0036] met1 guide region query size = 1748.
+[INFO DRT-0036] via guide region query size = 0.
+[INFO DRT-0036] met2 guide region query size = 747.
+[INFO DRT-0036] via2 guide region query size = 0.
+[INFO DRT-0036] met3 guide region query size = 154.
+[INFO DRT-0036] via3 guide region query size = 0.
+[INFO DRT-0036] met4 guide region query size = 1.
+[INFO DRT-0036] via4 guide region query size = 0.
+[INFO DRT-0036] met5 guide region query size = 0.
+[INFO DRT-0179] Init gr pin query.
+[INFO DRT-0267] cpu time = 00:00:00, elapsed time = 00:00:00, memory = 176.65 (MB), peak = 230.10 (MB)
+[INFO DRT-0245] skipped writing guide updates to database.
+[INFO DRT-0185] Post process initialize RPin region query.
+[INFO DRT-0181] Start track assignment.
+[INFO DRT-0184] Done with 4055 vertical wires in 1 frboxes and 1902 horizontal wires in 1 frboxes.
+[INFO DRT-0186] Done with 1393 vertical wires in 1 frboxes and 1564 horizontal wires in 1 frboxes.
+[INFO DRT-0182] Complete track assignment.
+[INFO DRT-0267] cpu time = 00:00:01, elapsed time = 00:00:05, memory = 189.54 (MB), peak = 230.10 (MB)
+[INFO DRT-0187] Start routing data preparation.
+[INFO DRT-0267] cpu time = 00:00:00, elapsed time = 00:00:00, memory = 189.72 (MB), peak = 230.10 (MB)
+[INFO DRT-0194] Start detail routing.
+[INFO DRT-0195] Start 0th optimization iteration.
+    Completing 10% with 0 violations.
+    elapsed time = 00:13:55, memory = 255.07 (MB).
+    Completing 20% with 0 violations.
+    elapsed time = 00:22:25, memory = 295.25 (MB).
+    Completing 30% with 0 violations.
+    elapsed time = 00:29:12, memory = 336.99 (MB).
+    Completing 40% with 0 violations.
+    elapsed time = 00:32:21, memory = 294.34 (MB).
+    Completing 50% with 4147 violations.
+    elapsed time = 00:52:55, memory = 329.31 (MB).
+    Completing 60% with 4147 violations.
+    elapsed time = 01:00:25, memory = 276.25 (MB).
+[2026-10-04T06:33:11Z] r22c: FATAL: stage s4_route finished without checkpoint /home/hatch/workspace/mix/exploration/s5_r22c/r22c/routed.def
+[2026-10-04T06:33:21Z] r22c RESTART at 40% utilization
+Tcl_Eval failed: tclreadlineInit.tcl not found in any of the directories in auto_path
+Failed to load tclreadline
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef, created 14 layers, 25 vias
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef at line 2.
+
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef, created 437 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_pr/lef/sky130_fd_pr.lef at line 18.
+
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_pr/lef/sky130_fd_pr.lef, created 288 library cells
+[WARNING IFP-0028] Core area lower left (2.000, 2.000) snapped to (2.300, 2.720).
+[INFO IFP-0001] Added 61 rows of 362 site unithd.
+Found 0 macro blocks.
+Using 2 tracks default min distance between IO pins.
+[INFO PPL-0001] Number of slots           620
+[INFO PPL-0002] Number of I/O             192
+[INFO PPL-0003] Number of I/O w/sink      192
+[INFO PPL-0004] Number of I/O w/o sink    0
+[INFO PPL-0005] Slots per section         200
+[INFO PPL-0008] Successfully assigned pins to sections.
+[INFO PPL-0012] I/O nets HPWL: 24231.93 um.
+[INFO TAP-0004] Inserted 122 endcaps.
+[INFO TAP-0005] Inserted 346 tapcells.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_0_Right_0/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_0_Right_0/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_1_Right_1/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_1_Right_1/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_2_Right_2/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_2_Right_2/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_3_Right_3/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_3_Right_3/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_4_Right_4/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_4_Right_4/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_5_Right_5/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_5_Right_5/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_6_Right_6/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_6_Right_6/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_7_Right_7/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_7_Right_7/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_8_Right_8/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_8_Right_8/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_9_Right_9/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_9_Right_9/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_10_Right_10/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_10_Right_10/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_11_Right_11/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_11_Right_11/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_12_Right_12/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_12_Right_12/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_13_Right_13/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_13_Right_13/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_14_Right_14/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_14_Right_14/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_15_Right_15/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_15_Right_15/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_16_Right_16/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_16_Right_16/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_17_Right_17/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_17_Right_17/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_18_Right_18/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_18_Right_18/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_19_Right_19/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_19_Right_19/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_20_Right_20/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_20_Right_20/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_21_Right_21/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_21_Right_21/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_22_Right_22/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_22_Right_22/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_23_Right_23/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_23_Right_23/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_24_Right_24/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_24_Right_24/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_25_Right_25/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_25_Right_25/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_26_Right_26/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_26_Right_26/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_27_Right_27/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_27_Right_27/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_28_Right_28/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_28_Right_28/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_29_Right_29/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_29_Right_29/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_30_Right_30/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_30_Right_30/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_31_Right_31/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_31_Right_31/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_32_Right_32/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_32_Right_32/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_33_Right_33/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_33_Right_33/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_34_Right_34/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_34_Right_34/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_35_Right_35/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_35_Right_35/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_36_Right_36/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_36_Right_36/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_37_Right_37/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_37_Right_37/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_38_Right_38/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_38_Right_38/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_39_Right_39/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_39_Right_39/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_40_Right_40/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_40_Right_40/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_41_Right_41/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_41_Right_41/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_42_Right_42/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_42_Right_42/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_43_Right_43/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_43_Right_43/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_44_Right_44/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_44_Right_44/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_45_Right_45/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_45_Right_45/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_46_Right_46/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_46_Right_46/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_47_Right_47/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_47_Right_47/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_48_Right_48/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_48_Right_48/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_49_Right_49/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_49_Right_49/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_50_Right_50/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_50_Right_50/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_51_Right_51/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_51_Right_51/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_52_Right_52/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_52_Right_52/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_53_Right_53/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_53_Right_53/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_54_Right_54/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_54_Right_54/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_55_Right_55/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_55_Right_55/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_56_Right_56/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_56_Right_56/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_57_Right_57/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_57_Right_57/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_58_Right_58/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_58_Right_58/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_59_Right_59/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_59_Right_59/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_60_Right_60/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_60_Right_60/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_0_Left_61/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_0_Left_61/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_1_Left_62/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_1_Left_62/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_2_Left_63/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_2_Left_63/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_3_Left_64/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_3_Left_64/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_4_Left_65/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_4_Left_65/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_5_Left_66/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_5_Left_66/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_6_Left_67/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_6_Left_67/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_7_Left_68/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_7_Left_68/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_8_Left_69/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_8_Left_69/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_9_Left_70/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_9_Left_70/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_10_Left_71/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_10_Left_71/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_11_Left_72/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_11_Left_72/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_12_Left_73/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_12_Left_73/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_13_Left_74/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_13_Left_74/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_14_Left_75/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_14_Left_75/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_15_Left_76/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_15_Left_76/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_16_Left_77/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_16_Left_77/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_17_Left_78/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_17_Left_78/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_18_Left_79/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_18_Left_79/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_19_Left_80/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_19_Left_80/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_20_Left_81/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_20_Left_81/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_21_Left_82/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_21_Left_82/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_22_Left_83/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_22_Left_83/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_23_Left_84/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_23_Left_84/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_24_Left_85/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_24_Left_85/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_25_Left_86/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_25_Left_86/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_26_Left_87/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_26_Left_87/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_27_Left_88/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_27_Left_88/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_28_Left_89/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_28_Left_89/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_29_Left_90/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_29_Left_90/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_30_Left_91/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_30_Left_91/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_31_Left_92/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_31_Left_92/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_32_Left_93/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_32_Left_93/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_33_Left_94/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_33_Left_94/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_34_Left_95/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_34_Left_95/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_35_Left_96/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_35_Left_96/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_36_Left_97/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_36_Left_97/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_37_Left_98/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_37_Left_98/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_38_Left_99/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_38_Left_99/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_39_Left_100/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_39_Left_100/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_40_Left_101/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_40_Left_101/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_41_Left_102/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_41_Left_102/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_42_Left_103/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_42_Left_103/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_43_Left_104/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_43_Left_104/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_44_Left_105/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_44_Left_105/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_45_Left_106/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_45_Left_106/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_46_Left_107/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_46_Left_107/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_47_Left_108/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_47_Left_108/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_48_Left_109/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_48_Left_109/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_49_Left_110/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_49_Left_110/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_50_Left_111/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_50_Left_111/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_51_Left_112/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_51_Left_112/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_52_Left_113/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_52_Left_113/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_53_Left_114/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_53_Left_114/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_54_Left_115/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_54_Left_115/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_55_Left_116/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_55_Left_116/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_56_Left_117/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_56_Left_117/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_57_Left_118/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_57_Left_118/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_58_Left_119/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_58_Left_119/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_59_Left_120/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_59_Left_120/VPB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_60_Left_121/VNB is not connected to any net.
+[WARNING PDN-0189] Supply pin PHY_EDGE_ROW_60_Left_121/VPB is not connected to any net.
+[INFO PDN-0001] Inserting grid: stdcell_grid
+[INFO PDN-0001] Inserting grid: core_grid
+S5-S2-FLOORPLAN-DONE
+application-specific initialization failed: can't read "auto_index(::tclreadline::ScriptCompleter)": no such element in array
+Tcl_Eval failed: tclreadlineInit.tcl not found in any of the directories in auto_path
+Failed to load tclreadline
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef, created 14 layers, 25 vias
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef at line 2.
+
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef, created 437 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_pr/lef/sky130_fd_pr.lef at line 18.
+
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_pr/lef/sky130_fd_pr.lef, created 288 library cells
+[INFO ODB-0127] Reading DEF file: /home/hatch/workspace/mix/exploration/s5_r22c/r22c/floorplan.def
+[INFO ODB-0128] Design: r22c_spn_mix4r_lp_nw
+[INFO ODB-0130]     Created 194 pins.
+[INFO ODB-0131]     Created 1927 components and 12119 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 3854 connections.
+[INFO ODB-0133]     Created 1587 nets and 5103 connections.
+[INFO ODB-0134] Finished DEF file: /home/hatch/workspace/mix/exploration/s5_r22c/r22c/floorplan.def
+[INFO ORD-0030] Using 2 thread(s).
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: (  0.460  2.720 ) um
+[INFO GPL-0004] CoreBBox: (  2.300  2.720 ) ( 168.820 168.640 ) um
+[INFO GPL-0006] NumInstances:              1927
+[INFO GPL-0007] NumPlaceInstances:         1459
+[INFO GPL-0008] NumFixedInstances:          468
+[INFO GPL-0009] NumDummyInstances:            0
+[INFO GPL-0010] NumNets:                   1587
+[INFO GPL-0011] NumPins:                   5295
+[INFO GPL-0012] DieBBox:  (  0.000  0.000 ) ( 171.075 171.075 ) um
+[INFO GPL-0013] CoreBBox: (  2.300  2.720 ) ( 168.820 168.640 ) um
+[INFO GPL-0016] CoreArea:             27628.998 um^2
+[INFO GPL-0017] NonPlaceInstsArea:      890.854 um^2
+[INFO GPL-0018] PlaceInstsArea:       11165.709 um^2
+[INFO GPL-0019] Util:                    41.759 %
+[INFO GPL-0020] StdInstsArea:         11165.709 um^2
+[INFO GPL-0021] MacroInstsArea:           0.000 um^2
+[InitialPlace]  Iter: 1 CG residual: 0.00000009 HPWL: 56196140
+[InitialPlace]  Iter: 2 CG residual: 0.00000010 HPWL: 25784507
+[InitialPlace]  Iter: 3 CG residual: 0.00000011 HPWL: 19973820
+[InitialPlace]  Iter: 4 CG residual: 0.00000011 HPWL: 19537172
+[InitialPlace]  Iter: 5 CG residual: 0.00000006 HPWL: 19482132
+[INFO GPL-0031] FillerInit:NumGCells:      2441
+[INFO GPL-0032] FillerInit:NumGNets:       1587
+[INFO GPL-0033] FillerInit:NumGPins:       5295
+[INFO GPL-0023] TargetDensity:            0.700
+[INFO GPL-0024] AvrgPlaceInstArea:        7.653 um^2
+[INFO GPL-0025] IdealBinArea:            10.933 um^2
+[INFO GPL-0026] IdealBinCnt:               2527
+[INFO GPL-0027] TotalBinArea:         27628.998 um^2
+[INFO GPL-0028] BinCnt:        32     32
+[INFO GPL-0029] BinSize: (  5.204  5.185 )
+[INFO GPL-0030] NumBins: 1024
+[NesterovSolve] Iter:    1 overflow: 0.964 HPWL: 13634587
+[NesterovSolve] Iter:   10 overflow: 0.938 HPWL: 15325362
+[NesterovSolve] Iter:   20 overflow: 0.936 HPWL: 15641396
+[NesterovSolve] Iter:   30 overflow: 0.937 HPWL: 15685893
+[NesterovSolve] Iter:   40 overflow: 0.937 HPWL: 15710804
+[NesterovSolve] Iter:   50 overflow: 0.937 HPWL: 15674085
+[NesterovSolve] Iter:   60 overflow: 0.937 HPWL: 15648180
+[NesterovSolve] Iter:   70 overflow: 0.937 HPWL: 15650156
+[NesterovSolve] Iter:   80 overflow: 0.937 HPWL: 15674609
+[NesterovSolve] Iter:   90 overflow: 0.937 HPWL: 15696362
+[NesterovSolve] Iter:  100 overflow: 0.937 HPWL: 15704652
+[NesterovSolve] Iter:  110 overflow: 0.937 HPWL: 15722012
+[NesterovSolve] Iter:  120 overflow: 0.936 HPWL: 15769056
+[NesterovSolve] Iter:  130 overflow: 0.936 HPWL: 15853090
+[NesterovSolve] Iter:  140 overflow: 0.935 HPWL: 15987725
+[NesterovSolve] Iter:  150 overflow: 0.933 HPWL: 16203844
+[NesterovSolve] Iter:  160 overflow: 0.930 HPWL: 16552949
+[NesterovSolve] Iter:  170 overflow: 0.924 HPWL: 17045526
+[NesterovSolve] Iter:  180 overflow: 0.917 HPWL: 17706872
+[NesterovSolve] Iter:  190 overflow: 0.907 HPWL: 18552779
+[NesterovSolve] Iter:  200 overflow: 0.895 HPWL: 19600439
+[NesterovSolve] Iter:  210 overflow: 0.874 HPWL: 20929263
+[NesterovSolve] Iter:  220 overflow: 0.853 HPWL: 22373069
+[NesterovSolve] Iter:  230 overflow: 0.824 HPWL: 23897116
+[NesterovSolve] Iter:  240 overflow: 0.796 HPWL: 25651773
+[NesterovSolve] Iter:  250 overflow: 0.759 HPWL: 27379428
+[NesterovSolve] Iter:  260 overflow: 0.719 HPWL: 29076217
+[NesterovSolve] Iter:  270 overflow: 0.674 HPWL: 30759485
+[NesterovSolve] Iter:  280 overflow: 0.628 HPWL: 32169068
+[NesterovSolve] Iter:  290 overflow: 0.573 HPWL: 33526899
+[NesterovSolve] Iter:  300 overflow: 0.517 HPWL: 34819678
+[NesterovSolve] Iter:  310 overflow: 0.463 HPWL: 36447578
+[NesterovSolve] Iter:  320 overflow: 0.403 HPWL: 37443425
+[NesterovSolve] Iter:  330 overflow: 0.336 HPWL: 37916259
+[NesterovSolve] Iter:  340 overflow: 0.294 HPWL: 38180248
+[NesterovSolve] Iter:  350 overflow: 0.249 HPWL: 38275248
+[NesterovSolve] Iter:  360 overflow: 0.218 HPWL: 38429628
+[NesterovSolve] Iter:  370 overflow: 0.188 HPWL: 38510687
+[NesterovSolve] Iter:  380 overflow: 0.167 HPWL: 38602538
+[NesterovSolve] Iter:  390 overflow: 0.149 HPWL: 38672872
+[NesterovSolve] Iter:  400 overflow: 0.133 HPWL: 38765892
+[NesterovSolve] Iter:  410 overflow: 0.120 HPWL: 38854681
+[NesterovSolve] Iter:  420 overflow: 0.109 HPWL: 38935353
+[NesterovSolve] Finished with Overflow: 0.099404
+[WARNING DPL-0037] Use remove_fillers before detailed placement.
+Placement Analysis
+---------------------------------
+total displacement       4555.7 u
+average displacement        2.4 u
+max displacement            9.5 u
+original HPWL           38954.9 u
+legalized HPWL          44177.9 u
+delta HPWL                   13 %
+
+[INFO DPL-0001] Placed 2472 filler instances.
+S5-S3-PLACE-DONE
+application-specific initialization failed: can't read "auto_index(::tclreadline::ScriptCompleter)": no such element in array
+Tcl_Eval failed: tclreadlineInit.tcl not found in any of the directories in auto_path
+Failed to load tclreadline
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef, created 14 layers, 25 vias
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef at line 2.
+
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef, created 437 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_pr/lef/sky130_fd_pr.lef at line 18.
+
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_pr/lef/sky130_fd_pr.lef, created 288 library cells
+[INFO ODB-0127] Reading DEF file: /home/hatch/workspace/mix/exploration/s5_r22c/r22c/placed.def
+[INFO ODB-0128] Design: r22c_spn_mix4r_lp_nw
+[INFO ODB-0130]     Created 194 pins.
+[INFO ODB-0131]     Created 4399 components and 22007 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 8798 connections.
+[INFO ODB-0133]     Created 1587 nets and 5103 connections.
+[INFO ODB-0134] Finished DEF file: /home/hatch/workspace/mix/exploration/s5_r22c/r22c/placed.def
+[INFO ORD-0030] Using 2 thread(s).
+[INFO DRT-0149] Reading tech and libs.
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer mcon
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer mcon
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via2
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via2
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via3
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via3
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via4
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via4
+
+Units:                1000
+Number of layers:     13
+Number of macros:     725
+Number of vias:       29
+Number of viarulegen: 25
+
+[INFO DRT-0150] Reading design.
+
+Design:                   r22c_spn_mix4r_lp_nw
+Die area:                 ( 0 0 ) ( 171075 171075 )
+Number of track patterns: 12
+Number of DEF vias:       0
+Number of components:     4399
+Number of terminals:      194
+Number of snets:          2
+Number of nets:           1587
+
+[INFO DRT-0167] List of default vias:
+  Layer mcon
+    default via: L1M1_PR
+  Layer via
+    default via: M1M2_PR
+  Layer via2
+    default via: M2M3_PR
+  Layer via3
+    default via: M3M4_PR
+  Layer via4
+    default via: M4M5_PR
+[INFO DRT-0162] Library cell analysis.
+[INFO DRT-0163] Instance analysis.
+[INFO DRT-0164] Number of unique instances = 110.
+[INFO DRT-0168] Init region query.
+[INFO DRT-0024]   Complete FR_MASTERSLICE.
+[INFO DRT-0024]   Complete licon.
+[INFO DRT-0024]   Complete li1.
+[INFO DRT-0024]   Complete mcon.
+[INFO DRT-0024]   Complete met1.
+[INFO DRT-0024]   Complete via.
+[INFO DRT-0024]   Complete met2.
+[INFO DRT-0024]   Complete via2.
+[INFO DRT-0024]   Complete met3.
+[INFO DRT-0024]   Complete via3.
+[INFO DRT-0024]   Complete met4.
+[INFO DRT-0024]   Complete via4.
+[INFO DRT-0024]   Complete met5.
+[INFO DRT-0033] FR_MASTERSLICE shape region query size = 0.
+[INFO DRT-0033] licon shape region query size = 0.
+[INFO DRT-0033] li1 shape region query size = 43715.
+[INFO DRT-0033] mcon shape region query size = 0.
+[INFO DRT-0033] met1 shape region query size = 9838.
+[INFO DRT-0033] via shape region query size = 4250.
+[INFO DRT-0033] met2 shape region query size = 2734.
+[INFO DRT-0033] via2 shape region query size = 3400.
+[INFO DRT-0033] met3 shape region query size = 2558.
+[INFO DRT-0033] via3 shape region query size = 3400.
+[INFO DRT-0033] met4 shape region query size = 1029.
+[INFO DRT-0033] via4 shape region query size = 145.
+[INFO DRT-0033] met5 shape region query size = 179.
+[INFO DRT-0165] Start pin access.
+[INFO DRT-0078]   Complete 852 pins.
+[INFO DRT-0079]   Complete 100 unique inst patterns.
+[INFO DRT-0081]   Complete 110 unique inst patterns.
+[INFO DRT-0084]   Complete 635 groups.
+#scanned instances     = 4399
+#unique  instances     = 110
+#stdCellGenAp          = 2918
+#stdCellValidPlanarAp  = 0
+#stdCellValidViaAp     = 2428
+#stdCellPinNoAp        = 0
+#stdCellPinCnt         = 5103
+#instTermValidViaApCnt = 0
+#macroGenAp            = 0
+#macroValidPlanarAp    = 0
+#macroValidViaAp       = 0
+#macroNoAp             = 0
+[INFO DRT-0166] Complete pin access.
+[INFO DRT-0267] cpu time = 00:00:58, elapsed time = 00:02:38, memory = 177.61 (MB), peak = 234.34 (MB)
+
+[INFO DRT-0157] Number of guides:     8767
+
+[INFO DRT-0169] Post process guides.
+[INFO DRT-0176] GCELLGRID X 0 DO 24 STEP 6900 ;
+[INFO DRT-0177] GCELLGRID Y 0 DO 24 STEP 6900 ;
+[INFO DRT-0028]   Complete FR_MASTERSLICE.
+[INFO DRT-0028]   Complete licon.
+[INFO DRT-0028]   Complete li1.
+[INFO DRT-0028]   Complete mcon.
+[INFO DRT-0028]   Complete met1.
+[INFO DRT-0028]   Complete via.
+[INFO DRT-0028]   Complete met2.
+[INFO DRT-0028]   Complete via2.
+[INFO DRT-0028]   Complete met3.
+[INFO DRT-0028]   Complete via3.
+[INFO DRT-0028]   Complete met4.
+[INFO DRT-0028]   Complete via4.
+[INFO DRT-0028]   Complete met5.
+[INFO DRT-0178] Init guide query.
+[INFO DRT-0035]   Complete FR_MASTERSLICE (guide).
+[INFO DRT-0035]   Complete licon (guide).
+[INFO DRT-0035]   Complete li1 (guide).
+[INFO DRT-0035]   Complete mcon (guide).
+[INFO DRT-0035]   Complete met1 (guide).
+[INFO DRT-0035]   Complete via (guide).
+[INFO DRT-0035]   Complete met2 (guide).
+[INFO DRT-0035]   Complete via2 (guide).
+[INFO DRT-0035]   Complete met3 (guide).
+[INFO DRT-0035]   Complete via3 (guide).
+[INFO DRT-0035]   Complete met4 (guide).
+[INFO DRT-0035]   Complete via4 (guide).
+[INFO DRT-0035]   Complete met5 (guide).
+[INFO DRT-0036] FR_MASTERSLICE guide region query size = 0.
+[INFO DRT-0036] licon guide region query size = 0.
+[INFO DRT-0036] li1 guide region query size = 3311.
+[INFO DRT-0036] mcon guide region query size = 0.
+[INFO DRT-0036] met1 guide region query size = 1824.
+[INFO DRT-0036] via guide region query size = 0.
+[INFO DRT-0036] met2 guide region query size = 826.
+[INFO DRT-0036] via2 guide region query size = 0.
+[INFO DRT-0036] met3 guide region query size = 184.
+[INFO DRT-0036] via3 guide region query size = 0.
+[INFO DRT-0036] met4 guide region query size = 24.
+[INFO DRT-0036] via4 guide region query size = 0.
+[INFO DRT-0036] met5 guide region query size = 5.
+[INFO DRT-0179] Init gr pin query.
+[INFO DRT-0267] cpu time = 00:00:00, elapsed time = 00:00:00, memory = 180.82 (MB), peak = 234.34 (MB)
+[INFO DRT-0245] skipped writing guide updates to database.
+[INFO DRT-0185] Post process initialize RPin region query.
+[INFO DRT-0181] Start track assignment.
+[INFO DRT-0184] Done with 4161 vertical wires in 1 frboxes and 2013 horizontal wires in 1 frboxes.
+[INFO DRT-0186] Done with 1365 vertical wires in 1 frboxes and 1664 horizontal wires in 1 frboxes.
+[INFO DRT-0182] Complete track assignment.
+[INFO DRT-0267] cpu time = 00:00:01, elapsed time = 00:00:06, memory = 203.46 (MB), peak = 234.34 (MB)
+[INFO DRT-0187] Start routing data preparation.
+[INFO DRT-0267] cpu time = 00:00:00, elapsed time = 00:00:00, memory = 203.64 (MB), peak = 234.34 (MB)
+[INFO DRT-0194] Start detail routing.
+[INFO DRT-0195] Start 0th optimization iteration.
+    Completing 10% with 0 violations.
+    elapsed time = 00:00:00, memory = 206.23 (MB).
+[2026-10-04T07:10:19Z] r22c global-route fast path START
+Tcl_Eval failed: tclreadlineInit.tcl not found in any of the directories in auto_path
+Failed to load tclreadline
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef, created 14 layers, 25 vias
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef at line 2.
+
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef, created 437 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_pr/lef/sky130_fd_pr.lef at line 18.
+
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_pr/lef/sky130_fd_pr.lef, created 288 library cells
+[INFO ODB-0127] Reading DEF file: /home/hatch/workspace/mix/exploration/s5_r22c/r22c/placed.def
+[INFO ODB-0128] Design: r22c_spn_mix4r_lp_nw
+[INFO ODB-0130]     Created 194 pins.
+[INFO ODB-0131]     Created 4399 components and 22007 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 8798 connections.
+[INFO ODB-0133]     Created 1587 nets and 5103 connections.
+[INFO ODB-0134] Finished DEF file: /home/hatch/workspace/mix/exploration/s5_r22c/r22c/placed.def
+[INFO ORD-0030] Using 2 thread(s).
+[WARNING RSZ-0018] wire capacitance for corner default is zero. Use the set_wire_rc command to set wire resistance and capacitance.
+S5-S4B-GLOBAL-ROUTE-DONE
+application-specific initialization failed: can't read "auto_index(::tclreadline::ScriptCompleter)": no such element in array

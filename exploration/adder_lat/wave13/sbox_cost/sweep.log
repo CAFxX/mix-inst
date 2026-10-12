@@ -1,0 +1,15 @@
+agentwork-launch: tag=track3/wave13-sboxcost schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+[BOYAR19_GF4INV] pure= pre=
+[ULBC_s1] pure= pre=
+[JIA25_12GE_R1] pure= pre=
+[LU21_SKINNY] pure= pre=
+[ORTHROS_S0] pure= pre=
+[PRINCE_S0] pure= pre=
+[THF_BLINK_S0] pure= pre=
+SWEEP DONE 2026-10-10T20:37:14Z
+agentwork-launch: tag=track3/wave13-sboxcost schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+[BOYAR19_GF4INV] pure=103.5 pre=103.5
+[ULBC_s1] pure=103.5 pre=103.5
+[JIA25_12GE_R1] pure=103.5 pre=103.5
+[LU21_SKINNY] pure=103.5 pre=103.5
+[ORTHROS_S0] pure=103.5 pre=103.5

@@ -1,0 +1,36 @@
+agentwork-launch: tag=track3/w14-battery schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+[gate] backoff CLEAR for al_w3c 2026-10-11T06:57:56Z
+=== BATTERY al_w3c (start stage 1) 2026-10-11T06:57:56Z ===
+=== S0a [al_w3c] started 2026-10-11T06:58:04Z
+--- S0a tail:
+XCHECK al_w3c: PASS 10000/10000 C==Python
+=== S0a [al_w3c] rc=0 wall=46s
+=== S1 [al_w3c] started 2026-10-11T06:58:50Z
+--- S1 tail:
+  [DIFF] key=0x123456789abcdef worst|z|=2.2 fisher_logp=-0.84 bonf_logp=-0.58
+  [DIFF] key=0xf0b52a9e7d8ba2b5 worst|z|=1.9 fisher_logp=-2.72 bonf_logp=0.01
+  [DIFF] key=0x92988f142674743 worst|z|=1.9 fisher_logp=-1.68 bonf_logp=-0.03
+  LIN: FLAG (rej=9)  DIFF: PASS (rej=0)
+[S1 al_w3c] LIN/DIFF 214s: LIN FLAG DIFF PASS; SKIPPED (LIN/DIFF kill)
+[S1 al_w3c] verdict: FLAG
+=== S1 [al_w3c] rc=2 wall=240s
+BATTERY-FAIL stage=S1-screen [al_w3c] (see /home/hatch/workspace/mix/exploration/fast_battery/results/al_w3c/battery.log)
+=== BATTERY al_w3c rc=2 2026-10-11T07:02:50Z ===
+[gate] backoff CLEAR for al_w3b 2026-10-11T07:02:51Z
+=== BATTERY al_w3b (start stage 1) 2026-10-11T07:02:51Z ===
+=== S0a [al_w3b] started 2026-10-11T07:03:03Z
+--- S0a tail:
+XCHECK al_w3b: PASS 10000/10000 C==Python
+=== S0a [al_w3b] rc=0 wall=49s
+=== S1 [al_w3b] started 2026-10-11T07:03:52Z
+--- S1 tail:
+  [DIFF] key=0x123456789abcdef worst|z|=1.9 fisher_logp=-1.84 bonf_logp=0.01
+  [DIFF] key=0xf0b52a9e7d8ba2b5 worst|z|=1.7 fisher_logp=-0.23 bonf_logp=0.47
+  [DIFF] key=0x92988f142674743 worst|z|=1.3 fisher_logp=-0.06 bonf_logp=1.32
+  LIN: FLAG (rej=10)  DIFF: PASS (rej=0)
+[S1 al_w3b] LIN/DIFF 85s: LIN FLAG DIFF PASS; SKIPPED (LIN/DIFF kill)
+[S1 al_w3b] verdict: FLAG
+=== S1 [al_w3b] rc=2 wall=101s
+BATTERY-FAIL stage=S1-screen [al_w3b] (see /home/hatch/workspace/mix/exploration/fast_battery/results/al_w3b/battery.log)
+=== BATTERY al_w3b rc=2 2026-10-11T07:05:33Z ===
+BATTERY_W3_DONE

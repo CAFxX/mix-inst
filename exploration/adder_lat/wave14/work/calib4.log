@@ -1,0 +1,1 @@
+agentwork-launch: tag=track3/w14-calib4 schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)

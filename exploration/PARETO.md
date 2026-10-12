@@ -1,6 +1,6 @@
 # RV64 `mix` — Cumulative Pareto Frontier
 
-**Updated:** 2026-10-11 — tables reworked: uniform per-row Design column,
+**Updated:** 2026-10-12 — t6_b57_8 (batch-57 muxD5f) new Frontier S/Q speed point at 19.2u (S0–S4 + sac_z5=0 + bic 0.00863); 2026-10-11 — tables reworked: uniform per-row Design column,
 simplified Quality column; 324 added to Frontier Q (BIC-clean); BIC / SAC z5 /
 S2 max|z| quantitative columns added to Frontier S, Frontier Q and the
 dominated table, all re-read from raw result files (three stale numbers
@@ -34,6 +34,7 @@ the raw result files on 2026-10-11 (this pass corrected three stale numbers:
 
 | Candidate | Delay | Ratio | Cells | Area | BIC | SAC z5 | S2 max\|z\| | Round claimed | Design | Quality |
 |---|---|---:|---:|---:|---:|---:|---:|---|---|---|
+| **t6_b57_8** | **19.2u** | **0.186×** | 6,503 | 20,494 | 0.00863 | 0 | 70.2 | batch-57 | 5-stage pure-MUXD cascade (muxD5f), pre-whiten, fisher-matched triage schedule | Full battery PASS (S0–S4 + sac_z5=0 + BIC-clean) — new speed point |
 | **hyb28_mu5_324** | **19.3u** | **0.186×** | 6,146 | 20,001 | 0.00870 | 0 | 64.7 | batch-28 | 5-stage MUX-rotation cascade, pre-whiten, final x^=rotl(k,13) | Speed point; S0–S4 pass (Frontier-Q eligible) |
 | **t6_b33c** | **19.8u** | **0.191×** | 6,133 | 19,817 | 0.01002 | 0 | 29.2 | batch-33 | 6-stage AND-rotation cascade, pre-whiten, stage x^=(ra&rb)^rc, final x^=rotl(k,13) | Nondominated on cells/area; S0–S4 pass (Frontier-Q eligible) |
 | **t6_b33b** | **20.1u** | **0.194×** | 5,992 | 19,280 | 0.00913 | 0 | 21.2 | batch-33 | 6-stage AND-rotation cascade, pre-whiten, stage x^=(ra&rb)^rc, final x^=rotl(k,13) | Size point; S0–S4 pass (Frontier-Q eligible) |
@@ -43,7 +44,7 @@ the raw result files on 2026-10-11 (this pass corrected three stale numbers:
 | **r21_feist6_alt_notr_chioff31final_nw** | **36.7u** | **0.355×** | 4,198 | 12,005 | 0.14029 | 0 | 11.2 | 21 | 6r Feistel, S1/chi alternating rounds, no round-6 linear, chi(3,1) final | Speed point of the Feistel tail; S0–S4 pass (Frontier-S only) |
 | **r21_feist6_alt_notr_3rot_ns_nw** | **37.4u** | **0.361×** | **3,667** | **10,742** | 0.25384 | 0 | 4.7 | 21 | 6r Feistel, R³x^R⁷x^R¹¹x on 5 linear rounds, truncated chi final | Size point; S0–S4 pass (Frontier-S only) |
 
-hyb28_mu5_324 is the speed point (19.3u); t6_b33c survives on cells/area;
+t6_b57_8 is the speed point (19.2u); hyb28_mu5_324 survives on cells/area (6,146/20,001 vs 6,503/20,494);
 t6_b33b is the size point at 20.1u. The r25 SPN pair holds the mid-size
 axis ((5,13) 0.1u faster, 260 cells larger — genuine tradeoff); r22c is the
 small SPN; the notr Feistel pair holds the slow/small tail. No point
@@ -61,6 +62,7 @@ RTL for the frontier points in `~/workspace/your_files/mix_rtl_pareto/`
 
 | Candidate | Delay | Ratio | Cells | Area | BIC | SAC z5 | S2 max\|z\| | Round claimed | Design | Quality |
 |---|---|---:|---:|---:|---:|---:|---:|---|---|---|
+| **t6_b57_8** | **19.2u** | **0.186×** | 6,503 | 20,494 | 0.00863 | 0 | 70.2 | batch-57 | 5-stage pure-MUXD cascade (muxD5f), pre-whiten, fisher-matched triage schedule | Full battery PASS (S0–S4 + sac_z5=0 + BIC-clean) — new speed point |
 | **hyb28_mu5_324** | **19.3u** | **0.186×** | 6,146 | 20,001 | 0.00870 | 0 | 64.7 | batch-28 | 5-stage MUX-rotation cascade, pre-whiten, final x^=rotl(k,13) | Speed point; full battery |
 | **t6_b33c** | **19.8u** | **0.191×** | 6,133 | 19,817 | 0.01002 | 0 | 29.2 | batch-33 | 6-stage AND-rotation cascade, pre-whiten, stage x^=(ra&rb)^rc, final x^=rotl(k,13) | Nondominated on cells/area; full battery |
 | **t6_b33b** | **20.1u** | **0.194×** | 5,992 | 19,280 | 0.00913 | 0 | 21.2 | batch-33 | 6-stage AND-rotation cascade, pre-whiten, stage x^=(ra&rb)^rc, final x^=rotl(k,13) | Size point; full battery |

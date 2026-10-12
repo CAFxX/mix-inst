@@ -1,0 +1,49 @@
+agentwork-launch: tag=track6/b57-battery-resume schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+[2026-10-12T01:37:46+00:00] RESUME t6_b57_8 from S3 (START=3): S3+S3b+S4
+[2026-10-12T01:37:46+00:00] RESUME t6_b57_8 from S3 (START=3): S3+S3b+S4
+=== S3 [t6_b57_8] started 2026-10-12T01:37:49Z
+--- S3 tail:
+[S3 t6_b57_8] 64MB: no FAIL (rng_test rc=0)
+[S3 t6_b57_8] stage 256MB (key=0x123456789abcdef0 stride=1) ...
+[S3 t6_b57_8] 256MB: no FAIL (rng_test rc=0)
+[S3 t6_b57_8] stage 1GB (key=0x123456789abcdef0 stride=1) ...
+[S3 t6_b57_8] 1GB: no FAIL (rng_test rc=0)
+[S3 t6_b57_8] verdict: PASS (all 4 stages, no FAIL)
+=== S3 [t6_b57_8] rc=0 wall=346s
+=== S3b [t6_b57_8] started 2026-10-12T01:43:36Z
+--- S3b tail:
+[S3 t6_b57_8_strided] 64MB: no FAIL (rng_test rc=0)
+[S3 t6_b57_8_strided] stage 256MB (key=0x0 stride=0x9E3779B97F4A7C15) ...
+[S3 t6_b57_8_strided] 256MB: no FAIL (rng_test rc=0)
+[S3 t6_b57_8_strided] stage 1GB (key=0x0 stride=0x9E3779B97F4A7C15) ...
+[S3 t6_b57_8_strided] 1GB: no FAIL (rng_test rc=0)
+[S3 t6_b57_8_strided] verdict: PASS (all 4 stages, no FAIL)
+=== S3b [t6_b57_8] rc=0 wall=227s
+=== S4 [t6_b57_8] started 2026-10-12T01:47:23Z
+--- S4 tail:
+ Total CPU time:   00:00:08.41
+
+ All tests were passed
+
+
+
+=== S4 [t6_b57_8] rc=0 wall=38s
+BATTERY-PASS [t6_b57_8] all stages survived (S5 P&R+review is a manual gate)
+[2026-10-12T01:48:01+00:00] battery rc=0
+[2026-10-12T01:48:01+00:00] battery rc=0
+[2026-10-12T01:48:01+00:00] S4 PASS -- running Q1 sac/bic
+[2026-10-12T01:48:01+00:00] S4 PASS -- running Q1 sac/bic
+[2026-10-12T01:51:49+00:00] Q1 t6_b57_8 done:
+[2026-10-12T01:51:49+00:00] Q1 t6_b57_8 done:
+ "bic_maxcorr": 0.008628846479701094,
+ "bic_meancorr": 0.0015654206767656284,
+ "avalanche_mean": 32.0014785528183,
+ "wall_s": 227.3
+}
+ "bic_maxcorr": 0.008628846479701094,
+ "bic_meancorr": 0.0015654206767656284,
+ "avalanche_mean": 32.0014785528183,
+ "wall_s": 227.3
+}
+[2026-10-12T01:51:49+00:00] RESUME COMPLETE t6_b57_8
+[2026-10-12T01:51:49+00:00] RESUME COMPLETE t6_b57_8

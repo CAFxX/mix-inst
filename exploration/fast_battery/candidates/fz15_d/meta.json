@@ -1,0 +1,13 @@
+{
+  "name": "fz15_d",
+  "description": "3-stage 3-term-linear chi (aggressive)",
+  "rtl_top": "fz15_d",
+  "screen_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "practrand_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "fz15_b",
+  "description": "4-stage 3-term-linear chi (alt rotations)",
+  "rtl_top": "fz15_b",
+  "screen_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "practrand_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ]
+}

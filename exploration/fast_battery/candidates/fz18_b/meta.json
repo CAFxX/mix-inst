@@ -1,0 +1,13 @@
+{
+  "name": "fz18_b",
+  "description": "5-stage balanced, reversed rotations",
+  "rtl_top": "fz18_b",
+  "screen_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "practrand_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ]
+}

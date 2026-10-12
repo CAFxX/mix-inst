@@ -1,0 +1,13 @@
+{
+  "name": "fz16_b",
+  "description": "4-stage dual-AND 3-term-linear: x^=(ra&rb)^(rc&rd)^re^rf^rg",
+  "rtl_top": "fz16_b",
+  "screen_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "practrand_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ]
+}

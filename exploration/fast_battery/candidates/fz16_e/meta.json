@@ -1,0 +1,13 @@
+{
+  "name": "fz16_e",
+  "description": "5-stage 3-term-linear, fz15_c rotations reversed (robustness)",
+  "rtl_top": "fz16_e",
+  "screen_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "practrand_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ]
+}

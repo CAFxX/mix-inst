@@ -1,0 +1,13 @@
+{
+  "name": "fz16_d",
+  "description": "5-stage 3-term-linear, small Yosys-friendly rotations (speed)",
+  "rtl_top": "fz16_d",
+  "screen_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "practrand_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ]
+}

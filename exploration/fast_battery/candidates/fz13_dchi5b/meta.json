@@ -1,0 +1,13 @@
+{
+  "name": "fz13_dchi5b",
+  "description": "5-stage dual-AND chi (alt rotations): x ^= (ra&rb)^(rc&rd)^re",
+  "rtl_top": "fz13_dchi5b",
+  "screen_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "practrand_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ]
+}

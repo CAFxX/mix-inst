@@ -1,0 +1,13 @@
+{
+  "name": "fz14_dchi4b",
+  "description": "4-stage dual-AND chi (alt rotations)",
+  "rtl_top": "fz14_dchi4b",
+  "screen_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "practrand_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ]
+}

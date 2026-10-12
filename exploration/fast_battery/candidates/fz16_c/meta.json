@@ -1,0 +1,13 @@
+{
+  "name": "fz16_c",
+  "description": "4-stage chi-style 3-term-linear: x^=(ra&(rb^rc))^rd^re^rf",
+  "rtl_top": "fz16_c",
+  "screen_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "practrand_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "fz14_tchi3a",
+  "description": "3-stage triple-AND chi: x ^= (ra&rb)^(rc&rd)^(re&rf)^rg",
+  "rtl_top": "fz14_tchi3a",
+  "screen_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "practrand_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ]
+}

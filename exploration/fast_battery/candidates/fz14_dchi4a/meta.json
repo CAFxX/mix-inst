@@ -1,0 +1,13 @@
+{
+  "name": "fz14_dchi4a",
+  "description": "4-stage dual-AND chi: x ^= (ra&rb)^(rc&rd)^re",
+  "rtl_top": "fz14_dchi4a",
+  "screen_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "practrand_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ]
+}

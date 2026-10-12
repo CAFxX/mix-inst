@@ -1,0 +1,13 @@
+{
+  "name": "fz13_het5b",
+  "description": "5-stage hetero: chi,maj3,chi,chi,chi",
+  "rtl_top": "fz13_het5b",
+  "screen_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "practrand_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ]
+}

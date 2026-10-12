@@ -1,0 +1,13 @@
+{
+  "name": "fz16_a",
+  "description": "4-stage 3-term-linear, fz15_c first-4 rotation sets",
+  "rtl_top": "fz16_a",
+  "screen_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "practrand_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ]
+}

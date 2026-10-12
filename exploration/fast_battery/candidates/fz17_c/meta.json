@@ -1,0 +1,13 @@
+{
+  "name": "fz17_c",
+  "description": "5-stage hetero t3/t3/chi/t3/chi (front-loaded)",
+  "rtl_top": "fz17_c",
+  "screen_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "practrand_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ]
+}

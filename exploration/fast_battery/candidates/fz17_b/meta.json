@@ -1,0 +1,13 @@
+{
+  "name": "fz17_b",
+  "description": "5-stage hetero chi/t3/chi/t3/chi",
+  "rtl_top": "fz17_b",
+  "screen_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "practrand_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ]
+}

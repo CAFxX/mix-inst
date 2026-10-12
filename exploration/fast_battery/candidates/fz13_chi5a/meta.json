@@ -1,0 +1,13 @@
+{
+  "name": "fz13_chi5a",
+  "description": "5-stage plain chi control: x ^= (ra&rb)^rc",
+  "rtl_top": "fz13_chi5a",
+  "screen_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "practrand_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "fz15_c",
+  "description": "5-stage 3-term-linear chi (safety)",
+  "rtl_top": "fz15_c",
+  "screen_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "practrand_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ]
+}

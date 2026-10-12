@@ -185,3 +185,38 @@ The PractRand prescreen compiles a per-try gen binary into
 - Remaining queue after 26: 9, 3, 6, 21, 36. Deferred marginal keeps
   (5, 11, 12, 13, 14, 19, 24, 28, 30, 35) escalate only if the
   remaining six all fail (DESIGN.md).
+
+## Battery verdicts 16:32–18:13Z + reboot ~18:14Z + Q1 relaunch (resume worker 18:30Z)
+
+- t6_b62_26: **BATTERY-PASS** (16:42–17:09Z): S0a XCHECK 10000/10000,
+  S1 CAL_PASS (PB/RD rej=0), S2 max|z|=127.7 (115 deltas),
+  S3 1GB PASS, S3b strided 1GB PASS, S4 SmallCrush PASS. 19.1u
+  dominates t6_b59_0 (19.1/6272/20327 vs 19.1/6358/20580) — pending Q1.
+- t6_b62_9: **BATTERY-PASS** (17:09–17:29Z): S0a, S1 CAL_PASS,
+  S2 max|z|=95.7, S3/S3b PASS, S4 PASS. 19.2u dominates
+  hyb29_mu5_008 — pending Q1.
+- t6_b62_3: **BATTERY-PASS** (17:30–18:03Z): S0a, S1 CAL_PASS
+  (PB/RD rej=0), S2 max|z|=108.4, S3/S3b PASS, S4 PASS. 19.6u
+  dominates t6_xorh5_15 — pending Q1.
+- t6_b62_6: **S1-KILLED (FLAG)** 18:06:29Z — raw: PB rej=2
+  (SINGLE-BIT 0xaa/0x55), RD rej=1 (PTR-j8 0xffff...); O143 marginal
+  gate as designed.
+- t6_b62_21: **S1-KILLED (FLAG)** 18:09:30Z — raw: PB rej=2
+  (SINGLE-BIT 0xaa/0x55), RD rej=0; marginal gate.
+- t6_b62_36: **S1-KILLED (FLAG)** 18:13:09Z — raw: PB rej=0,
+  RD rej=1 (PTR-j8 0xf0b52a9e7d8ba2b5); marginal gate.
+- Launcher printed "S4 survivors: t6_b62_26 t6_b62_9 t6_b62_3"
+  18:13:09Z, then **VM REBOOT ~18:14Z** (uptime "up 11 min" at
+  18:25Z) killed it before its Q1 loop started — no Q1 ran.
+- All 10 battery candidates now terminal EXCEPT Q1 on 26/9/3.
+  Deferred marginal keeps (5,11,12,13,14,19,24,28,30,35) stay
+  deferred (three strong challengers pending, not "all fail").
+- 18:30Z: resume worker launched Q1-only runner
+  `run_b62_q1_resume.sh` (cleared-flag backoff, nice -n 19, skips
+  candidates with q1 JSON on disk): setsid agentwork-launch.sh
+  --nice 19 --tag track6/b62-q1 -- bash run_b62_q1_resume.sh
+  t6_b62_26 t6_b62_9 t6_b62_3 (PIDs 33316/33317; q1_sacbic worker
+  on 26 live 18:32Z; ~24 min each, sequential). Heartbeats
+  workreg track6-batch62 on completion.
+- Next O-number: O142 reserved for batch-S0 verdict; kills above
+  ledger-adjudicated, no O-numbers (precedent: 22/25/17/33).

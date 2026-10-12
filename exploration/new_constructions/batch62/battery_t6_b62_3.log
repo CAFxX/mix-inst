@@ -3,3 +3,48 @@
 XCHECK t6_b62_3: PASS 10000/10000 C==Python
 === S0a [t6_b62_3] rc=0 wall=33s
 === S1 [t6_b62_3] started 2026-10-12T17:30:39Z
+--- S1 tail:
+  [DIFF] key=0x123456789abcdef worst|z|=2.0 fisher_logp=-1.67 bonf_logp=-0.19
+  [DIFF] key=0xf0b52a9e7d8ba2b5 worst|z|=1.9 fisher_logp=-0.98 bonf_logp=0.05
+  [DIFF] key=0x92988f142674743 worst|z|=1.5 fisher_logp=-0.01 bonf_logp=0.96
+  LIN: PASS (rej=0)  DIFF: PASS (rej=0)
+[S1 t6_b62_3] LIN/DIFF 132s: LIN PASS DIFF PASS; marginal 587s: PB rej=0 RD rej=0
+[S1 t6_b62_3] verdict: CAL_PASS
+=== S1 [t6_b62_3] rc=0 wall=633s
+=== S2 [t6_b62_3] started 2026-10-12T17:41:13Z
+--- S2 tail:
+  0xe000000000000000      2.6      298.3            0
+  0x000000000000000f      2.0      275.0            0
+  0x00000000f0000000      2.8      242.8            0
+  0x0000000f00000000      2.6      217.5            0
+  0xf000000000000000      2.6      258.4            0
+PASS max_repeats=0 max|z|=108.4 (all 115 deltas)
+=== S2 [t6_b62_3] rc=0 wall=987s
+=== S3 [t6_b62_3] started 2026-10-12T17:57:40Z
+--- S3 tail:
+[S3 t6_b62_3] 64MB: no FAIL (rng_test rc=0)
+[S3 t6_b62_3] stage 256MB (key=0x123456789abcdef0 stride=1) ...
+[S3 t6_b62_3] 256MB: no FAIL (rng_test rc=0)
+[S3 t6_b62_3] stage 1GB (key=0x123456789abcdef0 stride=1) ...
+[S3 t6_b62_3] 1GB: no FAIL (rng_test rc=0)
+[S3 t6_b62_3] verdict: PASS (all 4 stages, no FAIL)
+=== S3 [t6_b62_3] rc=0 wall=195s
+=== S3b [t6_b62_3] started 2026-10-12T18:00:56Z
+--- S3b tail:
+[S3 t6_b62_3_strided] 64MB: no FAIL (rng_test rc=0)
+[S3 t6_b62_3_strided] stage 256MB (key=0x0 stride=0x9E3779B97F4A7C15) ...
+[S3 t6_b62_3_strided] 256MB: no FAIL (rng_test rc=0)
+[S3 t6_b62_3_strided] stage 1GB (key=0x0 stride=0x9E3779B97F4A7C15) ...
+[S3 t6_b62_3_strided] 1GB: no FAIL (rng_test rc=0)
+[S3 t6_b62_3_strided] verdict: PASS (all 4 stages, no FAIL)
+=== S3b [t6_b62_3] rc=0 wall=121s
+=== S4 [t6_b62_3] started 2026-10-12T18:02:58Z
+--- S4 tail:
+ Total CPU time:   00:00:08.21
+
+ All tests were passed
+
+
+
+=== S4 [t6_b62_3] rc=0 wall=15s
+BATTERY-PASS [t6_b62_3] all stages survived (S5 P&R+review is a manual gate)

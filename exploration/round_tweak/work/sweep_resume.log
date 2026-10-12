@@ -4102,3 +4102,12 @@ agentwork-launch: tag=track1/sweep schedulers:[none [mq-deadline]  ] ionice=best
 [sweep 17:18:39] backoff: 2 heavy pipelines active, sleeping 300s
 [sweep 17:23:39] backoff: 2 heavy pipelines active, sleeping 300s
 [sweep 17:28:46]   S0 rtw_ab0408_pb2io: 37.0u / 3548 / 10490
+[sweep 17:37:44]   S1 rtw_ab0408_pb2io: CAL_PASS lin_rej=0 diff_rej=0
+[sweep 17:37:44] backoff: 2 heavy pipelines active, sleeping 300s
+[sweep 17:42:45] backoff: 2 heavy pipelines active, sleeping 300s
+[sweep 17:47:46] backoff: 4 heavy pipelines active, sleeping 300s
+[sweep 17:52:46] backoff: 2 heavy pipelines active, sleeping 300s
+[sweep 17:57:46] backoff: 2 heavy pipelines active, sleeping 300s
+[sweep 18:02:46] backoff: 2 heavy pipelines active, sleeping 300s
+[sweep 18:07:46] backoff: 2 heavy pipelines active, sleeping 300s
+[sweep 18:12:46] backoff: 2 heavy pipelines active, sleeping 300s

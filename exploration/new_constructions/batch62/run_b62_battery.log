@@ -47,3 +47,23 @@ BATTERY-FAIL stage=S1-screen [t6_b62_17] (see /home/hatch/workspace/mix/explorat
 [S3 t6_b62_9_strided] 1GB: no FAIL (rng_test rc=0)
 [S3 t6_b62_9_strided] verdict: PASS (all 4 stages, no FAIL)
 [2026-10-12T17:29:38+00:00] BATTERY t6_b62_3 (start_stage=1)
+[2026-10-12T18:03:13+00:00] BATTERY t6_b62_3 rc=0
+[S1 t6_b62_3] verdict: CAL_PASS
+[S3 t6_b62_3] 64MB: no FAIL (rng_test rc=0)
+[S3 t6_b62_3] 256MB: no FAIL (rng_test rc=0)
+[S3 t6_b62_3] 1GB: no FAIL (rng_test rc=0)
+[S3 t6_b62_3] verdict: PASS (all 4 stages, no FAIL)
+[S3 t6_b62_3_strided] 64MB: no FAIL (rng_test rc=0)
+[S3 t6_b62_3_strided] 256MB: no FAIL (rng_test rc=0)
+[S3 t6_b62_3_strided] 1GB: no FAIL (rng_test rc=0)
+[S3 t6_b62_3_strided] verdict: PASS (all 4 stages, no FAIL)
+[2026-10-12T18:03:13+00:00] BATTERY t6_b62_6 (start_stage=1)
+[2026-10-12T18:06:29+00:00] BATTERY t6_b62_6 rc=2
+BATTERY-FAIL stage=S1-screen [t6_b62_6] (see /home/hatch/workspace/mix/exploration/fast_battery/results/t6_b62_6/battery.log)
+[2026-10-12T18:06:29+00:00] BATTERY t6_b62_21 (start_stage=1)
+[2026-10-12T18:09:30+00:00] BATTERY t6_b62_21 rc=2
+BATTERY-FAIL stage=S1-screen [t6_b62_21] (see /home/hatch/workspace/mix/exploration/fast_battery/results/t6_b62_21/battery.log)
+[2026-10-12T18:09:30+00:00] BATTERY t6_b62_36 (start_stage=1)
+[2026-10-12T18:13:09+00:00] BATTERY t6_b62_36 rc=2
+BATTERY-FAIL stage=S1-screen [t6_b62_36] (see /home/hatch/workspace/mix/exploration/fast_battery/results/t6_b62_36/battery.log)
+[2026-10-12T18:13:09+00:00] S4 survivors: t6_b62_26 t6_b62_9 t6_b62_3

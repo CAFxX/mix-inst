@@ -1,0 +1,12 @@
+agentwork-launch: tag=track6/b61-battery38 schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+[2026-10-12T05:06:26+00:00] backoff CLEAR -- starting batch-61 staged battery for: t6_b61_38
+[2026-10-12T05:06:26+00:00] BATTERY t6_b61_38 (start_stage=1)
+[2026-10-12T05:27:13+00:00] BATTERY t6_b61_38 rc=2
+[S1 t6_b61_38] verdict: CAL_PASS
+[S3 t6_b61_38] 256MB: no FAIL (rng_test rc=0)
+[S3 t6_b61_38] KILL at 1GB:
+  [Low1/64]Gap-16:A                 R= +21.4  p =  1.0e-17    FAIL !         
+[S3 t6_b61_38] verdict: KILL@1GB
+BATTERY-FAIL stage=S3-practrand [t6_b61_38] (see /home/hatch/workspace/mix/exploration/fast_battery/results/t6_b61_38/battery.log)
+[2026-10-12T05:27:13+00:00] S4 survivors:
+[2026-10-12T05:27:13+00:00] batch-61 staged battery COMPLETE; survivors:

@@ -1,0 +1,4 @@
+selected rank 2: form=xorh5 z=2.57 n_reject=0 xor4_pos=4 stages=[('MUXD', 39, 60, 54, 9), ('MUXD', 8, 62, 48, 38), ('MUXD', 29, 19, 33, 29), ('MUXD', 47, 32, 24, 30), ('XOR4', 59, 56, 36, 41)]
+bit-exact C-vs-Python: 2000/2000 OK
+screener-vs-bundle: 500/500 OK
+bundle t6_xorh5_2 written (form=xorh5 fisher triage z=2.57 n_reject=0)

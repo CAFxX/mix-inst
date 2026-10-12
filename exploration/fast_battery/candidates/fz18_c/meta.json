@@ -1,0 +1,13 @@
+{
+  "name": "fz18_c",
+  "description": "5-stage (x^(ra&rb))^(rc^rd), fz15_c rots",
+  "rtl_top": "fz18_c",
+  "screen_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "practrand_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ]
+}

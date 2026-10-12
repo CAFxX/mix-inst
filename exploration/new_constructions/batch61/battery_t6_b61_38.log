@@ -1,0 +1,32 @@
+=== S0a [t6_b61_38] started 2026-10-12T05:06:36Z
+--- S0a tail:
+XCHECK t6_b61_38: PASS 10000/10000 C==Python
+=== S0a [t6_b61_38] rc=0 wall=9s
+=== S1 [t6_b61_38] started 2026-10-12T05:06:45Z
+--- S1 tail:
+  [DIFF] key=0x123456789abcdef worst|z|=2.6 fisher_logp=-4.24 bonf_logp=-1.87
+  [DIFF] key=0xf0b52a9e7d8ba2b5 worst|z|=1.3 fisher_logp=-0.08 bonf_logp=1.24
+  [DIFF] key=0x92988f142674743 worst|z|=2.7 fisher_logp=-1.21 bonf_logp=-1.96
+  LIN: PASS (rej=0)  DIFF: PASS (rej=0)
+[S1 t6_b61_38] LIN/DIFF 74s: LIN PASS DIFF PASS; marginal 323s: PB rej=0 RD rej=0
+[S1 t6_b61_38] verdict: CAL_PASS
+=== S1 [t6_b61_38] rc=0 wall=330s
+=== S2 [t6_b61_38] started 2026-10-12T05:12:16Z
+--- S2 tail:
+  0xe000000000000000      2.6      267.0            0
+  0x000000000000000f      2.4      250.8            0
+  0x00000000f0000000      2.4      244.0            0
+  0x0000000f00000000      2.0      240.5            0
+  0xf000000000000000      2.7      254.9            0
+PASS max_repeats=0 max|z|=415.3 (all 115 deltas)
+=== S2 [t6_b61_38] rc=0 wall=600s
+=== S3 [t6_b61_38] started 2026-10-12T05:22:16Z
+--- S3 tail:
+[S3 t6_b61_38] stage 256MB (key=0x123456789abcdef0 stride=1) ...
+[S3 t6_b61_38] 256MB: no FAIL (rng_test rc=0)
+[S3 t6_b61_38] stage 1GB (key=0x123456789abcdef0 stride=1) ...
+[S3 t6_b61_38] KILL at 1GB:
+  [Low1/64]Gap-16:A                 R= +21.4  p =  1.0e-17    FAIL !         
+[S3 t6_b61_38] verdict: KILL@1GB
+=== S3 [t6_b61_38] rc=2 wall=296s
+BATTERY-FAIL stage=S3-practrand [t6_b61_38] (see /home/hatch/workspace/mix/exploration/fast_battery/results/t6_b61_38/battery.log)

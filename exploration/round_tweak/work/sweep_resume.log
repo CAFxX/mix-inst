@@ -4136,3 +4136,7 @@ agentwork-launch: tag=track1/sweep schedulers:[none [mq-deadline]  ] ionice=best
 [sweep 22:05:39] SWEEP COMPLETE: 1220 probed, winners=['rtw_fm14_31', 'rtw_lin_ab0612', 'rtw_pb2_rev_inout', 'rtw_rc_bit15', 'rtw_rk07', 'rtw_rk23']
 [sweep 22:07:48] 1220 specs; 1220 already probed
 [sweep 22:07:48] SWEEP COMPLETE: 1220 probed, winners=['rtw_fm14_31', 'rtw_lin_ab0612', 'rtw_pb2_rev_inout', 'rtw_rc_bit15', 'rtw_rk07', 'rtw_rk23']
+[sweep 22:31:47] 1220 specs; 1220 already probed
+[sweep 22:31:47] SWEEP COMPLETE: 1220 probed, winners=['rtw_fm14_31', 'rtw_lin_ab0612', 'rtw_pb2_rev_inout', 'rtw_rc_bit15', 'rtw_rk07', 'rtw_rk23']
+[sweep 23:02:33] 1220 specs; 1220 already probed
+[sweep 23:02:33] SWEEP COMPLETE: 1220 probed, winners=['rtw_fm14_31', 'rtw_lin_ab0612', 'rtw_pb2_rev_inout', 'rtw_rc_bit15', 'rtw_rk07', 'rtw_rk23']

@@ -1,0 +1,24 @@
+{
+ "name": "fz_r3x3_3",
+ "description": "3-stage pure replacement: x = AOR3a ^ AOR3b (18-input, degree 3)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xa2cf3bffb3de2aee"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x280028a8280028a8"
+  }
+ ]
+}

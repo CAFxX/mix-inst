@@ -1,0 +1,24 @@
+{
+ "name": "fz_r3x3_2",
+ "description": "2-stage pure replacement: x = AOR3a ^ AOR3b",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x9838e231a9295ba0"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x12f7f16632f759e6"
+  }
+ ]
+}

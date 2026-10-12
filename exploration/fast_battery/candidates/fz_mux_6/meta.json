@@ -1,0 +1,13 @@
+{
+ "name": "fz_mux_6",
+ "description": "6-stage pure MUX replacement",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "rtl_top": "fz_mux_6"
+}

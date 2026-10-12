@@ -1,0 +1,17 @@
+{
+ "const_fam": "iota",
+ "const_where": "round_F",
+ "mask": "none",
+ "pbox_perm": null,
+ "pbox_where": "none",
+ "rounds": 7,
+ "tags": [
+  "s1_311",
+  "chi32v_311",
+  "s1_311",
+  "chi32v_311",
+  "s1_311",
+  "chi32v_311",
+  "chi32v_notr"
+ ]
+}

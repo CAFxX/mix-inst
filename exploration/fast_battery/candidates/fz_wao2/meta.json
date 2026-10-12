@@ -1,0 +1,24 @@
+{
+ "name": "fz_wao2",
+ "description": "2-stage wide AND-OR: x ^= (ra&rb)|(rc&rd)|(re&rf) ^ rg ^ rh",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x34e337255e627515"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xbe2c2472c5bc7753"
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "name": "fz_muxx_5",
+ "description": "5-stage: x ^= MUX(x,ra,rb)^MUX(rc,rd,re)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "rtl_top": "fz_muxx_5"
+}

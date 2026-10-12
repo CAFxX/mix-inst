@@ -1,0 +1,13 @@
+{
+ "name": "fz_mux_5",
+ "description": "5-stage pure MUX replacement: x = MUX(x,ra,rb)^MUX(rc,rd,re)^MUX(rf,rg,rh)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "rtl_top": "fz_mux_5"
+}

@@ -1,0 +1,26 @@
+{
+ "name": "ga_g00_002",
+ "description": "GA 7r Feistel F=[s1_311,chi32v_311,s1_311,chi32v_311,s1_311,chi32v_311,chi32v_notr] const:round_F/iota no whitening",
+ "composition": "GA 7r Feistel F=[s1_311,chi32v_311,s1_311,chi32v_311,s1_311,chi32v_311,chi32v_notr] const:round_F/iota no whitening",
+ "rtl_top": "ga_g00_002",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xea697eb06d9d344c"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xe572745990a97aee"
+  }
+ ]
+}

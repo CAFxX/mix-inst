@@ -1,0 +1,24 @@
+{
+ "name": "fz_maj3r_2",
+ "description": "2-stage balanced maj3 replacement",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x4b618e9fe050a9e5"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xc1ae9dc87b8eaba3"
+  }
+ ]
+}

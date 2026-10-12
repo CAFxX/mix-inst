@@ -1,0 +1,24 @@
+{
+ "name": "fz_dchi2",
+ "description": "2-stage dual-chi: x ^= ((~ra)&rb) ^ ((~rc)&rd) ^ re ^ rf",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x779edd63b7e2238b"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xfd51ce342c3c21cd"
+  }
+ ]
+}

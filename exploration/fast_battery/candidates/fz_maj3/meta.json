@@ -1,0 +1,24 @@
+{
+ "name": "fz_maj3",
+ "description": "3-stage 5-input majority: x ^= maj(ra,rb,rc,rd,re) ^ rf ^ rg",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xeee0a9c5c6a48aab"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x642fba925d7a88ed"
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+{
+ "name": "fz_majx_4",
+ "description": "4-stage: x ^= maj3(x,ra,rb) ^ maj3(rc,rd,re) ^ maj3(rf,rg,rh)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xda4b3794a9ddff8c"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x508424c33203fdca"
+  }
+ ]
+}

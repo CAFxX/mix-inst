@@ -1,0 +1,26 @@
+{
+ "name": "rtw_ms_r01_alt",
+ "description": "tweak Z4: chioff13all chi rounds += x^((x>>>r)&M) r=1 M=0x55555555",
+ "composition": "tweak Z4: chioff13all chi rounds += x^((x>>>r)&M) r=1 M=0x55555555",
+ "rtl_top": "rtw_ms_r01_alt",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x417a99a417f60279"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xbfec3d7fd5b8577b"
+  }
+ ]
+}

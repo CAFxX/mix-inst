@@ -7,17 +7,18 @@ No gates, no netlists, no circuits. All results in
 ## 1. The 8×8 S-box S
 
 **Construction**: `S(x) = C · inv(A·x + b) + d`, where `inv` is inversion in
-GF(2⁸) = GF(2)[t]/(t⁸+t⁴+t³+t+1) (0→0), and (A,b,C,d) is a random affine
-equivalence chosen by search (NOT the AES affine — independently found).
+GF(2⁸) = GF(2)[t]/(t⁸+t⁴+t³+t+1) (0→0), and (A,b,C,d) is an affine
+equivalence chosen by 20k-trial max-bias search (NOT the AES affine —
+independently found).
 
 Affine parameters (rows as bitmasks, bit 0 = LSB):
-- A rows: `0x42 0x76 0x51 0x45 0x16 0xa7 0x61 0x78`, b = `0x68`
-- C rows: `0x79 0xab 0x1c 0x83 0x91 0x6c 0xaf 0x0b`, d = `0xbc`
+- A rows: `0x0f 0x4c 0xa6 0x30 0x5b 0x4e 0xb8 0x14`, b = `0xc4`
+- C rows: `0x1c 0xf2 0x6d 0x28 0x64 0xe1 0x36 0x7f`, d = `0x5e`
 
-Table `S` (256 bytes, row-major hex):
+Table `S` (256 bytes, row-major hex, in `S_best.npy`):
 ```
-d5 31 b1 57 03 b4 c1 7f 5b 5d 6d 30 cc 48 e4 76
-... (full table in S_table.npy)
+46 e2 c6 e5 6f 0c cf 3f 71 67 eb ea 00 fa 14 91
+... (full table in S_best.npy)
 ```
 
 ### Metrics (all computed on the 256-entry truth table)
@@ -28,8 +29,8 @@ d5 31 b1 57 03 b4 c1 7f 5b 5d 6d 30 cc 48 e4 76
 | NL (min over 255 components) | **112** | 112 | ✓ optimal |
 | Algebraic degree | **7** | 7 | ✓ max |
 | Differential uniformity | **4** | 4 | ✓ optimal |
-| SAC max bias | 16 (counts in [112,144]) | AES-level | ✓ |
-| BIC max bias | 16 | AES-level | ✓ |
+| SAC max bias | 12 (counts in [116,140]) | ≤16 (AES-level) | ✓ better than AES |
+| BIC max bias | 16 | ≤16 (AES-level) | ✓ |
 | Influence | every output bit depends on all 8 input bits | full | ✓ |
 
 NL/degree/DU are affine-invariant: **every** affine equivalent of inversion
@@ -72,7 +73,13 @@ x_i = 1..8, y_j = 9..16; each entry expanded to its 8×8 binary
 | Byte branch number | **9** (maximal) |
 | Binary rank | 64 (invertible) |
 | SAC condition: every row hits every byte-block | ✓ |
+| BIC condition: 64 distinct row-restrictions per block | ✗ (51–62/64 distinct; simulated annealing repair in progress in `m_anneal.py`) |
 | Max row weight | 39 → **6 XOR levels** |
+
+**Known limitation**: the Cauchy M has row-restriction collisions (a few per
+byte-block), causing perfect avalanche correlation (corr=1.0) for a handful of
+output pairs. A simulated-annealing repair (`m_anneal.py`) is reducing
+collisions. If it reaches 0, `M64_bic.npy` supersedes `M64.npy`.
 
 ### F properties (derived mathematically)
 
@@ -86,8 +93,11 @@ x_i = 1..8, y_j = 9..16; each entry expanded to its 8×8 binary
   max|W| = 32⁸ = 2⁴⁰ ⟹ NL = **2⁶³ − 2³⁹** per component.
 - **SAC of F**: follows from SAC of S + M's row-block-nonzero property
   (each output bit XORs ≥1 fair avalanche coin per flipped input bit).
+  Measured: worst |flip_rate − 0.5| = **0.072** over 64×64 pairs × 20k samples.
+- **BIC of F**: measured worst |corr| = 1.0 due to M's row-restriction
+  collisions (a few pairs per input byte). Repair via `m_anneal.py`.
 - **Statistical SAC/BIC**: measured by sampling in `eval_F.py`
-  (2⁶⁴ exhaustive impossible).
+  (2⁶⁴ exhaustive impossible). Results in `eval_F_out.txt`.
 
 ## 3. Latency estimate (mathematical operations, NOT gates)
 
@@ -113,11 +123,17 @@ but this F achieves byte branch 9 (vs AES's 5) in a single linear layer.
 
 ## 5. Open points (for parent)
 
-1. Statistical SAC/BIC of F (`eval_F.py`) was still running at write time —
-   check `eval_F_out.txt`.
-2. The 20k-trial bias search (background) may find SAC/BIC bias < 16; if so,
-   `S_best.npy` supersedes `S_table.npy`.
+1. Statistical SAC/BIC of F: SAC worst |flip−0.5| = 0.072 (good); BIC has
+   corr=1.0 on a few pairs due to M collisions — `m_anneal.py` repairing
+   (was at 37 colliding rows and falling; saves `M64_bic.npy` if it hits 0).
+2. Two-round variant (S–M–S–M) would square the component NL
+   (2⁶³−2³⁹ → ~2⁶³−2¹⁹) at 2 S-box + 12 XOR levels, if needed.
 3. PractRand on F requires a circuit or C implementation — out of scope for
    this math task.
-4. Two-round variant (S–M–S–M) would square the component NL
-   (2⁶³−2³⁹ → ~2⁶³−2¹⁹) at 2 S-box + 12 XOR levels, if needed.
+4. **Key negative results** (first-principles, proven):
+   - 0x11b is irreducible but NOT primitive (ord(0x02)=51); log/exp tables
+     over GF(2⁸)/0x11b are invalid — a trap for implementers.
+   - Perfect SAC is unachievable in the inversion affine class (good-mask
+     intersection over unit directions is empty).
+   - The real AES S-box does NOT have perfect SAC (53/64 violations,
+     maxbias 16) — corrects the common "AES has perfect SAC" claim.

@@ -4116,3 +4116,10 @@ agentwork-launch: tag=track1/sweep schedulers:[none [mq-deadline]  ] ionice=best
 [sweep 19:04:23] PROBE rtw_ab0408_pb2io [N9] prio=11214 boosted_by=[]
 [sweep 19:04:41]   S0 rtw_ab0408_pb2io: 37.0u / 3548 / 10490
 [sweep 19:11:04]   S1 rtw_ab0408_pb2io: CAL_PASS lin_rej=0 diff_rej=0
+[sweep 19:30:38]   S2 rtw_ab0408_pb2io: repeats_max=1 zmax=32.0 spikes=22
+[sweep 19:30:38]   DIAGNOSIS rtw_ab0408_pb2io: S2 spikes |z|>15 on 22 deltas; worst 0010000000000000=32; bits [32, 36, 40, 44, 48, 50, 52, 60]
+[sweep 19:30:38]   PROMOTE rtw_ab0408_pb2io -> full battery
+[sweep 19:49:54]   BATTERY rtw_ab0408_pb2io: rc=2 s3=False s4=False q1={'sac_z5': 16, 'bic': 0.25372057816472793}
+[sweep 19:49:54] PROBE rtw_ab0612_pb2io [N9] prio=11215 boosted_by=[]
+[sweep 19:50:04]   S0 rtw_ab0612_pb2io: 36.8u / 4213 / 12117
+[sweep 19:55:25]   S1 rtw_ab0612_pb2io: FLAG lin_rej=0 diff_rej=0

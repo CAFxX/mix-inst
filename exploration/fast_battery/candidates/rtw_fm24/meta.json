@@ -1,0 +1,26 @@
+{
+ "name": "rtw_fm24",
+ "description": "tweak N3: chioff13all + final mixing y^rotl(y,24)",
+ "composition": "tweak N3: chioff13all + final mixing y^rotl(y,24)",
+ "rtl_top": "rtw_fm24",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x37cc994488172fc0"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xb680b9e777057336"
+  }
+ ]
+}

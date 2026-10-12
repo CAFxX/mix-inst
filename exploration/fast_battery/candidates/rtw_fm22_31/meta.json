@@ -1,0 +1,26 @@
+{
+ "name": "rtw_fm22_31",
+ "description": "tweak N3: chioff31 + final mixing y^rotl(y,22)",
+ "composition": "tweak N3: chioff31 + final mixing y^rotl(y,22)",
+ "rtl_top": "rtw_fm22_31",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xc23ea583f28b094b"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xf1db5bb3bb8b5962"
+  }
+ ]
+}

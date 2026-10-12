@@ -33,7 +33,9 @@ KEEP bar (all four gates, cost order):
      keys; zero rejections.
   G4 Low1/64 PractRand prescreen at 256MB (battery key
      0x123456789abcdef0): REJECT on any [Low1/64] FAIL / suspicious /
-     p < 1e-3.
+     p < 1e-3. 2026-10-12: any non-Low1 PractRand FAIL (e.g. BDayS2)
+     also REJECTs -- -tlfail halts the run early, which is a real
+     detection, not infra (try-35 misclassification fix).
 
 Controls (fail-loud, run `calibrate` first):
   CALIB-1: and1/b33c 6-stage must give z=3.3 (harness sanity).
@@ -78,6 +80,14 @@ from screen_lindiff import screen_lindiff
 from screen_cal import _reduction_logps, fisher_logp
 
 M64 = np.uint64(0xFFFFFFFFFFFFFFFF)
+
+# 2026-10-12: /tmp is a 512M tmpfs shared with other projects' writers.
+# gcc's assembler temp files died with ENOSPC on try-64 ("error closing
+# /tmp/cckp94mv.s: No space left on device"). Route all temp files from
+# this module's subprocesses (gcc, etc.) to workspace disk.
+_GCC_TMP = os.path.join(B62, "build_prescreen", ".gcc-tmp")
+os.makedirs(_GCC_TMP, exist_ok=True)
+os.environ.setdefault("TMPDIR", _GCC_TMP)
 KEYS10 = [int(k) for k in KEYS]
 RNG_TEST = "/home/hatch/tools/practrand/PractRand/RNG_test"
 PRESCREEN_KEY = "123456789abcdef0"
@@ -271,6 +281,13 @@ def eval_low1(stages, tag):
         # early (it may never reach 256MB). That is a real detection,
         # not an infra failure.
         return False, "LOW1-REJECT worst_p=%.2e :: %s" % (worst_p, hits[0][:120])
+    # 2026-10-12: any PractRand FAIL (not just the Low1 family) halts
+    # the run early via -tlfail and is a real detection, not infra.
+    # try-35 was misclassified as INFRA twice (BDayS2 FAIL p~1e-14 at
+    # 128MB); the parser only scanned Low1-family lines.
+    for line in text.splitlines():
+        if re.search(r"\bFAIL\b", line):
+            return False, "G4-REJECT non-Low1 FAIL :: %s" % line.strip()[:120]
     if "256 megabytes" not in text:
         # Hardened guard: the target length must actually have been
         # reached when nothing was detected. ("length=" alone is

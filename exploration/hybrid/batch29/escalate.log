@@ -24,3 +24,33 @@ BATTERY-PASS [hyb29_mu5_008] all stages survived (S5 P&R+review is a manual gate
 BATTERY-FAIL stage=S1-screen [hyb29_mu5_009] (see /home/hatch/workspace/mix/exploration/fast_battery/results/hyb29_mu5_009/battery.log)
 === hyb29_mu5_009 battery rc=2 2026-10-12T09:24:58Z ===
 === ESCALATE hyb29_mu5_010 2026-10-12T09:24:59Z ===
+[S3 hyb29_mu5_010] verdict: KILL@1GB
+=== S3 [hyb29_mu5_010] rc=2 wall=312s
+BATTERY-FAIL stage=S3-practrand [hyb29_mu5_010] (see /home/hatch/workspace/mix/exploration/fast_battery/results/hyb29_mu5_010/battery.log)
+=== hyb29_mu5_010 battery rc=2 2026-10-12T09:39:21Z ===
+=== ESCALATE hyb29_mu5_011 2026-10-12T09:39:21Z ===
+[S1 hyb29_mu5_011] verdict: FLAG
+=== S1 [hyb29_mu5_011] rc=2 wall=466s
+BATTERY-FAIL stage=S1-screen [hyb29_mu5_011] (see /home/hatch/workspace/mix/exploration/fast_battery/results/hyb29_mu5_011/battery.log)
+=== hyb29_mu5_011 battery rc=2 2026-10-12T09:47:15Z ===
+=== ESCALATE hyb29_mu5_013 2026-10-12T09:47:18Z ===
+[S1 hyb29_mu5_013] verdict: FLAG
+=== S1 [hyb29_mu5_013] rc=2 wall=287s
+BATTERY-FAIL stage=S1-screen [hyb29_mu5_013] (see /home/hatch/workspace/mix/exploration/fast_battery/results/hyb29_mu5_013/battery.log)
+=== hyb29_mu5_013 battery rc=2 2026-10-12T09:52:44Z ===
+=== ESCALATE hyb29_mu5_014 2026-10-12T09:52:46Z ===
+[S1 hyb29_mu5_014] verdict: FLAG
+=== S1 [hyb29_mu5_014] rc=2 wall=165s
+BATTERY-FAIL stage=S1-screen [hyb29_mu5_014] (see /home/hatch/workspace/mix/exploration/fast_battery/results/hyb29_mu5_014/battery.log)
+=== hyb29_mu5_014 battery rc=2 2026-10-12T09:55:55Z ===
+=== ESCALATE hyb29_mu5_015 2026-10-12T09:55:56Z ===
+[S1 hyb29_mu5_015] verdict: FLAG
+=== S1 [hyb29_mu5_015] rc=2 wall=268s
+BATTERY-FAIL stage=S1-screen [hyb29_mu5_015] (see /home/hatch/workspace/mix/exploration/fast_battery/results/hyb29_mu5_015/battery.log)
+=== hyb29_mu5_015 battery rc=2 2026-10-12T10:00:34Z ===
+=== ESCALATE hyb29_mu5_016 2026-10-12T10:00:34Z ===
+[S3 hyb29_mu5_016] verdict: KILL@64MB
+=== S3 [hyb29_mu5_016] rc=2 wall=169s
+BATTERY-FAIL stage=S3-practrand [hyb29_mu5_016] (see /home/hatch/workspace/mix/exploration/fast_battery/results/hyb29_mu5_016/battery.log)
+=== hyb29_mu5_016 battery rc=2 2026-10-12T10:22:22Z ===
+=== ESCALATE hyb29_mu5_017 2026-10-12T10:22:22Z ===

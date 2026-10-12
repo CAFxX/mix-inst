@@ -1,0 +1,26 @@
+{
+ "name": "r24_spn_mix4r_pba19b27_nw",
+ "description": "R24 P1a: 4r SPN, P-box (19,27) (cycles [32, 32]); S1, L=lin(3,11), golden ks.",
+ "composition": "R24 P1a: 4r SPN, P-box (19,27) (cycles [32, 32]); S1, L=lin(3,11), golden ks.",
+ "rtl_top": "r24_spn_mix4r_pba19b27_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x96983313e4b81791"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x6049586f12eea6fc"
+  }
+ ]
+}

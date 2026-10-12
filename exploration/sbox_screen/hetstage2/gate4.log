@@ -1,0 +1,29 @@
+CONTROL MU5-324 (5xMUXD): inner lin=PASS diff=PASS fisher n_reject=0 maxworst|z|=3.2
+k00_R5_R5 G3 RD-SEQ n_reject=0 worst_key=12297829382473034410 worst_flp=-2.3 PASS
+k00_R5_R5 BUNDLE PASS 2000x3 bit-exact
+k00_R5_R5 G4 LOW1-REJECT worst_p=2.60e-15 :: [Low1/64]FPF/16:all               R=  +9.3  p =  2.6e-6   suspicious
+k01_D_H3 G3 RD-SEQ n_reject=0 worst_key=660209390169048899 worst_flp=-3.3 PASS
+k01_D_H3 BUNDLE PASS 2000x3 bit-exact
+k01_D_H3 G4 LOW1-REJECT worst_p=7.00e-12 :: [Low1/64]BCFN(2+1,13-9U)          R= +47.8  p =  7.0e-12    FAIL
+k02_R5_R5 G3 RD-SEQ n_reject=1 worst_key=16045690984833335023 worst_flp=-7.2 REJECT
+k02_R5_R5 BUNDLE PASS 2000x3 bit-exact
+k02_R5_R5 G4 SKIP
+k03_D_H3 G3 RD-SEQ n_reject=0 worst_key=4660 worst_flp=-3.4 PASS
+k03_D_H3 BUNDLE PASS 2000x3 bit-exact
+k03_D_H3 G4 LOW1-REJECT worst_p=6.70e-17 :: [Low1/64]BCFN(2+3,13-9U)          R= +19.7  p =  1.4e-5   mildly suspicious
+k04_R5_R5 G3 RD-SEQ n_reject=0 worst_key=660209390169048899 worst_flp=-4.0 PASS
+k04_R5_R5 BUNDLE PASS 2000x3 bit-exact
+k04_R5_R5 G4 LOW1-REJECT worst_p=7.20e-15 :: [Low1/64]Gap-16:A                 R=  +5.1  p =  8.1e-4   unusual
+k05_R5_R5 G3 RD-SEQ n_reject=0 worst_key=18446744073709551615 worst_flp=-3.9 PASS
+k05_R5_R5 BUNDLE PASS 2000x3 bit-exact
+k05_R5_R5 G4 LOW1-REJECT worst_p=4.80e-12 :: [Low1/64]BCFN(2+0,13-8U)          R= +12.9  p =  3.2e-4   unusual
+k06_D_H3 G3 RD-SEQ n_reject=0 worst_key=4660 worst_flp=-3.7 PASS
+k06_D_H3 BUNDLE PASS 2000x3 bit-exact
+k06_D_H3 G4 LOW1-REJECT worst_p=8.00e-08 :: [Low1/64]BCFN(2+3,13-9U)          R= +18.7  p =  2.4e-5   mildly suspicious
+k07_D_H3 G3 RD-SEQ n_reject=0 worst_key=17344816400086835893 worst_flp=-1.1 PASS
+k07_D_H3 BUNDLE PASS 2000x3 bit-exact
+k07_D_H3 G4 LOW1-REJECT worst_p=3.70e-12 :: [Low1/64]BCFN(2+3,13-9U)          R= +23.3  p =  2.3e-6   suspicious
+k08_R5_R5 G3 RD-SEQ n_reject=0 worst_key=81985529216486895 worst_flp=-3.5 PASS
+k08_R5_R5 BUNDLE PASS 2000x3 bit-exact
+k08_R5_R5 G4 LOW1-REJECT worst_p=3.80e-14 :: [Low1/64]BCFN(2+1,13-8U)          R= +20.9  p =  2.7e-6   suspicious
+=== gate4: 0/9 ADVANCE ===

@@ -1,0 +1,15 @@
+{
+ "name": "r25_feist6_keyin_nw",
+ "description": "R25 Track C2: 6r Feistel, F=lin32(S1(R^rk32),3,11) (key into S-box), no whitening",
+ "composition": "R25 Track C2: 6r Feistel, F=lin32(S1(R^rk32),3,11) (key into S-box), no whitening",
+ "rtl_top": "r25_feist6_keyin_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": []
+}

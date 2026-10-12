@@ -1,0 +1,10 @@
+CALIB 1 and1/b33c z=3.3 EXACT: PASS maxworst|z|=3.3
+CALIB 2a mux/MU5-324(5st) fisher KEEP: PASS n_reject=0 maxworst|z|=3.24 min_fisher=-3.7
+CALIB 2b linear-4 fisher REJECT: PASS n_reject=10 maxworst|z|=1480000.0 min_fisher=-inf
+CALIB 3 draw gates 2200/2200 sound: PASS 
+CALIB 4 stage_cost.py flow runs, muxd anchor on-scale: PASS rc=0
+CALIB 4b GF(pc=12) matrix weight in [1200,1600]: PASS wt=1323
+CALIB 5a t6_b59_47 inner PASS: PASS lin=PASS diff=PASS
+CALIB 5b hetstage try53 replay inner diff!=PASS: PASS lin=FLAG diff=FLAG
+CALIB 5c hetstage try78 replay inner diff!=PASS: PASS lin=PASS diff=FLAG
+CALIB 5d: gate order = inner FIRST (primary triage), fisher second; KEEP requires inner-PASS AND fisher-PASS — pre-registered

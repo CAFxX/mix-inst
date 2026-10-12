@@ -54,3 +54,40 @@ try  49 m=3 KEEP fisher z=2.7 inner diffz=3.1 LOW1-PASS worst_p=1.00e+00
 try  50 m=1 KEEP fisher z=3.3 inner diffz=3.3 LOW1-PASS worst_p=1.00e+00
 try  51 m=2 G1-fisher KILL n_reject=4 z=10.3
 try  52 m=2 G1-fisher KILL n_reject=7 z=25.7
+try  53 m=1 KEEP fisher z=3.0 inner diffz=2.8 LOW1-PASS worst_p=1.00e+00
+try  54 m=3 G4-low1 KILL LOW1-REJECT worst_p=1.00e-04 :: [Low1/64]mod3n(5):(2,9-5)         R= +10.0  p =  1.0e-4   unusual
+try  55 m=2 KEEP fisher z=3.1 inner diffz=2.7 LOW1-PASS worst_p=1.00e+00
+try  56 m=2 KEEP fisher z=2.4 inner diffz=2.8 LOW1-PASS worst_p=2.80e-03
+try  57 m=2 G2-inner KILL rej=1 diffworstz=3.7
+try  58 m=1 G1-fisher KILL n_reject=5 z=10.4
+try  59 m=1 G1-fisher KILL n_reject=6 z=6.7
+try  60 m=3 G4-low1 KILL LOW1-REJECT worst_p=7.70e-08 :: [Low1/64]FPF/16:all               R=  +9.1  p =  7.7e-8   very suspicious
+try  61 m=2 KEEP fisher z=3.0 inner diffz=3.2 LOW1-PASS worst_p=1.00e+00
+try  62 m=1 G3-rdseq KILL n_reject=1 rej=['RD-SEQ']
+try  63 m=1 G4-low1 KILL COMPILE-FAIL: /home/hatch/workspace/mix/exploration/fast_battery/src/s3_gen.c:34:1: fatal error: error closing /tmp/ccfz25zS.s: No space left on device
+   34 | }
+      | ^
+compilation terminated.
+/home/hatch/workspace/mix/exploration/new_constructions/batch62/build_prescreen/impl_t063.c:16:1: fatal error: error c
+try  64 m=1 G4-low1 KILL COMPILE-FAIL: /home/hatch/workspace/mix/exploration/fast_battery/src/s3_gen.c:34:1: fatal error: error closing /tmp/cckp94mv.s: No space left on device
+   34 | }
+      | ^
+compilation terminated.
+/home/hatch/workspace/mix/exploration/new_constructions/batch62/build_prescreen/impl_t064.c:16:1: fatal error: error c
+try  65 m=1 KEEP fisher z=3.2 inner diffz=2.7 LOW1-PASS worst_p=1.00e+00
+try  66 m=1 KEEP fisher z=3.4 inner diffz=3.2 LOW1-PASS worst_p=1.00e+00
+try  67 m=1 G1-fisher KILL n_reject=5 z=7.4
+try  68 m=3 KEEP fisher z=3.2 inner diffz=2.7 LOW1-PASS worst_p=1.00e+00
+try  69 m=3 G1-fisher KILL n_reject=2 z=5.3
+try  70 m=2 G1-fisher KILL n_reject=10 z=75.9
+try  71 m=2 KEEP fisher z=4.2 inner diffz=2.7 LOW1-PASS worst_p=1.00e+00
+try  72 m=1 KEEP fisher z=2.8 inner diffz=2.7 LOW1-PASS worst_p=1.00e+00
+try  73 m=2 KEEP fisher z=3.4 inner diffz=3.1 LOW1-PASS worst_p=1.00e+00
+try  74 m=3 G1-fisher KILL n_reject=1 z=6.2
+try  75 m=3 G4-low1 KILL LOW1-REJECT worst_p=7.30e-04 :: [Low1/64]DC6-9x1Bytes-1           R=  +8.6  p =  7.3e-4   unusual
+try  76 m=3 KEEP fisher z=2.7 inner diffz=2.6 LOW1-PASS worst_p=1.00e+00
+try  77 m=1 KEEP fisher z=3.2 inner diffz=2.6 LOW1-PASS worst_p=1.10e-03
+try  78 m=3 G1-fisher KILL n_reject=7 z=10.1
+try  79 m=1 KEEP fisher z=2.8 inner diffz=2.6 LOW1-PASS worst_p=1.00e+00
+=== b62-pilot RESUME: tries 21-79: 29 KEEP minz=2.3 gkills=[15, 3, 3, 9] (seed=0xb622) ===
+[2026-10-12T10:31:21Z] PILOT RESUME COMPLETE rc=0

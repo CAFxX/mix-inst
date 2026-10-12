@@ -1,0 +1,15 @@
+{
+ "name": "r25_feist6_linfirst_nw",
+ "description": "R25 Track C1: 6r Feistel, F=S1(lin32(R,3,11))^rk32 (linear before S-box), no whitening",
+ "composition": "R25 Track C1: 6r Feistel, F=S1(lin32(R,3,11))^rk32 (linear before S-box), no whitening",
+ "rtl_top": "r25_feist6_linfirst_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": []
+}

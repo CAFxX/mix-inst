@@ -1,0 +1,3 @@
+agentwork-launch: tag=track2/hetstage2-pilot schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+registered track2-hetstage2
+pilot pid 70982

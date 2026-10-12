@@ -1,0 +1,15 @@
+{
+ "name": "r25_feist6_rot13_nw",
+ "description": "R25 Track C3: 6r Feistel, F=S1+lin(1,3), no whitening",
+ "composition": "R25 Track C3: 6r Feistel, F=S1+lin(1,3), no whitening",
+ "rtl_top": "r25_feist6_rot13_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": []
+}

@@ -1,0 +1,26 @@
+{
+ "name": "r25_spn_pba19_ks_a2_nw",
+ "description": "R25 Track A' A2: rc_i=0x8000..>>(i-1) (walking hot bit); 4r SPN, pba19b01 P-box, S1, L=lin(3,11).",
+ "composition": "R25 Track A' A2: rc_i=0x8000..>>(i-1) (walking hot bit); 4r SPN, pba19b01 P-box, S1, L=lin(3,11).",
+ "rtl_top": "r25_spn_pba19_ks_a2_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x2c2eda1dfe682c65"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x7ee7b0ef40c8eb09"
+  }
+ ]
+}

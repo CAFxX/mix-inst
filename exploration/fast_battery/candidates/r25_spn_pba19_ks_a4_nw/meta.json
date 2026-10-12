@@ -1,0 +1,26 @@
+{
+ "name": "r25_spn_pba19_ks_a4_nw",
+ "description": "R25 Track A' A4: rc_i=1<<(16*(i-1)) (hot nibble-lane bit); 4r SPN, pba19b01 P-box, S1, L=lin(3,11).",
+ "composition": "R25 Track A' A4: rc_i=1<<(16*(i-1)) (hot nibble-lane bit); 4r SPN, pba19b01 P-box, S1, L=lin(3,11).",
+ "rtl_top": "r25_spn_pba19_ks_a4_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xc40fb35a493eef4c"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x924fb8c8dfb268df"
+  }
+ ]
+}

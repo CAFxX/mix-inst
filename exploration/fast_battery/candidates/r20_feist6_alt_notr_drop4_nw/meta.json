@@ -1,0 +1,26 @@
+{
+ "name": "r20_feist6_alt_notr_drop4_nw",
+ "description": "6r alt-notr with round 4's (chi) linear ALSO dropped (F_4=chi32(R)^rk), NO whitening — S1-gated probe",
+ "composition": "6r alt-notr with round 4's (chi) linear ALSO dropped (F_4=chi32(R)^rk), NO whitening — S1-gated probe",
+ "rtl_top": "r20_feist6_alt_notr_drop4_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x1c9507eb82d4e6cd"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xb07221ac56655fce"
+  }
+ ]
+}

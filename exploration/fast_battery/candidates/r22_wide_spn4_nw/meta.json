@@ -1,0 +1,26 @@
+{
+ "name": "r22_wide_spn4_nw",
+ "description": "4-round wide SPN: x_{i+1} = L(S16(x_i ^ rk_i)); S1 + (3,11) linear, NO whitening",
+ "composition": "4-round wide SPN: x_{i+1} = L(S16(x_i ^ rk_i)); S1 + (3,11) linear, NO whitening",
+ "rtl_top": "r22_wide_spn4_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x2fdc8babba0aba13"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x1566adc22ee3d7ae"
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "name": "r22_em_chichi4_nw",
+ "description": "Even-Mansour P(m^k)^k, P = 4 rounds L(chichi64(x)); exact ChiChi (Eurocrypt'25), NO whitening",
+ "composition": "Even-Mansour P(m^k)^k, P = 4 rounds L(chichi64(x)); exact ChiChi (Eurocrypt'25), NO whitening",
+ "rtl_top": "r22_em_chichi4_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x967ce6cc6d82b0fb"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x8448b0b4f73e6e0b"
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "name": "r21_feist6_alt_notr_chioff21_nw",
+ "description": "6r alt-notr + chi offset pair (2,1) b_i=a_i^(~a_{i+2}&a_{i+1}) rounds 2,4, NO whitening",
+ "composition": "6r alt-notr + chi offset pair (2,1) b_i=a_i^(~a_{i+2}&a_{i+1}) rounds 2,4, NO whitening",
+ "rtl_top": "r21_feist6_alt_notr_chioff21_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x6fea7fe9f207360f"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xd010a246099bdd96"
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "name": "r20_feist6_alt_chioff13_nw",
+ "description": "6r FULL alt (WITH round-6 linear) + chi offsets (1,3) on rounds 2,4,6, NO whitening",
+ "composition": "6r FULL alt (WITH round-6 linear) + chi offsets (1,3) on rounds 2,4,6, NO whitening",
+ "rtl_top": "r20_feist6_alt_chioff13_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xbd6aacc188172fc0"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xc7c9eaf877057336"
+  }
+ ]
+}

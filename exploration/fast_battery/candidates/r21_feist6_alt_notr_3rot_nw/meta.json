@@ -1,0 +1,26 @@
+{
+ "name": "r21_feist6_alt_notr_3rot_nw",
+ "description": "6r alt-notr + 3-rotation (3,7,11) linears with chi-F, round 6 truncated, NO whitening",
+ "composition": "6r alt-notr + 3-rotation (3,7,11) linears with chi-F, round 6 truncated, NO whitening",
+ "rtl_top": "r21_feist6_alt_notr_3rot_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x421a232f14a2197f"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x9c01c7f65b6ab5ab"
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "name": "r20_feist6_alt_notr_chioff31_nw",
+ "description": "6r alt-notr + chi variant b_i=a_i^(~a_{i+3}&a_{i+1}) on rounds 2,4, NO whitening",
+ "composition": "6r alt-notr + chi variant b_i=a_i^(~a_{i+3}&a_{i+1}) on rounds 2,4, NO whitening",
+ "rtl_top": "r20_feist6_alt_notr_chioff31_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x8c7dc9e0f28b094b"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x1f83f3a8bb8b5962"
+  }
+ ]
+}

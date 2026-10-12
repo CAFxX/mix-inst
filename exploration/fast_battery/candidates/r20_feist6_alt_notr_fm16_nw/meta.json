@@ -1,0 +1,26 @@
+{
+ "name": "r20_feist6_alt_notr_fm16_nw",
+ "description": "6r alt-notr + final mixing F_6=(chi32(R)^rk)^rotl32(chi32(R)^rk,16), NO whitening",
+ "composition": "6r alt-notr + final mixing F_6=(chi32(R)^rk)^rotl32(chi32(R)^rk,16), NO whitening",
+ "rtl_top": "r20_feist6_alt_notr_fm16_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xa511d6d341063b18"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x403052178ea9f622"
+  }
+ ]
+}

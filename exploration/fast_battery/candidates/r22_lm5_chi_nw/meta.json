@@ -1,0 +1,26 @@
+{
+ "name": "r22_lm5_chi_nw",
+ "description": "5-round correct Lai-Massey: d=L^R; t=chi32(d^rk); (R^t, d); orthomorphism (b,a^b), NO whitening",
+ "composition": "5-round correct Lai-Massey: d=L^R; t=chi32(d^rk); (R^t, d); orthomorphism (b,a^b), NO whitening",
+ "rtl_top": "r22_lm5_chi_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x58efe3f01c6cc6"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x51087bee9b35305c"
+  }
+ ]
+}

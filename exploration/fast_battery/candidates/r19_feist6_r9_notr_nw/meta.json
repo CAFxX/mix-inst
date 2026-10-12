@@ -1,0 +1,26 @@
+{
+ "name": "r19_feist6_r9_notr_nw",
+ "description": "6r r9 structure with round 6 linear dropped (F_6=S1(R)^rk), NO whitening",
+ "composition": "6r r9 structure with round 6 linear dropped (F_6=S1(R)^rk), NO whitening",
+ "rtl_top": "r19_feist6_r9_notr_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x894dc1fb15a82b83"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x04055f1f8243b8fb"
+  }
+ ]
+}

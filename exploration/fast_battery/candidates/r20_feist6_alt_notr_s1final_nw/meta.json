@@ -1,0 +1,26 @@
+{
+ "name": "r20_feist6_alt_notr_s1final_nw",
+ "description": "6r alt-notr with round 6 F = S1(R)^rk (S1 final, no linear), NO whitening",
+ "composition": "6r alt-notr with round 6 F = S1(R)^rk (S1 final, no linear), NO whitening",
+ "rtl_top": "r20_feist6_alt_notr_s1final_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xba22834e41063b18"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x65bf5a958ea9f622"
+  }
+ ]
+}

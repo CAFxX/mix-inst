@@ -1,0 +1,26 @@
+{
+ "name": "r22b_keyed_spn6_pbox_nw",
+ "description": "O34: 6-round keyed SPN: x_{i+1} = P(S16(x_i ^ rk_i)); validated P-box P(i)=(5i+27)%64 (single 64-cycle, 0 fixed points, spread), NO linear layer, NO whitening",
+ "composition": "O34: 6-round keyed SPN: x_{i+1} = P(S16(x_i ^ rk_i)); validated P-box P(i)=(5i+27)%64 (single 64-cycle, 0 fixed points, spread), NO linear layer, NO whitening",
+ "rtl_top": "r22b_keyed_spn6_pbox_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x70a14d96d52c8e5b"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xcd5476e9e63ab2dc"
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "name": "r22c_spn_mix5r_shx_nw",
+ "description": "O38 V3: 5-round keyed SPN: x_{i+1} = SHX(P(S16(x_i ^ rk_i))); P=O34 P-box, SHX=triangular shift-XOR alternating direction (~2u/round bijective mixer)",
+ "composition": "O38 V3: 5-round keyed SPN: x_{i+1} = SHX(P(S16(x_i ^ rk_i))); P=O34 P-box, SHX=triangular shift-XOR alternating direction (~2u/round bijective mixer)",
+ "rtl_top": "r22c_spn_mix5r_shx_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x4b36d2827779aa15"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xa1c89bdbdfe9d1a9"
+  }
+ ]
+}

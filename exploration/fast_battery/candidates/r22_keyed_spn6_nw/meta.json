@@ -1,0 +1,26 @@
+{
+ "name": "r22_keyed_spn6_nw",
+ "description": "6-round keyed SPN: x_{i+1} = PI(S16(x_i ^ rk_i)); transpose nibble perm, NO linear layer, NO whitening",
+ "composition": "6-round keyed SPN: x_{i+1} = PI(S16(x_i ^ rk_i)); transpose nibble perm, NO linear layer, NO whitening",
+ "rtl_top": "r22_keyed_spn6_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x54b332234786a649"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x53faf0e8757b5b47"
+  }
+ ]
+}

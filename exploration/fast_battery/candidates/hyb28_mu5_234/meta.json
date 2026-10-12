@@ -1,0 +1,58 @@
+{
+ "name": "hyb28_mu5_234",
+ "description": "batch-28 MU5 5-stage MUX-gate cascade (triage-exact DIFF z=2.34, LIN proxy D=20, best of 19/40 KEEP)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xe4d249898b7f5791"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x6e1d5ade10a155d7"
+  }
+ ],
+ "rtl_top": "hyb28_mu5_234",
+ "triage_z": 2.34,
+ "stages": [
+  [
+   48,
+   8,
+   49,
+   10
+  ],
+  [
+   42,
+   41,
+   48,
+   55
+  ],
+  [
+   5,
+   45,
+   43,
+   14
+  ],
+  [
+   49,
+   12,
+   1,
+   63
+  ],
+  [
+   31,
+   2,
+   16,
+   39
+  ]
+ ]
+}

@@ -1,0 +1,58 @@
+{
+ "name": "hyb28_mu5_282",
+ "description": "batch-28 MU5 MUX-gate 5-stage (triage z=2.82, D=27)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x32e8e469734bcdcd"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xb827f73ee895cf8b"
+  }
+ ],
+ "rtl_top": "hyb28_mu5_282",
+ "triage_z": 2.82,
+ "stages": [
+  [
+   50,
+   57,
+   56,
+   12
+  ],
+  [
+   27,
+   22,
+   62,
+   7
+  ],
+  [
+   18,
+   10,
+   19,
+   55
+  ],
+  [
+   61,
+   38,
+   36,
+   49
+  ],
+  [
+   16,
+   26,
+   35,
+   59
+  ]
+ ]
+}

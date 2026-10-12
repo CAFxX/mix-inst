@@ -1,0 +1,81 @@
+{
+ "name": "hyb25_p7t0_probe",
+ "description": "batch-25 PNL 7-stage partial-nonlinear-layer probe (triage-exact DIFF z=2.92, LIN proxy D=27)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x87a045500173f58a"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xd6f56079aadf7cc"
+  }
+ ],
+ "rtl_top": "hyb25_p7t0_probe",
+ "triage": {
+  "z": 2.9201075190796657,
+  "stages": [
+   [
+    7,
+    49,
+    3,
+    34
+   ],
+   [
+    6,
+    15,
+    7,
+    16
+   ],
+   [
+    38,
+    42,
+    57,
+    12
+   ],
+   [
+    23,
+    13,
+    57,
+    29
+   ],
+   [
+    59,
+    48,
+    24,
+    23
+   ],
+   [
+    23,
+    42,
+    50,
+    34
+   ],
+   [
+    15,
+    63,
+    48,
+    37
+   ]
+  ],
+  "masks": [
+   "0xffffffff",
+   "0xf0f0f0f0f0f0f0f",
+   "0x5555555555555555",
+   "0xaaaaaaaaaaaaaaaa",
+   "0xffff0000ffff0000",
+   "0xffffffff",
+   "0xcccccccccccccccc"
+  ]
+ }
+}

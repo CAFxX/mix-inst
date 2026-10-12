@@ -1,0 +1,58 @@
+{
+ "name": "hyb28_mu5_328",
+ "description": "batch-28 MU5 MUX-gate 5-stage reserve keep (triage z=3.28, D=30)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x7b0d27f3e32d0220"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xf1c234a478f30066"
+  }
+ ],
+ "rtl_top": "hyb28_mu5_328",
+ "triage_z": 3.28,
+ "stages": [
+  [
+   21,
+   19,
+   31,
+   24
+  ],
+  [
+   43,
+   22,
+   32,
+   4
+  ],
+  [
+   22,
+   30,
+   34,
+   5
+  ],
+  [
+   52,
+   23,
+   60,
+   37
+  ],
+  [
+   58,
+   62,
+   48,
+   11
+  ]
+ ]
+}

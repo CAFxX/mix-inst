@@ -1,0 +1,27 @@
+{
+ "name": "hyb25_x6_264",
+ "description": "batch-25 X6 6-stage XOR-fed chain (triage-exact DIFF z=2.64, rank 2)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x82631d9d45fa25db"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x8ac0ecade24279d"
+  }
+ ],
+ "rtl_top": "hyb25_x6_264",
+ "triage_z": 2.6426609807190578,
+ "triage_killkey": null
+}

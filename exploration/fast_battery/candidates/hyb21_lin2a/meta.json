@@ -1,0 +1,25 @@
+{
+ "name": "hyb21_lin2a",
+ "description": "batch-21d proxy-guided 5-stage 1-AND+2-linear schedule (triage z=2.38)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x11951d6359cac67a"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x9b5a0e34c214c43c"
+  }
+ ],
+ "rtl_top": "hyb21_lin2a"
+}

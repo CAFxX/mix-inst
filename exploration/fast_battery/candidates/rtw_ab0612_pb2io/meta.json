@@ -1,0 +1,26 @@
+{
+ "name": "rtw_ab0612_pb2io",
+ "description": "tweak N9: chioff13all lin(6,12) + rev-inout pbox (Z2b winner pbox x N1 pair)",
+ "composition": "tweak N9: chioff13all lin(6,12) + rev-inout pbox (Z2b winner pbox x N1 pair)",
+ "rtl_top": "rtw_ab0612_pb2io",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x9eb2963ee2d60095"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x8293388bfdf683f9"
+  }
+ ]
+}

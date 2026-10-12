@@ -1,0 +1,26 @@
+{
+ "name": "rh_wideF_feist5_nw",
+ "description": "5r standard 64-bit Feistel, wide-internal F_wide(R||rk32)->S1_64->lin64->fold, bijective by construction",
+ "composition": "5r standard 64-bit Feistel, wide-internal F_wide(R||rk32)->S1_64->lin64->fold, bijective by construction",
+ "rtl_top": "rh_wideF_feist5_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xbf8ec8dcd0744e78"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x8f8f0d26ebbb4a42"
+  }
+ ]
+}

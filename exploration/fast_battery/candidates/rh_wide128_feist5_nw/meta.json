@@ -1,0 +1,26 @@
+{
+ "name": "rh_wide128_feist5_nw",
+ "description": "128-bit state 5r Feistel, F_64=lin64(S1_64)^rk64, injective expansion, L'^R' compression — bijectivity NOT by construction (collision gate)",
+ "composition": "128-bit state 5r Feistel, F_64=lin64(S1_64)^rk64, injective expansion, L'^R' compression — bijectivity NOT by construction (collision gate)",
+ "rtl_top": "rh_wide128_feist5_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xb8ad71ba549f96f9"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xfcbfc88a315a0f66"
+  }
+ ]
+}

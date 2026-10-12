@@ -49,7 +49,8 @@ candidate directories.
 | 33 | al_w3p_a | 48.3u | 18,917 | 58,806 | 0.00839 | retired (never frontier — dominated on all axes) — full battery+Q1 PASS | wave-14 W3' |
 | 34 | al_w3p_b | 50.6u | 18,322 | 57,155 | 0.00858 | retired (never frontier — dominated on all axes) — full battery+Q1 PASS | wave-14 W3' |
 | 35 | al_w3p_d | 48.7u | 18,983 | 58,731 | 0.00861 | retired (never frontier — dominated on all axes) — full battery+Q1 PASS | wave-14 W3' |
-| 36 | t6_b57_8 | 19.2u | 6,503 | 20,494 | 0.00863 | **Frontier S + Q (speed point)** — full battery PASS (S0–S4 + sac_z5=0 + BIC-clean) | batch-57 |
+| 36 | t6_b57_8 | 19.2u | 6,503 | 20,494 | 0.00863 | **Frontier S + Q (nondominated on area; former speed point)** — full battery PASS (S0–S4 + sac_z5=0 + BIC-clean) | batch-57 |
+| 37 | t6_b59_0 | 19.1u | 6,358 | 20,580 | 0.00897 | **Frontier S + Q (speed point)** — full battery PASS (S0–S4 + sac_z5=0 + BIC-clean); muxD5f-local m=1 perturbation of the t6_b57_8 winner schedule | batch-59 |
 | 29 | r25_spn_pba19_sb_rasC2_0_nw | 26.5u | 5,125 | 14,019 | 0.01012 | **Frontier S + Q (speed point)** — full battery PASS (S0–S4 + sac_z5=0 + BIC ≤ 0.02), parent-verified 2026-10-05; strictly dominates r23 pba19b01 and wf2d aff_a17_b17 | 25 |
 | 30 | r25_spn_pba19_sb_rasC1_2_nw | 28.5u | 4,980 | 13,247 | 0.00847 | **full-pass reference, frontier-excluded** — full battery PASS (S0–S4 + sac_z5=0 + BIC ≤ 0.02), parent-verified 2026-10-05; strictly dominated by r22c (28.3/4,656/12,949) on all axes | 25 |
 

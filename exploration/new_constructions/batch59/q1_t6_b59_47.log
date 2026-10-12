@@ -1,0 +1,16 @@
+  bit 16/64 done (29s)
+  bit 32/64 done (50s)
+  bit 48/64 done (66s)
+  bit 64/64 done (77s)
+{
+ "candidate": "t6_b59_47",
+ "key": "0x123456789abcdef0",
+ "N": 262144,
+ "sac_maxdev": 0.004001617431640625,
+ "sac_meandev": 0.0008027646690607071,
+ "sac_z5": 0,
+ "bic_maxcorr": 0.009864933281141106,
+ "bic_meancorr": 0.0015557857832679937,
+ "avalanche_mean": 31.999834060668945,
+ "wall_s": 77.1
+}

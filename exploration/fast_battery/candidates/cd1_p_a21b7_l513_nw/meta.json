@@ -1,0 +1,22 @@
+{
+ "name": "cd1_p_a21b7_l513_nw",
+ "description": "co-design pilot: rasC2_0 + affine P(21i+7) + lin(5,13)",
+ "composition": "co-design pilot: rasC2_0 + affine P(21i+7) + lin(5,13)",
+ "rtl_top": "cd1_p_a21b7_l513_nw",
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x59c5905991b44b50"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x7c5796d2397257bf"
+  }
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0fedcba987654321"
+ ]
+}

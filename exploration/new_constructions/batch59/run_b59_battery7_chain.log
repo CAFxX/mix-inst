@@ -1,0 +1,47 @@
+agentwork-launch: tag=track6/b59-battery7chain schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+[2026-10-12T03:05:05+00:00] backoff CLEAR -- starting batch-59 min-crit escalation chain
+[2026-10-12T03:05:05+00:00] backoff CLEAR -- starting batch-59 min-crit escalation chain
+[2026-10-12T03:05:05+00:00] === BATTERY t6_b59_7 (start_stage=1) ===
+[2026-10-12T03:05:05+00:00] === BATTERY t6_b59_7 (start_stage=1) ===
+[2026-10-12T03:06:11+00:00] BATTERY t6_b59_7 rc=2
+[2026-10-12T03:06:11+00:00] BATTERY t6_b59_7 rc=2
+BATTERY-FAIL stage=S1-screen [t6_b59_7] (see /home/hatch/workspace/mix/exploration/fast_battery/results/t6_b59_7/battery.log)
+BATTERY-FAIL stage=S1-screen [t6_b59_7] (see /home/hatch/workspace/mix/exploration/fast_battery/results/t6_b59_7/battery.log)
+[2026-10-12T03:06:11+00:00] KILLED t6_b59_7 at battery rc=2 -> next in chain
+[2026-10-12T03:06:11+00:00] KILLED t6_b59_7 at battery rc=2 -> next in chain
+[2026-10-12T03:06:11+00:00] === BATTERY t6_b59_47 (start_stage=1) ===
+[2026-10-12T03:06:11+00:00] === BATTERY t6_b59_47 (start_stage=1) ===
+[2026-10-12T03:11:46+00:00] BATTERY t6_b59_47 rc=0
+[2026-10-12T03:11:46+00:00] BATTERY t6_b59_47 rc=0
+[S3 t6_b59_47] 64MB: no FAIL (rng_test rc=0)
+[S3 t6_b59_47] 256MB: no FAIL (rng_test rc=0)
+[S3 t6_b59_47] 1GB: no FAIL (rng_test rc=0)
+[S3 t6_b59_47] verdict: PASS (all 4 stages, no FAIL)
+[S3 t6_b59_47_strided] 64MB: no FAIL (rng_test rc=0)
+[S3 t6_b59_47_strided] 256MB: no FAIL (rng_test rc=0)
+[S3 t6_b59_47_strided] 1GB: no FAIL (rng_test rc=0)
+[S3 t6_b59_47_strided] verdict: PASS (all 4 stages, no FAIL)
+[S3 t6_b59_47] 64MB: no FAIL (rng_test rc=0)
+[S3 t6_b59_47] 256MB: no FAIL (rng_test rc=0)
+[S3 t6_b59_47] 1GB: no FAIL (rng_test rc=0)
+[S3 t6_b59_47] verdict: PASS (all 4 stages, no FAIL)
+[S3 t6_b59_47_strided] 64MB: no FAIL (rng_test rc=0)
+[S3 t6_b59_47_strided] 256MB: no FAIL (rng_test rc=0)
+[S3 t6_b59_47_strided] 1GB: no FAIL (rng_test rc=0)
+[S3 t6_b59_47_strided] verdict: PASS (all 4 stages, no FAIL)
+[2026-10-12T03:11:46+00:00] Q1 t6_b59_47
+[2026-10-12T03:11:46+00:00] Q1 t6_b59_47
+ "bic_maxcorr": 0.009864933281141106,
+ "bic_meancorr": 0.0015557857832679937,
+ "avalanche_mean": 31.999834060668945,
+ "wall_s": 77.1
+}
+ "bic_maxcorr": 0.009864933281141106,
+ "bic_meancorr": 0.0015557857832679937,
+ "avalanche_mean": 31.999834060668945,
+ "wall_s": 77.1
+}
+[2026-10-12T03:13:04+00:00] Q1 t6_b59_47 sac_z5=0
+[2026-10-12T03:13:04+00:00] Q1 t6_b59_47 sac_z5=0
+[2026-10-12T03:13:04+00:00] FRONTIER CHALLENGER: t6_b59_47 (S1-S4 PASS + sac_z5=0) -- chain STOPS
+[2026-10-12T03:13:04+00:00] FRONTIER CHALLENGER: t6_b59_47 (S1-S4 PASS + sac_z5=0) -- chain STOPS

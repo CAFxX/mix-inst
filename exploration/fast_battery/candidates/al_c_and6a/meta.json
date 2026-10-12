@@ -1,0 +1,43 @@
+{
+ "name": "al_c_and6a",
+ "desc": "sched variance test al_c_and6a",
+ "stages": [
+  [
+   "and",
+   1,
+   2,
+   13
+  ],
+  [
+   "and",
+   7,
+   19,
+   5
+  ],
+  [
+   "and",
+   3,
+   11,
+   29
+  ],
+  [
+   "and",
+   17,
+   31,
+   7
+  ],
+  [
+   "and",
+   11,
+   23,
+   37
+  ],
+  [
+   "and",
+   19,
+   41,
+   23
+  ]
+ ],
+ "sbox": "SKINNY"
+}

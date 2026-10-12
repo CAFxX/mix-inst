@@ -1,0 +1,10 @@
+{
+ "name": "al_c_sbox",
+ "desc": "component: SKINNY sbox layer alone",
+ "stages": [
+  [
+   "sbox"
+  ]
+ ],
+ "sbox": "SKINNY"
+}

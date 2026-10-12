@@ -1,0 +1,10 @@
+{
+ "name": "al_c_sb_TWINE",
+ "desc": "component: TWINE sbox alone",
+ "stages": [
+  [
+   "sbox"
+  ]
+ ],
+ "sbox": "TWINE"
+}

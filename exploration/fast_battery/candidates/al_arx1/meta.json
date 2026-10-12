@@ -1,0 +1,25 @@
+{
+ "name": "al_arx1",
+ "description": "Single-addition ARX, pba19",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x80041fd76eeaf139"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x923049aff4562fc9"
+  }
+ ],
+ "rtl_top": "al_arx1"
+}

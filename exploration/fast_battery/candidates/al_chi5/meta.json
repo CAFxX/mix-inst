@@ -1,0 +1,24 @@
+{
+ "name": "al_chi5",
+ "description": "5-stage chi cascade: x ^= ((~ra)&rb) ^ rc",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x7c8fafcc51ad8f2a"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xf640bc9bca738d6c"
+  }
+ ]
+}

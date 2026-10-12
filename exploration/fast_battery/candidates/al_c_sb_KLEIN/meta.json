@@ -1,0 +1,10 @@
+{
+ "name": "al_c_sb_KLEIN",
+ "desc": "component: KLEIN sbox alone",
+ "stages": [
+  [
+   "sbox"
+  ]
+ ],
+ "sbox": "KLEIN"
+}

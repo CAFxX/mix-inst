@@ -1,0 +1,12 @@
+{
+ "name": "al_c_gift513",
+ "desc": "component: GIFT sboxL(5,13)",
+ "stages": [
+  [
+   "sboxL",
+   5,
+   13
+  ]
+ ],
+ "sbox": "GIFT"
+}

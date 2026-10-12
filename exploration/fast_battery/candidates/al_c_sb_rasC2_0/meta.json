@@ -1,0 +1,10 @@
+{
+ "name": "al_c_sb_rasC2_0",
+ "desc": "component: rasC2_0 sbox alone",
+ "stages": [
+  [
+   "sbox"
+  ]
+ ],
+ "sbox": "rasC2_0"
+}

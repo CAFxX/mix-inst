@@ -1,0 +1,10 @@
+{
+ "name": "al_c_sb_GIFT",
+ "desc": "component: GIFT sbox alone",
+ "stages": [
+  [
+   "sbox"
+  ]
+ ],
+ "sbox": "GIFT"
+}

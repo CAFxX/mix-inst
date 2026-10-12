@@ -1,0 +1,10 @@
+{
+ "name": "al_c_sb_PRINCE",
+ "desc": "component: PRINCE sbox alone",
+ "stages": [
+  [
+   "sbox"
+  ]
+ ],
+ "sbox": "PRINCE"
+}

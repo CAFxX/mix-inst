@@ -1,0 +1,25 @@
+{
+ "name": "al_arx2",
+ "description": "2-addition ARX: add/xor/add/xor",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xf8a1f0988e1062f7"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xea95a6e014acbc07"
+  }
+ ],
+ "rtl_top": "al_arx2"
+}

@@ -1,0 +1,10 @@
+{
+ "name": "al_c_sb_QARMA_s2",
+ "desc": "component: QARMA_s2 sbox alone",
+ "stages": [
+  [
+   "sbox"
+  ]
+ ],
+ "sbox": "QARMA_s2"
+}

@@ -1,0 +1,12 @@
+{
+ "name": "al_c_skn513",
+ "desc": "component: SKINNY sboxL(5,13)",
+ "stages": [
+  [
+   "sboxL",
+   5,
+   13
+  ]
+ ],
+ "sbox": "SKINNY"
+}

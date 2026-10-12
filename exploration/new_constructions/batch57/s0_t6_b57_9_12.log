@@ -1,0 +1,32 @@
+2026-10-12T02:00:57Z wrapper start: deadline=1791813657 now=1791770457
+2026-10-12T02:00:57Z backoff clear after 1 polls
+2026-10-12T02:00:57Z backoff clear: running S0 for t6_b57_9..12
+2026-10-12T02:00:57Z S0 start t6_b57_9
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT t6_b57_9: cells=5391 area=16126 crit=20.7
+RESULT name=t6_b57_9 cells=5391 area=16126 crit=20.7 delay_ratio=0.200 area_ratio=0.457 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+t6_b57_9 run_synth exit=0
+RESULT name=t6_b57_9 cells=5391 area=16126 crit=20.7 delay_ratio=0.200 area_ratio=0.457 ref_crit=103.5 ref_area=35323
+2026-10-12T02:01:05Z S0 start t6_b57_10
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT t6_b57_10: cells=6109 area=19816 crit=19.4
+RESULT name=t6_b57_10 cells=6109 area=19816 crit=19.4 delay_ratio=0.187 area_ratio=0.561 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+t6_b57_10 run_synth exit=0
+RESULT name=t6_b57_10 cells=6109 area=19816 crit=19.4 delay_ratio=0.187 area_ratio=0.561 ref_crit=103.5 ref_area=35323
+2026-10-12T02:01:11Z S0 start t6_b57_11
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT t6_b57_11: cells=5863 area=18799 crit=19.6
+RESULT name=t6_b57_11 cells=5863 area=18799 crit=19.6 delay_ratio=0.189 area_ratio=0.532 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+t6_b57_11 run_synth exit=0
+RESULT name=t6_b57_11 cells=5863 area=18799 crit=19.6 delay_ratio=0.189 area_ratio=0.532 ref_crit=103.5 ref_area=35323
+2026-10-12T02:01:17Z S0 start t6_b57_12
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT t6_b57_12: cells=6055 area=19161 crit=19.7
+RESULT name=t6_b57_12 cells=6055 area=19161 crit=19.7 delay_ratio=0.190 area_ratio=0.542 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+t6_b57_12 run_synth exit=0
+RESULT name=t6_b57_12 cells=6055 area=19161 crit=19.7 delay_ratio=0.190 area_ratio=0.542 ref_crit=103.5 ref_area=35323
+2026-10-12T02:01:22Z S0 9-12 COMPLETE

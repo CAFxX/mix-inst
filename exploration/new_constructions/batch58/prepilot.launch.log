@@ -1,0 +1,2 @@
+agentwork-launch: tag=track6/b58-prepilot schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+/home/hatch/workspace/mix/exploration/new_constructions/batch58/run_b58_prepilot.sh: line 41: prepilot_keeps.jsonl: No such file or directory

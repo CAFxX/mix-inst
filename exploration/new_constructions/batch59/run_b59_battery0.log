@@ -1,0 +1,13 @@
+[2026-10-12T02:22:17+00:00] backoff CLEAR -- starting batch-59 staged battery for t6_b59_0
+[2026-10-12T02:22:17+00:00] BATTERY t6_b59_0 (start_stage=1)
+[2026-10-12T02:32:47+00:00] BATTERY t6_b59_0 rc=0
+[S1 t6_b59_0] verdict: CAL_PASS
+[S3 t6_b59_0] 64MB: no FAIL (rng_test rc=0)
+[S3 t6_b59_0] 256MB: no FAIL (rng_test rc=0)
+[S3 t6_b59_0] 1GB: no FAIL (rng_test rc=0)
+[S3 t6_b59_0] verdict: PASS (all 4 stages, no FAIL)
+[S3 t6_b59_0_strided] 64MB: no FAIL (rng_test rc=0)
+[S3 t6_b59_0_strided] 256MB: no FAIL (rng_test rc=0)
+[S3 t6_b59_0_strided] 1GB: no FAIL (rng_test rc=0)
+[S3 t6_b59_0_strided] verdict: PASS (all 4 stages, no FAIL)
+[2026-10-12T02:32:47+00:00] Q1 t6_b59_0

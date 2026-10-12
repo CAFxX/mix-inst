@@ -1,0 +1,27 @@
+2026-10-12T02:17:01Z wrapper start: deadline=1791814621 now=1791771421
+2026-10-12T02:17:01Z backoff clear after 1 polls
+2026-10-12T02:17:01Z backoff clear: selftest (fail-loud)
+SELFTEST PASS: MUXD stage bit-exact; perturbation operator 200/200 (1..3 positions differ, stages valid, never winner)
+selftest exit=0
+2026-10-12T02:17:02Z selftest PASS: calibrate (fail-loud)
+CALIB-1 and1/b33c: maxworst|z|=3.3 (expect 3.3) PASS
+CALIB-2a mux/MU5-324(5st): n_reject=0 maxworst|z|=3.24 min_fisher=-3.7 (expect KEEP: 0 rejections) PASS
+CALIB-2b linear-4: n_reject=10 maxworst|z|=1480000.0 min_fisher=-inf (expect REJECT: >0 rejections) PASS
+calibrate exit=0
+2026-10-12T02:17:04Z calibrate PASS: pre-pilot 12 draws seed 0xB591
+try   0 m=2 n_reject=10 maxworst|z|=    14.7 min_fisher= -208.5 worstkey=0xffffffffffffffff kill
+try   1 m=1 n_reject=0 maxworst|z|=     2.7 min_fisher=   -3.7 worstkey=0x0 KEEP
+try   2 m=2 n_reject=0 maxworst|z|=     2.3 min_fisher=   -1.4 worstkey=0xffffffffffffffff KEEP
+try   3 m=2 n_reject=2 maxworst|z|=     6.4 min_fisher=   -9.6 worstkey=0x123456789abcdef kill
+try   4 m=1 n_reject=0 maxworst|z|=     2.5 min_fisher=   -3.5 worstkey=0xf0b52a9e7d8ba2b5 KEEP
+try   5 m=3 n_reject=0 maxworst|z|=     2.8 min_fisher=   -1.5 worstkey=0xffffffffffffffff KEEP
+try   6 m=3 n_reject=2 maxworst|z|=     6.4 min_fisher=  -12.9 worstkey=0x0 kill
+try   7 m=3 n_reject=1 maxworst|z|=     3.7 min_fisher=   -9.4 worstkey=0xffffffffffffffff kill
+try   8 m=3 n_reject=0 maxworst|z|=     4.1 min_fisher=   -5.4 worstkey=0x5555555555555555 KEEP
+try   9 m=3 n_reject=0 maxworst|z|=     2.8 min_fisher=   -4.4 worstkey=0x123456789abcdef KEEP
+try  10 m=2 n_reject=1 maxworst|z|=    11.1 min_fisher=  -43.2 worstkey=0xdeadbeefdeadbeef kill
+try  11 m=3 n_reject=0 maxworst|z|=     2.5 min_fisher=   -2.1 worstkey=0x9e3779b97f4a7c15 KEEP
+=== muxD5flocal: 7/12 KEEP minz=2.3 (seed=0xb591) ===
+KEEP schedules -> prepilot_keeps.jsonl
+pre-pilot exit=0 keeps=7
+2026-10-12T02:17:14Z PRE-PILOT COMPLETE

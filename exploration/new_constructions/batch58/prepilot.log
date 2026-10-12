@@ -1,0 +1,23 @@
+2026-10-12T02:11:06Z wrapper start: deadline=1791814266 now=1791771066
+2026-10-12T02:11:06Z backoff clear after 1 polls
+2026-10-12T02:11:06Z backoff clear: calibrate (fail-loud)
+CALIB-1 and1/b33c: maxworst|z|=3.3 (expect 3.3) PASS
+CALIB-2a mux/MU5-324(5st): n_reject=0 maxworst|z|=3.24 min_fisher=-3.7 (expect KEEP: 0 rejections) PASS
+CALIB-2b linear-4: n_reject=10 maxworst|z|=1480000.0 min_fisher=-inf (expect REJECT: >0 rejections) PASS
+calibrate exit=0
+2026-10-12T02:11:09Z calibrate PASS: pre-pilot 12 draws seed 0xB581
+try   0 n_reject=10 maxworst|z|= 12583.9 min_fisher=   -inf worstkey=0xdeadbeefdeadbeef kill
+try   1 n_reject=10 maxworst|z|=  3045.9 min_fisher=   -inf worstkey=0x0 kill
+try   2 n_reject=10 maxworst|z|=107552.7 min_fisher=   -inf worstkey=0x123456789abcdef kill
+try   3 n_reject=10 maxworst|z|= 42753.6 min_fisher=   -inf worstkey=0x9e3779b97f4a7c15 kill
+try   4 n_reject=10 maxworst|z|= 10302.1 min_fisher=   -inf worstkey=0x9e3779b97f4a7c15 kill
+try   5 n_reject=10 maxworst|z|=159597.8 min_fisher=   -inf worstkey=0x0 kill
+try   6 n_reject=10 maxworst|z|=  6599.4 min_fisher=   -inf worstkey=0xdeadbeefdeadbeef kill
+try   7 n_reject=10 maxworst|z|= 31039.3 min_fisher=   -inf worstkey=0x5555555555555555 kill
+try   8 n_reject=10 maxworst|z|=  5666.6 min_fisher=   -inf worstkey=0xf0b52a9e7d8ba2b5 kill
+try   9 n_reject=10 maxworst|z|= 13943.6 min_fisher=   -inf worstkey=0x123456789abcdef kill
+try  10 n_reject=10 maxworst|z|=  7172.8 min_fisher=   -inf worstkey=0xf0b52a9e7d8ba2b5 kill
+try  11 n_reject=10 maxworst|z|=  7437.4 min_fisher=   -inf worstkey=0x5555555555555555 kill
+=== muxD4f: 0/12 KEEP minz=3045.9 (seed=0xb581) ===
+pre-pilot exit=0 keeps=0
+2026-10-12T02:11:18Z PRE-PILOT COMPLETE

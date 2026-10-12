@@ -1,0 +1,87 @@
+2026-10-12T02:18:05Z wrapper start: deadline=1791814685 now=1791771485
+2026-10-12T02:18:05Z backoff clear after 1 polls
+2026-10-12T02:18:05Z backoff clear: pilot 80 draws seed 0xB592
+try   0 m=3 n_reject=0 maxworst|z|=     3.1 min_fisher=   -4.1 worstkey=0xffffffffffffffff KEEP
+try   1 m=1 n_reject=0 maxworst|z|=     3.3 min_fisher=   -4.8 worstkey=0x123456789abcdef KEEP
+try   2 m=1 n_reject=0 maxworst|z|=     3.0 min_fisher=   -2.9 worstkey=0x9e3779b97f4a7c15 KEEP
+try   3 m=2 n_reject=0 maxworst|z|=     3.4 min_fisher=   -3.5 worstkey=0xaaaaaaaaaaaaaaaa KEEP
+try   4 m=3 n_reject=2 maxworst|z|=     8.3 min_fisher=  -22.2 worstkey=0x9e3779b97f4a7c15 kill
+try   5 m=2 n_reject=2 maxworst|z|=     4.5 min_fisher=   -9.1 worstkey=0x0 kill
+try   6 m=2 n_reject=0 maxworst|z|=     3.2 min_fisher=   -2.0 worstkey=0xaaaaaaaaaaaaaaaa KEEP
+try   7 m=1 n_reject=0 maxworst|z|=     2.8 min_fisher=   -1.7 worstkey=0xdeadbeefdeadbeef KEEP
+try   8 m=1 n_reject=0 maxworst|z|=     2.4 min_fisher=   -1.7 worstkey=0xaaaaaaaaaaaaaaaa KEEP
+try   9 m=1 n_reject=0 maxworst|z|=     4.1 min_fisher=   -3.5 worstkey=0xf0b52a9e7d8ba2b5 KEEP
+try  10 m=3 n_reject=0 maxworst|z|=     2.9 min_fisher=   -3.3 worstkey=0x9e3779b97f4a7c15 KEEP
+try  11 m=2 n_reject=0 maxworst|z|=     3.4 min_fisher=   -3.2 worstkey=0xf0b52a9e7d8ba2b5 KEEP
+try  12 m=1 n_reject=0 maxworst|z|=     3.0 min_fisher=   -3.5 worstkey=0xf0b52a9e7d8ba2b5 KEEP
+try  13 m=1 n_reject=0 maxworst|z|=     4.0 min_fisher=   -6.5 worstkey=0x5555555555555555 KEEP
+try  14 m=1 n_reject=0 maxworst|z|=     3.2 min_fisher=   -3.0 worstkey=0x123456789abcdef KEEP
+try  15 m=3 n_reject=2 maxworst|z|=     8.4 min_fisher=  -38.2 worstkey=0x0 kill
+try  16 m=1 n_reject=0 maxworst|z|=     2.8 min_fisher=   -2.8 worstkey=0xffffffffffffffff KEEP
+try  17 m=2 n_reject=0 maxworst|z|=     2.4 min_fisher=   -1.4 worstkey=0xffffffffffffffff KEEP
+try  18 m=3 n_reject=0 maxworst|z|=     3.6 min_fisher=   -4.0 worstkey=0x0 KEEP
+try  19 m=3 n_reject=6 maxworst|z|=    73.6 min_fisher=   -inf worstkey=0xaaaaaaaaaaaaaaaa kill
+try  20 m=3 n_reject=0 maxworst|z|=     2.9 min_fisher=   -1.7 worstkey=0xf0b52a9e7d8ba2b5 KEEP
+try  21 m=3 n_reject=1 maxworst|z|=     5.5 min_fisher=   -8.4 worstkey=0xffffffffffffffff kill
+try  22 m=2 n_reject=0 maxworst|z|=     3.0 min_fisher=   -1.8 worstkey=0x0 KEEP
+try  23 m=2 n_reject=5 maxworst|z|=     7.6 min_fisher=  -29.5 worstkey=0x9e3779b97f4a7c15 kill
+try  24 m=1 n_reject=0 maxworst|z|=     3.0 min_fisher=   -2.7 worstkey=0xf0b52a9e7d8ba2b5 KEEP
+try  25 m=1 n_reject=6 maxworst|z|=     7.7 min_fisher=  -81.0 worstkey=0x0 kill
+try  26 m=1 n_reject=0 maxworst|z|=     2.4 min_fisher=   -1.7 worstkey=0xaaaaaaaaaaaaaaaa KEEP
+try  27 m=1 n_reject=2 maxworst|z|=     5.0 min_fisher=  -16.3 worstkey=0x0 kill
+try  28 m=2 n_reject=0 maxworst|z|=     2.8 min_fisher=   -2.7 worstkey=0x0 KEEP
+try  29 m=3 n_reject=6 maxworst|z|=    12.6 min_fisher=  -65.5 worstkey=0xf0b52a9e7d8ba2b5 kill
+try  30 m=2 n_reject=0 maxworst|z|=     2.8 min_fisher=   -3.3 worstkey=0xffffffffffffffff KEEP
+try  31 m=3 n_reject=1 maxworst|z|=     3.5 min_fisher=   -7.9 worstkey=0x92988f142674743 kill
+try  32 m=3 n_reject=0 maxworst|z|=     2.9 min_fisher=   -4.0 worstkey=0xffffffffffffffff KEEP
+try  33 m=2 n_reject=0 maxworst|z|=     3.1 min_fisher=   -4.0 worstkey=0xdeadbeefdeadbeef KEEP
+try  34 m=2 n_reject=0 maxworst|z|=     2.5 min_fisher=   -3.2 worstkey=0x5555555555555555 KEEP
+try  35 m=3 n_reject=0 maxworst|z|=     3.5 min_fisher=   -5.6 worstkey=0x5555555555555555 KEEP
+try  36 m=1 n_reject=1 maxworst|z|=     3.2 min_fisher=   -7.8 worstkey=0xffffffffffffffff kill
+try  37 m=3 n_reject=1 maxworst|z|=     5.3 min_fisher=  -10.3 worstkey=0x5555555555555555 kill
+try  38 m=2 n_reject=0 maxworst|z|=     2.5 min_fisher=   -3.6 worstkey=0xdeadbeefdeadbeef KEEP
+try  39 m=2 n_reject=0 maxworst|z|=     2.9 min_fisher=   -2.0 worstkey=0xffffffffffffffff KEEP
+try  40 m=3 n_reject=0 maxworst|z|=     2.8 min_fisher=   -2.8 worstkey=0xaaaaaaaaaaaaaaaa KEEP
+try  41 m=2 n_reject=0 maxworst|z|=     2.9 min_fisher=   -1.7 worstkey=0x5555555555555555 KEEP
+try  42 m=3 n_reject=0 maxworst|z|=     2.6 min_fisher=   -1.7 worstkey=0xf0b52a9e7d8ba2b5 KEEP
+try  43 m=3 n_reject=0 maxworst|z|=     3.5 min_fisher=   -3.0 worstkey=0xdeadbeefdeadbeef KEEP
+try  44 m=2 n_reject=0 maxworst|z|=     2.5 min_fisher=   -2.8 worstkey=0x0 KEEP
+try  45 m=1 n_reject=0 maxworst|z|=     4.3 min_fisher=   -6.3 worstkey=0xffffffffffffffff KEEP
+try  46 m=2 n_reject=0 maxworst|z|=     3.8 min_fisher=   -6.6 worstkey=0x9e3779b97f4a7c15 KEEP
+try  47 m=2 n_reject=0 maxworst|z|=     2.5 min_fisher=   -3.2 worstkey=0xf0b52a9e7d8ba2b5 KEEP
+try  48 m=2 n_reject=2 maxworst|z|=     6.0 min_fisher=  -12.6 worstkey=0xf0b52a9e7d8ba2b5 kill
+try  49 m=1 n_reject=0 maxworst|z|=     2.9 min_fisher=   -3.1 worstkey=0x0 KEEP
+try  50 m=3 n_reject=5 maxworst|z|=    10.5 min_fisher=  -59.1 worstkey=0x0 kill
+try  51 m=1 n_reject=0 maxworst|z|=     2.7 min_fisher=   -3.5 worstkey=0xf0b52a9e7d8ba2b5 KEEP
+try  52 m=3 n_reject=0 maxworst|z|=     2.8 min_fisher=   -2.2 worstkey=0xdeadbeefdeadbeef KEEP
+try  53 m=3 n_reject=3 maxworst|z|=     7.3 min_fisher=  -28.4 worstkey=0x0 kill
+try  54 m=1 n_reject=0 maxworst|z|=     2.2 min_fisher=   -3.6 worstkey=0x9e3779b97f4a7c15 KEEP
+try  55 m=1 n_reject=0 maxworst|z|=     2.8 min_fisher=   -2.5 worstkey=0xffffffffffffffff KEEP
+try  56 m=3 n_reject=0 maxworst|z|=     2.6 min_fisher=   -4.3 worstkey=0xaaaaaaaaaaaaaaaa KEEP
+try  57 m=1 n_reject=0 maxworst|z|=     3.4 min_fisher=   -1.7 worstkey=0x0 KEEP
+try  58 m=1 n_reject=0 maxworst|z|=     3.7 min_fisher=   -5.7 worstkey=0x9e3779b97f4a7c15 KEEP
+try  59 m=3 n_reject=1 maxworst|z|=     4.7 min_fisher=   -8.4 worstkey=0x5555555555555555 kill
+try  60 m=3 n_reject=10 maxworst|z|=    48.6 min_fisher=   -inf worstkey=0x92988f142674743 kill
+try  61 m=1 n_reject=0 maxworst|z|=     2.8 min_fisher=   -2.8 worstkey=0x92988f142674743 KEEP
+try  62 m=1 n_reject=0 maxworst|z|=     2.6 min_fisher=   -2.9 worstkey=0xaaaaaaaaaaaaaaaa KEEP
+try  63 m=1 n_reject=0 maxworst|z|=     3.2 min_fisher=   -2.5 worstkey=0xdeadbeefdeadbeef KEEP
+try  64 m=3 n_reject=4 maxworst|z|=    18.6 min_fisher= -270.7 worstkey=0xdeadbeefdeadbeef kill
+try  65 m=1 n_reject=0 maxworst|z|=     3.2 min_fisher=   -3.6 worstkey=0xdeadbeefdeadbeef KEEP
+try  66 m=3 n_reject=1 maxworst|z|=     4.6 min_fisher=  -10.1 worstkey=0xaaaaaaaaaaaaaaaa kill
+try  67 m=2 n_reject=0 maxworst|z|=     3.0 min_fisher=   -3.9 worstkey=0xaaaaaaaaaaaaaaaa KEEP
+try  68 m=3 n_reject=0 maxworst|z|=     2.9 min_fisher=   -2.6 worstkey=0x5555555555555555 KEEP
+try  69 m=2 n_reject=0 maxworst|z|=     3.1 min_fisher=   -1.8 worstkey=0xdeadbeefdeadbeef KEEP
+try  70 m=1 n_reject=0 maxworst|z|=     2.9 min_fisher=   -1.8 worstkey=0xf0b52a9e7d8ba2b5 KEEP
+try  71 m=1 n_reject=0 maxworst|z|=     2.8 min_fisher=   -4.6 worstkey=0xf0b52a9e7d8ba2b5 KEEP
+try  72 m=1 n_reject=1 maxworst|z|=     5.8 min_fisher=  -14.9 worstkey=0x5555555555555555 kill
+try  73 m=1 n_reject=0 maxworst|z|=     2.6 min_fisher=   -1.7 worstkey=0x5555555555555555 KEEP
+try  74 m=3 n_reject=0 maxworst|z|=     3.8 min_fisher=   -2.8 worstkey=0xaaaaaaaaaaaaaaaa KEEP
+try  75 m=2 n_reject=0 maxworst|z|=     3.0 min_fisher=   -3.4 worstkey=0x92988f142674743 KEEP
+try  76 m=3 n_reject=2 maxworst|z|=     7.5 min_fisher=  -19.6 worstkey=0x92988f142674743 kill
+try  77 m=2 n_reject=1 maxworst|z|=     9.1 min_fisher=  -23.2 worstkey=0x9e3779b97f4a7c15 kill
+try  78 m=1 n_reject=0 maxworst|z|=     2.7 min_fisher=   -2.9 worstkey=0x0 KEEP
+try  79 m=3 n_reject=0 maxworst|z|=     2.6 min_fisher=   -3.2 worstkey=0x123456789abcdef KEEP
+=== muxD5flocal: 58/80 KEEP minz=2.2 (seed=0xb592) ===
+KEEP schedules -> pilot_keeps.jsonl
+pilot exit=0 keeps=58
+2026-10-12T02:18:52Z PILOT COMPLETE

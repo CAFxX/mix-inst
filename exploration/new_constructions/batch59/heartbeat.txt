@@ -1,0 +1,6 @@
+2026-10-12T02:17:01Z XXXIV: batch59 CO-DESIGNED (muxD5f-local); harness smoke PASS (selftest+3-gate calibrate+1-draw); pre-pilot (12 draws, 0xB591) launched via setsid nice-19 tag track6/b59-prepilot
+2026-10-12T02:18:05Z XXXIV: b59 pre-pilot COMPLETE 7/12 KEEP (minz=2.3) -> basin thesis CONFIRMED; pilot (80 draws, 0xB592) launched via setsid nice-19 tag track6/b59-pilot
+2026-10-12T02:20:19Z XXXIV: b59 pilot COMPLETE 58/80 KEEP (minz=2.2) -> 65 unique keeps z=2.17..4.27; S0 sweep (bundle+S0 all 65, z-order) launched via setsid nice-19 tag track6/b59-s0
+2026-10-12T02:21:30Z XXXIV: ledger prepended (b58 O116 + b59 launch); b59 S0 sweep in flight
+2026-10-12T02:22:17Z XXXIV: t6_b59_0 (z=2.17, S0 19.1u <19.2u strict, bit-exact+XCHECK clean) -> staged battery LAUNCHED via setsid nice-19 tag track6/b59-battery0; S0 sweep continues for remaining ranks
+2026-10-12T02:24:21Z XXXIV: S0 sweep 19/65 (15 cost-eligible <19.2u so far); t6_b59_0 battery S1 in flight; workreg track6-batch59 active+heartbeated; ending turn as CONTINUING WITHOUT THE USER (remainder dispatched, resume via CHECKPOINT.md)

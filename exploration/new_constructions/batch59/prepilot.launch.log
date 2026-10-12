@@ -1,0 +1,1 @@
+agentwork-launch: tag=track6/b59-prepilot schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)

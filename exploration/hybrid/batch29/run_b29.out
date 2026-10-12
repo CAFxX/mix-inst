@@ -1,0 +1,11 @@
+PRE-PILOT start 2026-10-12T05:40:20Z
+PRE-PILOT done rc=0 2026-10-12T05:42:00Z
+try  11 m=2 n_reject=3 maxworst|z|=     5.7 min_fisher=  -15.3 worstkey=0x5555555555555555 kill
+=== b29local: 2/12 KEEP minz=2.8 (seed=0xb291) ===
+KEEP schedules -> pre_pilot_keeps.jsonl
+PILOT start 2026-10-12T05:42:00Z
+PILOT done rc=0 2026-10-12T05:47:49Z
+try  79 m=3 n_reject=2 maxworst|z|=     6.3 min_fisher=  -12.9 worstkey=0x9e3779b97f4a7c15 kill
+=== b29local: 36/80 KEEP minz=2.3 (seed=0xb292) ===
+KEEP schedules -> pilot_keeps.jsonl
+b29 screen chain complete: pre-pilot rc=0 pilot rc=0

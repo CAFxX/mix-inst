@@ -1,0 +1,14 @@
+try   0 m=3 n_reject=0 maxworst|z|=     2.8 min_fisher=   -3.5 worstkey=0xf0b52a9e7d8ba2b5 KEEP
+try   1 m=3 n_reject=1 maxworst|z|=     6.0 min_fisher=  -14.3 worstkey=0xaaaaaaaaaaaaaaaa kill
+try   2 m=3 n_reject=1 maxworst|z|=     6.8 min_fisher=  -10.9 worstkey=0xf0b52a9e7d8ba2b5 kill
+try   3 m=1 n_reject=2 maxworst|z|=     5.6 min_fisher=  -46.9 worstkey=0x0 kill
+try   4 m=3 n_reject=2 maxworst|z|=     6.6 min_fisher=  -16.9 worstkey=0x92988f142674743 kill
+try   5 m=1 n_reject=0 maxworst|z|=     3.6 min_fisher=   -3.3 worstkey=0xf0b52a9e7d8ba2b5 KEEP
+try   6 m=3 n_reject=7 maxworst|z|=    20.6 min_fisher= -176.2 worstkey=0x5555555555555555 kill
+try   7 m=1 n_reject=1 maxworst|z|=     8.3 min_fisher=  -30.2 worstkey=0xaaaaaaaaaaaaaaaa kill
+try   8 m=1 n_reject=2 maxworst|z|=     5.7 min_fisher=  -13.8 worstkey=0xdeadbeefdeadbeef kill
+try   9 m=1 n_reject=1 maxworst|z|=     7.8 min_fisher=  -16.6 worstkey=0xdeadbeefdeadbeef kill
+try  10 m=3 n_reject=2 maxworst|z|=     6.1 min_fisher=  -13.2 worstkey=0xdeadbeefdeadbeef kill
+try  11 m=2 n_reject=3 maxworst|z|=     5.7 min_fisher=  -15.3 worstkey=0x5555555555555555 kill
+=== b29local: 2/12 KEEP minz=2.8 (seed=0xb291) ===
+KEEP schedules -> pre_pilot_keeps.jsonl

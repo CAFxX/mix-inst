@@ -1,0 +1,5 @@
+{
+  "name": "fz31_s1",
+  "description": "2x S-box layer + linear diffusion (cost probe)",
+  "rtl_top": "fz31_s1"
+}

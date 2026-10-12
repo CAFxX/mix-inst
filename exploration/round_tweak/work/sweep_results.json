@@ -17553,12 +17553,108 @@
    "log": "/home/hatch/workspace/mix/exploration/round_tweak/work/s1/rtw_ab48_fm31/s1_stdout.log"
   },
   "s2": {
-   "timeout": true,
-   "repeats_max": 0,
-   "zmax": 0.0,
-   "spikes": [],
+   "repeats_max": 1,
+   "zmax": 32.0,
+   "spikes": [
+    [
+     "0000008000000000",
+     32.0
+    ],
+    [
+     "0080000000000000",
+     30.4
+    ],
+    [
+     "0008000000000000",
+     30.1
+    ],
+    [
+     "8000000000000000",
+     30.0
+    ],
+    [
+     "0000800000000000",
+     29.9
+    ],
+    [
+     "0000000800000000",
+     29.5
+    ],
+    [
+     "0000080000000000",
+     29.2
+    ],
+    [
+     "0800000000000000",
+     25.0
+    ],
+    [
+     "2000000000000000",
+     23.9
+    ],
+    [
+     "0200000000000000",
+     23.4
+    ],
+    [
+     "c000000000000000",
+     22.3
+    ],
+    [
+     "4000000000000000",
+     21.7
+    ],
+    [
+     "0000200000000000",
+     21.5
+    ],
+    [
+     "0020000000000000",
+     21.1
+    ],
+    [
+     "0000020000000000",
+     20.6
+    ],
+    [
+     "0002000000000000",
+     20.4
+    ],
+    [
+     "0000002000000000",
+     19.5
+    ],
+    [
+     "0000004000000000",
+     16.9
+    ],
+    [
+     "0000000400000000",
+     16.6
+    ],
+    [
+     "0004000000000000",
+     16.4
+    ],
+    [
+     "0000400000000000",
+     16.1
+    ],
+    [
+     "0040000000000000",
+     15.8
+    ]
+   ],
    "log": "/home/hatch/workspace/mix/exploration/round_tweak/work/s2_rtw_ab48_fm31.log"
-  }
+  },
+  "diagnosis": {
+   "name": "rtw_ab48_fm31",
+   "nb": "N8",
+   "signal": "S2 spikes |z|>15 on 22 deltas; worst 0000008000000000=32; bits [35, 39, 43, 47, 51, 55, 59, 63]",
+   "hypothesis": "STRUCTURAL differential weakness across many deltas \u2014 the construction under-diffuses; do not chase neighbors in this direction",
+   "boosts": []
+  },
+  "promote_skipped": "N8 fm axis Q1-doomed (cure-invariant chassis)"
  },
  "rtw_ab48_fm311": {
   "name": "rtw_ab48_fm311",

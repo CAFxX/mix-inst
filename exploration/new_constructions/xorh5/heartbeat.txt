@@ -1,2 +1,25 @@
 [2026-10-12T05:37:23Z] ESCALATION START: xorh5 lane supervisor resumed — pilot COMPLETE (20/80 KEEP, minz=2.4, seed 0xb6a2), prior attempt bundled ranks 1-3 into t6_xorh5_1..3, continuing playbook
 [2026-10-12T05:39:01Z] S0 COMPLETE (XCHECK analyzers agree on all 5 netlists; ref 103.5u confirmed). Cost bar: speed<18.6u (strictly under t6_b59_47) — none qualify; size-eligible = Pareto-nondominated in (delay,cells,area) vs Frontier S. t6_xorh5_0 21.6u/5333/15305 ELIGIBLE, t6_xorh5_1 21.9u/5503/15570 ELIGIBLE, t6_xorh5_2 19.7u/5912/18868 ELIGIBLE (dominates t6_b33b on all axes), t6_xorh5_3 19.5u/6566/22016 KILLED at S0 (dominated by hyb28_mu5_324 19.3/6146/20001). workreg track6-xorh5-escalation registered. Launching XCHECK + staged battery.
+[2026-10-12T05:43:28Z] battery t6_xorh5_0 rc=2 (0=pass,2=killed,1=infra)
+[2026-10-12T05:45:21Z] t6_xorh5_0 S1-KILLED (rc=2): XCHECK 10000/10000 PASS; inner DIFF-SEQ/LIN gate clean; marginal PB rej=1 (SINGLE-BIT cell, key 0x0, raw worst perbit z=4.0). Marginal-PB-kill class (O121/O124/O126 lesson) — terminal for this candidate.
+[2026-10-12T05:46:37Z] battery t6_xorh5_1 rc=2 (0=pass,2=killed,1=infra)
+[2026-10-12T05:47:24Z] battery t6_xorh5_2 rc=2 (0=pass,2=killed,1=infra)
+[2026-10-12T05:50:11Z] 3/3 top-triage keeps S1-KILLED: t6_xorh5_0 marginal PB rej=1 (key 0x0, z=4.0); t6_xorh5_1 PB rej=2 (0xaa/0x55) + RD rej=1 (PTR-j8, key 0x0); t6_xorh5_2 LIN-killed on 7/10 keys (logp=-inf, D up to 2870) — catastrophic linearity defect, XOR4-last schedule. No frontier change. Dead end on top-3 -> WIDENING to ranks 4-19 (no principled cut excludes them).
+[2026-10-12T05:51:25Z] S0 t6_xorh5_4 rc=0
+[2026-10-12T05:51:41Z] S0 t6_xorh5_5 rc=0
+[2026-10-12T05:52:24Z] S0 t6_xorh5_6 rc=0
+[2026-10-12T05:52:48Z] S0 t6_xorh5_7 rc=0
+[2026-10-12T05:52:58Z] S0 t6_xorh5_8 rc=0
+[2026-10-12T05:53:10Z] S0 t6_xorh5_9 rc=0
+[2026-10-12T05:53:12Z] S0 wide adjudication (ranks 4-7): t6_xorh5_4 21.9u/5431/15938 ELIGIBLE (nondominated; -561 cells/-3342 area vs b33b at +1.8u); t6_xorh5_5 23.1u/4617/13461 ELIGIBLE (dominates r25_nw 26.5/5125/14019 on all axes); t6_xorh5_6 20.1u/6304/19749 KILLED at S0 (dominated by t6_b33b 20.1/5992/19280); t6_xorh5_7 21.9u/6120/18362 ELIGIBLE (nondominated; area 18362 < all frontier pts at <=21.9u). Sweep continues ranks 8-19.
+[2026-10-12T05:53:32Z] S0 t6_xorh5_10 rc=0
+[2026-10-12T05:53:41Z] S0 t6_xorh5_11 rc=0
+[2026-10-12T05:53:58Z] S0 t6_xorh5_12 rc=0
+[2026-10-12T05:54:13Z] S0 t6_xorh5_13 rc=0
+[2026-10-12T05:54:27Z] S0 t6_xorh5_14 rc=0
+[2026-10-12T05:54:51Z] S0 t6_xorh5_15 rc=0
+[2026-10-12T05:55:00Z] S0 t6_xorh5_16 rc=0
+[2026-10-12T05:55:16Z] S0 t6_xorh5_17 rc=0
+[2026-10-12T05:55:24Z] S0 t6_xorh5_18 rc=0
+[2026-10-12T05:55:41Z] S0 t6_xorh5_19 rc=0
+[2026-10-12T06:03:06Z] S0 wide sweep COMPLETE 16/16 (run_synth.py, XCHECK analyzers agree, ref 103.5u). Adjudication vs Frontier S: ELIGIBLE 13 (t6_xorh5_4,5,7,8,9,10,11,12,14,15,16,17,18) — incl. 9/16/18 dominating t6_b33b/t6_b33c on all axes, 5 dominating r25_nw; S0-KILLED 3 (6 dominated by b33b; 13 dominated by b33c/b33b; 19 dominated by t6_b59_41/hyb28_mu5_324). Launching battery chain (xcheck->S1->S2->S3->S4) for the 13 eligible, dominators first.

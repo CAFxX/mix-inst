@@ -1,0 +1,13 @@
+{
+  "name": "fz30_q",
+  "description": "v3 repair TRY93: marg+3.6 DIFFz16.8",
+  "rtl_top": "fz30_q",
+  "screen_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "practrand_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ]
+}

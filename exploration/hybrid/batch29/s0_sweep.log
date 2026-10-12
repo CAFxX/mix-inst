@@ -1,0 +1,182 @@
+S0 sweep: 36 keeps to bundle+synthesize (z-order)
+=== S0 hyb29_mu5_000 (rank 0, z=2.3420362402759554, n_reject=0, m=2) 2026-10-12T05:49:25Z ===
+screener-vs-bundle: 500/500 OK
+bundle hyb29_mu5_000 written (form=muxD5f base=hyb28_mu5_324 fisher triage z=2.34 n_reject=0)
+rc=0 RESULT name=hyb29_mu5_000 cells=5937 area=18930 crit=19.6 delay_ratio=0.189 area_ratio=0.536 ref_crit=103.5 ref_area=35323
+=== S0 hyb29_mu5_001 (rank 1, z=2.427138295683324, n_reject=0, m=1) 2026-10-12T05:49:38Z ===
+screener-vs-bundle: 500/500 OK
+bundle hyb29_mu5_001 written (form=muxD5f base=hyb28_mu5_324 fisher triage z=2.43 n_reject=0)
+rc=0 RESULT name=hyb29_mu5_001 cells=6205 area=20507 crit=19.3 delay_ratio=0.186 area_ratio=0.581 ref_crit=103.5 ref_area=35323
+=== S0 hyb29_mu5_002 (rank 2, z=2.438900368381903, n_reject=0, m=1) 2026-10-12T05:49:50Z ===
+screener-vs-bundle: 500/500 OK
+bundle hyb29_mu5_002 written (form=muxD5f base=hyb28_mu5_324 fisher triage z=2.44 n_reject=0)
+rc=0 RESULT name=hyb29_mu5_002 cells=6140 area=19935 crit=19.4 delay_ratio=0.187 area_ratio=0.564 ref_crit=103.5 ref_area=35323
+=== S0 hyb29_mu5_003 (rank 3, z=2.4925215821548385, n_reject=0, m=1) 2026-10-12T05:50:06Z ===
+screener-vs-bundle: 500/500 OK
+bundle hyb29_mu5_003 written (form=muxD5f base=hyb28_mu5_324 fisher triage z=2.49 n_reject=0)
+rc=0 RESULT name=hyb29_mu5_003 cells=6351 area=20989 crit=19.1 delay_ratio=0.185 area_ratio=0.594 ref_crit=103.5 ref_area=35323
+=== S0 hyb29_mu5_004 (rank 4, z=2.504975541482746, n_reject=0, m=3) 2026-10-12T05:50:40Z ===
+screener-vs-bundle: 500/500 OK
+bundle hyb29_mu5_004 written (form=muxD5f base=hyb28_mu5_324 fisher triage z=2.50 n_reject=0)
+rc=0 RESULT name=hyb29_mu5_004 cells=6333 area=20643 crit=19.6 delay_ratio=0.189 area_ratio=0.584 ref_crit=103.5 ref_area=35323
+=== S0 hyb29_mu5_005 (rank 5, z=2.528845630194569, n_reject=0, m=3) 2026-10-12T05:51:26Z ===
+screener-vs-bundle: 500/500 OK
+bundle hyb29_mu5_005 written (form=muxD5f base=hyb28_mu5_324 fisher triage z=2.53 n_reject=0)
+rc=0 RESULT name=hyb29_mu5_005 cells=6241 area=20207 crit=18.9 delay_ratio=0.183 area_ratio=0.572 ref_crit=103.5 ref_area=35323
+=== S0 hyb29_mu5_006 (rank 6, z=2.546142795927774, n_reject=0, m=1) 2026-10-12T05:52:20Z ===
+screener-vs-bundle: 500/500 OK
+bundle hyb29_mu5_006 written (form=muxD5f base=hyb28_mu5_324 fisher triage z=2.55 n_reject=0)
+rc=0 RESULT name=hyb29_mu5_006 cells=6055 area=19629 crit=19.4 delay_ratio=0.187 area_ratio=0.556 ref_crit=103.5 ref_area=35323
+=== S0 hyb29_mu5_007 (rank 7, z=2.6409312641457374, n_reject=0, m=3) 2026-10-12T05:52:58Z ===
+screener-vs-bundle: 500/500 OK
+bundle hyb29_mu5_007 written (form=muxD5f base=hyb28_mu5_324 fisher triage z=2.64 n_reject=0)
+rc=0 RESULT name=hyb29_mu5_007 cells=5309 area=17372 crit=20.2 delay_ratio=0.195 area_ratio=0.492 ref_crit=103.5 ref_area=35323
+=== S0 hyb29_mu5_008 (rank 8, z=2.772735667032759, n_reject=0, m=1) 2026-10-12T05:53:31Z ===
+screener-vs-bundle: 500/500 OK
+bundle hyb29_mu5_008 written (form=muxD5f base=hyb28_mu5_324 fisher triage z=2.77 n_reject=0)
+rc=0 RESULT name=hyb29_mu5_008 cells=6151 area=20256 crit=19.2 delay_ratio=0.186 area_ratio=0.573 ref_crit=103.5 ref_area=35323
+=== S0 hyb29_mu5_009 (rank 9, z=2.8813618678372865, n_reject=0, m=3) 2026-10-12T05:53:58Z ===
+screener-vs-bundle: 500/500 OK
+bundle hyb29_mu5_009 written (form=muxD5f base=hyb28_mu5_324 fisher triage z=2.88 n_reject=0)
+rc=0 RESULT name=hyb29_mu5_009 cells=5961 area=19480 crit=19.3 delay_ratio=0.186 area_ratio=0.551 ref_crit=103.5 ref_area=35323
+=== S0 hyb29_mu5_010 (rank 10, z=2.9048860132344454, n_reject=0, m=3) 2026-10-12T05:54:19Z ===
+screener-vs-bundle: 500/500 OK
+bundle hyb29_mu5_010 written (form=muxD5f base=hyb28_mu5_324 fisher triage z=2.90 n_reject=0)
+rc=0 RESULT name=hyb29_mu5_010 cells=5873 area=19554 crit=19.0 delay_ratio=0.184 area_ratio=0.554 ref_crit=103.5 ref_area=35323
+=== S0 hyb29_mu5_011 (rank 11, z=2.9126697378143875, n_reject=0, m=2) 2026-10-12T05:54:55Z ===
+screener-vs-bundle: 500/500 OK
+bundle hyb29_mu5_011 written (form=muxD5f base=hyb28_mu5_324 fisher triage z=2.91 n_reject=0)
+rc=0 RESULT name=hyb29_mu5_011 cells=5603 area=18769 crit=19.2 delay_ratio=0.186 area_ratio=0.531 ref_crit=103.5 ref_area=35323
+=== S0 hyb29_mu5_012 (rank 12, z=3.0937710630410438, n_reject=0, m=2) 2026-10-12T05:55:16Z ===
+screener-vs-bundle: 500/500 OK
+bundle hyb29_mu5_012 written (form=muxD5f base=hyb28_mu5_324 fisher triage z=3.09 n_reject=0)
+rc=0 RESULT name=hyb29_mu5_012 cells=6196 area=20034 crit=19.4 delay_ratio=0.187 area_ratio=0.567 ref_crit=103.5 ref_area=35323
+=== S0 hyb29_mu5_013 (rank 13, z=3.114181718606226, n_reject=0, m=2) 2026-10-12T05:55:39Z ===
+screener-vs-bundle: 500/500 OK
+bundle hyb29_mu5_013 written (form=muxD5f base=hyb28_mu5_324 fisher triage z=3.11 n_reject=0)
+rc=0 RESULT name=hyb29_mu5_013 cells=6270 area=20914 crit=18.9 delay_ratio=0.183 area_ratio=0.592 ref_crit=103.5 ref_area=35323
+=== S0 hyb29_mu5_014 (rank 14, z=3.125597847990141, n_reject=0, m=1) 2026-10-12T05:55:53Z ===
+screener-vs-bundle: 500/500 OK
+bundle hyb29_mu5_014 written (form=muxD5f base=hyb28_mu5_324 fisher triage z=3.13 n_reject=0)
+rc=0 RESULT name=hyb29_mu5_014 cells=6244 area=20422 crit=19.0 delay_ratio=0.184 area_ratio=0.578 ref_crit=103.5 ref_area=35323
+=== S0 hyb29_mu5_015 (rank 15, z=3.1539651997925975, n_reject=0, m=3) 2026-10-12T05:56:11Z ===
+screener-vs-bundle: 500/500 OK
+bundle hyb29_mu5_015 written (form=muxD5f base=hyb28_mu5_324 fisher triage z=3.15 n_reject=0)
+rc=0 RESULT name=hyb29_mu5_015 cells=6214 area=20324 crit=19.1 delay_ratio=0.185 area_ratio=0.575 ref_crit=103.5 ref_area=35323
+=== S0 hyb29_mu5_016 (rank 16, z=3.221770089466761, n_reject=0, m=2) 2026-10-12T05:56:25Z ===
+screener-vs-bundle: 500/500 OK
+bundle hyb29_mu5_016 written (form=muxD5f base=hyb28_mu5_324 fisher triage z=3.22 n_reject=0)
+rc=0 RESULT name=hyb29_mu5_016 cells=6443 area=21147 crit=18.9 delay_ratio=0.183 area_ratio=0.599 ref_crit=103.5 ref_area=35323
+=== S0 hyb29_mu5_017 (rank 17, z=3.2522131011572015, n_reject=0, m=1) 2026-10-12T05:56:36Z ===
+screener-vs-bundle: 500/500 OK
+bundle hyb29_mu5_017 written (form=muxD5f base=hyb28_mu5_324 fisher triage z=3.25 n_reject=0)
+rc=0 RESULT name=hyb29_mu5_017 cells=6194 area=20465 crit=19.1 delay_ratio=0.185 area_ratio=0.579 ref_crit=103.5 ref_area=35323
+=== S0 hyb29_mu5_018 (rank 18, z=3.274180501638372, n_reject=0, m=1) 2026-10-12T05:56:46Z ===
+screener-vs-bundle: 500/500 OK
+bundle hyb29_mu5_018 written (form=muxD5f base=hyb28_mu5_324 fisher triage z=3.27 n_reject=0)
+rc=0 RESULT name=hyb29_mu5_018 cells=5813 area=19239 crit=19.2 delay_ratio=0.186 area_ratio=0.545 ref_crit=103.5 ref_area=35323
+=== S0 hyb29_mu5_019 (rank 19, z=3.311369407964763, n_reject=0, m=2) 2026-10-12T05:56:57Z ===
+screener-vs-bundle: 500/500 OK
+bundle hyb29_mu5_019 written (form=muxD5f base=hyb28_mu5_324 fisher triage z=3.31 n_reject=0)
+rc=0 RESULT name=hyb29_mu5_019 cells=6173 area=20144 crit=19.2 delay_ratio=0.186 area_ratio=0.570 ref_crit=103.5 ref_area=35323
+=== S0 hyb29_mu5_020 (rank 20, z=3.3182882742580446, n_reject=0, m=1) 2026-10-12T05:57:16Z ===
+screener-vs-bundle: 500/500 OK
+bundle hyb29_mu5_020 written (form=muxD5f base=hyb28_mu5_324 fisher triage z=3.32 n_reject=0)
+rc=0 RESULT name=hyb29_mu5_020 cells=6251 area=20488 crit=19.4 delay_ratio=0.187 area_ratio=0.580 ref_crit=103.5 ref_area=35323
+=== S0 hyb29_mu5_021 (rank 21, z=3.3338557234179294, n_reject=0, m=1) 2026-10-12T05:57:30Z ===
+screener-vs-bundle: 500/500 OK
+bundle hyb29_mu5_021 written (form=muxD5f base=hyb28_mu5_324 fisher triage z=3.33 n_reject=0)
+rc=0 RESULT name=hyb29_mu5_021 cells=6089 area=19993 crit=19.2 delay_ratio=0.186 area_ratio=0.566 ref_crit=103.5 ref_area=35323
+=== S0 hyb29_mu5_022 (rank 22, z=3.437292774502495, n_reject=0, m=2) 2026-10-12T05:57:42Z ===
+screener-vs-bundle: 500/500 OK
+bundle hyb29_mu5_022 written (form=muxD5f base=hyb28_mu5_324 fisher triage z=3.44 n_reject=0)
+rc=0 RESULT name=hyb29_mu5_022 cells=6175 area=20307 crit=19.4 delay_ratio=0.187 area_ratio=0.575 ref_crit=103.5 ref_area=35323
+=== S0 hyb29_mu5_023 (rank 23, z=3.4680817295076, n_reject=0, m=3) 2026-10-12T05:57:55Z ===
+screener-vs-bundle: 500/500 OK
+bundle hyb29_mu5_023 written (form=muxD5f base=hyb28_mu5_324 fisher triage z=3.47 n_reject=0)
+rc=0 RESULT name=hyb29_mu5_023 cells=6432 area=21180 crit=19.0 delay_ratio=0.184 area_ratio=0.600 ref_crit=103.5 ref_area=35323
+=== S0 hyb29_mu5_024 (rank 24, z=3.531043412776466, n_reject=0, m=3) 2026-10-12T05:58:09Z ===
+screener-vs-bundle: 500/500 OK
+bundle hyb29_mu5_024 written (form=muxD5f base=hyb28_mu5_324 fisher triage z=3.53 n_reject=0)
+rc=0 RESULT name=hyb29_mu5_024 cells=6685 area=21968 crit=18.9 delay_ratio=0.183 area_ratio=0.622 ref_crit=103.5 ref_area=35323
+=== S0 hyb29_mu5_025 (rank 25, z=3.5358866191817633, n_reject=0, m=1) 2026-10-12T05:58:20Z ===
+screener-vs-bundle: 500/500 OK
+bundle hyb29_mu5_025 written (form=muxD5f base=hyb28_mu5_324 fisher triage z=3.54 n_reject=0)
+rc=0 RESULT name=hyb29_mu5_025 cells=6491 area=21229 crit=19.1 delay_ratio=0.185 area_ratio=0.601 ref_crit=103.5 ref_area=35323
+=== S0 hyb29_mu5_026 (rank 26, z=3.576707930312127, n_reject=0, m=3) 2026-10-12T05:58:32Z ===
+screener-vs-bundle: 500/500 OK
+bundle hyb29_mu5_026 written (form=muxD5f base=hyb28_mu5_324 fisher triage z=3.58 n_reject=0)
+rc=0 RESULT name=hyb29_mu5_026 cells=6152 area=20139 crit=19.1 delay_ratio=0.185 area_ratio=0.570 ref_crit=103.5 ref_area=35323
+=== S0 hyb29_mu5_027 (rank 27, z=3.6113022617785373, n_reject=0, m=1) 2026-10-12T05:58:51Z ===
+screener-vs-bundle: 500/500 OK
+bundle hyb29_mu5_027 written (form=muxD5f base=hyb28_mu5_324 fisher triage z=3.61 n_reject=0)
+rc=0 RESULT name=hyb29_mu5_027 cells=6159 area=20124 crit=19.4 delay_ratio=0.187 area_ratio=0.570 ref_crit=103.5 ref_area=35323
+=== S0 hyb29_mu5_028 (rank 28, z=3.711625823031126, n_reject=0, m=1) 2026-10-12T05:59:07Z ===
+screener-vs-bundle: 500/500 OK
+bundle hyb29_mu5_028 written (form=muxD5f base=hyb28_mu5_324 fisher triage z=3.71 n_reject=0)
+rc=0 RESULT name=hyb29_mu5_028 cells=6394 area=21395 crit=19.4 delay_ratio=0.187 area_ratio=0.606 ref_crit=103.5 ref_area=35323
+=== S0 hyb29_mu5_029 (rank 29, z=3.7655929801187256, n_reject=0, m=3) 2026-10-12T05:59:41Z ===
+screener-vs-bundle: 500/500 OK
+bundle hyb29_mu5_029 written (form=muxD5f base=hyb28_mu5_324 fisher triage z=3.77 n_reject=0)
+rc=0 RESULT name=hyb29_mu5_029 cells=6011 area=19758 crit=19.3 delay_ratio=0.186 area_ratio=0.559 ref_crit=103.5 ref_area=35323
+=== S0 hyb29_mu5_030 (rank 30, z=3.7891171255158844, n_reject=0, m=1) 2026-10-12T06:00:13Z ===
+screener-vs-bundle: 500/500 OK
+bundle hyb29_mu5_030 written (form=muxD5f base=hyb28_mu5_324 fisher triage z=3.79 n_reject=0)
+rc=0 RESULT name=hyb29_mu5_030 cells=5947 area=20005 crit=19.1 delay_ratio=0.185 area_ratio=0.566 ref_crit=103.5 ref_area=35323
+=== S0 hyb29_mu5_031 (rank 31, z=3.7988035383264793, n_reject=0, m=3) 2026-10-12T06:00:34Z ===
+screener-vs-bundle: 500/500 OK
+bundle hyb29_mu5_031 written (form=muxD5f base=hyb28_mu5_324 fisher triage z=3.80 n_reject=0)
+rc=0 RESULT name=hyb29_mu5_031 cells=5546 area=17111 crit=20.4 delay_ratio=0.197 area_ratio=0.484 ref_crit=103.5 ref_area=35323
+=== S0 hyb29_mu5_032 (rank 32, z=4.196292406875529, n_reject=0, m=2) 2026-10-12T06:00:55Z ===
+screener-vs-bundle: 500/500 OK
+bundle hyb29_mu5_032 written (form=muxD5f base=hyb28_mu5_324 fisher triage z=4.20 n_reject=0)
+rc=0 RESULT name=hyb29_mu5_032 cells=6115 area=19573 crit=19.3 delay_ratio=0.186 area_ratio=0.554 ref_crit=103.5 ref_area=35323
+=== S0 hyb29_mu5_033 (rank 33, z=5.144868975684491, n_reject=0, m=3) 2026-10-12T06:01:19Z ===
+screener-vs-bundle: 500/500 OK
+bundle hyb29_mu5_033 written (form=muxD5f base=hyb28_mu5_324 fisher triage z=5.14 n_reject=0)
+rc=0 RESULT name=hyb29_mu5_033 cells=6067 area=19984 crit=19.4 delay_ratio=0.187 area_ratio=0.566 ref_crit=103.5 ref_area=35323
+=== S0 hyb29_mu5_034 (rank 34, z=5.4998068165298575, n_reject=0, m=3) 2026-10-12T06:01:34Z ===
+screener-vs-bundle: 500/500 OK
+bundle hyb29_mu5_034 written (form=muxD5f base=hyb28_mu5_324 fisher triage z=5.50 n_reject=0)
+rc=0 RESULT name=hyb29_mu5_034 cells=6421 area=21470 crit=18.9 delay_ratio=0.183 area_ratio=0.608 ref_crit=103.5 ref_area=35323
+=== S0 hyb29_mu5_035 (rank 35, z=5.577298119014616, n_reject=0, m=2) 2026-10-12T06:01:46Z ===
+screener-vs-bundle: 500/500 OK
+bundle hyb29_mu5_035 written (form=muxD5f base=hyb28_mu5_324 fisher triage z=5.58 n_reject=0)
+rc=0 RESULT name=hyb29_mu5_035 cells=5962 area=19204 crit=19.3 delay_ratio=0.186 area_ratio=0.544 ref_crit=103.5 ref_area=35323
+=== S0 SWEEP COMPLETE 2026-10-12T06:01:57Z ===
+hyb29_mu5_000 rank=0 z=2.3420362402759554 RESULT name=hyb29_mu5_000 cells=5937 area=18930 crit=19.6 delay_ratio=0.189 area_ratio=0.536 ref_crit=103.5 ref_area=35323
+hyb29_mu5_001 rank=1 z=2.427138295683324 RESULT name=hyb29_mu5_001 cells=6205 area=20507 crit=19.3 delay_ratio=0.186 area_ratio=0.581 ref_crit=103.5 ref_area=35323
+hyb29_mu5_002 rank=2 z=2.438900368381903 RESULT name=hyb29_mu5_002 cells=6140 area=19935 crit=19.4 delay_ratio=0.187 area_ratio=0.564 ref_crit=103.5 ref_area=35323
+hyb29_mu5_003 rank=3 z=2.4925215821548385 RESULT name=hyb29_mu5_003 cells=6351 area=20989 crit=19.1 delay_ratio=0.185 area_ratio=0.594 ref_crit=103.5 ref_area=35323
+hyb29_mu5_004 rank=4 z=2.504975541482746 RESULT name=hyb29_mu5_004 cells=6333 area=20643 crit=19.6 delay_ratio=0.189 area_ratio=0.584 ref_crit=103.5 ref_area=35323
+hyb29_mu5_005 rank=5 z=2.528845630194569 RESULT name=hyb29_mu5_005 cells=6241 area=20207 crit=18.9 delay_ratio=0.183 area_ratio=0.572 ref_crit=103.5 ref_area=35323
+hyb29_mu5_006 rank=6 z=2.546142795927774 RESULT name=hyb29_mu5_006 cells=6055 area=19629 crit=19.4 delay_ratio=0.187 area_ratio=0.556 ref_crit=103.5 ref_area=35323
+hyb29_mu5_007 rank=7 z=2.6409312641457374 RESULT name=hyb29_mu5_007 cells=5309 area=17372 crit=20.2 delay_ratio=0.195 area_ratio=0.492 ref_crit=103.5 ref_area=35323
+hyb29_mu5_008 rank=8 z=2.772735667032759 RESULT name=hyb29_mu5_008 cells=6151 area=20256 crit=19.2 delay_ratio=0.186 area_ratio=0.573 ref_crit=103.5 ref_area=35323
+hyb29_mu5_009 rank=9 z=2.8813618678372865 RESULT name=hyb29_mu5_009 cells=5961 area=19480 crit=19.3 delay_ratio=0.186 area_ratio=0.551 ref_crit=103.5 ref_area=35323
+hyb29_mu5_010 rank=10 z=2.9048860132344454 RESULT name=hyb29_mu5_010 cells=5873 area=19554 crit=19.0 delay_ratio=0.184 area_ratio=0.554 ref_crit=103.5 ref_area=35323
+hyb29_mu5_011 rank=11 z=2.9126697378143875 RESULT name=hyb29_mu5_011 cells=5603 area=18769 crit=19.2 delay_ratio=0.186 area_ratio=0.531 ref_crit=103.5 ref_area=35323
+hyb29_mu5_012 rank=12 z=3.0937710630410438 RESULT name=hyb29_mu5_012 cells=6196 area=20034 crit=19.4 delay_ratio=0.187 area_ratio=0.567 ref_crit=103.5 ref_area=35323
+hyb29_mu5_013 rank=13 z=3.114181718606226 RESULT name=hyb29_mu5_013 cells=6270 area=20914 crit=18.9 delay_ratio=0.183 area_ratio=0.592 ref_crit=103.5 ref_area=35323
+hyb29_mu5_014 rank=14 z=3.125597847990141 RESULT name=hyb29_mu5_014 cells=6244 area=20422 crit=19.0 delay_ratio=0.184 area_ratio=0.578 ref_crit=103.5 ref_area=35323
+hyb29_mu5_015 rank=15 z=3.1539651997925975 RESULT name=hyb29_mu5_015 cells=6214 area=20324 crit=19.1 delay_ratio=0.185 area_ratio=0.575 ref_crit=103.5 ref_area=35323
+hyb29_mu5_016 rank=16 z=3.221770089466761 RESULT name=hyb29_mu5_016 cells=6443 area=21147 crit=18.9 delay_ratio=0.183 area_ratio=0.599 ref_crit=103.5 ref_area=35323
+hyb29_mu5_017 rank=17 z=3.2522131011572015 RESULT name=hyb29_mu5_017 cells=6194 area=20465 crit=19.1 delay_ratio=0.185 area_ratio=0.579 ref_crit=103.5 ref_area=35323
+hyb29_mu5_018 rank=18 z=3.274180501638372 RESULT name=hyb29_mu5_018 cells=5813 area=19239 crit=19.2 delay_ratio=0.186 area_ratio=0.545 ref_crit=103.5 ref_area=35323
+hyb29_mu5_019 rank=19 z=3.311369407964763 RESULT name=hyb29_mu5_019 cells=6173 area=20144 crit=19.2 delay_ratio=0.186 area_ratio=0.570 ref_crit=103.5 ref_area=35323
+hyb29_mu5_020 rank=20 z=3.3182882742580446 RESULT name=hyb29_mu5_020 cells=6251 area=20488 crit=19.4 delay_ratio=0.187 area_ratio=0.580 ref_crit=103.5 ref_area=35323
+hyb29_mu5_021 rank=21 z=3.3338557234179294 RESULT name=hyb29_mu5_021 cells=6089 area=19993 crit=19.2 delay_ratio=0.186 area_ratio=0.566 ref_crit=103.5 ref_area=35323
+hyb29_mu5_022 rank=22 z=3.437292774502495 RESULT name=hyb29_mu5_022 cells=6175 area=20307 crit=19.4 delay_ratio=0.187 area_ratio=0.575 ref_crit=103.5 ref_area=35323
+hyb29_mu5_023 rank=23 z=3.4680817295076 RESULT name=hyb29_mu5_023 cells=6432 area=21180 crit=19.0 delay_ratio=0.184 area_ratio=0.600 ref_crit=103.5 ref_area=35323
+hyb29_mu5_024 rank=24 z=3.531043412776466 RESULT name=hyb29_mu5_024 cells=6685 area=21968 crit=18.9 delay_ratio=0.183 area_ratio=0.622 ref_crit=103.5 ref_area=35323
+hyb29_mu5_025 rank=25 z=3.5358866191817633 RESULT name=hyb29_mu5_025 cells=6491 area=21229 crit=19.1 delay_ratio=0.185 area_ratio=0.601 ref_crit=103.5 ref_area=35323
+hyb29_mu5_026 rank=26 z=3.576707930312127 RESULT name=hyb29_mu5_026 cells=6152 area=20139 crit=19.1 delay_ratio=0.185 area_ratio=0.570 ref_crit=103.5 ref_area=35323
+hyb29_mu5_027 rank=27 z=3.6113022617785373 RESULT name=hyb29_mu5_027 cells=6159 area=20124 crit=19.4 delay_ratio=0.187 area_ratio=0.570 ref_crit=103.5 ref_area=35323
+hyb29_mu5_028 rank=28 z=3.711625823031126 RESULT name=hyb29_mu5_028 cells=6394 area=21395 crit=19.4 delay_ratio=0.187 area_ratio=0.606 ref_crit=103.5 ref_area=35323
+hyb29_mu5_029 rank=29 z=3.7655929801187256 RESULT name=hyb29_mu5_029 cells=6011 area=19758 crit=19.3 delay_ratio=0.186 area_ratio=0.559 ref_crit=103.5 ref_area=35323
+hyb29_mu5_030 rank=30 z=3.7891171255158844 RESULT name=hyb29_mu5_030 cells=5947 area=20005 crit=19.1 delay_ratio=0.185 area_ratio=0.566 ref_crit=103.5 ref_area=35323
+hyb29_mu5_031 rank=31 z=3.7988035383264793 RESULT name=hyb29_mu5_031 cells=5546 area=17111 crit=20.4 delay_ratio=0.197 area_ratio=0.484 ref_crit=103.5 ref_area=35323
+hyb29_mu5_032 rank=32 z=4.196292406875529 RESULT name=hyb29_mu5_032 cells=6115 area=19573 crit=19.3 delay_ratio=0.186 area_ratio=0.554 ref_crit=103.5 ref_area=35323
+hyb29_mu5_033 rank=33 z=5.144868975684491 RESULT name=hyb29_mu5_033 cells=6067 area=19984 crit=19.4 delay_ratio=0.187 area_ratio=0.566 ref_crit=103.5 ref_area=35323
+hyb29_mu5_034 rank=34 z=5.4998068165298575 RESULT name=hyb29_mu5_034 cells=6421 area=21470 crit=18.9 delay_ratio=0.183 area_ratio=0.608 ref_crit=103.5 ref_area=35323
+hyb29_mu5_035 rank=35 z=5.577298119014616 RESULT name=hyb29_mu5_035 cells=5962 area=19204 crit=19.3 delay_ratio=0.186 area_ratio=0.544 ref_crit=103.5 ref_area=35323

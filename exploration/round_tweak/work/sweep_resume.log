@@ -3973,3 +3973,15 @@ agentwork-launch: tag=track1/sweep-restart schedulers:[none [mq-deadline]  ] ion
 [sweep 16:05:03] PROBE rtw_ab48_rcctrg [N10] prio=21219 boosted_by=[]
 [sweep 16:05:14]   S0 rtw_ab48_rcctrg: 37.0u / 3826 / 11105
 [sweep 16:05:14] SWEEP COMPLETE: 1220 probed, winners=['rtw_fm14_31', 'rtw_lin_ab0612', 'rtw_pb2_rev_inout', 'rtw_rc_bit15', 'rtw_rk07', 'rtw_rk23']
+[sweep 05:34:55] 1220 specs; 1220 already probed
+[sweep 05:34:55] PROBE rtw_ab48_fm31 [N8] prio=1212 boosted_by=[]
+[sweep 05:35:03]   S0 rtw_ab48_fm31: 37.7u / 4424 / 12802
+[sweep 05:37:07]   S1 rtw_ab48_fm31: CAL_PASS lin_rej=0 diff_rej=0
+[sweep 05:44:55]   S2 rtw_ab48_fm31: repeats_max=1 zmax=32.0 spikes=22
+[sweep 05:44:55]   DIAGNOSIS rtw_ab48_fm31: S2 spikes |z|>15 on 22 deltas; worst 0000008000000000=32; bits [35, 39, 43, 47, 51, 55, 59, 63]
+[sweep 05:44:55]   NO-PROMOTE rtw_ab48_fm31: N8 fm axis Q1-doomed (cure-invariant chassis, sac_z5=12)
+[sweep 05:44:55] PROBE rtw_ab0408_pb2io [N9] prio=11214 boosted_by=[]
+[sweep 05:45:00] backoff: 2 heavy pipelines active, sleeping 300s
+[sweep 05:50:00] backoff: 2 heavy pipelines active, sleeping 300s
+[sweep 05:55:00] backoff: 3 heavy pipelines active, sleeping 300s
+[sweep 06:00:01] backoff: 2 heavy pipelines active, sleeping 300s

@@ -1,0 +1,49 @@
+=== CHAIN battery t6_xorh5_0 START 2026-10-12T05:39:34Z
+=== S0a [t6_xorh5_0] started 2026-10-12T05:39:36Z
+--- S0a tail:
+XCHECK t6_xorh5_0: PASS 10000/10000 C==Python
+=== S0a [t6_xorh5_0] rc=0 wall=3s
+=== S1 [t6_xorh5_0] started 2026-10-12T05:39:39Z
+--- S1 tail:
+  [DIFF] key=0x123456789abcdef worst|z|=1.6 fisher_logp=-0.14 bonf_logp=0.64
+  [DIFF] key=0xf0b52a9e7d8ba2b5 worst|z|=1.6 fisher_logp=-0.42 bonf_logp=0.71
+  [DIFF] key=0x92988f142674743 worst|z|=1.7 fisher_logp=-0.30 bonf_logp=0.45
+  LIN: PASS (rej=0)  DIFF: PASS (rej=0)
+[S1 t6_xorh5_0] LIN/DIFF 31s: LIN PASS DIFF PASS; marginal 222s: PB rej=1 RD rej=0
+[S1 t6_xorh5_0] verdict: FLAG
+=== S1 [t6_xorh5_0] rc=2 wall=229s
+BATTERY-FAIL stage=S1-screen [t6_xorh5_0] (see /home/hatch/workspace/mix/exploration/fast_battery/results/t6_xorh5_0/battery.log)
+=== CHAIN battery t6_xorh5_0 rc=2 END 2026-10-12T05:43:28Z
+=== CHAIN battery t6_xorh5_1 START 2026-10-12T05:43:28Z
+=== S0a [t6_xorh5_1] started 2026-10-12T05:43:33Z
+--- S0a tail:
+XCHECK t6_xorh5_1: PASS 10000/10000 C==Python
+=== S0a [t6_xorh5_1] rc=0 wall=3s
+=== S1 [t6_xorh5_1] started 2026-10-12T05:43:36Z
+--- S1 tail:
+  [DIFF] key=0x123456789abcdef worst|z|=2.5 fisher_logp=-0.59 bonf_logp=-1.50
+  [DIFF] key=0xf0b52a9e7d8ba2b5 worst|z|=2.5 fisher_logp=-0.57 bonf_logp=-1.39
+  [DIFF] key=0x92988f142674743 worst|z|=1.5 fisher_logp=-0.23 bonf_logp=0.79
+  LIN: PASS (rej=0)  DIFF: PASS (rej=0)
+[S1 t6_xorh5_1] LIN/DIFF 37s: LIN PASS DIFF PASS; marginal 177s: PB rej=2 RD rej=1
+[S1 t6_xorh5_1] verdict: FLAG
+=== S1 [t6_xorh5_1] rc=2 wall=181s
+BATTERY-FAIL stage=S1-screen [t6_xorh5_1] (see /home/hatch/workspace/mix/exploration/fast_battery/results/t6_xorh5_1/battery.log)
+=== CHAIN battery t6_xorh5_1 rc=2 END 2026-10-12T05:46:37Z
+=== CHAIN battery t6_xorh5_2 START 2026-10-12T05:46:37Z
+=== S0a [t6_xorh5_2] started 2026-10-12T05:46:39Z
+--- S0a tail:
+XCHECK t6_xorh5_2: PASS 10000/10000 C==Python
+=== S0a [t6_xorh5_2] rc=0 wall=4s
+=== S1 [t6_xorh5_2] started 2026-10-12T05:46:43Z
+--- S1 tail:
+  [DIFF] key=0x123456789abcdef worst|z|=2.3 fisher_logp=-0.56 bonf_logp=-0.84
+  [DIFF] key=0xf0b52a9e7d8ba2b5 worst|z|=1.3 fisher_logp=-0.13 bonf_logp=1.19
+  [DIFF] key=0x92988f142674743 worst|z|=2.4 fisher_logp=-1.99 bonf_logp=-1.29
+  LIN: FLAG (rej=7)  DIFF: PASS (rej=0)
+[S1 t6_xorh5_2] LIN/DIFF 37s: LIN FLAG DIFF PASS; SKIPPED (LIN/DIFF kill)
+[S1 t6_xorh5_2] verdict: FLAG
+=== S1 [t6_xorh5_2] rc=2 wall=41s
+BATTERY-FAIL stage=S1-screen [t6_xorh5_2] (see /home/hatch/workspace/mix/exploration/fast_battery/results/t6_xorh5_2/battery.log)
+=== CHAIN battery t6_xorh5_2 rc=2 END 2026-10-12T05:47:24Z
+=== CHAIN ALL DONE 2026-10-12T05:47:24Z

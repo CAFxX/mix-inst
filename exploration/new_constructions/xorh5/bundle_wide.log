@@ -1,0 +1,64 @@
+selected rank 4: form=xorh5 z=2.61 n_reject=0 xor4_pos=0 stages=[('XOR4', 62, 13, 28, 57), ('MUXD', 52, 31, 9, 39), ('MUXD', 9, 50, 20, 47), ('MUXD', 18, 39, 29, 35), ('MUXD', 5, 30, 25, 61)]
+bit-exact C-vs-Python: 2000/2000 OK
+screener-vs-bundle: 500/500 OK
+bundle t6_xorh5_4 written (form=xorh5 fisher triage z=2.61 n_reject=0)
+selected rank 5: form=xorh5 z=2.73 n_reject=0 xor4_pos=0 stages=[('XOR4', 19, 20, 58, 28), ('MUXD', 29, 55, 28, 1), ('MUXD', 30, 28, 0, 41), ('MUXD', 15, 59, 57, 19), ('MUXD', 18, 28, 63, 10)]
+bit-exact C-vs-Python: 2000/2000 OK
+screener-vs-bundle: 500/500 OK
+bundle t6_xorh5_5 written (form=xorh5 fisher triage z=2.73 n_reject=0)
+selected rank 6: form=xorh5 z=2.87 n_reject=0 xor4_pos=4 stages=[('MUXD', 8, 5, 10, 46), ('MUXD', 5, 30, 8, 32), ('MUXD', 6, 19, 4, 60), ('MUXD', 47, 23, 44, 48), ('XOR4', 22, 42, 41, 27)]
+bit-exact C-vs-Python: 2000/2000 OK
+screener-vs-bundle: 500/500 OK
+bundle t6_xorh5_6 written (form=xorh5 fisher triage z=2.87 n_reject=0)
+selected rank 7: form=xorh5 z=2.89 n_reject=0 xor4_pos=1 stages=[('MUXD', 22, 14, 61, 47), ('XOR4', 12, 35, 14, 55), ('MUXD', 10, 60, 30, 60), ('MUXD', 37, 7, 54, 25), ('MUXD', 54, 47, 17, 37)]
+bit-exact C-vs-Python: 2000/2000 OK
+screener-vs-bundle: 500/500 OK
+bundle t6_xorh5_7 written (form=xorh5 fisher triage z=2.89 n_reject=0)
+selected rank 8: form=xorh5 z=2.93 n_reject=0 xor4_pos=0 stages=[('XOR4', 47, 35, 36, 9), ('MUXD', 23, 46, 58, 18), ('MUXD', 37, 12, 41, 14), ('MUXD', 34, 52, 61, 19), ('MUXD', 53, 42, 1, 22)]
+bit-exact C-vs-Python: 2000/2000 OK
+screener-vs-bundle: 500/500 OK
+bundle t6_xorh5_8 written (form=xorh5 fisher triage z=2.93 n_reject=0)
+selected rank 9: form=xorh5 z=2.95 n_reject=0 xor4_pos=4 stages=[('MUXD', 53, 61, 59, 54), ('MUXD', 1, 14, 56, 44), ('MUXD', 36, 39, 26, 54), ('MUXD', 45, 48, 55, 58), ('XOR4', 46, 3, 20, 13)]
+bit-exact C-vs-Python: 2000/2000 OK
+screener-vs-bundle: 500/500 OK
+bundle t6_xorh5_9 written (form=xorh5 fisher triage z=2.95 n_reject=0)
+selected rank 10: form=xorh5 z=2.96 n_reject=0 xor4_pos=0 stages=[('XOR4', 62, 30, 60, 13), ('MUXD', 6, 51, 7, 63), ('MUXD', 12, 50, 32, 25), ('MUXD', 30, 48, 1, 62), ('MUXD', 16, 28, 31, 56)]
+bit-exact C-vs-Python: 2000/2000 OK
+screener-vs-bundle: 500/500 OK
+bundle t6_xorh5_10 written (form=xorh5 fisher triage z=2.96 n_reject=0)
+selected rank 11: form=xorh5 z=3.00 n_reject=0 xor4_pos=0 stages=[('XOR4', 17, 35, 37, 29), ('MUXD', 39, 63, 12, 61), ('MUXD', 50, 48, 5, 18), ('MUXD', 33, 55, 1, 5), ('MUXD', 10, 33, 7, 28)]
+bit-exact C-vs-Python: 2000/2000 OK
+screener-vs-bundle: 500/500 OK
+bundle t6_xorh5_11 written (form=xorh5 fisher triage z=3.00 n_reject=0)
+selected rank 12: form=xorh5 z=3.02 n_reject=0 xor4_pos=1 stages=[('MUXD', 41, 49, 1, 32), ('XOR4', 34, 37, 3, 9), ('MUXD', 53, 42, 0, 6), ('MUXD', 63, 56, 4, 20), ('MUXD', 26, 20, 2, 38)]
+bit-exact C-vs-Python: 2000/2000 OK
+screener-vs-bundle: 500/500 OK
+bundle t6_xorh5_12 written (form=xorh5 fisher triage z=3.02 n_reject=0)
+selected rank 13: form=xorh5 z=3.19 n_reject=0 xor4_pos=1 stages=[('MUXD', 2, 60, 38, 29), ('XOR4', 17, 7, 47, 48), ('MUXD', 21, 17, 3, 12), ('MUXD', 1, 22, 12, 18), ('MUXD', 32, 11, 23, 25)]
+bit-exact C-vs-Python: 2000/2000 OK
+screener-vs-bundle: 500/500 OK
+bundle t6_xorh5_13 written (form=xorh5 fisher triage z=3.19 n_reject=0)
+selected rank 14: form=xorh5 z=3.26 n_reject=0 xor4_pos=0 stages=[('XOR4', 7, 60, 28, 40), ('MUXD', 48, 42, 39, 48), ('MUXD', 45, 28, 59, 23), ('MUXD', 56, 2, 15, 13), ('MUXD', 33, 41, 20, 61)]
+bit-exact C-vs-Python: 2000/2000 OK
+screener-vs-bundle: 500/500 OK
+bundle t6_xorh5_14 written (form=xorh5 fisher triage z=3.26 n_reject=0)
+selected rank 15: form=xorh5 z=3.29 n_reject=0 xor4_pos=0 stages=[('XOR4', 19, 26, 20, 42), ('MUXD', 63, 35, 47, 51), ('MUXD', 56, 43, 63, 9), ('MUXD', 18, 56, 15, 20), ('MUXD', 57, 2, 31, 54)]
+bit-exact C-vs-Python: 2000/2000 OK
+screener-vs-bundle: 500/500 OK
+bundle t6_xorh5_15 written (form=xorh5 fisher triage z=3.29 n_reject=0)
+selected rank 16: form=xorh5 z=3.46 n_reject=0 xor4_pos=4 stages=[('MUXD', 13, 54, 23, 25), ('MUXD', 53, 47, 9, 44), ('MUXD', 60, 63, 53, 12), ('MUXD', 4, 15, 42, 61), ('XOR4', 15, 21, 5, 24)]
+bit-exact C-vs-Python: 2000/2000 OK
+screener-vs-bundle: 500/500 OK
+bundle t6_xorh5_16 written (form=xorh5 fisher triage z=3.46 n_reject=0)
+selected rank 17: form=xorh5 z=3.55 n_reject=0 xor4_pos=1 stages=[('MUXD', 38, 3, 16, 24), ('XOR4', 38, 28, 18, 57), ('MUXD', 25, 57, 37, 25), ('MUXD', 12, 30, 50, 33), ('MUXD', 54, 36, 47, 7)]
+bit-exact C-vs-Python: 2000/2000 OK
+screener-vs-bundle: 500/500 OK
+bundle t6_xorh5_17 written (form=xorh5 fisher triage z=3.55 n_reject=0)
+selected rank 18: form=xorh5 z=3.62 n_reject=0 xor4_pos=0 stages=[('XOR4', 23, 47, 3, 51), ('MUXD', 50, 38, 46, 0), ('MUXD', 13, 26, 62, 4), ('MUXD', 13, 50, 25, 11), ('MUXD', 53, 45, 57, 9)]
+bit-exact C-vs-Python: 2000/2000 OK
+screener-vs-bundle: 500/500 OK
+bundle t6_xorh5_18 written (form=xorh5 fisher triage z=3.62 n_reject=0)
+selected rank 19: form=xorh5 z=3.99 n_reject=0 xor4_pos=4 stages=[('MUXD', 34, 54, 33, 5), ('MUXD', 23, 56, 35, 36), ('MUXD', 53, 8, 2, 42), ('MUXD', 28, 40, 63, 20), ('XOR4', 38, 14, 59, 58)]
+bit-exact C-vs-Python: 2000/2000 OK
+screener-vs-bundle: 500/500 OK
+bundle t6_xorh5_19 written (form=xorh5 fisher triage z=3.99 n_reject=0)

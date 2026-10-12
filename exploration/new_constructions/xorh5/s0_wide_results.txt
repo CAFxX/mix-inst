@@ -1,0 +1,16 @@
+RESULT name=t6_xorh5_4 cells=5431 area=15938 crit=21.9 delay_ratio=0.212 area_ratio=0.451 ref_crit=103.5 ref_area=35323
+RESULT name=t6_xorh5_5 cells=4617 area=13461 crit=23.1 delay_ratio=0.223 area_ratio=0.381 ref_crit=103.5 ref_area=35323
+RESULT name=t6_xorh5_6 cells=6304 area=19749 crit=20.1 delay_ratio=0.194 area_ratio=0.559 ref_crit=103.5 ref_area=35323
+RESULT name=t6_xorh5_7 cells=6120 area=18362 crit=21.9 delay_ratio=0.212 area_ratio=0.520 ref_crit=103.5 ref_area=35323
+RESULT name=t6_xorh5_8 cells=5328 area=15325 crit=22.2 delay_ratio=0.214 area_ratio=0.434 ref_crit=103.5 ref_area=35323
+RESULT name=t6_xorh5_9 cells=6012 area=19611 crit=19.8 delay_ratio=0.191 area_ratio=0.555 ref_crit=103.5 ref_area=35323
+RESULT name=t6_xorh5_10 cells=5208 area=15874 crit=21.6 delay_ratio=0.209 area_ratio=0.449 ref_crit=103.5 ref_area=35323
+RESULT name=t6_xorh5_11 cells=6244 area=17891 crit=21.8 delay_ratio=0.211 area_ratio=0.506 ref_crit=103.5 ref_area=35323
+RESULT name=t6_xorh5_12 cells=5065 area=14806 crit=21.9 delay_ratio=0.212 area_ratio=0.419 ref_crit=103.5 ref_area=35323
+RESULT name=t6_xorh5_13 cells=6746 area=20997 crit=20.6 delay_ratio=0.199 area_ratio=0.594 ref_crit=103.5 ref_area=35323
+RESULT name=t6_xorh5_14 cells=5781 area=17909 crit=20.9 delay_ratio=0.202 area_ratio=0.507 ref_crit=103.5 ref_area=35323
+RESULT name=t6_xorh5_15 cells=5833 area=17170 crit=21.8 delay_ratio=0.211 area_ratio=0.486 ref_crit=103.5 ref_area=35323
+RESULT name=t6_xorh5_16 cells=5206 area=16317 crit=19.9 delay_ratio=0.192 area_ratio=0.462 ref_crit=103.5 ref_area=35323
+RESULT name=t6_xorh5_17 cells=6213 area=19037 crit=21.3 delay_ratio=0.206 area_ratio=0.539 ref_crit=103.5 ref_area=35323
+RESULT name=t6_xorh5_18 cells=5019 area=15212 crit=19.7 delay_ratio=0.190 area_ratio=0.431 ref_crit=103.5 ref_area=35323
+RESULT name=t6_xorh5_19 cells=6508 area=20944 crit=19.9 delay_ratio=0.192 area_ratio=0.593 ref_crit=103.5 ref_area=35323

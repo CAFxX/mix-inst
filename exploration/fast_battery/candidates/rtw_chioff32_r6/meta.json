@@ -1,0 +1,26 @@
+{
+ "name": "rtw_chioff32_r6",
+ "description": "tweak N2: chi(3,2) on truncated round 6 of chioff13all",
+ "composition": "tweak N2: chi(3,2) on truncated round 6 of chioff13all",
+ "rtl_top": "rtw_chioff32_r6",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xfcab7cd588172fc0"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xa229831b77057336"
+  }
+ ]
+}

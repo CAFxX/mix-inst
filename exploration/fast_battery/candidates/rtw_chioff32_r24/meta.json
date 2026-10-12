@@ -1,0 +1,26 @@
+{
+ "name": "rtw_chioff32_r24",
+ "description": "tweak N2: chi(3,2) on rounds 2,4 of chioff13all",
+ "composition": "tweak N2: chi(3,2) on rounds 2,4 of chioff13all",
+ "rtl_top": "rtw_chioff32_r24",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x41e908a8877d41b2"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x791b304728e9840c"
+  }
+ ]
+}

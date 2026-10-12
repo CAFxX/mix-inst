@@ -1,0 +1,26 @@
+{
+ "name": "rtw_ab48_fm20",
+ "description": "tweak N8: ab0408 chassis (lin(4,8)) + final mixing y^rotl(y,20) [bic cure]",
+ "composition": "tweak N8: ab0408 chassis (lin(4,8)) + final mixing y^rotl(y,20) [bic cure]",
+ "rtl_top": "rtw_ab48_fm20",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x8607739e2c8cfcbc"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xe268f3d20e47f05d"
+  }
+ ]
+}

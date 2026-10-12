@@ -1,0 +1,26 @@
+{
+ "name": "rtw_ab48_rc15",
+ "description": "tweak N10: ab0408 chassis + Z1 round constant rc15",
+ "composition": "tweak N10: ab0408 chassis + Z1 round constant rc15",
+ "rtl_top": "rtw_ab48_rc15",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xafe79b08bacf8c39"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x1888a2dd0608fff3"
+  }
+ ]
+}

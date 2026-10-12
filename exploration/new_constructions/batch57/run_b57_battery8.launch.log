@@ -1,0 +1,3 @@
+agentwork-launch: tag=track6/b57-battery8 schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+[2026-10-12T01:19:31+00:00] backoff CLEAR -- starting batch-57 staged battery
+[2026-10-12T01:19:31+00:00] BATTERY t6_b57_8 (start_stage=1)

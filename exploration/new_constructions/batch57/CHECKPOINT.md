@@ -53,3 +53,21 @@
 
 ## Frontier
 hyb28_mu5_324 at 19.3u (unchanged; t6_b57_2 at 18.9u pending quality gates).
+
+## Update 2026-10-12T01:10Z (XXXII, continued)
+- **t6_b57_3** (rank 3, z=2.83): S0 **19.4u COST-DOOMED**, XCHECK clean. O107.
+- **t6_b57_4** (rank 4, z=2.88): S0 **20.5u COST-DOOMED**, XCHECK clean. O108.
+- **t6_b57_5** (rank 5, z=3.22): S0 **19.4u COST-DOOMED**, XCHECK clean. O109.
+- **t6_b57_6** (rank 6, z=3.67): S0 **19.0u STRICTLY <19.3u COST-ELIGIBLE**
+  (6227 cells, area 20389), XCHECK clean. O110 recorded.
+- Cost tally: ranks 0/2/6 eligible (19.2/18.9/19.0u), ranks 1/3/4/5 doomed
+  (19.5/19.4/20.5/19.4u) -- muxD5f cost noisy across the space.
+- Staged battery for t6_b57_6: first launch 01:02:52Z died mid-S2 (~01:06Z)
+  with NO verdict -- the launcher exec session was ABORTED by the runtime
+  and its tree teardown killed the setsid-detached battery6 (S2 s2.out was
+  at 2^39 keys, 0 rejections). Lesson: never poll a launcher session;
+  launch, let it complete, check logs via independent execs.
+- RELAUNCHED 01:09Z (tag track6/b57-battery6b, script `run_b57_battery6.sh`);
+  S0a PASS 01:09:11Z, S1 in flight. If killed -> escalate rank 7 (z=3.71)
+  -> rank 8 (z=3.74) -> rank 9 (z=3.81) -> rank 10 (z=3.91) ->
+  rank 11 (z=3.92) -> rank 12 (z=5.38) before any form verdict.

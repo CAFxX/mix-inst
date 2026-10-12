@@ -1,0 +1,23 @@
+=== S0a [t6_b57_8] started 2026-10-12T01:19:35Z
+--- S0a tail:
+XCHECK t6_b57_8: PASS 10000/10000 C==Python
+=== S0a [t6_b57_8] rc=0 wall=7s
+=== S1 [t6_b57_8] started 2026-10-12T01:19:42Z
+--- S1 tail:
+  [DIFF] key=0x123456789abcdef worst|z|=3.7 fisher_logp=-1.56 bonf_logp=-5.69
+  [DIFF] key=0xf0b52a9e7d8ba2b5 worst|z|=1.8 fisher_logp=-1.86 bonf_logp=0.18
+  [DIFF] key=0x92988f142674743 worst|z|=2.3 fisher_logp=-0.97 bonf_logp=-0.89
+  LIN: PASS (rej=0)  DIFF: PASS (rej=0)
+[S1 t6_b57_8] LIN/DIFF 53s: LIN PASS DIFF PASS; marginal 217s: PB rej=0 RD rej=0
+[S1 t6_b57_8] verdict: CAL_PASS
+=== S1 [t6_b57_8] rc=0 wall=224s
+=== S2 [t6_b57_8] started 2026-10-12T01:23:26Z
+--- S2 tail:
+  0xe000000000000000      2.0      228.4            0
+  0x000000000000000f      2.3      302.7            0
+  0x00000000f0000000      2.6      267.0            0
+  0x0000000f00000000      2.7      306.7            0
+  0xf000000000000000      2.6      276.9            0
+PASS max_repeats=0 max|z|=70.2 (all 115 deltas)
+=== S2 [t6_b57_8] rc=0 wall=363s
+=== S3 [t6_b57_8] started 2026-10-12T01:29:29Z

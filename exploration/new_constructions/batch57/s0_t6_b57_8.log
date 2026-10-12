@@ -1,0 +1,9 @@
+2026-10-12T01:18:04Z wrapper start: deadline=1791811084 now=1791767884
+2026-10-12T01:18:04Z backoff clear after 1 polls
+2026-10-12T01:18:04Z backoff clear: running S0 for t6_b57_8
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT t6_b57_8: cells=6503 area=20494 crit=19.2
+RESULT name=t6_b57_8 cells=6503 area=20494 crit=19.2 delay_ratio=0.186 area_ratio=0.580 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+run_synth exit=0
+2026-10-12T01:18:21Z S0 COMPLETE

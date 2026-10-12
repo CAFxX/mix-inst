@@ -1,0 +1,46 @@
+{
+  "lin_rejected": [
+    [
+      "LIN",
+      0
+    ],
+    [
+      "LIN",
+      1
+    ]
+  ],
+  "diff_rejected": [
+    [
+      "DIFF",
+      0
+    ],
+    [
+      "DIFF",
+      1
+    ]
+  ],
+  "lin_detail": {
+    "('LIN', 0)": {
+      "D": 4096,
+      "logp": -Infinity
+    },
+    "('LIN', 1)": {
+      "D": 4096,
+      "logp": -Infinity
+    }
+  },
+  "diff_detail": {
+    "('DIFF', 0)": {
+      "worst_z": 461403.98266331706,
+      "fisher_logp": -Infinity,
+      "bonf_logp": -106446817619.16275
+    },
+    "('DIFF', 1)": {
+      "worst_z": 461403.98266331706,
+      "fisher_logp": -Infinity,
+      "bonf_logp": -106446817619.16275
+    }
+  },
+  "lin_verdict": "FLAG",
+  "diff_verdict": "FLAG"
+}

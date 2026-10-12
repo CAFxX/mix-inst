@@ -1,14 +1,50 @@
-=== S0a [t6_b62_26] started 2026-10-12T14:39:45Z
+=== S0a [t6_b62_26] started 2026-10-12T16:42:08Z
 --- S0a tail:
 XCHECK t6_b62_26: PASS 10000/10000 C==Python
-=== S0a [t6_b62_26] rc=0 wall=21s
-=== S1 [t6_b62_26] started 2026-10-12T14:40:06Z
+=== S0a [t6_b62_26] rc=0 wall=11s
+=== S1 [t6_b62_26] started 2026-10-12T16:42:19Z
 --- S1 tail:
   [DIFF] key=0x123456789abcdef worst|z|=2.4 fisher_logp=-1.32 bonf_logp=-1.09
   [DIFF] key=0xf0b52a9e7d8ba2b5 worst|z|=2.8 fisher_logp=-2.95 bonf_logp=-2.24
   [DIFF] key=0x92988f142674743 worst|z|=1.9 fisher_logp=-1.23 bonf_logp=-0.03
   LIN: PASS (rej=0)  DIFF: PASS (rej=0)
-[S1 t6_b62_26] LIN/DIFF 215s: LIN PASS DIFF PASS; marginal 1271s: PB rej=0 RD rej=0
+[S1 t6_b62_26] LIN/DIFF 127s: LIN PASS DIFF PASS; marginal 759s: PB rej=0 RD rej=0
 [S1 t6_b62_26] verdict: CAL_PASS
-=== S1 [t6_b62_26] rc=0 wall=1314s
-=== S2 [t6_b62_26] started 2026-10-12T15:02:03Z
+=== S1 [t6_b62_26] rc=0 wall=782s
+=== S2 [t6_b62_26] started 2026-10-12T16:55:23Z
+--- S2 tail:
+  0xe000000000000000      3.0      220.3            0
+  0x000000000000000f      2.5      256.1            0
+  0x00000000f0000000      2.9      243.1            0
+  0x0000000f00000000      2.0      281.0            0
+  0xf000000000000000      2.3      269.3            0
+PASS max_repeats=0 max|z|=127.7 (all 115 deltas)
+=== S2 [t6_b62_26] rc=0 wall=501s
+=== S3 [t6_b62_26] started 2026-10-12T17:03:44Z
+--- S3 tail:
+[S3 t6_b62_26] 64MB: no FAIL (rng_test rc=0)
+[S3 t6_b62_26] stage 256MB (key=0x123456789abcdef0 stride=1) ...
+[S3 t6_b62_26] 256MB: no FAIL (rng_test rc=0)
+[S3 t6_b62_26] stage 1GB (key=0x123456789abcdef0 stride=1) ...
+[S3 t6_b62_26] 1GB: no FAIL (rng_test rc=0)
+[S3 t6_b62_26] verdict: PASS (all 4 stages, no FAIL)
+=== S3 [t6_b62_26] rc=0 wall=195s
+=== S3b [t6_b62_26] started 2026-10-12T17:06:59Z
+--- S3b tail:
+[S3 t6_b62_26_strided] 64MB: no FAIL (rng_test rc=0)
+[S3 t6_b62_26_strided] stage 256MB (key=0x0 stride=0x9E3779B97F4A7C15) ...
+[S3 t6_b62_26_strided] 256MB: no FAIL (rng_test rc=0)
+[S3 t6_b62_26_strided] stage 1GB (key=0x0 stride=0x9E3779B97F4A7C15) ...
+[S3 t6_b62_26_strided] 1GB: no FAIL (rng_test rc=0)
+[S3 t6_b62_26_strided] verdict: PASS (all 4 stages, no FAIL)
+=== S3b [t6_b62_26] rc=0 wall=108s
+=== S4 [t6_b62_26] started 2026-10-12T17:08:47Z
+--- S4 tail:
+ Total CPU time:   00:00:08.50
+
+ All tests were passed
+
+
+
+=== S4 [t6_b62_26] rc=0 wall=15s
+BATTERY-PASS [t6_b62_26] all stages survived (S5 P&R+review is a manual gate)

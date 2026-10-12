@@ -21,3 +21,17 @@ agentwork-launch: tag=track6/b62-battery schedulers:[none [mq-deadline]  ] ionic
 agentwork-launch: tag=track6/b62-battery schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
 [2026-10-12T15:58:07+00:00] backoff CLEAR -- starting batch-62 staged battery for: t6_b62_33 t6_b62_26 t6_b62_9 t6_b62_3 t6_b62_6 t6_b62_21 t6_b62_36
 [2026-10-12T15:58:08+00:00] BATTERY t6_b62_33 (start_stage=1)
+agentwork-launch: tag=track6/b62-battery schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+[2026-10-12T16:41:56+00:00] backoff CLEAR -- starting batch-62 staged battery for: t6_b62_26 t6_b62_9 t6_b62_3 t6_b62_6 t6_b62_21 t6_b62_36
+[2026-10-12T16:41:56+00:00] BATTERY t6_b62_26 (start_stage=1)
+[2026-10-12T17:09:02+00:00] BATTERY t6_b62_26 rc=0
+[S1 t6_b62_26] verdict: CAL_PASS
+[S3 t6_b62_26] 64MB: no FAIL (rng_test rc=0)
+[S3 t6_b62_26] 256MB: no FAIL (rng_test rc=0)
+[S3 t6_b62_26] 1GB: no FAIL (rng_test rc=0)
+[S3 t6_b62_26] verdict: PASS (all 4 stages, no FAIL)
+[S3 t6_b62_26_strided] 64MB: no FAIL (rng_test rc=0)
+[S3 t6_b62_26_strided] 256MB: no FAIL (rng_test rc=0)
+[S3 t6_b62_26_strided] 1GB: no FAIL (rng_test rc=0)
+[S3 t6_b62_26_strided] verdict: PASS (all 4 stages, no FAIL)
+[2026-10-12T17:09:02+00:00] BATTERY t6_b62_9 (start_stage=1)

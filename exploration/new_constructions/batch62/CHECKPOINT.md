@@ -137,3 +137,51 @@ The PractRand prescreen compiles a per-try gen binary into
   (load 16.2 >= 12).
 - Takeaway for future recovery runs: verify with `pgrep -f run_b62_battery`
   / ps before trusting a registry note's "dead" claim.
+
+## Battery verdicts 14:13–15:14Z + reboot 15:23Z + relaunches (resume worker 16:35Z)
+
+- 14:13:42Z: t6_b62_33 battery rc=0 (resumed from S2): S0a XCHECK
+  10000/10000, S1 CAL_PASS (PB/RD rej=0), S2 max|z|=120.6, S3 1GB
+  no FAIL, S3b strided 1GB no FAIL, S4 SmallCrush PASS.
+- 14:13:49Z: launcher chained to t6_b62_17. 14:39:16Z: **t6_b62_17
+  S1-KILLED (FLAG)** — marginal PB rej=2, RD rej=0, rc=2
+  (battery_t6_b62_17.log; O143 marginal gate behaving as designed).
+- 14:39:16Z: launcher chained to t6_b62_26. 15:02Z: 26 S1 CAL_PASS
+  (PB/RD rej=0) → S2 in flight (started 15:02:03Z).
+- ~14:43Z: Q1 launched detached on 33 (tag track6/b62-q1-33).
+  15:07Z: **Q1 COMPLETE — t6_b62_33 Q1-KILLED: sac_z5=14** (≠0,
+  mandatory gate FAIL; bic_maxcorr=0.00912 clean but moot;
+  avalanche_mean=32.01 sane; N=262144, wall 1417.9s).
+  Adjudicated 15:14Z in LEADS_LEDGER.md: NO frontier change,
+  PARETO/RETAINED/RTL/VERDICT_SCOPE untouched, **no O-number claimed**
+  (precedent for Q1 kills: ledger entry only). Evidence archived in
+  `verdict_evidence/q1_t6_b62_33_2026-10-12T1507Z.{log,json}`
+  (wrapper re-runs will overwrite the live q1 files).
+- Killed to date: 22 (S1), 25 (S3 PractRand gate-4), 17 (S1),
+  33 (Q1). All ledger-adjudicated, no O-numbers (O142 stays reserved
+  for the batch-S0 verdict pending battery outcomes).
+- 15:23:32Z: **VM REBOOT** (who -b; boot_id a59af2ed-…; parent
+  orchestrator already updated boot-id.last). Killed launcher PID
+  38381 + 26's S2 mid-flight.
+- 15:58:07Z: predecessor (died 16:28Z, runtime infra vanishing, NOT
+  a reboot) relaunched battery PID 48480 with
+  33/26/9/3/6/21/36 — 33 REDUNDANT (already Q1-killed 15:07Z,
+  adjudicated 15:14Z; predecessor likely missed the ledger entry).
+  33 re-ran S0a+S1+S2+S3 all PASS (confirming pre-reboot), S3b
+  strided in flight 16:28:07Z.
+- 16:28Z: predecessor's background exec vanished; setsid launcher
+  survived.
+- 16:33:37Z: **launcher replaced by unknown actor** (NOT this resume
+  worker): old PID 48480 + its 33 S3b tree killed; NEW launcher
+  PID 116521 (parent 116519, setsid agentwork-launch.sh --nice 19,
+  tag track6/b62-battery, blessed detach pattern) with CORRECTED
+  queue **t6_b62_26 t6_b62_9 t6_b62_3 t6_b62_6 t6_b62_21 t6_b62_36**
+  (33 removed). Verified: single launcher, no duplicates, old 33
+  procs dead. Currently in cleared-flag backoff-poll (load ~12-14
+  gating at 16:35Z); starts 26 when clear.
+- 16:35Z: resume worker verified live state, heartbeat'd workreg
+  track6-batch62 + heartbeat.txt, archived Q1 evidence. NO new
+  launches (backoff GATING — load 14.3 >= 12).
+- Remaining queue after 26: 9, 3, 6, 21, 36. Deferred marginal keeps
+  (5, 11, 12, 13, 14, 19, 24, 28, 30, 35) escalate only if the
+  remaining six all fail (DESIGN.md).

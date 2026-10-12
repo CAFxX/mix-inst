@@ -193,6 +193,28 @@ def c_impl_source(stages, tag):
 LOW1_RE = re.compile(
     r"\[(Low\d+/\d+)\](\S+)\s+R=\s*([+-]?\d+(?:\.\d+)?)\s+p\s*=\s*([\d.eE+-]+)\s*(.*)")
 
+P_RANGE_RE = re.compile(
+    r"^([+-]?\d+(?:\.\d+)?(?:[eE][+-]?\d+)?)-"
+    r"([+-]?\d+(?:\.\d+)?(?:[eE][+-]?\d+)?)$")
+
+
+def parse_low1_p(tok):
+    """Parse a PractRand p-value token.
+
+    PractRand prints a range (e.g. '1-2.9e-3') on ambiguous results; the
+    true p lies inside the range. We take the MINIMUM (most kill-leaning)
+    endpoint, consistent with the prescreen's p < 1e-3 kill bar.
+    Fail-loud on anything else (2026-10-12: float('1-2.9e-3') crash).
+    """
+    try:
+        return float(tok)
+    except ValueError:
+        pass
+    m = P_RANGE_RE.match(tok)
+    if m:
+        return min(float(m.group(1)), float(m.group(2)))
+    raise ValueError("unparseable PractRand p token: %r" % tok)
+
 
 def eval_low1(stages, tag):
     """G4: Low1/64 PractRand prescreen at 256MB. Returns (keep, detail).
@@ -237,7 +259,7 @@ def eval_low1(stages, tag):
         m = LOW1_RE.search(line)
         if not m or not m.group(1).startswith("Low1/"):
             continue
-        p = float(m.group(4))
+        p = parse_low1_p(m.group(4))
         ev = m.group(5)
         if p < worst_p:
             worst_p, worst_line = p, line.strip()

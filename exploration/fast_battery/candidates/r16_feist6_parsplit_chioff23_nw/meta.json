@@ -1,0 +1,26 @@
+{
+ "name": "r16_feist6_parsplit_chioff23_nw",
+ "description": "6r Feistel, parsplit F with chi16 offsets (2,3), NO whitening",
+ "composition": "6r Feistel, parsplit F with chi16 offsets (2,3), NO whitening",
+ "rtl_top": "r16_feist6_parsplit_chioff23_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xf0f686743be78088"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x3169d550d3aa112f"
+  }
+ ]
+}

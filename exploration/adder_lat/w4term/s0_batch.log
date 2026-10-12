@@ -1,0 +1,70 @@
+[08:07:47] 35 bundles, 34 need S0
+[08:07:47] START w4t_108
+[08:07:59] DONE w4t_108: RESULT name=w4t_108 cells=6310 area=18942 crit=29.8 delay_ratio=0.288 area_ratio=0.536 ref_crit=103.5 ref_area=35323
+[08:07:59] START w4t_112
+[08:08:11] DONE w4t_112: RESULT name=w4t_112 cells=7008 area=21087 crit=29.8 delay_ratio=0.288 area_ratio=0.597 ref_crit=103.5 ref_area=35323
+[08:08:11] START w4t_131
+[08:08:27] DONE w4t_131: RESULT name=w4t_131 cells=6902 area=20636 crit=29.8 delay_ratio=0.288 area_ratio=0.584 ref_crit=103.5 ref_area=35323
+[08:08:27] START w4t_139
+[08:08:36] DONE w4t_139: RESULT name=w4t_139 cells=6616 area=20028 crit=30.0 delay_ratio=0.290 area_ratio=0.567 ref_crit=103.5 ref_area=35323
+[08:08:36] START w4t_150
+[08:08:47] DONE w4t_150: RESULT name=w4t_150 cells=7163 area=21580 crit=29.7 delay_ratio=0.287 area_ratio=0.611 ref_crit=103.5 ref_area=35323
+[08:08:47] START w4t_153
+[08:08:59] DONE w4t_153: RESULT name=w4t_153 cells=6935 area=20920 crit=29.8 delay_ratio=0.288 area_ratio=0.592 ref_crit=103.5 ref_area=35323
+[08:08:59] START w4t_154
+[08:09:10] DONE w4t_154: RESULT name=w4t_154 cells=6373 area=18891 crit=29.3 delay_ratio=0.283 area_ratio=0.535 ref_crit=103.5 ref_area=35323
+[08:09:10] START w4t_163
+[08:09:32] DONE w4t_163: RESULT name=w4t_163 cells=6285 area=18843 crit=30.0 delay_ratio=0.290 area_ratio=0.533 ref_crit=103.5 ref_area=35323
+[08:09:32] START w4t_181
+[08:10:00] DONE w4t_181: RESULT name=w4t_181 cells=6258 area=18926 crit=29.7 delay_ratio=0.287 area_ratio=0.536 ref_crit=103.5 ref_area=35323
+[08:10:00] START w4t_182
+[08:10:20] DONE w4t_182: RESULT name=w4t_182 cells=7244 area=21680 crit=29.5 delay_ratio=0.285 area_ratio=0.614 ref_crit=103.5 ref_area=35323
+[08:10:20] START w4t_191
+[08:10:38] DONE w4t_191: RESULT name=w4t_191 cells=6883 area=20937 crit=29.7 delay_ratio=0.287 area_ratio=0.593 ref_crit=103.5 ref_area=35323
+[08:10:38] START w4t_201
+[08:10:57] DONE w4t_201: RESULT name=w4t_201 cells=7039 area=21143 crit=29.5 delay_ratio=0.285 area_ratio=0.599 ref_crit=103.5 ref_area=35323
+[08:10:57] START w4t_208
+[08:11:11] DONE w4t_208: RESULT name=w4t_208 cells=6359 area=18941 crit=29.8 delay_ratio=0.288 area_ratio=0.536 ref_crit=103.5 ref_area=35323
+[08:11:11] START w4t_211
+[08:11:29] DONE w4t_211: RESULT name=w4t_211 cells=6200 area=18280 crit=30.0 delay_ratio=0.290 area_ratio=0.518 ref_crit=103.5 ref_area=35323
+[08:11:29] START w4t_218
+[08:11:53] DONE w4t_218: RESULT name=w4t_218 cells=6976 area=21227 crit=29.6 delay_ratio=0.286 area_ratio=0.601 ref_crit=103.5 ref_area=35323
+[08:11:53] START w4t_241
+[08:12:07] DONE w4t_241: RESULT name=w4t_241 cells=6984 area=21104 crit=29.8 delay_ratio=0.288 area_ratio=0.597 ref_crit=103.5 ref_area=35323
+[08:12:07] START w4t_244
+[08:12:19] DONE w4t_244: RESULT name=w4t_244 cells=7219 area=21527 crit=29.5 delay_ratio=0.285 area_ratio=0.609 ref_crit=103.5 ref_area=35323
+[08:12:19] START w4t_246
+[08:12:31] DONE w4t_246: RESULT name=w4t_246 cells=6678 area=19974 crit=29.9 delay_ratio=0.289 area_ratio=0.565 ref_crit=103.5 ref_area=35323
+[08:12:31] START w4t_248
+[08:12:40] DONE w4t_248: RESULT name=w4t_248 cells=6298 area=18788 crit=29.3 delay_ratio=0.283 area_ratio=0.532 ref_crit=103.5 ref_area=35323
+[08:12:40] START w4t_250
+[08:12:50] DONE w4t_250: RESULT name=w4t_250 cells=6789 area=20352 crit=29.8 delay_ratio=0.288 area_ratio=0.576 ref_crit=103.5 ref_area=35323
+[08:12:50] START w4t_255
+[08:13:02] DONE w4t_255: RESULT name=w4t_255 cells=6274 area=18875 crit=29.7 delay_ratio=0.287 area_ratio=0.534 ref_crit=103.5 ref_area=35323
+[08:13:02] START w4t_268
+[08:13:16] DONE w4t_268: RESULT name=w4t_268 cells=7242 area=21593 crit=29.5 delay_ratio=0.285 area_ratio=0.611 ref_crit=103.5 ref_area=35323
+[08:13:16] START w4t_271
+[08:13:35] DONE w4t_271: RESULT name=w4t_271 cells=6953 area=21096 crit=29.8 delay_ratio=0.288 area_ratio=0.597 ref_crit=103.5 ref_area=35323
+[08:13:35] START w4t_275
+[08:13:59] DONE w4t_275: RESULT name=w4t_275 cells=6172 area=18630 crit=29.8 delay_ratio=0.288 area_ratio=0.527 ref_crit=103.5 ref_area=35323
+[08:13:59] START w4t_279
+[08:14:24] DONE w4t_279: RESULT name=w4t_279 cells=6769 area=20651 crit=29.8 delay_ratio=0.288 area_ratio=0.585 ref_crit=103.5 ref_area=35323
+[08:14:24] START w4t_289
+[08:14:50] DONE w4t_289: RESULT name=w4t_289 cells=6267 area=18898 crit=29.9 delay_ratio=0.289 area_ratio=0.535 ref_crit=103.5 ref_area=35323
+[08:14:50] START w4t_33
+[08:15:19] DONE w4t_33: RESULT name=w4t_33 cells=6519 area=19614 crit=30.0 delay_ratio=0.290 area_ratio=0.555 ref_crit=103.5 ref_area=35323
+[08:15:19] START w4t_49
+[08:15:39] DONE w4t_49: RESULT name=w4t_49 cells=6166 area=18480 crit=30.1 delay_ratio=0.291 area_ratio=0.523 ref_crit=103.5 ref_area=35323
+[08:15:39] START w4t_50
+[08:15:50] DONE w4t_50: RESULT name=w4t_50 cells=6522 area=19647 crit=29.8 delay_ratio=0.288 area_ratio=0.556 ref_crit=103.5 ref_area=35323
+[08:15:50] START w4t_66
+[08:16:05] DONE w4t_66: RESULT name=w4t_66 cells=6467 area=19140 crit=30.1 delay_ratio=0.291 area_ratio=0.542 ref_crit=103.5 ref_area=35323
+[08:16:05] START w4t_74
+[08:16:20] DONE w4t_74: RESULT name=w4t_74 cells=7941 area=24356 crit=29.5 delay_ratio=0.285 area_ratio=0.690 ref_crit=103.5 ref_area=35323
+[08:16:20] START w4t_75
+[08:16:39] DONE w4t_75: RESULT name=w4t_75 cells=6556 area=19728 crit=30.0 delay_ratio=0.290 area_ratio=0.559 ref_crit=103.5 ref_area=35323
+[08:16:39] START w4t_88
+[08:16:55] DONE w4t_88: RESULT name=w4t_88 cells=6851 area=20792 crit=29.7 delay_ratio=0.287 area_ratio=0.589 ref_crit=103.5 ref_area=35323
+[08:16:55] START w4t_95
+[08:17:14] DONE w4t_95: RESULT name=w4t_95 cells=6942 area=21018 crit=29.8 delay_ratio=0.288 area_ratio=0.595 ref_crit=103.5 ref_area=35323
+[08:17:14] BATCH COMPLETE

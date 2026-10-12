@@ -1,0 +1,38 @@
+Generating 262144 outputs per key for 10 keys...
+  key 0: done
+  key 1: done
+  key 2: done
+  key 3: done
+  key 4: done
+  key 5: done
+  key 6: done
+  key 7: done
+  key 8: done
+  key 9: done
+Running Fisher triage...
+  [LIN] key=0x123456789abcdef0 D=4096/4096 logp=-inf
+  [LIN] key=0xfedcba987654321 D=4096/4096 logp=-inf
+  [LIN] key=0xaaaaaaaaaaaaaaaa D=4096/4096 logp=-inf
+  [LIN] key=0x5555555555555555 D=4096/4096 logp=-inf
+  [LIN] key=0x0 D=4096/4096 logp=-inf
+  [LIN] key=0xffffffffffffffff D=4096/4096 logp=-inf
+  [LIN] key=0xdeadbeefcafebabe D=4096/4096 logp=-inf
+  [LIN] key=0x123456789abcdef D=4096/4096 logp=-inf
+  [LIN] key=0xfedcba9876543210 D=4096/4096 logp=-inf
+  [LIN] key=0x1111111111111111 D=4096/4096 logp=-inf
+  [DIFF] key=0x123456789abcdef0 worst|z|=414972.3 fisher_logp=-inf bonf_logp=-86100987030.32
+  [DIFF] key=0xfedcba987654321 worst|z|=414972.3 fisher_logp=-inf bonf_logp=-86100987030.32
+  [DIFF] key=0xaaaaaaaaaaaaaaaa worst|z|=414972.3 fisher_logp=-inf bonf_logp=-86100987030.32
+  [DIFF] key=0x5555555555555555 worst|z|=484619.8 fisher_logp=-inf bonf_logp=-117428197345.77
+  [DIFF] key=0x0 worst|z|=414972.3 fisher_logp=-inf bonf_logp=-86100987030.32
+  [DIFF] key=0xffffffffffffffff worst|z|=484619.8 fisher_logp=-inf bonf_logp=-117428197345.77
+  [DIFF] key=0xdeadbeefcafebabe worst|z|=484619.8 fisher_logp=-inf bonf_logp=-117428197345.77
+  [DIFF] key=0x123456789abcdef worst|z|=531051.6 fisher_logp=-inf bonf_logp=-141007885663.35
+  [DIFF] key=0xfedcba9876543210 worst|z|=414972.3 fisher_logp=-inf bonf_logp=-86100987030.32
+  [DIFF] key=0x1111111111111111 worst|z|=414972.3 fisher_logp=-inf bonf_logp=-86100987030.32
+  LIN: FLAG (rej=10)  DIFF: FLAG (rej=10)
+
+LIN verdict: FLAG
+DIFF verdict: FLAG
+TRIAGE: REJECT
+EXIT=0

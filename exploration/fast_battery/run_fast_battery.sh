@@ -21,6 +21,11 @@ export PATH="$HOME/tools/micromamba-root/envs/sky130/bin:$HOME/tools/micromamba-
 FB="$(cd "$(dirname "$0")" && pwd)"
 CAND="${1:?usage: run_fast_battery.sh <candidate> [start_stage]}"
 START="${2:-0}"
+# TMPDIR: /tmp is a shared 512M tmpfs that fills up across projects; gcc
+# temp files fail with "No space left on device" (2026-10-12 batch-29).
+# Keep compiler temps on workspace disk instead. Root fix, not a workaround.
+export TMPDIR="$FB/build/.gcc-tmp"
+mkdir -p "$TMPDIR"
 OUT="$FB/results/$CAND"
 mkdir -p "$OUT" "$FB/build"
 LOG="$OUT/battery.log"

@@ -1,13 +1,24 @@
-[2026-10-12T07:28:06Z] backoff CLEAR -- starting batch-62 pilot
+[2026-10-12T07:35:34Z] backoff CLEAR -- starting batch-62 pilot
 try   0 m=2 G1-fisher KILL n_reject=4 z=13.6
-Traceback (most recent call last):
-  File "/home/hatch/workspace/mix/exploration/new_constructions/batch62/t6_b62_screen.py", line 499, in <module>
-    main()
-  File "/home/hatch/workspace/mix/exploration/new_constructions/batch62/t6_b62_screen.py", line 471, in main
-    k4, d4 = eval_low1(stages, tag)
-             ^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/hatch/workspace/mix/exploration/new_constructions/batch62/t6_b62_screen.py", line 240, in eval_low1
-    p = float(m.group(4))
-        ^^^^^^^^^^^^^^^^^
-ValueError: could not convert string to float: '1-2.9e-3'
-[2026-10-12T07:31:19Z] PILOT COMPLETE rc=1
+try   1 m=2 KEEP fisher z=2.7 inner diffz=2.3 LOW1-PASS worst_p=2.90e-03
+try   2 m=1 KEEP fisher z=3.5 inner diffz=3.0 LOW1-PASS worst_p=1.00e+00
+try   3 m=2 G1-fisher KILL n_reject=6 z=24.4
+try   4 m=2 G4-low1 KILL LOW1-REJECT worst_p=1.40e-05 :: [Low1/64]FPF/16:all               R=  +6.6  p =  1.4e-5   mildly suspicious
+try   5 m=2 G1-fisher KILL n_reject=4 z=7.8
+try   6 m=3 KEEP fisher z=3.5 inner diffz=3.2 LOW1-PASS worst_p=1.00e+00
+try   7 m=2 KEEP fisher z=3.0 inner diffz=3.1 LOW1-PASS worst_p=1.00e+00
+try   8 m=2 G4-low1 KILL LOW1-REJECT worst_p=5.10e-04 :: [Low1/64]FPF/16:cross             R=  -1.7  p =1-5.1e-4   unusual
+try   9 m=3 KEEP fisher z=3.1 inner diffz=2.7 LOW1-PASS worst_p=4.10e-03
+try  10 m=3 G1-fisher KILL n_reject=10 z=38.7
+try  11 m=3 G4-low1 KILL LOW1-REJECT worst_p=1.90e-13 :: [Low1/64]FPF/16:all               R=  +5.2  p =  4.2e-4   unusual
+try  12 m=2 G1-fisher KILL n_reject=1 z=3.7
+try  13 m=1 G1-fisher KILL n_reject=1 z=8.6
+try  14 m=2 KEEP fisher z=3.0 inner diffz=3.3 LOW1-PASS worst_p=1.00e+00
+try  15 m=3 G2-inner KILL rej=1 diffworstz=4.0
+try  16 m=2 G4-low1 KILL LOW1-REJECT worst_p=4.10e-04 :: [Low1/64]FPF/16:all               R=  +5.0  p =  4.1e-4   unusual
+try  17 m=1 G4-low1 KILL LOW1-REJECT worst_p=5.50e-04 :: [Low1/64]Gap-16:A                 R=  +5.2  p =  5.5e-4   unusual
+try  18 m=1 KEEP fisher z=2.3 inner diffz=2.2 LOW1-PASS worst_p=2.00e-03
+try  19 m=3 G1-fisher KILL n_reject=5 z=10.7
+try  20 m=3 KEEP fisher z=3.4 inner diffz=3.1 LOW1-PASS worst_p=1.00e+00
+[2026-10-12T08:31:17Z] backoff CLEAR -- resuming batch-62 pilot (tries 21-79)
+[2026-10-12T08:31:31Z] b62-pilot RESUME: tries 21-79 (seed=0xb622)

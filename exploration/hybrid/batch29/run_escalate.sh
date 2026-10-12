@@ -27,5 +27,6 @@ while read -r cand; do
   rc=$?
   tail -3 "battery_$cand.log" | tee -a escalate.log
   echo "=== $cand battery rc=$rc $(date -u +%FT%TZ) ===" | tee -a escalate.log
+  /home/hatch/workspace/system/bin/workreg.py heartbeat --id mix-track5-batch29 >/dev/null 2>&1 || true
 done < "$QUEUE"
 echo "ESCALATION QUEUE COMPLETE $(date -u +%FT%TZ)" | tee -a escalate.log

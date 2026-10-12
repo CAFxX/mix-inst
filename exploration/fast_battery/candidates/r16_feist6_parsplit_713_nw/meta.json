@@ -1,0 +1,26 @@
+{
+ "name": "r16_feist6_parsplit_713_nw",
+ "description": "6r Feistel, parsplit F with lin(7,13), NO whitening",
+ "composition": "6r Feistel, parsplit F with lin(7,13), NO whitening",
+ "rtl_top": "r16_feist6_parsplit_713_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x5d87e00f0e150cbe"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x2046a697f8f37c49"
+  }
+ ]
+}

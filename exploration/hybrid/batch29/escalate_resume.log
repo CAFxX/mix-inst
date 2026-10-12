@@ -45,3 +45,23 @@ compilation terminated.
 build diffprof failed
 === hyb29_mu5_010 battery rc=1 2026-10-12T07:32:44Z ===
 === ESCALATE hyb29_mu5_011 2026-10-12T07:32:44Z ===
+agentwork-launch: tag=track5/batch29-escalate schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+=== ESCALATE hyb29_mu5_000 2026-10-12T07:33:46Z ===
+[S3 hyb29_mu5_000] verdict: KILL@256MB
+=== S3 [hyb29_mu5_000] rc=2 wall=222s
+BATTERY-FAIL stage=S3-practrand [hyb29_mu5_000] (see /home/hatch/workspace/mix/exploration/fast_battery/results/hyb29_mu5_000/battery.log)
+=== hyb29_mu5_000 battery rc=2 2026-10-12T07:46:43Z ===
+=== ESCALATE hyb29_mu5_002 2026-10-12T07:46:43Z ===
+[S3 hyb29_mu5_002] verdict: KILL@256MB
+=== S3 [hyb29_mu5_002] rc=2 wall=126s
+BATTERY-FAIL stage=S3-practrand [hyb29_mu5_002] (see /home/hatch/workspace/mix/exploration/fast_battery/results/hyb29_mu5_002/battery.log)
+=== hyb29_mu5_002 battery rc=2 2026-10-12T08:03:34Z ===
+=== ESCALATE hyb29_mu5_003 2026-10-12T08:03:34Z ===
+[S1 hyb29_mu5_003] verdict: FLAG
+=== S1 [hyb29_mu5_003] rc=2 wall=106s
+BATTERY-FAIL stage=S1-screen [hyb29_mu5_003] (see /home/hatch/workspace/mix/exploration/fast_battery/results/hyb29_mu5_003/battery.log)
+=== hyb29_mu5_003 battery rc=2 2026-10-12T08:05:30Z ===
+=== ESCALATE hyb29_mu5_005 2026-10-12T08:05:30Z ===
+=== RESUME-LAUNCH #3 2026-10-12T08:26:01Z boot=c4842034: queue escalate_queue_resume2.txt (23 cands, skipping completed 000/002/003) ===
+agentwork-launch: tag=track5/batch29-escalate schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+=== ESCALATE hyb29_mu5_005 2026-10-12T08:26:02Z ===

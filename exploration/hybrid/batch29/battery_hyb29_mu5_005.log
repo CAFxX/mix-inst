@@ -1,0 +1,5 @@
+=== S0a [hyb29_mu5_005] started 2026-10-12T08:27:08Z
+--- S0a tail:
+XCHECK hyb29_mu5_005: PASS 10000/10000 C==Python
+=== S0a [hyb29_mu5_005] rc=0 wall=10s
+=== S1 [hyb29_mu5_005] started 2026-10-12T08:27:18Z

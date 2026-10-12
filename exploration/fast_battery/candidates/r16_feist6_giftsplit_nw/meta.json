@@ -1,0 +1,26 @@
+{
+ "name": "r16_feist6_giftsplit_nw",
+ "description": "6r Feistel, F=lin311(t)^rk, t[31:16]=chi16(R[31:16]), t[15:0]=GIFT(R[15:0]), NO whitening",
+ "composition": "6r Feistel, F=lin311(t)^rk, t[31:16]=chi16(R[31:16]), t[15:0]=GIFT(R[15:0]), NO whitening",
+ "rtl_top": "r16_feist6_giftsplit_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xafbcca20e14b2213"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x7b2ba33db4f46d56"
+  }
+ ]
+}

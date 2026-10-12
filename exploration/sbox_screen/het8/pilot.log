@@ -1,0 +1,38 @@
+try   0 T1 box=AFF8_06  n_reject=10 maxworst|z|=739994.3 min_fisher=   -inf worstkey=0x0 kill
+try   1 T1 box=AFF8_06  n_reject=10 maxworst|z|=739994.3 min_fisher=   -inf worstkey=0x0 kill
+try   2 T1 box=AFF8_06  n_reject=10 maxworst|z|=739994.3 min_fisher=   -inf worstkey=0x0 kill
+try   3 T1 box=AFF8_06  n_reject=10 maxworst|z|=739994.3 min_fisher=   -inf worstkey=0x0 kill
+try   4 T1 box=AFF8_06  n_reject=10 maxworst|z|=739994.3 min_fisher=   -inf worstkey=0x0 kill
+try   5 T1 box=AES_SBOX n_reject=10 maxworst|z|=1480000.0 min_fisher=   -inf worstkey=0x0 kill
+try   6 T1 box=AFF8_03  n_reject=10 maxworst|z|=368540.5 min_fisher=   -inf worstkey=0x0 kill
+try   7 T2 box=AFF8_06  n_reject=10 maxworst|z|=1480000.0 min_fisher=   -inf worstkey=0x0 kill
+try   8 T2 box=AFF8_06  n_reject=10 maxworst|z|=1480000.0 min_fisher=   -inf worstkey=0x0 kill
+try   9 T2 box=AFF8_06  n_reject=10 maxworst|z|=1480000.0 min_fisher=   -inf worstkey=0x0 kill
+try  10 T2 box=AFF8_06  n_reject=10 maxworst|z|=1480000.0 min_fisher=   -inf worstkey=0x0 kill
+try  11 T2 box=AFF8_06  n_reject=10 maxworst|z|=737092.4 min_fisher=   -inf worstkey=0x0 kill
+try  12 T2 box=AES_SBOX n_reject=10 maxworst|z|=1480000.0 min_fisher=   -inf worstkey=0x0 kill
+try  13 T2 box=AFF8_03  n_reject=10 maxworst|z|=739994.3 min_fisher=   -inf worstkey=0x0 kill
+try  14 T3 box=AFF8_06  n_reject=10 maxworst|z|=737092.4 min_fisher=   -inf worstkey=0x0 kill
+try  15 T3 box=AFF8_06  n_reject=10 maxworst|z|=1480000.0 min_fisher=   -inf worstkey=0x0 kill
+try  16 T3 box=AFF8_06  n_reject=10 maxworst|z|=368540.5 min_fisher=   -inf worstkey=0x0 kill
+try  17 T3 box=AFF8_06  n_reject=10 maxworst|z|=368540.5 min_fisher=   -inf worstkey=0x0 kill
+try  18 T3 box=AFF8_06  n_reject=10 maxworst|z|=739994.3 min_fisher=   -inf worstkey=0x0 kill
+try  19 T3 box=AES_SBOX n_reject=10 maxworst|z|=1480000.0 min_fisher=   -inf worstkey=0x0 kill
+try  20 T3 box=AFF8_03  n_reject=10 maxworst|z|=737092.4 min_fisher=   -inf worstkey=0x0 kill
+try  21 T4 box=AFF8_06  n_reject=10 maxworst|z|=182813.6 min_fisher=   -inf worstkey=0x0 kill
+try  22 T4 box=AFF8_06  n_reject=10 maxworst|z|=182813.6 min_fisher=   -inf worstkey=0x0 kill
+try  23 T4 box=AFF8_06  n_reject=10 maxworst|z|= 43518.5 min_fisher=   -inf worstkey=0x0 kill
+try  24 T4 box=AFF8_06  n_reject=10 maxworst|z|= 87048.2 min_fisher=   -inf worstkey=0x0 kill
+try  25 T4 box=AFF8_06  n_reject=10 maxworst|z|= 87048.2 min_fisher=   -inf worstkey=0x0 kill
+try  26 T4 box=AES_SBOX n_reject=10 maxworst|z|= 87048.2 min_fisher=   -inf worstkey=0x0 kill
+try  27 T4 box=AFF8_03  n_reject=10 maxworst|z|= 87048.2 min_fisher=   -inf worstkey=0x0 kill
+try  28 T5 box=AFF8_06  n_reject=10 maxworst|z|=1480000.0 min_fisher=   -inf worstkey=0x0 kill
+try  29 T5 box=AFF8_06  n_reject=10 maxworst|z|=1480000.0 min_fisher=   -inf worstkey=0x0 kill
+try  30 T5 box=AFF8_06  n_reject=10 maxworst|z|=1480000.0 min_fisher=   -inf worstkey=0x0 kill
+try  31 T5 box=AFF8_06  n_reject=10 maxworst|z|=1480000.0 min_fisher=   -inf worstkey=0x0 kill
+try  32 T5 box=AFF8_06  n_reject=10 maxworst|z|=1480000.0 min_fisher=   -inf worstkey=0x0 kill
+try  33 T5 box=AES_SBOX n_reject=10 maxworst|z|=1480000.0 min_fisher=   -inf worstkey=0x0 kill
+try  34 T5 box=AFF8_03  n_reject=10 maxworst|z|=1480000.0 min_fisher=   -inf worstkey=0x0 kill
+try  35 T6 box=AFF8_06  n_reject=10 maxworst|z|=739994.3 min_fisher=   -inf worstkey=0x0 kill
+=== het8: 0/36 KEEP minz=43518.5 (seed=0xb801) ===
+cost-viable keeps (T1/T2/T3/T5): 0

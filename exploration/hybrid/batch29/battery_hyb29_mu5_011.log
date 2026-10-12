@@ -1,0 +1,9 @@
+/home/hatch/workspace/mix/exploration/fast_battery/src/s2_diffprof.c:161:1: fatal error: error writing to /tmp/ccKk1yBd.s: No space left on device
+  161 | }
+      | ^
+compilation terminated.
+/home/hatch/workspace/mix/exploration/fast_battery/candidates/hyb29_mu5_011/impl.c:16:1: fatal error: error closing /tmp/ccKk1yBd.s: No space left on device
+   16 | }
+      | ^
+compilation terminated.
+build diffprof failed

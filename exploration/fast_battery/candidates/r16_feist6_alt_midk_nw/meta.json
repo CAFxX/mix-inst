@@ -1,0 +1,26 @@
+{
+ "name": "r16_feist6_alt_midk_nw",
+ "description": "6r Feistel, odd F=lin311(S1(R)^rk) / even F=lin311(chi32(R)^rk), NO whitening",
+ "composition": "6r Feistel, odd F=lin311(S1(R)^rk) / even F=lin311(chi32(R)^rk), NO whitening",
+ "rtl_top": "r16_feist6_alt_midk_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x01ac348c7c6fd55a"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x4e6256ec1be5abf0"
+  }
+ ]
+}

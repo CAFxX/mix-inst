@@ -1,17 +1,17 @@
-=== S0a [hyb29_mu5_000] started 2026-10-12T07:14:20Z
+=== S0a [hyb29_mu5_000] started 2026-10-12T07:33:52Z
 --- S0a tail:
 XCHECK hyb29_mu5_000: PASS 10000/10000 C==Python
-=== S0a [hyb29_mu5_000] rc=0 wall=5s
-=== S1 [hyb29_mu5_000] started 2026-10-12T07:14:25Z
+=== S0a [hyb29_mu5_000] rc=0 wall=7s
+=== S1 [hyb29_mu5_000] started 2026-10-12T07:33:59Z
 --- S1 tail:
   [DIFF] key=0x123456789abcdef worst|z|=2.1 fisher_logp=-0.72 bonf_logp=-0.46
   [DIFF] key=0xf0b52a9e7d8ba2b5 worst|z|=2.3 fisher_logp=-1.60 bonf_logp=-1.06
   [DIFF] key=0x92988f142674743 worst|z|=1.7 fisher_logp=-0.80 bonf_logp=0.45
   LIN: PASS (rej=0)  DIFF: PASS (rej=0)
-[S1 hyb29_mu5_000] LIN/DIFF 82s: LIN PASS DIFF PASS; marginal 490s: PB rej=0 RD rej=0
+[S1 hyb29_mu5_000] LIN/DIFF 43s: LIN PASS DIFF PASS; marginal 209s: PB rej=0 RD rej=0
 [S1 hyb29_mu5_000] verdict: CAL_PASS
-=== S1 [hyb29_mu5_000] rc=0 wall=505s
-=== S2 [hyb29_mu5_000] started 2026-10-12T07:22:51Z
+=== S1 [hyb29_mu5_000] rc=0 wall=217s
+=== S2 [hyb29_mu5_000] started 2026-10-12T07:37:36Z
 --- S2 tail:
   0xe000000000000000      2.2      232.3            0
   0x000000000000000f      3.0      242.6            0
@@ -19,8 +19,8 @@ XCHECK hyb29_mu5_000: PASS 10000/10000 C==Python
   0x0000000f00000000      2.1      266.2            0
   0xf000000000000000      2.4      225.2            0
 PASS max_repeats=0 max|z|=33.0 (all 115 deltas)
-=== S2 [hyb29_mu5_000] rc=0 wall=399s
-=== S3 [hyb29_mu5_000] started 2026-10-12T07:29:31Z
+=== S2 [hyb29_mu5_000] rc=0 wall=324s
+=== S3 [hyb29_mu5_000] started 2026-10-12T07:43:00Z
 --- S3 tail:
 [S3 hyb29_mu5_000] stage 64MB (key=0x123456789abcdef0 stride=1) ...
 [S3 hyb29_mu5_000] 64MB: no FAIL (rng_test rc=0)
@@ -28,5 +28,5 @@ PASS max_repeats=0 max|z|=33.0 (all 115 deltas)
 [S3 hyb29_mu5_000] KILL at 256MB:
   [Low1/64]FPF/16:all               R= +13.5  p =  1.3e-11    FAIL           
 [S3 hyb29_mu5_000] verdict: KILL@256MB
-=== S3 [hyb29_mu5_000] rc=2 wall=171s
+=== S3 [hyb29_mu5_000] rc=2 wall=222s
 BATTERY-FAIL stage=S3-practrand [hyb29_mu5_000] (see /home/hatch/workspace/mix/exploration/fast_battery/results/hyb29_mu5_000/battery.log)

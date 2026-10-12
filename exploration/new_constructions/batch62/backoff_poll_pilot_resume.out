@@ -1,0 +1,2 @@
+[2026-10-12T08:26:16Z] backoff poll 1: BACKOFF: load=12.13 >= 12.0 — queue heavy work, retry later
+[2026-10-12T08:31:17Z] backoff poll 2: CLEAR: load=9.14, no frozen processes

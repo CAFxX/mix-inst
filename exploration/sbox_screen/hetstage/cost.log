@@ -1,0 +1,11 @@
+gfm3: C=0x2000000801 matrix weight=336 (avg 5.2/col)
+gfm7: C=0x1000800200200211 matrix weight=850 (avg 13.3/col)
+== per-stage unit-delay cost (pinned yosys 0.69 flow) ==
+COST muxd   cells=  192 area=    768 crit= 4.00u
+COST xor4   cells=  727 area=   2071 crit= 5.50u
+COST circ1  cells=   64 area=    256 crit= 2.00u
+COST circ2  cells=  128 area=    512 crit= 4.00u
+COST andor  cells=  384 area=    896 crit= 3.70u
+COST gfm3   cells=  326 area=   1112 crit= 6.90u
+COST gfm7   cells=  870 area=   2854 crit= 9.10u
+rc=0

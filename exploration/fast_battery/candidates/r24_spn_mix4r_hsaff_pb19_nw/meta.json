@@ -1,0 +1,26 @@
+{
+ "name": "r24_spn_mix4r_hsaff_pb19_nw",
+ "description": "R24 P4: 4r SPN, per-lane affine S1 variants (r23 hs_aff tables); P=(19,1), L=lin(3,11), golden ks.",
+ "composition": "R24 P4: 4r SPN, per-lane affine S1 variants (r23 hs_aff tables); P=(19,1), L=lin(3,11), golden ks.",
+ "rtl_top": "r24_spn_mix4r_hsaff_pb19_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x9a5628b3ee7afec1"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xdec7aa4bffe4a920"
+  }
+ ]
+}

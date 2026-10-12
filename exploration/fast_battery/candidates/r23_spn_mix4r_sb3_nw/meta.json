@@ -1,0 +1,26 @@
+{
+ "name": "r23_spn_mix4r_sb3_nw",
+ "description": "R23 P4: 4r SPN, S-box sb3=[7, 9, 6, 3, 15, 10, 4, 0, 8, 12, 11, 13, 5, 1, 14, 2] (DU=6 LAT=8 deg=3); P=O34, L=lin(3,11).",
+ "composition": "R23 P4: 4r SPN, S-box sb3=[7, 9, 6, 3, 15, 10, 4, 0, 8, 12, 11, 13, 5, 1, 14, 2] (DU=6 LAT=8 deg=3); P=O34, L=lin(3,11).",
+ "rtl_top": "r23_spn_mix4r_sb3_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x8b7aaf708fcbd1a7"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xb0d9f787a8aec027"
+  }
+ ]
+}

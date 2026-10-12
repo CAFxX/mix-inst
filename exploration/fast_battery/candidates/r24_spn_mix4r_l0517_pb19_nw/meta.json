@@ -1,0 +1,26 @@
+{
+ "name": "r24_spn_mix4r_l0517_pb19_nw",
+ "description": "R24 P3: 4r SPN, L=x^rotl(x,5)^rotl(x,17); P=(19,1), S1, golden ks.",
+ "composition": "R24 P3: 4r SPN, L=x^rotl(x,5)^rotl(x,17); P=(19,1), S1, golden ks.",
+ "rtl_top": "r24_spn_mix4r_l0517_pb19_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x1c8e398e694eea02"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x6bb73a9bb7bc56ec"
+  }
+ ]
+}

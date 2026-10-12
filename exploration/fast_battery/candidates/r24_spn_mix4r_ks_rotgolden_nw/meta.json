@@ -1,0 +1,26 @@
+{
+ "name": "r24_spn_mix4r_ks_rotgolden_nw",
+ "description": "R24 P2: 4r SPN, key schedule rk_i=rotl64(key,13(i+1))^RC'[i], RC'[i]=rotl64(GOLDEN,8(i+1)) (rotated full-entropy); P=(19,1), S1, L=lin(3,11).",
+ "composition": "R24 P2: 4r SPN, key schedule rk_i=rotl64(key,13(i+1))^RC'[i], RC'[i]=rotl64(GOLDEN,8(i+1)) (rotated full-entropy); P=(19,1), S1, L=lin(3,11).",
+ "rtl_top": "r24_spn_mix4r_ks_rotgolden_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x31fafd9426794ff9"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xf88e06cc6333cf5e"
+  }
+ ]
+}

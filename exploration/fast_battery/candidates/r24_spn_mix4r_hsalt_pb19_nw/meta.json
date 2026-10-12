@@ -1,0 +1,26 @@
+{
+ "name": "r24_spn_mix4r_hsalt_pb19_nw",
+ "description": "R24 P4: 4r SPN, lanes alternate S1/SB1 (r23 hs_alt tables); P=(19,1), L=lin(3,11), golden ks.",
+ "composition": "R24 P4: 4r SPN, lanes alternate S1/SB1 (r23 hs_alt tables); P=(19,1), L=lin(3,11), golden ks.",
+ "rtl_top": "r24_spn_mix4r_hsalt_pb19_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xc9046161c717c9a0"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x6dd34136999ace91"
+  }
+ ]
+}

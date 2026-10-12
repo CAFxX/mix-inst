@@ -1,0 +1,26 @@
+{
+ "name": "r24_spn_mix4r_ks_smallodd_nw",
+ "description": "R24 P2: 4r SPN, key schedule rk_i=rotl64(key,13(i+1))^RC'[i], RC'[i]=2i+1 (tiny odd constants 1,3,5,7); P=(19,1), S1, L=lin(3,11).",
+ "composition": "R24 P2: 4r SPN, key schedule rk_i=rotl64(key,13(i+1))^RC'[i], RC'[i]=2i+1 (tiny odd constants 1,3,5,7); P=(19,1), S1, L=lin(3,11).",
+ "rtl_top": "r24_spn_mix4r_ks_smallodd_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xf8baf9617cb51907"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xdd51ea5e35fea73b"
+  }
+ ]
+}

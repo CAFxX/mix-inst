@@ -1,0 +1,26 @@
+{
+ "name": "r23_spn_mix4r_pl_nw",
+ "description": "R23 P5: 4r SPN with P(L(S)) order (vs baseline L(P(S))); S1, P=O34, L=lin(3,11).",
+ "composition": "R23 P5: 4r SPN with P(L(S)) order (vs baseline L(P(S))); S1, P=O34, L=lin(3,11).",
+ "rtl_top": "r23_spn_mix4r_pl_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x4817850382a95893"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xb4e8a754d078d3bb"
+  }
+ ]
+}

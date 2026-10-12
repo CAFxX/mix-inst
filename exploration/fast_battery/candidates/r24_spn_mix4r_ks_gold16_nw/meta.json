@@ -1,0 +1,26 @@
+{
+ "name": "r24_spn_mix4r_ks_gold16_nw",
+ "description": "R24 P2: 4r SPN, key schedule rk_i=rotl64(key,13(i+1))^RC'[i], RC'[i]=(i+1)*0x9E37 (16-bit golden multiples); P=(19,1), S1, L=lin(3,11).",
+ "composition": "R24 P2: 4r SPN, key schedule rk_i=rotl64(key,13(i+1))^RC'[i], RC'[i]=(i+1)*0x9E37 (16-bit golden multiples); P=(19,1), S1, L=lin(3,11).",
+ "rtl_top": "r24_spn_mix4r_ks_gold16_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xf4284d8e6b43990c"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x6d17419423a11ecc"
+  }
+ ]
+}

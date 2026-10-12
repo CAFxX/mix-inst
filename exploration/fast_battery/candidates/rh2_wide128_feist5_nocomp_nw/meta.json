@@ -1,0 +1,26 @@
+{
+ "name": "rh2_wide128_feist5_nocomp_nw",
+ "description": "128-bit 5r Feistel, out=L5 no compression (M3 follow-up)",
+ "composition": "128-bit 5r Feistel, out=L5 no compression (M3 follow-up)",
+ "rtl_top": "rh2_wide128_feist5_nocomp_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x429dd8bb7098523f"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x13cd71e84fda5366"
+  }
+ ]
+}

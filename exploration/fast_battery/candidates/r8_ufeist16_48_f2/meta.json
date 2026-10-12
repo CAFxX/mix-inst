@@ -1,0 +1,26 @@
+{
+ "name": "r8_ufeist16_48_f2",
+ "description": "8r uFeistel 16/48, F=S1+fold+lin16+S1, whitening",
+ "composition": "8r uFeistel 16/48, F=S1+fold+lin16+S1, whitening",
+ "rtl_top": "r8_ufeist16_48_f2",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x9411d452ae1dc064"
+  },
+  {
+   "val": "0x0",
+   "key": "0x0",
+   "out": "0xd32c97dfce990266"
+  }
+ ]
+}

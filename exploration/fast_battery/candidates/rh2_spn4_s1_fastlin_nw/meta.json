@@ -1,0 +1,26 @@
+{
+ "name": "rh2_spn4_s1_fastlin_nw",
+ "description": "4r SPN with fast-diffusing lin(17,41) (M2 follow-up)",
+ "composition": "4r SPN with fast-diffusing lin(17,41) (M2 follow-up)",
+ "rtl_top": "rh2_spn4_s1_fastlin_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xc8203f202cfef6fb"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x50978829fdead7e6"
+  }
+ ]
+}

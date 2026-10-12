@@ -1,0 +1,26 @@
+{
+ "name": "rh2_parsplit_3rot_odd_nw",
+ "description": "parsplit-F x odd-term 3-rot linear (M1 follow-up)",
+ "composition": "parsplit-F x odd-term 3-rot linear (M1 follow-up)",
+ "rtl_top": "rh2_parsplit_3rot_odd_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x79158a77e99471f7"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x3864a6bc306f3c1e"
+  }
+ ]
+}

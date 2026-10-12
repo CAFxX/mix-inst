@@ -1,0 +1,26 @@
+{
+ "name": "rh_lm_chi_nw",
+ "description": "proper Lai-Massey (orthomorphism sigma) 6r, T=lin311(chi32(D))^rk32, NO whitening — re-test of r13 LM skeleton with new F",
+ "composition": "proper Lai-Massey (orthomorphism sigma) 6r, T=lin311(chi32(D))^rk32, NO whitening — re-test of r13 LM skeleton with new F",
+ "rtl_top": "rh_lm_chi_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xcef0081408e681f6"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x3f57efa606af86b9"
+  }
+ ]
+}

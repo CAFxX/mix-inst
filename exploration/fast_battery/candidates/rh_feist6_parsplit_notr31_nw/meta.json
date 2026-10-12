@@ -1,0 +1,26 @@
+{
+ "name": "rh_feist6_parsplit_notr31_nw",
+ "description": "6r parsplit/(3,1)-notr alternating chassis, truncated ps final, NO whitening",
+ "composition": "6r parsplit/(3,1)-notr alternating chassis, truncated ps final, NO whitening",
+ "rtl_top": "rh_feist6_parsplit_notr31_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x4c41b9d3cb7a62de"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x71bfc6427bc1a8a5"
+  }
+ ]
+}

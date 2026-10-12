@@ -1,0 +1,26 @@
+{
+ "name": "rh_spn3_s1_nw",
+ "description": "full-64-bit SPN, 3 rounds: key-add, 16x S1, lin64(3,11), final key-add, NO whitening",
+ "composition": "full-64-bit SPN, 3 rounds: key-add, 16x S1, lin64(3,11), final key-add, NO whitening",
+ "rtl_top": "rh_spn3_s1_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x0b38e00a57c2f003"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x24b9f97373183b13"
+  }
+ ]
+}

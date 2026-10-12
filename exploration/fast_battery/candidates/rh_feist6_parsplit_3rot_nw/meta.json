@@ -1,0 +1,26 @@
+{
+ "name": "rh_feist6_parsplit_3rot_nw",
+ "description": "6r homogeneous parsplit-F with 3-rotation linear (3,7,11), NO whitening",
+ "composition": "6r homogeneous parsplit-F with 3-rotation linear (3,7,11), NO whitening",
+ "rtl_top": "rh_feist6_parsplit_3rot_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xa33632dc8b43c78a"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x747f90c47d0df312"
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "name": "rh2_parsplit_fm11_nw",
+ "description": "6r parsplit/alt chassis with fm11 final mixing (M6 follow-up BIC cure), NO whitening",
+ "composition": "6r parsplit/alt chassis with fm11 final mixing (M6 follow-up BIC cure), NO whitening",
+ "rtl_top": "rh2_parsplit_fm11_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xfa3b391067417f61"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x731b937af9f56fe4"
+  }
+ ]
+}

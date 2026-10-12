@@ -1,0 +1,26 @@
+{
+ "name": "rh2_lm5_chi_nw",
+ "description": "5r LM with chi-F (M5 follow-up)",
+ "composition": "5r LM with chi-F (M5 follow-up)",
+ "rtl_top": "rh2_lm5_chi_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x911ef5f399f87405"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x09fb417d0f54c7c4"
+  }
+ ]
+}

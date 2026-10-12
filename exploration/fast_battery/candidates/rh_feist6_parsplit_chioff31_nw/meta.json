@@ -1,0 +1,26 @@
+{
+ "name": "rh_feist6_parsplit_chioff31_nw",
+ "description": "6r homogeneous parsplit-F with chi16 offsets (3,1), NO whitening",
+ "composition": "6r homogeneous parsplit-F with chi16 offsets (3,1), NO whitening",
+ "rtl_top": "rh_feist6_parsplit_chioff31_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x4c3fef5854477019"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xb2d35203601fb7b7"
+  }
+ ]
+}

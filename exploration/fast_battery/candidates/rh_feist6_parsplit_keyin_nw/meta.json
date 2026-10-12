@@ -1,0 +1,26 @@
+{
+ "name": "rh_feist6_parsplit_keyin_nw",
+ "description": "6r homogeneous parsplit-F, key inside chi16 half, NO whitening",
+ "composition": "6r homogeneous parsplit-F, key inside chi16 half, NO whitening",
+ "rtl_top": "rh_feist6_parsplit_keyin_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x547e8a2717b53162"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x5229d1f61c7a6896"
+  }
+ ]
+}

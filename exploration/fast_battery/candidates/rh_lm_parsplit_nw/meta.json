@@ -1,0 +1,26 @@
+{
+ "name": "rh_lm_parsplit_nw",
+ "description": "proper Lai-Massey (orthomorphism sigma) 6r, T=F_parsplit(D)^rk32, NO whitening — re-test of r13 LM skeleton with new F",
+ "composition": "proper Lai-Massey (orthomorphism sigma) 6r, T=F_parsplit(D)^rk32, NO whitening — re-test of r13 LM skeleton with new F",
+ "rtl_top": "rh_lm_parsplit_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x311c4afae37409ca"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xe8b62aed34d20adb"
+  }
+ ]
+}

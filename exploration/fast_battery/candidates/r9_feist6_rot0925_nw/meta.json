@@ -1,0 +1,26 @@
+{
+ "name": "r9_feist6_rot0925_nw",
+ "description": "6r Feistel, F=S1+lin(9,25), NO whitening",
+ "composition": "6r Feistel, F=S1+lin(9,25), NO whitening",
+ "rtl_top": "r9_feist6_rot0925_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xa72e6dbc978dc437"
+  },
+  {
+   "val": "0x0",
+   "key": "0x0",
+   "out": "0xdc9c8d67195b3ed9"
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "name": "rh_feist6_chioff31_fm11_nw",
+ "description": "6r chioff31-notr chassis with fm11 final mixing (BIC cure), NO whitening",
+ "composition": "6r chioff31-notr chassis with fm11 final mixing (BIC cure), NO whitening",
+ "rtl_top": "rh_feist6_chioff31_fm11_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x0014018df28b094b"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x1cfe38bdbb8b5962"
+  }
+ ]
+}

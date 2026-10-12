@@ -1,0 +1,3 @@
+heartbeat mix-tweak-sweep
+2026-10-06T08:26:45Z heartbeat ok (driver 20928 alive)
+2026-10-06T14:30:14Z ALERT: driver 8592 exited WITHOUT 'SWEEP COMPLETE' (abnormal); heartbeats stopped so the entry will go stale and the recovery cron will flag it

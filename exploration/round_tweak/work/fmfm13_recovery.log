@@ -1,0 +1,50 @@
+[fmfm13-recovery 11:09:35] start (START=3)
+[fmfm13-recovery 11:10:16] start (START=3)
+[fmfm13-recovery] Q1 already done: {
+ "candidate": "rtw_ab48_fm13",
+ "key": "0x123456789abcdef0",
+ "N": 262144,
+ "sac_maxdev": 0.008983612060546875,
+ "sac_meandev": 0.0008191065862774849,
+ "sac_z5": 12,
+ "bic_maxcorr": 0.01857811987792497,
+ "bic_meancorr": 0.001559965560107945,
+ "avalanche_mean": 31.993044078350067,
+ "wall_s": 184.7
+}
+[fmfm13-recovery] Q1 bic_maxcorr=0.01857811987792497
+[fmfm13-recovery 11:10:17] running full battery START=3
+=== S3 [rtw_ab48_fm13] started 2026-10-11T11:10:20Z
+--- S3 tail:
+[S3 rtw_ab48_fm13] 64MB: no FAIL (rng_test rc=0)
+[S3 rtw_ab48_fm13] stage 256MB (key=0x123456789abcdef0 stride=1) ...
+[S3 rtw_ab48_fm13] 256MB: no FAIL (rng_test rc=0)
+[S3 rtw_ab48_fm13] stage 1GB (key=0x123456789abcdef0 stride=1) ...
+[S3 rtw_ab48_fm13] 1GB: no FAIL (rng_test rc=0)
+[S3 rtw_ab48_fm13] verdict: PASS (all 4 stages, no FAIL)
+=== S3 [rtw_ab48_fm13] rc=0 wall=531s
+=== S3b [rtw_ab48_fm13] started 2026-10-11T11:19:11Z
+--- S3b tail:
+[S3 rtw_ab48_fm13_strided] 64MB: no FAIL (rng_test rc=0)
+[S3 rtw_ab48_fm13_strided] stage 256MB (key=0x0 stride=0x9E3779B97F4A7C15) ...
+[S3 rtw_ab48_fm13_strided] 256MB: no FAIL (rng_test rc=0)
+[S3 rtw_ab48_fm13_strided] stage 1GB (key=0x0 stride=0x9E3779B97F4A7C15) ...
+[S3 rtw_ab48_fm13_strided] 1GB: no FAIL (rng_test rc=0)
+[S3 rtw_ab48_fm13_strided] verdict: PASS (all 4 stages, no FAIL)
+=== S3b [rtw_ab48_fm13] rc=0 wall=426s
+=== S4 [rtw_ab48_fm13] started 2026-10-11T11:26:17Z
+--- S4 tail:
+ Total CPU time:   00:00:30.66
+
+ All tests were passed
+
+
+
+=== S4 [rtw_ab48_fm13] rc=0 wall=79s
+BATTERY-PASS [rtw_ab48_fm13] all stages survived (S5 P&R+review is a manual gate)
+[fmfm13-recovery 11:27:36] battery rc=0
+ All tests were passed
+
+
+
+=== S4 [rtw_ab48_fm13] rc=0 wall=79s

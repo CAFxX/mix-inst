@@ -1,0 +1,40 @@
+[monitor 2026-10-04T20:00:32Z] monitor started; live sweep pid(s): 25969 
+heartbeat mix-tweak-sweep
+heartbeat mix-tweak-sweep
+[monitor 2026-10-04T21:00:32Z] alive (pid 25969 ); heartbeat sent
+heartbeat mix-tweak-sweep
+[monitor 2026-10-04T22:00:33Z] alive (pid 25969 ); heartbeat sent
+heartbeat mix-tweak-sweep
+[monitor 2026-10-04T23:00:33Z] alive (pid 25969 ); heartbeat sent
+[monitor 2026-10-04T23:24:54Z] monitor started; live sweep pid(s): 25041 
+heartbeat mix-tweak-sweep
+heartbeat mix-tweak-sweep
+[monitor 2026-10-05T00:24:56Z] alive (pid 25041 ); heartbeat sent
+heartbeat mix-tweak-sweep
+[monitor 2026-10-05T01:24:57Z] alive (pid 25041 ); heartbeat sent
+[monitor 2026-10-05T05:29:17Z] monitor started; live sweep pid(s): 14884 
+heartbeat mix-tweak-sweep
+heartbeat mix-tweak-sweep
+[monitor 2026-10-05T06:29:19Z] alive (pid 14884 ); heartbeat sent
+heartbeat mix-tweak-sweep
+[monitor 2026-10-05T07:29:19Z] alive (pid 14884 ); heartbeat sent
+heartbeat mix-tweak-sweep
+[monitor 2026-10-05T08:29:20Z] alive (pid 14884 ); heartbeat sent
+[monitor 2026-10-05T09:53:21Z] monitor started; live sweep pid(s): 23810 
+heartbeat mix-tweak-sweep
+heartbeat mix-tweak-sweep
+[monitor 2026-10-05T10:53:22Z] alive (pid 23810 ); heartbeat sent
+[monitor 2026-10-05T21:58:40Z] monitor started; live sweep pid(s): 18611 
+heartbeat mix-tweak-sweep
+[monitor 2026-10-06T19:09:30Z] monitor started; live sweep pid(s): 25172 
+heartbeat mix-tweak-sweep
+[monitor 2026-10-06T19:12:17Z] monitor started; live sweep pid(s): 25172 ; log line0=2621
+heartbeat mix-tweak-sweep
+heartbeat mix-tweak-sweep
+[monitor 2026-10-06T20:12:20Z] alive (pid 25172 ); heartbeat sent
+[monitor 2026-10-07T08:09:30Z] monitor started; live sweep pid(s): 57891 ; log line0=2668
+heartbeat mix-tweak-sweep
+[monitor 2026-10-07T09:09:31Z] sweep.py not alive; classifying from log
+[monitor 2026-10-07T09:09:31Z] sweep dead (reboot/environment class); relaunch attempt 1/3
+[monitor 2026-10-07T09:10:01Z] launched sweep.py pid(s): 201659
+resuming mix-tweak-sweep

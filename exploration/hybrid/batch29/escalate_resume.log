@@ -65,3 +65,29 @@ BATTERY-FAIL stage=S1-screen [hyb29_mu5_003] (see /home/hatch/workspace/mix/expl
 === RESUME-LAUNCH #3 2026-10-12T08:26:01Z boot=c4842034: queue escalate_queue_resume2.txt (23 cands, skipping completed 000/002/003) ===
 agentwork-launch: tag=track5/batch29-escalate schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
 === ESCALATE hyb29_mu5_005 2026-10-12T08:26:02Z ===
+[S1 hyb29_mu5_005] verdict: FLAG
+=== S1 [hyb29_mu5_005] rc=2 wall=426s
+BATTERY-FAIL stage=S1-screen [hyb29_mu5_005] (see /home/hatch/workspace/mix/exploration/fast_battery/results/hyb29_mu5_005/battery.log)
+=== hyb29_mu5_005 battery rc=2 2026-10-12T08:34:24Z ===
+=== ESCALATE hyb29_mu5_006 2026-10-12T08:34:25Z ===
+[S1 hyb29_mu5_006] verdict: FLAG
+=== S1 [hyb29_mu5_006] rc=2 wall=498s
+BATTERY-FAIL stage=S1-screen [hyb29_mu5_006] (see /home/hatch/workspace/mix/exploration/fast_battery/results/hyb29_mu5_006/battery.log)
+=== hyb29_mu5_006 battery rc=2 2026-10-12T08:44:02Z ===
+=== ESCALATE hyb29_mu5_007 2026-10-12T08:44:03Z ===
+Terminated
+XCHECK hyb29_mu5_007: PASS 10000/10000 C==Python
+=== S0a [hyb29_mu5_007] rc=0 wall=7s
+=== S1 [hyb29_mu5_007] started 2026-10-12T08:51:42Z
+=== hyb29_mu5_007 battery rc=143 2026-10-12T08:57:32Z ===
+=== ESCALATE hyb29_mu5_008 2026-10-12T08:57:39Z ===
+
+=== S4 [hyb29_mu5_008] rc=0 wall=22s
+BATTERY-PASS [hyb29_mu5_008] all stages survived (S5 P&R+review is a manual gate)
+=== hyb29_mu5_008 battery rc=0 2026-10-12T09:21:56Z ===
+=== ESCALATE hyb29_mu5_009 2026-10-12T09:21:57Z ===
+[S1 hyb29_mu5_009] verdict: FLAG
+=== S1 [hyb29_mu5_009] rc=2 wall=177s
+BATTERY-FAIL stage=S1-screen [hyb29_mu5_009] (see /home/hatch/workspace/mix/exploration/fast_battery/results/hyb29_mu5_009/battery.log)
+=== hyb29_mu5_009 battery rc=2 2026-10-12T09:24:58Z ===
+=== ESCALATE hyb29_mu5_010 2026-10-12T09:24:59Z ===

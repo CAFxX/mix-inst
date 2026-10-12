@@ -1,6 +1,6 @@
 # track2-het8 — 8-bit AES-class box as single hetero stage in non-SPN frame
 
-**Status:** TERMINAL — VERDICT O130 (2026-10-12 10:45 CEST). Pilot 0/36 fisher-keeps
+**Status:** TERMINAL — VERDICT O132 (2026-10-12 10:45 CEST). Pilot 0/36 fisher-keeps
 (seed 0xB801), min worst|z|=43,518. K1 fired at triage: single 8-bit hetero box
 is STRUCTURALLY dead — for input deltas 2^k, k≥8 the low-byte box is transparent
 and XOR4+MUXD propagate single-bit high deltas deterministically (point-mass

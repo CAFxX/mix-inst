@@ -22,3 +22,35 @@ try  19 m=3 G1-fisher KILL n_reject=5 z=10.7
 try  20 m=3 KEEP fisher z=3.4 inner diffz=3.1 LOW1-PASS worst_p=1.00e+00
 [2026-10-12T08:31:17Z] backoff CLEAR -- resuming batch-62 pilot (tries 21-79)
 [2026-10-12T08:31:31Z] b62-pilot RESUME: tries 21-79 (seed=0xb622)
+try  21 m=1 KEEP fisher z=2.3 inner diffz=2.9 LOW1-PASS worst_p=1.00e+00
+try  22 m=2 G4-low1 KILL LOW1-REJECT worst_p=1.30e-09 :: [Low1/64]FPF/16:all               R=  +8.8  p =  1.8e-7   very suspicious
+try  23 m=1 G2-inner KILL rej=3 diffworstz=4.9
+try  24 m=1 G4-low1 KILL LOW1-REJECT worst_p=2.40e-04 :: [Low1/64]mod3n(5):(1,9-6)         R= +10.5  p =  2.4e-4   unusual
+try  25 m=1 KEEP fisher z=2.7 inner diffz=2.9 LOW1-PASS worst_p=1.00e+00
+try  26 m=3 KEEP fisher z=2.6 inner diffz=2.2 LOW1-PASS worst_p=1.00e+00
+try  27 m=3 KEEP fisher z=2.4 inner diffz=3.2 LOW1-PASS worst_p=1.00e+00
+try  28 m=3 G3-rdseq KILL n_reject=1 rej=['RD-SEQ']
+try  29 m=3 G1-fisher KILL n_reject=1 z=4.3
+try  30 m=1 KEEP fisher z=3.3 inner diffz=2.7 LOW1-PASS worst_p=4.60e-03
+try  31 m=2 G2-inner KILL rej=1 diffworstz=3.7
+try  32 m=1 KEEP fisher z=3.3 inner diffz=3.2 LOW1-PASS worst_p=1.00e+00
+try  33 m=2 KEEP fisher z=3.0 inner diffz=4.3 LOW1-PASS worst_p=1.00e+00
+try  34 m=3 G1-fisher KILL n_reject=1 z=8.2
+try  35 m=3 G4-low1 KILL LOUD INFRA FAILURE: RNG_test did not reach 256MB
+try  36 m=3 G1-fisher KILL n_reject=5 z=6.7
+try  37 m=1 KEEP fisher z=3.3 inner diffz=3.2 LOW1-PASS worst_p=1.00e+00
+try  38 m=1 KEEP fisher z=2.8 inner diffz=3.0 LOW1-PASS worst_p=1.00e+00
+try  39 m=2 KEEP fisher z=4.7 inner diffz=6.0 LOW1-PASS worst_p=1.00e+00
+try  40 m=1 G3-rdseq KILL n_reject=1 rej=['RD-SEQ']
+try  41 m=3 KEEP fisher z=3.7 inner diffz=4.0 LOW1-PASS worst_p=1.00e+00
+try  42 m=3 G1-fisher KILL n_reject=2 z=36.2
+try  43 m=1 KEEP fisher z=2.9 inner diffz=2.8 LOW1-PASS worst_p=1.00e+00
+try  44 m=2 KEEP fisher z=2.6 inner diffz=2.7 LOW1-PASS worst_p=1.00e+00
+try  45 m=2 G1-fisher KILL n_reject=10 z=556.7
+try  46 m=2 G1-fisher KILL n_reject=5 z=37.1
+try  47 m=3 G4-low1 KILL LOW1-REJECT worst_p=1.40e-10 :: [Low1/64]FPF/16:all               R=  +8.4  p =  4.5e-7   very suspicious
+try  48 m=2 KEEP fisher z=3.6 inner diffz=3.3 LOW1-PASS worst_p=1.00e+00
+try  49 m=3 KEEP fisher z=2.7 inner diffz=3.1 LOW1-PASS worst_p=1.00e+00
+try  50 m=1 KEEP fisher z=3.3 inner diffz=3.3 LOW1-PASS worst_p=1.00e+00
+try  51 m=2 G1-fisher KILL n_reject=4 z=10.3
+try  52 m=2 G1-fisher KILL n_reject=7 z=25.7

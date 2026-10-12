@@ -1,9 +1,23 @@
-/home/hatch/workspace/mix/exploration/fast_battery/src/s2_diffprof.c:161:1: fatal error: error writing to /tmp/ccDwNxls.s: No space left on device
-  161 | }
-      | ^
-compilation terminated.
-/home/hatch/workspace/mix/exploration/fast_battery/candidates/hyb29_mu5_010/impl.c:16:1: fatal error: error closing /tmp/ccDwNxls.s: No space left on device
-   16 | }
-      | ^
-compilation terminated.
-build diffprof failed
+=== S0a [hyb29_mu5_010] started 2026-10-12T09:25:03Z
+--- S0a tail:
+XCHECK hyb29_mu5_010: PASS 10000/10000 C==Python
+=== S0a [hyb29_mu5_010] rc=0 wall=3s
+=== S1 [hyb29_mu5_010] started 2026-10-12T09:25:07Z
+--- S1 tail:
+  [DIFF] key=0x123456789abcdef worst|z|=1.5 fisher_logp=-0.28 bonf_logp=0.94
+  [DIFF] key=0xf0b52a9e7d8ba2b5 worst|z|=2.9 fisher_logp=-3.00 bonf_logp=-2.72
+  [DIFF] key=0x92988f142674743 worst|z|=1.4 fisher_logp=-0.03 bonf_logp=0.98
+  LIN: PASS (rej=0)  DIFF: PASS (rej=0)
+[S1 hyb29_mu5_010] LIN/DIFF 72s: LIN PASS DIFF PASS; marginal 232s: PB rej=0 RD rej=0
+[S1 hyb29_mu5_010] verdict: CAL_PASS
+=== S1 [hyb29_mu5_010] rc=0 wall=235s
+=== S2 [hyb29_mu5_010] started 2026-10-12T09:29:03Z
+--- S2 tail:
+  0xe000000000000000      2.2      270.0            0
+  0x000000000000000f      2.7      272.0            0
+  0x00000000f0000000      2.3      260.3            0
+  0x0000000f00000000      2.2      285.1            0
+  0xf000000000000000      2.7      273.6            0
+PASS max_repeats=0 max|z|=62.9 (all 115 deltas)
+=== S2 [hyb29_mu5_010] rc=0 wall=305s
+=== S3 [hyb29_mu5_010] started 2026-10-12T09:34:08Z

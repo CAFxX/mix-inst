@@ -1,9 +1,5 @@
-/home/hatch/workspace/mix/exploration/fast_battery/src/s2_diffprof.c:161:1: fatal error: error writing to /tmp/ccJN2pvX.s: No space left on device
-  161 | }
-      | ^
-compilation terminated.
-/home/hatch/workspace/mix/exploration/fast_battery/candidates/hyb29_mu5_007/impl.c:16:1: fatal error: error closing /tmp/ccJN2pvX.s: No space left on device
-   16 | }
-      | ^
-compilation terminated.
-build diffprof failed
+=== S0a [hyb29_mu5_007] started 2026-10-12T08:51:34Z
+--- S0a tail:
+XCHECK hyb29_mu5_007: PASS 10000/10000 C==Python
+=== S0a [hyb29_mu5_007] rc=0 wall=7s
+=== S1 [hyb29_mu5_007] started 2026-10-12T08:51:42Z

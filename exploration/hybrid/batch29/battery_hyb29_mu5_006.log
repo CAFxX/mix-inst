@@ -1,9 +1,14 @@
-/home/hatch/workspace/mix/exploration/fast_battery/src/s2_diffprof.c:161:1: fatal error: error writing to /tmp/cc8ifniR.s: No space left on device
-  161 | }
-      | ^
-compilation terminated.
-/home/hatch/workspace/mix/exploration/fast_battery/candidates/hyb29_mu5_006/impl.c:16:1: fatal error: error closing /tmp/cc8ifniR.s: No space left on device
-   16 | }
-      | ^
-compilation terminated.
-build diffprof failed
+=== S0a [hyb29_mu5_006] started 2026-10-12T08:35:35Z
+--- S0a tail:
+XCHECK hyb29_mu5_006: PASS 10000/10000 C==Python
+=== S0a [hyb29_mu5_006] rc=0 wall=8s
+=== S1 [hyb29_mu5_006] started 2026-10-12T08:35:43Z
+--- S1 tail:
+  [DIFF] key=0x123456789abcdef worst|z|=2.3 fisher_logp=-1.61 bonf_logp=-1.06
+  [DIFF] key=0xf0b52a9e7d8ba2b5 worst|z|=1.9 fisher_logp=-1.15 bonf_logp=0.03
+  [DIFF] key=0x92988f142674743 worst|z|=2.3 fisher_logp=-0.75 bonf_logp=-0.93
+  LIN: PASS (rej=0)  DIFF: PASS (rej=0)
+[S1 hyb29_mu5_006] LIN/DIFF 92s: LIN PASS DIFF PASS; marginal 482s: PB rej=0 RD rej=1
+[S1 hyb29_mu5_006] verdict: FLAG
+=== S1 [hyb29_mu5_006] rc=2 wall=498s
+BATTERY-FAIL stage=S1-screen [hyb29_mu5_006] (see /home/hatch/workspace/mix/exploration/fast_battery/results/hyb29_mu5_006/battery.log)

@@ -1,0 +1,26 @@
+=== try 53 B/H1 GFM-dense ===
+stages: [['GFMUL', '0x8514966ad8e9f2d1'], ['MUXD', 63, 50, 3, 28], ['MUXD', 34, 18, 3, 63]]
+INNER lin=FLAG diff=FLAG
+  key=0x0000000000000000 worst|z|=     5.1 fisher_logp=  -29.2
+  key=0xffffffffffffffff worst|z|=     3.6 fisher_logp=  -16.0
+  key=0xaaaaaaaaaaaaaaaa worst|z|=     3.6 fisher_logp=  -14.5
+  key=0x5555555555555555 worst|z|=     3.2 fisher_logp=  -15.1
+  key=0xdeadbeefdeadbeef worst|z|=     3.6 fisher_logp=  -27.4
+  key=0x9e3779b97f4a7c15 worst|z|=     3.3 fisher_logp=  -10.7
+  key=0x0000000000001234 worst|z|=     5.1 fisher_logp=  -29.2
+  key=0x0123456789abcdef worst|z|=     3.2 fisher_logp=  -14.4
+  key=0xf0b52a9e7d8ba2b5 worst|z|=     3.7 fisher_logp=  -13.5
+  key=0x092988f142674743 worst|z|=     3.0 fisher_logp=  -14.1
+=== try 78 B/H3 GFM-sp ===
+stages: [['GFMUL', '0x100001000040410'], ['MUXD', 19, 47, 6, 1], ['MUXD', 63, 7, 12, 60], ['MUXD', 60, 32, 7, 41]]
+INNER lin=PASS diff=FLAG
+  key=0x0000000000000000 worst|z|=     4.7 fisher_logp=  -12.2
+  key=0xffffffffffffffff worst|z|=     5.3 fisher_logp=  -24.4
+  key=0xaaaaaaaaaaaaaaaa worst|z|=     4.9 fisher_logp=  -10.3
+  key=0x5555555555555555 worst|z|=     3.8 fisher_logp=   -9.0
+  key=0xdeadbeefdeadbeef worst|z|=     4.3 fisher_logp=  -17.6
+  key=0x9e3779b97f4a7c15 worst|z|=     4.9 fisher_logp=  -10.7
+  key=0x0000000000001234 worst|z|=     4.7 fisher_logp=  -12.2
+  key=0x0123456789abcdef worst|z|=     4.3 fisher_logp=   -8.5
+  key=0xf0b52a9e7d8ba2b5 worst|z|=     3.8 fisher_logp=   -4.6
+  key=0x092988f142674743 worst|z|=     4.0 fisher_logp=   -8.2

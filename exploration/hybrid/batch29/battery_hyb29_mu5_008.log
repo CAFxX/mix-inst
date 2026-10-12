@@ -1,9 +1,50 @@
-/home/hatch/workspace/mix/exploration/fast_battery/src/s2_diffprof.c:161:1: fatal error: error writing to /tmp/ccT6DS78.s: No space left on device
-  161 | }
-      | ^
-compilation terminated.
-/home/hatch/workspace/mix/exploration/fast_battery/candidates/hyb29_mu5_008/impl.c:16:1: fatal error: error closing /tmp/ccT6DS78.s: No space left on device
-   16 | }
-      | ^
-compilation terminated.
-build diffprof failed
+=== S0a [hyb29_mu5_008] started 2026-10-12T09:04:30Z
+--- S0a tail:
+XCHECK hyb29_mu5_008: PASS 10000/10000 C==Python
+=== S0a [hyb29_mu5_008] rc=0 wall=35s
+=== S1 [hyb29_mu5_008] started 2026-10-12T09:05:06Z
+--- S1 tail:
+  [DIFF] key=0x123456789abcdef worst|z|=1.6 fisher_logp=-0.41 bonf_logp=0.72
+  [DIFF] key=0xf0b52a9e7d8ba2b5 worst|z|=1.5 fisher_logp=-0.03 bonf_logp=0.89
+  [DIFF] key=0x92988f142674743 worst|z|=2.2 fisher_logp=-3.66 bonf_logp=-0.70
+  LIN: PASS (rej=0)  DIFF: PASS (rej=0)
+[S1 hyb29_mu5_008] LIN/DIFF 54s: LIN PASS DIFF PASS; marginal 188s: PB rej=0 RD rej=0
+[S1 hyb29_mu5_008] verdict: CAL_PASS
+=== S1 [hyb29_mu5_008] rc=0 wall=266s
+=== S2 [hyb29_mu5_008] started 2026-10-12T09:09:32Z
+--- S2 tail:
+  0xe000000000000000      3.0      210.7            0
+  0x000000000000000f      3.3      274.6            0
+  0x00000000f0000000      2.3      275.6            0
+  0x0000000f00000000      2.0      239.6            0
+  0xf000000000000000      2.2      306.9            0
+PASS max_repeats=0 max|z|=97.3 (all 115 deltas)
+=== S2 [hyb29_mu5_008] rc=0 wall=294s
+=== S3 [hyb29_mu5_008] started 2026-10-12T09:14:27Z
+--- S3 tail:
+[S3 hyb29_mu5_008] 64MB: no FAIL (rng_test rc=0)
+[S3 hyb29_mu5_008] stage 256MB (key=0x123456789abcdef0 stride=1) ...
+[S3 hyb29_mu5_008] 256MB: no FAIL (rng_test rc=0)
+[S3 hyb29_mu5_008] stage 1GB (key=0x123456789abcdef0 stride=1) ...
+[S3 hyb29_mu5_008] 1GB: no FAIL (rng_test rc=0)
+[S3 hyb29_mu5_008] verdict: PASS (all 4 stages, no FAIL)
+=== S3 [hyb29_mu5_008] rc=0 wall=198s
+=== S3b [hyb29_mu5_008] started 2026-10-12T09:17:45Z
+--- S3b tail:
+[S3 hyb29_mu5_008_strided] 64MB: no FAIL (rng_test rc=0)
+[S3 hyb29_mu5_008_strided] stage 256MB (key=0x0 stride=0x9E3779B97F4A7C15) ...
+[S3 hyb29_mu5_008_strided] 256MB: no FAIL (rng_test rc=0)
+[S3 hyb29_mu5_008_strided] stage 1GB (key=0x0 stride=0x9E3779B97F4A7C15) ...
+[S3 hyb29_mu5_008_strided] 1GB: no FAIL (rng_test rc=0)
+[S3 hyb29_mu5_008_strided] verdict: PASS (all 4 stages, no FAIL)
+=== S3b [hyb29_mu5_008] rc=0 wall=229s
+=== S4 [hyb29_mu5_008] started 2026-10-12T09:21:34Z
+--- S4 tail:
+ Total CPU time:   00:00:08.31
+
+ All tests were passed
+
+
+
+=== S4 [hyb29_mu5_008] rc=0 wall=22s
+BATTERY-PASS [hyb29_mu5_008] all stages survived (S5 P&R+review is a manual gate)

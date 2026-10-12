@@ -36,3 +36,35 @@ battery w4t_108 rc=2 ===
 XCHECK w4t_112: PASS 10000/10000 C==Python
 === S0a [w4t_112] rc=0 wall=5s
 === S1 [w4t_112] started 2026-10-12T08:30:42Z
+--- S1 tail:
+  [DIFF] key=0x123456789abcdef worst|z|=2.2 fisher_logp=-2.15 bonf_logp=-0.67
+  [DIFF] key=0xf0b52a9e7d8ba2b5 worst|z|=2.4 fisher_logp=-0.78 bonf_logp=-1.27
+  [DIFF] key=0x92988f142674743 worst|z|=2.3 fisher_logp=-1.04 bonf_logp=-1.01
+  LIN: PASS (rej=0)  DIFF: PASS (rej=0)
+[S1 w4t_112] LIN/DIFF 87s: LIN PASS DIFF PASS; marginal 452s: PB rej=1 RD rej=0
+[S1 w4t_112] verdict: FLAG
+=== S1 [w4t_112] rc=2 wall=459s
+BATTERY-FAIL stage=S1-screen [w4t_112] (see /home/hatch/workspace/mix/exploration/fast_battery/results/w4t_112/battery.log)
+battery w4t_112 rc=2 ===
+=== BATTERY w4t_131 08:38:21 ===
+=== S0a [w4t_131] started 2026-10-12T08:38:28Z
+--- S0a tail:
+XCHECK w4t_131: PASS 10000/10000 C==Python
+=== S0a [w4t_131] rc=0 wall=3s
+=== S1 [w4t_131] started 2026-10-12T08:38:31Z
+--- S1 tail:
+  [DIFF] key=0x123456789abcdef worst|z|=1.8 fisher_logp=-0.28 bonf_logp=0.35
+  [DIFF] key=0xf0b52a9e7d8ba2b5 worst|z|=2.2 fisher_logp=-2.50 bonf_logp=-0.71
+  [DIFF] key=0x92988f142674743 worst|z|=2.1 fisher_logp=-0.37 bonf_logp=-0.51
+  LIN: PASS (rej=0)  DIFF: PASS (rej=0)
+[S1 w4t_131] LIN/DIFF 100s: LIN PASS DIFF PASS; marginal 620s: PB rej=2 RD rej=0
+[S1 w4t_131] verdict: FLAG
+=== S1 [w4t_131] rc=2 wall=628s
+BATTERY-FAIL stage=S1-screen [w4t_131] (see /home/hatch/workspace/mix/exploration/fast_battery/results/w4t_131/battery.log)
+battery w4t_131 rc=2 ===
+=== BATTERY w4t_150 08:49:00 ===
+=== S0a [w4t_150] started 2026-10-12T08:49:15Z
+--- S0a tail:
+XCHECK w4t_150: PASS 10000/10000 C==Python
+=== S0a [w4t_150] rc=0 wall=8s
+=== S1 [w4t_150] started 2026-10-12T08:49:24Z

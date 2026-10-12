@@ -1,0 +1,2 @@
+try  35 m=3 draw-reproduced stages=[['MUXD', 17, 37, 10, 55], ['MUXD', 63, 62, 49, 57], ['MUXD', 29, 39, 42, 6], ['MUXD', 9, 4, 44, 23], ['MUXD', 5, 54, 31, 34]]
+try  35 m=3 G4-low1 KILL LOUD INFRA FAILURE: RNG_test did not reach 256MB

@@ -1,13 +1,20 @@
 # track2-hetstage — cheap non-S-box hetero stage pool in the MU5 frame
 
 **Track:** 2 (broad screen) · **Owner:** track2-hetstage (subagent, lane opened 2026-10-12 ~10:15 CEST)
-**Date:** 2026-10-12 · **Status:** CO-DESIGNED (pre-pilot). Written BEFORE any hetstage run.
-**Parent verdicts:** O129 (8-bit SPN COST-CLOSED), O130 (single 8-bit hetero box STRUCTURALLY KILLED at triage).
+**Date:** 2026-10-12 · **Status:** TERMINAL — VERDICT O131 (2026-10-12 10:49 CEST).
+Pilot 0/120 fisher-keeps (seed 0xB802). K1 fired for all three types.
+Mechanism: linear hetero stages contribute diffusion but zero confusion —
+the frame's confusion budget is the MUXD count (2 MUXD → z~10^3–10^6 via
+select-stagnation passthrough; 3 MUXD + dense GF → z~5–9 with a systematic
+residual truncated differential, inner DIFF-SEQ FLAG on both best draws).
+ANDOR dominated (best z=26k vs GFMUL's 5.1). Cost measured, never binding.
+No GHA campaign (conditional on keeps). Next axes in ledger O131 entry.
+**Parent verdicts:** O129 (8-bit SPN COST-CLOSED), O132 (single 8-bit hetero box STRUCTURALLY KILLED at triage).
 **Seed:** 0xB802 (fresh; het8 used 0xB801).
 
-## 0. Why this axis (the O130 lesson, structural)
+## 0. Why this axis (the O132 lesson, structural)
 
-O130 killed the single 8-bit hetero *box*: for input deltas 2^k, k≥8 the
+O132 killed the single 8-bit hetero *box*: for input deltas 2^k, k≥8 the
 low-byte box is TRANSPARENT (identity-box control byte-identical), and the
 coverage argument is arithmetic — one 8-bit box covers 1/8 of the 64-bit
 delta space, so the frame must be independently DIFF-clean (≥4 MUXD stages,
@@ -18,7 +25,7 @@ The hetero-*stage* concept is validated (t6_xorh5_15: XOR4 stage inside a
 MUXD cascade → Frontier S+Q cells/area point). This axis replaces the box
 with CHEAP hetero stages that (a) cost 2–8u instead of 10.4u, leaving
 7–9u of headroom for diffusion depth, and (b) touch all 64 bits every
-application — structurally immune to O130's 1/8-coverage transparency
+application — structurally immune to O132's 1/8-coverage transparency
 trap. The thesis: **cheap hetero stages buy stage-depth under the 18.6u
 bar; depth buys quality.**
 
@@ -57,7 +64,7 @@ bar; depth buys quality.**
 **Type C — AND-OR mixes** (nonlinear, non-box):
 - `ANDOR`: `x ^= (rotl(x,a) & rotl(x,b)) | (rotl(x,c) & rotl(x,d))`,
   a,b,c,d pairwise distinct (fail-loud). Per-bit AO22 + XOR: degree-2,
-  full-64-bit coverage every application (anti-O130 by construction).
+  full-64-bit coverage every application (anti-O132 by construction).
 - Bijectivity NOT required: the x⊕g(x) form is the MUXD precedent
   (t6_b59_47 frontier point is non-bijective per stage); quality is judged
   by the gates, not by stage bijectivity. Diagnostic only: empirical
@@ -190,7 +197,7 @@ GHA results are leads; PARETO/RETAINED/RTL adjudication stays with the
    hetero as XOR4-replacement in 5-stage DIFF-clean frames.
 2. ANDOR dies on DIFF while CIRC lives → hetero PAIRS: ANDOR+CIRC2 as a
    co-designed compound stage (not independent draws).
-3. O130-style structural transparency (identity-hetero control
+3. O132-style structural transparency (identity-hetero control
    byte-identical) → promote the inner gate to primary triage and
    revisit the frame's linear post-stages (batch-62 lesson).
 

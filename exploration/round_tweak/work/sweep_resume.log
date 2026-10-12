@@ -4058,3 +4058,27 @@ agentwork-launch: tag=track1/sweep-restart schedulers:[none [mq-deadline]  ] ion
 [sweep 12:23:34] backoff: 4 heavy pipelines active, sleeping 300s
 [sweep 12:28:34] backoff: 4 heavy pipelines active, sleeping 300s
 [sweep 12:33:34] backoff: 4 heavy pipelines active, sleeping 300s
+[sweep 13:18:35]   *** S2 TIMEOUT rtw_ab0408_pb2io: binary hung >2400s, skipped (fail closed, no promotion)
+[sweep 13:18:35] PROBE rtw_ab0612_pb2io [N9] prio=11215 boosted_by=[]
+[sweep 13:19:13] backoff: 9 heavy pipelines active, sleeping 300s
+[sweep 13:24:13] backoff: 13 heavy pipelines active, sleeping 300s
+[sweep 13:29:13] backoff: 14 heavy pipelines active, sleeping 300s
+[sweep 13:34:13] backoff: 14 heavy pipelines active, sleeping 300s
+[sweep 13:39:13] backoff: 14 heavy pipelines active, sleeping 300s
+[sweep 13:44:13] backoff: 12 heavy pipelines active, sleeping 300s
+[sweep 13:49:14] backoff: 6 heavy pipelines active, sleeping 300s
+[sweep 13:54:14] backoff: 7 heavy pipelines active, sleeping 300s
+[sweep 13:59:14] backoff: 5 heavy pipelines active, sleeping 300s
+[sweep 14:04:15] backoff: 3 heavy pipelines active, sleeping 300s
+[sweep 14:09:15] backoff: 4 heavy pipelines active, sleeping 300s
+[sweep 14:14:15] backoff: 3 heavy pipelines active, sleeping 300s
+[sweep 14:19:16] backoff: 4 heavy pipelines active, sleeping 300s
+[sweep 14:24:17] backoff: 4 heavy pipelines active, sleeping 300s
+[sweep 14:29:17] backoff: 4 heavy pipelines active, sleeping 300s
+[sweep 14:34:17] backoff: 4 heavy pipelines active, sleeping 300s
+[sweep 14:39:17] backoff: 5 heavy pipelines active, sleeping 300s
+[sweep 14:44:17] backoff: 4 heavy pipelines active, sleeping 300s
+[sweep 14:49:18] backoff: 4 heavy pipelines active, sleeping 300s
+[sweep 14:54:18] backoff: 4 heavy pipelines active, sleeping 300s
+[sweep 14:59:18] backoff: 4 heavy pipelines active, sleeping 300s
+[sweep 15:04:18] backoff: 2 heavy pipelines active, sleeping 300s

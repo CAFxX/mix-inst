@@ -1,0 +1,18 @@
+== avalanche proxy ==
+  offsets=(1,3): mean_av=0.0381 min_av=0.0308 (2.0s)
+  offsets=(1,7): mean_av=0.0381 min_av=0.0310 (1.5s)
+  offsets=(3,11): mean_av=0.0380 min_av=0.0309 (0.9s)
+  offsets=(1,33): mean_av=0.0351 min_av=0.0308 (1.4s)
+  offsets=(3,35): mean_av=0.0351 min_av=0.0309 (1.9s)
+== constant output columns over 2^18 sequential inputs ==
+  offsets=(1,3): const_cols(keys0..2)=[45, 43, 42] (vary=[19, 21, 22]) (9.5s)
+  offsets=(1,7): const_cols(keys0..2)=[45, 39, 36] (vary=[19, 25, 28]) (12.2s)
+  offsets=(3,11): const_cols(keys0..2)=[42, 34, 30] (vary=[22, 30, 34]) (9.2s)
+  offsets=(1,33): const_cols(keys0..2)=[46, 27, 27] (vary=[18, 37, 37]) (9.1s)
+  offsets=(3,35): const_cols(keys0..2)=[46, 24, 23] (vary=[18, 40, 41]) (9.3s)
+== Fisher triage ==
+FISHER(1,3): KILL lin=FLAG diff=FLAG nrej=20 (56.2s)
+FISHER(1,7): KILL lin=FLAG diff=FLAG nrej=20 (66.0s)
+FISHER(3,11): KILL lin=FLAG diff=FLAG nrej=20 (66.0s)
+FISHER(1,33): KILL lin=FLAG diff=FLAG nrej=20 (65.6s)
+FISHER(3,35): KILL lin=FLAG diff=FLAG nrej=20 (69.9s)

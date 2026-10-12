@@ -1,0 +1,1322 @@
+[
+ {
+  "a": 3,
+  "b": 5,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.37
+ },
+ {
+  "a": 3,
+  "b": 13,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.37
+ },
+ {
+  "a": 5,
+  "b": 3,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.37
+ },
+ {
+  "a": 5,
+  "b": 11,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.37
+ },
+ {
+  "a": 5,
+  "b": 29,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.37
+ },
+ {
+  "a": 5,
+  "b": 33,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.37
+ },
+ {
+  "a": 7,
+  "b": 13,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.37
+ },
+ {
+  "a": 9,
+  "b": 13,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.37
+ },
+ {
+  "a": 9,
+  "b": 29,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.43,
+  "av2": 4.37
+ },
+ {
+  "a": 11,
+  "b": 5,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.37
+ },
+ {
+  "a": 13,
+  "b": 3,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.37
+ },
+ {
+  "a": 13,
+  "b": 7,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.37
+ },
+ {
+  "a": 13,
+  "b": 9,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.37
+ },
+ {
+  "a": 13,
+  "b": 33,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.37
+ },
+ {
+  "a": 29,
+  "b": 5,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.37
+ },
+ {
+  "a": 29,
+  "b": 9,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.43,
+  "av2": 4.37
+ },
+ {
+  "a": 33,
+  "b": 5,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.37
+ },
+ {
+  "a": 33,
+  "b": 13,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.37
+ },
+ {
+  "a": 1,
+  "b": 5,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.36
+ },
+ {
+  "a": 1,
+  "b": 13,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.36
+ },
+ {
+  "a": 3,
+  "b": 33,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.36
+ },
+ {
+  "a": 5,
+  "b": 1,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.36
+ },
+ {
+  "a": 9,
+  "b": 33,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.36
+ },
+ {
+  "a": 11,
+  "b": 13,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.36
+ },
+ {
+  "a": 11,
+  "b": 17,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.36
+ },
+ {
+  "a": 13,
+  "b": 1,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.36
+ },
+ {
+  "a": 13,
+  "b": 11,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.36
+ },
+ {
+  "a": 13,
+  "b": 29,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.0,
+  "av1": 2.44,
+  "av2": 4.36
+ },
+ {
+  "a": 17,
+  "b": 11,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.36
+ },
+ {
+  "a": 17,
+  "b": 25,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.43,
+  "av2": 4.36
+ },
+ {
+  "a": 21,
+  "b": 33,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.36
+ },
+ {
+  "a": 25,
+  "b": 17,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.43,
+  "av2": 4.36
+ },
+ {
+  "a": 25,
+  "b": 29,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.43,
+  "av2": 4.36
+ },
+ {
+  "a": 25,
+  "b": 33,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.43,
+  "av2": 4.36
+ },
+ {
+  "a": 29,
+  "b": 13,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.0,
+  "av1": 2.44,
+  "av2": 4.36
+ },
+ {
+  "a": 29,
+  "b": 25,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.43,
+  "av2": 4.36
+ },
+ {
+  "a": 33,
+  "b": 3,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.36
+ },
+ {
+  "a": 33,
+  "b": 9,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.36
+ },
+ {
+  "a": 33,
+  "b": 21,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.36
+ },
+ {
+  "a": 33,
+  "b": 25,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.43,
+  "av2": 4.36
+ },
+ {
+  "a": 1,
+  "b": 25,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.35
+ },
+ {
+  "a": 3,
+  "b": 25,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.43,
+  "av2": 4.35
+ },
+ {
+  "a": 5,
+  "b": 13,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.35
+ },
+ {
+  "a": 5,
+  "b": 25,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.35
+ },
+ {
+  "a": 11,
+  "b": 29,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.35
+ },
+ {
+  "a": 13,
+  "b": 5,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.35
+ },
+ {
+  "a": 13,
+  "b": 21,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.35
+ },
+ {
+  "a": 17,
+  "b": 33,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.0,
+  "av1": 2.44,
+  "av2": 4.35
+ },
+ {
+  "a": 21,
+  "b": 13,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.35
+ },
+ {
+  "a": 25,
+  "b": 1,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.35
+ },
+ {
+  "a": 25,
+  "b": 3,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.43,
+  "av2": 4.35
+ },
+ {
+  "a": 25,
+  "b": 5,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.35
+ },
+ {
+  "a": 29,
+  "b": 11,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.35
+ },
+ {
+  "a": 33,
+  "b": 17,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.0,
+  "av1": 2.44,
+  "av2": 4.35
+ },
+ {
+  "a": 1,
+  "b": 7,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.43,
+  "av2": 4.34
+ },
+ {
+  "a": 1,
+  "b": 11,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.34
+ },
+ {
+  "a": 3,
+  "b": 11,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.34
+ },
+ {
+  "a": 5,
+  "b": 7,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.34
+ },
+ {
+  "a": 5,
+  "b": 9,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.34
+ },
+ {
+  "a": 5,
+  "b": 17,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.34
+ },
+ {
+  "a": 5,
+  "b": 21,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.0,
+  "av1": 2.44,
+  "av2": 4.34
+ },
+ {
+  "a": 7,
+  "b": 1,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.43,
+  "av2": 4.34
+ },
+ {
+  "a": 7,
+  "b": 5,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.34
+ },
+ {
+  "a": 7,
+  "b": 11,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.34
+ },
+ {
+  "a": 7,
+  "b": 17,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.43,
+  "av2": 4.34
+ },
+ {
+  "a": 9,
+  "b": 5,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.34
+ },
+ {
+  "a": 9,
+  "b": 11,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.43,
+  "av2": 4.34
+ },
+ {
+  "a": 9,
+  "b": 21,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.43,
+  "av2": 4.34
+ },
+ {
+  "a": 11,
+  "b": 1,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.34
+ },
+ {
+  "a": 11,
+  "b": 3,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.34
+ },
+ {
+  "a": 11,
+  "b": 7,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.34
+ },
+ {
+  "a": 11,
+  "b": 9,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.43,
+  "av2": 4.34
+ },
+ {
+  "a": 17,
+  "b": 5,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.34
+ },
+ {
+  "a": 17,
+  "b": 7,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.43,
+  "av2": 4.34
+ },
+ {
+  "a": 17,
+  "b": 21,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.43,
+  "av2": 4.34
+ },
+ {
+  "a": 17,
+  "b": 29,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.34
+ },
+ {
+  "a": 21,
+  "b": 5,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.0,
+  "av1": 2.44,
+  "av2": 4.34
+ },
+ {
+  "a": 21,
+  "b": 9,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.43,
+  "av2": 4.34
+ },
+ {
+  "a": 21,
+  "b": 17,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.43,
+  "av2": 4.34
+ },
+ {
+  "a": 21,
+  "b": 25,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.34
+ },
+ {
+  "a": 21,
+  "b": 29,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.34
+ },
+ {
+  "a": 25,
+  "b": 21,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.34
+ },
+ {
+  "a": 29,
+  "b": 17,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.34
+ },
+ {
+  "a": 29,
+  "b": 21,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.34
+ },
+ {
+  "a": 1,
+  "b": 17,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.0,
+  "av1": 2.44,
+  "av2": 4.33
+ },
+ {
+  "a": 1,
+  "b": 29,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.43,
+  "av2": 4.33
+ },
+ {
+  "a": 3,
+  "b": 17,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.33
+ },
+ {
+  "a": 3,
+  "b": 21,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.33
+ },
+ {
+  "a": 7,
+  "b": 29,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.43,
+  "av2": 4.33
+ },
+ {
+  "a": 9,
+  "b": 17,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.43,
+  "av2": 4.33
+ },
+ {
+  "a": 9,
+  "b": 25,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.0,
+  "av1": 2.43,
+  "av2": 4.33
+ },
+ {
+  "a": 17,
+  "b": 1,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.0,
+  "av1": 2.44,
+  "av2": 4.33
+ },
+ {
+  "a": 17,
+  "b": 3,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.33
+ },
+ {
+  "a": 17,
+  "b": 9,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.43,
+  "av2": 4.33
+ },
+ {
+  "a": 21,
+  "b": 3,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.44,
+  "av2": 4.33
+ },
+ {
+  "a": 25,
+  "b": 9,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.0,
+  "av1": 2.43,
+  "av2": 4.33
+ },
+ {
+  "a": 29,
+  "b": 1,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.43,
+  "av2": 4.33
+ },
+ {
+  "a": 29,
+  "b": 7,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.43,
+  "av2": 4.33
+ },
+ {
+  "a": 1,
+  "b": 9,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.43,
+  "av2": 4.32
+ },
+ {
+  "a": 3,
+  "b": 7,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.43,
+  "av2": 4.32
+ },
+ {
+  "a": 7,
+  "b": 3,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.43,
+  "av2": 4.32
+ },
+ {
+  "a": 9,
+  "b": 1,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.43,
+  "av2": 4.32
+ },
+ {
+  "a": 7,
+  "b": 9,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.42,
+  "av2": 4.31
+ },
+ {
+  "a": 7,
+  "b": 33,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.43,
+  "av2": 4.31
+ },
+ {
+  "a": 9,
+  "b": 7,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.42,
+  "av2": 4.31
+ },
+ {
+  "a": 33,
+  "b": 7,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.5,
+  "av1": 2.43,
+  "av2": 4.31
+ },
+ {
+  "a": 13,
+  "b": 17,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.0,
+  "av1": 2.44,
+  "av2": 4.22
+ },
+ {
+  "a": 17,
+  "b": 13,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.0,
+  "av1": 2.44,
+  "av2": 4.22
+ },
+ {
+  "a": 13,
+  "b": 25,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.0,
+  "av1": 2.44,
+  "av2": 4.2
+ },
+ {
+  "a": 25,
+  "b": 13,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.0,
+  "av1": 2.44,
+  "av2": 4.2
+ },
+ {
+  "a": 1,
+  "b": 21,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.0,
+  "av1": 2.44,
+  "av2": 4.19
+ },
+ {
+  "a": 21,
+  "b": 1,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.0,
+  "av1": 2.44,
+  "av2": 4.19
+ },
+ {
+  "a": 29,
+  "b": 33,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.0,
+  "av1": 2.44,
+  "av2": 4.19
+ },
+ {
+  "a": 33,
+  "b": 29,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.0,
+  "av1": 2.44,
+  "av2": 4.19
+ },
+ {
+  "a": 3,
+  "b": 29,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.0,
+  "av1": 2.44,
+  "av2": 4.15
+ },
+ {
+  "a": 29,
+  "b": 3,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.0,
+  "av1": 2.44,
+  "av2": 4.15
+ },
+ {
+  "a": 11,
+  "b": 21,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.0,
+  "av1": 2.43,
+  "av2": 4.14
+ },
+ {
+  "a": 21,
+  "b": 11,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.0,
+  "av1": 2.43,
+  "av2": 4.14
+ },
+ {
+  "a": 7,
+  "b": 25,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.0,
+  "av1": 2.43,
+  "av2": 4.13
+ },
+ {
+  "a": 25,
+  "b": 7,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 10,
+  "cone2_mean": 12.0,
+  "av1": 2.43,
+  "av2": 4.13
+ },
+ {
+  "a": 1,
+  "b": 3,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 9,
+  "cone2_mean": 10.5,
+  "av1": 2.44,
+  "av2": 4.11
+ },
+ {
+  "a": 3,
+  "b": 1,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 9,
+  "cone2_mean": 10.5,
+  "av1": 2.44,
+  "av2": 4.11
+ },
+ {
+  "a": 11,
+  "b": 25,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 9,
+  "cone2_mean": 10.5,
+  "av1": 2.43,
+  "av2": 4.11
+ },
+ {
+  "a": 25,
+  "b": 11,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 9,
+  "cone2_mean": 10.5,
+  "av1": 2.43,
+  "av2": 4.11
+ },
+ {
+  "a": 3,
+  "b": 9,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 9,
+  "cone2_mean": 10.5,
+  "av1": 2.43,
+  "av2": 4.1
+ },
+ {
+  "a": 7,
+  "b": 21,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 9,
+  "cone2_mean": 10.5,
+  "av1": 2.44,
+  "av2": 4.1
+ },
+ {
+  "a": 9,
+  "b": 3,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 9,
+  "cone2_mean": 10.5,
+  "av1": 2.43,
+  "av2": 4.1
+ },
+ {
+  "a": 11,
+  "b": 33,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 9,
+  "cone2_mean": 10.5,
+  "av1": 2.44,
+  "av2": 4.1
+ },
+ {
+  "a": 21,
+  "b": 7,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 9,
+  "cone2_mean": 10.5,
+  "av1": 2.44,
+  "av2": 4.1
+ },
+ {
+  "a": 33,
+  "b": 11,
+  "cone1_min": 3,
+  "cone1_mean": 4.5,
+  "cone2_min": 9,
+  "cone2_mean": 10.5,
+  "av1": 2.44,
+  "av2": 4.1
+ },
+ {
+  "a": 1,
+  "b": 33,
+  "cone1_min": 3,
+  "cone1_mean": 4.0,
+  "cone2_min": 7,
+  "cone2_mean": 8.0,
+  "av1": 2.25,
+  "av2": 3.13
+ },
+ {
+  "a": 33,
+  "b": 1,
+  "cone1_min": 3,
+  "cone1_mean": 4.0,
+  "cone2_min": 7,
+  "cone2_mean": 8.0,
+  "av1": 2.25,
+  "av2": 3.13
+ }
+]

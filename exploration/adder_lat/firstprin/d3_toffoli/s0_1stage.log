@@ -1,0 +1,5 @@
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT toffoli1: cells=64 area=192 crit=3.0
+RESULT name=toffoli1 cells=64 area=192 crit=3.0 delay_ratio=0.029 area_ratio=0.005 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+exit=0

@@ -1,0 +1,9 @@
+[2026-10-12T13:08:46Z] S0 runner started (backoff-gated)
+[2026-10-12T13:08:46Z] backoff active (poll 1), sleeping 120s
+[2026-10-12T13:10:46Z] backoff clear after 2 polls
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT boolfunc_c: cells=660 area=1632 crit=9.2
+RESULT name=boolfunc_c cells=660 area=1632 crit=9.2 delay_ratio=0.089 area_ratio=0.046 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+[2026-10-12T13:17:26Z] synth done rc=0 wall_s=400
+RESULT name=boolfunc_c cells=660 area=1632 crit=9.2 delay_ratio=0.089 area_ratio=0.046 ref_crit=103.5 ref_area=35323

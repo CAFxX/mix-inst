@@ -1,1 +1,21 @@
-=== ESCALATE hyb29_mu5_031 2026-10-12T12:10:14Z ===
+=== ESCALATE hyb29_mu5_032 2026-10-12T14:05:31Z ===
+[S1 hyb29_mu5_032] verdict: FLAG
+=== S1 [hyb29_mu5_032] rc=2 wall=436s
+BATTERY-FAIL stage=S1-screen [hyb29_mu5_032] (see /home/hatch/workspace/mix/exploration/fast_battery/results/hyb29_mu5_032/battery.log)
+=== hyb29_mu5_032 battery rc=2 2026-10-12T14:13:23Z ===
+=== ESCALATE hyb29_mu5_033 2026-10-12T14:13:25Z ===
+[S1 hyb29_mu5_033] verdict: FLAG
+=== S1 [hyb29_mu5_033] rc=2 wall=607s
+BATTERY-FAIL stage=S1-screen [hyb29_mu5_033] (see /home/hatch/workspace/mix/exploration/fast_battery/results/hyb29_mu5_033/battery.log)
+=== hyb29_mu5_033 battery rc=2 2026-10-12T14:24:20Z ===
+=== ESCALATE hyb29_mu5_034 2026-10-12T14:24:26Z ===
+[S1 hyb29_mu5_034] verdict: FLAG
+=== S1 [hyb29_mu5_034] rc=2 wall=537s
+BATTERY-FAIL stage=S1-screen [hyb29_mu5_034] (see /home/hatch/workspace/mix/exploration/fast_battery/results/hyb29_mu5_034/battery.log)
+=== hyb29_mu5_034 battery rc=2 2026-10-12T14:36:22Z ===
+=== ESCALATE hyb29_mu5_035 2026-10-12T14:36:24Z ===
+[S1 hyb29_mu5_035] verdict: FLAG
+=== S1 [hyb29_mu5_035] rc=2 wall=1347s
+BATTERY-FAIL stage=S1-screen [hyb29_mu5_035] (see /home/hatch/workspace/mix/exploration/fast_battery/results/hyb29_mu5_035/battery.log)
+=== hyb29_mu5_035 battery rc=2 2026-10-12T14:59:32Z ===
+ESCALATION QUEUE COMPLETE 2026-10-12T14:59:32Z

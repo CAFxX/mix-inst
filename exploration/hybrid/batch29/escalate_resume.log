@@ -158,3 +158,6 @@ BATTERY-FAIL stage=S3-practrand [hyb29_mu5_030] (see /home/hatch/workspace/mix/e
 === ESCALATE hyb29_mu5_031 2026-10-12T11:48:02Z ===
 agentwork-launch: tag=track5/batch29-escalate schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
 === ESCALATE hyb29_mu5_031 2026-10-12T12:10:14Z ===
+=== RELAUNCH 2026-10-12T13:20:15Z (post 12:37Z death, backoff clear) ===
+agentwork-launch: tag=track5/batch29-escalate schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+=== ESCALATE hyb29_mu5_031 2026-10-12T13:20:16Z ===

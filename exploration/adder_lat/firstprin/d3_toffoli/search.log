@@ -1,0 +1,17 @@
+pairs: 992
+2-stage same-pair done (458s). top 15:
+  (a,b)=(1,7) total_z=25328303.1 worst_z=2960011.2
+  (a,b)=(7,1) total_z=25328303.1 worst_z=2960011.2
+  (a,b)=(1,9) total_z=25606893.5 worst_z=2960011.2
+  (a,b)=(9,1) total_z=25606893.5 worst_z=2960011.2
+  (a,b)=(1,5) total_z=25606893.5 worst_z=2960011.2
+  (a,b)=(5,1) total_z=25606893.5 worst_z=2960011.2
+  (a,b)=(5,63) total_z=26442664.5 worst_z=2960011.2
+  (a,b)=(63,5) total_z=26442664.5 worst_z=2960011.2
+  (a,b)=(7,63) total_z=26628391.4 worst_z=2960011.2
+  (a,b)=(63,7) total_z=26628391.4 worst_z=2960011.2
+  (a,b)=(3,7) total_z=26906981.8 worst_z=2960011.2
+  (a,b)=(7,3) total_z=26906981.8 worst_z=2960011.2
+  (a,b)=(3,5) total_z=26999845.3 worst_z=2960011.2
+  (a,b)=(5,3) total_z=26999845.3 worst_z=2960011.2
+  (a,b)=(3,9) total_z=28021343.2 worst_z=2960011.2

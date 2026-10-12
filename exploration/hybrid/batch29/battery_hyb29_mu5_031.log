@@ -1,14 +1,41 @@
-=== S0a [hyb29_mu5_031] started 2026-10-12T12:10:56Z
+=== S0a [hyb29_mu5_031] started 2026-10-12T13:20:52Z
 --- S0a tail:
 XCHECK hyb29_mu5_031: PASS 10000/10000 C==Python
-=== S0a [hyb29_mu5_031] rc=0 wall=35s
-=== S1 [hyb29_mu5_031] started 2026-10-12T12:11:32Z
---- S1 tail:
-  [DIFF] key=0x123456789abcdef worst|z|=2.8 fisher_logp=-4.48 bonf_logp=-2.54
-  [DIFF] key=0xf0b52a9e7d8ba2b5 worst|z|=2.0 fisher_logp=-0.37 bonf_logp=-0.27
-  [DIFF] key=0x92988f142674743 worst|z|=2.0 fisher_logp=-0.96 bonf_logp=-0.28
-  LIN: PASS (rej=0)  DIFF: PASS (rej=0)
-[S1 hyb29_mu5_031] LIN/DIFF 329s: LIN PASS DIFF PASS; marginal 1423s: PB rej=0 RD rej=0
-[S1 hyb29_mu5_031] verdict: CAL_PASS
-=== S1 [hyb29_mu5_031] rc=0 wall=1460s
-=== S2 [hyb29_mu5_031] started 2026-10-12T12:35:54Z
+=== S0a [hyb29_mu5_031] rc=0 wall=44s
+=== S1 [hyb29_mu5_031] started 2026-10-12T13:21:36Z
+--- S2 tail:
+  0xe000000000000000      2.2      256.8            0
+  0x000000000000000f      2.6      279.9            0
+  0x00000000f0000000      3.2      250.9            0
+  0x0000000f00000000      2.9      309.9            0
+  0xf000000000000000      2.6      267.5            0
+PASS max_repeats=0 max|z|=253.6 (all 115 deltas)
+=== S2 [hyb29_mu5_031] rc=0 wall=2338s
+=== S3 [hyb29_mu5_031] started 2026-10-12T13:22:28Z
+--- S3 tail:
+[S3 hyb29_mu5_031] 64MB: no FAIL (rng_test rc=0)
+[S3 hyb29_mu5_031] stage 256MB (key=0x123456789abcdef0 stride=1) ...
+[S3 hyb29_mu5_031] 256MB: no FAIL (rng_test rc=0)
+[S3 hyb29_mu5_031] stage 1GB (key=0x123456789abcdef0 stride=1) ...
+[S3 hyb29_mu5_031] 1GB: no FAIL (rng_test rc=0)
+[S3 hyb29_mu5_031] verdict: PASS (all 4 stages, no FAIL)
+=== S3 [hyb29_mu5_031] rc=0 wall=1167s
+=== S3b [hyb29_mu5_031] started 2026-10-12T13:41:59Z
+--- S3b tail:
+[S3 hyb29_mu5_031_strided] 64MB: no FAIL (rng_test rc=0)
+[S3 hyb29_mu5_031_strided] stage 256MB (key=0x0 stride=0x9E3779B97F4A7C15) ...
+[S3 hyb29_mu5_031_strided] 256MB: no FAIL (rng_test rc=0)
+[S3 hyb29_mu5_031_strided] stage 1GB (key=0x0 stride=0x9E3779B97F4A7C15) ...
+[S3 hyb29_mu5_031_strided] 1GB: no FAIL (rng_test rc=0)
+[S3 hyb29_mu5_031_strided] verdict: PASS (all 4 stages, no FAIL)
+=== S3b [hyb29_mu5_031] rc=0 wall=1241s
+=== S4 [hyb29_mu5_031] started 2026-10-12T14:02:41Z
+--- S4 tail:
+ Total CPU time:   00:00:08.61
+
+ All tests were passed
+
+
+
+=== S4 [hyb29_mu5_031] rc=0 wall=168s
+BATTERY-PASS [hyb29_mu5_031] all stages survived (S5 P&R+review is a manual gate)

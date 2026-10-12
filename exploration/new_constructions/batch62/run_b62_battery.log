@@ -14,3 +14,10 @@ BATTERY-FAIL stage=S1-screen [t6_b62_22] (see /home/hatch/workspace/mix/explorat
 [2026-10-12T12:00:35+00:00] BATTERY t6_b62_33 (start_stage=1)
 [2026-10-12T12:09:43+00:00] backoff CLEAR -- starting batch-62 staged battery for: t6_b62_33 t6_b62_17 t6_b62_26 t6_b62_9 t6_b62_3 t6_b62_6 t6_b62_21 t6_b62_36
 [2026-10-12T12:09:44+00:00] BATTERY t6_b62_33 (start_stage=1)
+[2026-10-12T12:49:35+00:00] RESUME t6_b62_33 from S2 (S0a+S1 CAL_PASS verified; launcher died mid-S2 ~12:37Z)
+[2026-10-12T14:13:42+00:00] BATTERY t6_b62_33 rc=0 (resumed from S2)
+[2026-10-12T14:13:48+00:00] backoff CLEAR -- starting batch-62 staged battery for: t6_b62_17 t6_b62_26 t6_b62_9 t6_b62_3 t6_b62_6 t6_b62_21 t6_b62_36
+[2026-10-12T14:13:49+00:00] BATTERY t6_b62_17 (start_stage=1)
+[2026-10-12T14:39:16+00:00] BATTERY t6_b62_17 rc=2
+BATTERY-FAIL stage=S1-screen [t6_b62_17] (see /home/hatch/workspace/mix/exploration/fast_battery/results/t6_b62_17/battery.log)
+[2026-10-12T14:39:16+00:00] BATTERY t6_b62_26 (start_stage=1)

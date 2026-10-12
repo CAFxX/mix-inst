@@ -12,3 +12,41 @@ XCHECK t6_b62_33: PASS 10000/10000 C==Python
 [S1 t6_b62_33] verdict: CAL_PASS
 === S1 [t6_b62_33] rc=0 wall=1527s
 === S2 [t6_b62_33] started 2026-10-12T12:36:18Z
+=== RESUME t6_b62_33 from S2 2026-10-12T12:49:35Z (launcher died mid-S2) ===
+=== S2 [t6_b62_33] started 2026-10-12T12:50:34Z
+--- S2 tail:
+  0xe000000000000000      2.5      230.0            0
+  0x000000000000000f      3.4      285.1            0
+  0x00000000f0000000      3.2      233.8            0
+  0x0000000f00000000      3.0      266.6            0
+  0xf000000000000000      2.4      240.5            0
+PASS max_repeats=0 max|z|=120.6 (all 115 deltas)
+=== S2 [t6_b62_33] rc=0 wall=2500s
+=== S3 [t6_b62_33] started 2026-10-12T13:32:16Z
+--- S3 tail:
+[S3 t6_b62_33] 64MB: no FAIL (rng_test rc=0)
+[S3 t6_b62_33] stage 256MB (key=0x123456789abcdef0 stride=1) ...
+[S3 t6_b62_33] 256MB: no FAIL (rng_test rc=0)
+[S3 t6_b62_33] stage 1GB (key=0x123456789abcdef0 stride=1) ...
+[S3 t6_b62_33] 1GB: no FAIL (rng_test rc=0)
+[S3 t6_b62_33] verdict: PASS (all 4 stages, no FAIL)
+=== S3 [t6_b62_33] rc=0 wall=1185s
+=== S3b [t6_b62_33] started 2026-10-12T13:52:02Z
+--- S3b tail:
+[S3 t6_b62_33_strided] 64MB: no FAIL (rng_test rc=0)
+[S3 t6_b62_33_strided] stage 256MB (key=0x0 stride=0x9E3779B97F4A7C15) ...
+[S3 t6_b62_33_strided] 256MB: no FAIL (rng_test rc=0)
+[S3 t6_b62_33_strided] stage 1GB (key=0x0 stride=0x9E3779B97F4A7C15) ...
+[S3 t6_b62_33_strided] 1GB: no FAIL (rng_test rc=0)
+[S3 t6_b62_33_strided] verdict: PASS (all 4 stages, no FAIL)
+=== S3b [t6_b62_33] rc=0 wall=1135s
+=== S4 [t6_b62_33] started 2026-10-12T14:10:58Z
+--- S4 tail:
+ Total CPU time:   00:00:08.57
+
+ All tests were passed
+
+
+
+=== S4 [t6_b62_33] rc=0 wall=164s
+BATTERY-PASS [t6_b62_33] all stages survived (S5 P&R+review is a manual gate)

@@ -1,0 +1,15 @@
+[supervise 2026-10-06T19:43:09Z] supervisor started; live sweep pid(s): 25172 ; log line0=2626
+heartbeat mix-tweak-sweep
+[supervise 2026-10-06T19:58:11Z] heartbeat sent (alive: 25172 )
+[supervise 2026-10-06T20:28:14Z] traceback death detected (consecutive count 1); monitor_sweep.sh will not auto-relaunch (crash-loop guard)
+[supervise 2026-10-06T20:43:15Z] traceback death detected (consecutive count 2); monitor_sweep.sh will not auto-relaunch (crash-loop guard)
+[supervise 2026-10-06T20:43:15Z] traceback confirmed twice; marking lost: 
+lost mix-tweak-sweep
+[supervise 2026-10-06T20:43:16Z] marked lost; supervisor exiting
+[supervise 2026-10-07T08:16:40Z] supervisor started; live sweep pid(s): 57891 ; log line0=2669
+[supervise 2026-10-07T08:31:42Z] sweep dead, no traceback in post-install log (env/reboot class); monitor_sweep.sh owns bounded relaunch; observing
+[supervise 2026-10-07T08:46:43Z] sweep dead, no traceback in post-install log (env/reboot class); monitor_sweep.sh owns bounded relaunch; observing
+[supervise 2026-10-07T09:01:43Z] sweep dead, no traceback in post-install log (env/reboot class); monitor_sweep.sh owns bounded relaunch; observing
+heartbeat mix-tweak-sweep
+[supervise 2026-10-07T09:16:44Z] heartbeat sent (alive: 201659 )
+[supervise 2026-10-09T11:02:47Z] supervisor started; live sweep pid(s): 3401 ; log line0=3404

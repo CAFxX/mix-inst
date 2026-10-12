@@ -1,0 +1,565 @@
+[sweep 16:12:19] 262 specs; 0 already probed
+[sweep 16:12:19] PROBE rtw_pb2_rev_in [Z2b] prio=216 boosted_by=[]
+[sweep 16:12:32] backoff: 4 heavy pipelines active, sleeping 300s
+[sweep 16:13:46] 262 specs; 0 already probed
+[sweep 16:13:46] PROBE rtw_pb2_rev_in [Z2b] prio=216 boosted_by=[]
+[sweep 16:13:59]   S0 rtw_pb2_rev_in: 37.5u / 4411 / 12443
+[sweep 16:13:59] PROBE rtw_pb2_rev_out [Z2b] prio=217 boosted_by=[]
+[sweep 16:14:16]   S0 rtw_pb2_rev_out: 38.0u / 4119 / 11819
+[sweep 16:14:16] PROBE rtw_pb2_rev_inout [Z2b] prio=218 boosted_by=[]
+[sweep 16:14:28] backoff: 3 heavy pipelines active, sleeping 300s
+[sweep 16:19:28] backoff: 3 heavy pipelines active, sleeping 300s
+[sweep 16:24:28] backoff: 2 heavy pipelines active, sleeping 300s
+[sweep 16:29:28] backoff: 2 heavy pipelines active, sleeping 300s
+[sweep 16:34:28] backoff: 2 heavy pipelines active, sleeping 300s
+[sweep 16:35:28] 262 specs; 10 already probed
+[sweep 16:35:29] PROBE rtw_pb2_rev_inout [Z2b] prio=218 boosted_by=[]
+[sweep 16:35:42] backoff: 2 heavy pipelines active, sleeping 300s
+[sweep 16:40:42] backoff: 2 heavy pipelines active, sleeping 300s
+[sweep 16:45:42] backoff: 2 heavy pipelines active, sleeping 300s
+[sweep 16:50:42] backoff: 4 heavy pipelines active, sleeping 300s
+[sweep 16:55:42] backoff: 3 heavy pipelines active, sleeping 300s
+[sweep 17:00:42] backoff: 4 heavy pipelines active, sleeping 300s
+[sweep 17:05:51]   S0 rtw_pb2_rev_inout: 36.9u / 4284 / 12210
+[sweep 17:17:43]   S1 rtw_pb2_rev_inout: CAL_PASS lin_rej=0 diff_rej=0
+[sweep 17:49:23] 262 specs; 11 already probed
+[sweep 17:49:23] PROBE rtw_pb2_byteswap_in [Z2b] prio=219 boosted_by=[]
+[sweep 17:49:31] backoff: 3 heavy pipelines active, sleeping 300s
+[sweep 17:51:10] 262 specs; 11 already probed
+[sweep 17:51:10] PROBE rtw_pb2_rev_inout [Z2b] prio=218 boosted_by=[]
+[sweep 17:51:25] backoff: 9 heavy pipelines active, sleeping 300s
+[sweep 17:56:25] backoff: 6 heavy pipelines active, sleeping 300s
+[sweep 18:01:26] backoff: 4 heavy pipelines active, sleeping 300s
+[sweep 18:06:26] backoff: 4 heavy pipelines active, sleeping 300s
+[sweep 18:11:26] backoff: 5 heavy pipelines active, sleeping 300s
+[sweep 18:16:26] backoff: 2 heavy pipelines active, sleeping 300s
+[sweep 18:21:26] backoff: 2 heavy pipelines active, sleeping 300s
+[sweep 18:26:26] backoff: 4 heavy pipelines active, sleeping 300s
+[sweep 18:31:26] backoff: 4 heavy pipelines active, sleeping 300s
+[sweep 18:36:26] backoff: 7 heavy pipelines active, sleeping 300s
+[sweep 18:41:27] backoff: 7 heavy pipelines active, sleeping 300s
+[sweep 18:46:27] backoff: 5 heavy pipelines active, sleeping 300s
+[sweep 18:51:38]   S0 rtw_pb2_rev_inout: 36.9u / 4284 / 12210
+[sweep 19:00:40]   S1 rtw_pb2_rev_inout: CAL_PASS lin_rej=0 diff_rej=0
+[sweep 19:00:40] backoff: 3 heavy pipelines active, sleeping 300s
+[sweep 19:34:18]   S2 rtw_pb2_rev_inout: repeats_max=0 zmax=12.4 spikes=0
+[sweep 19:34:18]   PROMOTE rtw_pb2_rev_inout -> full battery
+[sweep 21:14:49] 262 specs; 11 already probed
+[sweep 21:14:49] PROBE rtw_pb2_rev_inout [Z2b] prio=218 boosted_by=[]
+[sweep 21:14:57]   S0 rtw_pb2_rev_inout: 36.9u / 4284 / 12210
+[sweep 21:17:49]   S1 rtw_pb2_rev_inout: CAL_PASS lin_rej=0 diff_rej=0
+[sweep 21:30:40]   S2 rtw_pb2_rev_inout: repeats_max=0 zmax=12.4 spikes=0
+[sweep 21:30:40]   PROMOTE-SKIP rtw_pb2_rev_inout: battery already done
+[sweep 21:30:40] PROBE rtw_pb2_byteswap_in [Z2b] prio=219 boosted_by=[]
+[sweep 21:30:47]   S0 rtw_pb2_byteswap_in: 37.4u / 4156 / 11907
+[sweep 21:30:47] PROBE rtw_pb2_byteswap_out [Z2b] prio=220 boosted_by=[]
+[sweep 21:30:51]   S0 rtw_pb2_byteswap_out: 38.3u / 3777 / 10811
+[sweep 21:30:51] PROBE rtw_pb2_byteswap_inout [Z2b] prio=221 boosted_by=[]
+[sweep 21:30:57]   S0 rtw_pb2_byteswap_inout: 37.8u / 4033 / 11614
+[sweep 21:30:57] PROBE rtw_pb2_nibperm_in [Z2b] prio=222 boosted_by=[]
+[sweep 21:31:01]   S0 rtw_pb2_nibperm_in: 37.9u / 4202 / 12063
+[sweep 21:31:01] PROBE rtw_pb2_nibperm_out [Z2b] prio=223 boosted_by=[]
+[sweep 21:31:05]   S0 rtw_pb2_nibperm_out: 38.0u / 4076 / 11557
+[sweep 21:31:05] PROBE rtw_pb2_nibperm_inout [Z2b] prio=224 boosted_by=[]
+[sweep 21:31:12]   S0 rtw_pb2_nibperm_inout: 37.6u / 4213 / 11978
+[sweep 21:31:12] PROBE rtw_fm01 [N3] prio=10107 boosted_by=[]
+[sweep 21:31:17]   S0 rtw_fm01: 39.6u / 4859 / 13778
+[sweep 21:31:17] PROBE rtw_fm01_31 [N3] prio=10108 boosted_by=[]
+[sweep 21:31:20]   S0 rtw_fm01_31: 39.5u / 4800 / 13628
+[sweep 21:31:20] PROBE rtw_fm02 [N3] prio=10109 boosted_by=[]
+[sweep 21:31:24]   S0 rtw_fm02: 39.3u / 4810 / 13610
+[sweep 21:32:53]   S1 rtw_fm02: CAL_PASS lin_rej=0 diff_rej=0
+[sweep 21:39:15]   S2 rtw_fm02: repeats_max=0 zmax=11.2 spikes=0
+[sweep 21:39:15] PROBE rtw_fm02_31 [N3] prio=10110 boosted_by=[]
+[sweep 21:39:21]   S0 rtw_fm02_31: 39.7u / 4822 / 13598
+[sweep 21:39:21] PROBE rtw_fm03 [N3] prio=10111 boosted_by=[]
+[sweep 21:39:25]   S0 rtw_fm03: 39.6u / 4936 / 14034
+[sweep 21:39:25] PROBE rtw_fm03_31 [N3] prio=10112 boosted_by=[]
+[sweep 21:39:31]   S0 rtw_fm03_31: 39.6u / 4766 / 13527
+[sweep 21:39:31] PROBE rtw_fm04 [N3] prio=10113 boosted_by=[]
+[sweep 21:39:44] 262 specs; 23 already probed
+[sweep 21:39:44] PROBE rtw_pb2_rev_inout [Z2b] prio=218 boosted_by=[]
+[sweep 21:39:50]   S0 rtw_pb2_rev_inout: 36.9u / 4284 / 12210
+[sweep 21:43:19]   S1 rtw_pb2_rev_inout: CAL_PASS lin_rej=0 diff_rej=0
+[sweep 21:58:46]   S2 rtw_pb2_rev_inout: repeats_max=0 zmax=12.4 spikes=0
+[sweep 21:58:46]   PROMOTE rtw_pb2_rev_inout -> full battery
+[sweep 22:32:09]   BATTERY rtw_pb2_rev_inout: rc=0 s3=True s4=True q1={'sac_z5': 0, 'bic': 0.14319981789979425}
+[sweep 22:32:09]   *** WINNER rtw_pb2_rev_inout ***
+[sweep 22:32:09] PROBE rtw_fm02 [N3] prio=10109 boosted_by=[]
+[sweep 22:32:16]   S0 rtw_fm02: 39.3u / 4810 / 13610
+[sweep 22:34:16]   S1 rtw_fm02: CAL_PASS lin_rej=0 diff_rej=0
+[sweep 22:38:55] 1182 specs; 23 already probed
+[sweep 22:38:55] PROBE rtw_n7a_0102 [N7] prio=10262 boosted_by=[]
+[sweep 22:39:00]   S0 rtw_n7a_0102: 39.0u / 4168 / 12266
+[sweep 22:39:00] PROBE rtw_n7a_0103 [N7] prio=10263 boosted_by=[]
+[sweep 22:39:04]   S0 rtw_n7a_0103: 39.6u / 4442 / 12677
+[sweep 22:39:04] PROBE rtw_n7a_0104 [N7] prio=10264 boosted_by=[]
+[sweep 22:39:08]   S0 rtw_n7a_0104: 40.3u / 4373 / 12706
+[sweep 22:39:08] PROBE rtw_n7a_0105 [N7] prio=10265 boosted_by=[]
+[sweep 22:39:11]   S0 rtw_n7a_0105: 40.7u / 4380 / 12534
+[sweep 22:39:11] PROBE rtw_n7a_0106 [N7] prio=10266 boosted_by=[]
+[sweep 22:39:15]   S0 rtw_n7a_0106: 41.3u / 4144 / 11990
+[sweep 22:39:15] PROBE rtw_n7a_0107 [N7] prio=10267 boosted_by=[]
+[sweep 22:39:21]   S0 rtw_n7a_0107: 40.7u / 4550 / 13151
+[sweep 22:39:21] PROBE rtw_n7a_0108 [N7] prio=10268 boosted_by=[]
+[sweep 22:39:26]   S0 rtw_n7a_0108: 41.1u / 4402 / 12650
+[sweep 22:39:26] PROBE rtw_n7a_0109 [N7] prio=10269 boosted_by=[]
+[sweep 22:39:30]   S0 rtw_n7a_0109: 40.9u / 4628 / 13230
+[sweep 22:39:30] PROBE rtw_n7a_0110 [N7] prio=10270 boosted_by=[]
+[sweep 22:39:34]   S0 rtw_n7a_0110: 40.8u / 4434 / 12916
+[sweep 22:39:34] PROBE rtw_n7a_0111 [N7] prio=10271 boosted_by=[]
+[sweep 22:39:40]   S0 rtw_n7a_0111: 40.0u / 4564 / 13100
+[sweep 22:39:40] PROBE rtw_n7a_0112 [N7] prio=10272 boosted_by=[]
+[sweep 22:39:44]   S0 rtw_n7a_0112: 41.4u / 4526 / 12970
+[sweep 22:39:44] PROBE rtw_n7a_0113 [N7] prio=10273 boosted_by=[]
+[sweep 22:39:49]   S0 rtw_n7a_0113: 40.6u / 4299 / 12344
+[sweep 22:39:49] PROBE rtw_n7a_0114 [N7] prio=10274 boosted_by=[]
+[sweep 22:39:55]   S0 rtw_n7a_0114: 40.8u / 4403 / 12716
+[sweep 22:39:55] PROBE rtw_n7a_0115 [N7] prio=10275 boosted_by=[]
+[sweep 22:39:59]   S0 rtw_n7a_0115: 40.4u / 4604 / 13243
+[sweep 22:39:59] PROBE rtw_n7a_0116 [N7] prio=10276 boosted_by=[]
+[sweep 22:40:05]   S0 rtw_n7a_0116: 40.5u / 4271 / 12380
+[sweep 22:40:05] PROBE rtw_n7a_0117 [N7] prio=10277 boosted_by=[]
+[sweep 22:40:11]   S0 rtw_n7a_0117: 39.8u / 4551 / 13116
+[sweep 22:40:11] PROBE rtw_n7a_0118 [N7] prio=10278 boosted_by=[]
+[sweep 22:40:17]   S0 rtw_n7a_0118: 41.1u / 4701 / 13330
+[sweep 22:40:17] PROBE rtw_n7a_0119 [N7] prio=10279 boosted_by=[]
+[sweep 22:40:24]   S0 rtw_n7a_0119: 40.8u / 4532 / 12975
+[sweep 22:40:24] PROBE rtw_n7a_0120 [N7] prio=10280 boosted_by=[]
+[sweep 22:40:30]   S0 rtw_n7a_0120: 40.9u / 4346 / 12524
+[sweep 22:40:30] PROBE rtw_n7a_0121 [N7] prio=10281 boosted_by=[]
+[sweep 22:40:34]   S0 rtw_n7a_0121: 41.4u / 4305 / 12499
+[sweep 22:40:34] PROBE rtw_n7a_0122 [N7] prio=10282 boosted_by=[]
+[sweep 22:40:38]   S0 rtw_n7a_0122: 40.8u / 4431 / 12727
+[sweep 22:40:38] PROBE rtw_n7a_0123 [N7] prio=10283 boosted_by=[]
+[sweep 22:40:42]   S0 rtw_n7a_0123: 41.2u / 4529 / 12929
+[sweep 22:40:42] PROBE rtw_n7a_0124 [N7] prio=10284 boosted_by=[]
+[sweep 22:40:47]   S0 rtw_n7a_0124: 41.4u / 4333 / 12527
+[sweep 22:40:47] PROBE rtw_n7a_0125 [N7] prio=10285 boosted_by=[]
+[sweep 22:40:51]   S0 rtw_n7a_0125: 40.9u / 4492 / 12917
+[sweep 22:40:51] PROBE rtw_n7a_0126 [N7] prio=10286 boosted_by=[]
+[sweep 22:40:55]   S0 rtw_n7a_0126: 40.7u / 4522 / 12851
+[sweep 22:40:55] PROBE rtw_n7a_0127 [N7] prio=10287 boosted_by=[]
+[sweep 22:40:59]   S0 rtw_n7a_0127: 40.9u / 4347 / 12537
+[sweep 22:40:59] PROBE rtw_n7a_0128 [N7] prio=10288 boosted_by=[]
+[sweep 22:41:04]   S0 rtw_n7a_0128: 41.0u / 4308 / 12556
+[sweep 22:41:04] PROBE rtw_n7a_0129 [N7] prio=10289 boosted_by=[]
+[sweep 22:41:08]   S0 rtw_n7a_0129: 40.3u / 4649 / 13493
+[sweep 22:41:08] PROBE rtw_n7a_0130 [N7] prio=10290 boosted_by=[]
+[sweep 22:41:13]   S0 rtw_n7a_0130: 40.1u / 4157 / 11951
+[sweep 22:41:13] PROBE rtw_n7a_0131 [N7] prio=10291 boosted_by=[]
+[sweep 22:41:19]   S0 rtw_n7a_0131: 39.0u / 4049 / 11855
+[sweep 22:41:19] PROBE rtw_n7a_0203 [N7] prio=10292 boosted_by=[]
+[sweep 22:41:23]   S0 rtw_n7a_0203: 40.2u / 4199 / 12232
+[sweep 22:41:23] PROBE rtw_n7a_0204 [N7] prio=10293 boosted_by=[]
+[sweep 22:41:27]   S0 rtw_n7a_0204: 39.5u / 4107 / 11967
+[sweep 22:41:27] PROBE rtw_n7a_0205 [N7] prio=10294 boosted_by=[]
+[sweep 22:41:31]   S0 rtw_n7a_0205: 40.0u / 4687 / 13365
+[sweep 22:41:31] PROBE rtw_n7a_0206 [N7] prio=10295 boosted_by=[]
+[sweep 22:41:34]   S0 rtw_n7a_0206: 41.4u / 4241 / 12234
+[sweep 22:41:34] PROBE rtw_n7a_0207 [N7] prio=10296 boosted_by=[]
+[sweep 22:41:39]   S0 rtw_n7a_0207: 41.0u / 4692 / 13358
+[sweep 22:41:39] PROBE rtw_n7a_0208 [N7] prio=10297 boosted_by=[]
+[sweep 22:41:44]   S0 rtw_n7a_0208: 40.3u / 4714 / 13586
+[sweep 22:41:44] PROBE rtw_n7a_0209 [N7] prio=10298 boosted_by=[]
+[sweep 22:41:49]   S0 rtw_n7a_0209: 41.0u / 5014 / 14416
+[sweep 22:41:49] PROBE rtw_n7a_0210 [N7] prio=10299 boosted_by=[]
+[sweep 22:41:53]   S0 rtw_n7a_0210: 40.9u / 4706 / 13442
+[sweep 22:41:53] PROBE rtw_n7a_0211 [N7] prio=10300 boosted_by=[]
+[sweep 22:41:56]   S0 rtw_n7a_0211: 41.3u / 4332 / 12473
+[sweep 22:41:56] PROBE rtw_n7a_0212 [N7] prio=10301 boosted_by=[]
+[sweep 22:42:01]   S0 rtw_n7a_0212: 41.5u / 4555 / 12965
+[sweep 22:42:01] PROBE rtw_n7a_0213 [N7] prio=10302 boosted_by=[]
+[sweep 22:42:05]   S0 rtw_n7a_0213: 41.1u / 4490 / 12958
+[sweep 22:42:05] PROBE rtw_n7a_0214 [N7] prio=10303 boosted_by=[]
+[sweep 22:42:10]   S0 rtw_n7a_0214: 41.3u / 4583 / 13256
+[sweep 22:42:10] PROBE rtw_n7a_0215 [N7] prio=10304 boosted_by=[]
+[sweep 22:42:14]   S0 rtw_n7a_0215: 40.5u / 4535 / 13044
+[sweep 22:42:14] PROBE rtw_n7a_0216 [N7] prio=10305 boosted_by=[]
+[sweep 22:42:18]   S0 rtw_n7a_0216: 41.3u / 4192 / 12017
+[sweep 22:42:18] PROBE rtw_n7a_0217 [N7] prio=10306 boosted_by=[]
+[sweep 22:42:22]   S0 rtw_n7a_0217: 40.6u / 4408 / 12789
+[sweep 22:42:22] PROBE rtw_n7a_0218 [N7] prio=10307 boosted_by=[]
+[sweep 22:42:25]   S0 rtw_n7a_0218: 40.8u / 4314 / 12377
+[sweep 22:42:25] PROBE rtw_n7a_0219 [N7] prio=10308 boosted_by=[]
+[sweep 22:42:29]   S0 rtw_n7a_0219: 41.1u / 4428 / 12886
+[sweep 22:42:29] PROBE rtw_n7a_0220 [N7] prio=10309 boosted_by=[]
+[sweep 22:42:33]   S0 rtw_n7a_0220: 41.2u / 4597 / 13240
+[sweep 22:42:33] PROBE rtw_n7a_0221 [N7] prio=10310 boosted_by=[]
+[sweep 22:42:37]   S0 rtw_n7a_0221: 40.9u / 4672 / 13345
+[sweep 22:42:37] PROBE rtw_n7a_0222 [N7] prio=10311 boosted_by=[]
+[sweep 22:42:42]   S0 rtw_n7a_0222: 40.5u / 4776 / 13751
+[sweep 22:42:42] PROBE rtw_n7a_0223 [N7] prio=10312 boosted_by=[]
+[sweep 22:42:46]   S0 rtw_n7a_0223: 41.5u / 4276 / 12384
+[sweep 22:42:46] PROBE rtw_n7a_0224 [N7] prio=10313 boosted_by=[]
+[sweep 22:42:49]   S0 rtw_n7a_0224: 40.5u / 4696 / 13491
+[sweep 22:42:49] PROBE rtw_n7a_0225 [N7] prio=10314 boosted_by=[]
+[sweep 22:42:54]   S0 rtw_n7a_0225: 41.6u / 4561 / 13195
+[sweep 22:42:54] PROBE rtw_n7a_0226 [N7] prio=10315 boosted_by=[]
+[sweep 22:42:58]   S0 rtw_n7a_0226: 41.3u / 4652 / 13221
+[sweep 22:42:58] PROBE rtw_n7a_0227 [N7] prio=10316 boosted_by=[]
+[sweep 22:43:03]   S0 rtw_n7a_0227: 40.8u / 4617 / 13222
+[sweep 22:43:03] PROBE rtw_n7a_0228 [N7] prio=10317 boosted_by=[]
+[sweep 22:43:06]   S0 rtw_n7a_0228: 41.0u / 4707 / 13562
+[sweep 22:43:06] PROBE rtw_n7a_0229 [N7] prio=10318 boosted_by=[]
+[sweep 22:43:10]   S0 rtw_n7a_0229: 40.3u / 4467 / 12866
+[sweep 22:43:10] PROBE rtw_n7a_0230 [N7] prio=10319 boosted_by=[]
+[sweep 22:43:14]   S0 rtw_n7a_0230: 39.8u / 3857 / 11400
+[sweep 22:43:14] PROBE rtw_n7a_0231 [N7] prio=10320 boosted_by=[]
+[sweep 22:43:20]   S0 rtw_n7a_0231: 40.0u / 4245 / 12259
+[sweep 22:43:20] PROBE rtw_n7a_0304 [N7] prio=10321 boosted_by=[]
+[sweep 22:43:25]   S0 rtw_n7a_0304: 40.1u / 4580 / 13135
+[sweep 22:43:25] PROBE rtw_n7a_0305 [N7] prio=10322 boosted_by=[]
+[sweep 22:43:30]   S0 rtw_n7a_0305: 39.9u / 4648 / 13243
+[sweep 22:43:30] PROBE rtw_n7a_0306 [N7] prio=10323 boosted_by=[]
+[sweep 22:43:34]   S0 rtw_n7a_0306: 38.2u / 4075 / 11891
+[sweep 22:43:34] PROBE rtw_n7a_0307 [N7] prio=10324 boosted_by=[]
+[sweep 22:43:38]   S0 rtw_n7a_0307: 40.2u / 4780 / 13685
+[sweep 22:43:38] PROBE rtw_n7a_0308 [N7] prio=10325 boosted_by=[]
+[sweep 22:43:42]   S0 rtw_n7a_0308: 40.2u / 4269 / 12415
+[sweep 22:43:42] PROBE rtw_n7a_0309 [N7] prio=10326 boosted_by=[]
+[sweep 22:43:47]   S0 rtw_n7a_0309: 40.3u / 4392 / 12695
+[sweep 22:43:47] PROBE rtw_n7a_0310 [N7] prio=10327 boosted_by=[]
+[sweep 22:43:51]   S0 rtw_n7a_0310: 40.1u / 4506 / 12949
+[sweep 22:43:51] PROBE rtw_n7a_0311 [N7] prio=10328 boosted_by=[]
+[sweep 22:43:51] PROBE rtw_n7a_0312 [N7] prio=10329 boosted_by=[]
+[sweep 22:43:55]   S0 rtw_n7a_0312: 40.4u / 4619 / 13202
+[sweep 22:43:55] PROBE rtw_n7a_0313 [N7] prio=10330 boosted_by=[]
+[sweep 22:44:01]   S0 rtw_n7a_0313: 39.8u / 4692 / 13361
+[sweep 22:44:01] PROBE rtw_n7a_0314 [N7] prio=10331 boosted_by=[]
+[sweep 22:44:06]   S0 rtw_n7a_0314: 39.7u / 4501 / 13064
+[sweep 22:44:06] PROBE rtw_n7a_0315 [N7] prio=10332 boosted_by=[]
+[sweep 22:44:11]   S0 rtw_n7a_0315: 40.0u / 4529 / 13041
+[sweep 22:44:11] PROBE rtw_n7a_0316 [N7] prio=10333 boosted_by=[]
+[sweep 22:44:15]   S0 rtw_n7a_0316: 39.8u / 4425 / 12731
+[sweep 22:44:15] PROBE rtw_n7a_0317 [N7] prio=10334 boosted_by=[]
+[sweep 22:44:19]   S0 rtw_n7a_0317: 40.3u / 4653 / 13313
+[sweep 22:44:19] PROBE rtw_n7a_0318 [N7] prio=10335 boosted_by=[]
+[sweep 22:44:23]   S0 rtw_n7a_0318: 39.6u / 4305 / 12386
+[sweep 22:44:23] PROBE rtw_n7a_0319 [N7] prio=10336 boosted_by=[]
+[sweep 22:44:27]   S0 rtw_n7a_0319: 39.5u / 4250 / 12236
+[sweep 22:44:27] PROBE rtw_n7a_0320 [N7] prio=10337 boosted_by=[]
+[sweep 22:44:31]   S0 rtw_n7a_0320: 40.2u / 4398 / 12687
+[sweep 22:44:31] PROBE rtw_n7a_0321 [N7] prio=10338 boosted_by=[]
+[sweep 22:44:35]   S0 rtw_n7a_0321: 40.1u / 4715 / 13499
+[sweep 22:44:35] PROBE rtw_n7a_0322 [N7] prio=10339 boosted_by=[]
+[sweep 22:44:40]   S0 rtw_n7a_0322: 39.6u / 4590 / 13066
+[sweep 22:44:40] PROBE rtw_n7a_0323 [N7] prio=10340 boosted_by=[]
+[sweep 22:44:44]   S0 rtw_n7a_0323: 40.4u / 4379 / 12713
+[sweep 22:44:44] PROBE rtw_n7a_0324 [N7] prio=10341 boosted_by=[]
+[sweep 22:44:48]   S0 rtw_n7a_0324: 40.0u / 4736 / 13482
+[sweep 22:44:48] PROBE rtw_n7a_0325 [N7] prio=10342 boosted_by=[]
+[sweep 22:44:52]   S0 rtw_n7a_0325: 40.4u / 4661 / 13197
+[sweep 22:44:52] PROBE rtw_n7a_0326 [N7] prio=10343 boosted_by=[]
+[sweep 22:44:56]   S0 rtw_n7a_0326: 40.0u / 4695 / 13387
+[sweep 22:44:56] PROBE rtw_n7a_0327 [N7] prio=10344 boosted_by=[]
+[sweep 22:45:00]   S0 rtw_n7a_0327: 40.1u / 4270 / 12383
+[sweep 22:45:00] PROBE rtw_n7a_0328 [N7] prio=10345 boosted_by=[]
+[sweep 22:45:04]   S0 rtw_n7a_0328: 40.4u / 4305 / 12299
+[sweep 22:45:04] PROBE rtw_n7a_0329 [N7] prio=10346 boosted_by=[]
+[sweep 22:45:09]   S0 rtw_n7a_0329: 38.5u / 4352 / 12527
+[sweep 22:45:09] PROBE rtw_n7a_0330 [N7] prio=10347 boosted_by=[]
+[sweep 22:45:14]   S0 rtw_n7a_0330: 40.2u / 4493 / 12819
+[sweep 22:45:14] PROBE rtw_n7a_0331 [N7] prio=10348 boosted_by=[]
+[sweep 22:45:19]   S0 rtw_n7a_0331: 40.0u / 4507 / 13008
+[sweep 22:45:19] PROBE rtw_n7a_0405 [N7] prio=10349 boosted_by=[]
+[sweep 22:45:24]   S0 rtw_n7a_0405: 40.6u / 4510 / 13124
+[sweep 22:45:24] PROBE rtw_n7a_0406 [N7] prio=10350 boosted_by=[]
+[sweep 22:45:28]   S0 rtw_n7a_0406: 40.9u / 4822 / 13744
+[sweep 22:45:28] PROBE rtw_n7a_0407 [N7] prio=10351 boosted_by=[]
+[sweep 22:45:32]   S0 rtw_n7a_0407: 41.3u / 4588 / 13025
+[sweep 22:45:32] PROBE rtw_n7a_0408 [N7] prio=10352 boosted_by=[]
+[sweep 22:45:36]   S0 rtw_n7a_0408: 38.4u / 4271 / 12517
+[sweep 22:45:36] PROBE rtw_n7a_0409 [N7] prio=10353 boosted_by=[]
+[sweep 22:45:40]   S0 rtw_n7a_0409: 41.1u / 4446 / 12854
+[sweep 22:45:40] PROBE rtw_n7a_0410 [N7] prio=10354 boosted_by=[]
+[sweep 22:45:44]   S0 rtw_n7a_0410: 40.9u / 4750 / 13486
+[sweep 22:45:44] PROBE rtw_n7a_0411 [N7] prio=10355 boosted_by=[]
+[sweep 22:45:48]   S0 rtw_n7a_0411: 41.0u / 4683 / 13383
+[sweep 22:45:48] PROBE rtw_n7a_0412 [N7] prio=10356 boosted_by=[]
+[sweep 22:45:52]   S0 rtw_n7a_0412: 40.8u / 4742 / 13811
+[sweep 22:45:52] PROBE rtw_n7a_0413 [N7] prio=10357 boosted_by=[]
+[sweep 22:45:56]   S0 rtw_n7a_0413: 40.9u / 4596 / 13114
+[sweep 22:45:56] PROBE rtw_n7a_0414 [N7] prio=10358 boosted_by=[]
+[sweep 22:46:00]   S0 rtw_n7a_0414: 41.1u / 4476 / 12913
+[sweep 22:46:00] PROBE rtw_n7a_0415 [N7] prio=10359 boosted_by=[]
+[sweep 22:46:05]   S0 rtw_n7a_0415: 41.0u / 4580 / 13175
+[sweep 22:46:05] PROBE rtw_n7a_0416 [N7] prio=10360 boosted_by=[]
+[sweep 22:46:09]   S0 rtw_n7a_0416: 40.9u / 4149 / 12066
+[sweep 22:46:09] PROBE rtw_n7a_0417 [N7] prio=10361 boosted_by=[]
+[sweep 22:46:13]   S0 rtw_n7a_0417: 41.3u / 4287 / 12268
+[sweep 22:46:13] PROBE rtw_n7a_0418 [N7] prio=10362 boosted_by=[]
+[sweep 22:46:17]   S0 rtw_n7a_0418: 40.8u / 4319 / 12596
+[sweep 22:46:17] PROBE rtw_n7a_0419 [N7] prio=10363 boosted_by=[]
+[sweep 22:46:22]   S0 rtw_n7a_0419: 40.8u / 4520 / 12989
+[sweep 22:46:22] PROBE rtw_n7a_0420 [N7] prio=10364 boosted_by=[]
+[sweep 22:46:25]   S0 rtw_n7a_0420: 40.7u / 4400 / 12747
+[sweep 22:46:25] PROBE rtw_n7a_0421 [N7] prio=10365 boosted_by=[]
+[sweep 22:46:31]   S0 rtw_n7a_0421: 40.6u / 4369 / 12530
+[sweep 22:46:31] PROBE rtw_n7a_0422 [N7] prio=10366 boosted_by=[]
+[sweep 22:46:35]   S0 rtw_n7a_0422: 40.5u / 4717 / 13497
+[sweep 22:46:35] PROBE rtw_n7a_0423 [N7] prio=10367 boosted_by=[]
+[sweep 22:46:39]   S0 rtw_n7a_0423: 40.8u / 4770 / 13700
+[sweep 22:46:39] PROBE rtw_n7a_0424 [N7] prio=10368 boosted_by=[]
+[sweep 22:46:45]   S0 rtw_n7a_0424: 40.6u / 4542 / 13134
+[sweep 22:46:45] PROBE rtw_n7a_0425 [N7] prio=10369 boosted_by=[]
+[sweep 22:46:49]   S0 rtw_n7a_0425: 41.4u / 4267 / 12466
+[sweep 22:46:49] PROBE rtw_n7a_0426 [N7] prio=10370 boosted_by=[]
+[sweep 22:46:53]   S0 rtw_n7a_0426: 40.8u / 4428 / 12750
+[sweep 22:46:53] PROBE rtw_n7a_0427 [N7] prio=10371 boosted_by=[]
+[sweep 22:46:56]   S0 rtw_n7a_0427: 41.4u / 4353 / 12464
+[sweep 22:46:56] PROBE rtw_n7a_0428 [N7] prio=10372 boosted_by=[]
+[sweep 22:47:02]   S0 rtw_n7a_0428: 38.6u / 4111 / 11948
+[sweep 22:47:02] PROBE rtw_n7a_0429 [N7] prio=10373 boosted_by=[]
+[sweep 22:47:07]   S0 rtw_n7a_0429: 40.7u / 4719 / 13646
+[sweep 22:47:07] PROBE rtw_n7a_0430 [N7] prio=10374 boosted_by=[]
+[sweep 22:47:11]   S0 rtw_n7a_0430: 41.0u / 4754 / 13586
+[sweep 22:47:11] PROBE rtw_n7a_0431 [N7] prio=10375 boosted_by=[]
+[sweep 22:47:16]   S0 rtw_n7a_0431: 42.2u / 4191 / 12037
+[sweep 22:47:16] PROBE rtw_n7a_0506 [N7] prio=10376 boosted_by=[]
+[sweep 22:47:20]   S0 rtw_n7a_0506: 40.7u / 4656 / 13386
+[sweep 22:47:20] PROBE rtw_n7a_0507 [N7] prio=10377 boosted_by=[]
+[sweep 22:47:25]   S0 rtw_n7a_0507: 40.2u / 4529 / 13154
+[sweep 22:47:25] PROBE rtw_n7a_0508 [N7] prio=10378 boosted_by=[]
+[sweep 22:47:29]   S0 rtw_n7a_0508: 40.7u / 4750 / 13546
+[sweep 22:47:29] PROBE rtw_n7a_0509 [N7] prio=10379 boosted_by=[]
+[sweep 22:47:33]   S0 rtw_n7a_0509: 41.7u / 4300 / 12421
+[sweep 22:47:33] PROBE rtw_n7a_0510 [N7] prio=10380 boosted_by=[]
+[sweep 22:47:38]   S0 rtw_n7a_0510: 39.4u / 4187 / 12172
+[sweep 22:47:38] PROBE rtw_n7a_0511 [N7] prio=10381 boosted_by=[]
+[sweep 22:47:43]   S0 rtw_n7a_0511: 41.1u / 4599 / 13224
+[sweep 22:47:43] PROBE rtw_n7a_0512 [N7] prio=10382 boosted_by=[]
+[sweep 22:47:50]   S0 rtw_n7a_0512: 41.4u / 4354 / 12589
+[sweep 22:47:50] PROBE rtw_n7a_0513 [N7] prio=10383 boosted_by=[]
+[sweep 22:47:55]   S0 rtw_n7a_0513: 41.0u / 4428 / 12770
+[sweep 22:47:55] PROBE rtw_n7a_0514 [N7] prio=10384 boosted_by=[]
+[sweep 22:47:58]   S0 rtw_n7a_0514: 40.7u / 4828 / 13849
+[sweep 22:47:58] PROBE rtw_n7a_0515 [N7] prio=10385 boosted_by=[]
+[sweep 22:48:03]   S0 rtw_n7a_0515: 40.6u / 4446 / 12806
+[sweep 22:48:03] PROBE rtw_n7a_0516 [N7] prio=10386 boosted_by=[]
+[sweep 22:48:07]   S0 rtw_n7a_0516: 40.6u / 4445 / 12723
+[sweep 22:48:07] PROBE rtw_n7a_0517 [N7] prio=10387 boosted_by=[]
+[sweep 22:48:12]   S0 rtw_n7a_0517: 41.1u / 4519 / 13071
+[sweep 22:48:12] PROBE rtw_n7a_0518 [N7] prio=10388 boosted_by=[]
+[sweep 22:48:16]   S0 rtw_n7a_0518: 41.7u / 4475 / 12744
+[sweep 22:48:16] PROBE rtw_n7a_0519 [N7] prio=10389 boosted_by=[]
+[sweep 22:48:20]   S0 rtw_n7a_0519: 40.9u / 4440 / 12838
+[sweep 22:48:20] PROBE rtw_n7a_0520 [N7] prio=10390 boosted_by=[]
+[sweep 22:48:24]   S0 rtw_n7a_0520: 40.8u / 4501 / 12956
+[sweep 22:48:24] PROBE rtw_n7a_0521 [N7] prio=10391 boosted_by=[]
+[sweep 22:48:27]   S0 rtw_n7a_0521: 40.8u / 4344 / 12479
+[sweep 22:48:27] PROBE rtw_n7a_0522 [N7] prio=10392 boosted_by=[]
+[sweep 22:48:31]   S0 rtw_n7a_0522: 41.0u / 4486 / 12957
+[sweep 22:48:31] PROBE rtw_n7a_0523 [N7] prio=10393 boosted_by=[]
+[sweep 22:48:36]   S0 rtw_n7a_0523: 41.1u / 4232 / 12168
+[sweep 22:48:36] PROBE rtw_n7a_0524 [N7] prio=10394 boosted_by=[]
+[sweep 22:48:39]   S0 rtw_n7a_0524: 40.9u / 4656 / 13373
+[sweep 22:48:39] PROBE rtw_n7a_0525 [N7] prio=10395 boosted_by=[]
+[sweep 22:48:43]   S0 rtw_n7a_0525: 41.2u / 4431 / 12731
+[sweep 22:48:43] PROBE rtw_n7a_0526 [N7] prio=10396 boosted_by=[]
+[sweep 22:48:47]   S0 rtw_n7a_0526: 40.7u / 4679 / 13423
+[sweep 22:48:47] PROBE rtw_n7a_0527 [N7] prio=10397 boosted_by=[]
+[sweep 22:48:50]   S0 rtw_n7a_0527: 39.1u / 4137 / 12057
+[sweep 22:48:50] PROBE rtw_n7a_0528 [N7] prio=10398 boosted_by=[]
+[sweep 22:48:55]   S0 rtw_n7a_0528: 40.5u / 4595 / 13248
+[sweep 22:48:55] PROBE rtw_n7a_0529 [N7] prio=10399 boosted_by=[]
+[sweep 22:48:59]   S0 rtw_n7a_0529: 40.7u / 4637 / 13286
+[sweep 22:48:59] PROBE rtw_n7a_0530 [N7] prio=10400 boosted_by=[]
+[sweep 22:49:04]   S0 rtw_n7a_0530: 40.9u / 4564 / 13096
+[sweep 22:49:04] PROBE rtw_n7a_0531 [N7] prio=10401 boosted_by=[]
+[sweep 22:49:08]   S0 rtw_n7a_0531: 41.1u / 4868 / 14015
+[sweep 22:49:08] PROBE rtw_n7a_0607 [N7] prio=10402 boosted_by=[]
+[sweep 22:49:11]   S0 rtw_n7a_0607: 40.8u / 4589 / 13119
+[sweep 22:49:11] PROBE rtw_n7a_0608 [N7] prio=10403 boosted_by=[]
+[sweep 22:49:15]   S0 rtw_n7a_0608: 41.3u / 4351 / 12548
+[sweep 22:49:15] PROBE rtw_n7a_0609 [N7] prio=10404 boosted_by=[]
+[sweep 22:49:19]   S0 rtw_n7a_0609: 41.4u / 4526 / 12867
+[sweep 22:49:19] PROBE rtw_n7a_0610 [N7] prio=10405 boosted_by=[]
+[sweep 22:49:23]   S0 rtw_n7a_0610: 40.9u / 4807 / 13802
+[sweep 22:49:23] PROBE rtw_n7a_0611 [N7] prio=10406 boosted_by=[]
+[sweep 22:49:27]   S0 rtw_n7a_0611: 41.0u / 4423 / 12759
+[sweep 22:49:27] PROBE rtw_n7a_0612 [N7] prio=10407 boosted_by=[]
+[sweep 22:49:32]   S0 rtw_n7a_0612: 38.9u / 4328 / 12453
+[sweep 22:49:32] PROBE rtw_n7a_0613 [N7] prio=10408 boosted_by=[]
+[sweep 22:49:38]   S0 rtw_n7a_0613: 41.3u / 4562 / 13119
+[sweep 22:49:38] PROBE rtw_n7a_0614 [N7] prio=10409 boosted_by=[]
+[sweep 22:49:41]   S0 rtw_n7a_0614: 40.6u / 4368 / 12716
+[sweep 22:49:41] PROBE rtw_n7a_0615 [N7] prio=10410 boosted_by=[]
+[sweep 22:49:46]   S0 rtw_n7a_0615: 41.3u / 4556 / 13092
+[sweep 22:49:46] PROBE rtw_n7a_0616 [N7] prio=10411 boosted_by=[]
+[sweep 22:49:50]   S0 rtw_n7a_0616: 41.1u / 4661 / 13229
+[sweep 22:49:50] PROBE rtw_n7a_0617 [N7] prio=10412 boosted_by=[]
+[sweep 22:49:53]   S0 rtw_n7a_0617: 40.8u / 4381 / 12751
+[sweep 22:49:53] PROBE rtw_n7a_0618 [N7] prio=10413 boosted_by=[]
+[sweep 22:49:57]   S0 rtw_n7a_0618: 41.1u / 4449 / 12696
+[sweep 22:49:57] PROBE rtw_n7a_0619 [N7] prio=10414 boosted_by=[]
+[sweep 22:50:02]   S0 rtw_n7a_0619: 39.9u / 4390 / 12622
+[sweep 22:50:02] PROBE rtw_n7a_0620 [N7] prio=10415 boosted_by=[]
+[sweep 22:50:07]   S0 rtw_n7a_0620: 40.8u / 4570 / 13275
+[sweep 22:50:07] PROBE rtw_n7a_0621 [N7] prio=10416 boosted_by=[]
+[sweep 22:50:13]   S0 rtw_n7a_0621: 40.6u / 4364 / 12606
+[sweep 22:50:13] PROBE rtw_n7a_0622 [N7] prio=10417 boosted_by=[]
+[sweep 22:50:17]   S0 rtw_n7a_0622: 40.5u / 4459 / 12855
+[sweep 22:50:17] PROBE rtw_n7a_0623 [N7] prio=10418 boosted_by=[]
+[sweep 22:50:20]   S0 rtw_n7a_0623: 40.2u / 4729 / 13543
+[sweep 22:50:20] PROBE rtw_n7a_0624 [N7] prio=10419 boosted_by=[]
+[sweep 22:50:24]   S0 rtw_n7a_0624: 40.4u / 4593 / 13207
+[sweep 22:50:24] PROBE rtw_n7a_0625 [N7] prio=10420 boosted_by=[]
+[sweep 22:50:30]   S0 rtw_n7a_0625: 40.8u / 4421 / 12813
+[sweep 22:50:30] PROBE rtw_n7a_0626 [N7] prio=10421 boosted_by=[]
+[sweep 22:50:34]   S0 rtw_n7a_0626: 38.9u / 4203 / 12117
+[sweep 22:50:34] PROBE rtw_n7a_0627 [N7] prio=10422 boosted_by=[]
+[sweep 22:50:39]   S0 rtw_n7a_0627: 40.8u / 4744 / 13584
+[sweep 22:50:39] PROBE rtw_n7a_0628 [N7] prio=10423 boosted_by=[]
+[sweep 22:50:43]   S0 rtw_n7a_0628: 41.7u / 4556 / 12995
+[sweep 22:50:43] PROBE rtw_n7a_0629 [N7] prio=10424 boosted_by=[]
+[sweep 22:50:47]   S0 rtw_n7a_0629: 40.7u / 4702 / 13474
+[sweep 22:50:47] PROBE rtw_n7a_0630 [N7] prio=10425 boosted_by=[]
+[sweep 22:50:51]   S0 rtw_n7a_0630: 40.1u / 4579 / 13120
+[sweep 22:50:51] PROBE rtw_n7a_0631 [N7] prio=10426 boosted_by=[]
+[sweep 22:50:54]   S0 rtw_n7a_0631: 41.1u / 4657 / 13390
+[sweep 22:50:54] PROBE rtw_n7a_0708 [N7] prio=10427 boosted_by=[]
+[sweep 22:50:58]   S0 rtw_n7a_0708: 40.6u / 4650 / 13289
+[sweep 22:50:58] PROBE rtw_n7a_0709 [N7] prio=10428 boosted_by=[]
+[sweep 22:51:02]   S0 rtw_n7a_0709: 41.2u / 4463 / 12817
+[sweep 22:51:02] PROBE rtw_n7a_0710 [N7] prio=10429 boosted_by=[]
+[sweep 22:51:06]   S0 rtw_n7a_0710: 40.6u / 4698 / 13509
+[sweep 22:51:06] PROBE rtw_n7a_0711 [N7] prio=10430 boosted_by=[]
+[sweep 22:51:10]   S0 rtw_n7a_0711: 41.1u / 4861 / 13975
+[sweep 22:51:10] PROBE rtw_n7a_0712 [N7] prio=10431 boosted_by=[]
+[sweep 22:51:15]   S0 rtw_n7a_0712: 40.8u / 4771 / 13588
+[sweep 22:51:15] PROBE rtw_n7a_0713 [N7] prio=10432 boosted_by=[]
+[sweep 22:51:19]   S0 rtw_n7a_0713: 41.0u / 4415 / 12753
+[sweep 22:51:19] PROBE rtw_n7a_0714 [N7] prio=10433 boosted_by=[]
+[sweep 22:51:22]   S0 rtw_n7a_0714: 39.0u / 4345 / 12623
+[sweep 22:51:22] PROBE rtw_n7a_0715 [N7] prio=10434 boosted_by=[]
+[sweep 22:51:27]   S0 rtw_n7a_0715: 41.2u / 4399 / 12589
+[sweep 22:51:27] PROBE rtw_n7a_0716 [N7] prio=10435 boosted_by=[]
+[sweep 22:51:31]   S0 rtw_n7a_0716: 40.3u / 4458 / 12784
+[sweep 22:51:31] PROBE rtw_n7a_0717 [N7] prio=10436 boosted_by=[]
+[sweep 22:51:35]   S0 rtw_n7a_0717: 41.6u / 4237 / 12208
+[sweep 22:51:35] PROBE rtw_n7a_0718 [N7] prio=10437 boosted_by=[]
+[sweep 22:51:40]   S0 rtw_n7a_0718: 40.8u / 4690 / 13393
+[sweep 22:51:40] PROBE rtw_n7a_0719 [N7] prio=10438 boosted_by=[]
+[sweep 22:51:44]   S0 rtw_n7a_0719: 41.0u / 4473 / 12810
+[sweep 22:51:44] PROBE rtw_n7a_0720 [N7] prio=10439 boosted_by=[]
+[sweep 22:51:49]   S0 rtw_n7a_0720: 40.8u / 4867 / 13923
+[sweep 22:51:49] PROBE rtw_n7a_0721 [N7] prio=10440 boosted_by=[]
+[sweep 22:51:54]   S0 rtw_n7a_0721: 40.3u / 4561 / 13111
+[sweep 22:51:54] PROBE rtw_n7a_0722 [N7] prio=10441 boosted_by=[]
+[sweep 22:51:58]   S0 rtw_n7a_0722: 40.6u / 4739 / 13564
+[sweep 22:51:58] PROBE rtw_n7a_0723 [N7] prio=10442 boosted_by=[]
+[sweep 22:52:02]   S0 rtw_n7a_0723: 40.2u / 4279 / 12347
+[sweep 22:52:02] PROBE rtw_n7a_0724 [N7] prio=10443 boosted_by=[]
+[sweep 22:52:06]   S0 rtw_n7a_0724: 41.6u / 4216 / 12042
+[sweep 22:52:06] PROBE rtw_n7a_0725 [N7] prio=10444 boosted_by=[]
+[sweep 22:52:11]   S0 rtw_n7a_0725: 39.1u / 4377 / 12520
+[sweep 22:52:11] PROBE rtw_n7a_0726 [N7] prio=10445 boosted_by=[]
+[sweep 22:52:18]   S0 rtw_n7a_0726: 41.3u / 4531 / 13067
+[sweep 22:52:18] PROBE rtw_n7a_0727 [N7] prio=10446 boosted_by=[]
+[sweep 22:52:24]   S0 rtw_n7a_0727: 40.9u / 4590 / 13316
+[sweep 22:52:24] PROBE rtw_n7a_0728 [N7] prio=10447 boosted_by=[]
+[sweep 22:52:34]   S0 rtw_n7a_0728: 40.8u / 4659 / 13293
+[sweep 22:52:34] PROBE rtw_n7a_0729 [N7] prio=10448 boosted_by=[]
+[sweep 22:52:38]   S0 rtw_n7a_0729: 40.6u / 4450 / 12849
+[sweep 22:52:38] PROBE rtw_n7a_0730 [N7] prio=10449 boosted_by=[]
+[sweep 22:52:44]   S0 rtw_n7a_0730: 41.5u / 4227 / 12216
+[sweep 22:52:44] PROBE rtw_n7a_0731 [N7] prio=10450 boosted_by=[]
+[sweep 22:52:49]   S0 rtw_n7a_0731: 41.2u / 4586 / 13277
+[sweep 22:52:49] PROBE rtw_n7a_0809 [N7] prio=10451 boosted_by=[]
+[sweep 22:52:53]   S0 rtw_n7a_0809: 40.9u / 4603 / 13190
+[sweep 22:52:53] PROBE rtw_n7a_0810 [N7] prio=10452 boosted_by=[]
+[sweep 22:52:57]   S0 rtw_n7a_0810: 41.3u / 4318 / 12464
+[sweep 22:52:57] PROBE rtw_n7a_0811 [N7] prio=10453 boosted_by=[]
+[sweep 22:53:04]   S0 rtw_n7a_0811: 41.1u / 4714 / 13466
+[sweep 22:53:04] PROBE rtw_n7a_0812 [N7] prio=10454 boosted_by=[]
+[sweep 22:53:08]   S0 rtw_n7a_0812: 41.0u / 4644 / 13229
+[sweep 22:53:08] PROBE rtw_n7a_0813 [N7] prio=10455 boosted_by=[]
+[sweep 22:53:14]   S0 rtw_n7a_0813: 41.6u / 4598 / 13184
+[sweep 22:53:14] PROBE rtw_n7a_0814 [N7] prio=10456 boosted_by=[]
+[sweep 22:53:20]   S0 rtw_n7a_0814: 40.6u / 4359 / 12697
+[sweep 22:53:20] PROBE rtw_n7a_0815 [N7] prio=10457 boosted_by=[]
+[sweep 22:53:24]   S0 rtw_n7a_0815: 41.0u / 4428 / 12779
+[sweep 22:53:24] PROBE rtw_n7a_0816 [N7] prio=10458 boosted_by=[]
+[sweep 22:53:28]   S0 rtw_n7a_0816: 39.2u / 3987 / 11594
+[sweep 22:53:28] PROBE rtw_n7a_0817 [N7] prio=10459 boosted_by=[]
+[sweep 22:53:38]   S0 rtw_n7a_0817: 41.1u / 4548 / 13014
+[sweep 22:53:38] PROBE rtw_n7a_0818 [N7] prio=10460 boosted_by=[]
+[sweep 22:53:42]   S0 rtw_n7a_0818: 41.2u / 4617 / 13216
+[sweep 22:53:42] PROBE rtw_n7a_0819 [N7] prio=10461 boosted_by=[]
+[sweep 22:53:47]   S0 rtw_n7a_0819: 41.0u / 4416 / 12736
+[sweep 22:53:47] PROBE rtw_n7a_0820 [N7] prio=10462 boosted_by=[]
+[sweep 22:53:51]   S0 rtw_n7a_0820: 41.6u / 4081 / 11749
+[sweep 22:53:51] PROBE rtw_n7a_0821 [N7] prio=10463 boosted_by=[]
+[sweep 22:53:54]   S0 rtw_n7a_0821: 41.5u / 4312 / 12497
+[sweep 22:53:54] PROBE rtw_n7a_0822 [N7] prio=10464 boosted_by=[]
+[sweep 22:53:58]   S0 rtw_n7a_0822: 40.8u / 4339 / 12521
+[sweep 22:53:59] PROBE rtw_n7a_0823 [N7] prio=10465 boosted_by=[]
+[sweep 22:54:03]   S0 rtw_n7a_0823: 40.9u / 4460 / 12830
+[sweep 22:54:03] PROBE rtw_n7a_0824 [N7] prio=10466 boosted_by=[]
+[sweep 22:54:06]   S0 rtw_n7a_0824: 39.2u / 3977 / 11624
+[sweep 22:54:06] PROBE rtw_n7a_0825 [N7] prio=10467 boosted_by=[]
+[sweep 22:54:11]   S0 rtw_n7a_0825: 41.2u / 4522 / 12993
+[sweep 22:54:11] PROBE rtw_n7a_0826 [N7] prio=10468 boosted_by=[]
+[sweep 22:54:15]   S0 rtw_n7a_0826: 41.6u / 4182 / 12008
+[sweep 22:54:15] PROBE rtw_n7a_0827 [N7] prio=10469 boosted_by=[]
+[sweep 22:54:19]   S0 rtw_n7a_0827: 41.1u / 4032 / 11628
+[sweep 22:54:19] PROBE rtw_n7a_0828 [N7] prio=10470 boosted_by=[]
+[sweep 22:54:25]   S0 rtw_n7a_0828: 41.1u / 4107 / 11962
+[sweep 22:54:25] PROBE rtw_n7a_0829 [N7] prio=10471 boosted_by=[]
+[sweep 22:54:30]   S0 rtw_n7a_0829: 40.4u / 4592 / 13267
+[sweep 22:54:30] PROBE rtw_n7a_0830 [N7] prio=10472 boosted_by=[]
+[sweep 22:54:42]   S0 rtw_n7a_0830: 40.8u / 4426 / 12827
+[sweep 22:54:42] PROBE rtw_n7a_0831 [N7] prio=10473 boosted_by=[]
+[sweep 22:54:47]   S0 rtw_n7a_0831: 41.2u / 4388 / 12613
+[sweep 22:54:47] PROBE rtw_n7a_0910 [N7] prio=10474 boosted_by=[]
+[sweep 22:54:53]   S0 rtw_n7a_0910: 40.9u / 4573 / 13061
+[sweep 22:54:53] PROBE rtw_n7a_0911 [N7] prio=10475 boosted_by=[]
+[sweep 22:54:57]   S0 rtw_n7a_0911: 40.8u / 4468 / 12828
+[sweep 22:54:57] PROBE rtw_n7a_0912 [N7] prio=10476 boosted_by=[]
+[sweep 22:55:01]   S0 rtw_n7a_0912: 39.8u / 4632 / 13204
+[sweep 22:55:01] PROBE rtw_n7a_0913 [N7] prio=10477 boosted_by=[]
+[sweep 22:55:05]   S0 rtw_n7a_0913: 41.2u / 4406 / 12768
+[sweep 22:55:05] PROBE rtw_n7a_0914 [N7] prio=10478 boosted_by=[]
+[sweep 22:55:09]   S0 rtw_n7a_0914: 40.8u / 4500 / 13079
+[sweep 22:55:09] PROBE rtw_n7a_0915 [N7] prio=10479 boosted_by=[]
+[sweep 22:55:13]   S0 rtw_n7a_0915: 40.9u / 4845 / 13874
+[sweep 22:55:13] PROBE rtw_n7a_0916 [N7] prio=10480 boosted_by=[]
+[sweep 22:55:17]   S0 rtw_n7a_0916: 40.9u / 4251 / 12288
+[sweep 22:55:17] PROBE rtw_n7a_0917 [N7] prio=10481 boosted_by=[]
+[sweep 22:55:21]   S0 rtw_n7a_0917: 41.1u / 4449 / 12887
+[sweep 22:55:21] PROBE rtw_n7a_0918 [N7] prio=10482 boosted_by=[]
+[sweep 22:55:24]   S0 rtw_n7a_0918: 39.0u / 4257 / 12449
+[sweep 22:55:24] PROBE rtw_n7a_0919 [N7] prio=10483 boosted_by=[]
+[sweep 22:55:28]   S0 rtw_n7a_0919: 40.6u / 4710 / 13420
+[sweep 22:55:28] PROBE rtw_n7a_0920 [N7] prio=10484 boosted_by=[]
+[sweep 22:55:32]   S0 rtw_n7a_0920: 40.7u / 4484 / 12956
+[sweep 22:55:32] PROBE rtw_n7a_0921 [N7] prio=10485 boosted_by=[]
+[sweep 22:55:35]   S0 rtw_n7a_0921: 41.2u / 4436 / 12844
+[sweep 22:55:35] PROBE rtw_n7a_0922 [N7] prio=10486 boosted_by=[]
+[sweep 22:55:40]   S0 rtw_n7a_0922: 40.8u / 4648 / 13287
+[sweep 22:55:40] PROBE rtw_n7a_0923 [N7] prio=10487 boosted_by=[]
+[sweep 22:55:44]   S0 rtw_n7a_0923: 39.4u / 4296 / 12492
+[sweep 22:55:44] PROBE rtw_n7a_0924 [N7] prio=10488 boosted_by=[]
+[sweep 22:55:49]   S0 rtw_n7a_0924: 41.0u / 4491 / 12959
+[sweep 22:55:49] PROBE rtw_n7a_0925 [N7] prio=10489 boosted_by=[]
+[sweep 22:55:53]   S0 rtw_n7a_0925: 41.1u / 4211 / 12136
+[sweep 22:55:53] PROBE rtw_n7a_0926 [N7] prio=10490 boosted_by=[]
+[sweep 22:55:58]   S0 rtw_n7a_0926: 41.0u / 4550 / 13141
+[sweep 22:55:58] PROBE rtw_n7a_0927 [N7] prio=10491 boosted_by=[]
+[sweep 22:56:02]   S0 rtw_n7a_0927: 41.0u / 4449 / 12837
+[sweep 22:56:02] PROBE rtw_n7a_0928 [N7] prio=10492 boosted_by=[]
+[sweep 22:56:07]   S0 rtw_n7a_0928: 41.3u / 4415 / 12608
+[sweep 22:56:07] PROBE rtw_n7a_0929 [N7] prio=10493 boosted_by=[]
+[sweep 22:56:11]   S0 rtw_n7a_0929: 40.8u / 4889 / 13985
+[sweep 22:56:11] PROBE rtw_n7a_0930 [N7] prio=10494 boosted_by=[]
+[sweep 22:56:15]   S0 rtw_n7a_0930: 40.4u / 4642 / 13171
+[sweep 22:56:15] PROBE rtw_n7a_0931 [N7] prio=10495 boosted_by=[]
+[sweep 22:56:19]   S0 rtw_n7a_0931: 40.8u / 4627 / 13125
+[sweep 22:56:19] PROBE rtw_n7a_1011 [N7] prio=10496 boosted_by=[]
+[sweep 22:56:24]   S0 rtw_n7a_1011: 40.4u / 4596 / 13265
+[sweep 22:56:24] PROBE rtw_n7a_1012 [N7] prio=10497 boosted_by=[]
+[sweep 22:56:30]   S0 rtw_n7a_1012: 41.6u / 4604 / 13073
+[sweep 22:56:30] PROBE rtw_n7a_1013 [N7] prio=10498 boosted_by=[]
+[sweep 22:56:33]   S0 rtw_n7a_1013: 41.1u / 4464 / 12958
+[sweep 22:56:33] PROBE rtw_n7a_1014 [N7] prio=10499 boosted_by=[]

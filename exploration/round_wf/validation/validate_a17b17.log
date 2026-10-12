@@ -1,0 +1,88 @@
+2026-10-04T15:47:09Z ===== wf2d_aff_a17_b17 full battery start =====
+2026-10-04T15:47:09Z copying candidate into fast_battery/candidates
+2026-10-04T15:47:10Z S0 start
+[S0 wf2d_aff_a17_b17] delay=27.9u cells=5299 x_mult=0.270 (bar 0.9) equiv=n=1000 err=0 -> PASS [ref 0s cached=True, dut 5s, equiv 18s]
+2026-10-04T15:47:33Z S0 rc=0
+2026-10-04T15:47:33Z [polite] 2 heavies, sleeping 60s
+2026-10-04T15:48:33Z [polite] 2 heavies, sleeping 60s
+2026-10-04T15:49:33Z S1 start
+  [LIN] key=0x0 D=24/4096 logp=-1.10
+  [LIN] key=0xffffffffffffffff D=19/4096 logp=-0.29
+  [LIN] key=0xaaaaaaaaaaaaaaaa D=18/4096 logp=-0.21
+  [LIN] key=0x5555555555555555 D=25/4096 logp=-1.34
+  [LIN] key=0xdeadbeefdeadbeef D=21/4096 logp=-0.54
+  [LIN] key=0x9e3779b97f4a7c15 D=16/4096 logp=-0.09
+  [LIN] key=0x1234 D=23/4096 logp=-0.88
+  [LIN] key=0x123456789abcdef D=20/4096 logp=-0.40
+  [LIN] key=0xf0b52a9e7d8ba2b5 D=17/4096 logp=-0.14
+  [LIN] key=0x92988f142674743 D=25/4096 logp=-1.34
+  [DIFF] key=0x0 worst|z|=1.3 fisher_logp=-0.17 bonf_logp=1.22
+  [DIFF] key=0xffffffffffffffff worst|z|=2.2 fisher_logp=-0.26 bonf_logp=-0.59
+  [DIFF] key=0xaaaaaaaaaaaaaaaa worst|z|=1.9 fisher_logp=-1.71 bonf_logp=0.07
+  [DIFF] key=0x5555555555555555 worst|z|=1.9 fisher_logp=-0.20 bonf_logp=-0.06
+  [DIFF] key=0xdeadbeefdeadbeef worst|z|=2.1 fisher_logp=-3.40 bonf_logp=-0.36
+  [DIFF] key=0x9e3779b97f4a7c15 worst|z|=2.5 fisher_logp=-0.99 bonf_logp=-1.48
+  [DIFF] key=0x1234 worst|z|=2.2 fisher_logp=-0.42 bonf_logp=-0.75
+  [DIFF] key=0x123456789abcdef worst|z|=2.3 fisher_logp=-2.18 bonf_logp=-1.06
+  [DIFF] key=0xf0b52a9e7d8ba2b5 worst|z|=3.1 fisher_logp=-1.69 bonf_logp=-3.20
+  [DIFF] key=0x92988f142674743 worst|z|=2.0 fisher_logp=-1.06 bonf_logp=-0.13
+  LIN: PASS (rej=0)  DIFF: PASS (rej=0)
+[S1 wf2d_aff_a17_b17] LIN/DIFF 30s: LIN PASS DIFF PASS; marginal 244s: PB rej=0 RD rej=0
+[S1 wf2d_aff_a17_b17] verdict: CAL_PASS
+2026-10-04T15:53:40Z S1 rc=0
+2026-10-04T15:53:40Z xcheck 10k start
+XCHECK wf2d_aff_a17_b17: PASS 10000/10000 C==Python
+2026-10-04T15:54:10Z xcheck PASS
+2026-10-04T15:54:10Z battery S3+S4 start
+=== S3 [wf2d_aff_a17_b17] started 2026-10-04T15:54:12Z
+--- S3 tail:
+[S3 wf2d_aff_a17_b17] 64MB: no FAIL (rng_test rc=0)
+[S3 wf2d_aff_a17_b17] stage 256MB (key=0x123456789abcdef0 stride=1) ...
+[S3 wf2d_aff_a17_b17] 256MB: no FAIL (rng_test rc=0)
+[S3 wf2d_aff_a17_b17] stage 1GB (key=0x123456789abcdef0 stride=1) ...
+[S3 wf2d_aff_a17_b17] 1GB: no FAIL (rng_test rc=0)
+[S3 wf2d_aff_a17_b17] verdict: PASS (all 4 stages, no FAIL)
+=== S3 [wf2d_aff_a17_b17] rc=0 wall=137s
+=== S3b [wf2d_aff_a17_b17] started 2026-10-04T15:56:29Z
+--- S3b tail:
+[S3 wf2d_aff_a17_b17_strided] 64MB: no FAIL (rng_test rc=0)
+[S3 wf2d_aff_a17_b17_strided] stage 256MB (key=0x0 stride=0x9E3779B97F4A7C15) ...
+[S3 wf2d_aff_a17_b17_strided] 256MB: no FAIL (rng_test rc=0)
+[S3 wf2d_aff_a17_b17_strided] stage 1GB (key=0x0 stride=0x9E3779B97F4A7C15) ...
+[S3 wf2d_aff_a17_b17_strided] 1GB: no FAIL (rng_test rc=0)
+[S3 wf2d_aff_a17_b17_strided] verdict: PASS (all 4 stages, no FAIL)
+=== S3b [wf2d_aff_a17_b17] rc=0 wall=89s
+=== S4 [wf2d_aff_a17_b17] started 2026-10-04T15:57:58Z
+--- S4 tail:
+ Total CPU time:   00:00:40.45
+
+ All tests were passed
+
+
+
+=== S4 [wf2d_aff_a17_b17] rc=0 wall=41s
+BATTERY-PASS [wf2d_aff_a17_b17] all stages survived (S5 P&R+review is a manual gate)
+2026-10-04T15:58:39Z battery S3+S4 rc=0
+2026-10-04T15:58:39Z Q1 start
+  bit 16/64 done (18s)
+  bit 32/64 done (34s)
+  bit 48/64 done (50s)
+  bit 64/64 done (66s)
+{
+ "candidate": "wf2d_aff_a17_b17",
+ "key": "0x123456789abcdef0",
+ "N": 262144,
+ "sac_maxdev": 0.003498077392578125,
+ "sac_meandev": 0.0007861964404582977,
+ "sac_z5": 0,
+ "bic_maxcorr": 0.009012037182554472,
+ "bic_meancorr": 0.0015545766388074755,
+ "avalanche_mean": 31.998387217521667,
+ "wall_s": 66.1
+}
+2026-10-04T15:59:46Z Q1 done: sac_z5=0 bic_maxcorr=0.009012 avalanche_mean=32.00
+2026-10-04T15:59:46Z bijectivity start
+key=0x123456789abcdef0 n=2000000 collisions=0
+key=0x0000000000000000 n=2000000 collisions=0
+2026-10-04T15:59:48Z bijectivity key1_rc=0 key2_rc=0 (0=clean)
+2026-10-04T15:59:48Z ===== wf2d_aff_a17_b17 ALL VALIDATION DONE =====

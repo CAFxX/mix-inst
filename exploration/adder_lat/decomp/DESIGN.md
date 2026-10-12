@@ -90,3 +90,24 @@ f_i = l_i ⊕ n_i. S0 measure (<10u gate). SAT bijectivity. Fisher
 
 O149: this decomposition track (parent).
 O150+: Task 1 / Task 2 / Task 3 outcomes.
+
+## O156 TERMINAL (2026-10-12) — recovery worker evaluation
+
+**S0** (run_synth.py, ref mul64 103.5u, XCHECK clean):
+- L (weight-5 circulant (14,27,40,52)): **5.5u** / 665 cells / 1771 area
+- N (4×AND2 XORed): **4.6u** / 928 cells / 2624 area
+- F (combined f_i = l_i ⊕ n_i): **7.2u** / 1369 cells / 3978 area — under 10u ✓
+
+**Bijectivity**: 0 collisions in 10M random pairs (numpy-vectorized) — PASS.
+SAT (Glucose3) timed out at 600s on the XOR-heavy CNF; sampling accepted per protocol.
+
+**Fisher** (`lin_diff.screen_lin_diff` verbatim, N=2^18 sequential):
+- LIN: FLAG (D=4096/4096, logp=-inf)
+- DIFF: FLAG (worst|z|=1.48e6, fisher_logp=-inf)
+- **TRIAGE REJECT**
+
+**Mechanism**: F has algebraic degree 2. Per O155, degree ≤4 is structurally
+insufficient for Fisher's 6-bit cubes (need degree ≥5). The decomposition's
+independence is genuine but doesn't raise degree — L gives diffusion, N gives
+only degree-2 nonlinearity. The framework is sound; the degree bound is the
+blocker.

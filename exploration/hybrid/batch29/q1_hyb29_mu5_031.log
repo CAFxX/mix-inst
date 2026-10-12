@@ -1,0 +1,17 @@
+agentwork-launch: tag=track5/b29-q1-31 schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+  bit 16/64 done (288s)
+  bit 32/64 done (479s)
+  bit 48/64 done (604s)
+  bit 64/64 done (651s)
+{
+ "candidate": "hyb29_mu5_031",
+ "key": "0x123456789abcdef0",
+ "N": 262144,
+ "sac_maxdev": 0.004886627197265625,
+ "sac_meandev": 0.0008013350889086723,
+ "sac_z5": 1,
+ "bic_maxcorr": 0.008697778887371447,
+ "bic_meancorr": 0.0015593170220251564,
+ "avalanche_mean": 32.00087493658066,
+ "wall_s": 651.3
+}

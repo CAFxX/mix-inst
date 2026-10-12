@@ -1,0 +1,26 @@
+{
+ "name": "dd9_scsc_nolin_a",
+ "description": "Directed Design 9 (D6): 4r SCSC, AND-chi, no LIN anywhere \u2014 ~16u frontier-challenger shot",
+ "batch": "batch9",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "rtl_top": "dd9_scsc_nolin_a",
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x47c0546efaa71554"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x98648cf6b424e599"
+  }
+ ]
+}

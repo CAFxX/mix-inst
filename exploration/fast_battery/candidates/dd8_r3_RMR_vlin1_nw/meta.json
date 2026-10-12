@@ -1,0 +1,26 @@
+{
+ "name": "dd8_r3_RMR_vlin1_nw",
+ "description": "Directed Design 8 (D5b): 3r hetero R/M/R, per-round LIN (5,13)/(8,15)/(3,11)",
+ "batch": "batch4",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "rtl_top": "dd8_r3_RMR_vlin1_nw",
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xb2e9dfd2c43b70b4"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x7b05f87981203d64"
+  }
+ ]
+}

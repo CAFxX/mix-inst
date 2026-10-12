@@ -1,0 +1,25 @@
+{
+ "name": "dd4_ks_norot_nw",
+ "description": "Directed Design 4: key schedule no rotation: rk = key ^ RC",
+ "batch": "batch4",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x2c1366d2ffaff947"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xee937efab297ce2c"
+  }
+ ]
+}

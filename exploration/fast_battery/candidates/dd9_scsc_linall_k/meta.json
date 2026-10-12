@@ -1,0 +1,26 @@
+{
+ "name": "dd9_scsc_linall_k",
+ "description": "Directed Design 9 (D6): 4r SCSC, Keccak-flavor chi, LIN after every round \u2014 NOT-variant probe",
+ "batch": "batch9",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "rtl_top": "dd9_scsc_linall_k",
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x758501226539965a"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xf225c7db66791838"
+  }
+ ]
+}

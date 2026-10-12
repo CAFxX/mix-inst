@@ -1,0 +1,25 @@
+{
+ "name": "dd5_r3_513_nw",
+ "description": "Directed Design 5: 3-round: ~19.8u target, tests if lin(5,13) diffuses enough in 3r",
+ "batch": "batch4",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x931f0880a7847355"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xbbe595bb8c1326bc"
+  }
+ ]
+}

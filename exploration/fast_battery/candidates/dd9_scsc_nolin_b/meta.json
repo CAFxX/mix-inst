@@ -1,0 +1,26 @@
+{
+ "name": "dd9_scsc_nolin_b",
+ "description": "Directed Design 9 (D6): 4r SCSC, AND-chi wide triples (17,31,7)/(11,23,37), no LIN \u2014 diffusion probe",
+ "batch": "batch9",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "rtl_top": "dd9_scsc_nolin_b",
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xd572c866923e6517"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x27c05cb8ddb6410"
+  }
+ ]
+}

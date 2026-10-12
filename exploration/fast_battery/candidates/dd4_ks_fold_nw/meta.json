@@ -1,0 +1,25 @@
+{
+ "name": "dd4_ks_fold_nw",
+ "description": "Directed Design 4: key schedule mixing: rotl13 ^ rotl37 ^ RC",
+ "batch": "batch4",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x6c9fa15524c712ec"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xee937efab297ce2c"
+  }
+ ]
+}

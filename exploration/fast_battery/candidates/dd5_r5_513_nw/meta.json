@@ -1,0 +1,25 @@
+{
+ "name": "dd5_r5_513_nw",
+ "description": "Directed Design 5: 5-round: ~33u, tests if extra round buys S2 margin",
+ "batch": "batch4",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xcfecc33f7e4511ab"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x7bd541447869a937"
+  }
+ ]
+}

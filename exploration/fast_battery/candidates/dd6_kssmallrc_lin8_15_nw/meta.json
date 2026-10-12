@@ -1,0 +1,25 @@
+{
+ "name": "dd6_kssmallrc_lin8_15_nw",
+ "description": "Directed Design 6: ks=smallrc x lin(8,15) stacking test",
+ "batch": "batch4",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x3eb4989385286498"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x9b9ff3ce94fd8d8d"
+  }
+ ]
+}

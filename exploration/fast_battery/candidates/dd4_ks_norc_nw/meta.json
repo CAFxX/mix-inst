@@ -1,0 +1,25 @@
+{
+ "name": "dd4_ks_norc_nw",
+ "description": "Directed Design 4: key schedule no round constants",
+ "batch": "batch4",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x6779a448ccc4904f"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xba6aed27d31c2a0a"
+  }
+ ]
+}

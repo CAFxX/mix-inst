@@ -1,0 +1,25 @@
+{
+ "name": "dd7_r3_RRM_513_nw",
+ "description": "Directed Design 7 (D4): 3r hetero two strong then fast - front-load security",
+ "batch": "batch4",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x2e89447da55c28bc"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x283f85c80ae66695"
+  }
+ ]
+}

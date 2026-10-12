@@ -1,0 +1,25 @@
+{
+ "name": "dd7_r3_MRM_513_nw",
+ "description": "Directed Design 7 (D4): 3r hetero alternating M/R/M - bookend fast S-box",
+ "batch": "batch4",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x6dda9ade3582439d"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xaa3fb44956628e5"
+  }
+ ]
+}

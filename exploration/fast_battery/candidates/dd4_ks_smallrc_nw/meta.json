@@ -1,0 +1,25 @@
+{
+ "name": "dd4_ks_smallrc_nw",
+ "description": "Directed Design 4: key schedule simplest nonzero constants RC=i+1",
+ "batch": "batch4",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x61130f294b6bb022"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x4ea4a46e9324cdc6"
+  }
+ ]
+}

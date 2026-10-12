@@ -1,0 +1,26 @@
+{
+ "name": "dd9_cssc_nolin_a",
+ "description": "Directed Design 9 (D6): 4r CSSC, AND-chi, no LIN \u2014 pattern variation (chi-first)",
+ "batch": "batch9",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "rtl_top": "dd9_cssc_nolin_a",
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x9ab8e7583185b226"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xd01460867f42b6e2"
+  }
+ ]
+}

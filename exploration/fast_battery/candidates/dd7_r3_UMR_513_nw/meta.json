@@ -1,0 +1,25 @@
+{
+ "name": "dd7_r3_UMR_513_nw",
+ "description": "Directed Design 7 (D4): 3r hetero all-different U/M/R (reverse)",
+ "batch": "batch4",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xf042194767371b79"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x8acdebff3f7ee6bc"
+  }
+ ]
+}

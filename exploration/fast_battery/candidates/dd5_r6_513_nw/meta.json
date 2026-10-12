@@ -1,0 +1,25 @@
+{
+ "name": "dd5_r6_513_nw",
+ "description": "Directed Design 5: 6-round: ~40u, tests the cost/benefit curve endpoint",
+ "batch": "batch4",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xf64d3bff1fddee53"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xb1f9a097b66c2081"
+  }
+ ]
+}

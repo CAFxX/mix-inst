@@ -1,0 +1,26 @@
+{
+ "name": "dd9_scsc_linall_a",
+ "description": "Directed Design 9 (D6): 4r SCSC, AND-chi, LIN after every round \u2014 safe co-design baseline",
+ "batch": "batch9",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "rtl_top": "dd9_scsc_linall_a",
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x981b6be527ed4591"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x858bd5c07f6ad23b"
+  }
+ ]
+}

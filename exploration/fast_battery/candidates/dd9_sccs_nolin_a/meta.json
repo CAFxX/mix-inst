@@ -1,0 +1,26 @@
+{
+ "name": "dd9_sccs_nolin_a",
+ "description": "Directed Design 9 (D6): 4r SCCS, AND-chi, no LIN \u2014 pattern variation (chi pair adjacent)",
+ "batch": "batch9",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "rtl_top": "dd9_sccs_nolin_a",
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xf9f03d3f2a4d77e1"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x988828793d93e724"
+  }
+ ]
+}

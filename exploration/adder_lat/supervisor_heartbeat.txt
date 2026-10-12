@@ -90,3 +90,8 @@ HB 2026-10-11T20:52Z Track3: RESUMED per user order; W3 LIN-kill MECHANISM FOUND
 2026-10-11 23:27:58 w3prime-harvest: al_w3p_c KILLED at S1 (LIN FLAG rej=1, DIFF PASS; rank-62 probe insufficient); battery continues d
 2026-10-11 23:28:08 w3prime-harvest: Q1 al_w3p_b sac_z5=0 bic=0.00858 (BIC-clean) — a and b both FULL BATTERY+Q1 PASS; d in S1
 2026-10-11 23:29:55 w3prime-harvest: S1 al_w3p_d CAL_PASS; S2 running
+2026-10-11 23:35:01 w3prime-harvest: S2 al_w3p_d 98/115, max|z|=3.9, 0 kills
+2026-10-11 23:40:13 w3prime-harvest: S3 al_w3p_d 16/64MB clean; 256MB running
+2026-10-11 23:45:15 w3prime-harvest: S3/S3b al_w3p_d PASS; S4 running
+2026-10-11 23:46:58 w3prime-harvest: BATTERY-PASS al_w3p_d; running Q1 for d
+2026-10-11 23:51:11 w3prime-harvest: DONE — 3/4 full battery+Q1 PASS (a/b/d, BIC-clean), c S1-killed; ledger + VERDICT_SCOPE O98 recorded

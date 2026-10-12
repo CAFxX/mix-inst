@@ -46,6 +46,9 @@ candidate directories.
 | 30 | al_and6a | 20.1u | 6,116 | 19,541 | 0.00868 | **retired 2026-10-10** (former Frontier S speed point): dominated by t6_b33b (20.1u tie on delay, 5,992<6,116 cells, 19,280<19,541 area). 6-stage AND-rotation cascade; full battery evidence in fast_battery/results/al_and6a/ | AL |
 | 31 | t6_b33c | 19.8u | 6,133 | 19,817 | 0.01002 | **Frontier S (speed point) + Frontier Q** | batch-33 |
 | 32 | t6_b33b | 20.1u | 5,992 | 19,280 | 0.00913 | **Frontier S (size point) + Frontier Q** | batch-33 |
+| 33 | al_w3p_a | 48.3u | 18,917 | 58,806 | 0.00839 | retired (never frontier — dominated on all axes) — full battery+Q1 PASS | wave-14 W3' |
+| 34 | al_w3p_b | 50.6u | 18,322 | 57,155 | 0.00858 | retired (never frontier — dominated on all axes) — full battery+Q1 PASS | wave-14 W3' |
+| 35 | al_w3p_d | 48.7u | 18,983 | 58,731 | 0.00861 | retired (never frontier — dominated on all axes) — full battery+Q1 PASS | wave-14 W3' |
 | 29 | r25_spn_pba19_sb_rasC2_0_nw | 26.5u | 5,125 | 14,019 | 0.01012 | **Frontier S + Q (speed point)** — full battery PASS (S0–S4 + sac_z5=0 + BIC ≤ 0.02), parent-verified 2026-10-05; strictly dominates r23 pba19b01 and wf2d aff_a17_b17 | 25 |
 | 30 | r25_spn_pba19_sb_rasC1_2_nw | 28.5u | 4,980 | 13,247 | 0.00847 | **full-pass reference, frontier-excluded** — full battery PASS (S0–S4 + sac_z5=0 + BIC ≤ 0.02), parent-verified 2026-10-05; strictly dominated by r22c (28.3/4,656/12,949) on all axes | 25 |
 

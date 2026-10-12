@@ -1,0 +1,2 @@
+CALIB-1 and1/b33c: maxworst|z|=3.3 (expect 3.3) PASS
+CALIB-2 mux/MU5-324: n_reject=0 maxworst|z|=3.24 min_fisher=-3.7 (expect KEEP: 0 rejections; b51/b52/b53 measured z=3.24) PASS

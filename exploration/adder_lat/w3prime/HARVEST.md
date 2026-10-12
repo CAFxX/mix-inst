@@ -40,7 +40,18 @@
   (LIN FLAG rej=1, DIFF PASS)**. Verdict: KILLED at S1. Note: c had the minimum
   screen full_rank=62; a/b (rank 63) passed S1 — the rank-62 probe is marginal,
   not a sufficient S1-LIN gate.
-- al_w3p_d: battery running (started 23:20Z).
+- al_w3p_d: S0 48.7u/18983/58731 (< 123.4u bar); S0a xcheck PASS; **S1 CAL_PASS**;
+  **S2 PASS** (0 repeats, max|z|=3.9, all 115 deltas); **S3 PASS** (PractRand 1GB);
+  **S3b PASS** (strided 1GB); **S4 PASS** (SmallCrush);
+  **Q1 sac_z5=0, bic_maxcorr=0.00861 (BIC-clean)**.
+  **FULL BATTERY+Q1 PASS.** Dominated on implementation axes (48.7u) — retained.
+
+## Harvest verdict (2026-10-11 ~23:50 CEST)
+3 of 4 selected KEEPs pass the full battery + Q1 with BIC-clean (a, b, d);
+c killed at S1 (LIN FLAG rej=1). First adder-latency-track designs through the
+full battery — the W3' full-rank probe fixed wave-14's S1-LIN kill for rank-63
+schedules; rank-62 remains marginal (c). All three survivors dominated on
+implementation axes (48–51u vs r8 42.9u) — retained in RETAINED.md, not frontier.
 
 ## Battery (pending S0)
 - Survivors → `run_fast_battery.sh` START=1, S1→S2→S3→S4→Q1 per b33 playbook.

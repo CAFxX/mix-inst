@@ -1,0 +1,49 @@
+2026-10-11T23:36:04Z wrapper start: deadline=1791804964 now=1791761764
+2026-10-11T23:36:05Z backoff clear after 1 polls
+2026-10-11T23:36:05Z backoff clear: running calibration
+CALIBRATION exit=0
+CALIB-1 and1/b33c: maxworst|z|=3.3 (expect 3.3) PASS
+CALIB-2 mux/MU5-324: n_reject=0 maxworst|z|=3.24 min_fisher=-3.7 (expect KEEP: 0 rejections; b51/b52/b53 measured z=3.24) PASS
+try   0 n_reject=10 maxworst|z|=  1328.0 min_fisher=   -inf worstkey=0x5555555555555555 kill andpos=1
+try   1 n_reject=10 maxworst|z|=   221.8 min_fisher=   -inf worstkey=0x92988f142674743 kill andpos=1
+try   2 n_reject=10 maxworst|z|=   232.6 min_fisher=   -inf worstkey=0xf0b52a9e7d8ba2b5 kill andpos=1
+try   3 n_reject=10 maxworst|z|=   263.9 min_fisher=   -inf worstkey=0x9e3779b97f4a7c15 kill andpos=1
+try   4 n_reject=10 maxworst|z|=   232.0 min_fisher=   -inf worstkey=0xf0b52a9e7d8ba2b5 kill andpos=1
+try   5 n_reject=10 maxworst|z|=   441.3 min_fisher=   -inf worstkey=0xdeadbeefdeadbeef kill andpos=1
+try   6 n_reject=9 maxworst|z|=   307.1 min_fisher=   -inf worstkey=0x9e3779b97f4a7c15 kill andpos=1
+try   7 n_reject=10 maxworst|z|=   288.2 min_fisher=   -inf worstkey=0xaaaaaaaaaaaaaaaa kill andpos=1
+try   8 n_reject=10 maxworst|z|=  6916.2 min_fisher=   -inf worstkey=0x92988f142674743 kill andpos=1
+try   9 n_reject=10 maxworst|z|=  8394.6 min_fisher=   -inf worstkey=0xf0b52a9e7d8ba2b5 kill andpos=1
+try  10 n_reject=10 maxworst|z|=739994.3 min_fisher=   -inf worstkey=0xdeadbeefdeadbeef kill andpos=1
+try  11 n_reject=10 maxworst|z|=  2802.3 min_fisher=   -inf worstkey=0x92988f142674743 kill andpos=1
+=== hetMA5N: 0/12 KEEP minz=221.8 (seed=0xb561) ===
+hetMA5N exit=0
+try   0 n_reject=10 maxworst|z|=   133.5 min_fisher=   -inf worstkey=0x123456789abcdef kill andpos=1
+try   1 n_reject=10 maxworst|z|=   516.9 min_fisher=   -inf worstkey=0x0 kill andpos=1
+try   2 n_reject=10 maxworst|z|=  1382.1 min_fisher=   -inf worstkey=0xdeadbeefdeadbeef kill andpos=1
+try   3 n_reject=9 maxworst|z|=    98.2 min_fisher=   -inf worstkey=0xaaaaaaaaaaaaaaaa kill andpos=1
+try   4 n_reject=10 maxworst|z|=  1201.8 min_fisher=   -inf worstkey=0xf0b52a9e7d8ba2b5 kill andpos=1
+try   5 n_reject=1 maxworst|z|=     4.5 min_fisher=   -7.0 worstkey=0xffffffffffffffff kill andpos=1
+try   6 n_reject=10 maxworst|z|=   125.1 min_fisher=   -inf worstkey=0xffffffffffffffff kill andpos=1
+try   7 n_reject=1 maxworst|z|=     6.3 min_fisher=  -14.6 worstkey=0x92988f142674743 kill andpos=1
+try   8 n_reject=7 maxworst|z|=     9.5 min_fisher=  -34.0 worstkey=0x9e3779b97f4a7c15 kill andpos=1
+try   9 n_reject=9 maxworst|z|=    28.5 min_fisher= -394.8 worstkey=0x123456789abcdef kill andpos=1
+try  10 n_reject=10 maxworst|z|=   671.1 min_fisher=   -inf worstkey=0x0 kill andpos=1
+try  11 n_reject=7 maxworst|z|=   312.8 min_fisher=   -inf worstkey=0x92988f142674743 kill andpos=1
+=== hetMOA5: 0/12 KEEP minz=4.5 (seed=0xb562) ===
+hetMOA5 exit=0
+try   0 n_reject=9 maxworst|z|=   772.6 min_fisher=   -inf worstkey=0x92988f142674743 kill andpos=1
+try   1 n_reject=9 maxworst|z|=    21.1 min_fisher= -430.8 worstkey=0xaaaaaaaaaaaaaaaa kill andpos=1
+try   2 n_reject=9 maxworst|z|=    61.5 min_fisher=   -inf worstkey=0xaaaaaaaaaaaaaaaa kill andpos=1
+try   3 n_reject=6 maxworst|z|=    61.7 min_fisher=   -inf worstkey=0xdeadbeefdeadbeef kill andpos=1
+try   4 n_reject=10 maxworst|z|=    35.8 min_fisher=   -inf worstkey=0x9e3779b97f4a7c15 kill andpos=1
+try   5 n_reject=10 maxworst|z|=    32.5 min_fisher= -685.5 worstkey=0x9e3779b97f4a7c15 kill andpos=1
+try   6 n_reject=4 maxworst|z|=    23.4 min_fisher= -276.7 worstkey=0xdeadbeefdeadbeef kill andpos=1
+try   7 n_reject=9 maxworst|z|=   188.6 min_fisher=   -inf worstkey=0x92988f142674743 kill andpos=1
+try   8 n_reject=9 maxworst|z|=    70.5 min_fisher=   -inf worstkey=0x123456789abcdef kill andpos=1
+try   9 n_reject=9 maxworst|z|=   144.0 min_fisher=   -inf worstkey=0x0 kill andpos=1
+try  10 n_reject=9 maxworst|z|=   369.9 min_fisher=   -inf worstkey=0x9e3779b97f4a7c15 kill andpos=1
+try  11 n_reject=3 maxworst|z|=    19.7 min_fisher=   -inf worstkey=0x0 kill andpos=1
+=== hetMA5p1f: 0/12 KEEP minz=19.7 (seed=0xb563) ===
+hetMA5p1f exit=0
+2026-10-11T23:36:58Z PRE-PILOT COMPLETE

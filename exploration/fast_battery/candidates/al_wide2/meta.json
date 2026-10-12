@@ -1,0 +1,24 @@
+{
+ "name": "al_wide2",
+ "description": "2-round wide-trail SPN (128-bit)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x8f7046f871afd8a6"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x5f8b3ccdf654367f"
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "fz24_f",
+  "description": "5-stage hetero [t3,AND,AND,AND,CHI]: cheap prefix, chi final",
+  "rtl_top": "fz24_f",
+  "screen_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "practrand_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ]
+}

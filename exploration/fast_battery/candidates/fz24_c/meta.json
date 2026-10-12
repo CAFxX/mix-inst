@@ -1,0 +1,13 @@
+{
+  "name": "fz24_c",
+  "description": "5-stage hetero [t3,t3,AND,AND,CHI]: chi final x^=(~ra&rb)^rc^rd",
+  "rtl_top": "fz24_c",
+  "screen_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "practrand_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ]
+}

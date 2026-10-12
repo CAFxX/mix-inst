@@ -1,0 +1,13 @@
+{
+  "name": "fz22_maj6a",
+  "description": "6-stage majority-cascade: x^=maj(x,ra,rb)^rc",
+  "rtl_top": "fz22_maj6a",
+  "screen_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "practrand_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ]
+}

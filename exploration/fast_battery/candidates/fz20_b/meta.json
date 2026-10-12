@@ -1,0 +1,13 @@
+{
+  "name": "fz20_b",
+  "description": "5-stage partial-reuse, wider c rotations",
+  "rtl_top": "fz20_b",
+  "screen_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "practrand_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ]
+}

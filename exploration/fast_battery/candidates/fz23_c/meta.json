@@ -1,0 +1,13 @@
+{
+  "name": "fz23_c",
+  "description": "5-stage hetero t3/AND: [AND,t3,AND,t3,AND]",
+  "rtl_top": "fz23_c",
+  "screen_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "practrand_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ]
+}

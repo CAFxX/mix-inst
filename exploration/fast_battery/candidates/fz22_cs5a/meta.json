@@ -1,0 +1,13 @@
+{
+  "name": "fz22_cs5a",
+  "description": "5-stage carry-save",
+  "rtl_top": "fz22_cs5a",
+  "screen_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "practrand_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ]
+}

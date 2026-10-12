@@ -1,0 +1,13 @@
+{
+  "name": "fz24_g",
+  "description": "5-stage nibble-chi: x^=nibchi(x)^rotl(x,c), rots (13,29,47,7,31)",
+  "rtl_top": "fz24_g",
+  "screen_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "practrand_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ]
+}

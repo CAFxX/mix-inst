@@ -1,0 +1,13 @@
+{
+  "name": "fz22_maj5a",
+  "description": "5-stage majority-cascade",
+  "rtl_top": "fz22_maj5a",
+  "screen_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "practrand_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ]
+}

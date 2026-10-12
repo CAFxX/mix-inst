@@ -1,0 +1,13 @@
+{
+  "name": "fz22_cs6c",
+  "description": "6-stage carry-save, no rb: s'=s^c^ra (XOR3), c'=maj(s,c,ra)<<<1",
+  "rtl_top": "fz22_cs6c",
+  "screen_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "practrand_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "fz20_a",
+  "description": "5-stage partial-reuse: x^=(ra&rb)^rc^ra",
+  "rtl_top": "fz20_a",
+  "screen_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "practrand_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ]
+}

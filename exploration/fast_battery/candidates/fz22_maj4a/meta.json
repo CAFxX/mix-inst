@@ -1,0 +1,13 @@
+{
+  "name": "fz22_maj4a",
+  "description": "4-stage x^=maj(x,ra,rb)^rc, no final k (long shot)",
+  "rtl_top": "fz22_maj4a",
+  "screen_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "practrand_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ]
+}

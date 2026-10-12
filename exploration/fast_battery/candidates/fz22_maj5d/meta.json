@@ -1,0 +1,13 @@
+{
+  "name": "fz22_maj5d",
+  "description": "5-stage x^=maj(x,ra,rb)^rc, no final k",
+  "rtl_top": "fz22_maj5d",
+  "screen_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "practrand_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "fz22_cs6b",
+  "description": "6-stage carry-save, alt schedule",
+  "rtl_top": "fz22_cs6b",
+  "screen_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "practrand_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ]
+}

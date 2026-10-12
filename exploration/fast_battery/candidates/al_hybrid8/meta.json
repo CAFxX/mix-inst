@@ -1,0 +1,24 @@
+{
+ "name": "al_hybrid8",
+ "description": "8-stage heterogeneous cascade alternating chi/ornot/and",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x43ac3f103ebb4c40"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xc9632c47a5654e06"
+  }
+ ]
+}

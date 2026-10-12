@@ -1,0 +1,25 @@
+{
+ "name": "al_ht53",
+ "description": "Wave-12: hetero 5-stage 2x t3 + 3x and, proxy z=4.8, est 19.05u (design-rules)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "rtl_top": "al_ht53",
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x29810771a5a9eac2"
+  },
+  {
+   "val": "0x123456789ABCDEF0",
+   "key": "0x0",
+   "out": "0xa34e14263e77e884"
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+{
+ "name": "al_hybtc4",
+ "description": "Hybrid 2x trichi + 2x chi (est 16.6u)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xc6b870406fe198bc"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x4c776317f43f9afa"
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+{
+ "name": "al_orand6",
+ "description": "6-stage AND/OR mix: x ^= (ra&rb) ^ (rc|rd) ^ re",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x4b760867cc7b0c30"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xc1b91b3057a50e76"
+  }
+ ]
+}

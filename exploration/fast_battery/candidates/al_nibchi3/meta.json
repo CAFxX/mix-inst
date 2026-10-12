@@ -1,0 +1,24 @@
+{
+ "name": "al_nibchi3",
+ "description": "3-round nibble-chi SPN: N(x)=x^((x rol1 4b)&(x rol2 4b)); L=^rot(c1)^rot(c2)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xdea0a3fc3a143b60"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x546fb0aba1ca3926"
+  }
+ ]
+}

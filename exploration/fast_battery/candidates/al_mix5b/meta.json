@@ -1,0 +1,24 @@
+{
+ "name": "al_mix5b",
+ "description": "5-stage mixed ornot/chi cascade",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xc5274c5e5652655a"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x4fe85f09cd8c671c"
+  }
+ ]
+}

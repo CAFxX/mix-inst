@@ -1,0 +1,25 @@
+{
+ "name": "al_keylin6b",
+ "description": "Wave-11: 6-stage key-linear triplets, alt key offsets (k1=7i,k2=31i)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "rtl_top": "al_keylin6b",
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x4fe5df4b070bc451"
+  },
+  {
+   "val": "0x123456789ABCDEF0",
+   "key": "0x0",
+   "out": "0x29124189b8ca9d4"
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+{
+ "name": "al_mix5a",
+ "description": "5-stage mixed chi/ornot cascade",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x9170d419d161d047"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x1bbfc74e4abfd201"
+  }
+ ]
+}

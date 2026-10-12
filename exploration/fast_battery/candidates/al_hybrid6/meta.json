@@ -1,0 +1,24 @@
+{
+ "name": "al_hybrid6",
+ "description": "6-stage heterogeneous cascade alternating chi/and",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xfb195ddc0ea6a868"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x71d64e8b9578aa2e"
+  }
+ ]
+}

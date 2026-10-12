@@ -1,0 +1,24 @@
+{
+ "name": "al_orand4",
+ "description": "4-stage AND/OR mix: x ^= (ra&rb) ^ (rc|rd) ^ re",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xaf64744ab685ca63"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x25ab671d2d5bc825"
+  }
+ ]
+}

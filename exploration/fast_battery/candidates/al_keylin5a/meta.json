@@ -1,0 +1,25 @@
+{
+ "name": "al_keylin5a",
+ "description": "Wave-11: 5-stage key-linear triplets (floor probe)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "rtl_top": "al_keylin5a",
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xd28510995c3b8df9"
+  },
+  {
+   "val": "0x123456789ABCDEF0",
+   "key": "0x0",
+   "out": "0x2f3ac1d5984bb45"
+  }
+ ]
+}

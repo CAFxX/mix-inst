@@ -1,0 +1,25 @@
+{
+ "name": "al_het6b",
+ "description": "Wave-10: heterostage and/chi alternating on and6a triplets (resonance control)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "rtl_top": "al_het6b",
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x83d1d480893def88"
+  },
+  {
+   "val": "0x123456789ABCDEF0",
+   "key": "0x0",
+   "out": "0x91ec7d712e3edce"
+  }
+ ]
+}

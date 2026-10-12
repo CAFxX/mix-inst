@@ -1,0 +1,25 @@
+{
+ "name": "al_lin6a",
+ "description": "Wave-11: 5xAND+1xLIN, linear stage at idx 2 (resonance-break)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "rtl_top": "al_lin6a",
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xea110ba54fab3d80"
+  },
+  {
+   "val": "0x123456789ABCDEF0",
+   "key": "0x0",
+   "out": "0x60de18f2d4753fc6"
+  }
+ ]
+}

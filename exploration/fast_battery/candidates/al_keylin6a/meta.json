@@ -1,0 +1,25 @@
+{
+ "name": "al_keylin6a",
+ "description": "Wave-11: 6-stage key-linear triplets x^=(ra&rb)^rk1^rk2 (k1=13i,k2=37i)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "rtl_top": "al_keylin6a",
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xeba23faa7b081cea"
+  },
+  {
+   "val": "0x123456789ABCDEF0",
+   "key": "0x0",
+   "out": "0x29124189b8ca9d4"
+  }
+ ]
+}

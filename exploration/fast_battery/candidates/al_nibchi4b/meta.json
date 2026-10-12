@@ -1,0 +1,24 @@
+{
+ "name": "al_nibchi4b",
+ "description": "4-round nibble-OR SPN: N(x)=x^((x rol1 4b)|(x rol2 4b))",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xde3f80b6e91e4262"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x54f093e172c04024"
+  }
+ ]
+}

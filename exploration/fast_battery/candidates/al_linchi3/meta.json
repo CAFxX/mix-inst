@@ -1,0 +1,24 @@
+{
+ "name": "al_linchi3",
+ "description": "3 rounds of (lin+chi): x^=rotl^rotl then x^=((~ra)&rb)^rc",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xe151418378ff8244"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x6b9e52d4e3218002"
+  }
+ ]
+}

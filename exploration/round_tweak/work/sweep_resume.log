@@ -4111,3 +4111,8 @@ agentwork-launch: tag=track1/sweep schedulers:[none [mq-deadline]  ] ionice=best
 [sweep 18:02:46] backoff: 2 heavy pipelines active, sleeping 300s
 [sweep 18:07:46] backoff: 2 heavy pipelines active, sleeping 300s
 [sweep 18:12:46] backoff: 2 heavy pipelines active, sleeping 300s
+agentwork-launch: tag=track1/sweep schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+[sweep 19:04:23] 1220 specs; 1220 already probed
+[sweep 19:04:23] PROBE rtw_ab0408_pb2io [N9] prio=11214 boosted_by=[]
+[sweep 19:04:41]   S0 rtw_ab0408_pb2io: 37.0u / 3548 / 10490
+[sweep 19:11:04]   S1 rtw_ab0408_pb2io: CAL_PASS lin_rej=0 diff_rej=0

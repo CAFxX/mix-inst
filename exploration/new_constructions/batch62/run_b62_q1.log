@@ -1,0 +1,9 @@
+[2026-10-12T18:32:51+00:00] backoff CLEAR -- starting batch-62 Q1 resume for: t6_b62_26 t6_b62_9 t6_b62_3
+[2026-10-12T18:32:52+00:00] Q1 t6_b62_26
+[2026-10-12T18:44:34+00:00] Q1 t6_b62_26 sac_z5=0
+[2026-10-12T18:44:34+00:00] Q1 t6_b62_9
+[2026-10-12T18:55:51+00:00] Q1 t6_b62_9 sac_z5=0
+[2026-10-12T18:55:51+00:00] Q1 t6_b62_3
+[2026-10-12T19:08:01+00:00] Q1 t6_b62_3 sac_z5=0
+[2026-10-12T19:08:02+00:00] batch-62 Q1 resume done -- heartbeat workreg track6-batch62
+heartbeat track6-batch62

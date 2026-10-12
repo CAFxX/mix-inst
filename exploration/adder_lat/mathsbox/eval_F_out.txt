@@ -1,0 +1,13 @@
+sac: testing 64 input bits x 20000 samples...
+  bit 15: worst |flip-0.5| so far = 0.0716
+  bit 31: worst |flip-0.5| so far = 0.0716
+  bit 47: worst |flip-0.5| so far = 0.0716
+  bit 63: worst |flip-0.5| so far = 0.0716
+SAC worst |flip_rate - 0.5| = 0.0716
+bic: testing 64 input bits x 200 pairs x 20000 samples...
+  bit 15: worst |corr| so far = 1.0000
+  bit 31: worst |corr| so far = 1.0000
+  bit 47: worst |corr| so far = 1.0000
+  bit 63: worst |corr| so far = 1.0000
+BIC worst |corr| = 1.0
+EXIT: 0

@@ -220,3 +220,48 @@ The PractRand prescreen compiles a per-try gen binary into
   workreg track6-batch62 on completion.
 - Next O-number: O142 reserved for batch-S0 verdict; kills above
   ledger-adjudicated, no O-numbers (precedent: 22/25/17/33).
+
+## Batch-S0 verdict (supervisor, 2026-10-12 19:11Z — **O142 MINTED**)
+
+**O142: batch-62 weakness-gated axis — SPEED-AXIS CLOSED (zero sub-18.6u), 3 FULL-PASS SIZE-AXIS CHALLENGERS land on the Pareto frontier by strict-dominance displacement.**
+
+Evidence (all adjudicated raw from the files, never from worker prose):
+- Pilot 80 draws (seed 0xB622) → 10 cost-eligible keeps escalated in
+  z-order (queue_b62_size.txt); marginal keeps 5,11,12,13,14,19,24,28,30,35
+  DEFERRED (escalate only if the strong ten all fail — DESIGN.md); 15
+  dominated keeps get no battery, covered by this verdict.
+- S0 sweep 37/37 ranks, per-rank XCHECK 10000/10000 clean
+  (s0_all.log): **ZERO sub-18.6u** (best t6_b62_10/32/34 tie 18.6u
+  exact; 10 excluded as near-duplicate of the speed point) → the speed
+  objective is honestly closed under the (m=1..3, four-gate) axis.
+- Battery S0a→S1→S2→S3→S3b→S4 (deterministic across the 12:00Z,
+  15:58Z and 18:30Z reboot relaunches): KILLS — 22 S1-FLAG
+  (PB SINGLE-BIT 0x0), 25 S3-gate4 (6× p<1e-3 low-bit, FPF/16+BCFN
+  cluster), 17 S1-FLAG, 33 Q1-KILLED (sac_z5=14, archived
+  verdict_evidence/q1_t6_b62_33_2026-10-12T1507Z.*), 6/21/36
+  S1-marginal-FLAG (O143 gate as designed). Kills ledger-only per the
+  t6_b62_33 precedent — no O-numbers.
+- Q1 (sac_z5=0 mandatory; q1_sacbic N=262144, key 0x123456789abcdef0,
+  raw from q1_t6_b62_*/q1_t6_b62_*.json): **t6_b62_26 sac_z5=0**
+  (bic_maxcorr=0.00873, avalanche_mean=32.0005, wall 690.5s);
+  **t6_b62_9 sac_z5=0** (bic=0.00960, av=32.0042, 668.7s);
+  **t6_b62_3 sac_z5=0** (bic=0.00869, av=31.9964, 724.1s). All clean.
+- Dominance (raw s0_all.log vs PARETO.md, speed-neutral or better
+  AND fewer cells AND less area):
+  - t6_b62_26 19.1u/6272/20327 DOMINATES t6_b59_0 19.1u/6358/20580
+    (−86 cells, −253 area, delay tie)
+  - t6_b62_9 19.2u/5847/19631 DOMINATES hyb29_mu5_008 19.2u/6151/20256
+    (−304 cells, −625 area, delay tie)
+  - t6_b62_3 19.6u/5765/16849 DOMINATES t6_xorh5_15 21.8u/5833/17170
+    (−2.2u, −68 cells, −321 area)
+- Frontier landings (VERDICT_SCOPE rows, PARETO.md S+Q tables + history,
+  RETAINED.md retire/add, RTL mirror add/remove) are OWNED by the
+  adjudication lane dispatched by the 21:06 CEST 30m report run — that
+  lane claims per-candidate O-numbers at write time from the ledger top
+  (O142 was reserved for this batch verdict and is explicitly never
+  claimed by the lane). O142 is the batch-level verdict only.
+- Deferred marginal keeps (5,11,12,13,14,19,24,28,30,35) STAY DEFERRED:
+  escalation condition ("strong ten all fail") not met — 3 landings.
+  They escalate only if all three landings are reverted by deeper review.
+- O142 claimed 19:11Z after re-reading the ledger top at write time
+  (21:06 CEST entry: "O142 RESERVED, never claim" — no claimant).

@@ -1,0 +1,25 @@
+{
+ "name": "t6_b54_h7",
+ "description": "batch-54 hetMA5p1 5-stage schedule (triage z=9.88, andpos=1)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xb1214612e6b35188"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x3bee55457d6d53ce"
+  }
+ ],
+ "rtl_top": "t6_b54_h7"
+}

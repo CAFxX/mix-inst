@@ -1,0 +1,25 @@
+{
+ "name": "t6_b55_f0",
+ "description": "batch-55 hetMA5p1f 5-stage schedule (fisher triage z=2.90 n_reject=0, andpos=1)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x6c24ebcc9e36b3d"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x8c0d5deb523d697b"
+  }
+ ],
+ "rtl_top": "t6_b55_f0"
+}

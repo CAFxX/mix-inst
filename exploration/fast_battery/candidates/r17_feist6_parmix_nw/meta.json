@@ -1,0 +1,26 @@
+{
+ "name": "r17_feist6_parmix_nw",
+ "description": "6r Feistel, F=lin311(S1(R^rk))^lin311(chi32(R)), NO whitening",
+ "composition": "6r Feistel, F=lin311(S1(R^rk))^lin311(chi32(R)), NO whitening",
+ "rtl_top": "r17_feist6_parmix_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x07a69a8cb3e31f75"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x88b6e20cd863a53b"
+  }
+ ]
+}

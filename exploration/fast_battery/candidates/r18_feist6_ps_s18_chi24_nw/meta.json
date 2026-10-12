@@ -1,0 +1,26 @@
+{
+ "name": "r18_feist6_ps_s18_chi24_nw",
+ "description": "6r Feistel, parsplit F=lin311(t)^rk, t[31:8]=chi24(R[31:8],1,2), t[7:0]=S1(R[7:0]), NO whitening",
+ "composition": "6r Feistel, parsplit F=lin311(t)^rk, t[31:8]=chi24(R[31:8],1,2), t[7:0]=S1(R[7:0]), NO whitening",
+ "rtl_top": "r18_feist6_ps_s18_chi24_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x389e220db0e92009"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x8357715e0b5c5dde"
+  }
+ ]
+}

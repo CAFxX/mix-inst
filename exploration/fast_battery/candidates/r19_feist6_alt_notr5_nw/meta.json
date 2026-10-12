@@ -1,0 +1,26 @@
+{
+ "name": "r19_feist6_alt_notr5_nw",
+ "description": "6r alt with round 5 linear ALSO dropped (F_5=S1(R)^rk), round 6 F=chi32(R)^rk, NO whitening",
+ "composition": "6r alt with round 5 linear ALSO dropped (F_5=S1(R)^rk), round 6 F=chi32(R)^rk, NO whitening",
+ "rtl_top": "r19_feist6_alt_notr5_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xc9c5bc6b02607b7d"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x75081e090c02639e"
+  }
+ ]
+}

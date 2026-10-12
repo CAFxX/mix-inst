@@ -1,0 +1,26 @@
+{
+ "name": "r17_feist6_alt_pshalf_nw",
+ "description": "6r Feistel, odd rounds F=lin311(t)^rk with t=(R[31:16]<<16)|S1(R[15:0]) / even rounds chi-F, NO whitening",
+ "composition": "6r Feistel, odd rounds F=lin311(t)^rk with t=(R[31:16]<<16)|S1(R[15:0]) / even rounds chi-F, NO whitening",
+ "rtl_top": "r17_feist6_alt_pshalf_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x685966978e3d3e6a"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xf44ee4d0ef3aa96f"
+  }
+ ]
+}

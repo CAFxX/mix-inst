@@ -1,0 +1,26 @@
+{
+ "name": "r17_feist4_parsplit_nw",
+ "description": "4r Feistel, F=lin311(t)^rk, t[31:16]=chi16(R[31:16]), t[15:0]=S1(R[15:0]), NO whitening (S1-gated probe)",
+ "composition": "4r Feistel, F=lin311(t)^rk, t[31:16]=chi16(R[31:16]), t[15:0]=S1(R[15:0]), NO whitening (S1-gated probe)",
+ "rtl_top": "r17_feist4_parsplit_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x5d0fbbce9262d543"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x6e82b8ad529b4f47"
+  }
+ ]
+}

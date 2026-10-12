@@ -1,0 +1,26 @@
+{
+ "name": "r17_feist6_dbs1split_nw",
+ "description": "6r Feistel, F=lin311(t)^rk, t[15:0]=S1(R[15:0]), t[31:16]=S1rev(R[31:16]) (nibble bit-reversed S1), NO whitening",
+ "composition": "6r Feistel, F=lin311(t)^rk, t[15:0]=S1(R[15:0]), t[31:16]=S1rev(R[31:16]) (nibble bit-reversed S1), NO whitening",
+ "rtl_top": "r17_feist6_dbs1split_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xba79bf6a3bce2cbf"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x3338365fa27a008f"
+  }
+ ]
+}

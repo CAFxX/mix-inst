@@ -1,0 +1,26 @@
+{
+ "name": "r19_feist6_alt_notr_chioff13_fm03_nw",
+ "description": "6r chioff13-notr + BIC fix: rounds 2,4 chi(1,3), F_6=(chi32(R)^rk)^rotl32(chi32(R)^rk,3), NO whitening",
+ "composition": "6r chioff13-notr + BIC fix: rounds 2,4 chi(1,3), F_6=(chi32(R)^rk)^rotl32(chi32(R)^rk,3), NO whitening",
+ "rtl_top": "r19_feist6_alt_notr_chioff13_fm03_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x70f7314788172fc0"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x750308da77057336"
+  }
+ ]
+}

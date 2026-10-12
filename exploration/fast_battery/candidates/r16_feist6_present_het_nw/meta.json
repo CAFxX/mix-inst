@@ -1,0 +1,26 @@
+{
+ "name": "r16_feist6_present_het_nw",
+ "description": "6r Feistel, odd rounds PRESENT-F=lin311(PRESENT(R))^rk / even rounds chi-F, NO whitening",
+ "composition": "6r Feistel, odd rounds PRESENT-F=lin311(PRESENT(R))^rk / even rounds chi-F, NO whitening",
+ "rtl_top": "r16_feist6_present_het_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x149be3e3c3992a12"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x1cb055e55a0885df"
+  }
+ ]
+}

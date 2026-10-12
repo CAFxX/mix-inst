@@ -1,0 +1,26 @@
+{
+ "name": "rtw_n7a_0106",
+ "description": "tweak N7a: notr x^R^1^R^6 (odd-term, id kept)",
+ "composition": "tweak N7a: notr x^R^1^R^6 (odd-term, id kept)",
+ "rtl_top": "rtw_n7a_0106",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xa1ab7d31fa79503b"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x8fa104c0d09b1e1a"
+  }
+ ]
+}

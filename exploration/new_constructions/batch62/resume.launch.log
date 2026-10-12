@@ -1,0 +1,5 @@
+agentwork-launch: tag=track6/b62-resume schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+[2026-10-12T07:14:06Z] batch-62 pre-pilot RESUME: tries 4-11 (seed 0xB621)
+[2026-10-12T07:28:06Z] PRE-PILOT COMPLETE rc=0
+[2026-10-12T07:28:06Z] backoff CLEAR -- starting batch-62 pilot
+[2026-10-12T07:31:19Z] PILOT COMPLETE rc=1

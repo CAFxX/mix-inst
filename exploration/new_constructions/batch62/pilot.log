@@ -1,0 +1,13 @@
+[2026-10-12T07:28:06Z] backoff CLEAR -- starting batch-62 pilot
+try   0 m=2 G1-fisher KILL n_reject=4 z=13.6
+Traceback (most recent call last):
+  File "/home/hatch/workspace/mix/exploration/new_constructions/batch62/t6_b62_screen.py", line 499, in <module>
+    main()
+  File "/home/hatch/workspace/mix/exploration/new_constructions/batch62/t6_b62_screen.py", line 471, in main
+    k4, d4 = eval_low1(stages, tag)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hatch/workspace/mix/exploration/new_constructions/batch62/t6_b62_screen.py", line 240, in eval_low1
+    p = float(m.group(4))
+        ^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: '1-2.9e-3'
+[2026-10-12T07:31:19Z] PILOT COMPLETE rc=1

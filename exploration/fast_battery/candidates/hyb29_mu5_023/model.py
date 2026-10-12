@@ -1,0 +1,20 @@
+"""hyb29_mu5_023: batch-29 MU5-324local MUXD cascade (fisher triage z=3.47 n_reject=0)."""
+STAGES = [('MUXD', 62, 50, 55, 2), ('MUXD', 48, 58, 23, 30), ('MUXD', 44, 45, 62, 54), ('MUXD', 49, 59, 32, 35), ('MUXD', 46, 51, 43, 44)]
+def mix_np(V, K):
+    import numpy as np
+    M = np.uint64(0xFFFFFFFFFFFFFFFF)
+    def rotl(x, r):
+        r %= 64
+        return ((x << np.uint64(r)) | (x >> np.uint64(64 - r))) & M if r else x
+    x = np.asarray(V, dtype=np.uint64); k = np.asarray(K, dtype=np.uint64)
+    x = (x ^ k) & M
+    for st in STAGES:
+        assert st[0] == "MUXD"
+        _, s, a, b, d = st
+        g = ((rotl(x, s) & rotl(x, a)) | ((~rotl(x, s)) & rotl(x, b))) & M
+        x = (x ^ g ^ rotl(x, d)) & M
+    x = (x ^ rotl(k, 13)) & M
+    return x
+def mix(v, k):
+    import numpy as np
+    return int(mix_np(np.uint64(v), np.uint64(k)))

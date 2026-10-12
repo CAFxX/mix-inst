@@ -407,3 +407,222 @@ Why it matters for us:
 Honest limits: different construction family (variable-length keyed polynomial
 hashing, not a fixed 64-bit keyed SPN finalizer); nothing ports directly to the
 mix chassis. Fold the deep read into the next sweep.
+
+
+---
+
+## 2026-10-12 — Weekly sweep (3-topic parallel survey, corrected round-8 frame)
+
+**Judging-frame correction:** earlier briefs assumed r6_feist8_spn (86.5u) as
+leader; mid-sweep the frame was corrected to
+[r8_feist6_s1_1sbox_nw](fast_battery/candidates/r8_feist6_s1_1sbox_nw/) (round 8,
+2026-10-02; evidence in [ROUND8_TABLE.md](round8/ROUND8_TABLE.md)): 6-round
+balanced Feistel, F = single S1 4-bit S-box layer → `x^rotl32(x,7)^rotl32(x,13)`
+→ `^rk32`, no input whitening; **42.9u = 0.414× the same-flow 64×64 multiplier
+(bar 93.2u)**, 4,133 cells; S0–S4 clear plus Q1 (SAC/BIC at noise floor,
+sac_z5=0). **~50u of headroom** under the bar. The binding question shifted
+from delay to the *cryptanalytic margin* of a 6-round Feistel with a
+single-S-box-layer F, and to chassis diversification (stronger F, same or
+bigger margin, still ≪93u).
+
+### NEW — actionable (judged against the 6-round Feistel / ~50u headroom frame)
+
+1. **Leurent–Pernot rotation-XOR LBoxes** (ToSC 2024; VERIFIED via paper text +
+   `Lbox-ToSC/lboxsearch` repo). **L32**: single-word 32-bit linear layer,
+   **branch number 12 at 5 XORs + 5 rotations per word**, matching the best
+   known [64,32,12] linear code (concrete instance in the paper's Algorithm 2).
+   Why it matters: our F's diffusion is a 2-term rotation-XOR with a weak
+   branch number — cryptanalytically thin; this is the denser-diffusion-per-
+   XOR-level co-design target at ~3 XOR levels vs ~2 now. Gate: **LIN +
+   diffusion-per-XOR-level**. Sketch: F = S1 layer (~3.5u) + L32 (~5–6u) +
+   `^rk32` → ~9–10u/round; 6r ≈ 55–60u ≪ 93u. Fallback: L32×2 (Clyde-128's,
+   BN 16, 6 XORs+6 rots/word) if F ever widens to 64 bits.
+
+2. **ChainHash "integer twist" transfer** (Thomas Ahle; VERIFIED via the
+   repo's DESIGN.md "Twist and finalizer" section + `results/64/suite/
+   REPORT.md`). `v = V ⊞ tau`: one 64-bit integer add of an independent key
+   word before the finalizer, breaking GF(2)-linearity between stages.
+   ChainHash's own A/B: untwisted degree-5 circuit → 178/200 SMHasher3
+   (failures exactly on Zeroes/Sparse/TwoBytes/Bitflip — affine second
+   derivatives of pure-quadratic GF(2) maps); twisted → 200/200. Transfer:
+   our 6r F is pure GF(2); the round-7/8 "whitening is pure cost" finding was
+   XOR-whitening — integer-add twist is qualitatively different. Gate:
+   **LIN / marginal algebraic structure**. Sketch: keep the 6r Feistel, add
+   ONE 64-bit ⊞ of an independent key word as pre- or post-processing; est
+   ~51–55u total, still ≪93u; bijectivity per fixed key holds (⊞ is a
+   permutation). Untested — needs S0 + S1–S4.
+
+3. **HILL — heuristic search for minimal-depth linear-layer circuits**
+   (ToSC 2026; artifact repo with downloadable circuits: AES MixColumns
+   270.4 GE at depth 3; 16×16 and 32×32 Hadamard matrices; VERIFIED via
+   ToSC page + repo). Heuristic SLP search with an h-XOR area×depth metric.
+   Our F's diffusion was hand-picked; HILL generates the depth-optimal
+   32×32 binary matrix at fixed XOR depth. Gate: **delay + LIN/DIFF**.
+   Methodology lead — direct plug-in to the F-function track; complements
+   the "optimal rotational-XOR primitives" lead.
+
+4. **MATTER — 3–6-round balanced Feistel with a public permutation as F,
+   designed for low latency** (Avanzi–Dunkelman–Minematsu, ePrint 2024/1186;
+   abstract VERIFIED). 512-bit Feistel, F = ASCON permutation keyed by
+   round-key XOR, explicitly low-latency hardware. Design precedent that 6r
+   Feistel + strong public F is defensible, and suggests the diversification
+   move: replace our single-S-box F with a stronger public P (2-round
+   Blink-style SPN, χχ-based) — ~50u headroom affords P≈10u/round → ≈60u
+   total. Gate: **security margin**. Sketch: 6r Feistel, F(x) = P(x ^ rk_i),
+   affine key schedule as now.
+
+5. **MSX-64's strongly-universal 32-bit round function** (Minematsu et al.,
+   CiC 2025, doi:10.62056/av11c3c2h; full PDF VERIFIED). F = 32-bit
+   half-multiplication + modular addition ("without primes" UH à la Thorup):
+   provably pairwise-independent ⇒ differential/linear probabilities at the
+   information-theoretic minimum *by design*; bijective per fixed key for odd
+   multiplier. 64-bit Feistel / 32-bit F = our exact chassis. Gate:
+   **LIN/DIFF directly**. Sketch: F(x) = lo32(a·x) + b, per-round odd a,
+   then rotation-XOR diffusion; 5r ≈ 65–80u fits **IF** a 32-bit
+   half-multiplier synthesizes ≤ ~12–15u in the pinned flow — S0 decides.
+   Caveat: SU proof assumes uniform random key; fixed-key behavior must go
+   through S1–S4 (DFC-lineage attacks beyond the guarantee).
+
+6. **Sonic/SuperSonic — gate-delay-balanced Feistel, asymmetric
+   forward-optimized F** (2023; existence VERIFIED via mirror, spec not read
+   in depth). All paths through F balanced for equal gate delay; inverse
+   deliberately expensive — the forward-only latency metric (SCARF-style,
+   matches our 1-cycle requirement) applied to Feistel. Transferable idea:
+   for a forward-only mixer, F need not be cheaply invertible — opens
+   non-bijective F's with better diff/linear profiles per gate-depth.
+   Gate: **margin + diffusion-per-round**. Idea-only (no 64-bit instance);
+   partial verification.
+
+7. **CTET+ — 2-round tweakable SPN from a single secret S-box,
+   beyond-birthday security** (ToSC; page VERIFIED). Transferable as a
+   stronger F: 2-round "secret-S-box + nonlinear middle layer + independent
+   round keys" beats S1+rotlXOR at similar depth. Gate: **LIN/DIFF**.
+   Idea-only: needs a 32-bit instance designed from scratch; proof is in the
+   RPM.
+
+8. **Carry-less "binary MUM" Feistel F** (our synthesis; prior art CLHASH/
+   Lemire 2016, ChainHash, polyxor — repos VERIFIED live). F(R) =
+   low32(clmul32(R^a_i, R^b_i)): quadratic nonlinearity from XOR trees only
+   (~10–12u/F), no integer multiplies, no adder chains. Feistel gives
+   bijectivity for ANY F. Gate: **per-round DIFF/LIN**. Sketch: 6r balanced
+   Feistel, independent 32-bit round keys; ≈60–72u < 93u. Caveat: pure-
+   quadratic GF(2) maps have affine second derivatives (ChainHash measured
+   this); battery decides; hybrid clmul+S-box variant breaks the quadratic
+   structure. PROPOSED, not a published construction.
+
+### NEW — cryptanalysis calibrations (the 6-round Feistel's margin, not its batteries)
+
+9. **Özdemir–Rijmen: generic multidimensional-linear distinguishing reaches
+   7 rounds** (ToSC 2026(1) pp. 376–409; ePrint 2025/2333; IACR news
+   2025-12-31 — triple-attested; eprint.iacr.org 403s in this environment,
+   noted). Type-2 GFC with t branches → distinguishing reach 2t+3 rounds;
+   t=2 ⇒ **7 rounds** (key recovery 8). Round-function-agnostic; works with
+   non-invertible F. Implication: our **linear margin = exactly 1 round —
+   distinguisher-adjacent**. Caveat: data ≤2^64 at max reach, far above our
+   ≤2^30 threat model — existence of key-independent linear hulls, not a
+   practical break. Our LIN gate (binary-rank on consecutive outputs) is
+   weaker than a full multidimensional-linear distinguisher → add a
+   dedicated linear-hull screen (complements the DDT-singular-value lead).
+
+10. **Maurer–Oswald–Pietrzak–Sjödin, "Luby-Rackoff Ciphers from Weak Round
+    Functions?"** (ePrint 2006/213; full PDF read). With only-nCPA-secure
+    round functions: 3r provably NOT CPA-secure; 4r CPA-secure in the
+    quasirandom setting but not the pseudorandom one; 5r gives CCA in the
+    quasirandom setting. KPA-only F unconditionally too weak. Our F (public
+    single-S-box layer) qualifies for NONE of the positive results — the
+    provable line contributes **zero** margin argument for 6r-with-weak-F;
+    our margin case is empirical-only. Theory-backed margin direction:
+    **heterogeneous F, stronger in middle rounds 2–5** (first round may be
+    pairwise-independent; last needs only KPA security).
+
+11. **Patarin, CRYPTO 2004: 5r CPA-2 minimal (4r CPA attacks exist at
+    m ≥ O(2^{n/2})), 6r CPCA-2** (abstract verified verbatim via two mirrors;
+    LNCS 3152). With ideal F, 6r sits exactly AT the CPCA floor, one above
+    the CPA floor; with weak F the true floor is higher by an unquantified
+    amount.
+
+12. **Generic 5-round impossible differential for Feistel with bijective F**
+    (Kühn 2001; verified text + independently re-derived: (α,0) ↛ (0,α),
+    α≠0, over 5 rounds, miss-in-the-middle + F-bijectivity contradiction).
+    Our F is bijective (S-box ∘ linear ∘ key XOR) → applies directly.
+    **ID margin = exactly 1 round**; do not go below 6r without new evidence.
+
+13. **MISTY1 falls to impossible-differential key recovery at 6 rounds**
+    (Dunkelman–Keller 2008: 6r with FL at 2^51 CP; Kühn 2001: 6r without FL
+    at 2^39 PT). 64-bit Feistel with F far stronger than ours still falls at
+    6r. What saves our design is the threat model (fixed key, statistical
+    indistinguishability at ≤2^30, no key-recovery goal) — not the round
+    count. Document that restriction.
+
+**Margin verdict:** 6 rounds is the cryptanalytic floor, not a comfortable
+margin — three independent generic results put floors at 5r (CPA/random F),
+5r (ID/bijective F), 7r (generic linear-distinguisher reach, 1 above us).
+Two actionable consequences: (i) a 7th round costs ~7.15u/round → ~50u
+total, still ≪93u — worth testing against S1–S4 (note:
+r8_feist7_s1_1sbox_nw was S1-killed on LIN — whitening matters at 7r, so the
+7-round test must keep whitening); (ii) strengthen the middle rounds first
+if buying margin structurally.
+
+### DUPLICATE (already tracked; re-judged against the round-8 frame)
+
+- **ChiChi/χχ_64 as F's nonlinear part** — re-judged: strongest known
+  per-round LIN/DIFF upgrade over a single S-box layer at ~3u; F ≈ χχ_64 +
+  rotation-XOR ≈ 7–8u/round; ≤5r χχ cryptanalytic floor still declared.
+- **sTCPM / MRM re-parameterized for the 32-bit F word** — new action nuance:
+  derive 32-bit parameters via the papers' §7 text / parameter generators.
+- **uKNIT heterogeneity + Dialga** — transferable nugget = zero-delay-cost
+  per-round variation ((a_i,b_i) from MILP trail-bound maximization,
+  per-round S-box classes).
+- **Sun et al. SAT-optimized 4-bit S-box circuits** (TWINE 41 gates / depth 4 /
+  0.17ns, Piccolo 0.16ns, …) as S1 drop-ins.
+- **Rotational-XOR MDS family** as the dense-diffusion option (L32 now
+  preferred: concrete instances published).
+- **uLBC methodology** — concrete S-box table still not extracted (gap
+  carried).
+- **BipBip** χ-layer + core/shell round alternation (idea only); **BenX**
+  GF(2) nibble-block adaptation (idea only); **Twinkle literal**
+  (area-infeasible).
+- Multiply/adder-chain class rejections re-confirmed (wyhash, xxHash3
+  finalMerge ≈160u, rapidhash class, lanehash, GxHash v3, SipHash ≈100u+,
+  jsf64/sfc64, Ahle's gxhash-64/t1ha2-64 witnesses).
+- **ZIP-GIFT literal** — NEW but REJECTED (bijectivity gate + published
+  key-recovery attacks, ePrint 2025/2291); retained as chassis-family
+  evidence only.
+- 2026-10-05 "5-round SPN chassis" leads (Blink-64a literal etc.) are now
+  **obsolete as chassis** given the Feistel breakthrough — they remain
+  F-function sources only.
+
+### ChainHash deep-read closeout (deferred from 2026-10-06 — done)
+
+DESIGN.md read in full. Confirmed: methodology-only value (the "does this
+technique *admit a bound*?" lens + the A/B/C/D evaluation classification);
+the construction ports nothing to our ASIC target — the finalizer is a monic
+quintic over integers/GF(2^64) (three products + one add; the GF(2^64)
+quintic is explicitly non-injective, failing the bijectivity gate;
+~60–70u for the carry-less multiplies alone). The transferable primitive is
+the integer twist (lead 2 above).
+
+### UNVERIFIED / watch items
+
+- **LLBC** ("A Novel Feistel-Based Low-Latency Block Cipher for IoT
+  Applications", IEEE Internet of Things Journal 12(21):45583–45595, Nov
+  2025) — Feistel-based low-latency cipher; paywalled, no ePrint mirror;
+  existence VERIFIED via researchr.org only. Flag for follow-up.
+- **NGCC candidate hashes** (`ngcc-dev/ngcc-harness`, repo VERIFIED live) —
+  new hash designs with 64-bit-word XOR/rotation/S-box round functions
+  (MoFang-BC: 3-bit S-box + MDS over GF(2^3) + rotations; ZC: chi+theta);
+  no keyed 64-bit finalizer among them. Monitor for transferable F ideas.
+- **Jia et al. "11-GE floor at depth 3"** (ePrint 2025/386) — number not
+  located this sweep; the underlying ToSC 2025(1) SAT tool is real (cited in
+  Sun et al.'s addendum).
+- **Osvik–Canright bitslice depth records** (claimed ePrint 2024/1076) — not
+  located; bitslice depth ≠ ASIC gate depth anyway.
+
+### Method notes
+
+3 parallel workers (ciphers / primitives / mixers+cryptanalysis), each
+verifying claims against primary sources; mid-sweep frame correction to the
+round-8 leader (earlier briefs carried the stale r6 winner). No new
+fabrication incidents; unverifiable claims flagged UNVERIFIED. The prior
+sweep's hallucination lesson (Twinkle-64 downscale, 2026-10-05) held —
+spot-verification discipline unchanged.

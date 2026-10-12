@@ -1,0 +1,25 @@
+{
+ "name": "al_b2s_b",
+ "description": "(b2) sparse-GF: 3st d-constrained word-AND, cheap rotl-xor linear between stages, one gf_mul(0x94d049bb133111eb) at end; screen idx=111 nrej=0 rank=63 pq=(52,1)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x52572e1ff5eede51"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xd8983d486e30dc17"
+  }
+ ],
+ "rtl_top": "al_b2s_b"
+}

@@ -112,3 +112,11 @@ HB 2026-10-11T20:52Z Track3: RESUMED per user order; W3 LIN-kill MECHANISM FOUND
 2026-10-12 06:18:31 b2sparse-screen: calibration PASS
 2026-10-12 06:45:30 b2sparse-screen: ADOPTED by replacement supervisor; screen alive RNs nice-19, 155/300 rows, 9 KEEP / 14 kill-rank / 132 REJECT-affine; backoff CLEAR
 2026-10-12 06:54:37 b2sparse-screen: screen DONE keeps=14 elapsed=40m
+2026-10-12 07:03:31 b2sparse-s0: S0 launched for al_b2s_a/b/c/d (bar <30u), backoff CLEAR at dispatch
+2026-10-12 07:03:38 b2sparse-screen: DONE keeps=14 (300/300); 4 bundles verified; S0 in flight
+2026-10-12 07:05:12 b2sparse-s0: al_b2s_a S0=35.7u (8907/26542, XCHECK clean) -- ABOVE strict <30u bar; b/c/d running
+2026-10-12 07:18:56 w4t-screen: screen start N=300 seed=0x6e34
+2026-10-12 07:19:47 w4t-screen: canary gate PASS
+2026-10-12 07:22:56 w4t-screen: fisher calibration PASS
+2026-10-12 07:25:52 w4t-screen: progress 50/300 keeps=3 elapsed=7m
+2026-10-12 07:27:39 w4t-screen: progress 75/300 keeps=6 elapsed=9m

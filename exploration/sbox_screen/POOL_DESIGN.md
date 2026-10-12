@@ -155,10 +155,25 @@ against raw logs locally before touching PARETO.md or the ledger.
 
 ## 8. Campaign record
 
-- **Job:** `sbox8-screen-20261012-v2` (tenant `mix-sbox-search`)
+- **Job:** `sbox8-screen-20261012-v2` → **v2b** (repair)
 - **Command:** `driver/screen.py --pool-file pools/sbox8_pool.txt`
 - **Shards:** 8 · **Estimate:** 80 min · **Priority:** new-leads
 - **Submitted:** 2026-10-12 (PAT path, one push)
-- **Local canary:** [canary evidence](#) — AES_SBOX/POW8_7 PASS,
-  IDENTITY8 REJECTED, both canaries exact (3.0u / 10.7u)
-- **Harvest:** aggregate via `driver/aggregate_screen.py --pool-file`
+- **Local canary:** AES_SBOX/POW8_7 PASS, IDENTITY8 REJECTED, both canaries
+  exact (3.0u / 10.7u)
+- **v2 infra failure (repaired):** all 8 v2 shards rc=1 —
+  `FileNotFoundError: '$OUT_DIR/shard.json.tmp'` (dispatch shell escaping
+  leaves `$OUT_DIR` literal; campaign.py immune via
+  `os.environ.get("OUT_DIR")`). screen.py now resolves `$OUT_DIR` from
+  env; v2b resubmitted as new job_id. Canary8 PASSED on GHA (10.7u exact)
+  before the path failure — flow verified.
+- **Harvest (v2b, 2026-10-12):** 8/8 shards done, rc=0, both canaries OK.
+  **31/31 measured.** Ranked (`ranked_sbox8_pool_20261012.json`):
+  cost 10.4u–11.1u (tight). Top-5: AFF8_06/03/00/12 (10.4u),
+  AFF8_02 (10.5u) — all DU=4/NL=112. AES_SBOX 10.7u. Liberty screen
+  unavailable (PDK fetch failed on GHA; non-fatal).
+- **Cost-thesis verdict:** cheapest 10.4u > ~8u threshold → 2-round SPN
+  at ABC-from-case cost ≈ 23u, cannot beat 18.6u. **Top-5 advance to
+  hand-optimization + S0** per §6 (composite-field can only improve on
+  ABC-from-case). If hand-opt cannot break ~8u/box, the 8-bit SPN line is
+  COST-CLOSED (pre-registered negative).

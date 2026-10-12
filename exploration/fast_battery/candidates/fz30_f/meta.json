@@ -1,0 +1,13 @@
+{
+  "name": "fz30_f",
+  "description": "5-stage fz27_h-repair TRY21: DIFFz=17.6@16 marg-PASS, chi(29,17,33,51)",
+  "rtl_top": "fz30_f",
+  "screen_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "practrand_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ]
+}

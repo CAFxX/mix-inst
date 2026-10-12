@@ -1,0 +1,13 @@
+{
+  "name": "fz30_a",
+  "description": "5-stage [t3,AND,t3,AND,CHI]: interleaved body, fz24_o rotations+chi",
+  "rtl_top": "fz30_a",
+  "screen_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "practrand_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ]
+}

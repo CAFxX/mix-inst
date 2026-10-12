@@ -1,0 +1,13 @@
+{
+  "name": "fz30_b",
+  "description": "5-stage [t3,AND,AND,t3,CHI]: t3 delayed to stage 4, fz24_o rotations+chi",
+  "rtl_top": "fz30_b",
+  "screen_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "practrand_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "fz29_b",
+  "description": "fz24_o t3#2 rot4 -1",
+  "rtl_top": "fz29_b",
+  "screen_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "practrand_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ]
+}

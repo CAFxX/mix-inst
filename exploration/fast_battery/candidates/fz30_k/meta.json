@@ -1,0 +1,13 @@
+{
+  "name": "fz30_k",
+  "description": "5-stage repair2 TRY4: marg2 margin=+4.0, chi(29,17,33,51)",
+  "rtl_top": "fz30_k",
+  "screen_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "practrand_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ]
+}

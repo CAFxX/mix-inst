@@ -1,0 +1,13 @@
+{
+  "name": "fz28_b",
+  "description": "5-stage [t3,t3,AND,AND,CHI(6,11,19,42)]: 24c re-run hit z=10.9@16 (seed C41, try 6)",
+  "rtl_top": "fz28_b",
+  "screen_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "practrand_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ]
+}

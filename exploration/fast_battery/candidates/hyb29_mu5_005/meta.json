@@ -1,0 +1,58 @@
+{
+ "name": "hyb29_mu5_005",
+ "description": "batch-29 MU5-324local 5-stage schedule (fisher triage z=2.53 n_reject=0)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x5c8b2f8ddc680400"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xd6443cda47b60646"
+  }
+ ],
+ "rtl_top": "hyb29_mu5_005",
+ "triage_z": 2.528845630194569,
+ "stages": [
+  [
+   62,
+   50,
+   55,
+   2
+  ],
+  [
+   48,
+   58,
+   9,
+   30
+  ],
+  [
+   44,
+   45,
+   7,
+   63
+  ],
+  [
+   49,
+   26,
+   32,
+   40
+  ],
+  [
+   46,
+   51,
+   43,
+   44
+  ]
+ ]
+}

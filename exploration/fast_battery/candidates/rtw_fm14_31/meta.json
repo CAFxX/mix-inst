@@ -1,0 +1,26 @@
+{
+ "name": "rtw_fm14_31",
+ "description": "tweak N3: chioff31 + final mixing y^rotl(y,14)",
+ "composition": "tweak N3: chioff31 + final mixing y^rotl(y,14)",
+ "rtl_top": "rtw_fm14_31",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xef338a8cf28b094b"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x046dab00bb8b5962"
+  }
+ ]
+}

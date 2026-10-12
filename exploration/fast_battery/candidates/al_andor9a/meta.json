@@ -1,0 +1,25 @@
+{
+ "name": "al_andor9a",
+ "description": "6-stage alternating AND/OR cascade (wave-9)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "rtl_top": "al_andor9a",
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xf61fd595be63e1f0"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x7cd0c6c225bde3b6"
+  }
+ ]
+}

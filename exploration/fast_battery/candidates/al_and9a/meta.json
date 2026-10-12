@@ -1,0 +1,25 @@
+{
+ "name": "al_and9a",
+ "description": "6-stage AND cascade, danger-zone-free progressive (wave-9)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "rtl_top": "al_and9a",
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x1d26edf3b85ad522"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x97e9fea42384d764"
+  }
+ ]
+}

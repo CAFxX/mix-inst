@@ -1,0 +1,1017 @@
+{
+ "name": "r21_feist6_alt_notr_3rot_ns_nw",
+ "crit": 37.4,
+ "cells": 3667,
+ "cell_histogram": {
+  "AND2": 16,
+  "AND3": 5,
+  "AND4": 5,
+  "AOI21": 141,
+  "INV": 64,
+  "NAND2": 636,
+  "NAND3": 439,
+  "NAND4": 328,
+  "NOR2": 636,
+  "NOR3": 437,
+  "NOR4": 292,
+  "OAI21": 153,
+  "OR2": 15,
+  "OR3": 6,
+  "OR4": 6,
+  "XNOR2": 365,
+  "XOR2": 123
+ },
+ "topk": [
+  {
+   "out_bit": "out[49]",
+   "in_bit": "val[18]",
+   "delay": 37.4,
+   "levels": 29,
+   "nonlin_levels": 26,
+   "xorlin_levels": 3,
+   "buf_levels": 0,
+   "nonlin_delay": 31.4,
+   "xorlin_delay": 6.0,
+   "gate_types": [
+    "INV",
+    "NOR2",
+    "AOI21",
+    "NOR3",
+    "NOR3",
+    "NOR4",
+    "NOR2",
+    "NOR2",
+    "NOR3",
+    "NOR4",
+    "NOR2",
+    "NAND3",
+    "AOI21",
+    "OAI21",
+    "NAND2",
+    "NAND3",
+    "NAND3",
+    "NOR2",
+    "NOR4",
+    "NOR4",
+    "NOR2",
+    "NOR4",
+    "NOR2",
+    "XNOR2",
+    "NAND3",
+    "AND2",
+    "INV",
+    "XNOR2",
+    "XNOR2"
+   ],
+   "gate_hist": {
+    "AND2": 1,
+    "AOI21": 2,
+    "INV": 2,
+    "NAND2": 1,
+    "NAND3": 4,
+    "NOR2": 7,
+    "NOR3": 3,
+    "NOR4": 5,
+    "OAI21": 1,
+    "XNOR2": 3
+   },
+   "round_segments_approx": [
+    {
+     "round": 1,
+     "levels": 6,
+     "delay": 7.3,
+     "nonlin": 6,
+     "xorlin": 0
+    },
+    {
+     "round": 2,
+     "levels": 6,
+     "delay": 6.8,
+     "nonlin": 6,
+     "xorlin": 0
+    },
+    {
+     "round": 3,
+     "levels": 5,
+     "delay": 6.4,
+     "nonlin": 5,
+     "xorlin": 0
+    },
+    {
+     "round": 4,
+     "levels": 6,
+     "delay": 7.2,
+     "nonlin": 6,
+     "xorlin": 0
+    },
+    {
+     "round": 5,
+     "levels": 5,
+     "delay": 7.7,
+     "nonlin": 3,
+     "xorlin": 2
+    },
+    {
+     "round": 6,
+     "levels": 1,
+     "delay": 2.0,
+     "nonlin": 0,
+     "xorlin": 1
+    }
+   ]
+  },
+  {
+   "out_bit": "out[32]",
+   "in_bit": "val[3]",
+   "delay": 36.9,
+   "levels": 29,
+   "nonlin_levels": 25,
+   "xorlin_levels": 4,
+   "buf_levels": 0,
+   "nonlin_delay": 28.9,
+   "xorlin_delay": 8.0,
+   "gate_types": [
+    "NAND3",
+    "NAND2",
+    "AOI21",
+    "NOR3",
+    "NOR3",
+    "NOR2",
+    "NAND2",
+    "NAND2",
+    "NAND4",
+    "NAND4",
+    "NAND2",
+    "NOR2",
+    "NOR2",
+    "NAND2",
+    "NOR2",
+    "NOR3",
+    "NOR2",
+    "OAI21",
+    "NAND4",
+    "NAND2",
+    "XNOR2",
+    "NOR3",
+    "OAI21",
+    "NAND3",
+    "NAND2",
+    "XNOR2",
+    "INV",
+    "XNOR2",
+    "XNOR2"
+   ],
+   "gate_hist": {
+    "AOI21": 1,
+    "INV": 1,
+    "NAND2": 7,
+    "NAND3": 2,
+    "NAND4": 3,
+    "NOR2": 5,
+    "NOR3": 4,
+    "OAI21": 2,
+    "XNOR2": 4
+   },
+   "round_segments_approx": [
+    {
+     "round": 1,
+     "levels": 6,
+     "delay": 7.1,
+     "nonlin": 6,
+     "xorlin": 0
+    },
+    {
+     "round": 2,
+     "levels": 6,
+     "delay": 6.8,
+     "nonlin": 6,
+     "xorlin": 0
+    },
+    {
+     "round": 3,
+     "levels": 6,
+     "delay": 6.7,
+     "nonlin": 6,
+     "xorlin": 0
+    },
+    {
+     "round": 4,
+     "levels": 5,
+     "delay": 7.1,
+     "nonlin": 4,
+     "xorlin": 1
+    },
+    {
+     "round": 5,
+     "levels": 5,
+     "delay": 7.2,
+     "nonlin": 3,
+     "xorlin": 2
+    },
+    {
+     "round": 6,
+     "levels": 1,
+     "delay": 2.0,
+     "nonlin": 0,
+     "xorlin": 1
+    }
+   ]
+  },
+  {
+   "out_bit": "out[53]",
+   "in_bit": "val[23]",
+   "delay": 36.9,
+   "levels": 29,
+   "nonlin_levels": 26,
+   "xorlin_levels": 3,
+   "buf_levels": 0,
+   "nonlin_delay": 30.9,
+   "xorlin_delay": 6.0,
+   "gate_types": [
+    "NAND3",
+    "NOR2",
+    "NOR3",
+    "XOR2",
+    "XNOR2",
+    "NOR3",
+    "NOR4",
+    "NOR2",
+    "NAND2",
+    "NAND2",
+    "NAND3",
+    "AOI21",
+    "OAI21",
+    "NAND2",
+    "NAND2",
+    "NAND2",
+    "AOI21",
+    "NOR3",
+    "NOR4",
+    "NOR2",
+    "NOR4",
+    "OAI21",
+    "AOI21",
+    "NOR2",
+    "XNOR2",
+    "INV",
+    "NAND2",
+    "NAND3",
+    "NAND2"
+   ],
+   "gate_hist": {
+    "AOI21": 3,
+    "INV": 1,
+    "NAND2": 7,
+    "NAND3": 3,
+    "NOR2": 4,
+    "NOR3": 3,
+    "NOR4": 3,
+    "OAI21": 2,
+    "XNOR2": 2,
+    "XOR2": 1
+   },
+   "round_segments_approx": [
+    {
+     "round": 1,
+     "levels": 5,
+     "delay": 7.4,
+     "nonlin": 3,
+     "xorlin": 2
+    },
+    {
+     "round": 2,
+     "levels": 6,
+     "delay": 6.8,
+     "nonlin": 6,
+     "xorlin": 0
+    },
+    {
+     "round": 3,
+     "levels": 6,
+     "delay": 7.5,
+     "nonlin": 6,
+     "xorlin": 0
+    },
+    {
+     "round": 4,
+     "levels": 5,
+     "delay": 6.5,
+     "nonlin": 5,
+     "xorlin": 0
+    },
+    {
+     "round": 5,
+     "levels": 5,
+     "delay": 6.5,
+     "nonlin": 4,
+     "xorlin": 1
+    },
+    {
+     "round": 6,
+     "levels": 2,
+     "delay": 2.2,
+     "nonlin": 2,
+     "xorlin": 0
+    }
+   ]
+  },
+  {
+   "out_bit": "out[60]",
+   "in_bit": "val[23]",
+   "delay": 36.9,
+   "levels": 28,
+   "nonlin_levels": 24,
+   "xorlin_levels": 4,
+   "buf_levels": 0,
+   "nonlin_delay": 28.9,
+   "xorlin_delay": 8.0,
+   "gate_types": [
+    "NAND3",
+    "NAND2",
+    "AOI21",
+    "XNOR2",
+    "NOR2",
+    "NOR4",
+    "NAND2",
+    "NAND4",
+    "NAND2",
+    "OR2",
+    "NAND4",
+    "AOI21",
+    "NOR2",
+    "NAND3",
+    "NAND2",
+    "NAND3",
+    "NOR2",
+    "NOR3",
+    "NOR2",
+    "NOR3",
+    "NOR3",
+    "AOI21",
+    "OAI21",
+    "XOR2",
+    "XNOR2",
+    "INV",
+    "NOR2",
+    "XNOR2"
+   ],
+   "gate_hist": {
+    "AOI21": 3,
+    "INV": 1,
+    "NAND2": 4,
+    "NAND3": 3,
+    "NAND4": 2,
+    "NOR2": 5,
+    "NOR3": 3,
+    "NOR4": 1,
+    "OAI21": 1,
+    "OR2": 1,
+    "XNOR2": 3,
+    "XOR2": 1
+   },
+   "round_segments_approx": [
+    {
+     "round": 1,
+     "levels": 5,
+     "delay": 6.7,
+     "nonlin": 4,
+     "xorlin": 1
+    },
+    {
+     "round": 2,
+     "levels": 5,
+     "delay": 6.3,
+     "nonlin": 5,
+     "xorlin": 0
+    },
+    {
+     "round": 3,
+     "levels": 6,
+     "delay": 7.3,
+     "nonlin": 6,
+     "xorlin": 0
+    },
+    {
+     "round": 4,
+     "levels": 6,
+     "delay": 7.1,
+     "nonlin": 6,
+     "xorlin": 0
+    },
+    {
+     "round": 5,
+     "levels": 4,
+     "delay": 6.5,
+     "nonlin": 2,
+     "xorlin": 2
+    },
+    {
+     "round": 6,
+     "levels": 2,
+     "delay": 3.0,
+     "nonlin": 1,
+     "xorlin": 1
+    }
+   ]
+  },
+  {
+   "out_bit": "out[57]",
+   "in_bit": "val[27]",
+   "delay": 36.7,
+   "levels": 31,
+   "nonlin_levels": 31,
+   "xorlin_levels": 0,
+   "buf_levels": 0,
+   "nonlin_delay": 36.7,
+   "xorlin_delay": 0.0,
+   "gate_types": [
+    "INV",
+    "AOI21",
+    "AOI21",
+    "NOR2",
+    "NOR3",
+    "NOR4",
+    "NOR2",
+    "NOR4",
+    "NOR2",
+    "NOR2",
+    "NOR2",
+    "NOR3",
+    "OAI21",
+    "AOI21",
+    "NOR2",
+    "NOR2",
+    "NOR2",
+    "OAI21",
+    "NAND3",
+    "NAND2",
+    "NAND2",
+    "NAND3",
+    "NOR2",
+    "OR2",
+    "NAND2",
+    "NAND3",
+    "NAND2",
+    "INV",
+    "OAI21",
+    "NAND4",
+    "NAND2"
+   ],
+   "gate_hist": {
+    "AOI21": 3,
+    "INV": 2,
+    "NAND2": 5,
+    "NAND3": 3,
+    "NAND4": 1,
+    "NOR2": 9,
+    "NOR3": 2,
+    "NOR4": 2,
+    "OAI21": 3,
+    "OR2": 1
+   },
+   "round_segments_approx": [
+    {
+     "round": 1,
+     "levels": 5,
+     "delay": 6.2,
+     "nonlin": 5,
+     "xorlin": 0
+    },
+    {
+     "round": 2,
+     "levels": 6,
+     "delay": 6.8,
+     "nonlin": 6,
+     "xorlin": 0
+    },
+    {
+     "round": 3,
+     "levels": 5,
+     "delay": 6.2,
+     "nonlin": 5,
+     "xorlin": 0
+    },
+    {
+     "round": 4,
+     "levels": 6,
+     "delay": 6.9,
+     "nonlin": 6,
+     "xorlin": 0
+    },
+    {
+     "round": 5,
+     "levels": 6,
+     "delay": 6.7,
+     "nonlin": 6,
+     "xorlin": 0
+    },
+    {
+     "round": 6,
+     "levels": 3,
+     "delay": 3.9,
+     "nonlin": 3,
+     "xorlin": 0
+    }
+   ]
+  },
+  {
+   "out_bit": "out[55]",
+   "in_bit": "val[23]",
+   "delay": 36.2,
+   "levels": 29,
+   "nonlin_levels": 27,
+   "xorlin_levels": 2,
+   "buf_levels": 0,
+   "nonlin_delay": 32.2,
+   "xorlin_delay": 4.0,
+   "gate_types": [
+    "NAND3",
+    "NAND2",
+    "AOI21",
+    "XNOR2",
+    "NOR2",
+    "NOR4",
+    "NAND2",
+    "NAND4",
+    "NAND2",
+    "OR2",
+    "NAND4",
+    "AOI21",
+    "NOR2",
+    "NAND3",
+    "NAND2",
+    "NAND3",
+    "NOR2",
+    "NOR4",
+    "NOR3",
+    "NOR3",
+    "NOR2",
+    "NOR3",
+    "NOR2",
+    "OAI21",
+    "NAND4",
+    "NAND2",
+    "INV",
+    "NAND2",
+    "XNOR2"
+   ],
+   "gate_hist": {
+    "AOI21": 2,
+    "INV": 1,
+    "NAND2": 6,
+    "NAND3": 3,
+    "NAND4": 3,
+    "NOR2": 5,
+    "NOR3": 3,
+    "NOR4": 2,
+    "OAI21": 1,
+    "OR2": 1,
+    "XNOR2": 2
+   },
+   "round_segments_approx": [
+    {
+     "round": 1,
+     "levels": 5,
+     "delay": 6.7,
+     "nonlin": 4,
+     "xorlin": 1
+    },
+    {
+     "round": 2,
+     "levels": 5,
+     "delay": 6.3,
+     "nonlin": 5,
+     "xorlin": 0
+    },
+    {
+     "round": 3,
+     "levels": 5,
+     "delay": 6.1,
+     "nonlin": 5,
+     "xorlin": 0
+    },
+    {
+     "round": 4,
+     "levels": 6,
+     "delay": 7.0,
+     "nonlin": 6,
+     "xorlin": 0
+    },
+    {
+     "round": 5,
+     "levels": 5,
+     "delay": 6.1,
+     "nonlin": 5,
+     "xorlin": 0
+    },
+    {
+     "round": 6,
+     "levels": 3,
+     "delay": 4.0,
+     "nonlin": 2,
+     "xorlin": 1
+    }
+   ]
+  },
+  {
+   "out_bit": "out[36]",
+   "in_bit": "val[3]",
+   "delay": 35.9,
+   "levels": 28,
+   "nonlin_levels": 25,
+   "xorlin_levels": 3,
+   "buf_levels": 0,
+   "nonlin_delay": 29.9,
+   "xorlin_delay": 6.0,
+   "gate_types": [
+    "NAND3",
+    "NAND2",
+    "AOI21",
+    "NOR3",
+    "NOR3",
+    "NOR2",
+    "NAND2",
+    "NAND2",
+    "NAND4",
+    "NAND4",
+    "NAND2",
+    "NOR4",
+    "OAI21",
+    "NAND2",
+    "NAND3",
+    "NAND4",
+    "NAND2",
+    "NAND3",
+    "NAND2",
+    "NAND3",
+    "AND2",
+    "NOR4",
+    "NOR3",
+    "XNOR2",
+    "XNOR2",
+    "INV",
+    "NOR2",
+    "XNOR2"
+   ],
+   "gate_hist": {
+    "AND2": 1,
+    "AOI21": 1,
+    "INV": 1,
+    "NAND2": 7,
+    "NAND3": 4,
+    "NAND4": 3,
+    "NOR2": 2,
+    "NOR3": 3,
+    "NOR4": 2,
+    "OAI21": 1,
+    "XNOR2": 3
+   },
+   "round_segments_approx": [
+    {
+     "round": 1,
+     "levels": 5,
+     "delay": 6.1,
+     "nonlin": 5,
+     "xorlin": 0
+    },
+    {
+     "round": 2,
+     "levels": 6,
+     "delay": 6.8,
+     "nonlin": 6,
+     "xorlin": 0
+    },
+    {
+     "round": 3,
+     "levels": 5,
+     "delay": 6.5,
+     "nonlin": 5,
+     "xorlin": 0
+    },
+    {
+     "round": 4,
+     "levels": 6,
+     "delay": 7.3,
+     "nonlin": 6,
+     "xorlin": 0
+    },
+    {
+     "round": 5,
+     "levels": 4,
+     "delay": 6.2,
+     "nonlin": 2,
+     "xorlin": 2
+    },
+    {
+     "round": 6,
+     "levels": 2,
+     "delay": 3.0,
+     "nonlin": 1,
+     "xorlin": 1
+    }
+   ]
+  },
+  {
+   "out_bit": "out[37]",
+   "in_bit": "val[3]",
+   "delay": 35.9,
+   "levels": 27,
+   "nonlin_levels": 23,
+   "xorlin_levels": 4,
+   "buf_levels": 0,
+   "nonlin_delay": 27.9,
+   "xorlin_delay": 8.0,
+   "gate_types": [
+    "NAND3",
+    "NAND2",
+    "AOI21",
+    "NOR3",
+    "NOR3",
+    "NOR2",
+    "NAND2",
+    "NAND2",
+    "NAND4",
+    "NAND4",
+    "NAND2",
+    "NOR4",
+    "OAI21",
+    "NAND2",
+    "NAND3",
+    "NAND4",
+    "NAND2",
+    "NAND3",
+    "NAND2",
+    "NAND3",
+    "AND2",
+    "NOR4",
+    "NOR3",
+    "XNOR2",
+    "XNOR2",
+    "XNOR2",
+    "XNOR2"
+   ],
+   "gate_hist": {
+    "AND2": 1,
+    "AOI21": 1,
+    "NAND2": 7,
+    "NAND3": 4,
+    "NAND4": 3,
+    "NOR2": 1,
+    "NOR3": 3,
+    "NOR4": 2,
+    "OAI21": 1,
+    "XNOR2": 4
+   },
+   "round_segments_approx": [
+    {
+     "round": 1,
+     "levels": 5,
+     "delay": 6.1,
+     "nonlin": 5,
+     "xorlin": 0
+    },
+    {
+     "round": 2,
+     "levels": 6,
+     "delay": 6.8,
+     "nonlin": 6,
+     "xorlin": 0
+    },
+    {
+     "round": 3,
+     "levels": 5,
+     "delay": 6.5,
+     "nonlin": 5,
+     "xorlin": 0
+    },
+    {
+     "round": 4,
+     "levels": 6,
+     "delay": 7.3,
+     "nonlin": 6,
+     "xorlin": 0
+    },
+    {
+     "round": 5,
+     "levels": 4,
+     "delay": 7.2,
+     "nonlin": 1,
+     "xorlin": 3
+    },
+    {
+     "round": 6,
+     "levels": 1,
+     "delay": 2.0,
+     "nonlin": 0,
+     "xorlin": 1
+    }
+   ]
+  },
+  {
+   "out_bit": "out[38]",
+   "in_bit": "val[3]",
+   "delay": 35.9,
+   "levels": 29,
+   "nonlin_levels": 27,
+   "xorlin_levels": 2,
+   "buf_levels": 0,
+   "nonlin_delay": 31.9,
+   "xorlin_delay": 4.0,
+   "gate_types": [
+    "NAND3",
+    "NAND2",
+    "AOI21",
+    "NOR3",
+    "NOR3",
+    "NOR2",
+    "NAND2",
+    "NAND2",
+    "NAND4",
+    "NAND4",
+    "NAND2",
+    "NOR4",
+    "OAI21",
+    "NAND2",
+    "NAND3",
+    "NAND4",
+    "NAND2",
+    "NAND3",
+    "NAND2",
+    "NAND3",
+    "NAND2",
+    "NOR3",
+    "NAND2",
+    "NAND2",
+    "NAND2",
+    "NAND4",
+    "AND2",
+    "XOR2",
+    "XNOR2"
+   ],
+   "gate_hist": {
+    "AND2": 1,
+    "AOI21": 1,
+    "NAND2": 11,
+    "NAND3": 4,
+    "NAND4": 4,
+    "NOR2": 1,
+    "NOR3": 3,
+    "NOR4": 1,
+    "OAI21": 1,
+    "XNOR2": 1,
+    "XOR2": 1
+   },
+   "round_segments_approx": [
+    {
+     "round": 1,
+     "levels": 5,
+     "delay": 6.1,
+     "nonlin": 5,
+     "xorlin": 0
+    },
+    {
+     "round": 2,
+     "levels": 6,
+     "delay": 6.8,
+     "nonlin": 6,
+     "xorlin": 0
+    },
+    {
+     "round": 3,
+     "levels": 5,
+     "delay": 6.5,
+     "nonlin": 5,
+     "xorlin": 0
+    },
+    {
+     "round": 4,
+     "levels": 6,
+     "delay": 6.6,
+     "nonlin": 6,
+     "xorlin": 0
+    },
+    {
+     "round": 5,
+     "levels": 6,
+     "delay": 7.9,
+     "nonlin": 5,
+     "xorlin": 1
+    },
+    {
+     "round": 6,
+     "levels": 1,
+     "delay": 2.0,
+     "nonlin": 0,
+     "xorlin": 1
+    }
+   ]
+  },
+  {
+   "out_bit": "out[39]",
+   "in_bit": "val[18]",
+   "delay": 35.9,
+   "levels": 28,
+   "nonlin_levels": 24,
+   "xorlin_levels": 4,
+   "buf_levels": 0,
+   "nonlin_delay": 27.9,
+   "xorlin_delay": 8.0,
+   "gate_types": [
+    "INV",
+    "NOR2",
+    "AOI21",
+    "NOR3",
+    "NOR3",
+    "NOR4",
+    "NOR2",
+    "NOR2",
+    "NOR3",
+    "NOR4",
+    "NOR2",
+    "NAND2",
+    "NAND3",
+    "XOR2",
+    "NOR2",
+    "NOR2",
+    "OAI21",
+    "NAND4",
+    "NAND2",
+    "AND2",
+    "NOR4",
+    "NAND2",
+    "NAND2",
+    "NOR2",
+    "NOR2",
+    "XNOR2",
+    "XNOR2",
+    "XNOR2"
+   ],
+   "gate_hist": {
+    "AND2": 1,
+    "AOI21": 1,
+    "INV": 1,
+    "NAND2": 4,
+    "NAND3": 1,
+    "NAND4": 1,
+    "NOR2": 8,
+    "NOR3": 3,
+    "NOR4": 3,
+    "OAI21": 1,
+    "XNOR2": 3,
+    "XOR2": 1
+   },
+   "round_segments_approx": [
+    {
+     "round": 1,
+     "levels": 6,
+     "delay": 7.3,
+     "nonlin": 6,
+     "xorlin": 0
+    },
+    {
+     "round": 2,
+     "levels": 6,
+     "delay": 6.6,
+     "nonlin": 6,
+     "xorlin": 0
+    },
+    {
+     "round": 3,
+     "levels": 5,
+     "delay": 6.7,
+     "nonlin": 4,
+     "xorlin": 1
+    },
+    {
+     "round": 4,
+     "levels": 5,
+     "delay": 6.3,
+     "nonlin": 5,
+     "xorlin": 0
+    },
+    {
+     "round": 5,
+     "levels": 5,
+     "delay": 7.0,
+     "nonlin": 3,
+     "xorlin": 2
+    },
+    {
+     "round": 6,
+     "levels": 1,
+     "delay": 2.0,
+     "nonlin": 0,
+     "xorlin": 1
+    }
+   ]
+  }
+ ],
+ "diversity": {
+  "n_paths": 10,
+  "distinct_in_bits": 4,
+  "distinct_out_bits": 10,
+  "common_suffix_levels": 0,
+  "common_prefix_levels": 0,
+  "delay_spread": 1.5
+ }
+}

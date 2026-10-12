@@ -1,0 +1,25 @@
+{
+ "name": "al_and9b",
+ "description": "6-stage AND cascade, wider progressive (wave-9)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "rtl_top": "al_and9b",
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xd8468f83ee17d9b7"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x52899cd475c9dbf1"
+  }
+ ]
+}

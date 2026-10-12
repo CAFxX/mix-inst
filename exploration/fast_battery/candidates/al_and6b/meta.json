@@ -1,0 +1,25 @@
+{
+  "name": "al_and6b",
+  "description": "6-stage AND-rotation cascade, schedule B",
+  "screen_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "practrand_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "goldens": [
+    {
+      "val": "0x0",
+      "key": "0x123456789abcdef0",
+      "out": "0x4e5d868b65e8d753"
+    },
+    {
+      "val": "0x123456789abcdef0",
+      "key": "0x0",
+      "out": "0xc49295dcfe36d515"
+    }
+  ],
+  "rtl_top": "al_and6b"
+}

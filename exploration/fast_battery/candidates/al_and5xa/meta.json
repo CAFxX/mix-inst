@@ -1,0 +1,25 @@
+{
+ "name": "al_and5xa",
+ "description": "5-stage AND cascade, danger-zone-free (wave-9, barrier retest)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "rtl_top": "al_and5xa",
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x66ae63da47431137"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xec61708ddc9d1371"
+  }
+ ]
+}

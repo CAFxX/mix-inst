@@ -1,0 +1,13 @@
+{
+  "name": "al_and6h",
+  "description": "6-stage AND-rotation cascade, avalanche-aware schedule H (wave-8, 2026-10-09)",
+  "screen_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "practrand_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "rtl_top": "al_and6h"
+}

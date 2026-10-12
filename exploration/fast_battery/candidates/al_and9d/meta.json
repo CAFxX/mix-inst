@@ -1,0 +1,25 @@
+{
+ "name": "al_and9d",
+ "description": "6-stage AND cascade, medium-start even progression (wave-9)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "rtl_top": "al_and9d",
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x4ea3908d0653ce6e"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xc46c83da9d8dcc28"
+  }
+ ]
+}

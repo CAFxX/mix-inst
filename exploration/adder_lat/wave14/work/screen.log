@@ -1,0 +1,675 @@
+agentwork-launch: tag=track3/w14-screen schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+GF(2^64) vectorized == scalar on 3 consts x 257 vals: OK
+=== GATE 0: exact positive-control reproduction ===
+kill canary as6_200_106: seq z=71.4 (expect 71.4 KILL)
+keep canary t6_b33b:      seq z=3.0 (expect 3.0 KEEP)
+keep canary al_and6a:     seq z=3.2 (expect ~3.2 KEEP)
+=== GATE 0 PASS: harness trusted ===
+sweep: 602 schedules (402 W1, 200 W3)
+[W1-rnd:a5p1302b23ba898bc305b4ee8b|a13p0321b29dcf0b0800afc94fb] seq: maxworst|z|=156928.8 killkey=0xf0b52a9e7d8ba2b5 | rnd64: maxworst|z|=     3.2 killkey=0x92988f142674743 -> kill
+[W1-hand:a5p1230b171d3c7854f103f8d3|a11p1230b41ef96be5a9f3c8c51] seq: maxworst|z|=433957.2 killkey=0xaaaaaaaaaaaaaaaa | rnd64: maxworst|z|=     3.4 killkey=0x9e3779b97f4a7c15 -> kill
+[W1-hand:a5p1230b178a8921acca51cdeb|a11p1230b41f5f3a18a6e60d76f|a7p2301b2395099abcc70956e8] seq: maxworst|z|=  1417.0 killkey=0x5555555555555555 | rnd64: maxworst|z|=     2.5 killkey=0x9e3779b97f4a7c15 -> kill
+[W1-rnd:a15p3201b6177deb5c80a522cba|a3p1320b74026d786a099409e|a11p0132b432op] seq: maxworst|z|=  7053.0 killkey=0x5555555555555555 | rnd64: maxworst|z|=     2.5 killkey=0xaaaaaaaaaaaaaaaa -> kill
+[W1-rnd:a9p3102b372op|a13p0132b3765a07755495b7916|a15p2310b35c8010a3a0f2e89e6] seq: maxworst|z|=  4148.8 killkey=0x9e3779b97f4a7c15 | rnd64: maxworst|z|=     2.9 killkey=0xaaaaaaaaaaaaaaaa -> kill
+[W1-rnd:a11p1230b512op|a1p3201b49d4d4e6a63290bffa] seq: maxworst|z|=419801.6 killkey=0x0 | rnd64: maxworst|z|=     3.3 killkey=0x5555555555555555 -> kill
+[W1-rnd:a7p2301b29401805f6283bcd22|a1p0321b7582e0bf89487edb3|a15p3012b41a07e3b62322a3827] seq: maxworst|z|=  4605.6 killkey=0x0 | rnd64: maxworst|z|=     3.1 killkey=0xaaaaaaaaaaaaaaaa -> kill
+[W1-rnd:a11p2031b45bc330da2c2329afe|a15p2103b132op] seq: maxworst|z|=739994.3 killkey=0x0 | rnd64: maxworst|z|=     3.2 killkey=0xf0b52a9e7d8ba2b5 -> kill
+[W1-rnd:a5p1320b272op|a3p2310b29eca0b841810151de] seq: maxworst|z|=567803.9 killkey=0x0 | rnd64: maxworst|z|=     3.3 killkey=0x9e3779b97f4a7c15 -> kill
+[W1-rnd:a5p0132b41ad6880ed4ea198af|a7p0231b292op] seq: maxworst|z|=631785.6 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     3.1 killkey=0x92988f142674743 -> kill
+[W1-rnd:a9p2310b512op|a11p3201b1794e2ec96c415f1f9] seq: maxworst|z|=426654.5 killkey=0x0 | rnd64: maxworst|z|=     2.7 killkey=0xdeadbeefdeadbeef -> kill
+[W1-rnd:a13p2031b63640f656386142044|a15p3210b532op] seq: maxworst|z|=1480000.0 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     3.8 killkey=0xaaaaaaaaaaaaaaaa -> kill
+[W1-rnd:a5p2310b912d7fab2ed791857|a7p2301b3383142fd4905ef8dd] seq: maxworst|z|=223450.3 killkey=0xaaaaaaaaaaaaaaaa | rnd64: maxworst|z|=     3.2 killkey=0x0 -> kill
+[W1-rnd:a11p2301b16926326064f68349|a9p2130b52op|a3p1230b52op] seq: maxworst|z|= 34769.3 killkey=0x9e3779b97f4a7c15 | rnd64: maxworst|z|=     2.8 killkey=0x0 -> kill
+[W1-rnd:a9p0231b397145c935ba6dd847|a3p0132b4581437e6f1e19f9ad|a3p2013b572op] seq: maxworst|z|= 88672.2 killkey=0x5555555555555555 | rnd64: maxworst|z|=     3.5 killkey=0x1234 -> kill
+[W1-rnd:a7p0231b53ec89a4dcbc03914|a11p3120b7d13c820739aed3b6] seq: maxworst|z|=712726.2 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     3.4 killkey=0xffffffffffffffff -> kill
+[W1-rnd:a11p2031b176e194551f5aea201|a5p2301b49841fe8ee776dd191] seq: maxworst|z|=307700.5 killkey=0x92988f142674743 | rnd64: maxworst|z|=     2.8 killkey=0x92988f142674743 -> kill
+[W1-rnd:a5p3201b1710f5118310572fd8|a9p3120b5139ea35a9103993b7|a3p0132b12op] seq: maxworst|z|=112546.0 killkey=0x92988f142674743 | rnd64: maxworst|z|=     3.0 killkey=0x0 -> kill
+[W1-rnd:a7p2130b53299c9b8a09611dd8|a7p2013b25676649f5a4e5e0e6] seq: maxworst|z|=682585.4 killkey=0x9e3779b97f4a7c15 | rnd64: maxworst|z|=     2.9 killkey=0xffffffffffffffff -> kill
+[W1-rnd:a7p3120b132op|a1p3201b39867e85976436fbef|a3p3021b211f9d5acc1a66c47b] seq: maxworst|z|=  2962.9 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     2.9 killkey=0x123456789abcdef -> kill
+[W1-rnd:a15p0213b12op|a5p1302b117ef4bb64dba81912] seq: maxworst|z|=1139501.6 killkey=0x123456789abcdef | rnd64: maxworst|z|=     3.1 killkey=0xdeadbeefdeadbeef -> kill
+[W1-rnd:a15p0312b51636010b0f13ada45|a7p1320b452op] seq: maxworst|z|=544676.3 killkey=0xf0b52a9e7d8ba2b5 | rnd64: maxworst|z|=     3.8 killkey=0xf0b52a9e7d8ba2b5 -> kill
+[W1-rnd:a11p1032b332op|a11p0321b13974cc5214babc9d5|a15p1320b23242e300d6988ce9e] seq: maxworst|z|=  1355.0 killkey=0x0 | rnd64: maxworst|z|=     3.4 killkey=0x9e3779b97f4a7c15 -> kill
+[W1-rnd:a3p3120b13c27e21c684f9ae44|a9p3210b276277b2373a68149e|a11p0231b12op] seq: maxworst|z|= 12742.6 killkey=0x0 | rnd64: maxworst|z|=     2.8 killkey=0x0 -> kill
+[W1-rnd:a1p2301b17342c36d6a8700961|a11p0321b3f508ccec3d0e2f4d] seq: maxworst|z|=476269.1 killkey=0xaaaaaaaaaaaaaaaa | rnd64: maxworst|z|=     3.1 killkey=0xdeadbeefdeadbeef -> kill
+[W1-rnd:a15p2031b1171b583284b86e906|a5p1320b96483672b76c4a8df|a9p1023b112op] seq: maxworst|z|=  5758.3 killkey=0x0 | rnd64: maxworst|z|=     2.9 killkey=0xffffffffffffffff -> kill
+[W1-rnd:a15p0312b13508671c74b714275|a11p0132b4320a32ad131a705ae|a7p2310b412op] seq: maxworst|z|=  3154.4 killkey=0xaaaaaaaaaaaaaaaa | rnd64: maxworst|z|=     3.8 killkey=0x123456789abcdef -> kill
+[W1-rnd:a11p3012b252op|a9p3210b472op|a13p1023b63a7b0bb2201d089da] seq: maxworst|z|= 15858.5 killkey=0x0 | rnd64: maxworst|z|=     3.1 killkey=0x123456789abcdef -> kill
+[W1-rnd:a9p1302b192op|a9p1230b412op] seq: maxworst|z|=705714.7 killkey=0x0 | rnd64: maxworst|z|=     2.3 killkey=0xaaaaaaaaaaaaaaaa -> kill
+[W1-rnd:a13p1023b27bc5fede57e1228e7|a3p1230b312op] seq: maxworst|z|=739994.3 killkey=0x0 | rnd64: maxworst|z|=     3.4 killkey=0xffffffffffffffff -> kill
+[W1-rnd:a7p2013b32fcdf6f4f1f65ebb|a1p2013b45761de708e3a0f77f|a1p2031b57fb33aed6a9f0a4ae] seq: maxworst|z|=  1993.4 killkey=0x5555555555555555 | rnd64: maxworst|z|=     3.2 killkey=0x0 -> kill
+[W1-rnd:a7p3210b92op|a7p3021b432op|a3p3120b47c3037183bf958728] seq: maxworst|z|=  4646.7 killkey=0x0 | rnd64: maxworst|z|=     3.2 killkey=0x9e3779b97f4a7c15 -> kill
+[W1-rnd:a9p3102b19fe9ca6f28c32d273|a5p1230b1393a415ca3c7c9148|a13p3201b272op] seq: maxworst|z|=  6942.0 killkey=0xaaaaaaaaaaaaaaaa | rnd64: maxworst|z|=     3.6 killkey=0x9e3779b97f4a7c15 -> kill
+[W1-rnd:a11p0321b92op|a15p2103b9d76670fc84ffc31c] seq: maxworst|z|=649702.2 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     2.5 killkey=0x92988f142674743 -> kill
+[W1-rnd:a13p2301b52op|a1p1023b13b57f80ebb72ce392] seq: maxworst|z|=739994.3 killkey=0x0 | rnd64: maxworst|z|=     2.9 killkey=0x9e3779b97f4a7c15 -> kill
+[W1-rnd:a7p3102b45232d5dda206ca5a0|a1p1023b4152996cc953830f36|a13p0231b1768979546fce89f5b] seq: maxworst|z|=  1459.2 killkey=0xdeadbeefdeadbeef | rnd64: maxworst|z|=     3.3 killkey=0x9e3779b97f4a7c15 -> kill
+[W1-rnd:a11p1302b217a1dbbcb3edb8172|a11p2103b2345bf479d3ecfb5c0|a13p0213b63b40a64e2023ae2d5] seq: maxworst|z|=252676.7 killkey=0x123456789abcdef | rnd64: maxworst|z|=     2.8 killkey=0x9e3779b97f4a7c15 -> kill
+[W1-rnd:a13p3012b157992460a30bc0fd|a13p2301b455ef1c15705b5d4df] seq: maxworst|z|=739994.3 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     3.2 killkey=0x9e3779b97f4a7c15 -> kill
+[W1-rnd:a7p2013b272op|a15p2130b535e95a73c2c6ae1fd|a3p3120b236ca4ad51007040aa] seq: maxworst|z|=  2826.8 killkey=0x0 | rnd64: maxworst|z|=     3.5 killkey=0x123456789abcdef -> kill
+[W1-rnd:a11p3210b173a58bae6e27fd09a|a11p2013b630302f64b1c1aa27a|a3p2013b25eae5c93e1473a300] seq: maxworst|z|= 35141.2 killkey=0x0 | rnd64: maxworst|z|=     2.8 killkey=0xffffffffffffffff -> kill
+[W1-rnd:a11p2031b1126dde5f870ea7b86|a3p0213b352op|a3p0123b27c08997da00e25b73] seq: maxworst|z|= 38501.9 killkey=0xf0b52a9e7d8ba2b5 | rnd64: maxworst|z|=     3.3 killkey=0x92988f142674743 -> kill
+[W1-rnd:a15p1320b292op|a1p2301b352op] seq: maxworst|z|=739269.1 killkey=0x0 | rnd64: maxworst|z|=     3.2 killkey=0x5555555555555555 -> kill
+[W1-rnd:a11p1302b112op|a13p3120b45f3ec05f55ebb5bbc] seq: maxworst|z|=737092.5 killkey=0x0 | rnd64: maxworst|z|=     2.9 killkey=0x92988f142674743 -> kill
+[W1-rnd:a15p3102b292op|a1p3201b392op] seq: maxworst|z|=739903.7 killkey=0x5555555555555555 | rnd64: maxworst|z|=     2.8 killkey=0xf0b52a9e7d8ba2b5 -> kill
+[W1-rnd:a5p1320b12op|a5p3120b29548831e64874b7da|a15p0132b472op] seq: maxworst|z|= 56861.8 killkey=0x0 | rnd64: maxworst|z|=     3.0 killkey=0x0 -> kill
+[W1-rnd:a13p3201b17df4aab8d128840fd|a5p1032b412op|a13p0123b59df4868e8a45c5cd0] seq: maxworst|z|=  9591.9 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     3.0 killkey=0x1234 -> kill
+[W1-rnd:a11p1032b394a586b97db2dfc4f|a5p1320b510c2f1f9b6ab9e7bf|a11p1320b27d4e70000ebf3d360] seq: maxworst|z|= 29154.9 killkey=0x5555555555555555 | rnd64: maxworst|z|=     2.5 killkey=0xffffffffffffffff -> kill
+[W1-rnd:a11p3021b45e4edca4c3a17ce5b|a15p2130b172op] seq: maxworst|z|=1415078.4 killkey=0x0 | rnd64: maxworst|z|=     3.3 killkey=0x123456789abcdef -> kill
+[W1-rnd:a1p0312b397ef730c69c81702e|a11p0321b35a02210d577f75bea] seq: maxworst|z|=321196.2 killkey=0x0 | rnd64: maxworst|z|=     4.1 killkey=0x123456789abcdef -> kill
+[W1-rnd:a15p1203b572op|a1p3120b47925ac4bfb3487795|a1p1032b332op] seq: maxworst|z|=112934.7 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     2.7 killkey=0x123456789abcdef -> kill
+  ... 50/602 triaged, 0 KEEPs, 6min elapsed
+[W1-rnd:a9p1302b172op|a3p1320b45c7a6272c3d7402dc] seq: maxworst|z|=514514.4 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     3.0 killkey=0x1234 -> kill
+[W1-rnd:a9p3102b218ef52209b1ecb55e|a9p1302b612op|a1p1023b193730a60e18d3d41c] seq: maxworst|z|=  7680.3 killkey=0x9e3779b97f4a7c15 | rnd64: maxworst|z|=     3.1 killkey=0x5555555555555555 -> kill
+[W1-rnd:a7p3102b499f8af510f62ba600|a5p3012b172op] seq: maxworst|z|=937426.1 killkey=0xf0b52a9e7d8ba2b5 | rnd64: maxworst|z|=     2.6 killkey=0xffffffffffffffff -> kill
+[W1-rnd:a15p0123b192op|a13p3012b13b879f8702f5483d3|a15p0312b452op] seq: maxworst|z|= 95034.6 killkey=0xdeadbeefdeadbeef | rnd64: maxworst|z|=     3.2 killkey=0x123456789abcdef -> kill
+[W1-rnd:a3p0231b332op|a13p2301b3938fbdcd6b57a9af4] seq: maxworst|z|=675232.4 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     3.2 killkey=0xffffffffffffffff -> kill
+[W1-rnd:a7p0123b49da4926880b40d85a|a5p3210b35738bb76df83ac6b5|a5p3120b7c82488d81411cf71] seq: maxworst|z|=  5717.0 killkey=0xdeadbeefdeadbeef | rnd64: maxworst|z|=     3.3 killkey=0x0 -> kill
+[W1-rnd:a7p1203b72op|a1p0312b512op|a3p0321b578ef9290ef6c9867e] seq: maxworst|z|=666800.1 killkey=0x0 | rnd64: maxworst|z|=     3.0 killkey=0xaaaaaaaaaaaaaaaa -> kill
+[W1-rnd:a13p0132b11efa192c6f5e9128b|a15p3201b112c81c14835a96af7] seq: maxworst|z|=739994.3 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     2.7 killkey=0x9e3779b97f4a7c15 -> kill
+[W1-rnd:a15p2310b37dfa026a23b12c2f4|a1p1320b23bd43cc3d9ca083e9] seq: maxworst|z|=285050.0 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     3.3 killkey=0xdeadbeefdeadbeef -> kill
+[W1-rnd:a15p2130b25a89dcacaf1c7d997|a9p0213b354b825f666a21836|a7p1203b4970cba53894ab9a6b] seq: maxworst|z|= 15806.0 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     2.9 killkey=0x0 -> kill
+[W1-rnd:a5p1230b11f64961811601e9cb|a1p3120b9b9c771c3b84281ca] seq: maxworst|z|=739994.3 killkey=0xf0b52a9e7d8ba2b5 | rnd64: maxworst|z|=     3.1 killkey=0x1234 -> kill
+[W1-rnd:a7p2103b197e2a12dfd5b696ac|a1p2130b375a9831af18bfd817|a7p1320b332op] seq: maxworst|z|=  3924.7 killkey=0x0 | rnd64: maxworst|z|=     2.9 killkey=0x92988f142674743 -> kill
+[W1-rnd:a15p0231b434318933d146c6513|a7p3012b12op|a11p1203b132op] seq: maxworst|z|= 24196.3 killkey=0x123456789abcdef | rnd64: maxworst|z|=     3.0 killkey=0x92988f142674743 -> kill
+[W1-rnd:a5p1320b512op|a15p0132b539b86a2553951dbac] seq: maxworst|z|=489654.9 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     2.9 killkey=0x9e3779b97f4a7c15 -> kill
+[W1-rnd:a11p1320b9225e7201fb78bc58|a7p1032b194531df9010d5a236] seq: maxworst|z|=401651.2 killkey=0xf0b52a9e7d8ba2b5 | rnd64: maxworst|z|=     2.6 killkey=0xaaaaaaaaaaaaaaaa -> kill
+[W1-rnd:a11p2301b330e6e4e01395ba05c|a3p1230b21c163300358eb7fbc] seq: maxworst|z|=253196.5 killkey=0xdeadbeefdeadbeef | rnd64: maxworst|z|=     2.8 killkey=0x1234 -> kill
+[W1-rnd:a13p3210b57b0e97a48e41a3bcb|a5p2103b136d538eb01da16043] seq: maxworst|z|=164964.9 killkey=0xf0b52a9e7d8ba2b5 | rnd64: maxworst|z|=     3.0 killkey=0x1234 -> kill
+[W1-rnd:a15p0123b312op|a5p1320b31f725a8f9939e32ea|a1p0132b417b82f503700ebb22] seq: maxworst|z|=  7476.0 killkey=0x0 | rnd64: maxworst|z|=     2.7 killkey=0xaaaaaaaaaaaaaaaa -> kill
+[W1-rnd:a5p1023b472op|a5p2130b632op] seq: maxworst|z|=739994.3 killkey=0x0 | rnd64: maxworst|z|=     2.5 killkey=0xffffffffffffffff -> kill
+[W1-rnd:a9p1023b21d88d9f9c1a0b0e7e|a1p2301b1e2532fff0925a668] seq: maxworst|z|=719985.9 killkey=0x123456789abcdef | rnd64: maxworst|z|=     2.6 killkey=0xdeadbeefdeadbeef -> kill
+[W1-rnd:a3p2103b9ad2c75b78a57101f|a15p2130b177017733738c103b7] seq: maxworst|z|=259177.8 killkey=0x92988f142674743 | rnd64: maxworst|z|=     3.3 killkey=0x92988f142674743 -> kill
+[W1-rnd:a5p0312b35d109120e0e2b4334|a1p3120b372op] seq: maxworst|z|=222029.1 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     3.3 killkey=0x123456789abcdef -> kill
+[W1-rnd:a1p1302b372op|a9p0123b632op|a1p0231b52op] seq: maxworst|z|= 22435.9 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     2.9 killkey=0x5555555555555555 -> kill
+[W1-rnd:a9p3102b3371376ec19460c856|a1p2301b13c3a25efe89fa30bf|a9p1023b6363a3bae287475436] seq: maxworst|z|= 15036.2 killkey=0x123456789abcdef | rnd64: maxworst|z|=     3.4 killkey=0xdeadbeefdeadbeef -> kill
+[W1-rnd:a11p1320b45f885f6fb4613c4e1|a9p2013b43ab25116148907992] seq: maxworst|z|=362013.2 killkey=0xaaaaaaaaaaaaaaaa | rnd64: maxworst|z|=     3.0 killkey=0x1234 -> kill
+[W1-rnd:a15p0213b512op|a15p1302b132op] seq: maxworst|z|=739994.3 killkey=0x0 | rnd64: maxworst|z|=     2.8 killkey=0xffffffffffffffff -> kill
+[W1-rnd:a3p1302b432op|a5p1203b3509dcbf9280e3a5b1] seq: maxworst|z|=235542.2 killkey=0x0 | rnd64: maxworst|z|=     3.2 killkey=0x1234 -> kill
+[W1-rnd:a1p0132b132bd0dd856df4b74c|a13p0231b159c7d4d16157391b|a9p1023b12op] seq: maxworst|z|= 58053.6 killkey=0x123456789abcdef | rnd64: maxworst|z|=     3.5 killkey=0xffffffffffffffff -> kill
+[W1-rnd:a5p3102b71b2a1363ec952379|a13p1302b112f6b0c2da0b7d365] seq: maxworst|z|=672567.1 killkey=0x9e3779b97f4a7c15 | rnd64: maxworst|z|=     3.1 killkey=0x1234 -> kill
+[W1-rnd:a11p1320b29580a6e6ec458da51|a7p0321b452op] seq: maxworst|z|=244159.1 killkey=0x9e3779b97f4a7c15 | rnd64: maxworst|z|=     3.8 killkey=0xdeadbeefdeadbeef -> kill
+[W1-rnd:a7p2130b92op|a9p2031b916a633b07299ea25] seq: maxworst|z|=441381.6 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     3.1 killkey=0xaaaaaaaaaaaaaaaa -> kill
+[W1-rnd:a15p3012b32op|a1p0132b7feb5dfacf12ee06a|a13p2310b4583b4bf61e6d419a3] seq: maxworst|z|= 13590.0 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     3.1 killkey=0x92988f142674743 -> kill
+[W1-rnd:a5p2310b39d3006ee2207e523|a13p3012b41684693017070ce9e|a5p3201b53311c8dad774a211b] seq: maxworst|z|=  3559.0 killkey=0x92988f142674743 | rnd64: maxworst|z|=     2.3 killkey=0x9e3779b97f4a7c15 -> kill
+[W1-rnd:a3p3102b63352610691dba27dd|a3p2103b532ab2eafe03028c10|a5p0231b11ac0e273e4b01c57a] seq: maxworst|z|=  9748.7 killkey=0x123456789abcdef | rnd64: maxworst|z|=     2.8 killkey=0x92988f142674743 -> kill
+[W1-rnd:a15p3021b236d9adb51c0755d45|a1p1203b517317b8c28697305a|a15p2103b411a1e1aed0dd7be78] seq: maxworst|z|=  3194.4 killkey=0xdeadbeefdeadbeef | rnd64: maxworst|z|=     3.2 killkey=0x9e3779b97f4a7c15 -> kill
+[W1-rnd:a1p0213b239db1749c9b71e7aa|a9p3120b13e1002492d8177591|a9p2310b452op] seq: maxworst|z|= 13838.6 killkey=0xf0b52a9e7d8ba2b5 | rnd64: maxworst|z|=     3.2 killkey=0x92988f142674743 -> kill
+[W1-rnd:a9p2130b152op|a15p3012b211a7bcd6b02a0f65a] seq: maxworst|z|=739269.1 killkey=0x0 | rnd64: maxworst|z|=     2.9 killkey=0x92988f142674743 -> kill
+[W1-rnd:a13p1203b72op|a1p3012b612op] seq: maxworst|z|=252461.2 killkey=0x0 | rnd64: maxworst|z|=     3.0 killkey=0xaaaaaaaaaaaaaaaa -> kill
+[W1-rnd:a15p3210b136b5c78854cd1de6b|a11p3120b492op] seq: maxworst|z|=734258.0 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     3.6 killkey=0x1234 -> kill
+[W1-rnd:a1p1032b552op|a11p2310b532op|a11p1203b41c92e95a4c78f1180] seq: maxworst|z|=  3090.0 killkey=0x0 | rnd64: maxworst|z|=     3.1 killkey=0x1234 -> kill
+[W1-rnd:a9p3210b47ff820cdae4ac2575|a13p3012b318b18a3d43adc0488] seq: maxworst|z|=332788.3 killkey=0xdeadbeefdeadbeef | rnd64: maxworst|z|=     2.8 killkey=0xf0b52a9e7d8ba2b5 -> kill
+[W1-rnd:a15p1032b5143bcd77d0b0b62ba|a5p3102b1743a13f77535ab1ce] seq: maxworst|z|=738544.8 killkey=0x0 | rnd64: maxworst|z|=     4.1 killkey=0xf0b52a9e7d8ba2b5 -> kill
+[W1-rnd:a1p0123b532op|a7p0312b27eb072ae7699385e4] seq: maxworst|z|=738544.2 killkey=0x0 | rnd64: maxworst|z|=     2.9 killkey=0xffffffffffffffff -> kill
+[W1-rnd:a3p2013b452op|a7p2130b452op] seq: maxworst|z|=739994.3 killkey=0x0 | rnd64: maxworst|z|=     2.8 killkey=0x1234 -> kill
+[W1-rnd:a15p1320b355c07c2e311739b4d|a13p3012b431785b40a685493a6] seq: maxworst|z|=694551.4 killkey=0xdeadbeefdeadbeef | rnd64: maxworst|z|=     2.5 killkey=0xf0b52a9e7d8ba2b5 -> kill
+[W1-rnd:a7p0123b272op|a1p3012b23c5072db9a7e5090e] seq: maxworst|z|=510656.5 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     3.8 killkey=0x0 -> kill
+[W1-rnd:a15p3102b52op|a9p0312b197cb57fc0e2969579|a5p1203b13856f73b8f4639bb8] seq: maxworst|z|=  2886.8 killkey=0x0 | rnd64: maxworst|z|=     2.5 killkey=0x5555555555555555 -> kill
+[W1-rnd:a7p0321b352op|a7p0321b33c8dc735905572a43|a15p2301b29f6b744d6f652f6ad] seq: maxworst|z|=  3755.4 killkey=0x0 | rnd64: maxworst|z|=     3.1 killkey=0xffffffffffffffff -> kill
+[W1-rnd:a1p3120b27c72db50af5915810|a9p2031b55165518fb55a90b12] seq: maxworst|z|=463634.4 killkey=0x9e3779b97f4a7c15 | rnd64: maxworst|z|=     3.7 killkey=0x9e3779b97f4a7c15 -> kill
+[W1-rnd:a1p1023b92op|a7p3120b39cd4404aee03bfc50] seq: maxworst|z|=739994.3 killkey=0xaaaaaaaaaaaaaaaa | rnd64: maxworst|z|=     3.6 killkey=0x9e3779b97f4a7c15 -> kill
+  ... 100/602 triaged, 0 KEEPs, 11min elapsed
+[W1-rnd:a9p0132b352op|a1p0213b436f8b587d2f3db9b2|a7p2130b5af030a73b665d308] seq: maxworst|z|=  7922.6 killkey=0x0 | rnd64: maxworst|z|=     3.1 killkey=0x0 -> kill
+[W1-rnd:a1p2103b476c55b27848c810aa|a7p0213b1121239b2a911804f2] seq: maxworst|z|=737096.1 killkey=0x123456789abcdef | rnd64: maxworst|z|=     3.0 killkey=0x92988f142674743 -> kill
+[W1-rnd:a1p2031b31e1fed651e54a9ea9|a15p2013b435fa5f12e8c033fcb] seq: maxworst|z|=739994.3 killkey=0x0 | rnd64: maxworst|z|=     2.7 killkey=0x1234 -> kill
+[W1-rnd:a1p0132b552op|a13p3012b12op] seq: maxworst|z|=739994.3 killkey=0x0 | rnd64: maxworst|z|=     2.7 killkey=0x1234 -> kill
+[W1-rnd:a1p1032b54465f2e96e1e9dd8|a11p3201b35e76567b6b78bba7e|a11p0321b132op] seq: maxworst|z|= 12432.9 killkey=0xaaaaaaaaaaaaaaaa | rnd64: maxworst|z|=     3.6 killkey=0xffffffffffffffff -> kill
+[W1-rnd:a1p0123b1ed8ba9f40a390082|a15p0312b4340dd8bb120c18301] seq: maxworst|z|=739994.3 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     3.3 killkey=0x1234 -> kill
+[W1-rnd:a9p2301b2581188df29c622da9|a15p2301b72op] seq: maxworst|z|=279492.5 killkey=0x9e3779b97f4a7c15 | rnd64: maxworst|z|=     2.8 killkey=0x1234 -> kill
+[W1-rnd:a1p0321b2318313a6d901ca9cf|a9p3210b492op|a13p1320b31a8e61c37646ef197] seq: maxworst|z|= 74342.4 killkey=0x9e3779b97f4a7c15 | rnd64: maxworst|z|=     3.1 killkey=0xf0b52a9e7d8ba2b5 -> kill
+[W1-rnd:a3p3210b312op|a7p2031b2580aeb806bbb8269d|a13p3102b59902e3cd1ba93f12e] seq: maxworst|z|= 17129.0 killkey=0x0 | rnd64: maxworst|z|=     4.0 killkey=0x9e3779b97f4a7c15 -> kill
+[W1-rnd:a1p1230b375e69d612a264f75e|a3p3201b312op|a3p1023b61fcb8ab9173db9f35] seq: maxworst|z|= 26295.1 killkey=0x92988f142674743 | rnd64: maxworst|z|=     3.1 killkey=0x5555555555555555 -> kill
+[W1-rnd:a15p0312b212op|a9p1032b55bd462ad087b5f5f6|a11p0231b23d2f813f797b4a352] seq: maxworst|z|=  5368.4 killkey=0xdeadbeefdeadbeef | rnd64: maxworst|z|=     2.9 killkey=0x92988f142674743 -> kill
+[W1-rnd:a13p1230b52op|a11p2310b52op] seq: maxworst|z|=1480000.0 killkey=0x0 | rnd64: maxworst|z|=     2.2 killkey=0xffffffffffffffff -> kill
+[W1-rnd:a3p0132b612op|a7p0213b512op] seq: maxworst|z|=739994.3 killkey=0x0 | rnd64: maxworst|z|=     3.4 killkey=0x92988f142674743 -> kill
+[W1-rnd:a11p3021b232op|a13p1032b72971703b2e50bb29] seq: maxworst|z|=739994.3 killkey=0x0 | rnd64: maxworst|z|=     3.2 killkey=0x1234 -> kill
+[W1-rnd:a13p1023b192op|a7p0213b21ec04375dbbbfd873|a15p3201b412op] seq: maxworst|z|=  8224.2 killkey=0x0 | rnd64: maxworst|z|=     3.1 killkey=0x123456789abcdef -> kill
+[W1-rnd:a15p1320b592op|a3p0321b9df4e103bef646e5f|a5p0312b17885ee2e902240c00] seq: maxworst|z|=  8895.0 killkey=0x5555555555555555 | rnd64: maxworst|z|=     2.7 killkey=0x123456789abcdef -> kill
+[W1-rnd:a9p0321b4542685bb50be8b77f|a1p0123b72op] seq: maxworst|z|=143676.4 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     3.1 killkey=0xf0b52a9e7d8ba2b5 -> kill
+[W1-rnd:a3p3021b15efca49504af5f3c1|a7p0123b491efcdbc9bb3ed55f] seq: maxworst|z|=272326.5 killkey=0xf0b52a9e7d8ba2b5 | rnd64: maxworst|z|=     3.0 killkey=0xaaaaaaaaaaaaaaaa -> kill
+[W1-rnd:a9p1032b15bc7a26bbe47760fa|a3p1230b438efc93ba4d32a599|a11p3120b412op] seq: maxworst|z|=  3102.1 killkey=0x0 | rnd64: maxworst|z|=     2.9 killkey=0x5555555555555555 -> kill
+[W1-rnd:a5p2103b592op|a7p3120b9c1e4d17a75e80250|a13p0123b233b936e7f66ba0def] seq: maxworst|z|= 21757.8 killkey=0x0 | rnd64: maxworst|z|=     2.5 killkey=0xdeadbeefdeadbeef -> kill
+[W1-rnd:a11p3201b35fc8f8f32638ce79f|a9p1203b31a84980f487add501|a1p0132b592op] seq: maxworst|z|=  1992.3 killkey=0x0 | rnd64: maxworst|z|=     3.0 killkey=0xffffffffffffffff -> kill
+[W1-rnd:a15p2310b638e6ac0485a8e1818|a13p2103b432op|a1p1023b47fd85d67b01437ce2] seq: maxworst|z|=173983.2 killkey=0xdeadbeefdeadbeef | rnd64: maxworst|z|=     3.0 killkey=0xdeadbeefdeadbeef -> kill
+[W1-rnd:a11p1203b1165e3062d99d5e146|a11p1032b339f5e035f3a3c2a9d] seq: maxworst|z|=1480000.0 killkey=0x0 | rnd64: maxworst|z|=     2.6 killkey=0x123456789abcdef -> kill
+[W1-rnd:a9p3120b5a036edab88b836d4|a11p1023b47ddecadf9d61565db|a13p2031b332op] seq: maxworst|z|=  4230.6 killkey=0xdeadbeefdeadbeef | rnd64: maxworst|z|=     3.9 killkey=0x5555555555555555 -> kill
+[W1-rnd:a11p1302b33abcb18279deb8db8|a7p0312b35946097e298b809ec|a13p2310b538af88a9d0fcbc8d8] seq: maxworst|z|=  5311.5 killkey=0x123456789abcdef | rnd64: maxworst|z|=     3.0 killkey=0x123456789abcdef -> kill
+[W1-rnd:a13p1032b152op|a9p3012b238d90d07e587f15a9] seq: maxworst|z|=569713.9 killkey=0x0 | rnd64: maxworst|z|=     2.7 killkey=0x1234 -> kill
+[W1-rnd:a15p2310b112op|a7p0213b13a59cb4113614d809] seq: maxworst|z|=1078794.7 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     3.3 killkey=0x1234 -> kill
+[W1-rnd:a7p0213b536c96eaaedc57dd5e|a15p1230b33f3dfde3e8cc22648|a5p0231b49d25904bb280febd3] seq: maxworst|z|=  3912.5 killkey=0xf0b52a9e7d8ba2b5 | rnd64: maxworst|z|=     2.6 killkey=0xaaaaaaaaaaaaaaaa -> kill
+[W1-rnd:a3p3012b49dcf520ae0fc60ce7|a11p2310b512bf932aa167e669f|a9p1203b92op] seq: maxworst|z|=  2198.6 killkey=0x92988f142674743 | rnd64: maxworst|z|=     3.0 killkey=0x0 -> kill
+[W1-rnd:a9p3120b619490acf9c3226eac|a3p1203b477bf76267ae1bf748|a5p0213b1cbac4f2911f7885d] seq: maxworst|z|= 46887.9 killkey=0x5555555555555555 | rnd64: maxworst|z|=     2.8 killkey=0x5555555555555555 -> kill
+[W1-rnd:a7p2310b2154f0ca924bbfcdc7|a1p0123b25367d96e45ee15c7a|a11p1320b351ec3af4adb310a1f] seq: maxworst|z|= 15812.9 killkey=0xaaaaaaaaaaaaaaaa | rnd64: maxworst|z|=     3.1 killkey=0x0 -> kill
+[W1-rnd:a7p3201b374c24fc25538acde3|a9p1320b53d297c494a643a7e8|a15p2301b152ab876f0fe63f824] seq: maxworst|z|=  6969.3 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     3.0 killkey=0xdeadbeefdeadbeef -> kill
+[W1-rnd:a9p3021b2910e6746dadc59082|a15p3021b49d7f5bbac209e5d9b] seq: maxworst|z|=698359.1 killkey=0x0 | rnd64: maxworst|z|=     3.5 killkey=0xaaaaaaaaaaaaaaaa -> kill
+[W1-rnd:a11p0321b552op|a13p3021b51e2e257891d32dbc3] seq: maxworst|z|=223298.6 killkey=0x0 | rnd64: maxworst|z|=     3.5 killkey=0x1234 -> kill
+[W1-rnd:a15p2103b558cc86780f961b60e|a7p3210b23454ad14b70b00ea9] seq: maxworst|z|=489559.8 killkey=0x0 | rnd64: maxworst|z|=     3.2 killkey=0x92988f142674743 -> kill
+[W1-rnd:a5p2301b331e6a2fe1c2b265ad|a1p3201b51cc6a3b043d887401] seq: maxworst|z|=382537.2 killkey=0xaaaaaaaaaaaaaaaa | rnd64: maxworst|z|=     3.0 killkey=0x1234 -> kill
+[W1-rnd:a1p1203b5334d3b7f15d8f6e7|a1p3012b118ef7dcfc26744eae] seq: maxworst|z|=131593.4 killkey=0xaaaaaaaaaaaaaaaa | rnd64: maxworst|z|=     2.3 killkey=0x0 -> kill
+[W1-rnd:a3p1320b1362f59f08235ec682|a3p1320b33664fa12e531b9dd|a15p1032b632op] seq: maxworst|z|=511476.8 killkey=0x9e3779b97f4a7c15 | rnd64: maxworst|z|=     2.6 killkey=0xaaaaaaaaaaaaaaaa -> kill
+[W1-rnd:a3p1023b7e63f2ea7e2fe7716|a13p2013b312op|a13p0132b412op] seq: maxworst|z|=  3461.6 killkey=0xaaaaaaaaaaaaaaaa | rnd64: maxworst|z|=     3.2 killkey=0x1234 -> kill
+[W1-rnd:a11p0123b1104ce4da2c6abc5e7|a1p2031b2193ec8bddef539d66] seq: maxworst|z|=414236.0 killkey=0x9e3779b97f4a7c15 | rnd64: maxworst|z|=     2.9 killkey=0x1234 -> kill
+[W1-rnd:a9p2130b2517d8cf4bbec545b5|a7p1320b331ca2fa14d639ce91] seq: maxworst|z|=621194.6 killkey=0x9e3779b97f4a7c15 | rnd64: maxworst|z|=     3.3 killkey=0xdeadbeefdeadbeef -> kill
+[W1-rnd:a7p2031b632op|a13p2013b133baed6efa3e001c3] seq: maxworst|z|=1480000.0 killkey=0x0 | rnd64: maxworst|z|=     2.4 killkey=0x5555555555555555 -> kill
+[W1-rnd:a1p0231b38361a4ab19991a8d|a1p3210b3190e8d26372b1e949] seq: maxworst|z|=716830.3 killkey=0x5555555555555555 | rnd64: maxworst|z|=     3.0 killkey=0xf0b52a9e7d8ba2b5 -> kill
+[W1-rnd:a11p0213b3552e0125c55373bd4|a5p1032b356f789aa2f45700d] seq: maxworst|z|=717117.1 killkey=0x0 | rnd64: maxworst|z|=     2.6 killkey=0x0 -> kill
+[W1-rnd:a3p1203b5195aff18498f57304|a7p0132b232op|a11p0231b31711bc62f193d8b59] seq: maxworst|z|= 29540.0 killkey=0xf0b52a9e7d8ba2b5 | rnd64: maxworst|z|=     2.7 killkey=0x1234 -> kill
+[W1-rnd:a3p3102b59d15d44c2f47ccc59|a1p2031b37bf48993bf47573e5|a7p0132b63caa89d194d907944] seq: maxworst|z|=632807.1 killkey=0x9e3779b97f4a7c15 | rnd64: maxworst|z|=     3.4 killkey=0x9e3779b97f4a7c15 -> kill
+[W1-rnd:a13p1302b12op|a13p0123b7dcecdc3e1c8f732b|a9p2301b194d40f96e1c679918] seq: maxworst|z|= 70689.7 killkey=0x0 | rnd64: maxworst|z|=     2.5 killkey=0xdeadbeefdeadbeef -> kill
+[W1-rnd:a5p0321b1771bb2aa3107fda8e|a9p0312b17097e671093673055] seq: maxworst|z|=243157.2 killkey=0x0 | rnd64: maxworst|z|=     3.0 killkey=0x123456789abcdef -> kill
+[W1-rnd:a3p1302b43a1b3114bfa4a70e6|a7p2013b632op|a15p2301b19eab3fd441e35c814] seq: maxworst|z|= 11010.7 killkey=0x9e3779b97f4a7c15 | rnd64: maxworst|z|=     3.2 killkey=0x9e3779b97f4a7c15 -> kill
+[W1-rnd:a3p0123b47e009004f4f51e520|a7p2103b5931282e58eac833c8] seq: maxworst|z|=401001.8 killkey=0x0 | rnd64: maxworst|z|=     3.5 killkey=0x92988f142674743 -> kill
+  ... 150/602 triaged, 0 KEEPs, 20min elapsed
+[W1-rnd:a11p3012b41b9bb1a1ba9362a98|a7p3102b27688e5bdce5d929d3] seq: maxworst|z|=593392.2 killkey=0x0 | rnd64: maxworst|z|=     3.1 killkey=0x1234 -> kill
+[W1-rnd:a15p3201b55a1b872f0d530e555|a11p2103b53b4a4f2d22bce0039|a11p1032b5328b85e248e423075] seq: maxworst|z|= 15508.2 killkey=0xdeadbeefdeadbeef | rnd64: maxworst|z|=     2.8 killkey=0x123456789abcdef -> kill
+[W1-rnd:a9p2013b371a7937cb79f733b7|a9p0213b57d3abe8fa619788bc] seq: maxworst|z|=672562.3 killkey=0x92988f142674743 | rnd64: maxworst|z|=     3.5 killkey=0xf0b52a9e7d8ba2b5 -> kill
+[W1-rnd:a7p1230b37a9ba5021396b09b2|a3p3120b235b5c23fec5dbefbb] seq: maxworst|z|=697443.6 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     3.2 killkey=0x1234 -> kill
+[W1-rnd:a15p2130b292op|a15p2013b39626866a7431512c0|a9p1023b31d75f95a58424ac76] seq: maxworst|z|= 37461.8 killkey=0x0 | rnd64: maxworst|z|=     2.8 killkey=0xffffffffffffffff -> kill
+[W1-rnd:a7p3021b33be0dc77963e03c91|a1p1023b137de9e200e03c44de|a15p2031b472op] seq: maxworst|z|=  8536.2 killkey=0x0 | rnd64: maxworst|z|=     2.7 killkey=0x92988f142674743 -> kill
+[W1-rnd:a5p3021b57fc02bc0418115cc0|a5p1230b92op|a3p0312b472op] seq: maxworst|z|= 10894.3 killkey=0x123456789abcdef | rnd64: maxworst|z|=     2.5 killkey=0x9e3779b97f4a7c15 -> kill
+[W1-rnd:a9p2103b470f8eb0771180bd60|a3p3201b255eabefc7b3374bee] seq: maxworst|z|=728448.8 killkey=0x5555555555555555 | rnd64: maxworst|z|=     2.4 killkey=0x1234 -> kill
+[W1-rnd:a3p3012b172op|a3p2103b19b397dcd45608ec9] seq: maxworst|z|=739631.7 killkey=0x0 | rnd64: maxworst|z|=     3.0 killkey=0x5555555555555555 -> kill
+[W1-rnd:a7p0132b490491e2aa596de186|a11p1203b390266f9dbc2700393|a7p1320b1388e31c819163793d] seq: maxworst|z|= 15529.3 killkey=0x0 | rnd64: maxworst|z|=     2.5 killkey=0x9e3779b97f4a7c15 -> kill
+[W1-rnd:a7p3102b58ab91cd4a7390bb9|a7p2130b1750bea218a7ab9389] seq: maxworst|z|=1154977.9 killkey=0x0 | rnd64: maxworst|z|=     2.7 killkey=0xffffffffffffffff -> kill
+[W1-rnd:a15p1032b15f8c5a12d6a039d30|a3p1320b552op|a3p3201b532op] seq: maxworst|z|= 88831.7 killkey=0x123456789abcdef | rnd64: maxworst|z|=     3.8 killkey=0xaaaaaaaaaaaaaaaa -> kill
+[W1-rnd:a1p1023b13029bd3429e0bb31f|a13p2301b212op] seq: maxworst|z|=499984.1 killkey=0x9e3779b97f4a7c15 | rnd64: maxworst|z|=     3.2 killkey=0xdeadbeefdeadbeef -> kill
+[W1-rnd:a3p1230b5753207640400fb813|a15p2130b63c324987e0fa15dfb] seq: maxworst|z|=256230.8 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     3.5 killkey=0xf0b52a9e7d8ba2b5 -> kill
+[W1-rnd:a3p0312b17ce784ee3da3de29f|a13p2310b512op|a1p2301b392op] seq: maxworst|z|=  7727.2 killkey=0xdeadbeefdeadbeef | rnd64: maxworst|z|=     2.3 killkey=0xdeadbeefdeadbeef -> kill
+[W1-rnd:a13p1302b41d77880cc25963293|a15p1032b1737aceb3bbe1bd773] seq: maxworst|z|=1480000.0 killkey=0x0 | rnd64: maxworst|z|=     3.3 killkey=0x92988f142674743 -> kill
+[W1-rnd:a15p2301b4585e6f11dfdc7b322|a7p0321b135a5a46c0ddca4da5|a9p3201b532op] seq: maxworst|z|=  7122.3 killkey=0x0 | rnd64: maxworst|z|=     2.7 killkey=0xdeadbeefdeadbeef -> kill
+[W1-rnd:a3p0321b432op|a3p0321b172op] seq: maxworst|z|=739767.7 killkey=0x0 | rnd64: maxworst|z|=     4.4 killkey=0x9e3779b97f4a7c15 -> kill
+[W1-rnd:a1p0123b532op|a5p2130b59c16f187c54ce920c] seq: maxworst|z|=1301982.6 killkey=0x9e3779b97f4a7c15 | rnd64: maxworst|z|=     2.7 killkey=0xffffffffffffffff -> kill
+[W1-rnd:a11p2013b13de79e78b3350120d|a13p1203b512op|a11p0321b391d9af23009880ec7] seq: maxworst|z|=  3586.5 killkey=0x9e3779b97f4a7c15 | rnd64: maxworst|z|=     2.9 killkey=0xf0b52a9e7d8ba2b5 -> kill
+[W1-rnd:a9p1320b1f9f29661fcdf2b75|a9p2301b39db09b7208877eb25|a9p2310b3360d4ea7fa58d5717] seq: maxworst|z|= 50734.4 killkey=0x92988f142674743 | rnd64: maxworst|z|=     3.5 killkey=0xaaaaaaaaaaaaaaaa -> kill
+[W1-rnd:a5p1203b394d66511ce55170f8|a3p3210b1fd7341ecfaeea7bb] seq: maxworst|z|=739359.8 killkey=0x5555555555555555 | rnd64: maxworst|z|=     2.9 killkey=0x5555555555555555 -> kill
+[W1-rnd:a5p1320b11e3e3bcce36a6e52|a9p3012b1164fd8106932c5ea6] seq: maxworst|z|=650836.2 killkey=0x123456789abcdef | rnd64: maxworst|z|=     3.1 killkey=0x123456789abcdef -> kill
+[W1-rnd:a15p3102b472op|a7p0312b1913a810dd823ec5d3|a15p0213b3714f9630b8b5c25dc] seq: maxworst|z|= 43241.8 killkey=0xdeadbeefdeadbeef | rnd64: maxworst|z|=     2.9 killkey=0x92988f142674743 -> kill
+[W1-rnd:a13p1320b152op|a11p0231b32op] seq: maxworst|z|=489606.9 killkey=0x123456789abcdef | rnd64: maxworst|z|=     3.0 killkey=0xffffffffffffffff -> kill
+[W1-rnd:a7p2103b70605c5e8bbdcde2f|a9p0123b55271db5e1c4a12b00] seq: maxworst|z|=739994.3 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     2.6 killkey=0xaaaaaaaaaaaaaaaa -> kill
+[W1-rnd:a15p0231b37a785d218d09e3b26|a7p1203b716d31697431a2ae7|a3p2103b25fc58d82ccf47abb7] seq: maxworst|z|=  1012.6 killkey=0x92988f142674743 | rnd64: maxworst|z|=     2.9 killkey=0x9e3779b97f4a7c15 -> kill
+[W1-rnd:a15p1203b572op|a7p0231b39de75e236eac3e26c|a9p2130b377c425a400b5ebb3] seq: maxworst|z|= 67116.6 killkey=0x9e3779b97f4a7c15 | rnd64: maxworst|z|=     2.5 killkey=0xf0b52a9e7d8ba2b5 -> kill
+[W1-rnd:a9p0321b1f88c60fefb85189e|a9p3120b598b3524ad29e3b493] seq: maxworst|z|=739994.3 killkey=0x92988f142674743 | rnd64: maxworst|z|=     2.7 killkey=0x0 -> kill
+[W1-rnd:a13p2130b612op|a11p2103b79f5bf87fc2121c26|a15p3021b4794ec661ab4993d38] seq: maxworst|z|= 17596.3 killkey=0x0 | rnd64: maxworst|z|=     2.8 killkey=0x0 -> kill
+[W1-rnd:a3p2310b612op|a15p0132b49a0ead353df3f9f99|a1p1230b73e01b348c48684b4] seq: maxworst|z|= 34306.7 killkey=0x0 | rnd64: maxworst|z|=     3.5 killkey=0xdeadbeefdeadbeef -> kill
+[W1-rnd:a7p0123b27b039f5a3fa3b643f|a9p3120b138b74d74d7338395c|a7p0123b29e404c2e1ab9997c3] seq: maxworst|z|=  6650.1 killkey=0xf0b52a9e7d8ba2b5 | rnd64: maxworst|z|=     4.3 killkey=0xaaaaaaaaaaaaaaaa -> kill
+[W1-rnd:a15p3102b317fc3bf3875467dc2|a13p1032b592op] seq: maxworst|z|=739994.3 killkey=0xaaaaaaaaaaaaaaaa | rnd64: maxworst|z|=     2.9 killkey=0xf0b52a9e7d8ba2b5 -> kill
+[W1-rnd:a13p3012b27e5f998e043915f4d|a1p0321b292op|a5p0123b52op] seq: maxworst|z|=   828.2 killkey=0x0 | rnd64: maxworst|z|=     3.0 killkey=0xffffffffffffffff -> kill
+[W1-rnd:a1p3210b61f883b5217f729855|a5p1032b31922d60b906b2467a] seq: maxworst|z|=252461.2 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     2.9 killkey=0x9e3779b97f4a7c15 -> kill
+[W1-rnd:a7p2301b172op|a15p1203b39f5668b72a1e8953e|a15p3210b352op] seq: maxworst|z|= 31172.8 killkey=0x0 | rnd64: maxworst|z|=     3.1 killkey=0xdeadbeefdeadbeef -> kill
+[W1-rnd:a1p2301b53be0f5fa646f41d13|a11p0132b5bb5c96eb8ffb9b49] seq: maxworst|z|=623094.4 killkey=0xdeadbeefdeadbeef | rnd64: maxworst|z|=     3.0 killkey=0x0 -> kill
+[W1-rnd:a7p3201b332op|a13p3102b454d7138f35e996b91] seq: maxworst|z|=544664.8 killkey=0x0 | rnd64: maxworst|z|=     3.5 killkey=0xffffffffffffffff -> kill
+[W1-rnd:a15p0123b612op|a7p1230b13ca30eb7ba8cfc92d] seq: maxworst|z|=739994.3 killkey=0x0 | rnd64: maxworst|z|=     2.6 killkey=0xaaaaaaaaaaaaaaaa -> kill
+[W1-rnd:a5p2310b512op|a5p3201b19dd23f65383bc77d3] seq: maxworst|z|=377823.1 killkey=0x0 | rnd64: maxworst|z|=     3.1 killkey=0xdeadbeefdeadbeef -> kill
+[W1-rnd:a13p0132b21e4d13da023ddaf47|a3p2103b532op] seq: maxworst|z|=739994.3 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     3.1 killkey=0x1234 -> kill
+[W1-rnd:a7p0123b33e02477bc7af10cb6|a11p1023b61c14bbe26a487c30a|a15p1032b33322ce9bc126c0d86] seq: maxworst|z|=  4437.6 killkey=0x123456789abcdef | rnd64: maxworst|z|=     2.7 killkey=0xaaaaaaaaaaaaaaaa -> kill
+[W1-rnd:a9p2013b1141f5b71e817ba099|a11p0231b1130915f9e82514f11|a15p3210b57d3dd54618b01814a] seq: maxworst|z|=  5336.2 killkey=0x0 | rnd64: maxworst|z|=     3.7 killkey=0xffffffffffffffff -> kill
+[W1-rnd:a15p3210b1d7d561734d29bf17|a11p2310b439a743d49d235ab27|a11p3120b1c50258fdaa78f64d] seq: maxworst|z|=378232.2 killkey=0x0 | rnd64: maxworst|z|=     2.8 killkey=0x92988f142674743 -> kill
+[W1-rnd:a15p0132b92op|a7p0132b1750496d41319f5a57|a5p1203b49690ba27d6891eae5] seq: maxworst|z|= 19868.4 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     3.0 killkey=0x0 -> kill
+[W1-rnd:a7p1203b5e66388f38acc5a42|a13p0231b5503911b31b4b79ad5|a5p1203b552op] seq: maxworst|z|=   676.6 killkey=0xf0b52a9e7d8ba2b5 | rnd64: maxworst|z|=     3.3 killkey=0x1234 -> kill
+[W1-rnd:a9p3021b492op|a5p1203b32op] seq: maxworst|z|=1388803.3 killkey=0x0 | rnd64: maxworst|z|=     3.6 killkey=0x9e3779b97f4a7c15 -> kill
+[W1-rnd:a9p1302b612op|a11p3102b212op|a1p0213b232op] seq: maxworst|z|=  6683.3 killkey=0x0 | rnd64: maxworst|z|=     3.1 killkey=0x1234 -> kill
+[W1-rnd:a1p0312b9e0679fbed8496913|a5p1230b352op|a1p1032b51533d840246ead9d6] seq: maxworst|z|=  3234.6 killkey=0x123456789abcdef | rnd64: maxworst|z|=     4.1 killkey=0x123456789abcdef -> kill
+[W1-rnd:a1p0123b57c5dbcc35a46c2540|a11p0231b3347c3bc02a40b60ef|a3p1032b45dd41303730e812f1] seq: maxworst|z|=  7702.6 killkey=0x123456789abcdef | rnd64: maxworst|z|=     2.6 killkey=0xffffffffffffffff -> kill
+  ... 200/602 triaged, 0 KEEPs, 26min elapsed
+[W1-rnd:a13p0123b5948056b86af22beb|a1p2130b518ba3c77be18e23a0] seq: maxworst|z|=739994.3 killkey=0x0 | rnd64: maxworst|z|=     2.9 killkey=0x5555555555555555 -> kill
+[W1-rnd:a11p3102b132op|a7p0321b470869c63bc8cd2819] seq: maxworst|z|=739994.3 killkey=0x0 | rnd64: maxworst|z|=     2.9 killkey=0x92988f142674743 -> kill
+[W1-rnd:a5p1320b493250cec76fcbb489|a11p0213b551c71937e5c20caba] seq: maxworst|z|=489547.2 killkey=0xf0b52a9e7d8ba2b5 | rnd64: maxworst|z|=     2.8 killkey=0x1234 -> kill
+[W1-rnd:a9p1203b616a205198bff573c4|a7p0312b630de6366714b0b7e4|a3p2013b23c22b65871e198891] seq: maxworst|z|= 48403.8 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     2.5 killkey=0x0 -> kill
+[W1-rnd:a9p0231b722ae9ae38cfe78e4|a5p0123b27b15c09eac126e231|a15p1230b31ac1e56b92231436d] seq: maxworst|z|=  1217.9 killkey=0x92988f142674743 | rnd64: maxworst|z|=     2.6 killkey=0x92988f142674743 -> kill
+[W1-rnd:a3p1302b51b47ff54b231d9947|a13p0312b272op|a5p3021b116c6f64db9e96cde6] seq: maxworst|z|= 42960.2 killkey=0xf0b52a9e7d8ba2b5 | rnd64: maxworst|z|=     3.9 killkey=0x0 -> kill
+[W1-rnd:a3p0312b592op|a11p3210b212op] seq: maxworst|z|=739994.3 killkey=0x0 | rnd64: maxworst|z|=     3.6 killkey=0xffffffffffffffff -> kill
+[W1-rnd:a1p1203b17df15264d2c80f076|a3p1320b452op|a3p3201b61b9295907484dfff8] seq: maxworst|z|=131110.0 killkey=0xaaaaaaaaaaaaaaaa | rnd64: maxworst|z|=     2.9 killkey=0xffffffffffffffff -> kill
+[W1-rnd:a11p2130b3188491d76052a947b|a13p2310b35633e823dc00773d1] seq: maxworst|z|=716427.5 killkey=0xaaaaaaaaaaaaaaaa | rnd64: maxworst|z|=     3.8 killkey=0xaaaaaaaaaaaaaaaa -> kill
+[W1-rnd:a1p0321b192op|a7p1302b192op] seq: maxworst|z|=362770.4 killkey=0x0 | rnd64: maxworst|z|=     3.2 killkey=0xaaaaaaaaaaaaaaaa -> kill
+[W1-rnd:a13p0312b1fc1ec56ff47deff0|a1p0132b37ad030fabda13d693] seq: maxworst|z|=615984.5 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     3.3 killkey=0x9e3779b97f4a7c15 -> kill
+[W1-rnd:a15p0213b33981d6074f78d80a|a5p3210b4925b6ddeee3a78107|a13p0123b512op] seq: maxworst|z|= 11132.1 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     2.8 killkey=0xf0b52a9e7d8ba2b5 -> kill
+[W1-rnd:a5p0123b61c2c76cd617b59a25|a1p0312b63f7ca91d1d7c874e2] seq: maxworst|z|=739994.3 killkey=0x0 | rnd64: maxworst|z|=     3.3 killkey=0x5555555555555555 -> kill
+[W1-rnd:a5p0213b15190b752a85f8b9b1|a9p1203b55ed0b81057bd503c|a7p1032b11eaa8f46778b83516] seq: maxworst|z|=  1571.0 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     2.9 killkey=0x92988f142674743 -> kill
+[W1-rnd:a9p2031b3eb4b94b32092dc10|a13p3210b31b82a4514693bdac2] seq: maxworst|z|=551365.5 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     2.4 killkey=0xaaaaaaaaaaaaaaaa -> kill
+[W1-rnd:a1p1203b4546dab981864983e0|a5p2031b290205f040dec5a95b] seq: maxworst|z|=368566.3 killkey=0x5555555555555555 | rnd64: maxworst|z|=     2.4 killkey=0x123456789abcdef -> kill
+[W1-rnd:a13p0231b3122213e28452d38ae|a9p2031b61640344c4f266a0b2|a15p1320b3717a53336474116a7] seq: maxworst|z|=  2578.6 killkey=0x0 | rnd64: maxworst|z|=     3.1 killkey=0xdeadbeefdeadbeef -> kill
+[W1-rnd:a1p0321b579a3d09cb4010377d|a13p1302b495d14aad96e143a18|a1p0123b412op] seq: maxworst|z|=  2383.2 killkey=0x0 | rnd64: maxworst|z|=     3.9 killkey=0xffffffffffffffff -> kill
+[W1-rnd:a3p0123b272op|a11p2310b27168a392a7a8a8652|a11p3102b92op] seq: maxworst|z|=  2665.4 killkey=0x0 | rnd64: maxworst|z|=     2.6 killkey=0x9e3779b97f4a7c15 -> kill
+[W1-rnd:a11p1023b592op|a11p2130b472op] seq: maxworst|z|=739994.3 killkey=0x0 | rnd64: maxworst|z|=     2.6 killkey=0x92988f142674743 -> kill
+[W1-rnd:a1p3120b21ef33f323c0421b3f|a3p3210b452op] seq: maxworst|z|=674846.5 killkey=0x92988f142674743 | rnd64: maxworst|z|=     2.9 killkey=0x5555555555555555 -> kill
+[W1-rnd:a3p2310b15c62d4b23e5539a82|a1p1023b632op|a7p3210b112op] seq: maxworst|z|=352353.1 killkey=0x5555555555555555 | rnd64: maxworst|z|=     2.8 killkey=0x0 -> kill
+[W1-rnd:a11p1032b1924cc4bfa599438ff|a11p0123b371e70de3bbd232d9f] seq: maxworst|z|=686012.4 killkey=0xdeadbeefdeadbeef | rnd64: maxworst|z|=     2.8 killkey=0xdeadbeefdeadbeef -> kill
+[W1-rnd:a9p2031b532op|a15p3210b294a249ac548c52bb8] seq: maxworst|z|=359978.6 killkey=0x0 | rnd64: maxworst|z|=     4.1 killkey=0xf0b52a9e7d8ba2b5 -> kill
+[W1-rnd:a1p1032b59870e023b5e419a7|a13p0321b49857192508e592221|a15p2130b21eca60d795ae0f19a] seq: maxworst|z|=  3417.4 killkey=0x9e3779b97f4a7c15 | rnd64: maxworst|z|=     4.2 killkey=0x1234 -> kill
+[W1-rnd:a5p1230b47e77f1e10b269d1a8|a15p0132b57bda33216b58cdae0|a3p3102b5497411454b965993] seq: maxworst|z|=  6448.2 killkey=0x0 | rnd64: maxworst|z|=     3.1 killkey=0x123456789abcdef -> kill
+[W1-rnd:a15p1302b1a6d97261e47c339e|a7p2310b59782745b7d8c3dccd] seq: maxworst|z|=618062.5 killkey=0xaaaaaaaaaaaaaaaa | rnd64: maxworst|z|=     3.0 killkey=0xf0b52a9e7d8ba2b5 -> kill
+[W1-rnd:a15p1320b391edbe44594aa410d|a13p1023b33219d837888594f13] seq: maxworst|z|=719958.2 killkey=0x9e3779b97f4a7c15 | rnd64: maxworst|z|=     2.6 killkey=0x9e3779b97f4a7c15 -> kill
+[W1-rnd:a9p2130b552op|a13p2013b5764d250dd2e0e23c8] seq: maxworst|z|=284249.6 killkey=0x92988f142674743 | rnd64: maxworst|z|=     2.8 killkey=0x9e3779b97f4a7c15 -> kill
+[W1-rnd:a1p0123b7cea4212158f82e0f|a1p3102b7cd94d39422d1396f] seq: maxworst|z|=595313.1 killkey=0x5555555555555555 | rnd64: maxworst|z|=     2.8 killkey=0x5555555555555555 -> kill
+[W1-rnd:a15p1320b15a166bfd1825ccba6|a1p3012b542973bc29e950796] seq: maxworst|z|=684434.1 killkey=0xf0b52a9e7d8ba2b5 | rnd64: maxworst|z|=     2.9 killkey=0x0 -> kill
+[W1-rnd:a1p3201b74c63b7721e4e1dbe|a13p1203b55971d63c797f50d4d] seq: maxworst|z|=498958.4 killkey=0x0 | rnd64: maxworst|z|=     3.2 killkey=0x9e3779b97f4a7c15 -> kill
+[W1-rnd:a11p1023b15f5d625c34f97acb6|a15p2031b151021b72bc743d90d|a9p3201b37b047ae2dec15b0ce] seq: maxworst|z|=  6392.1 killkey=0x92988f142674743 | rnd64: maxworst|z|=     2.7 killkey=0x123456789abcdef -> kill
+[W1-rnd:a5p1302b632op|a5p1023b199823ef860ff9ad91|a13p3120b211b2b14c5e1e51dba] seq: maxworst|z|=421067.2 killkey=0x0 | rnd64: maxworst|z|=     2.9 killkey=0xf0b52a9e7d8ba2b5 -> kill
+[W1-rnd:a15p3201b58c91523c75ad2f11|a1p0132b57f29f9589de6df13f|a3p1032b21305fe9c17cf13d8f] seq: maxworst|z|=  1409.6 killkey=0x92988f142674743 | rnd64: maxworst|z|=     3.0 killkey=0x92988f142674743 -> kill
+[W1-rnd:a13p2310b1779796dd35b762aed|a1p0213b512op|a3p1320b51873fb41b61405906] seq: maxworst|z|=  7434.2 killkey=0x5555555555555555 | rnd64: maxworst|z|=     3.0 killkey=0x9e3779b97f4a7c15 -> kill
+[W1-rnd:a5p2013b5972599b1f3bb0a5c8|a1p1302b398ba930d89badc264|a5p3120b252op] seq: maxworst|z|=  6249.7 killkey=0xdeadbeefdeadbeef | rnd64: maxworst|z|=     2.2 killkey=0xaaaaaaaaaaaaaaaa -> kill
+[W1-rnd:a1p1203b612op|a5p1320b19b64e48c0751e94ef] seq: maxworst|z|=501850.2 killkey=0x5555555555555555 | rnd64: maxworst|z|=     3.7 killkey=0x123456789abcdef -> kill
+[W1-rnd:a15p1230b57b00dcc68eb5c9ea8|a9p3120b172op|a5p3012b232op] seq: maxworst|z|= 16633.9 killkey=0x123456789abcdef | rnd64: maxworst|z|=     2.9 killkey=0x0 -> kill
+[W1-rnd:a7p2310b32op|a13p2310b3d7290574f6fc2e8c] seq: maxworst|z|=739269.1 killkey=0x0 | rnd64: maxworst|z|=     2.6 killkey=0xdeadbeefdeadbeef -> kill
+[W1-rnd:a11p3120b232op|a1p2103b211eb053bdd4dbc2c6] seq: maxworst|z|=1146372.0 killkey=0x0 | rnd64: maxworst|z|=     2.8 killkey=0x5555555555555555 -> kill
+[W1-rnd:a3p2130b35fab26ae27f73e8fc|a7p0231b5309a2de9655e857a0] seq: maxworst|z|=348650.0 killkey=0x123456789abcdef | rnd64: maxworst|z|=     2.7 killkey=0x5555555555555555 -> kill
+[W1-rnd:a11p1203b617b02bcb1b36f1a99|a13p2301b632op] seq: maxworst|z|=1480000.0 killkey=0x0 | rnd64: maxworst|z|=     2.3 killkey=0x5555555555555555 -> kill
+[W1-rnd:a13p1302b3702fd9f23e063d40f|a3p1302b570c3f70d92af408df] seq: maxworst|z|=244721.6 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     3.0 killkey=0xdeadbeefdeadbeef -> kill
+[W1-rnd:a15p1203b43454ae9f386a5331b|a5p1302b15e9f6e4cfc1455e55|a5p3012b3718a0aa9a319e2b6b] seq: maxworst|z|= 14155.2 killkey=0x5555555555555555 | rnd64: maxworst|z|=     3.4 killkey=0xdeadbeefdeadbeef -> kill
+[W1-rnd:a13p2013b53ee19e26890d25756|a1p2130b11ba7d2df404420fe9] seq: maxworst|z|=663215.8 killkey=0xaaaaaaaaaaaaaaaa | rnd64: maxworst|z|=     3.0 killkey=0x5555555555555555 -> kill
+[W1-rnd:a7p3102b29a40d0f07e3aa53cd|a7p0123b1505c172aec2090c89|a3p3021b75912e0a3cf5960b7] seq: maxworst|z|= 24545.6 killkey=0xf0b52a9e7d8ba2b5 | rnd64: maxworst|z|=     3.3 killkey=0xf0b52a9e7d8ba2b5 -> kill
+[W1-rnd:a5p2301b5760261abbb5fcbfaf|a3p0321b512op] seq: maxworst|z|=666765.4 killkey=0x123456789abcdef | rnd64: maxworst|z|=     2.9 killkey=0x5555555555555555 -> kill
+[W1-rnd:a9p1302b7a4b79e8dbd404c61|a1p2013b33e1981774b550b473] seq: maxworst|z|=509960.5 killkey=0x9e3779b97f4a7c15 | rnd64: maxworst|z|=     3.1 killkey=0x123456789abcdef -> kill
+[W1-rnd:a1p2031b3537de033800f76e0c|a9p1320b29e50c994aa0edcaa5|a9p3012b335398b88b77e184b0] seq: maxworst|z|=  5338.3 killkey=0xaaaaaaaaaaaaaaaa | rnd64: maxworst|z|=     2.7 killkey=0x1234 -> kill
+  ... 250/602 triaged, 0 KEEPs, 30min elapsed
+[W1-rnd:a9p1203b475e7d6e4bab6ad494|a5p1203b55305e83ffb796cece|a5p0321b27dfda8e81db5211a5] seq: maxworst|z|=  7359.8 killkey=0x92988f142674743 | rnd64: maxworst|z|=     2.7 killkey=0xaaaaaaaaaaaaaaaa -> kill
+[W1-rnd:a7p0312b452op|a1p2130b6309f28dda665ee9b6|a15p0312b312e35ea33418e9ec8] seq: maxworst|z|= 23239.9 killkey=0xaaaaaaaaaaaaaaaa | rnd64: maxworst|z|=     2.9 killkey=0x9e3779b97f4a7c15 -> kill
+[W1-rnd:a5p2301b292op|a7p1320b574e51b7dc58add0eb] seq: maxworst|z|=567098.2 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     2.9 killkey=0xffffffffffffffff -> kill
+[W1-rnd:a9p3102b4960f9db37364b8e7b|a13p0321b5013245b159736dc6] seq: maxworst|z|=363838.0 killkey=0x123456789abcdef | rnd64: maxworst|z|=     3.6 killkey=0x5555555555555555 -> kill
+[W1-rnd:a11p0312b11044c9ddb38cbfc2c|a3p1203b32op] seq: maxworst|z|=1198941.3 killkey=0x9e3779b97f4a7c15 | rnd64: maxworst|z|=     2.9 killkey=0xdeadbeefdeadbeef -> kill
+[W1-rnd:a3p3210b49ab6562ee8d30ea62|a3p3210b433172cd19e48eee0f] seq: maxworst|z|=235585.7 killkey=0x5555555555555555 | rnd64: maxworst|z|=     3.0 killkey=0xffffffffffffffff -> kill
+[W1-rnd:a5p1203b41df38bfab0360d630|a7p1302b25bdf7ee0278faf9a3|a11p1203b23064f569a0472e025] seq: maxworst|z|=  2312.0 killkey=0xaaaaaaaaaaaaaaaa | rnd64: maxworst|z|=     3.0 killkey=0xdeadbeefdeadbeef -> kill
+[W1-rnd:a1p3210b212op|a11p1032b552op] seq: maxworst|z|=739994.3 killkey=0x0 | rnd64: maxworst|z|=     2.7 killkey=0xdeadbeefdeadbeef -> kill
+[W1-rnd:a9p1320b976f6a3f1f17d4bce|a3p0312b392op|a9p1320b274cc77981a6837f94] seq: maxworst|z|=  3199.3 killkey=0x92988f142674743 | rnd64: maxworst|z|=     2.7 killkey=0x0 -> kill
+[W1-rnd:a13p0132b552op|a7p1023b15104e51129305ea2b|a5p0321b232op] seq: maxworst|z|= 68196.2 killkey=0x0 | rnd64: maxworst|z|=     3.0 killkey=0x123456789abcdef -> kill
+[W1-rnd:a1p0123b472faed2328c4025c3|a11p2013b10b3a5936e4611b10|a9p2103b63a533f44f0cf36a59] seq: maxworst|z|=164975.6 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     2.9 killkey=0x123456789abcdef -> kill
+[W1-rnd:a7p2310b230c787e73f67b0d07|a3p1203b49fc8fb5d16abb8746] seq: maxworst|z|=574340.7 killkey=0x92988f142674743 | rnd64: maxworst|z|=     2.5 killkey=0x123456789abcdef -> kill
+[W1-rnd:a3p0132b479739bf043f3eee38|a3p0231b252op|a11p1032b12op] seq: maxworst|z|= 33267.7 killkey=0x0 | rnd64: maxworst|z|=     3.2 killkey=0x1234 -> kill
+[W1-rnd:a7p1320b412op|a1p2031b33fad8f93b17dcf977] seq: maxworst|z|=733313.8 killkey=0x0 | rnd64: maxworst|z|=     2.8 killkey=0xaaaaaaaaaaaaaaaa -> kill
+[W1-rnd:a1p1032b3a251384113f779ec|a1p0312b766a0c6e59a94d8df|a1p3210b962d3bd82663fde94] seq: maxworst|z|=  5338.9 killkey=0xaaaaaaaaaaaaaaaa | rnd64: maxworst|z|=     2.7 killkey=0xffffffffffffffff -> kill
+[W1-rnd:a13p3210b7ee7e7dbe738c7152|a13p0123b276d20d1c53d0b8fb7|a13p2310b453fc113e0cd28c675] seq: maxworst|z|= 19213.6 killkey=0x5555555555555555 | rnd64: maxworst|z|=     2.8 killkey=0x0 -> kill
+[W1-rnd:a1p2310b495e60e13d2e81bfb8|a15p0321b4534081482a64dce35] seq: maxworst|z|=736983.1 killkey=0x5555555555555555 | rnd64: maxworst|z|=     3.0 killkey=0x5555555555555555 -> kill
+[W1-rnd:a11p1320b116c4ca179c45af87b|a7p3102b236fc91fc5c02712fd] seq: maxworst|z|=382185.0 killkey=0x92988f142674743 | rnd64: maxworst|z|=     3.1 killkey=0x1234 -> kill
+[W1-rnd:a9p0231b475fcce6e73ec56073|a15p2301b1172bed1c6b315d860|a9p1320b9731cf7be93af79af] seq: maxworst|z|= 19468.1 killkey=0xdeadbeefdeadbeef | rnd64: maxworst|z|=     2.9 killkey=0x9e3779b97f4a7c15 -> kill
+[W1-rnd:a13p0123b258706683583271243|a11p3021b552op|a13p1230b472op] seq: maxworst|z|=  8647.0 killkey=0x92988f142674743 | rnd64: maxworst|z|=     3.6 killkey=0x9e3779b97f4a7c15 -> kill
+[W1-rnd:a13p0213b271d1f90de4218b9ed|a5p3210b232op] seq: maxworst|z|=234118.0 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     4.1 killkey=0x0 -> kill
+[W1-rnd:a5p1203b41c8003d4d7dcf2ea3|a15p1203b3766ee9138d5af5dcb] seq: maxworst|z|=710584.9 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     2.7 killkey=0x5555555555555555 -> kill
+[W1-rnd:a9p1203b132op|a11p2301b33431de55e0b61401] seq: maxworst|z|=738906.6 killkey=0x0 | rnd64: maxworst|z|=     3.0 killkey=0x1234 -> kill
+[W1-rnd:a1p3210b53653815e3a924c214|a13p3012b491f6873729967e9ac|a13p1302b52op] seq: maxworst|z|=  8593.6 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     2.8 killkey=0xdeadbeefdeadbeef -> kill
+[W1-rnd:a5p1230b21c0b4d2b5818531cb|a7p3021b15ac7ad6e64ba4be06] seq: maxworst|z|=246657.5 killkey=0xf0b52a9e7d8ba2b5 | rnd64: maxworst|z|=     2.3 killkey=0x1234 -> kill
+[W1-rnd:a11p1230b155037675d61ed7dd5|a9p3201b33f21140da65df403b|a3p3201b552op] seq: maxworst|z|=  9492.2 killkey=0x123456789abcdef | rnd64: maxworst|z|=     2.8 killkey=0xf0b52a9e7d8ba2b5 -> kill
+[W1-rnd:a15p2031b292op|a13p3210b45b65bd2b53940ab76|a5p1230b57a5e5070dbf9c9418] seq: maxworst|z|=  6628.7 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     2.5 killkey=0x5555555555555555 -> kill
+[W1-rnd:a1p1023b492op|a1p1230b212op|a7p0213b7912f423dc45d96b7] seq: maxworst|z|= 57305.0 killkey=0x0 | rnd64: maxworst|z|=     3.3 killkey=0x9e3779b97f4a7c15 -> kill
+[W1-rnd:a7p1203b938104fd670f79eec|a13p2013b31e61919c8356553e7] seq: maxworst|z|=416789.5 killkey=0xf0b52a9e7d8ba2b5 | rnd64: maxworst|z|=     3.0 killkey=0xdeadbeefdeadbeef -> kill
+[W1-rnd:a11p2031b938d0476edb3c5656|a11p3201b9d322ef42078e20ab] seq: maxworst|z|=396702.1 killkey=0x5555555555555555 | rnd64: maxworst|z|=     2.7 killkey=0xffffffffffffffff -> kill
+[W1-rnd:a7p0132b571c7cf9a58802e4dd|a15p2301b72op|a5p0312b1757b017e5bf7eb2c0] seq: maxworst|z|=  5877.7 killkey=0xaaaaaaaaaaaaaaaa | rnd64: maxworst|z|=     2.8 killkey=0xf0b52a9e7d8ba2b5 -> kill
+[W1-rnd:a15p1032b472op|a1p1203b1318f52302b179f6c6] seq: maxworst|z|=739994.3 killkey=0x0 | rnd64: maxworst|z|=     3.3 killkey=0x92988f142674743 -> kill
+[W1-rnd:a7p0213b592op|a7p2130b61346f7cb5ba4694cb|a1p2301b29e48c78d9c843b4de] seq: maxworst|z|=  5844.7 killkey=0x9e3779b97f4a7c15 | rnd64: maxworst|z|=     3.0 killkey=0xaaaaaaaaaaaaaaaa -> kill
+[W1-rnd:a3p1023b71c0b95a152d7d357|a7p1203b27f141f3e7fa0f26e1] seq: maxworst|z|=333991.4 killkey=0xf0b52a9e7d8ba2b5 | rnd64: maxworst|z|=     2.7 killkey=0xdeadbeefdeadbeef -> kill
+[W1-rnd:a9p1023b41da15927b2c9da48c|a11p2103b1edbdedac66555ff4] seq: maxworst|z|=949261.2 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     3.0 killkey=0x5555555555555555 -> kill
+[W1-rnd:a11p3021b612op|a5p3201b612bdabcaec93e5da5|a9p2031b27612f83dfac3ab99f] seq: maxworst|z|=  8306.7 killkey=0x0 | rnd64: maxworst|z|=     2.7 killkey=0x9e3779b97f4a7c15 -> kill
+[W1-rnd:a5p3201b194e7dd822b9df9393|a1p1023b19476162bbffed8d79|a1p3021b1c1535ad2d86d9399] seq: maxworst|z|= 32505.1 killkey=0xaaaaaaaaaaaaaaaa | rnd64: maxworst|z|=     3.3 killkey=0x1234 -> kill
+[W1-rnd:a5p3012b2169c7a3c58753154d|a3p2031b301a0e78f50138666] seq: maxworst|z|=663708.0 killkey=0x92988f142674743 | rnd64: maxworst|z|=     2.5 killkey=0xaaaaaaaaaaaaaaaa -> kill
+[W1-rnd:a3p3021b253ca834916f5a1154|a5p0312b572op|a15p2013b436341b0de1e58c245] seq: maxworst|z|=  3744.8 killkey=0x9e3779b97f4a7c15 | rnd64: maxworst|z|=     3.0 killkey=0x0 -> kill
+[W1-rnd:a5p0312b1163af12ce109a4d19|a1p2013b25f5a90308922d1cfb|a9p0123b372op] seq: maxworst|z|=  1549.7 killkey=0x5555555555555555 | rnd64: maxworst|z|=     3.0 killkey=0x123456789abcdef -> kill
+[W1-rnd:a15p1320b215b663eb02790459c|a5p1023b4583ec42d2e761a526] seq: maxworst|z|=361958.2 killkey=0x123456789abcdef | rnd64: maxworst|z|=     3.2 killkey=0xaaaaaaaaaaaaaaaa -> kill
+[W1-rnd:a11p1203b53e1350d2c766a13aa|a15p1320b17eac924a8c0091063|a15p3120b372op] seq: maxworst|z|= 72455.2 killkey=0x5555555555555555 | rnd64: maxworst|z|=     3.3 killkey=0x9e3779b97f4a7c15 -> kill
+[W1-rnd:a9p3102b312op|a1p1023b112op|a15p0123b330dc92060f59e5ee1] seq: maxworst|z|= 14762.2 killkey=0x0 | rnd64: maxworst|z|=     3.0 killkey=0x1234 -> kill
+[W1-rnd:a9p2310b39c64ca341d451e9c5|a9p0123b5314e1341a081428e4|a15p1320b12op] seq: maxworst|z|= 35555.0 killkey=0x9e3779b97f4a7c15 | rnd64: maxworst|z|=     3.2 killkey=0x92988f142674743 -> kill
+[W1-rnd:a7p2301b6190ebc4ded270e41b|a5p3120b578e099c34de07039f] seq: maxworst|z|=1480000.0 killkey=0x5555555555555555 | rnd64: maxworst|z|=     3.8 killkey=0x92988f142674743 -> kill
+[W1-rnd:a5p0123b191fa74d8490d3c937|a1p1023b35296d2ca022c5a574] seq: maxworst|z|=236420.5 killkey=0xdeadbeefdeadbeef | rnd64: maxworst|z|=     3.5 killkey=0x123456789abcdef -> kill
+[W1-rnd:a15p1203b17aa1d632399f0819d|a15p1320b632op] seq: maxworst|z|=736011.3 killkey=0x9e3779b97f4a7c15 | rnd64: maxworst|z|=     4.0 killkey=0x5555555555555555 -> kill
+[W1-rnd:a13p3102b57940139df7cc355c0|a3p2310b139af479b0d19b2145] seq: maxworst|z|=489698.3 killkey=0xaaaaaaaaaaaaaaaa | rnd64: maxworst|z|=     3.5 killkey=0xf0b52a9e7d8ba2b5 -> kill
+[W1-rnd:a1p1230b491658ba12c881bf0b|a5p1203b472op|a3p3201b13e7700a355aab0a6d] seq: maxworst|z|= 44922.7 killkey=0x92988f142674743 | rnd64: maxworst|z|=     4.2 killkey=0x123456789abcdef -> kill
+[W1-rnd:a5p3120b57cbb2fd57bd77cf79|a15p3120b15abd3443d874d42dd] seq: maxworst|z|=210820.8 killkey=0x92988f142674743 | rnd64: maxworst|z|=     2.7 killkey=0x1234 -> kill
+  ... 300/602 triaged, 0 KEEPs, 35min elapsed
+[W1-rnd:a7p1320b312op|a13p2013b9635b13105bb1a1c2] seq: maxworst|z|=425733.8 killkey=0x0 | rnd64: maxworst|z|=     2.9 killkey=0x92988f142674743 -> kill
+[W1-rnd:a7p1203b417e1cd3f4dbadc45e|a3p1023b5e33a1b3154674fbb] seq: maxworst|z|=296535.4 killkey=0xf0b52a9e7d8ba2b5 | rnd64: maxworst|z|=     3.0 killkey=0x123456789abcdef -> kill
+[W1-rnd:a1p1302b13b3d07b653fb65de9|a1p3021b572op] seq: maxworst|z|=739994.3 killkey=0x0 | rnd64: maxworst|z|=     3.1 killkey=0xf0b52a9e7d8ba2b5 -> kill
+[W1-rnd:a7p3102b5919c0004b4cf70ba9|a15p3210b272op|a5p1203b5196d286cb597869c] seq: maxworst|z|= 53077.4 killkey=0xaaaaaaaaaaaaaaaa | rnd64: maxworst|z|=     3.2 killkey=0x92988f142674743 -> kill
+[W1-rnd:a3p3012b59ee9dbd88da68c3f5|a15p1032b1954d15a8695735862|a13p1302b332op] seq: maxworst|z|= 12971.2 killkey=0x123456789abcdef | rnd64: maxworst|z|=     2.9 killkey=0xffffffffffffffff -> kill
+[W1-rnd:a9p2103b112op|a9p1203b47f3dc65450605bc78|a9p2103b45f3bcfa7b783e2e31] seq: maxworst|z|= 27262.4 killkey=0x0 | rnd64: maxworst|z|=     3.0 killkey=0x1234 -> kill
+[W1-rnd:a11p3012b411390b22a8e26a568|a13p2103b192op] seq: maxworst|z|=692774.8 killkey=0x0 | rnd64: maxworst|z|=     3.0 killkey=0x92988f142674743 -> kill
+[W1-rnd:a3p3120b352op|a5p1203b3953eeb3f7ab946e00|a5p3210b378484c0df6685a5d4] seq: maxworst|z|= 13573.1 killkey=0x5555555555555555 | rnd64: maxworst|z|=     2.9 killkey=0x0 -> kill
+[W1-rnd:a7p0132b2128e48027683d4691|a5p3210b412op] seq: maxworst|z|=709946.5 killkey=0xaaaaaaaaaaaaaaaa | rnd64: maxworst|z|=     2.7 killkey=0xf0b52a9e7d8ba2b5 -> kill
+[W1-rnd:a13p1320b414489b636b55ca8df|a1p0312b515743adb4c04902df|a11p0123b272op] seq: maxworst|z|=  1229.2 killkey=0xaaaaaaaaaaaaaaaa | rnd64: maxworst|z|=     3.4 killkey=0x1234 -> kill
+[W1-rnd:a15p1203b1749d7b2bac0c157b3|a11p2130b192op|a15p3210b61e44a7ca89a4502c9] seq: maxworst|z|=545157.1 killkey=0x0 | rnd64: maxworst|z|=     3.2 killkey=0x9e3779b97f4a7c15 -> kill
+[W1-rnd:a7p0231b25c8d654088f4df5b8|a11p3201b39b6d544456a7c958a|a13p0132b4742579fc523f2b2bd] seq: maxworst|z|= 18232.1 killkey=0xf0b52a9e7d8ba2b5 | rnd64: maxworst|z|=     2.9 killkey=0x1234 -> kill
+[W1-rnd:a9p2310b14cd99ec38e46a8c9|a9p2031b233a889fd77424882d|a13p1032b21d3c46cd27f8a102d] seq: maxworst|z|=178615.9 killkey=0x9e3779b97f4a7c15 | rnd64: maxworst|z|=     3.1 killkey=0x5555555555555555 -> kill
+[W1-rnd:a7p2310b515c647749df25dd13|a3p3021b132op] seq: maxworst|z|=428020.6 killkey=0xdeadbeefdeadbeef | rnd64: maxworst|z|=     3.7 killkey=0x123456789abcdef -> kill
+[W1-rnd:a13p1023b29f9c3c89367766158|a5p1023b552op|a5p2013b372op] seq: maxworst|z|= 71599.1 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     3.2 killkey=0x123456789abcdef -> kill
+[W1-rnd:a5p0312b272op|a7p2031b63934a02afb3fcbe34|a13p3201b152f4ee84ccc37d237] seq: maxworst|z|= 13636.7 killkey=0x0 | rnd64: maxworst|z|=     3.4 killkey=0x9e3779b97f4a7c15 -> kill
+[W1-rnd:a11p3102b35fa56fe41e34591a3|a15p0132b232op|a7p0231b158dac32472aecc16] seq: maxworst|z|= 76171.8 killkey=0x123456789abcdef | rnd64: maxworst|z|=     3.4 killkey=0xffffffffffffffff -> kill
+[W1-rnd:a3p0312b1916379c22a39c25b9|a1p1320b532op] seq: maxworst|z|=662394.9 killkey=0x5555555555555555 | rnd64: maxworst|z|=     2.5 killkey=0x9e3779b97f4a7c15 -> kill
+[W1-rnd:a7p3201b41b3619c83ac597258|a5p0321b132op] seq: maxworst|z|=694379.9 killkey=0x92988f142674743 | rnd64: maxworst|z|=     2.4 killkey=0xf0b52a9e7d8ba2b5 -> kill
+[W1-rnd:a5p2031b375fef963889af7084|a7p3102b2726c973844366e0ef|a9p3102b257422ce439d88471c] seq: maxworst|z|=  9203.0 killkey=0x123456789abcdef | rnd64: maxworst|z|=     3.2 killkey=0x92988f142674743 -> kill
+[W1-rnd:a7p0312b116b55c4b6e9edfa17|a11p1023b567a0ab9c8bd52eba] seq: maxworst|z|=381433.9 killkey=0xaaaaaaaaaaaaaaaa | rnd64: maxworst|z|=     2.6 killkey=0x123456789abcdef -> kill
+[W1-rnd:a9p3201b25de9eb6eda29ebd55|a3p0231b612op|a11p2031b432op] seq: maxworst|z|= 75032.6 killkey=0xdeadbeefdeadbeef | rnd64: maxworst|z|=     3.0 killkey=0xaaaaaaaaaaaaaaaa -> kill
+[W1-rnd:a7p0132b54323201349b0463c|a9p2103b598b35fc735354cc25] seq: maxworst|z|=1480000.0 killkey=0x0 | rnd64: maxworst|z|=     2.8 killkey=0x5555555555555555 -> kill
+[W1-rnd:a3p0231b277fc06eb5b50ac906|a9p3201b272op] seq: maxworst|z|=739994.3 killkey=0xaaaaaaaaaaaaaaaa | rnd64: maxworst|z|=     2.9 killkey=0x0 -> kill
+[W1-rnd:a11p0231b112op|a11p2013b1c670fbc2d5bfe12f|a15p0213b491ae8810131499581] seq: maxworst|z|= 12447.5 killkey=0x0 | rnd64: maxworst|z|=     3.6 killkey=0x1234 -> kill
+[W1-rnd:a9p1203b74bb3099c4c1830a3|a1p1032b61579a9212953abb9e|a5p0123b72op] seq: maxworst|z|= 10869.3 killkey=0x5555555555555555 | rnd64: maxworst|z|=     2.4 killkey=0x1234 -> kill
+[W1-rnd:a1p2103b152op|a5p3012b474f8bffe3537d4632|a15p0312b612op] seq: maxworst|z|=368380.5 killkey=0x0 | rnd64: maxworst|z|=     2.8 killkey=0x9e3779b97f4a7c15 -> kill
+[W1-rnd:a15p3012b29d96b2f5a62161025|a1p2130b316428cda6a98c993b] seq: maxworst|z|=739994.3 killkey=0x0 | rnd64: maxworst|z|=     2.8 killkey=0x1234 -> kill
+[W1-rnd:a13p1032b3939e5daec4435ab29|a13p1320b21d844e2f55e94d685] seq: maxworst|z|=280985.3 killkey=0x0 | rnd64: maxworst|z|=     2.8 killkey=0xaaaaaaaaaaaaaaaa -> kill
+[W1-rnd:a11p3021b352op|a7p1032b72op] seq: maxworst|z|=651000.7 killkey=0x0 | rnd64: maxworst|z|=     3.4 killkey=0x92988f142674743 -> kill
+[W1-rnd:a3p0132b431877315a0d53a3a1|a3p1302b452op|a3p0132b59e34a6b87b84eaa77] seq: maxworst|z|=  7613.7 killkey=0x0 | rnd64: maxworst|z|=     4.0 killkey=0xf0b52a9e7d8ba2b5 -> kill
+[W1-rnd:a1p0123b238a3f3a0a623dbcd0|a11p2103b2985051788a4ee44a5|a13p1320b49f1fc610daae53a44] seq: maxworst|z|=  2951.1 killkey=0xf0b52a9e7d8ba2b5 | rnd64: maxworst|z|=     2.9 killkey=0x123456789abcdef -> kill
+[W1-rnd:a9p1302b452op|a3p2013b3904fd01e4394fbc77] seq: maxworst|z|=243522.8 killkey=0x0 | rnd64: maxworst|z|=     3.9 killkey=0xf0b52a9e7d8ba2b5 -> kill
+[W1-rnd:a1p2130b38169d79ec92daf81|a15p2031b154075e3cd1906c1e8|a5p2031b3715b848bc868a511f] seq: maxworst|z|= 15714.6 killkey=0xaaaaaaaaaaaaaaaa | rnd64: maxworst|z|=     3.3 killkey=0xf0b52a9e7d8ba2b5 -> kill
+[W1-rnd:a11p2013b451a6d17b82d90addf|a11p2310b610a5c3aca2886c0b2] seq: maxworst|z|=739994.3 killkey=0x0 | rnd64: maxworst|z|=     3.6 killkey=0xdeadbeefdeadbeef -> kill
+[W1-rnd:a9p3021b57124d853444ceac00|a7p1203b4750cfb2756e054962] seq: maxworst|z|=739994.3 killkey=0x0 | rnd64: maxworst|z|=     3.0 killkey=0x123456789abcdef -> kill
+[W1-rnd:a3p1032b2924ca103494f9a1a4|a15p1203b25d958d50e56024faf] seq: maxworst|z|=347332.7 killkey=0xaaaaaaaaaaaaaaaa | rnd64: maxworst|z|=     2.8 killkey=0x9e3779b97f4a7c15 -> kill
+[W1-rnd:a9p0312b492op|a11p3021b5972fc50b0a91059a3|a13p2310b212op] seq: maxworst|z|= 11177.7 killkey=0x123456789abcdef | rnd64: maxworst|z|=     2.8 killkey=0x1234 -> kill
+[W1-rnd:a3p0312b590bb872ee4022944b|a5p0321b61730b20290c947d48] seq: maxworst|z|=253266.2 killkey=0x5555555555555555 | rnd64: maxworst|z|=     2.6 killkey=0x1234 -> kill
+[W1-rnd:a9p1302b2524db549fa1e4cd0d|a3p3102b27df549d45a196868a|a15p2031b31513e00e46f18250] seq: maxworst|z|=  5196.1 killkey=0x5555555555555555 | rnd64: maxworst|z|=     3.0 killkey=0xaaaaaaaaaaaaaaaa -> kill
+[W1-rnd:a13p0213b51294245426c926267|a15p1230b57c7c8c231288faf98|a5p1203b552op] seq: maxworst|z|=  1855.1 killkey=0x0 | rnd64: maxworst|z|=     3.1 killkey=0x9e3779b97f4a7c15 -> kill
+[W1-rnd:a5p1032b252op|a11p2130b3325585e1b13664fa4] seq: maxworst|z|=737640.2 killkey=0x0 | rnd64: maxworst|z|=     2.8 killkey=0x9e3779b97f4a7c15 -> kill
+[W1-rnd:a7p0312b552a2f59046dbcf07f|a5p2031b152op|a5p1320b272op] seq: maxworst|z|=  1327.5 killkey=0x5555555555555555 | rnd64: maxworst|z|=     2.2 killkey=0x0 -> kill
+[W1-rnd:a13p2301b550ccc35c91cb3f969|a1p2130b634f35edf856e873c7|a9p3012b1191e129f1f952cbe5] seq: maxworst|z|= 44058.2 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     3.2 killkey=0xdeadbeefdeadbeef -> kill
+[W1-rnd:a1p2013b572op|a3p2301b113bf52a425ba55bc6] seq: maxworst|z|=358644.9 killkey=0x0 | rnd64: maxworst|z|=     3.2 killkey=0xf0b52a9e7d8ba2b5 -> kill
+[W1-rnd:a3p0312b431d7b0f8f88f73cb7|a7p2031b552op|a5p0321b2764e5a4d2b2807878] seq: maxworst|z|=  7888.9 killkey=0xaaaaaaaaaaaaaaaa | rnd64: maxworst|z|=     3.8 killkey=0xaaaaaaaaaaaaaaaa -> kill
+[W1-rnd:a11p3012b72op|a5p3102b592op] seq: maxworst|z|=1480000.0 killkey=0x0 | rnd64: maxworst|z|=     3.0 killkey=0xf0b52a9e7d8ba2b5 -> kill
+[W1-rnd:a5p3021b5bc0fb905b94db3ee|a5p0123b92op] seq: maxworst|z|=449994.2 killkey=0x9e3779b97f4a7c15 | rnd64: maxworst|z|=     2.7 killkey=0xdeadbeefdeadbeef -> kill
+[W1-rnd:a3p2031b356e53fe54f036059|a9p2103b57b60b753c16c3109e|a9p3102b45d7d31ebfc5d9c171] seq: maxworst|z|= 39509.4 killkey=0x9e3779b97f4a7c15 | rnd64: maxworst|z|=     3.3 killkey=0xdeadbeefdeadbeef -> kill
+[W1-rnd:a3p3021b12op|a9p3102b1300dbe5b4b8b6cf26|a3p1320b1a2d39c62494634dc] seq: maxworst|z|= 36682.5 killkey=0x123456789abcdef | rnd64: maxworst|z|=     4.0 killkey=0xf0b52a9e7d8ba2b5 -> kill
+  ... 350/602 triaged, 0 KEEPs, 41min elapsed
+[W1-rnd:a3p2130b4947bb9ec0db005707|a9p2013b192op|a15p2031b436d7981e32aa70694] seq: maxworst|z|=  5036.1 killkey=0x9e3779b97f4a7c15 | rnd64: maxworst|z|=     3.0 killkey=0x5555555555555555 -> kill
+[W1-rnd:a15p3210b16b906547f03a11d1|a7p2103b176fc190141ccae37c] seq: maxworst|z|=519444.9 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     3.5 killkey=0xaaaaaaaaaaaaaaaa -> kill
+[W1-rnd:a7p1023b35b124c8535f271ba4|a3p2301b52op|a9p3210b53b70373517b6ab309] seq: maxworst|z|=  6366.3 killkey=0x5555555555555555 | rnd64: maxworst|z|=     2.8 killkey=0x9e3779b97f4a7c15 -> kill
+[W1-rnd:a1p3102b35eedae7fdc3810af3|a7p2301b292op|a9p0321b51ae8d83b41b683423] seq: maxworst|z|=  5433.5 killkey=0x5555555555555555 | rnd64: maxworst|z|=     2.7 killkey=0x5555555555555555 -> kill
+[W1-rnd:a13p0123b592op|a1p2130b41bf607dbb3ea12507|a3p3021b5b5742b065cb37c20] seq: maxworst|z|= 22533.3 killkey=0x0 | rnd64: maxworst|z|=     2.9 killkey=0xffffffffffffffff -> kill
+[W1-rnd:a15p3201b432op|a15p1032b33c9320b2e4f9f5ad] seq: maxworst|z|=739994.3 killkey=0x0 | rnd64: maxworst|z|=     3.4 killkey=0x123456789abcdef -> kill
+[W1-rnd:a11p3201b17611ebea2c501fccf|a7p3210b5de11e160b6b6e947] seq: maxworst|z|=508933.8 killkey=0x0 | rnd64: maxworst|z|=     3.0 killkey=0x1234 -> kill
+[W1-rnd:a9p0123b112op|a5p1320b5747422a1de52cf31c|a9p0213b4125d5d395846e3c3c] seq: maxworst|z|=  4982.6 killkey=0xaaaaaaaaaaaaaaaa | rnd64: maxworst|z|=     4.0 killkey=0x9e3779b97f4a7c15 -> kill
+[W1-rnd:a5p0321b392op|a1p0213b112op] seq: maxworst|z|=231692.0 killkey=0x0 | rnd64: maxworst|z|=     3.4 killkey=0x0 -> kill
+[W1-rnd:a11p1032b2719e61c34ffb4f2e3|a13p2013b132f7cf84864439890|a9p1230b339a41f992e0536dcb] seq: maxworst|z|= 13317.4 killkey=0x0 | rnd64: maxworst|z|=     2.5 killkey=0x5555555555555555 -> kill
+[W1-rnd:a3p1032b176345797d6e4104c3|a11p1230b572op] seq: maxworst|z|=376704.9 killkey=0xdeadbeefdeadbeef | rnd64: maxworst|z|=     2.6 killkey=0x9e3779b97f4a7c15 -> kill
+[W1-rnd:a15p1230b29f0da9ee7f7ee442b|a15p0132b492op] seq: maxworst|z|=736917.4 killkey=0xf0b52a9e7d8ba2b5 | rnd64: maxworst|z|=     2.9 killkey=0xaaaaaaaaaaaaaaaa -> kill
+[W1-rnd:a5p3021b352op|a3p3120b19d3727dc4f489e8cb] seq: maxworst|z|=296448.6 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     4.2 killkey=0xdeadbeefdeadbeef -> kill
+[W1-rnd:a7p0321b3fc0ed0b37649c1e6|a5p0312b632op|a13p0213b51b208d125c5dc55d1] seq: maxworst|z|= 19290.3 killkey=0x0 | rnd64: maxworst|z|=     3.0 killkey=0x9e3779b97f4a7c15 -> kill
+[W1-rnd:a9p2013b19b0a0c2f762e5c5c4|a11p1302b170575b9c0fdf25495] seq: maxworst|z|=647074.5 killkey=0xdeadbeefdeadbeef | rnd64: maxworst|z|=     3.1 killkey=0xdeadbeefdeadbeef -> kill
+[W1-rnd:a11p2130b13ab06c4ff0daa3569|a1p0213b333080d7d4b3e6e40b] seq: maxworst|z|=711443.4 killkey=0xaaaaaaaaaaaaaaaa | rnd64: maxworst|z|=     2.7 killkey=0x9e3779b97f4a7c15 -> kill
+[W1-rnd:a3p3201b555021d71bb7d2b34d|a15p0123b57c5b44080c7d38648] seq: maxworst|z|=739994.3 killkey=0xdeadbeefdeadbeef | rnd64: maxworst|z|=     2.9 killkey=0xffffffffffffffff -> kill
+[W1-rnd:a1p2130b338e8f73576636112d|a5p2031b437e7ce6fc1fcf284d] seq: maxworst|z|=350220.2 killkey=0xdeadbeefdeadbeef | rnd64: maxworst|z|=     4.4 killkey=0xaaaaaaaaaaaaaaaa -> kill
+[W1-rnd:a13p3201b43b8daf020959e79b2|a5p3012b330d319f45d1e796ac|a3p2301b63dc530223e7766381] seq: maxworst|z|= 18734.6 killkey=0xaaaaaaaaaaaaaaaa | rnd64: maxworst|z|=     3.0 killkey=0xf0b52a9e7d8ba2b5 -> kill
+[W1-rnd:a9p3012b189b7b9c6f455a9b3|a11p1230b452op] seq: maxworst|z|=922819.3 killkey=0x5555555555555555 | rnd64: maxworst|z|=     3.0 killkey=0x1234 -> kill
+[W1-rnd:a7p2031b92op|a1p1302b172op|a5p3021b492op] seq: maxworst|z|= 11109.8 killkey=0x0 | rnd64: maxworst|z|=     2.5 killkey=0x92988f142674743 -> kill
+[W1-rnd:a1p3120b27ff0b59fc705df86f|a7p1203b72op|a9p3012b135d9cbb84bdee450c] seq: maxworst|z|= 17615.9 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     2.8 killkey=0xdeadbeefdeadbeef -> kill
+[W1-rnd:a3p2301b170369d2c280a136c2|a15p2130b43f52ab06c977c0d3e|a5p1230b49db79f9f8b2eb4215] seq: maxworst|z|= 39682.2 killkey=0x5555555555555555 | rnd64: maxworst|z|=     3.4 killkey=0xf0b52a9e7d8ba2b5 -> kill
+[W1-rnd:a9p2103b272op|a15p3120b630bd0b61d8541df04] seq: maxworst|z|=739994.3 killkey=0x0 | rnd64: maxworst|z|=     2.9 killkey=0x1234 -> kill
+[W1-rnd:a11p1032b35e9b09780dbb38fa5|a15p2031b192op|a15p1230b5e844c0359cf91545] seq: maxworst|z|=  4700.5 killkey=0xdeadbeefdeadbeef | rnd64: maxworst|z|=     2.8 killkey=0x92988f142674743 -> kill
+[W1-rnd:a9p3120b2112e0f9b23a963b06|a3p0321b232op|a5p2301b472op] seq: maxworst|z|=  3432.9 killkey=0x5555555555555555 | rnd64: maxworst|z|=     2.8 killkey=0xf0b52a9e7d8ba2b5 -> kill
+[W1-rnd:a11p2130b192op|a1p0321b17b917798beba2a763|a13p0213b452op] seq: maxworst|z|=  5045.5 killkey=0x0 | rnd64: maxworst|z|=     3.4 killkey=0x92988f142674743 -> kill
+[W1-rnd:a9p3201b70aaf7ebf04b8f616|a11p0132b212op|a7p1320b17822b010e7cd824ab] seq: maxworst|z|=  5456.4 killkey=0xaaaaaaaaaaaaaaaa | rnd64: maxworst|z|=     3.2 killkey=0x5555555555555555 -> kill
+[W1-rnd:a5p3021b432op|a5p3102b31bb6e103af813ba8c|a15p0123b61d0029d7dbaa72c0a] seq: maxworst|z|= 55834.1 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     2.8 killkey=0x1234 -> kill
+[W1-rnd:a11p1203b418ac34fa248592c37|a5p1230b372op] seq: maxworst|z|=670150.8 killkey=0x0 | rnd64: maxworst|z|=     3.0 killkey=0x1234 -> kill
+[W1-rnd:a9p0123b592op|a11p1203b132op] seq: maxworst|z|=430451.4 killkey=0x0 | rnd64: maxworst|z|=     2.6 killkey=0x0 -> kill
+[W1-rnd:a3p3012b331c8996112cd6f466|a13p2130b539b126ea47d6b7414|a13p3021b3515485b05327beee6] seq: maxworst|z|= 16933.9 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     2.8 killkey=0x1234 -> kill
+[W1-rnd:a9p3102b292op|a3p2031b52op] seq: maxworst|z|=663062.2 killkey=0x0 | rnd64: maxworst|z|=     3.2 killkey=0xffffffffffffffff -> kill
+[W1-rnd:a9p1230b98e4cf7e46925db57|a1p3012b2917775b90b2355ffa|a15p2031b470c2ebcf3ac0ec39d] seq: maxworst|z|=  3628.0 killkey=0x123456789abcdef | rnd64: maxworst|z|=     3.1 killkey=0xffffffffffffffff -> kill
+[W1-rnd:a5p3021b32op|a15p2031b518d592d1ad0145b09] seq: maxworst|z|=734206.0 killkey=0x0 | rnd64: maxworst|z|=     2.2 killkey=0x123456789abcdef -> kill
+[W1-rnd:a15p2310b21b99f8178578ff3fc|a5p0321b177aaccb06159e9993] seq: maxworst|z|=601640.4 killkey=0x92988f142674743 | rnd64: maxworst|z|=     3.5 killkey=0xdeadbeefdeadbeef -> kill
+[W1-rnd:a1p3021b370489a15c6c1b4329|a1p1023b17542aea093fc392d0|a7p2031b27b8a3349e56d0a1c2] seq: maxworst|z|=  2272.1 killkey=0xdeadbeefdeadbeef | rnd64: maxworst|z|=     2.9 killkey=0x0 -> kill
+[W1-rnd:a3p3012b23df736956095ef315|a7p1320b13fb51f66e19434f63|a15p3012b5fd12b881384a2513] seq: maxworst|z|= 11991.2 killkey=0x0 | rnd64: maxworst|z|=     2.8 killkey=0xffffffffffffffff -> kill
+[W1-rnd:a7p2301b545e8269a5b6721be|a15p1302b63dee6737a69d63a70] seq: maxworst|z|=737092.5 killkey=0x5555555555555555 | rnd64: maxworst|z|=     2.8 killkey=0x1234 -> kill
+[W1-rnd:a9p1032b33d3a61fa4b6dc7c34|a7p2013b2555f016d3f4002e55|a11p1302b332op] seq: maxworst|z|= 88549.6 killkey=0x5555555555555555 | rnd64: maxworst|z|=     2.5 killkey=0x0 -> kill
+[W1-rnd:a1p0123b29d7aa89a31e2e359a|a7p1302b337a59da125594f372|a5p3021b63cd87c6b99d3a5213] seq: maxworst|z|= 11294.7 killkey=0xaaaaaaaaaaaaaaaa | rnd64: maxworst|z|=     2.7 killkey=0x123456789abcdef -> kill
+[W1-rnd:a5p2031b21883da7671216eabb|a11p3120b412op] seq: maxworst|z|=722721.7 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     2.8 killkey=0xf0b52a9e7d8ba2b5 -> kill
+[W1-rnd:a1p2310b332op|a7p3120b41af36cd32e4f5c373] seq: maxworst|z|=739903.7 killkey=0x0 | rnd64: maxworst|z|=     3.3 killkey=0x1234 -> kill
+[W1-rnd:a1p3120b159ed2bd5739d2566c|a11p0132b17c00f6644bae0b4a6|a9p3201b552op] seq: maxworst|z|=  1797.3 killkey=0x0 | rnd64: maxworst|z|=     3.1 killkey=0xaaaaaaaaaaaaaaaa -> kill
+[W1-rnd:a11p2301b61e0ab0a646c9d58ba|a5p3120b33f778c56d327c9c0a|a1p0312b2727c413cf32bc70b7] seq: maxworst|z|=  1208.7 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     2.8 killkey=0x5555555555555555 -> kill
+[W1-rnd:a7p1203b15f97279862bcdeb72|a11p2013b432op|a13p3210b13719886445ac34082] seq: maxworst|z|=  8042.5 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     2.9 killkey=0x92988f142674743 -> kill
+[W1-rnd:a15p3012b596d26c497fe49d981|a1p0231b5353e99fa7dbb0eb17] seq: maxworst|z|= 59543.4 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     3.1 killkey=0xf0b52a9e7d8ba2b5 -> kill
+[W1-rnd:a13p1023b1a58eb50769267006|a9p3210b61df2401bb247694a9|a9p0123b192op] seq: maxworst|z|= 65476.1 killkey=0x92988f142674743 | rnd64: maxworst|z|=     2.6 killkey=0xf0b52a9e7d8ba2b5 -> kill
+[W1-rnd:a13p0231b1781c8eadb2ebc4e47|a11p2301b37e0b73efd236b61e2] seq: maxworst|z|=242430.0 killkey=0x92988f142674743 | rnd64: maxworst|z|=     2.9 killkey=0xffffffffffffffff -> kill
+[W1-rnd:a3p3021b390f5149f7a48b06e9|a9p1320b7741dada7f3d5c002] seq: maxworst|z|=625440.8 killkey=0x92988f142674743 | rnd64: maxworst|z|=     4.0 killkey=0x5555555555555555 -> kill
+  ... 400/602 triaged, 0 KEEPs, 46min elapsed
+[W1-rnd:a13p1302b552786a64aae1402db|a11p2130b7d9b31625b4188bcb] seq: maxworst|z|=318704.0 killkey=0x92988f142674743 | rnd64: maxworst|z|=     3.3 killkey=0x92988f142674743 -> kill
+[W1-rnd:a3p0132b9833d7917c65190ab|a3p1032b312a1d43b8ad0d0ca5] seq: maxworst|z|=139052.8 killkey=0x0 | rnd64: maxworst|z|=     3.2 killkey=0x9e3779b97f4a7c15 -> kill
+[W3-rnd:Pbf58476d1ce4e5b9:34,17+52,37|36,15+53,33] seq: maxworst|z|=     2.7 killkey=0xdeadbeefdeadbeef | rnd64: maxworst|z|=     2.9 killkey=0x5555555555555555 -> KEEP
+  KEEP #1 W3-rnd:Pbf58476d1ce4e5b9:34,17+52,37|36,15+53,33 zseq=2.7 zrnd=2.9
+[W3-rnd:Pbf58476d1ce4e5b9:32,8|2,10] seq: maxworst|z|=  2890.7 killkey=0xaaaaaaaaaaaaaaaa | rnd64: maxworst|z|=     4.1 killkey=0xffffffffffffffff -> kill
+[W3-rnd:P9e3779b97f4a7c15:20,59|2,17] seq: maxworst|z|=  2890.7 killkey=0xdeadbeefdeadbeef | rnd64: maxworst|z|=     3.0 killkey=0xf0b52a9e7d8ba2b5 -> kill
+[W3-rnd:P9e3779b97f4a7c15:20,9|62,10] seq: maxworst|z|=   187.1 killkey=0x0 | rnd64: maxworst|z|=     2.7 killkey=0x5555555555555555 -> kill
+[W3-rnd:P94d049bb133111eb:7,6|1,48|30,31] seq: maxworst|z|=     3.1 killkey=0x5555555555555555 | rnd64: maxworst|z|=     2.5 killkey=0x0 -> KEEP
+  KEEP #2 W3-rnd:P94d049bb133111eb:7,6|1,48|30,31 zseq=3.1 zrnd=2.5
+[W3-rnd:P9e3779b97f4a7c15:52,25|49,55] seq: maxworst|z|=    11.3 killkey=0x0 | rnd64: maxworst|z|=     3.2 killkey=0x92988f142674743 -> kill
+[W3-rnd:P9e3779b97f4a7c15:14,19+56,63|34,35+39,55|31,55+62,59] seq: maxworst|z|=     2.9 killkey=0x5555555555555555 | rnd64: maxworst|z|=     3.4 killkey=0xffffffffffffffff -> KEEP
+  KEEP #3 W3-rnd:P9e3779b97f4a7c15:14,19+56,63|34,35+39,55|31,55+62,59 zseq=2.9 zrnd=3.4
+[W3-rnd:P9e3779b97f4a7c15:36,37|22,45] seq: maxworst|z|=    10.2 killkey=0x123456789abcdef | rnd64: maxworst|z|=     2.7 killkey=0x5555555555555555 -> kill
+[W3-rnd:P9e3779b97f4a7c15:50,5|27,57] seq: maxworst|z|=    11.3 killkey=0x0 | rnd64: maxworst|z|=     2.8 killkey=0x1234 -> kill
+[W3-rnd:P9e3779b97f4a7c15:61,35+8,41|45,15+55,56] seq: maxworst|z|=     3.0 killkey=0x5555555555555555 | rnd64: maxworst|z|=     3.2 killkey=0xffffffffffffffff -> KEEP
+  KEEP #4 W3-rnd:P9e3779b97f4a7c15:61,35+8,41|45,15+55,56 zseq=3.0 zrnd=3.2
+[W3-rnd:P94d049bb133111eb:6,63+33,16|48,25+57,18] seq: maxworst|z|=     3.5 killkey=0x92988f142674743 | rnd64: maxworst|z|=     2.9 killkey=0x5555555555555555 -> KEEP
+  KEEP #5 W3-rnd:P94d049bb133111eb:6,63+33,16|48,25+57,18 zseq=3.5 zrnd=2.9
+[W3-rnd:P94d049bb133111eb:17,51|32,59|63,20] seq: maxworst|z|=     3.8 killkey=0x9e3779b97f4a7c15 | rnd64: maxworst|z|=     2.5 killkey=0x5555555555555555 -> KEEP
+  KEEP #6 W3-rnd:P94d049bb133111eb:17,51|32,59|63,20 zseq=3.8 zrnd=2.5
+[W3-rnd:Pbf58476d1ce4e5b9:31,50|4,44] seq: maxworst|z|=    11.3 killkey=0x0 | rnd64: maxworst|z|=     2.6 killkey=0x123456789abcdef -> kill
+[W3-rnd:P9e3779b97f4a7c15:61,38+52,57|22,23+8,63] seq: maxworst|z|=     2.7 killkey=0xdeadbeefdeadbeef | rnd64: maxworst|z|=     2.9 killkey=0x123456789abcdef -> KEEP
+  KEEP #7 W3-rnd:P9e3779b97f4a7c15:61,38+52,57|22,23+8,63 zseq=2.7 zrnd=2.9
+[W3-rnd:P9e3779b97f4a7c15:45,44|17,19|23,1] seq: maxworst|z|=     2.6 killkey=0x9e3779b97f4a7c15 | rnd64: maxworst|z|=     2.8 killkey=0xffffffffffffffff -> KEEP
+  KEEP #8 W3-rnd:P9e3779b97f4a7c15:45,44|17,19|23,1 zseq=2.6 zrnd=2.8
+[W3-rnd:Pbf58476d1ce4e5b9:6,2+24,31|21,62+63,36|26,41+29,5] seq: maxworst|z|=     3.4 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     3.1 killkey=0x9e3779b97f4a7c15 -> KEEP
+  KEEP #9 W3-rnd:Pbf58476d1ce4e5b9:6,2+24,31|21,62+63,36|26,41+29,5 zseq=3.4 zrnd=3.1
+[W3-rnd:Pbf58476d1ce4e5b9:12,26+56,46|46,37+25,26] seq: maxworst|z|=     2.6 killkey=0xdeadbeefdeadbeef | rnd64: maxworst|z|=     2.7 killkey=0x123456789abcdef -> KEEP
+  KEEP #10 W3-rnd:Pbf58476d1ce4e5b9:12,26+56,46|46,37+25,26 zseq=2.6 zrnd=2.7
+[W3-rnd:Pbf58476d1ce4e5b9:54,27|10,2|51,55] seq: maxworst|z|=     2.8 killkey=0x92988f142674743 | rnd64: maxworst|z|=     3.2 killkey=0xdeadbeefdeadbeef -> KEEP
+  KEEP #11 W3-rnd:Pbf58476d1ce4e5b9:54,27|10,2|51,55 zseq=2.8 zrnd=3.2
+[W3-rnd:Pbf58476d1ce4e5b9:39,21+58,5|55,26+37,52|9,47+11,26] seq: maxworst|z|=     3.1 killkey=0x0 | rnd64: maxworst|z|=     3.0 killkey=0xf0b52a9e7d8ba2b5 -> KEEP
+  KEEP #12 W3-rnd:Pbf58476d1ce4e5b9:39,21+58,5|55,26+37,52|9,47+11,26 zseq=3.1 zrnd=3.0
+[W3-rnd:P94d049bb133111eb:21,30|47,51|26,59] seq: maxworst|z|=     3.1 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     3.0 killkey=0x92988f142674743 -> KEEP
+  KEEP #13 W3-rnd:P94d049bb133111eb:21,30|47,51|26,59 zseq=3.1 zrnd=3.0
+[W3-rnd:P94d049bb133111eb:40,30|62,16|50,8] seq: maxworst|z|=     3.2 killkey=0xdeadbeefdeadbeef | rnd64: maxworst|z|=     3.1 killkey=0x1234 -> KEEP
+  KEEP #14 W3-rnd:P94d049bb133111eb:40,30|62,16|50,8 zseq=3.2 zrnd=3.1
+[W3-rnd:Pbf58476d1ce4e5b9:11,57|48,51] seq: maxworst|z|=    11.3 killkey=0x0 | rnd64: maxworst|z|=     2.7 killkey=0xffffffffffffffff -> kill
+[W3-rnd:P94d049bb133111eb:27,21|32,10] seq: maxworst|z|=   185.7 killkey=0x0 | rnd64: maxworst|z|=     2.9 killkey=0x1234 -> kill
+[W3-rnd:Pbf58476d1ce4e5b9:36,47|10,30] seq: maxworst|z|=   206.9 killkey=0xdeadbeefdeadbeef | rnd64: maxworst|z|=     2.8 killkey=0xffffffffffffffff -> kill
+[W3-rnd:Pbf58476d1ce4e5b9:56,6+12,21|15,43+23,2|61,36+1,57] seq: maxworst|z|=     2.7 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     3.1 killkey=0xffffffffffffffff -> KEEP
+  KEEP #15 W3-rnd:Pbf58476d1ce4e5b9:56,6+12,21|15,43+23,2|61,36+1,57 zseq=2.7 zrnd=3.1
+[W3-rnd:P94d049bb133111eb:6,59|24,14] seq: maxworst|z|=   714.2 killkey=0x123456789abcdef | rnd64: maxworst|z|=     3.5 killkey=0x5555555555555555 -> kill
+[W3-rnd:P9e3779b97f4a7c15:11,25|3,29|54,1] seq: maxworst|z|=     3.1 killkey=0x123456789abcdef | rnd64: maxworst|z|=     3.8 killkey=0xaaaaaaaaaaaaaaaa -> KEEP
+  KEEP #16 W3-rnd:P9e3779b97f4a7c15:11,25|3,29|54,1 zseq=3.1 zrnd=3.8
+[W3-rnd:P94d049bb133111eb:60,50|29,30] seq: maxworst|z|=    93.0 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     3.0 killkey=0xaaaaaaaaaaaaaaaa -> kill
+[W3-rnd:P94d049bb133111eb:39,51|38,25|57,28] seq: maxworst|z|=     3.8 killkey=0x92988f142674743 | rnd64: maxworst|z|=     3.1 killkey=0xdeadbeefdeadbeef -> KEEP
+  KEEP #17 W3-rnd:P94d049bb133111eb:39,51|38,25|57,28 zseq=3.8 zrnd=3.1
+[W3-rnd:P9e3779b97f4a7c15:19,35+60,50|41,21+28,61] seq: maxworst|z|=     3.3 killkey=0x9e3779b97f4a7c15 | rnd64: maxworst|z|=     2.8 killkey=0xffffffffffffffff -> KEEP
+  KEEP #18 W3-rnd:P9e3779b97f4a7c15:19,35+60,50|41,21+28,61 zseq=3.3 zrnd=2.8
+[W3-rnd:P94d049bb133111eb:28,30|60,25] seq: maxworst|z|=    37.1 killkey=0x92988f142674743 | rnd64: maxworst|z|=     3.1 killkey=0xdeadbeefdeadbeef -> kill
+[W3-rnd:P94d049bb133111eb:4,16|7,37] seq: maxworst|z|=   714.2 killkey=0x5555555555555555 | rnd64: maxworst|z|=     3.0 killkey=0xf0b52a9e7d8ba2b5 -> kill
+[W3-rnd:P9e3779b97f4a7c15:15,21+51,42|10,62+33,53] seq: maxworst|z|=     3.8 killkey=0xaaaaaaaaaaaaaaaa | rnd64: maxworst|z|=     2.6 killkey=0x1234 -> KEEP
+  KEEP #19 W3-rnd:P9e3779b97f4a7c15:15,21+51,42|10,62+33,53 zseq=3.8 zrnd=2.6
+[W3-rnd:P94d049bb133111eb:55,56|50,33|6,47] seq: maxworst|z|=     3.0 killkey=0x92988f142674743 | rnd64: maxworst|z|=     3.2 killkey=0x1234 -> KEEP
+  KEEP #20 W3-rnd:P94d049bb133111eb:55,56|50,33|6,47 zseq=3.0 zrnd=3.2
+[W3-rnd:Pbf58476d1ce4e5b9:7,26+2,47|47,63+31,15|56,42+6,40] seq: maxworst|z|=     2.4 killkey=0xf0b52a9e7d8ba2b5 | rnd64: maxworst|z|=     3.9 killkey=0xffffffffffffffff -> KEEP
+  KEEP #21 W3-rnd:Pbf58476d1ce4e5b9:7,26+2,47|47,63+31,15|56,42+6,40 zseq=2.4 zrnd=3.9
+[W3-rnd:P94d049bb133111eb:7,48|1,23|24,25] seq: maxworst|z|=     2.7 killkey=0x92988f142674743 | rnd64: maxworst|z|=     3.0 killkey=0xf0b52a9e7d8ba2b5 -> KEEP
+  KEEP #22 W3-rnd:P94d049bb133111eb:7,48|1,23|24,25 zseq=2.7 zrnd=3.0
+[W3-rnd:Pbf58476d1ce4e5b9:11,37+9,22|13,9+28,63] seq: maxworst|z|=     3.4 killkey=0x0 | rnd64: maxworst|z|=     2.7 killkey=0xf0b52a9e7d8ba2b5 -> KEEP
+  KEEP #23 W3-rnd:Pbf58476d1ce4e5b9:11,37+9,22|13,9+28,63 zseq=3.4 zrnd=2.7
+[W3-rnd:P94d049bb133111eb:37,22|54,58] seq: maxworst|z|=   170.1 killkey=0x92988f142674743 | rnd64: maxworst|z|=     2.6 killkey=0x5555555555555555 -> kill
+[W3-rnd:Pbf58476d1ce4e5b9:41,61|26,51|60,57] seq: maxworst|z|=     2.9 killkey=0x123456789abcdef | rnd64: maxworst|z|=     2.6 killkey=0xdeadbeefdeadbeef -> KEEP
+  KEEP #24 W3-rnd:Pbf58476d1ce4e5b9:41,61|26,51|60,57 zseq=2.9 zrnd=2.6
+[W3-rnd:P9e3779b97f4a7c15:10,38|52,38] seq: maxworst|z|=  2890.7 killkey=0xaaaaaaaaaaaaaaaa | rnd64: maxworst|z|=     2.7 killkey=0xf0b52a9e7d8ba2b5 -> kill
+[W3-rnd:P9e3779b97f4a7c15:39,48|2,1|34,7] seq: maxworst|z|=     3.2 killkey=0xf0b52a9e7d8ba2b5 | rnd64: maxworst|z|=     2.6 killkey=0x1234 -> KEEP
+  KEEP #25 W3-rnd:P9e3779b97f4a7c15:39,48|2,1|34,7 zseq=3.2 zrnd=2.6
+[W3-rnd:Pbf58476d1ce4e5b9:63,25|8,33] seq: maxworst|z|=  2890.7 killkey=0xaaaaaaaaaaaaaaaa | rnd64: maxworst|z|=     3.2 killkey=0xf0b52a9e7d8ba2b5 -> kill
+[W3-rnd:Pbf58476d1ce4e5b9:39,2+45,30|18,50+63,26|21,54+9,45] seq: maxworst|z|=     2.6 killkey=0x5555555555555555 | rnd64: maxworst|z|=     3.1 killkey=0xdeadbeefdeadbeef -> KEEP
+  KEEP #26 W3-rnd:Pbf58476d1ce4e5b9:39,2+45,30|18,50+63,26|21,54+9,45 zseq=2.6 zrnd=3.1
+[W3-rnd:Pbf58476d1ce4e5b9:24,49|56,61|53,29] seq: maxworst|z|=     2.9 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     2.6 killkey=0x1234 -> KEEP
+  KEEP #27 W3-rnd:Pbf58476d1ce4e5b9:24,49|56,61|53,29 zseq=2.9 zrnd=2.6
+[W3-rnd:P94d049bb133111eb:31,32|31,25] seq: maxworst|z|=    19.2 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     3.4 killkey=0x5555555555555555 -> kill
+[W3-rnd:P9e3779b97f4a7c15:25,14|25,61|48,31] seq: maxworst|z|=     3.1 killkey=0x123456789abcdef | rnd64: maxworst|z|=     2.4 killkey=0x5555555555555555 -> KEEP
+  KEEP #28 W3-rnd:P9e3779b97f4a7c15:25,14|25,61|48,31 zseq=3.1 zrnd=2.4
+[W3-rnd:Pbf58476d1ce4e5b9:10,48+46,14|26,15+22,41] seq: maxworst|z|=     2.9 killkey=0x9e3779b97f4a7c15 | rnd64: maxworst|z|=     3.0 killkey=0xaaaaaaaaaaaaaaaa -> KEEP
+  KEEP #29 W3-rnd:Pbf58476d1ce4e5b9:10,48+46,14|26,15+22,41 zseq=2.9 zrnd=3.0
+[W3-rnd:Pbf58476d1ce4e5b9:54,35+62,42|30,62+7,2] seq: maxworst|z|=     2.9 killkey=0x5555555555555555 | rnd64: maxworst|z|=     3.7 killkey=0xffffffffffffffff -> KEEP
+  KEEP #30 W3-rnd:Pbf58476d1ce4e5b9:54,35+62,42|30,62+7,2 zseq=2.9 zrnd=3.7
+  ... 450/602 triaged, 30 KEEPs, 68min elapsed
+[W3-rnd:P9e3779b97f4a7c15:4,51|37,28|38,22] seq: maxworst|z|=     2.7 killkey=0x123456789abcdef | rnd64: maxworst|z|=     3.0 killkey=0xaaaaaaaaaaaaaaaa -> KEEP
+  KEEP #31 W3-rnd:P9e3779b97f4a7c15:4,51|37,28|38,22 zseq=2.7 zrnd=3.0
+[W3-rnd:P9e3779b97f4a7c15:15,42|19,55] seq: maxworst|z|=    11.3 killkey=0x0 | rnd64: maxworst|z|=     2.9 killkey=0xdeadbeefdeadbeef -> kill
+[W3-rnd:P94d049bb133111eb:12,18|46,35] seq: maxworst|z|=    56.0 killkey=0x92988f142674743 | rnd64: maxworst|z|=     3.5 killkey=0x5555555555555555 -> kill
+[W3-rnd:Pbf58476d1ce4e5b9:8,3|6,38|46,21] seq: maxworst|z|=     3.6 killkey=0xaaaaaaaaaaaaaaaa | rnd64: maxworst|z|=     4.1 killkey=0xdeadbeefdeadbeef -> KEEP
+  KEEP #32 W3-rnd:Pbf58476d1ce4e5b9:8,3|6,38|46,21 zseq=3.6 zrnd=4.1
+[W3-rnd:P94d049bb133111eb:27,38+38,13|20,8+3,29] seq: maxworst|z|=     3.0 killkey=0x9e3779b97f4a7c15 | rnd64: maxworst|z|=     3.6 killkey=0x1234 -> KEEP
+  KEEP #33 W3-rnd:P94d049bb133111eb:27,38+38,13|20,8+3,29 zseq=3.0 zrnd=3.6
+[W3-rnd:P9e3779b97f4a7c15:47,35+55,47|13,3+31,26] seq: maxworst|z|=     2.5 killkey=0xaaaaaaaaaaaaaaaa | rnd64: maxworst|z|=     2.5 killkey=0x5555555555555555 -> KEEP
+  KEEP #34 W3-rnd:P9e3779b97f4a7c15:47,35+55,47|13,3+31,26 zseq=2.5 zrnd=2.5
+[W3-rnd:Pbf58476d1ce4e5b9:47,44+60,50|33,58+21,33|18,4+17,10] seq: maxworst|z|=     3.6 killkey=0xdeadbeefdeadbeef | rnd64: maxworst|z|=     3.2 killkey=0xdeadbeefdeadbeef -> KEEP
+  KEEP #35 W3-rnd:Pbf58476d1ce4e5b9:47,44+60,50|33,58+21,33|18,4+17,10 zseq=3.6 zrnd=3.2
+[W3-rnd:P94d049bb133111eb:26,5|12,4|18,54] seq: maxworst|z|=     2.9 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     3.2 killkey=0x92988f142674743 -> KEEP
+  KEEP #36 W3-rnd:P94d049bb133111eb:26,5|12,4|18,54 zseq=2.9 zrnd=3.2
+[W3-rnd:P94d049bb133111eb:25,15|57,40|57,62] seq: maxworst|z|=     2.9 killkey=0x0 | rnd64: maxworst|z|=     2.4 killkey=0x92988f142674743 -> KEEP
+  KEEP #37 W3-rnd:P94d049bb133111eb:25,15|57,40|57,62 zseq=2.9 zrnd=2.4
+[W3-rnd:P9e3779b97f4a7c15:5,41+8,7|11,32+44,47|9,23+23,17] seq: maxworst|z|=     4.7 killkey=0xf0b52a9e7d8ba2b5 | rnd64: maxworst|z|=     2.5 killkey=0x5555555555555555 -> KEEP
+  KEEP #38 W3-rnd:P9e3779b97f4a7c15:5,41+8,7|11,32+44,47|9,23+23,17 zseq=4.7 zrnd=2.5
+[W3-rnd:Pbf58476d1ce4e5b9:61,8|15,23] seq: maxworst|z|=    39.7 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     3.6 killkey=0x92988f142674743 -> kill
+[W3-rnd:P9e3779b97f4a7c15:28,5|29,44|13,41] seq: maxworst|z|=     4.0 killkey=0x0 | rnd64: maxworst|z|=     2.2 killkey=0x5555555555555555 -> KEEP
+  KEEP #39 W3-rnd:P9e3779b97f4a7c15:28,5|29,44|13,41 zseq=4.0 zrnd=2.2
+[W3-rnd:Pbf58476d1ce4e5b9:53,42+53,4|48,49+37,17] seq: maxworst|z|=     3.9 killkey=0xdeadbeefdeadbeef | rnd64: maxworst|z|=     2.8 killkey=0x9e3779b97f4a7c15 -> KEEP
+  KEEP #40 W3-rnd:Pbf58476d1ce4e5b9:53,42+53,4|48,49+37,17 zseq=3.9 zrnd=2.8
+[W3-rnd:P9e3779b97f4a7c15:27,25+59,2|39,55+17,54] seq: maxworst|z|=     2.5 killkey=0x9e3779b97f4a7c15 | rnd64: maxworst|z|=     3.2 killkey=0x92988f142674743 -> KEEP
+  KEEP #41 W3-rnd:P9e3779b97f4a7c15:27,25+59,2|39,55+17,54 zseq=2.5 zrnd=3.2
+[W3-rnd:Pbf58476d1ce4e5b9:6,35|48,18] seq: maxworst|z|=  2890.7 killkey=0x123456789abcdef | rnd64: maxworst|z|=     3.1 killkey=0x9e3779b97f4a7c15 -> kill
+[W3-rnd:P94d049bb133111eb:35,21|37,14] seq: maxworst|z|=   714.2 killkey=0x9e3779b97f4a7c15 | rnd64: maxworst|z|=     2.7 killkey=0x123456789abcdef -> kill
+[W3-rnd:Pbf58476d1ce4e5b9:52,26|19,44|9,54] seq: maxworst|z|=     2.5 killkey=0xdeadbeefdeadbeef | rnd64: maxworst|z|=     2.5 killkey=0x123456789abcdef -> KEEP
+  KEEP #42 W3-rnd:Pbf58476d1ce4e5b9:52,26|19,44|9,54 zseq=2.5 zrnd=2.5
+[W3-rnd:P94d049bb133111eb:19,38+4,11|50,54+22,15] seq: maxworst|z|=     3.2 killkey=0xaaaaaaaaaaaaaaaa | rnd64: maxworst|z|=     3.1 killkey=0xffffffffffffffff -> KEEP
+  KEEP #43 W3-rnd:P94d049bb133111eb:19,38+4,11|50,54+22,15 zseq=3.2 zrnd=3.1
+[W3-rnd:P94d049bb133111eb:46,51+36,26|10,29+21,46] seq: maxworst|z|=     2.8 killkey=0x123456789abcdef | rnd64: maxworst|z|=     3.0 killkey=0x0 -> KEEP
+  KEEP #44 W3-rnd:P94d049bb133111eb:46,51+36,26|10,29+21,46 zseq=2.8 zrnd=3.0
+[W3-rnd:P94d049bb133111eb:58,10+22,54|22,1+24,57] seq: maxworst|z|=     3.3 killkey=0x9e3779b97f4a7c15 | rnd64: maxworst|z|=     3.2 killkey=0x5555555555555555 -> KEEP
+  KEEP #45 W3-rnd:P94d049bb133111eb:58,10+22,54|22,1+24,57 zseq=3.3 zrnd=3.2
+[W3-rnd:P9e3779b97f4a7c15:21,49+18,38|47,57+46,1|39,3+62,1] seq: maxworst|z|=     2.4 killkey=0xaaaaaaaaaaaaaaaa | rnd64: maxworst|z|=     2.9 killkey=0xaaaaaaaaaaaaaaaa -> KEEP
+  KEEP #46 W3-rnd:P9e3779b97f4a7c15:21,49+18,38|47,57+46,1|39,3+62,1 zseq=2.4 zrnd=2.9
+[W3-rnd:P94d049bb133111eb:21,16|38,51] seq: maxworst|z|=    44.5 killkey=0x5555555555555555 | rnd64: maxworst|z|=     2.8 killkey=0xdeadbeefdeadbeef -> kill
+[W3-rnd:P94d049bb133111eb:12,40|13,1] seq: maxworst|z|=  2890.7 killkey=0x5555555555555555 | rnd64: maxworst|z|=     3.9 killkey=0xdeadbeefdeadbeef -> kill
+[W3-rnd:P9e3779b97f4a7c15:25,46+48,25|42,3+18,31] seq: maxworst|z|=     2.9 killkey=0x92988f142674743 | rnd64: maxworst|z|=     3.0 killkey=0x123456789abcdef -> KEEP
+  KEEP #47 W3-rnd:P9e3779b97f4a7c15:25,46+48,25|42,3+18,31 zseq=2.9 zrnd=3.0
+[W3-rnd:P9e3779b97f4a7c15:61,31|2,21] seq: maxworst|z|=    11.3 killkey=0x0 | rnd64: maxworst|z|=     2.9 killkey=0x1234 -> kill
+[W3-rnd:P94d049bb133111eb:25,16|13,28] seq: maxworst|z|=   197.4 killkey=0x5555555555555555 | rnd64: maxworst|z|=     2.5 killkey=0x123456789abcdef -> kill
+[W3-rnd:P9e3779b97f4a7c15:18,47+36,19|27,10+17,23] seq: maxworst|z|=     2.9 killkey=0x92988f142674743 | rnd64: maxworst|z|=     2.9 killkey=0xf0b52a9e7d8ba2b5 -> KEEP
+  KEEP #48 W3-rnd:P9e3779b97f4a7c15:18,47+36,19|27,10+17,23 zseq=2.9 zrnd=2.9
+[W3-rnd:P9e3779b97f4a7c15:45,58|15,32] seq: maxworst|z|=   170.1 killkey=0x123456789abcdef | rnd64: maxworst|z|=     3.1 killkey=0xf0b52a9e7d8ba2b5 -> kill
+[W3-rnd:P94d049bb133111eb:19,48|50,39|30,46] seq: maxworst|z|=     2.7 killkey=0xdeadbeefdeadbeef | rnd64: maxworst|z|=     2.5 killkey=0x9e3779b97f4a7c15 -> KEEP
+  KEEP #49 W3-rnd:P94d049bb133111eb:19,48|50,39|30,46 zseq=2.7 zrnd=2.5
+[W3-rnd:Pbf58476d1ce4e5b9:52,45|36,3] seq: maxworst|z|=    40.4 killkey=0xdeadbeefdeadbeef | rnd64: maxworst|z|=     2.4 killkey=0xaaaaaaaaaaaaaaaa -> kill
+[W3-rnd:Pbf58476d1ce4e5b9:38,17|17,25] seq: maxworst|z|=  2890.7 killkey=0x92988f142674743 | rnd64: maxworst|z|=     2.4 killkey=0x92988f142674743 -> kill
+[W3-rnd:P9e3779b97f4a7c15:13,51+54,18|42,2+62,25|57,16+60,48] seq: maxworst|z|=     2.7 killkey=0x5555555555555555 | rnd64: maxworst|z|=     3.1 killkey=0xffffffffffffffff -> KEEP
+  KEEP #50 W3-rnd:P9e3779b97f4a7c15:13,51+54,18|42,2+62,25|57,16+60,48 zseq=2.7 zrnd=3.1
+[W3-rnd:P9e3779b97f4a7c15:12,47|56,21|36,9] seq: maxworst|z|=     3.6 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     2.8 killkey=0x0 -> KEEP
+  KEEP #51 W3-rnd:P9e3779b97f4a7c15:12,47|56,21|36,9 zseq=3.6 zrnd=2.8
+[W3-rnd:P9e3779b97f4a7c15:42,20|8,28] seq: maxworst|z|=  2890.7 killkey=0xf0b52a9e7d8ba2b5 | rnd64: maxworst|z|=     2.5 killkey=0xf0b52a9e7d8ba2b5 -> kill
+[W3-rnd:P9e3779b97f4a7c15:54,17|32,33|60,28] seq: maxworst|z|=     3.2 killkey=0xf0b52a9e7d8ba2b5 | rnd64: maxworst|z|=     2.9 killkey=0xf0b52a9e7d8ba2b5 -> KEEP
+  KEEP #52 W3-rnd:P9e3779b97f4a7c15:54,17|32,33|60,28 zseq=3.2 zrnd=2.9
+[W3-rnd:P9e3779b97f4a7c15:31,12+24,45|40,39+3,42] seq: maxworst|z|=     4.0 killkey=0xdeadbeefdeadbeef | rnd64: maxworst|z|=     2.7 killkey=0x1234 -> KEEP
+  KEEP #53 W3-rnd:P9e3779b97f4a7c15:31,12+24,45|40,39+3,42 zseq=4.0 zrnd=2.7
+[W3-rnd:Pbf58476d1ce4e5b9:61,2|24,60] seq: maxworst|z|=    52.1 killkey=0xdeadbeefdeadbeef | rnd64: maxworst|z|=     4.0 killkey=0xffffffffffffffff -> kill
+[W3-rnd:P94d049bb133111eb:36,7|43,3|29,22] seq: maxworst|z|=     4.1 killkey=0x123456789abcdef | rnd64: maxworst|z|=     3.1 killkey=0x1234 -> KEEP
+  KEEP #54 W3-rnd:P94d049bb133111eb:36,7|43,3|29,22 zseq=4.1 zrnd=3.1
+[W3-rnd:Pbf58476d1ce4e5b9:42,53+45,53|38,12+61,55|50,48+62,51] seq: maxworst|z|=     3.1 killkey=0x92988f142674743 | rnd64: maxworst|z|=     2.6 killkey=0xaaaaaaaaaaaaaaaa -> KEEP
+  KEEP #55 W3-rnd:Pbf58476d1ce4e5b9:42,53+45,53|38,12+61,55|50,48+62,51 zseq=3.1 zrnd=2.6
+[W3-rnd:P94d049bb133111eb:56,55+58,43|2,31+63,60] seq: maxworst|z|=     3.2 killkey=0xaaaaaaaaaaaaaaaa | rnd64: maxworst|z|=     2.9 killkey=0xf0b52a9e7d8ba2b5 -> KEEP
+  KEEP #56 W3-rnd:P94d049bb133111eb:56,55+58,43|2,31+63,60 zseq=3.2 zrnd=2.9
+[W3-rnd:Pbf58476d1ce4e5b9:49,26|52,40|46,18] seq: maxworst|z|=     3.0 killkey=0x92988f142674743 | rnd64: maxworst|z|=     3.6 killkey=0xf0b52a9e7d8ba2b5 -> KEEP
+  KEEP #57 W3-rnd:Pbf58476d1ce4e5b9:49,26|52,40|46,18 zseq=3.0 zrnd=3.6
+[W3-rnd:P9e3779b97f4a7c15:26,62|3,32] seq: maxworst|z|=    11.3 killkey=0x0 | rnd64: maxworst|z|=     4.0 killkey=0xf0b52a9e7d8ba2b5 -> kill
+[W3-rnd:P9e3779b97f4a7c15:28,37|54,1|8,46] seq: maxworst|z|=     2.8 killkey=0xdeadbeefdeadbeef | rnd64: maxworst|z|=     2.9 killkey=0x9e3779b97f4a7c15 -> KEEP
+  KEEP #58 W3-rnd:P9e3779b97f4a7c15:28,37|54,1|8,46 zseq=2.8 zrnd=2.9
+[W3-rnd:P9e3779b97f4a7c15:37,27+32,44|30,8+40,60] seq: maxworst|z|=     3.5 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     3.1 killkey=0x123456789abcdef -> KEEP
+  KEEP #59 W3-rnd:P9e3779b97f4a7c15:37,27+32,44|30,8+40,60 zseq=3.5 zrnd=3.1
+[W3-rnd:P94d049bb133111eb:23,24+37,38|33,56+4,49|29,12+25,49] seq: maxworst|z|=     2.7 killkey=0x123456789abcdef | rnd64: maxworst|z|=     2.7 killkey=0xffffffffffffffff -> KEEP
+  KEEP #60 W3-rnd:P94d049bb133111eb:23,24+37,38|33,56+4,49|29,12+25,49 zseq=2.7 zrnd=2.7
+[W3-rnd:Pbf58476d1ce4e5b9:21,28+9,53|36,31+54,61] seq: maxworst|z|=     3.1 killkey=0x92988f142674743 | rnd64: maxworst|z|=     3.8 killkey=0x9e3779b97f4a7c15 -> KEEP
+  KEEP #61 W3-rnd:Pbf58476d1ce4e5b9:21,28+9,53|36,31+54,61 zseq=3.1 zrnd=3.8
+[W3-rnd:P94d049bb133111eb:16,58|54,45|57,45] seq: maxworst|z|=     3.0 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     2.4 killkey=0x0 -> KEEP
+  KEEP #62 W3-rnd:P94d049bb133111eb:16,58|54,45|57,45 zseq=3.0 zrnd=2.4
+[W3-rnd:Pbf58476d1ce4e5b9:42,35+58,12|24,32+3,32] seq: maxworst|z|=     3.0 killkey=0x0 | rnd64: maxworst|z|=     3.4 killkey=0x92988f142674743 -> KEEP
+  KEEP #63 W3-rnd:Pbf58476d1ce4e5b9:42,35+58,12|24,32+3,32 zseq=3.0 zrnd=3.4
+[W3-rnd:Pbf58476d1ce4e5b9:9,30+28,45|57,3+46,63] seq: maxworst|z|=     3.2 killkey=0xf0b52a9e7d8ba2b5 | rnd64: maxworst|z|=     3.1 killkey=0x123456789abcdef -> KEEP
+  KEEP #64 W3-rnd:Pbf58476d1ce4e5b9:9,30+28,45|57,3+46,63 zseq=3.2 zrnd=3.1
+[W3-rnd:P94d049bb133111eb:40,34|34,13] seq: maxworst|z|=    50.3 killkey=0xf0b52a9e7d8ba2b5 | rnd64: maxworst|z|=     3.1 killkey=0x9e3779b97f4a7c15 -> kill
+  ... 500/602 triaged, 64 KEEPs, 94min elapsed
+[W3-rnd:Pbf58476d1ce4e5b9:14,58|11,20] seq: maxworst|z|=  2890.7 killkey=0x92988f142674743 | rnd64: maxworst|z|=     3.8 killkey=0x9e3779b97f4a7c15 -> kill
+[W3-rnd:P9e3779b97f4a7c15:48,59|44,63] seq: maxworst|z|=   216.1 killkey=0x9e3779b97f4a7c15 | rnd64: maxworst|z|=     2.4 killkey=0x123456789abcdef -> kill
+[W3-rnd:Pbf58476d1ce4e5b9:22,50|50,12|52,48] seq: maxworst|z|=     2.3 killkey=0x9e3779b97f4a7c15 | rnd64: maxworst|z|=     2.9 killkey=0xdeadbeefdeadbeef -> KEEP
+  KEEP #65 W3-rnd:Pbf58476d1ce4e5b9:22,50|50,12|52,48 zseq=2.3 zrnd=2.9
+[W3-rnd:P94d049bb133111eb:32,33|54,58] seq: maxworst|z|=     7.0 killkey=0xdeadbeefdeadbeef | rnd64: maxworst|z|=     3.4 killkey=0x5555555555555555 -> KEEP
+  KEEP #66 W3-rnd:P94d049bb133111eb:32,33|54,58 zseq=7.0 zrnd=3.4
+[W3-rnd:P9e3779b97f4a7c15:38,7|27,41|12,19] seq: maxworst|z|=     3.1 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     2.9 killkey=0xdeadbeefdeadbeef -> KEEP
+  KEEP #67 W3-rnd:P9e3779b97f4a7c15:38,7|27,41|12,19 zseq=3.1 zrnd=2.9
+[W3-rnd:P94d049bb133111eb:35,54+11,59|62,47+55,50] seq: maxworst|z|=     4.3 killkey=0xf0b52a9e7d8ba2b5 | rnd64: maxworst|z|=     3.0 killkey=0xdeadbeefdeadbeef -> KEEP
+  KEEP #68 W3-rnd:P94d049bb133111eb:35,54+11,59|62,47+55,50 zseq=4.3 zrnd=3.0
+[W3-rnd:Pbf58476d1ce4e5b9:21,25|22,38|31,33] seq: maxworst|z|=     2.3 killkey=0x92988f142674743 | rnd64: maxworst|z|=     3.5 killkey=0xf0b52a9e7d8ba2b5 -> KEEP
+  KEEP #69 W3-rnd:Pbf58476d1ce4e5b9:21,25|22,38|31,33 zseq=2.3 zrnd=3.5
+[W3-rnd:P94d049bb133111eb:56,3|43,47|41,54] seq: maxworst|z|=     2.8 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     2.8 killkey=0x9e3779b97f4a7c15 -> KEEP
+  KEEP #70 W3-rnd:P94d049bb133111eb:56,3|43,47|41,54 zseq=2.8 zrnd=2.8
+[W3-rnd:Pbf58476d1ce4e5b9:36,18|15,42] seq: maxworst|z|=    11.3 killkey=0x0 | rnd64: maxworst|z|=     3.4 killkey=0xffffffffffffffff -> kill
+[W3-rnd:P9e3779b97f4a7c15:4,63|10,55|5,61] seq: maxworst|z|=     4.1 killkey=0xf0b52a9e7d8ba2b5 | rnd64: maxworst|z|=     2.7 killkey=0x0 -> KEEP
+  KEEP #71 W3-rnd:P9e3779b97f4a7c15:4,63|10,55|5,61 zseq=4.1 zrnd=2.7
+[W3-rnd:Pbf58476d1ce4e5b9:33,13|2,24|37,32] seq: maxworst|z|=     4.2 killkey=0xaaaaaaaaaaaaaaaa | rnd64: maxworst|z|=     2.6 killkey=0x123456789abcdef -> KEEP
+  KEEP #72 W3-rnd:Pbf58476d1ce4e5b9:33,13|2,24|37,32 zseq=4.2 zrnd=2.6
+[W3-rnd:P94d049bb133111eb:22,43|61,23] seq: maxworst|z|=  5792.7 killkey=0xf0b52a9e7d8ba2b5 | rnd64: maxworst|z|=     3.0 killkey=0x5555555555555555 -> kill
+[W3-rnd:P9e3779b97f4a7c15:30,12|15,34] seq: maxworst|z|=    11.3 killkey=0x0 | rnd64: maxworst|z|=     2.4 killkey=0xaaaaaaaaaaaaaaaa -> kill
+[W3-rnd:Pbf58476d1ce4e5b9:50,13|22,16|41,9] seq: maxworst|z|=     2.6 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     3.7 killkey=0x5555555555555555 -> KEEP
+  KEEP #73 W3-rnd:Pbf58476d1ce4e5b9:50,13|22,16|41,9 zseq=2.6 zrnd=3.7
+[W3-rnd:P9e3779b97f4a7c15:14,37|35,3|18,16] seq: maxworst|z|=     3.2 killkey=0x0 | rnd64: maxworst|z|=     2.6 killkey=0x92988f142674743 -> KEEP
+  KEEP #74 W3-rnd:P9e3779b97f4a7c15:14,37|35,3|18,16 zseq=3.2 zrnd=2.6
+[W3-rnd:P9e3779b97f4a7c15:17,34+7,54|44,16+12,44] seq: maxworst|z|=     2.5 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     3.6 killkey=0x9e3779b97f4a7c15 -> KEEP
+  KEEP #75 W3-rnd:P9e3779b97f4a7c15:17,34+7,54|44,16+12,44 zseq=2.5 zrnd=3.6
+[W3-rnd:P94d049bb133111eb:48,2|5,24] seq: maxworst|z|=    11.3 killkey=0x0 | rnd64: maxworst|z|=     3.5 killkey=0xdeadbeefdeadbeef -> kill
+[W3-rnd:Pbf58476d1ce4e5b9:40,29+59,13|11,63+39,9|62,18+34,24] seq: maxworst|z|=     3.2 killkey=0x9e3779b97f4a7c15 | rnd64: maxworst|z|=     3.0 killkey=0xf0b52a9e7d8ba2b5 -> KEEP
+  KEEP #76 W3-rnd:Pbf58476d1ce4e5b9:40,29+59,13|11,63+39,9|62,18+34,24 zseq=3.2 zrnd=3.0
+[W3-rnd:Pbf58476d1ce4e5b9:53,55|53,3] seq: maxworst|z|=    22.8 killkey=0x92988f142674743 | rnd64: maxworst|z|=     3.7 killkey=0x9e3779b97f4a7c15 -> kill
+[W3-rnd:P94d049bb133111eb:27,21|24,7] seq: maxworst|z|=   177.5 killkey=0xdeadbeefdeadbeef | rnd64: maxworst|z|=     2.9 killkey=0x9e3779b97f4a7c15 -> kill
+[W3-rnd:P9e3779b97f4a7c15:59,28+55,19|46,48+56,49] seq: maxworst|z|=     3.0 killkey=0x123456789abcdef | rnd64: maxworst|z|=     2.7 killkey=0xffffffffffffffff -> KEEP
+  KEEP #77 W3-rnd:P9e3779b97f4a7c15:59,28+55,19|46,48+56,49 zseq=3.0 zrnd=2.7
+[W3-rnd:P94d049bb133111eb:33,63+2,42|58,18+48,21] seq: maxworst|z|=     2.9 killkey=0x92988f142674743 | rnd64: maxworst|z|=     2.7 killkey=0x0 -> KEEP
+  KEEP #78 W3-rnd:P94d049bb133111eb:33,63+2,42|58,18+48,21 zseq=2.9 zrnd=2.7
+[W3-rnd:P94d049bb133111eb:7,48|1,34|10,13] seq: maxworst|z|=     2.5 killkey=0xaaaaaaaaaaaaaaaa | rnd64: maxworst|z|=     3.1 killkey=0x1234 -> KEEP
+  KEEP #79 W3-rnd:P94d049bb133111eb:7,48|1,34|10,13 zseq=2.5 zrnd=3.1
+[W3-rnd:P94d049bb133111eb:43,51|62,23] seq: maxworst|z|=   176.3 killkey=0x92988f142674743 | rnd64: maxworst|z|=     3.4 killkey=0x1234 -> kill
+[W3-rnd:Pbf58476d1ce4e5b9:37,30+25,30|26,22+12,33|50,63+52,22] seq: maxworst|z|=     2.9 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     3.5 killkey=0x92988f142674743 -> KEEP
+  KEEP #80 W3-rnd:Pbf58476d1ce4e5b9:37,30+25,30|26,22+12,33|50,63+52,22 zseq=2.9 zrnd=3.5
+[W3-rnd:P94d049bb133111eb:40,51|16,54|63,52] seq: maxworst|z|=     3.0 killkey=0xf0b52a9e7d8ba2b5 | rnd64: maxworst|z|=     2.8 killkey=0xdeadbeefdeadbeef -> KEEP
+  KEEP #81 W3-rnd:P94d049bb133111eb:40,51|16,54|63,52 zseq=3.0 zrnd=2.8
+[W3-rnd:P94d049bb133111eb:56,54|23,57] seq: maxworst|z|=    13.2 killkey=0x92988f142674743 | rnd64: maxworst|z|=     2.6 killkey=0xaaaaaaaaaaaaaaaa -> kill
+[W3-rnd:P94d049bb133111eb:22,19+6,12|15,9+39,63|1,48+45,55] seq: maxworst|z|=     3.2 killkey=0x123456789abcdef | rnd64: maxworst|z|=     2.3 killkey=0x9e3779b97f4a7c15 -> KEEP
+  KEEP #82 W3-rnd:P94d049bb133111eb:22,19+6,12|15,9+39,63|1,48+45,55 zseq=3.2 zrnd=2.3
+[W3-rnd:P94d049bb133111eb:61,4|36,48] seq: maxworst|z|=   176.6 killkey=0xaaaaaaaaaaaaaaaa | rnd64: maxworst|z|=     2.7 killkey=0xdeadbeefdeadbeef -> kill
+[W3-rnd:P94d049bb133111eb:36,62+18,33|16,10+25,49] seq: maxworst|z|=     2.4 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     3.1 killkey=0x1234 -> KEEP
+  KEEP #83 W3-rnd:P94d049bb133111eb:36,62+18,33|16,10+25,49 zseq=2.4 zrnd=3.1
+[W3-rnd:Pbf58476d1ce4e5b9:22,21|20,13] seq: maxworst|z|=    12.3 killkey=0x92988f142674743 | rnd64: maxworst|z|=     3.0 killkey=0x92988f142674743 -> kill
+[W3-rnd:P9e3779b97f4a7c15:15,38|48,58] seq: maxworst|z|=    11.3 killkey=0x0 | rnd64: maxworst|z|=     4.2 killkey=0x123456789abcdef -> kill
+[W3-rnd:P9e3779b97f4a7c15:17,28+59,48|19,58+19,7] seq: maxworst|z|=     3.6 killkey=0x5555555555555555 | rnd64: maxworst|z|=     3.2 killkey=0xaaaaaaaaaaaaaaaa -> KEEP
+  KEEP #84 W3-rnd:P9e3779b97f4a7c15:17,28+59,48|19,58+19,7 zseq=3.6 zrnd=3.2
+[W3-rnd:P9e3779b97f4a7c15:1,40+12,14|35,58+40,61] seq: maxworst|z|=     2.6 killkey=0x0 | rnd64: maxworst|z|=     3.2 killkey=0xaaaaaaaaaaaaaaaa -> KEEP
+  KEEP #85 W3-rnd:P9e3779b97f4a7c15:1,40+12,14|35,58+40,61 zseq=2.6 zrnd=3.2
+[W3-rnd:Pbf58476d1ce4e5b9:61,6|22,53] seq: maxworst|z|=   714.2 killkey=0x0 | rnd64: maxworst|z|=     3.2 killkey=0xffffffffffffffff -> kill
+[W3-rnd:Pbf58476d1ce4e5b9:2,3|38,47] seq: maxworst|z|=     9.1 killkey=0xaaaaaaaaaaaaaaaa | rnd64: maxworst|z|=     3.3 killkey=0x0 -> KEEP
+  KEEP #86 W3-rnd:Pbf58476d1ce4e5b9:2,3|38,47 zseq=9.1 zrnd=3.3
+[W3-rnd:P94d049bb133111eb:28,33|13,40] seq: maxworst|z|=    85.0 killkey=0xaaaaaaaaaaaaaaaa | rnd64: maxworst|z|=     2.7 killkey=0x0 -> kill
+[W3-rnd:P9e3779b97f4a7c15:22,32|37,30] seq: maxworst|z|=    89.5 killkey=0x5555555555555555 | rnd64: maxworst|z|=     4.1 killkey=0x1234 -> kill
+[W3-rnd:P9e3779b97f4a7c15:9,12|55,14] seq: maxworst|z|=    20.5 killkey=0xaaaaaaaaaaaaaaaa | rnd64: maxworst|z|=     2.5 killkey=0xdeadbeefdeadbeef -> kill
+[W3-rnd:P9e3779b97f4a7c15:47,10|30,22] seq: maxworst|z|=    11.3 killkey=0x0 | rnd64: maxworst|z|=     2.5 killkey=0x1234 -> kill
+[W3-rnd:Pbf58476d1ce4e5b9:24,43+5,49|26,46+50,63|13,35+12,49] seq: maxworst|z|=     2.5 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     2.8 killkey=0xffffffffffffffff -> KEEP
+  KEEP #87 W3-rnd:Pbf58476d1ce4e5b9:24,43+5,49|26,46+50,63|13,35+12,49 zseq=2.5 zrnd=2.8
+[W3-rnd:Pbf58476d1ce4e5b9:32,33|23,4|41,40] seq: maxworst|z|=     2.7 killkey=0x9e3779b97f4a7c15 | rnd64: maxworst|z|=     4.1 killkey=0x1234 -> KEEP
+  KEEP #88 W3-rnd:Pbf58476d1ce4e5b9:32,33|23,4|41,40 zseq=2.7 zrnd=4.1
+[W3-rnd:P94d049bb133111eb:59,43+24,38|28,49+17,15] seq: maxworst|z|=     2.6 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     2.4 killkey=0x1234 -> KEEP
+  KEEP #89 W3-rnd:P94d049bb133111eb:59,43+24,38|28,49+17,15 zseq=2.6 zrnd=2.4
+[W3-rnd:P94d049bb133111eb:51,1|41,5|44,62] seq: maxworst|z|=     2.6 killkey=0x0 | rnd64: maxworst|z|=     4.0 killkey=0x0 -> KEEP
+  KEEP #90 W3-rnd:P94d049bb133111eb:51,1|41,5|44,62 zseq=2.6 zrnd=4.0
+[W3-rnd:Pbf58476d1ce4e5b9:23,36|22,23] seq: maxworst|z|=   170.1 killkey=0x0 | rnd64: maxworst|z|=     3.3 killkey=0x0 -> kill
+[W3-rnd:Pbf58476d1ce4e5b9:49,31+31,46|33,3+18,45] seq: maxworst|z|=     2.5 killkey=0x123456789abcdef | rnd64: maxworst|z|=     4.4 killkey=0x92988f142674743 -> KEEP
+  KEEP #91 W3-rnd:Pbf58476d1ce4e5b9:49,31+31,46|33,3+18,45 zseq=2.5 zrnd=4.4
+[W3-rnd:P94d049bb133111eb:15,16|62,46] seq: maxworst|z|=    14.9 killkey=0x5555555555555555 | rnd64: maxworst|z|=     2.7 killkey=0xdeadbeefdeadbeef -> kill
+[W3-rnd:Pbf58476d1ce4e5b9:29,30+3,42|19,34+37,52|43,16+32,62] seq: maxworst|z|=     2.7 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     3.3 killkey=0x5555555555555555 -> KEEP
+  KEEP #92 W3-rnd:Pbf58476d1ce4e5b9:29,30+3,42|19,34+37,52|43,16+32,62 zseq=2.7 zrnd=3.3
+[W3-rnd:Pbf58476d1ce4e5b9:8,3|30,50|12,37] seq: maxworst|z|=     3.3 killkey=0xf0b52a9e7d8ba2b5 | rnd64: maxworst|z|=     3.2 killkey=0xf0b52a9e7d8ba2b5 -> KEEP
+  KEEP #93 W3-rnd:Pbf58476d1ce4e5b9:8,3|30,50|12,37 zseq=3.3 zrnd=3.2
+[W3-rnd:P9e3779b97f4a7c15:43,32|33,8|43,7] seq: maxworst|z|=     3.0 killkey=0x123456789abcdef | rnd64: maxworst|z|=     2.8 killkey=0x123456789abcdef -> KEEP
+  KEEP #94 W3-rnd:P9e3779b97f4a7c15:43,32|33,8|43,7 zseq=3.0 zrnd=2.8
+  ... 550/602 triaged, 94 KEEPs, 126min elapsed
+[W3-rnd:Pbf58476d1ce4e5b9:15,33+33,20|39,2+39,45] seq: maxworst|z|=     3.2 killkey=0xf0b52a9e7d8ba2b5 | rnd64: maxworst|z|=     3.3 killkey=0x5555555555555555 -> KEEP
+  KEEP #95 W3-rnd:Pbf58476d1ce4e5b9:15,33+33,20|39,2+39,45 zseq=3.2 zrnd=3.3
+[W3-rnd:Pbf58476d1ce4e5b9:17,32+38,58|36,39+30,45|52,13+25,16] seq: maxworst|z|=     3.0 killkey=0xaaaaaaaaaaaaaaaa | rnd64: maxworst|z|=     3.1 killkey=0x0 -> KEEP
+  KEEP #96 W3-rnd:Pbf58476d1ce4e5b9:17,32+38,58|36,39+30,45|52,13+25,16 zseq=3.0 zrnd=3.1
+[W3-rnd:P9e3779b97f4a7c15:54,53|20,10|20,2] seq: maxworst|z|=     2.7 killkey=0xf0b52a9e7d8ba2b5 | rnd64: maxworst|z|=     2.8 killkey=0xffffffffffffffff -> KEEP
+  KEEP #97 W3-rnd:P9e3779b97f4a7c15:54,53|20,10|20,2 zseq=2.7 zrnd=2.8
+[W3-rnd:P9e3779b97f4a7c15:41,3+7,38|51,38+9,24] seq: maxworst|z|=     2.7 killkey=0x9e3779b97f4a7c15 | rnd64: maxworst|z|=     2.9 killkey=0x123456789abcdef -> KEEP
+  KEEP #98 W3-rnd:P9e3779b97f4a7c15:41,3+7,38|51,38+9,24 zseq=2.7 zrnd=2.9
+[W3-rnd:P9e3779b97f4a7c15:31,42|9,47|44,53] seq: maxworst|z|=     2.9 killkey=0xdeadbeefdeadbeef | rnd64: maxworst|z|=     2.5 killkey=0x9e3779b97f4a7c15 -> KEEP
+  KEEP #99 W3-rnd:P9e3779b97f4a7c15:31,42|9,47|44,53 zseq=2.9 zrnd=2.5
+[W3-rnd:P94d049bb133111eb:26,41|15,4] seq: maxworst|z|=   714.2 killkey=0x92988f142674743 | rnd64: maxworst|z|=     3.1 killkey=0x123456789abcdef -> kill
+[W3-rnd:P94d049bb133111eb:56,35|16,33] seq: maxworst|z|=  2890.7 killkey=0xffffffffffffffff | rnd64: maxworst|z|=     3.2 killkey=0x123456789abcdef -> kill

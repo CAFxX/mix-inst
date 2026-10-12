@@ -1,0 +1,18 @@
+agentwork-launch: tag=track3/w14-s0 schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+=== S0 al_w3b ===
+DUT al_w3b: cells=10717 area=34266 crit=34.6
+RESULT name=al_w3b cells=10717 area=34266 crit=34.6 delay_ratio=0.334 area_ratio=0.970 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+=== S0 al_w3c ===
+DUT al_w3c: cells=13930 area=43029 crit=31.9
+RESULT name=al_w3c cells=13930 area=43029 crit=31.9 delay_ratio=0.308 area_ratio=1.218 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+=== S0 al_w3d ===
+DUT al_w3d: cells=11281 area=34229 crit=27.7
+RESULT name=al_w3d cells=11281 area=34229 crit=27.7 delay_ratio=0.268 area_ratio=0.969 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+=== S0 al_w3a ===
+DUT al_w3a: cells=16571 area=49539 crit=41.8
+RESULT name=al_w3a cells=16571 area=49539 crit=41.8 delay_ratio=0.404 area_ratio=1.402 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)
+S0_ALL_DONE

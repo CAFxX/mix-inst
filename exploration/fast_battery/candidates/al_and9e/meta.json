@@ -1,0 +1,25 @@
+{
+ "name": "al_and9e",
+ "description": "6-stage AND cascade, small-XOR hypothesis (wave-9)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "rtl_top": "al_and9e",
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xd7e39fde2f875e39"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x5d2c8c89b4595c7f"
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "name": "hyb5_chi8_p19",
+ "description": "8-stage chi + P(19,1) NEGATIVE CONTROL (metric: hurts diffusion)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x5386bbe491333640"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xd949a8b30aed3406"
+  }
+ ],
+ "rtl_top": "hyb5_chi8_p19",
+ "composition": "batch-5 P-box-augmented chi/AND cascade"
+}

@@ -1,0 +1,26 @@
+{
+ "name": "hyb5_chi8_p43",
+ "description": "8-stage chi + P(43,1) between stages (metric top tier)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x8e60d85db755e90e"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x4afcb0a2c8beb48"
+  }
+ ],
+ "rtl_top": "hyb5_chi8_p43",
+ "composition": "batch-5 P-box-augmented chi/AND cascade"
+}

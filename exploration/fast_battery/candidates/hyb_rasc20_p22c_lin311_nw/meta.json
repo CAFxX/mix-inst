@@ -1,0 +1,26 @@
+{
+ "name": "hyb_rasc20_p22c_lin311_nw",
+ "description": "Hybrid: rasC2_0 S-box + r22c P-box (5i+27) + lin(3,11). Tests if r22c P-box + rasC2_0 beats pba19.",
+ "composition": "Hybrid: rasC2_0 S-box + r22c P-box (5i+27) + lin(3,11). Tests if r22c P-box + rasC2_0 beats pba19.",
+ "rtl_top": "hyb_rasc20_p22c_lin311_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x75fd41d41506b8e2"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xe107779ad5cb97be"
+  }
+ ]
+}

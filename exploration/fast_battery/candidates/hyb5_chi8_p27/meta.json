@@ -1,0 +1,26 @@
+{
+ "name": "hyb5_chi8_p27",
+ "description": "8-stage chi + P(27,1) between stages (metric top tier)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xe0c0a4287188b5c4"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x6a0fb77fea56b782"
+  }
+ ],
+ "rtl_top": "hyb5_chi8_p27",
+ "composition": "batch-5 P-box-augmented chi/AND cascade"
+}

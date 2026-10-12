@@ -1,0 +1,26 @@
+{
+ "name": "hyb_present_pba19_lin513_nw",
+ "description": "Hybrid Batch 2: lit_present S-box + pba19 P-box + lin(5,13).",
+ "composition": "Hybrid Batch 2: lit_present S-box + pba19 P-box + lin(5,13).",
+ "rtl_top": "hyb_present_pba19_lin513_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x4074b7f61265fbad"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x678081f4a78e1749"
+  }
+ ]
+}

@@ -1,0 +1,25 @@
+{
+ "name": "hyb6_and6a_p43",
+ "description": "6-stage al_and6a triplets + P(43,1) between stages (control, score 42)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xa6fd87f32c69c4"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x8a69eed068f26b82"
+  }
+ ],
+ "rtl_top": "hyb6_and6a_p43"
+}

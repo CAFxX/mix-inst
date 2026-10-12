@@ -1,0 +1,25 @@
+{
+ "name": "hyb6_and5_p37",
+ "description": "5-stage al_and6a triplets + P(37,1) (speed challenger: P-box compensates for lost stage)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xe554b95b0e71a7d8"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x6f9baa0c95afa59e"
+  }
+ ],
+ "rtl_top": "hyb6_and5_p37"
+}

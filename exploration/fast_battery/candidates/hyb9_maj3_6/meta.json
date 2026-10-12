@@ -1,0 +1,25 @@
+{
+ "name": "hyb9_maj3_6",
+ "description": "6-stage MAJ3 cascade: x ^= maj(ra,rb,rc)^rd",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x7a94eac0f257c37e"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xf05bf9976989c138"
+  }
+ ],
+ "rtl_top": "hyb9_maj3_6"
+}

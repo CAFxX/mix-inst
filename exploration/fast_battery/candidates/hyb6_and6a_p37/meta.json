@@ -1,0 +1,25 @@
+{
+ "name": "hyb6_and6a_p37",
+ "description": "6-stage al_and6a triplets + P(37,1) between stages (metric top: score 43)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x3df92025afa048c6"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xb7363372347e4a80"
+  }
+ ],
+ "rtl_top": "hyb6_and6a_p37"
+}

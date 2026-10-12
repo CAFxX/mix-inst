@@ -1,0 +1,25 @@
+{
+ "name": "hyb8_midp37",
+ "description": "6-stage al_and6a triplets, P(37,1) ONLY between stage 3 and 4 (midpoint)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xf4ba949cf352a00a"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x7e7587cb688ca24c"
+  }
+ ],
+ "rtl_top": "hyb8_midp37"
+}

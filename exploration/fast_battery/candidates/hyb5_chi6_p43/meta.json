@@ -1,0 +1,26 @@
+{
+  "name": "hyb5_chi6_p43",
+  "description": "6-stage chi + P(43,1) (reduced stages, P-box compensates)",
+  "screen_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "practrand_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "goldens": [
+    {
+      "val": "0x0",
+      "key": "0x123456789abcdef0",
+      "out": "0x6baae969dfb98ef3"
+    },
+    {
+      "val": "0x123456789abcdef0",
+      "key": "0x0",
+      "out": "0xe165fa3e44678cb5"
+    }
+  ],
+  "rtl_top": "hyb5_chi6_p43",
+  "composition": "batch-5 P-box-augmented chi/AND cascade"
+}

@@ -1,0 +1,25 @@
+{
+ "name": "hyb7_and3_6",
+ "description": "6-stage 3-input AND cascade: x ^= (ra&rb&rc)^rd (control)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xb335a12ec80d1ed8"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x39fab27953d31c9e"
+  }
+ ],
+ "rtl_top": "hyb7_and3_6"
+}

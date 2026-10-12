@@ -141,52 +141,29 @@ def _reduction_logps(S):
     return lps
 
 
-def screen_calibrated(fn, name, verbose=True):
-    """Full calibrated screen. Returns a result dict with raw and calibrated
-    verdicts. See module docstring for the method.
+def screen_marginal(fn, name, verbose=True):
+    """Standalone marginal PB/RD screen (S1b of screen_calibrated).
 
-    S1 order (amended): LIN/DIFF run FIRST on SEQ outputs; the 468-cell
-    marginal (PB/RD) screen is skipped on a LIN/DIFF kill (early exit).
+    Runs the 468-cell marginal screen: per-bit (PB) + reduction (RD) families
+    over all scenarios x KEYS, Fisher-combine + Holm-Bonferroni, alpha=0.01.
+    Deterministic given fn (fixed scenario vectors, no RNG).
+
+    Triage-upgrade gate (O143, 2026-10-12): run this at triage on the Python
+    model and REJECT if n_pb_reject >= 1 or n_rd_reject >= 1. Sound: S0a
+    XCHECK (10000/10000 C==Python) guarantees the C bundle matches, so the
+    triage verdict == the S1 verdict for every candidate that reaches S1
+    (43/43 historical marginal kills; 0/6 battery-passers rejected).
+
+    Returns dict with verdict ("MARGINAL_PASS"/"MARGINAL_FLAG"), rej lists,
+    counts, and raw worst|z| values.
     """
     scens = _scenario_vectors()
     K = np.uint64
 
-    # ---- S1a: LIN/DIFF first (binding constraint; fast kill) ----
-    from screen_lindiff import screen_lindiff
-    S_seq = {}
-    for key in KEYS:
-        V = np.arange(N, dtype=np.uint64)  # SEQ scenario
-        S = np.asarray(fn(V, np.full(N, K(key), dtype=np.uint64)),
-                       dtype=np.uint64)
-        S_seq[("SEQ", key)] = S
-    ld_res = screen_lindiff(S_seq, name, verbose=verbose)
-    if ld_res["verdict"] == "CAL_FLAG":
-        # Early kill: skip the marginal screen entirely.
-        if verbose:
-            print(f"[{name}] S1 LIN/DIFF KILL -> CAL_FLAG (marginal screen skipped)")
-        return dict(
-            name=name,
-            cal_verdict="CAL_FLAG",
-            lin_verdict=ld_res["lin_verdict"],
-            diff_verdict=ld_res["diff_verdict"],
-            cal_rejected_lin=ld_res["rej_lin"],
-            cal_rejected_diff=ld_res["rej_diff"],
-            lin_D=ld_res["lin_D"],
-            diff_worst=ld_res["diff_worst"],
-            n_lin_cells=ld_res["n_lin_cells"],
-            n_diff_cells=ld_res["n_diff_cells"],
-            s1_kill=True,
-            # PB/RD not run
-            cal_rejected_perbit=[], cal_rejected_red=[],
-            n_perbit_cells=0, n_red_cells=0,
-        )
-
-    # ---- S1b: marginal screen (PB/RD) only if LIN/DIFF pass ----
     perbit_cells = []      # (cell_id, [64 logps])
     red_cells = []         # (cell_id, [9 logps])
     raw_pb = {}            # scen -> [worst|z|, loc]
     raw_rd = {}            # scen -> [worst|z|, loc]
-    S_cache = dict(S_seq)  # reuse SEQ outputs
 
     for key in KEYS:
         kb = np.full(N, K(key), dtype=np.uint64)
@@ -203,12 +180,9 @@ def screen_calibrated(fn, name, verbose=True):
                 r[0] = mz
                 r[1] = (key, int(zarr.argmax()))
             if scen in ("SEQ", "PTR-j8"):
-                S_cache[(scen, key)] = S
                 lps = _reduction_logps(S)
                 red_cells.append(((scen, key), lps))
-                # raw reduction worst |z| for continuity: recompute cheaply
-                # from the same stats is awkward; approximate via max over the
-                # underlying z's is not stored -> recompute max|z| directly:
+                # raw reduction worst |z| for continuity
                 rz = 0.0
                 rloc = None
                 for X in LEMURE_XS:
@@ -251,6 +225,84 @@ def screen_calibrated(fn, name, verbose=True):
     rd_logps = [(cid, fisher_logp(lps)) for cid, lps in red_cells]
     rej_pb = holm_reject(pb_logps)
     rej_rd = holm_reject(rd_logps)
+
+    verdict = "MARGINAL_PASS" if not rej_pb and not rej_rd else "MARGINAL_FLAG"
+    gw_pb = max(raw_pb.items(), key=lambda kv: kv[1][0])
+    gw_rd = max(raw_rd.items(), key=lambda kv: kv[1][0])
+    res = dict(
+        name=name,
+        verdict=verdict,
+        n_pb_reject=len(rej_pb),
+        n_rd_reject=len(rej_rd),
+        rejected_perbit=[(f"{c[0]}", f"{c[1]:#018x}" if isinstance(c[1], int) and c[0] != "KEY-SWEEP" else c[1]) for c in rej_pb],
+        rejected_red=[(f"{c[0]}", f"{c[1]:#018x}") for c in rej_rd],
+        raw_worst_perbit_z=gw_pb[1][0],
+        raw_worst_red_z=gw_rd[1][0],
+        n_perbit_cells=len(pb_logps),
+        n_red_cells=len(rd_logps),
+        # full intermediate state for screen_calibrated's report fields
+        _rej_pb=rej_pb,
+        _rej_rd=rej_rd,
+        _pb_logps=pb_logps,
+        _rd_logps=rd_logps,
+        _raw_pb=raw_pb,
+        _raw_rd=raw_rd,
+    )
+    if verbose:
+        print(f"[{name}] marginal: PB rej={len(rej_pb)} RD rej={len(rej_rd)} "
+              f"(raw max|z| pb={gw_pb[1][0]:.2f} rd={gw_rd[1][0]:.2f}) -> {verdict}")
+    return res
+
+
+def screen_calibrated(fn, name, verbose=True):
+    """Full calibrated screen. Returns a result dict with raw and calibrated
+    verdicts. See module docstring for the method.
+
+    S1 order (amended): LIN/DIFF run FIRST on SEQ outputs; the 468-cell
+    marginal (PB/RD) screen is skipped on a LIN/DIFF kill (early exit).
+    """
+    scens = _scenario_vectors()
+    K = np.uint64
+
+    # ---- S1a: LIN/DIFF first (binding constraint; fast kill) ----
+    from screen_lindiff import screen_lindiff
+    S_seq = {}
+    for key in KEYS:
+        V = np.arange(N, dtype=np.uint64)  # SEQ scenario
+        S = np.asarray(fn(V, np.full(N, K(key), dtype=np.uint64)),
+                       dtype=np.uint64)
+        S_seq[("SEQ", key)] = S
+    ld_res = screen_lindiff(S_seq, name, verbose=verbose)
+    if ld_res["verdict"] == "CAL_FLAG":
+        # Early kill: skip the marginal screen entirely.
+        if verbose:
+            print(f"[{name}] S1 LIN/DIFF KILL -> CAL_FLAG (marginal screen skipped)")
+        return dict(
+            name=name,
+            cal_verdict="CAL_FLAG",
+            lin_verdict=ld_res["lin_verdict"],
+            diff_verdict=ld_res["diff_verdict"],
+            cal_rejected_lin=ld_res["rej_lin"],
+            cal_rejected_diff=ld_res["rej_diff"],
+            lin_D=ld_res["lin_D"],
+            diff_worst=ld_res["diff_worst"],
+            n_lin_cells=ld_res["n_lin_cells"],
+            n_diff_cells=ld_res["n_diff_cells"],
+            s1_kill=True,
+            # PB/RD not run
+            cal_rejected_perbit=[], cal_rejected_red=[],
+            n_perbit_cells=0, n_red_cells=0,
+        )
+
+    # ---- S1b: marginal screen (PB/RD) only if LIN/DIFF pass ----
+    # (O143 triage-upgrade: standalone screen_marginal, shared with triage.)
+    marg = screen_marginal(fn, name, verbose=False)
+    rej_pb = marg["_rej_pb"]
+    rej_rd = marg["_rej_rd"]
+    pb_logps = marg["_pb_logps"]
+    rd_logps = marg["_rd_logps"]
+    raw_pb = marg["_raw_pb"]
+    raw_rd = marg["_raw_rd"]
 
     # secondary Bonferroni-on-max|z| check (valid under dependence):
     # scenario-level Bonferroni on the raw worst|z| (conservative, informational).

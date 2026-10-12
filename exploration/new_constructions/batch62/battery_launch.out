@@ -1,0 +1,6 @@
+agentwork-launch: tag=track6/b62-battery schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+[2026-10-12T11:09:05+00:00] backoff CLEAR -- starting batch-62 staged battery for: t6_b62_22 t6_b62_25 t6_b62_33 t6_b62_17 t6_b62_26 t6_b62_9 t6_b62_3 t6_b62_6 t6_b62_21 t6_b62_36
+[2026-10-12T11:09:05+00:00] BATTERY t6_b62_22 (start_stage=1)
+[2026-10-12T11:17:54+00:00] BATTERY t6_b62_22 rc=2
+BATTERY-FAIL stage=S1-screen [t6_b62_22] (see /home/hatch/workspace/mix/exploration/fast_battery/results/t6_b62_22/battery.log)
+[2026-10-12T11:17:54+00:00] BATTERY t6_b62_25 (start_stage=1)

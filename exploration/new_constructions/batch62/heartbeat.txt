@@ -1,1 +1,2 @@
-2026-10-12 11:02:40 b62-s0 rank 33 done
+2026-10-12T11:09:20Z
+battery supervisor: S0 sweep COMPLETE 37/37 (launcher exited clean); eligibility adjudicated raw; 10 size-axis challengers queued; battery launching (tag track6/b62-battery)

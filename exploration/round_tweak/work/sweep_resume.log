@@ -4039,3 +4039,9 @@ agentwork-launch: tag=track1/sweep-restart schedulers:[none [mq-deadline]  ] ion
 [sweep 10:48:22] backoff: 5 heavy pipelines active, sleeping 300s
 [sweep 10:53:22] backoff: 4 heavy pipelines active, sleeping 300s
 [sweep 10:58:22] backoff: 5 heavy pipelines active, sleeping 300s
+[sweep 11:03:22] backoff: 2 heavy pipelines active, sleeping 300s
+[sweep 11:08:22] backoff: 2 heavy pipelines active, sleeping 300s
+[sweep 11:13:23] backoff: 4 heavy pipelines active, sleeping 300s
+[sweep 11:18:23] backoff: 5 heavy pipelines active, sleeping 300s
+[sweep 11:23:23] backoff: 4 heavy pipelines active, sleeping 300s
+[sweep 11:28:23] backoff: 4 heavy pipelines active, sleeping 300s

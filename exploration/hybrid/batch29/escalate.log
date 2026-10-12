@@ -69,3 +69,13 @@ BATTERY-FAIL stage=S1-screen [hyb29_mu5_018] (see /home/hatch/workspace/mix/expl
 BATTERY-FAIL stage=S3-practrand [hyb29_mu5_019] (see /home/hatch/workspace/mix/exploration/fast_battery/results/hyb29_mu5_019/battery.log)
 === hyb29_mu5_019 battery rc=2 2026-10-12T11:00:45Z ===
 === ESCALATE hyb29_mu5_021 2026-10-12T11:00:46Z ===
+[S1 hyb29_mu5_021] verdict: FLAG
+=== S1 [hyb29_mu5_021] rc=2 wall=338s
+BATTERY-FAIL stage=S1-screen [hyb29_mu5_021] (see /home/hatch/workspace/mix/exploration/fast_battery/results/hyb29_mu5_021/battery.log)
+=== hyb29_mu5_021 battery rc=2 2026-10-12T11:06:31Z ===
+=== ESCALATE hyb29_mu5_026 2026-10-12T11:06:33Z ===
+[S1 hyb29_mu5_026] verdict: FLAG
+=== S1 [hyb29_mu5_026] rc=2 wall=112s
+BATTERY-FAIL stage=S1-screen [hyb29_mu5_026] (see /home/hatch/workspace/mix/exploration/fast_battery/results/hyb29_mu5_026/battery.log)
+=== hyb29_mu5_026 battery rc=2 2026-10-12T11:08:38Z ===
+=== ESCALATE hyb29_mu5_029 2026-10-12T11:08:39Z ===

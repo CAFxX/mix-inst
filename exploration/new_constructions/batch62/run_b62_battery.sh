@@ -1,9 +1,11 @@
 #!/bin/bash
 # Batch-62 staged battery escalation (track-6):
-# cost-eligible keeps (S0 STRICTLY <18.6u) in z-order ->
+# FRONTIER-ELIGIBLE keeps (Pareto-nondominated vs Frontier S, adjudicated
+# raw from s0_all.log vs PARETO.md 2026-10-12; speed axis honestly closed --
+# ZERO sub-18.6u, so this run is the SIZE axis) in z-order (delay, cells) ->
 # staged battery S1->S2->S3->S4 (run_fast_battery.sh stops at the first
 # kill) -> Q1 SAC/BIC (sac_z5=0 MANDATORY for Frontier-S claims).
-# A Q1-clearing keep at <18.6u -> FRONTIER CHALLENGER (O127+,
+# A Q1-clearing keep -> FRONTIER CHALLENGER (O142+,
 # PARETO/RETAINED/RTL update per chain rules).
 # Usage: run_b62_battery.sh <cand> [<cand> ...]
 # Backoff-poll <=12h with CLEARED-FLAG single gate (AGENTS.md lesson).

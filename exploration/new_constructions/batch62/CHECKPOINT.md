@@ -41,3 +41,28 @@ The PractRand prescreen compiles a per-try gen binary into
 - Heartbeat: touch `heartbeat.txt` every ~20 min while live.
 - Never two workers on one candidate: check `pgrep -f track6/b62`
   and heartbeat.txt mtime before relaunching.
+
+## Battery escalation (supervisor, 2026-10-12 13:09 CEST)
+
+- S0 sweep COMPLETE 37/37 ranks (11:05:19Z), per-rank XCHECK clean,
+  launcher exited (no fail-loud needed). Results in `s0_all.log`.
+- Eligibility adjudicated RAW from s0_all.log vs Frontier S (PARETO.md)
+  -- CORRECTS the 13:05 report's list: t6_b62_8 EXCLUDED (dominated by
+  t6_b59_47 18.6/6656/21830); t6_b62_26 ADDED (dominates t6_b59_0
+  19.1/6358/20580); t6_b62_36 ADDED (dominates t6_b33c 19.8/6133/19817);
+  t6_b62_6, t6_b62_21 dominate t6_b33c; t6_b62_10 excluded as
+  near-duplicate of the speed point (18.6u tie, -3 cells/+7 area).
+- Queue (10, z-order, `queue_b62_size.txt`): t6_b62_22, t6_b62_25,
+  t6_b62_33, t6_b62_17, t6_b62_26, t6_b62_9, t6_b62_3, t6_b62_6,
+  t6_b62_21, t6_b62_36. All promoted to fast_battery/candidates/.
+- Marginal nondominated keeps (5, 11, 12, 13, 14, 19, 24, 28, 30, 35)
+  DEFERRED not killed -- escalate if the strong ten all fail.
+  Dominated keeps (0, 1, 2, 4, 7, 15, 16, 18, 20, 23, 27, 29, 31, 32, 34)
+  get no battery; covered by the batch S0 verdict (O142 reserved).
+- Battery launched 13:09 CEST: setsid agentwork-launch.sh --nice 19
+  --tag track6/b62-battery -- run_b62_battery.sh <10 keeps>
+  (S1->S2->S3->S4 + Q1 on survivors; logs battery_<cand>.log,
+  summary run_b62_battery.log). run_b62_battery.sh header comment fixed
+  (was stale "S0 STRICTLY <18.6u" wording).
+- Next O-number: O142 (claimed at verdict write time).
+- workreg track6-batch62 heartbeat'd 11:09:20Z; heartbeat.txt live.

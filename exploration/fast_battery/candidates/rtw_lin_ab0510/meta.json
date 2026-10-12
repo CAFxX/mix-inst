@@ -1,0 +1,26 @@
+{
+ "name": "rtw_lin_ab0510",
+ "description": "tweak N1: chioff13all with lin(5,10) on rounds 1-5",
+ "composition": "tweak N1: chioff13all with lin(5,10) on rounds 1-5",
+ "rtl_top": "rtw_lin_ab0510",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x58ec779f909af78a"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x860e3a85501f3969"
+  }
+ ]
+}

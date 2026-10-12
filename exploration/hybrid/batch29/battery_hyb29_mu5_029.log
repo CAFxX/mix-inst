@@ -1,0 +1,23 @@
+=== S0a [hyb29_mu5_029] started 2026-10-12T11:08:43Z
+--- S0a tail:
+XCHECK hyb29_mu5_029: PASS 10000/10000 C==Python
+=== S0a [hyb29_mu5_029] rc=0 wall=4s
+=== S1 [hyb29_mu5_029] started 2026-10-12T11:08:47Z
+--- S1 tail:
+  [DIFF] key=0x123456789abcdef worst|z|=1.9 fisher_logp=-0.54 bonf_logp=0.13
+  [DIFF] key=0xf0b52a9e7d8ba2b5 worst|z|=3.8 fisher_logp=-3.21 bonf_logp=-5.81
+  [DIFF] key=0x92988f142674743 worst|z|=2.3 fisher_logp=-0.52 bonf_logp=-0.96
+  LIN: PASS (rej=0)  DIFF: PASS (rej=0)
+[S1 hyb29_mu5_029] LIN/DIFF 58s: LIN PASS DIFF PASS; marginal 486s: PB rej=0 RD rej=0
+[S1 hyb29_mu5_029] verdict: CAL_PASS
+=== S1 [hyb29_mu5_029] rc=0 wall=493s
+=== S2 [hyb29_mu5_029] started 2026-10-12T11:17:02Z
+--- S2 tail:
+  0xe000000000000000      2.4      230.6            0
+  0x000000000000000f      2.3      288.4            0
+  0x00000000f0000000      2.5      231.3            0
+  0x0000000f00000000      2.5      263.7            0
+  0xf000000000000000      2.5      229.4            0
+PASS max_repeats=0 max|z|=84.4 (all 115 deltas)
+=== S2 [hyb29_mu5_029] rc=0 wall=795s
+=== S3 [hyb29_mu5_029] started 2026-10-12T11:30:17Z

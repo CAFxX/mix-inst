@@ -31,6 +31,10 @@ Controls (fail-loud, run `calibrate` first):
   CALIB-1: and1/b33c 6-stage must give z=3.3 (harness sanity).
   CALIB-2a: MU5-324 (5-stage) must KEEP (n_reject=0) -- bar sanity.
   CALIB-2b: linear-4 must be REJECTED (n_reject>0) -- negative control.
+  CALIB-3a: hyb28_mu5_324 marginal PASS (positive -- the gate must not
+           over-reject the proven-clean base).
+  CALIB-3b: hyb29_mu5_005 marginal REJECT with PB>=1 (negative -- the
+           exact S1 marginal kill reproduced at triage).
 
 Unit check (`selftest`, fail-loud): perturbation operator -- 200
 draws each differ from the 324 base in 1..3 positions, all stages
@@ -53,9 +57,22 @@ sys.path.insert(0, "/home/hatch/workspace/mix/exploration/fast_battery/src")
 sys.path.insert(0, "/home/hatch/workspace/mix/exploration")
 from lin_diff import diff_cell_logps, holm_reject
 from screen_lib import KEYS, N
+from screen_cal import screen_marginal
 
 M64 = np.uint64(0xFFFFFFFFFFFFFFFF)
 KEYS10 = [int(k) for k in KEYS]
+
+# O143 marginal-PB triage-upgrade (2026-10-12): marginal gate. When True,
+# keeps must also pass the S1 marginal PB/RD screen (screen_marginal) at
+# triage. Set False to revert to the pre-O143 fisher-only bar. Sound:
+# screen_marginal is deterministic and S0a XCHECK guarantees C==Python.
+MARGINAL_GATE = True
+
+# hyb29_mu5_005 schedule (S1-marginal-KILLED, PB rej=2) -- CALIB-3b negative
+# control. Verbatim from fast_battery/candidates/hyb29_mu5_005/meta.json.
+MARGKILL_005 = [("MUXD", 62, 50, 55, 2), ("MUXD", 48, 58, 9, 30),
+                ("MUXD", 44, 45, 7, 63), ("MUXD", 49, 26, 32, 40),
+                ("MUXD", 46, 51, 43, 44)]
 
 # hyb28_mu5_324 winner schedule (19.3u, S0->S4+Q1 clean, Frontier S
 # cells+area) -- verbatim from
@@ -82,6 +99,21 @@ def apply_stage(x, st):
     assert len({s, a, b}) == 3, "degenerate mux draw"
     return (x ^ mux(rotl(x, s), rotl(x, a), rotl(x, b)) ^ rotl(x, d)) & M64
 
+
+def eval_marginal(stages, name="try"):
+    """O143 marginal PB/RD gate on the Python model. Returns
+    (keep, n_pb, n_rd, detail). keep=False if PB rej>=1 or RD rej>=1."""
+    def fn(V, K):
+        x = (V ^ K) & M64
+        for st in stages:
+            x = apply_stage(x, st)
+        return ((x ^ rotl(K, 13)) & M64).astype(np.uint64)
+    r = screen_marginal(fn, "b29-marg-%s" % name, verbose=False)
+    keep = r["verdict"] == "MARGINAL_PASS"
+    detail = "PB rej=%d RD rej=%d rawmax|z|=(%.1f,%.1f)" % (
+        r["n_pb_reject"], r["n_rd_reject"],
+        r["raw_worst_perbit_z"], r["raw_worst_red_z"])
+    return keep, r["n_pb_reject"], r["n_rd_reject"], detail
 
 def eval_sched(stages):
     """Exact S1-DIFF triage with the GATE's rule: returns
@@ -234,7 +266,15 @@ def main():
         print("CALIB-2b linear-4: n_reject=%d maxworst|z|=%.1f "
               "min_fisher=%.1f (expect REJECT: >0 rejections) %s"
               % (nrej2b, w2b, flp2b, "PASS" if ok2b else "FAIL"), flush=True)
-        sys.exit(0 if (ok1 and ok2a and ok2b) else 1)
+        k3a, p3a, r3a, d3a = eval_marginal(WINNER_TUPLES, "calib-3a")
+        ok3a = k3a and p3a == 0 and r3a == 0
+        print("CALIB-3a hyb28_mu5_324 marginal: %s (expect PASS) %s"
+              % (d3a, "PASS" if ok3a else "FAIL"), flush=True)
+        k3b, p3b, r3b, d3b = eval_marginal(MARGKILL_005, "calib-3b")
+        ok3b = (not k3b) and p3b >= 1
+        print("CALIB-3b hyb29_mu5_005 marginal: %s (expect REJECT PB>=1) %s"
+              % (d3b, "PASS" if ok3b else "FAIL"), flush=True)
+        sys.exit(0 if (ok1 and ok2a and ok2b and ok3a and ok3b) else 1)
     if len(sys.argv) > 1 and sys.argv[1] == "selftest":
         selftest()
         return
@@ -254,10 +294,20 @@ def main():
         flag = "KEEP" if nrej == 0 else "kill"
         if nrej > 0:
             kills += 1
+        else:
+            # O143 marginal gate (reversible via MARGINAL_GATE)
+            km, pm, rm, dm = (True, 0, 0, "gate-off")
+            if MARGINAL_GATE:
+                km, pm, rm, dm = eval_marginal(stages, "t%03d" % t)
+            if not km:
+                kills += 1
+                flag = "kill(G5-marginal %s)" % dm
+            else:
+                flag = "KEEP"
         print("try %3d m=%d n_reject=%d maxworst|z|=%8.1f min_fisher=%7.1f "
               "worstkey=%#x %s" %
               (t, m, nrej, wz, flp, key, flag), flush=True)
-        if nrej == 0:
+        if flag == "KEEP":
             keep.append((wz, stages))
             if keep_path:
                 rec = {"z": wz, "n_reject": nrej, "min_fisher": flp,

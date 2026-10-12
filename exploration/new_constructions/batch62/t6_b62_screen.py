@@ -23,7 +23,7 @@ positions (of 20) resampled Uniform{0..63}; per-stage s/a/b
 pairwise-distinctness re-checked on resample (b51 cut #10); d free.
 m>=1 so exact base rediscovery is impossible by construction.
 
-KEEP bar (all four gates, cost order):
+KEEP bar (all five gates, cost order):
   G1 fisher triage: n_reject == 0, Holm-Bonferroni ALPHA=0.01 on
      per-key DIFF fisher_logp (outer lin_diff gate verbatim).
   G2 inner DIFF-SEQ + LIN gate (screen_lindiff.screen_lindiff, the
@@ -36,6 +36,9 @@ KEEP bar (all four gates, cost order):
      p < 1e-3. 2026-10-12: any non-Low1 PractRand FAIL (e.g. BDayS2)
      also REJECTs -- -tlfail halts the run early, which is a real
      detection, not infra (try-35 misclassification fix).
+  G5 marginal PB/RD gate (O143 triage-upgrade): screen_marginal on the
+     Python model; REJECT if PB rej>=1 or RD rej>=1. Kills S1-marginal-
+     doomed candidates before S0 bundling. Reversible via MARGINAL_GATE.
 
 Controls (fail-loud, run `calibrate` first):
   CALIB-1: and1/b33c 6-stage must give z=3.3 (harness sanity).
@@ -52,6 +55,10 @@ Controls (fail-loud, run `calibrate` first):
            mild suspicion p=3.7e-5 must trip the p<1e-3 rule).
   CALIB-4b: t6_b59_47 Low1/64 prescreen PASS (positive).
   CALIB-4c: t6_b57_0 Low1/64 prescreen REJECT (failed at 16MB).
+  CALIB-5a: t6_b59_47 marginal PASS (positive -- the gate must not
+           over-reject the proven-clean base).
+  CALIB-5b: t6_b61_24 marginal REJECT with RD>=1 (negative -- the
+           exact S1 marginal kill reproduced at triage).
 
 Unit check (`selftest`, fail-loud): single-base perturbation operator
 -- 200 draws, each 1..3 positions off t6_b59_47, all stages MUXD-valid
@@ -77,9 +84,16 @@ sys.path.insert(0, EXP)
 from lin_diff import diff_cell_logps, holm_reject
 from screen_lib import KEYS, N
 from screen_lindiff import screen_lindiff
-from screen_cal import _reduction_logps, fisher_logp
+from screen_cal import _reduction_logps, fisher_logp, screen_marginal
 
 M64 = np.uint64(0xFFFFFFFFFFFFFFFF)
+
+# O143 marginal-PB triage-upgrade (2026-10-12): G5 marginal gate. When True,
+# keeps must also pass the S1 marginal PB/RD screen (screen_marginal) at
+# triage. Set False to revert to the pre-O143 4-gate bar. The gate is sound:
+# screen_marginal is deterministic and S0a XCHECK guarantees C==Python, so
+# a triage rejection == an S1 rejection (43/43 historical; 0/6 passers hit).
+MARGINAL_GATE = True
 
 # 2026-10-12: /tmp is a 512M tmpfs shared with other projects' writers.
 # gcc's assembler temp files died with ENOSPC on try-64 ("error closing
@@ -355,6 +369,22 @@ def eval_lin4():
     return len(holm_reject(cells)), worst, min_flp
 
 
+def eval_marginal(stages, name="try"):
+    """G5 (O143): marginal PB/RD gate on the Python model. Returns
+    (keep, n_pb, n_rd, detail). keep=False if PB rej>=1 or RD rej>=1."""
+    def fn(V, K):
+        x = (V ^ K) & M64
+        for st in stages:
+            x = apply_stage(x, st)
+        return ((x ^ rotl(K, 13)) & M64).astype(np.uint64)
+    r = screen_marginal(fn, "b62-marg-%s" % name, verbose=False)
+    keep = r["verdict"] == "MARGINAL_PASS"
+    detail = "PB rej=%d RD rej=%d rawmax|z|=(%.1f,%.1f)" % (
+        r["n_pb_reject"], r["n_rd_reject"],
+        r["raw_worst_perbit_z"], r["raw_worst_red_z"])
+    return keep, r["n_pb_reject"], r["n_rd_reject"], detail
+
+
 def calibrate():
     ok = True
 
@@ -397,6 +427,14 @@ def calibrate():
     check("4b t6_b59_47 Low1 prescreen PASS", k4b, d4b)
     k4c, d4c = eval_low1(T6_B57_0, "calib-570")
     check("4c t6_b57_0 Low1 prescreen REJECT", not k4c, d4c)
+    # O143 marginal gate calibration (only meaningful when MARGINAL_GATE on,
+    # but the instrument itself is validated regardless).
+    k5a, p5a, r5a, d5a = eval_marginal(BASE_47, "calib-5a")
+    check("5a t6_b59_47 marginal PASS (positive)", k5a and p5a == 0 and r5a == 0,
+          d5a)
+    k5b, p5b, r5b, d5b = eval_marginal(T6_B61_24, "calib-5b")
+    check("5b t6_b61_24 marginal REJECT RD>=1 (negative)", not k5b and r5b >= 1,
+          d5b)
     print("CALIBRATION %s" % ("PASS" if ok else "FAIL"), flush=True)
     sys.exit(0 if ok else 1)
 
@@ -476,7 +514,7 @@ def main():
     rng = np.random.default_rng(seed)
     keep = []
     kills = 0
-    gkills = [0, 0, 0, 0]
+    gkills = [0, 0, 0, 0, 0]
     minz = float("inf")
     for t in range(n_try):
         stages, m = draw_perturbed(rng)
@@ -513,6 +551,15 @@ def main():
             gkills[3] += 1
             print("try %3d m=%d G4-low1 KILL %s" % (t, m, d4), flush=True)
             continue
+        # G5: marginal PB/RD (O143 triage-upgrade; reversible via MARGINAL_GATE)
+        if MARGINAL_GATE:
+            k5, p5, r5, d5 = eval_marginal(stages, tag)
+            if not k5:
+                kills += 1
+                gkills[4] += 1
+                print("try %3d m=%d G5-marginal KILL %s" % (t, m, d5),
+                      flush=True)
+                continue
         print("try %3d m=%d KEEP fisher z=%.1f inner diffz=%.1f %s" %
               (t, m, wz, d2, d4), flush=True)
         keep.append((wz, stages, m))

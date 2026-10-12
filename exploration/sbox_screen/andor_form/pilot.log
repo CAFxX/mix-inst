@@ -1,0 +1,44 @@
+agentwork-launch: tag=track2/andor-form schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+try   0 B/H3 ANDORB (13, 25, 36, 60, 35)         inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|= 13319.8 min_fisher=   -inf worstkey=0x92988f142674743 inner-kill
+try   1 B/H3 ANDORB (5, 17, 47, 51, 21)          inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|= 22403.3 min_fisher=   -inf worstkey=0xaaaaaaaaaaaaaaaa inner-kill
+try   2 B/H3 ANDORB (9, 16, 39, 52, 5)           inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|= 61125.9 min_fisher=   -inf worstkey=0xffffffffffffffff inner-kill
+try   3 B/H3 ANDORB (7, 23, 41, 51, 17)          inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|= 19394.5 min_fisher=   -inf worstkey=0x5555555555555555 inner-kill
+try   4 B/H3 ANDORB (1, 24, 45, 57, 18)          inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|=  4396.2 min_fisher=   -inf worstkey=0xffffffffffffffff inner-kill
+try   5 B/H3 ANDORB (14, 30, 32, 50, 16)         inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|= 13054.9 min_fisher=   -inf worstkey=0x9e3779b97f4a7c15 inner-kill
+try   6 B/H3 ANDORB (11, 24, 38, 58, 4)          inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|=  7326.2 min_fisher=   -inf worstkey=0xffffffffffffffff inner-kill
+try   7 B/H3 ANDORB (5, 17, 32, 56, 58)          inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|= 14765.3 min_fisher=   -inf worstkey=0x123456789abcdef inner-kill
+try   8 B/H3 ANDORB (10, 25, 47, 55, 48)         inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|= 11302.8 min_fisher=   -inf worstkey=0xffffffffffffffff inner-kill
+try   9 B/H3 ANDORB (8, 30, 35, 52, 59)          inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|=114732.9 min_fisher=   -inf worstkey=0x123456789abcdef inner-kill
+try  10 B/H1 ANDORB (6, 29, 39, 51, 46)          inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|=739994.3 min_fisher=   -inf worstkey=0x0 inner-kill
+try  11 B/H1 ANDORB (15, 17, 33, 56, 42)         inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|=391756.4 min_fisher=   -inf worstkey=0xffffffffffffffff inner-kill
+try  12 B/H1 ANDORB (14, 29, 39, 50, 11)         inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|=1144095.4 min_fisher=   -inf worstkey=0xffffffffffffffff inner-kill
+try  13 B/H1 ANDORB (8, 29, 45, 48, 63)          inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|=368540.5 min_fisher=   -inf worstkey=0x9e3779b97f4a7c15 inner-kill
+try  14 B/H1 ANDORB (14, 26, 33, 53, 56)         inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|=368540.5 min_fisher=   -inf worstkey=0xaaaaaaaaaaaaaaaa inner-kill
+try  15 B/H1 ANDORB (6, 31, 36, 60, 50)          inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|=737092.4 min_fisher=   -inf worstkey=0x0 inner-kill
+try  16 X/H3 ANDORX (11, 23, 41, 54, 14)         inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|= 12334.3 min_fisher=   -inf worstkey=0xaaaaaaaaaaaaaaaa inner-kill
+try  17 X/H3 ANDORX (10, 28, 32, 56, 48)         inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|=  5397.6 min_fisher=   -inf worstkey=0xdeadbeefdeadbeef inner-kill
+try  18 X/H3 ANDORX (5, 22, 38, 52, 14)          inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|= 74352.0 min_fisher=   -inf worstkey=0xffffffffffffffff inner-kill
+try  19 X/H3 ANDORX (8, 27, 33, 53, 38)          inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|=  5684.8 min_fisher=   -inf worstkey=0xf0b52a9e7d8ba2b5 inner-kill
+try  20 X/H3 ANDORX (6, 29, 42, 49, 22)          inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|=  6313.4 min_fisher=   -inf worstkey=0xffffffffffffffff inner-kill
+try  21 X/H3 ANDORX (5, 26, 32, 56, 51)          inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|= 13146.0 min_fisher=   -inf worstkey=0xf0b52a9e7d8ba2b5 inner-kill
+try  22 X/H1 ANDORX (13, 21, 45, 50, 25)         inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|=319932.3 min_fisher=   -inf worstkey=0x9e3779b97f4a7c15 inner-kill
+try  23 X/H1 ANDORX (13, 27, 34, 60, 62)         inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|=293451.7 min_fisher=   -inf worstkey=0xffffffffffffffff inner-kill
+try  24 X/H1 ANDORX (14, 24, 38, 55, 62)         inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|=278579.1 min_fisher=   -inf worstkey=0xffffffffffffffff inner-kill
+try  25 X/H1 ANDORX (6, 23, 43, 55, 12)          inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|=182813.6 min_fisher=   -inf worstkey=0xffffffffffffffff inner-kill
+try  26 Y/H3 ANDORY (15, 22, 33, 57, 45)         inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|= 28281.3 min_fisher=   -inf worstkey=0x92988f142674743 inner-kill
+try  27 Y/H3 ANDORY (15, 17, 33, 53, 11)         inner lin=PASS diff=FLAG fisher n_reject=10 maxworst|z|= 17758.5 min_fisher=   -inf worstkey=0x0 inner-kill
+try  28 Y/H3 ANDORY (8, 29, 34, 54, 3)           inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|=206029.5 min_fisher=   -inf worstkey=0x0 inner-kill
+try  29 Y/H3 ANDORY (15, 19, 36, 50, 37)         inner lin=PASS diff=FLAG fisher n_reject=10 maxworst|z|=  8279.7 min_fisher=   -inf worstkey=0x0 inner-kill
+try  30 Y/H3 ANDORY (6, 20, 47, 48, 1)           inner lin=PASS diff=FLAG fisher n_reject=10 maxworst|z|=   306.3 min_fisher=   -inf worstkey=0xf0b52a9e7d8ba2b5 inner-kill
+try  31 Y/H3 ANDORY (9, 24, 36, 53, 51)          inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|=  4383.2 min_fisher=   -inf worstkey=0x0 inner-kill
+try  32 Y/H1 ANDORY (12, 22, 43, 60, 9)          inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|=110264.1 min_fisher=   -inf worstkey=0x92988f142674743 inner-kill
+try  33 Y/H1 ANDORY (15, 27, 40, 63, 7)          inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|=229245.4 min_fisher=   -inf worstkey=0xf0b52a9e7d8ba2b5 inner-kill
+try  34 Y/H1 ANDORY (5, 30, 40, 55, 52)          inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|=278579.1 min_fisher=   -inf worstkey=0x5555555555555555 inner-kill
+try  35 Y/H1 ANDORY (9, 27, 33, 59, 39)          inner lin=FLAG diff=FLAG fisher n_reject=10 maxworst|z|=284383.0 min_fisher=   -inf worstkey=0x5555555555555555 inner-kill
+=== andor_form: 0/36 KEEP (inner_kills=36 fisher_kills=0) (seed=0xb805) ===
+    minz[B/H1]=368540.5
+    minz[B/H3]=4396.2
+    minz[X/H1]=182813.6
+    minz[X/H3]=5397.6
+    minz[Y/H1]=110264.1
+    minz[Y/H3]=306.3

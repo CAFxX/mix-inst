@@ -1,0 +1,26 @@
+{
+ "name": "r14_feist6_alt_rkhi_nw",
+ "description": "6r Feistel, odd rounds S1-F std rk / even rounds chi-F rotating key-half, NO whitening",
+ "composition": "6r Feistel, odd rounds S1-F std rk / even rounds chi-F rotating key-half, NO whitening",
+ "rtl_top": "r14_feist6_alt_rkhi_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x6594645541063b18"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xb983c33c8ea9f622"
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "name": "r14_feist6_alt_chioff_nw",
+ "description": "6r Feistel, odd rounds S1-F / even rounds chi(i+2,i+3)-F, NO whitening",
+ "composition": "6r Feistel, odd rounds S1-F / even rounds chi(i+2,i+3)-F, NO whitening",
+ "rtl_top": "r14_feist6_alt_chioff_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x358e042aba3fe558"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x2d6ed1c3bd088cea"
+  }
+ ]
+}

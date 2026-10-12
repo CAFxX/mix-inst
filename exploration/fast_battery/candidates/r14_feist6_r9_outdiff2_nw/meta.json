@@ -1,0 +1,26 @@
+{
+ "name": "r14_feist6_r9_outdiff2_nw",
+ "description": "6r r9 Feistel + out = W^rotl64(W,7)^rotl64(W,29), NO whitening",
+ "composition": "6r r9 Feistel + out = W^rotl64(W,7)^rotl64(W,29), NO whitening",
+ "rtl_top": "r14_feist6_r9_outdiff2_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x9f2f9fe4b10be0f2"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x13300ce4c542a1b7"
+  }
+ ]
+}

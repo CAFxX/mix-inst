@@ -1,0 +1,26 @@
+{
+ "name": "r15_feist6_db34_nw",
+ "description": "6r Feistel, rounds 3,4 double-F (s1x2); singles [s1,chi,s1,chi], NO whitening",
+ "composition": "6r Feistel, rounds 3,4 double-F (s1x2); singles [s1,chi,s1,chi], NO whitening",
+ "rtl_top": "r15_feist6_db34_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xd5e09567ecc3128f"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xb2d493d834444e8b"
+  }
+ ]
+}

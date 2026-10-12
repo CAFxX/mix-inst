@@ -1,0 +1,26 @@
+{
+ "name": "r15_feist6_alt_wh_nw",
+ "description": "6r Feistel, input whitening W=val^key, then odd S1-F / even chi-F (3,11)",
+ "composition": "6r Feistel, input whitening W=val^key, then odd S1-F / even chi-F (3,11)",
+ "rtl_top": "r15_feist6_alt_wh_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xf21cadb580638c46"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xb983c33c8ea9f622"
+  }
+ ]
+}

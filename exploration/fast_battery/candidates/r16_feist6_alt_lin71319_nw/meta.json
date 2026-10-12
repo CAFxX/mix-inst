@@ -1,0 +1,26 @@
+{
+ "name": "r16_feist6_alt_lin71319_nw",
+ "description": "6r Feistel, odd S1-F(3,11) / even chi-F with lin(7,13,19), NO whitening",
+ "composition": "6r Feistel, odd S1-F(3,11) / even chi-F with lin(7,13,19), NO whitening",
+ "rtl_top": "r16_feist6_alt_lin71319_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x922a1acec59e3f75"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x01ebcf674e976f94"
+  }
+ ]
+}

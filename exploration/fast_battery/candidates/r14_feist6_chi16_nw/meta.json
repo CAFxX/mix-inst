@@ -1,0 +1,26 @@
+{
+ "name": "r14_feist6_chi16_nw",
+ "description": "6r Feistel, chi-F on rounds {1,6}, S1-F elsewhere, NO whitening",
+ "composition": "6r Feistel, chi-F on rounds {1,6}, S1-F elsewhere, NO whitening",
+ "rtl_top": "r14_feist6_chi16_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x546ad15215a82b83"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x39549552beb9afb9"
+  }
+ ]
+}

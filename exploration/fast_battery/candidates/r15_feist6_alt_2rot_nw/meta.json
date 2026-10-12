@@ -1,0 +1,26 @@
+{
+ "name": "r15_feist6_alt_2rot_nw",
+ "description": "6r Feistel, S1/chi alt; rotmix pair per round-block: {1,2}(3,11) {3,4}(7,13) {5,6}(3,11), NO whitening",
+ "composition": "6r Feistel, S1/chi alt; rotmix pair per round-block: {1,2}(3,11) {3,4}(7,13) {5,6}(3,11), NO whitening",
+ "rtl_top": "r15_feist6_alt_2rot_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xa476edcfdf803976"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x5c89e7e4a1c0f120"
+  }
+ ]
+}

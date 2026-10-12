@@ -1,0 +1,26 @@
+{
+ "name": "r15_feist6_alt_rkdiff_nw",
+ "description": "6r Feistel, odd S1-F / even chi-F (3,11); rk=RK32(i)^rotl32(RK32(i+1),8), NO whitening",
+ "composition": "6r Feistel, odd S1-F / even chi-F (3,11); rk=RK32(i)^rotl32(RK32(i+1),8), NO whitening",
+ "rtl_top": "r15_feist6_alt_rkdiff_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x670296635fc9ad28"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x9aa113f53134d72e"
+  }
+ ]
+}

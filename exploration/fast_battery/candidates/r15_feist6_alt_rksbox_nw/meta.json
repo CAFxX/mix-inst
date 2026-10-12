@@ -1,0 +1,26 @@
+{
+ "name": "r15_feist6_alt_rksbox_nw",
+ "description": "6r Feistel, odd S1-F / even chi-F (3,11); rk=sbox_layer32(RK32(i)), NO whitening",
+ "composition": "6r Feistel, odd S1-F / even chi-F (3,11); rk=sbox_layer32(RK32(i)), NO whitening",
+ "rtl_top": "r15_feist6_alt_rksbox_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x2a25d8cde34005a8"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x82771c8b69eb760f"
+  }
+ ]
+}

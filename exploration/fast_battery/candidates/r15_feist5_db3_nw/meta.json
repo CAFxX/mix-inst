@@ -1,0 +1,26 @@
+{
+ "name": "r15_feist5_db3_nw",
+ "description": "5r Feistel, round 3 double-F (s1x2, keys 3,4); singles [s1,chi,chi,s1], NO whitening",
+ "composition": "5r Feistel, round 3 double-F (s1x2, keys 3,4); singles [s1,chi,chi,s1], NO whitening",
+ "rtl_top": "r15_feist5_db3_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x29501766012e1945"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x4a0edf4db8c57b00"
+  }
+ ]
+}

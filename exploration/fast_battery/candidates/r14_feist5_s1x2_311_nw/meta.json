@@ -1,0 +1,26 @@
+{
+ "name": "r14_feist5_s1x2_311_nw",
+ "description": "5r Feistel, F=lin311(S1(lin311(S1(R^rkA))^rkB)), 2 keys/round, NO whitening",
+ "composition": "5r Feistel, F=lin311(S1(lin311(S1(R^rkA))^rkB)), 2 keys/round, NO whitening",
+ "rtl_top": "r14_feist5_s1x2_311_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x463a68768881c856"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xc37a91f2baa38a5d"
+  }
+ ]
+}

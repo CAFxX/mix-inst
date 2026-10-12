@@ -1,0 +1,13 @@
+{
+  "name": "fz24_p",
+  "description": "5-stage [t3,t3,AND,AND,CHI(27,35,7,44)]: search hit z=9.7@16, 16.4@18",
+  "rtl_top": "fz24_p",
+  "screen_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "practrand_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "fz24_l",
+  "description": "4-stage nibble-chi-2rot+diff (likely over budget; proxy probe only)",
+  "rtl_top": "fz24_l",
+  "screen_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "practrand_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ]
+}

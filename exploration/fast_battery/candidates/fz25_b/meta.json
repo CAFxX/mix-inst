@@ -1,0 +1,13 @@
+{
+  "name": "fz25_b",
+  "description": "5-stage shared-lin-diff: p=rotl(x0,7)^rotl(x0,41)",
+  "rtl_top": "fz25_b",
+  "screen_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "practrand_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ]
+}

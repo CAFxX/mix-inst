@@ -1,0 +1,13 @@
+{
+  "name": "fz24_i",
+  "description": "5-stage nibble-chi-2rot: x^=nibchi(x)^rotl(x,1)^rotl(x,61) (dead-bit fix)",
+  "rtl_top": "fz24_i",
+  "screen_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "practrand_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ]
+}

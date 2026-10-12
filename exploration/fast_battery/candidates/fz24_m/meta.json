@@ -1,0 +1,13 @@
+{
+  "name": "fz24_m",
+  "description": "4-stage [t3,t3,AND,CHI]: chi final, ~16.3u est",
+  "rtl_top": "fz24_m",
+  "screen_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "practrand_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ]
+}

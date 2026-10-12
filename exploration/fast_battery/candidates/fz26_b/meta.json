@@ -1,0 +1,13 @@
+{
+  "name": "fz26_b",
+  "description": "4-stage [t3,t3,and,FUSED] alt schedule",
+  "rtl_top": "fz26_b",
+  "screen_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "practrand_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ]
+}

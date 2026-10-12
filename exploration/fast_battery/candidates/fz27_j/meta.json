@@ -1,0 +1,13 @@
+{
+  "name": "fz27_j",
+  "description": "fz24_o chi params permuted (53,31,19,35)",
+  "rtl_top": "fz27_j",
+  "screen_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "practrand_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ]
+}

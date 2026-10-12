@@ -1,0 +1,13 @@
+{
+  "name": "fz26_a",
+  "description": "4-stage [t3,t3,and,FUSED]: x^=(ra&rb)^(~rc&rd)^re^rf",
+  "rtl_top": "fz26_a",
+  "screen_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "practrand_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ]
+}

@@ -1,0 +1,14 @@
+[2026-10-12T00:32:52+00:00] backoff CLEAR -- starting batch-57 staged battery
+[2026-10-12T00:32:52+00:00] BATTERY t6_b57_0 (start_stage=1)
+[2026-10-12T00:35:06+00:00] backoff CLEAR -- starting batch-57 staged battery
+[2026-10-12T00:35:06+00:00] BATTERY t6_b57_0 (start_stage=1)
+[2026-10-12T00:36:44+00:00] NOTE: 00:35Z duplicate battery instance (self-launch, mistaken read of earlier dead-pgrep) SIGTERM'd; original XXXI instance (PID 106384->106411) survives; log partially overwritten, stage verdicts will be rewritten by survivor
+[2026-10-12T00:38:53+00:00] BATTERY t6_b57_0 rc=2
+[2026-10-12T00:38:53+00:00] S4 survivors:
+[2026-10-12T00:38:53+00:00] batch-57 staged battery COMPLETE; survivors:
+[2026-10-12T00:48:49+00:00] backoff CLEAR -- starting batch-57 staged battery
+[2026-10-12T00:48:49+00:00] BATTERY t6_b57_2 (start_stage=1)
+[2026-10-12T00:50:08+00:00] BATTERY t6_b57_2 rc=2
+BATTERY-FAIL stage=S1-screen [t6_b57_2] (see /home/hatch/workspace/mix/exploration/fast_battery/results/t6_b57_2/battery.log)
+[2026-10-12T00:50:08+00:00] S4 survivors:
+[2026-10-12T00:50:08+00:00] batch-57 staged battery COMPLETE; survivors:

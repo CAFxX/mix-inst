@@ -1,0 +1,14 @@
+=== S0a [t6_b57_2] started 2026-10-12T00:48:50Z
+--- S0a tail:
+XCHECK t6_b57_2: PASS 10000/10000 C==Python
+=== S0a [t6_b57_2] rc=0 wall=1s
+=== S1 [t6_b57_2] started 2026-10-12T00:48:51Z
+--- S1 tail:
+  [DIFF] key=0x123456789abcdef worst|z|=1.9 fisher_logp=-0.81 bonf_logp=0.05
+  [DIFF] key=0xf0b52a9e7d8ba2b5 worst|z|=2.5 fisher_logp=-0.66 bonf_logp=-1.38
+  [DIFF] key=0x92988f142674743 worst|z|=2.1 fisher_logp=-0.17 bonf_logp=-0.33
+  LIN: PASS (rej=0)  DIFF: PASS (rej=0)
+[S1 t6_b57_2] LIN/DIFF 15s: LIN PASS DIFF PASS; marginal 76s: PB rej=2 RD rej=0
+[S1 t6_b57_2] verdict: FLAG
+=== S1 [t6_b57_2] rc=2 wall=76s
+BATTERY-FAIL stage=S1-screen [t6_b57_2] (see /home/hatch/workspace/mix/exploration/fast_battery/results/t6_b57_2/battery.log)

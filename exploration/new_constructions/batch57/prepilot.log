@@ -1,0 +1,22 @@
+2026-10-12T00:27:01Z wrapper start: deadline=1791808021 now=1791764821
+2026-10-12T00:27:01Z backoff clear after 1 polls
+2026-10-12T00:27:01Z backoff clear: running calibration
+CALIBRATION exit=0
+CALIB-1 and1/b33c: maxworst|z|=3.3 (expect 3.3) PASS
+CALIB-2 mux/MU5-324: n_reject=0 maxworst|z|=3.24 min_fisher=-3.7 (expect KEEP: 0 rejections; b51/b52/b53 measured z=3.24) PASS
+try   0 n_reject=4 maxworst|z|=    10.9 min_fisher=  -87.7 worstkey=0x0 kill
+try   1 n_reject=8 maxworst|z|=   165.7 min_fisher=   -inf worstkey=0xf0b52a9e7d8ba2b5 kill
+try   2 n_reject=0 maxworst|z|=     3.8 min_fisher=   -6.1 worstkey=0x5555555555555555 KEEP
+try   3 n_reject=10 maxworst|z|=    26.5 min_fisher= -583.9 worstkey=0xdeadbeefdeadbeef kill
+try   4 n_reject=0 maxworst|z|=     3.3 min_fisher=   -4.6 worstkey=0xdeadbeefdeadbeef KEEP
+try   5 n_reject=6 maxworst|z|=    44.2 min_fisher=   -inf worstkey=0xdeadbeefdeadbeef kill
+try   6 n_reject=7 maxworst|z|=    32.4 min_fisher=   -inf worstkey=0xdeadbeefdeadbeef kill
+try   7 n_reject=10 maxworst|z|=    40.7 min_fisher=   -inf worstkey=0x9e3779b97f4a7c15 kill
+try   8 n_reject=1 maxworst|z|=     9.5 min_fisher=  -28.0 worstkey=0xf0b52a9e7d8ba2b5 kill
+try   9 n_reject=5 maxworst|z|=    24.1 min_fisher= -252.3 worstkey=0xdeadbeefdeadbeef kill
+try  10 n_reject=0 maxworst|z|=     2.9 min_fisher=   -5.2 worstkey=0xffffffffffffffff KEEP
+try  11 n_reject=8 maxworst|z|=    30.9 min_fisher= -428.9 worstkey=0xdeadbeefdeadbeef kill
+=== muxD5f: 3/12 KEEP minz=2.9 (seed=0xb571) ===
+KEEP schedules -> prepilot_keeps.jsonl
+muxD5f pre-pilot exit=0
+2026-10-12T00:27:30Z PRE-PILOT COMPLETE

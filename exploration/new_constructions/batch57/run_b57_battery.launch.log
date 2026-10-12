@@ -1,0 +1,10 @@
+agentwork-launch: tag=track6/b57-battery schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+[2026-10-12T00:32:52+00:00] backoff CLEAR -- starting batch-57 staged battery
+[2026-10-12T00:32:52+00:00] BATTERY t6_b57_0 (start_stage=1)
+agentwork-launch: tag=track6/b57-battery schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+[2026-10-12T00:35:06+00:00] backoff CLEAR -- starting batch-57 staged battery
+[2026-10-12T00:35:06+00:00] BATTERY t6_b57_0 (start_stage=1)
+[2026-10-12T00:38:53+00:00] BATTERY t6_b57_0 rc=2
+grep: battery_t6_b57_0.log: binary file matches
+[2026-10-12T00:38:53+00:00] S4 survivors:
+[2026-10-12T00:38:53+00:00] batch-57 staged battery COMPLETE; survivors:

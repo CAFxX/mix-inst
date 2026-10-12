@@ -68,3 +68,37 @@
   load 4.96; in-wrapper backoff clear after 1 poll).
 - Heartbeat re-touched at pilot launch.
 - **Frontier unchanged**: hyb28_mu5_324 at 19.3u.
+
+## 2026-10-12 ~02:15 CEST — Batch-56 TERMINAL adjudication (supervisor incarnation, o2 escalation brief)
+
+- **o0/o1 re-verified from raw** (`s0_t6_b56_o{0,1}.log`): o0 crit=20.1u
+  (5733 cells, 16637 area), o1 crit=19.4u (6242, 18482); XCHECK clean
+  both; ref mul64 103.5u. **COST-DOOMED** (strict <19.3u). Recorded as
+  **O99** in VERDICT_SCOPE.md (scoped to the two schedules, NOT the form).
+- **o2 escalated per pre-registered rule**: `gen_b56_bundle.py` rank=2
+  -> `fast_battery/candidates/t6_b56_o2` (OAAND(30,19,7,44)@pos1, z=3.06,
+  and_pos=1) — bit-exact C-vs-Python 2000/2000 OK + screener-vs-bundle
+  500/500 OK; zero-corner/degeneracy fail-loud asserts fired clean. S0
+  via `run_b56_s0_o2.sh` (setsid nice-19, tag track6/b56-escal,
+  cleared-flag backoff, 1 poll, load 2.93): **crit=19.5u COST-DOOMED**,
+  XCHECK clean, S0 COMPLETE.
+- **o3 escalated** (doomed -> next-best before form verdict): rank=3 ->
+  `t6_b56_o3` (OAAND(53,61,9,28)@pos1, z=3.56, and_pos=1) — bit-exact
+  2000/2000 + 500/500 OK; S0 via `run_b56_s0_o3.sh` (backoff CLEAR,
+  1 poll): **crit=19.5u COST-DOOMED**, XCHECK clean, ref stable.
+- **FORM VERDICT (4/4 >= 3): hetMOA5 COST-CLOSED in this construction**,
+  recorded as **O100**: measured 20.1/19.4/19.5/19.5u vs DESIGN.md
+  projection 19.0-19.5u (tight cluster at the high end; o0 exceeded it);
+  the OR gate's extra level costs ~0.1-0.8u vs the AND3 hetero
+  (b55 f0 18.8u). No staged battery was ever cost-eligible — the form
+  died at S0, no quality verdict. Re-test trigger: any untested keep
+  (o4 z=3.58, o5 z=3.84, o6 z=4.18, o7 z=4.54, o8 z=4.55) clearing
+  <19.3u re-opens the form. NOT about ANDN hetero (0/80 triage-dead)
+  or the full MU5 form (19.3u frontier stands).
+- **Ledger reconciled** (top entry 02:15 CEST): active leads = 0
+  (track-6 batch-56 escalation RESOLVED TERMINAL, O99/O100); added 0;
+  resolved terminal 4 (o0/o1/o2/o3 cost-doomed; hetMOA5 form cost-closed).
+- **Heartbeat** owned (content-written 00:15Z); wrappers completed.
+- **Frontier unchanged**: hyb28_mu5_324 at 19.3u.
+- **Next**: none for batch-56 (terminal). ANDN hetero remains 0/80
+  triage-dead; a fresh track-6 brief would need a new axis design.

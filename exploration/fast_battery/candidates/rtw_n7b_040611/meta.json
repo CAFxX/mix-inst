@@ -1,0 +1,26 @@
+{
+ "name": "rtw_n7b_040611",
+ "description": "tweak N7b: notr R^4^R^6^R^11 (odd-term, id dropped)",
+ "composition": "tweak N7b: notr R^4^R^6^R^11 (odd-term, id dropped)",
+ "rtl_top": "rtw_n7b_040611",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x27ce3e2d1800dcbb"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x71a62d1d32483fa3"
+  }
+ ]
+}

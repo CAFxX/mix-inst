@@ -1,0 +1,48 @@
+module tb;
+  reg [63:0] val, key;
+  wire [63:0] out;
+  hyb12_asb5a dut(.val(val), .key(key), .out(out));
+  initial begin
+    val = 64'hc735df5ef7697fb9; key = 64'h1de9ea6670d3da1f; #1;
+    $display("%h", out);
+    val = 64'h17346b4501eaf614; key = 64'hf149f542e935b870; #1;
+    $display("%h", out);
+    val = 64'hce97b5bdf073eed1; key = 64'h08f0ebd4950cddd9; #1;
+    $display("%h", out);
+    val = 64'hb16e2d5cabeb9592; key = 64'h19322fed157cf9c6; #1;
+    $display("%h", out);
+    val = 64'h5ac96628c4381836; key = 64'h04762a223c9f90c9; #1;
+    $display("%h", out);
+    val = 64'hfc9799a707e36d60; key = 64'h040e1e30c9ed0248; #1;
+    $display("%h", out);
+    val = 64'ha5f80a0a58994953; key = 64'h7bf78a4d9f8f5ffb; #1;
+    $display("%h", out);
+    val = 64'h76ab14759da618fd; key = 64'h175e99412607ad5f; #1;
+    $display("%h", out);
+    val = 64'hb6a20bb02edf0743; key = 64'hd868c2cf1d4a2b12; #1;
+    $display("%h", out);
+    val = 64'h80ca17b703be0e66; key = 64'he16682717c9bbfae; #1;
+    $display("%h", out);
+    val = 64'h3ff4bb8cf703c9ff; key = 64'haad1426810872756; #1;
+    $display("%h", out);
+    val = 64'he98d7c358a84c15c; key = 64'h118dc10e774520d7; #1;
+    $display("%h", out);
+    val = 64'hacd51e6699f9823c; key = 64'h83d9fca716c40a33; #1;
+    $display("%h", out);
+    val = 64'h0bc4621b94398520; key = 64'hd30aad4b45038e22; #1;
+    $display("%h", out);
+    val = 64'h1025dbe58e725d57; key = 64'h4d6bfd8fa506bfc5; #1;
+    $display("%h", out);
+    val = 64'hd9a54a0d7b25331f; key = 64'h443658625af0f3e0; #1;
+    $display("%h", out);
+    val = 64'ha7cda6c23fc86ee6; key = 64'h33354fc7eefadf23; #1;
+    $display("%h", out);
+    val = 64'he065e3eb74113cb0; key = 64'haa58695187b8a518; #1;
+    $display("%h", out);
+    val = 64'hf1048aa604f0d0f2; key = 64'h121213ca8212f7c6; #1;
+    $display("%h", out);
+    val = 64'h5560eaba017ad051; key = 64'hb5c36ec124ce01e1; #1;
+    $display("%h", out);
+    $finish;
+  end
+endmodule

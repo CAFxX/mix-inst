@@ -1,0 +1,25 @@
+{
+ "name": "hyb11c_chiSPN_p27",
+ "description": "4-round SPN, chi-stage NL (1,2,13), P(27,1), L(5,13) -- 5C reconstruction, SPN pick",
+ "rtl_top": "hyb11c_chiSPN_p27",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x481f96e03d357bce"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x436b113c77ad72f1"
+  }
+ ]
+}

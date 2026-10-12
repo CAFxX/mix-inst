@@ -1,0 +1,25 @@
+{
+ "name": "hyb12_asb5a",
+ "description": "5xAND (al_and6a triplets 1-5) + rasC2_0 S-box layer + L(5,13): does S-box fix 5-stage DIFF death?",
+ "rtl_top": "hyb12_asb5a",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x3a9d21ca6643aec"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x8966c14b3dba38aa"
+  }
+ ]
+}

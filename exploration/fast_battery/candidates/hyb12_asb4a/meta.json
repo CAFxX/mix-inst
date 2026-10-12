@@ -1,0 +1,25 @@
+{
+ "name": "hyb12_asb4a",
+ "description": "4xAND (triplets 1-4) + rasC2_0 S-box layer + L(5,13): FRONTIER CHALLENGER",
+ "rtl_top": "hyb12_asb4a",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xe875f4637912e4bb"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x62bae734e2cce6fd"
+  }
+ ]
+}

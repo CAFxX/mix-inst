@@ -1,0 +1,15 @@
+{
+ "const_fam": null,
+ "const_where": "none",
+ "mask": "r3_H2",
+ "pbox_perm": "rot64_16",
+ "pbox_where": "between64",
+ "rounds": 5,
+ "tags": [
+  "s1_311",
+  "chi_311",
+  "chi32v_311",
+  "s1_517",
+  "chi_notr"
+ ]
+}

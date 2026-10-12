@@ -1,0 +1,25 @@
+{
+ "name": "hyb11c_chiSPN_p43",
+ "description": "4-round SPN, chi-stage NL (1,2,13), P(43,1), L(5,13) -- 5C reconstruction, chi-metric pick",
+ "rtl_top": "hyb11c_chiSPN_p43",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xb96614acfb593eae"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xa43ec91919faab5d"
+  }
+ ]
+}

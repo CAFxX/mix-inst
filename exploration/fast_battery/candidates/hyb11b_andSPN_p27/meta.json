@@ -1,0 +1,25 @@
+{
+ "name": "hyb11b_andSPN_p27",
+ "description": "4-round SPN, AND-stage NL (1,2,13), P(27,1), L(5,13) -- 5B reconstruction",
+ "rtl_top": "hyb11b_andSPN_p27",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xd191d10378728ae3"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x6a0c2d2107c6c4ae"
+  }
+ ]
+}

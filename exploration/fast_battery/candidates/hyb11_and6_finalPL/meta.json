@@ -1,0 +1,25 @@
+{
+ "name": "hyb11_and6_finalPL",
+ "description": "6-stage al_and6a triplets + final P(37,1)+L(5,13) (control: final layer on frontier design)",
+ "rtl_top": "hyb11_and6_finalPL",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x856a2ded323bd24c"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xfa53ebaa9e5d00a"
+  }
+ ]
+}

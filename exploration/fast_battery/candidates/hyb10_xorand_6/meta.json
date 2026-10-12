@@ -1,0 +1,25 @@
+{
+ "name": "hyb10_xorand_6",
+ "description": "6-stage XOR-AND: x ^= ra ^ (rb & rc) (parallel structure)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xd21626b2ffb9ba31"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x58d935e56467b877"
+  }
+ ],
+ "rtl_top": "hyb10_xorand_6"
+}

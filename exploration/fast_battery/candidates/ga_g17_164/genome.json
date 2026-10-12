@@ -1,0 +1,16 @@
+{
+ "const_fam": null,
+ "const_where": "none",
+ "mask": "r1_FF",
+ "pbox_perm": "interleave64",
+ "pbox_where": "between64",
+ "rounds": 6,
+ "tags": [
+  "s1_311",
+  "chi32v_311",
+  "chi_713",
+  "s1_311",
+  "s1_311",
+  "chi_notr"
+ ]
+}

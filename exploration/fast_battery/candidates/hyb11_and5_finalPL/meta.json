@@ -1,0 +1,25 @@
+{
+ "name": "hyb11_and5_finalPL",
+ "description": "5-stage al_and6a triplets + final P(37,1)+L(5,13): can final diffusion replace stage 6?",
+ "rtl_top": "hyb11_and5_finalPL",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x9e26a0528b7bb746"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x14e9b30510a5b500"
+  }
+ ]
+}

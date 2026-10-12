@@ -1,0 +1,14 @@
+{
+ "name": "r7_feist8_mid32",
+ "description": "8-round Feistel, F linear = 32-bit Midori almost-MDS (2x4-nibble columns), val^key whitening",
+ "composition": "val^key whitening -> 8x Feistel round (L,R = R, L^F(R,rk)), F = S-box(S1) -> Midori32 (per 16-bit half: y[i]=XOR of other 3 nibbles) -> S-box(S1) -> ^rk32; out={R,L}; rk = rotl64(k,13(i+1))^(i+1)*GOLDEN",
+ "rtl_top": "r7_feist8_mid32",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ]
+}

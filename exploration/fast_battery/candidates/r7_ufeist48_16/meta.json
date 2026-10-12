@@ -1,0 +1,6 @@
+{"name":"r7_ufeist48_16",
+ "description":"unbalanced Feistel 48/16, 8 rounds, 16->48-bit F (S1 + replicate-xor expand), val^key whitening",
+ "composition":"val^key whitening -> 8x unbalanced-Feistel round newL=(R<<32)|(L>>16), newR=((L&0xFFFF)^F(R))&0xFFFF; F=S1(4 nibbles)->each nibble n expanded to 12 bits as (n^rotl4(n,1)^rotl4(n,2)) replicated x3 -> ^rk48; out=(L<<16)|R",
+ "rtl_top":"r7_ufeist48_16",
+ "screen_keys":["0x123456789abcdef0","0x0"],
+ "practrand_keys":["0x123456789abcdef0","0x0"]}

@@ -1,0 +1,26 @@
+{
+ "name": "r8_feist8_s1_1sbox_nw",
+ "description": "8r Feistel, F=S1x1+lin713, NO whitening",
+ "composition": "8r Feistel, F=S1x1+lin713, NO whitening",
+ "rtl_top": "r8_feist8_s1_1sbox_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x371e12571860f774"
+  },
+  {
+   "val": "0x0",
+   "key": "0x0",
+   "out": "0xcc18db3e98bfa032"
+  }
+ ]
+}

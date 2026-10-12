@@ -1,0 +1,14 @@
+{
+ "name": "r7_feist8_r517",
+ "description": "8-round Feistel, F linear = x^rotl32(x,5)^rotl32(x,17), val^key whitening",
+ "composition": "val^key whitening -> 8x Feistel round (L,R = R, L^F(R,rk)), F = S-box(S1) -> x^rotl5^rotl17 -> S-box(S1) -> ^rk32; out={R,L}; rk = rotl64(k,13(i+1))^(i+1)*GOLDEN",
+ "rtl_top": "r7_feist8_r517",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ]
+}

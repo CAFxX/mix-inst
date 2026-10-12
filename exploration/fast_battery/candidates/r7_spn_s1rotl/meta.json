@@ -1,0 +1,6 @@
+{"name":"r7_spn_s1rotl",
+ "description":"4-round 64-bit SPN: S1 nibble layer + x^rotl64(x,7)^rotl64(x,13) linear + rk64, key whitening in/out",
+ "composition":"val^key whitening -> 4x SPN round: S1 on 16 nibbles -> x^rotl64(x,7)^rotl64(x,13) -> ^rk64(i) -> final ^key. NOTE: task-proposed rotl29 dropped: any even-term rotation-XOR sum is singular on 64 bits (x^64+1=(x+1)^64 over GF(2)); 3-term map verified invertible.",
+ "rtl_top":"r7_spn_s1rotl",
+ "screen_keys":["0x123456789abcdef0","0x0"],
+ "practrand_keys":["0x123456789abcdef0","0x0"]}

@@ -1,0 +1,6 @@
+{"name":"r7_misty",
+ "description":"8-round balanced Feistel 32/32, F = 3-round inner Feistel 16/16 with S1 S-boxes (Misty-like), val^key whitening",
+ "composition":"val^key whitening -> 8x Feistel round (L,R)=(R,L^F(R)); F(R32,rk64): split (a16,b16), 3x (a,b)=(b,a^G(b)), G(b)=sbox16(b)^subkey_j, subkey_j=(rk64>>(16j))&0xFFFF, F_out=((a<<16)|b)^ (rk64&0xFFFFFFFF); out={R,L}",
+ "rtl_top":"r7_misty",
+ "screen_keys":["0x123456789abcdef0","0x0"],
+ "practrand_keys":["0x123456789abcdef0","0x0"]}

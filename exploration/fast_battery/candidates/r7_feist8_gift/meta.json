@@ -1,0 +1,6 @@
+{"name":"r7_feist8_gift",
+ "description":"8-round Feistel, F=GIFT S-box layers (x2) + rotl7/rotl13 XOR linear, val^key whitening",
+ "composition":"val^key whitening -> 8x Feistel round (L,R = R, L^F(R,rk)), F = S-box(GIFT) -> rotl7/rotl13 XOR -> S-box(GIFT) -> ^rk32; out={R,L}",
+ "rtl_top":"r7_feist8_gift",
+ "screen_keys":["0x123456789abcdef0","0x0"],
+ "practrand_keys":["0x123456789abcdef0","0x0"]}

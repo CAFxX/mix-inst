@@ -1,0 +1,26 @@
+{
+ "name": "r25_spn_pba19_sb_rasC2_5_nw",
+ "description": "R25 Track B broad: 4r SPN, S-box rasC2_5 (Rasoolzadeh S4D3C2:128 (depth3, 223 cells)), pba19b01 P-box, L=lin(3,11), golden ks.",
+ "composition": "R25 Track B broad: 4r SPN, S-box rasC2_5 (Rasoolzadeh S4D3C2:128 (depth3, 223 cells)), pba19b01 P-box, L=lin(3,11), golden ks.",
+ "rtl_top": "r25_spn_pba19_sb_rasC2_5_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x40acac99160bc28d"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x268e40148470f455"
+  }
+ ]
+}

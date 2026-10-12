@@ -1,0 +1,26 @@
+{
+ "name": "r8_feist6_r311",
+ "description": "6r Feistel, F=S1+lin311+S1, whitening",
+ "composition": "6r Feistel, F=S1+lin311+S1, whitening",
+ "rtl_top": "r8_feist6_r311",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x07f92fe185a9f203"
+  },
+  {
+   "val": "0x0",
+   "key": "0x0",
+   "out": "0x13cdcb3fcb4acf3d"
+  }
+ ]
+}

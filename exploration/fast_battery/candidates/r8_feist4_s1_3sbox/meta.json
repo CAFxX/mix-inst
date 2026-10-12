@@ -1,0 +1,26 @@
+{
+ "name": "r8_feist4_s1_3sbox",
+ "description": "4r Feistel, F=S1+lin+S1+lin+S1, whitening",
+ "composition": "4r Feistel, F=S1+lin+S1+lin+S1, whitening",
+ "rtl_top": "r8_feist4_s1_3sbox",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xe7c477d2f9356dba"
+  },
+  {
+   "val": "0x0",
+   "key": "0x0",
+   "out": "0x4423a7b8191b9bdf"
+  }
+ ]
+}

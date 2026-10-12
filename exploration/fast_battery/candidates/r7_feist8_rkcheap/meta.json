@@ -1,0 +1,14 @@
+{
+ "name": "r7_feist8_rkcheap",
+ "description": "8-round Feistel, F=r6 (rotl7/rotl13), key schedule = k^(i+1)*GOLDEN (no rotation)",
+ "composition": "val^key whitening -> 8x Feistel round (L,R = R, L^F(R,rk)), F = S-box(S1) -> rotl7/rotl13 XOR -> S-box(S1) -> ^rk32; out={R,L}; rk(k,i) = k ^ ((i+1)*0x9E3779B97F4A7C15)",
+ "rtl_top": "r7_feist8_rkcheap",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ]
+}

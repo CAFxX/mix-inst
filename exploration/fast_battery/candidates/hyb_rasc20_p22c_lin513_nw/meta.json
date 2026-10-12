@@ -1,0 +1,26 @@
+{
+ "name": "hyb_rasc20_p22c_lin513_nw",
+ "description": "Hybrid: rasC2_0 S-box + r22c P-box (5i+27) + lin(5,13). Best S-box meets smallest P-box meets fastest linear.",
+ "composition": "Hybrid: rasC2_0 S-box + r22c P-box (5i+27) + lin(5,13). Best S-box meets smallest P-box meets fastest linear.",
+ "rtl_top": "hyb_rasc20_p22c_lin513_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x6a847c7595e40052"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x37f7dd8e5060ca4d"
+  }
+ ]
+}

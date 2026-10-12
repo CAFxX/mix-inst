@@ -1,0 +1,26 @@
+{
+ "name": "hyb_s1_pba19_lin513_nw",
+ "description": "Hybrid: S1 S-box + pba19 P-box + lin(5,13). Tests if (5,13) helps the S1 construction.",
+ "composition": "Hybrid: S1 S-box + pba19 P-box + lin(5,13). Tests if (5,13) helps the S1 construction.",
+ "rtl_top": "hyb_s1_pba19_lin513_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xfa685c6aa1fc8b42"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xe9b1c7cbf74d1d2b"
+  }
+ ]
+}

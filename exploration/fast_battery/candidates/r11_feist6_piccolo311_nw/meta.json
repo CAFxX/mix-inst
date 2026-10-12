@@ -1,0 +1,26 @@
+{
+ "name": "r11_feist6_piccolo311_nw",
+ "description": "6r Feistel, F=Piccolo-Sbox+lin(3,11), NO whitening",
+ "composition": "6r Feistel, F=Piccolo-Sbox+lin(3,11), NO whitening",
+ "rtl_top": "r11_feist6_piccolo311_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xe9e972eeda4ebd2e"
+  },
+  {
+   "val": "0x0",
+   "key": "0x0",
+   "out": "0x4b4dabec0131d07a"
+  }
+ ]
+}

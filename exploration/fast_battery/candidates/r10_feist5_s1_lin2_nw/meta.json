@@ -1,0 +1,26 @@
+{
+ "name": "r10_feist5_s1_lin2_nw",
+ "description": "5r Feistel, F=S1+lin713+lin713, NO whitening",
+ "composition": "5r Feistel, F=S1+lin713+lin713, NO whitening",
+ "rtl_top": "r10_feist5_s1_lin2_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xb7004a3e0555fee4"
+  },
+  {
+   "val": "0x0",
+   "key": "0x0",
+   "out": "0x1676d4c7596c59f8"
+  }
+ ]
+}

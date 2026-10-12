@@ -1,0 +1,26 @@
+{
+ "name": "r11_feist6_s1mix311_nw",
+ "description": "6r Feistel, F=alternating S1/PRESENT per nibble+lin(3,11), NO whitening",
+ "composition": "6r Feistel, F=alternating S1/PRESENT per nibble+lin(3,11), NO whitening",
+ "rtl_top": "r11_feist6_s1mix311_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xb27381379cd5e6a8"
+  },
+  {
+   "val": "0x0",
+   "key": "0x0",
+   "out": "0xafb1734f4c514427"
+  }
+ ]
+}

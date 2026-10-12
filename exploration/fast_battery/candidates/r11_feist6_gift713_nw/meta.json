@@ -1,0 +1,26 @@
+{
+ "name": "r11_feist6_gift713_nw",
+ "description": "6r Feistel, F=GIFT-Sbox+lin(7,13), NO whitening",
+ "composition": "6r Feistel, F=GIFT-Sbox+lin(7,13), NO whitening",
+ "rtl_top": "r11_feist6_gift713_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xf51048f4a6020779"
+  },
+  {
+   "val": "0x0",
+   "key": "0x0",
+   "out": "0x5e68ed308ff0078c"
+  }
+ ]
+}

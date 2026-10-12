@@ -1,0 +1,25 @@
+{
+ "name": "al_dualand6a",
+ "description": "Wave-10: 6-stage dual-AND on and6a triplets, preview 2nd pair (quality probe)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "rtl_top": "al_dualand6a",
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x8bc66504927403cc"
+  },
+  {
+   "val": "0x123456789ABCDEF0",
+   "key": "0x0",
+   "out": "0x109765309aa018a"
+  }
+ ]
+}

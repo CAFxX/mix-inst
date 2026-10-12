@@ -1,0 +1,25 @@
+{
+  "name": "al_chi6d",
+  "description": "6-stage chi cascade, schedule D",
+  "screen_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "practrand_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "goldens": [
+    {
+      "val": "0x0",
+      "key": "0x123456789abcdef0",
+      "out": "0xba4c73ca8e383051"
+    },
+    {
+      "val": "0x123456789abcdef0",
+      "key": "0x0",
+      "out": "0x3083609d15e63217"
+    }
+  ],
+  "rtl_top": "al_chi6d"
+}

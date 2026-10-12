@@ -1,0 +1,24 @@
+{
+ "name": "al_chi8b",
+ "description": "8-stage chi cascade, alternate rotation schedule",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x4c28720ee767fada"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xc6e761597cb9f89c"
+  }
+ ]
+}

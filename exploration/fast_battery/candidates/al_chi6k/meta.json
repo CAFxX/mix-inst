@@ -1,0 +1,24 @@
+{
+ "name": "al_chi6k",
+ "description": "6-stage chi + per-stage key fold",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x49f8bdf2df60f964"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x905512d29017a9f0"
+  }
+ ]
+}

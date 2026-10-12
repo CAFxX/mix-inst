@@ -1,0 +1,25 @@
+{
+ "name": "al_dualand5b",
+ "description": "Wave-10: 5-stage dual-AND, fresh schedule (floor attack, independent)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "rtl_top": "al_dualand5b",
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x894d3557eee918b6"
+  },
+  {
+   "val": "0x123456789ABCDEF0",
+   "key": "0x0",
+   "out": "0x382260075371af0"
+  }
+ ]
+}

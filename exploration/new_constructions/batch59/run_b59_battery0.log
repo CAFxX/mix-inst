@@ -11,3 +11,9 @@
 [S3 t6_b59_0_strided] 1GB: no FAIL (rng_test rc=0)
 [S3 t6_b59_0_strided] verdict: PASS (all 4 stages, no FAIL)
 [2026-10-12T02:32:47+00:00] Q1 t6_b59_0
+ "bic_maxcorr": 0.008965580858493754,
+ "bic_meancorr": 0.0015555727326160278,
+ "avalanche_mean": 31.999905109405518,
+ "wall_s": 140.7
+}
+[2026-10-12T02:35:10+00:00] batch-59 battery t6_b59_0 COMPLETE rc=0

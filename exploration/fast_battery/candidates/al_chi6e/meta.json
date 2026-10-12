@@ -1,0 +1,25 @@
+{
+  "name": "al_chi6e",
+  "description": "6-stage chi cascade, avalanche-aware schedule E (random well-separated)",
+  "screen_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "practrand_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "goldens": [
+    {
+      "val": "0x0",
+      "key": "0x123456789abcdef0",
+      "out": "0xd206f3ff0a94451"
+    },
+    {
+      "val": "0x123456789abcdef0",
+      "key": "0x0",
+      "out": "0x87ef7c686b774617"
+    }
+  ],
+  "rtl_top": "al_chi6e"
+}

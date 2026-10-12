@@ -1,0 +1,24 @@
+{
+ "name": "al_chi8",
+ "description": "8-stage chi cascade: x ^= ((~ra)&rb) ^ rc",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x9c77b21db916fb43"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x16b8a14a22c8f905"
+  }
+ ]
+}

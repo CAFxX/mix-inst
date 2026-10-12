@@ -1,0 +1,25 @@
+{
+ "name": "al_dualand5a",
+ "description": "Wave-10: 5-stage dual-AND on and6a triplets, preview 2nd pair (floor attack)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "rtl_top": "al_dualand5a",
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x9fedb70ecec60158"
+  },
+  {
+   "val": "0x123456789ABCDEF0",
+   "key": "0x0",
+   "out": "0x1522a4595518031e"
+  }
+ ]
+}

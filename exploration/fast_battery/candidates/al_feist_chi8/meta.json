@@ -1,0 +1,24 @@
+{
+ "name": "al_feist_chi8",
+ "description": "8-round 32-bit Feistel, F(y)=y^((~ra)&rb)^rc^rk",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x2c94a55c348fce01"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x2bf5025623035770"
+  }
+ ]
+}

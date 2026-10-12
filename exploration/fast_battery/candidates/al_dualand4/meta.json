@@ -1,0 +1,24 @@
+{
+ "name": "al_dualand4",
+ "description": "4-stage dual-AND: x ^= (ra&rb) ^ (rc&rd) ^ re",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x4fe36d59e907d66d"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xc52c7e0e72d9d42b"
+  }
+ ]
+}

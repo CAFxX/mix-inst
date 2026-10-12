@@ -1,0 +1,24 @@
+{
+ "name": "al_chiconst8",
+ "description": "8-stage chi + per-stage constant fold: x ^= ((~ra)&rb) ^ rc ^ RC[i]",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xb411131709e75caa"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x3ede004092395eec"
+  }
+ ]
+}

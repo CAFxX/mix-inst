@@ -95,3 +95,14 @@ HB 2026-10-11T20:52Z Track3: RESUMED per user order; W3 LIN-kill MECHANISM FOUND
 2026-10-11 23:45:15 w3prime-harvest: S3/S3b al_w3p_d PASS; S4 running
 2026-10-11 23:46:58 w3prime-harvest: BATTERY-PASS al_w3p_d; running Q1 for d
 2026-10-11 23:51:11 w3prime-harvest: DONE — 3/4 full battery+Q1 PASS (a/b/d, BIC-clean), c S1-killed; ledger + VERDICT_SCOPE O98 recorded
+2026-10-12 04:17:42 track3-w3pp: autopsy+design+screen ready, calibration running
+2026-10-12 04:27:15 w3pp-screen: screen start N=300 seed=0x5eed2
+2026-10-12 04:27:20 track3-w3pp: screen LAUNCHED (backoff clear), calibration running; O123 recorded
+2026-10-12 04:28:24 w3pp-screen: canary gate PASS
+2026-10-12 05:04:54 w3pp-screen: screen start N=300 seed=0x5eed2
+2026-10-12 05:05:15 w3pp-screen: canary gate PASS
+2026-10-12 05:06:38 w3pp-screen: fisher calibration PASS
+2026-10-12 07:06:00 w3pp-screen: RELAUNCHED by 30m report run (reboot 04:52Z killed the 04:26Z launch mid-calibration); calibrate() patched to mix_np (vectorized, bit-exact verified) - calibration seconds not ~75min
+2026-10-12 05:16:58 w3pp-screen: progress 150/300 keeps=0 elapsed=12m
+2026-10-12 05:26:56 w3pp-screen: progress 250/300 keeps=0 elapsed=22m
+2026-10-12 05:28:59 w3pp-screen: screen DONE keeps=0 elapsed=24m

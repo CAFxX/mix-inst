@@ -1,0 +1,69 @@
+[2026-10-12T03:41:46+00:00] backoff CLEAR -- starting batch-59 deferred-keeps SIZE chain
+[2026-10-12T03:41:46+00:00] === SIZE-BATTERY t6_b59_54 (start_stage=1) ===
+[2026-10-12T03:42:45+00:00] SIZE-BATTERY t6_b59_54 rc=2
+BATTERY-FAIL stage=S1-screen [t6_b59_54] (see /home/hatch/workspace/mix/exploration/fast_battery/results/t6_b59_54/battery.log)
+[2026-10-12T03:42:45+00:00] KILLED t6_b59_54 at battery rc=2 -> next in chain
+[2026-10-12T03:42:45+00:00] === SIZE-BATTERY t6_b59_15 (start_stage=1) ===
+[2026-10-12T03:43:43+00:00] SIZE-BATTERY t6_b59_15 rc=2
+BATTERY-FAIL stage=S1-screen [t6_b59_15] (see /home/hatch/workspace/mix/exploration/fast_battery/results/t6_b59_15/battery.log)
+[2026-10-12T03:43:43+00:00] KILLED t6_b59_15 at battery rc=2 -> next in chain
+[2026-10-12T03:43:43+00:00] === SIZE-BATTERY t6_b59_1 (start_stage=1) ===
+[2026-10-12T03:44:50+00:00] SIZE-BATTERY t6_b59_1 rc=2
+BATTERY-FAIL stage=S1-screen [t6_b59_1] (see /home/hatch/workspace/mix/exploration/fast_battery/results/t6_b59_1/battery.log)
+[2026-10-12T03:44:50+00:00] KILLED t6_b59_1 at battery rc=2 -> next in chain
+[2026-10-12T03:44:50+00:00] === SIZE-BATTERY t6_b59_61 (start_stage=1) ===
+[2026-10-12T03:46:04+00:00] SIZE-BATTERY t6_b59_61 rc=2
+BATTERY-FAIL stage=S1-screen [t6_b59_61] (see /home/hatch/workspace/mix/exploration/fast_battery/results/t6_b59_61/battery.log)
+[2026-10-12T03:46:04+00:00] KILLED t6_b59_61 at battery rc=2 -> next in chain
+[2026-10-12T03:46:04+00:00] === SIZE-BATTERY t6_b59_8 (start_stage=1) ===
+[2026-10-12T03:52:11+00:00] SIZE-BATTERY t6_b59_8 rc=0
+[S3 t6_b59_8] 64MB: no FAIL (rng_test rc=0)
+[S3 t6_b59_8] 256MB: no FAIL (rng_test rc=0)
+[S3 t6_b59_8] 1GB: no FAIL (rng_test rc=0)
+[S3 t6_b59_8] verdict: PASS (all 4 stages, no FAIL)
+[S3 t6_b59_8_strided] 64MB: no FAIL (rng_test rc=0)
+[S3 t6_b59_8_strided] 256MB: no FAIL (rng_test rc=0)
+[S3 t6_b59_8_strided] 1GB: no FAIL (rng_test rc=0)
+[S3 t6_b59_8_strided] verdict: PASS (all 4 stages, no FAIL)
+[2026-10-12T03:52:11+00:00] Q1 t6_b59_8
+ "bic_maxcorr": 0.008670499697424129,
+ "bic_meancorr": 0.0015651674989434047,
+ "avalanche_mean": 31.99997627735138,
+ "wall_s": 70.4
+}
+[2026-10-12T03:53:22+00:00] Q1 t6_b59_8 sac_z5=?
+[2026-10-12T03:53:22+00:00] Q1-KILLED t6_b59_8 (sac_z5=?) -> next in chain
+[2026-10-12T03:53:22+00:00] === SIZE-BATTERY t6_b59_14 (start_stage=1) ===
+[2026-10-12T03:54:52+00:00] SIZE-BATTERY t6_b59_14 rc=2
+BATTERY-FAIL stage=S1-screen [t6_b59_14] (see /home/hatch/workspace/mix/exploration/fast_battery/results/t6_b59_14/battery.log)
+[2026-10-12T03:54:52+00:00] KILLED t6_b59_14 at battery rc=2 -> next in chain
+[2026-10-12T03:54:52+00:00] === SIZE-BATTERY t6_b59_17 (start_stage=1) ===
+[2026-10-12T03:56:07+00:00] SIZE-BATTERY t6_b59_17 rc=2
+BATTERY-FAIL stage=S1-screen [t6_b59_17] (see /home/hatch/workspace/mix/exploration/fast_battery/results/t6_b59_17/battery.log)
+[2026-10-12T03:56:07+00:00] KILLED t6_b59_17 at battery rc=2 -> next in chain
+[2026-10-12T03:56:07+00:00] === SIZE-BATTERY t6_b59_41 (start_stage=1) ===
+[2026-10-12T04:11:53+00:00] SIZE-BATTERY t6_b59_41 rc=0
+[S3 t6_b59_41] 64MB: no FAIL (rng_test rc=0)
+[S3 t6_b59_41] 256MB: no FAIL (rng_test rc=0)
+[S3 t6_b59_41] 1GB: no FAIL (rng_test rc=0)
+[S3 t6_b59_41] verdict: PASS (all 4 stages, no FAIL)
+[S3 t6_b59_41_strided] 64MB: no FAIL (rng_test rc=0)
+[S3 t6_b59_41_strided] 256MB: no FAIL (rng_test rc=0)
+[S3 t6_b59_41_strided] 1GB: no FAIL (rng_test rc=0)
+[S3 t6_b59_41_strided] verdict: PASS (all 4 stages, no FAIL)
+[2026-10-12T04:11:53+00:00] Q1 t6_b59_41
+ "bic_maxcorr": 0.008162446546067566,
+ "bic_meancorr": 0.0015528653875457885,
+ "avalanche_mean": 31.99535596370697,
+ "wall_s": 259.8
+}
+[2026-10-12T04:16:15+00:00] Q1 t6_b59_41 sac_z5=?
+[2026-10-12T04:16:15+00:00] Q1-KILLED t6_b59_41 (sac_z5=?) -> next in chain
+[2026-10-12T04:16:15+00:00] === SIZE-BATTERY t6_b59_9 (start_stage=1) ===
+[2026-10-12T04:32:42+00:00] SIZE-BATTERY t6_b59_9 rc=2
+BATTERY-FAIL stage=S1-screen [t6_b59_9] (see /home/hatch/workspace/mix/exploration/fast_battery/results/t6_b59_9/battery.log)
+[2026-10-12T04:32:43+00:00] KILLED t6_b59_9 at battery rc=2 -> next in chain
+[2026-10-12T04:32:43+00:00] === SIZE-BATTERY t6_b59_50 (start_stage=1) ===
+[2026-10-12T05:11:20+00:00] SIZE-BATTERY t6_b59_50 rc=0
+[2026-10-12T05:17:50+00:00] Q1 t6_b59_50 rc=0 sac_z5=0
+[2026-10-12T05:17:51+00:00] SIZE-CHALLENGER: t6_b59_50

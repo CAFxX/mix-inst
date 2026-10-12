@@ -1,0 +1,4 @@
+selected rank 38: form=muxD5f z=3.52 n_reject=0 stages=[('MUXD', 17, 22, 10, 55), ('MUXD', 63, 62, 49, 41), ('MUXD', 29, 39, 54, 42), ('MUXD', 9, 4, 49, 36), ('MUXD', 5, 54, 31, 34)]
+bit-exact C-vs-Python: 2000/2000 OK
+screener-vs-bundle: 500/500 OK
+bundle t6_b60_38 written (form=muxD5f fisher triage z=3.52 n_reject=0)

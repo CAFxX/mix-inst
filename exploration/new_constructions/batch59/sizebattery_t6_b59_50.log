@@ -1,0 +1,50 @@
+=== S0a [t6_b59_50] started 2026-10-12T04:54:22Z
+--- S0a tail:
+XCHECK t6_b59_50: PASS 10000/10000 C==Python
+=== S0a [t6_b59_50] rc=0 wall=1s
+=== S1 [t6_b59_50] started 2026-10-12T04:54:23Z
+--- S1 tail:
+  [DIFF] key=0x123456789abcdef worst|z|=3.2 fisher_logp=-2.98 bonf_logp=-3.76
+  [DIFF] key=0xf0b52a9e7d8ba2b5 worst|z|=3.2 fisher_logp=-2.17 bonf_logp=-3.67
+  [DIFF] key=0x92988f142674743 worst|z|=1.7 fisher_logp=-0.57 bonf_logp=0.52
+  LIN: PASS (rej=0)  DIFF: PASS (rej=0)
+[S1 t6_b59_50] LIN/DIFF 17s: LIN PASS DIFF PASS; marginal 98s: PB rej=0 RD rej=0
+[S1 t6_b59_50] verdict: CAL_PASS
+=== S1 [t6_b59_50] rc=0 wall=100s
+=== S2 [t6_b59_50] started 2026-10-12T04:56:03Z
+--- S2 tail:
+  0xe000000000000000      2.1      270.7            0
+  0x000000000000000f      2.4      266.2            0
+  0x00000000f0000000      2.4      220.2            0
+  0x0000000f00000000      2.3      220.4            0
+  0xf000000000000000      2.8      264.7            0
+PASS max_repeats=0 max|z|=38.0 (all 115 deltas)
+=== S2 [t6_b59_50] rc=0 wall=151s
+=== S3 [t6_b59_50] started 2026-10-12T04:58:35Z
+--- S3 tail:
+[S3 t6_b59_50] 64MB: no FAIL (rng_test rc=0)
+[S3 t6_b59_50] stage 256MB (key=0x123456789abcdef0 stride=1) ...
+[S3 t6_b59_50] 256MB: no FAIL (rng_test rc=0)
+[S3 t6_b59_50] stage 1GB (key=0x123456789abcdef0 stride=1) ...
+[S3 t6_b59_50] 1GB: no FAIL (rng_test rc=0)
+[S3 t6_b59_50] verdict: PASS (all 4 stages, no FAIL)
+=== S3 [t6_b59_50] rc=0 wall=359s
+=== S3b [t6_b59_50] started 2026-10-12T05:04:36Z
+--- S3b tail:
+[S3 t6_b59_50_strided] 64MB: no FAIL (rng_test rc=0)
+[S3 t6_b59_50_strided] stage 256MB (key=0x0 stride=0x9E3779B97F4A7C15) ...
+[S3 t6_b59_50_strided] 256MB: no FAIL (rng_test rc=0)
+[S3 t6_b59_50_strided] stage 1GB (key=0x0 stride=0x9E3779B97F4A7C15) ...
+[S3 t6_b59_50_strided] 1GB: no FAIL (rng_test rc=0)
+[S3 t6_b59_50_strided] verdict: PASS (all 4 stages, no FAIL)
+=== S3b [t6_b59_50] rc=0 wall=364s
+=== S4 [t6_b59_50] started 2026-10-12T05:10:41Z
+--- S4 tail:
+ Total CPU time:   00:00:08.41
+
+ All tests were passed
+
+
+
+=== S4 [t6_b59_50] rc=0 wall=39s
+BATTERY-PASS [t6_b59_50] all stages survived (S5 P&R+review is a manual gate)

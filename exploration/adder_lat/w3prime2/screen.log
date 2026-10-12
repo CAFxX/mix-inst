@@ -1,0 +1,322 @@
+agentwork-launch: tag=track3/w3pp-screen schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+[2026-10-12T04:26:44Z] backoff CLEAR -- starting W3'' screen
+[2026-10-12T04:26:44Z] backoff CLEAR -- starting W3'' screen
+=== canary gate ===
+=== positive controls ===
+[KILL-canary as6_200_106] seq: maxworst|z|=    71.4 killkey=0x0 | rnd64: maxworst|z|=     2.5 killkey=0x0 -> kill
+[KEEP-canary t6_b33b] seq: maxworst|z|=     3.0 killkey=0x92988f142674743 | rnd64: maxworst|z|=     3.2 killkey=0x92988f142674743 -> KEEP
+[KEEP-canary al_and6a] seq: maxworst|z|=     3.2 killkey=0xf0b52a9e7d8ba2b5 | rnd64: maxworst|z|=     2.6 killkey=0x9e3779b97f4a7c15 -> KEEP
+=== canaries PASS ===
+=== fisher calibration (al_w3p_a) ===
+agentwork-launch: tag=track3/w3pp-screen schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+[2026-10-12T05:04:35Z] backoff CLEAR -- starting W3'' screen
+[2026-10-12T05:04:35Z] backoff CLEAR -- starting W3'' screen
+=== canary gate ===
+=== positive controls ===
+[KILL-canary as6_200_106] seq: maxworst|z|=    71.4 killkey=0x0 | rnd64: maxworst|z|=     2.5 killkey=0x0 -> kill
+[KEEP-canary t6_b33b] seq: maxworst|z|=     3.0 killkey=0x92988f142674743 | rnd64: maxworst|z|=     3.2 killkey=0x92988f142674743 -> KEEP
+[KEEP-canary al_and6a] seq: maxworst|z|=     3.2 killkey=0xf0b52a9e7d8ba2b5 | rnd64: maxworst|z|=     2.6 killkey=0x9e3779b97f4a7c15 -> KEEP
+=== canaries PASS ===
+=== fisher calibration (al_w3p_a) ===
+CALIB al_w3p_a: lin=PASS diff=PASS -> KEEP
+[000] REJECT-affine AND (0, 1, 30, 25)
+[001] REJECT-affine AND (0, 0, 43, 48)
+[002] REJECT-affine AND (0, 1, 63, 0)
+[003] REJECT-affine AND (1, 0, 5, 1)
+[004] REJECT-affine AND (0, 0, 46, 51)
+[005] REJECT-affine AND (0, 0, 20, 25)
+[006] REJECT-affine AND (0, 1, 1, 2)
+[007] REJECT-affine AND (1, 1, 3, 62)
+[008] REJECT-affine AND (0, 0, 39, 44)
+[009] REJECT-affine AND (0, 1, 59, 54)
+[010] REJECT-affine AND (0, 0, 41, 46)
+[011] kill-rank fr=45
+[012] REJECT-affine AND (1, 0, 48, 43)
+[013] REJECT-affine AND (1, 0, 18, 13)
+[014] REJECT-affine AND (1, 0, 27, 22)
+[015] REJECT-affine AND (0, 0, 23, 18)
+[016] REJECT-affine AND (0, 0, 55, 50)
+[017] REJECT-affine AND (0, 0, 11, 16)
+[018] REJECT-affine AND (0, 0, 1, 60)
+[019] REJECT-affine AND (0, 1, 37, 32)
+[020] REJECT-affine AND (1, 0, 31, 36)
+[021] kill fr=63 lin=PASS diff=FLAG nrej=9
+[022] kill-rank fr=58
+[023] REJECT-affine AND (0, 1, 0, 63)
+[024] REJECT-affine AND (0, 0, 0, 59)
+[025] kill-rank fr=59
+[026] REJECT-affine AND (0, 1, 9, 14)
+[027] kill fr=62 lin=PASS diff=FLAG nrej=2
+[028] REJECT-affine AND (1, 0, 3, 63)
+[029] REJECT-affine AND (0, 0, 54, 49)
+[030] REJECT-affine AND (0, 0, 3, 63)
+[031] kill-rank fr=56
+[032] REJECT-affine AND (2, 0, 42, 47)
+[033] REJECT-affine AND (0, 1, 9, 4)
+[034] REJECT-affine AND (1, 0, 24, 19)
+[035] kill-rank fr=61
+[036] kill-rank fr=61
+[037] REJECT-affine AND (0, 0, 41, 36)
+[038] kill-rank fr=61
+[039] kill-rank fr=58
+[040] REJECT-affine AND (1, 1, 47, 42)
+[041] REJECT-affine AND (0, 0, 2, 7)
+[042] REJECT-affine AND (0, 0, 38, 33)
+[043] REJECT-affine AND (1, 0, 60, 0)
+[044] REJECT-affine AND (0, 0, 1, 4)
+[045] REJECT-affine AND (2, 0, 14, 9)
+[046] REJECT-affine AND (1, 0, 9, 4)
+[047] REJECT-affine AND (0, 0, 43, 48)
+[048] REJECT-affine AND (1, 0, 1, 61)
+[049] REJECT-affine AND (0, 0, 48, 53)
+[050] REJECT-affine AND (2, 1, 3, 0)
+[051] REJECT-affine AND (2, 1, 28, 23)
+[052] REJECT-affine AND (1, 1, 63, 62)
+[053] REJECT-affine AND (1, 1, 48, 43)
+[054] REJECT-affine AND (2, 0, 10, 15)
+[055] REJECT-affine AND (1, 1, 10, 5)
+[056] kill fr=63 lin=PASS diff=FLAG nrej=8
+[057] REJECT-affine AND (1, 0, 58, 53)
+[058] REJECT-affine AND (2, 1, 6, 1)
+[059] REJECT-affine AND (0, 1, 4, 9)
+[060] REJECT-affine AND (0, 1, 0, 62)
+[061] kill-rank fr=58
+[062] kill-rank fr=54
+[063] REJECT-affine AND (0, 0, 41, 46)
+[064] REJECT-affine AND (0, 1, 63, 61)
+[065] REJECT-affine AND (0, 0, 56, 61)
+[066] REJECT-affine AND (0, 1, 3, 63)
+[067] REJECT-affine AND (0, 0, 8, 3)
+[068] REJECT-affine AND (0, 0, 51, 46)
+[069] REJECT-affine AND (0, 0, 20, 15)
+[070] REJECT-affine AND (1, 0, 2, 61)
+[071] REJECT-affine AND (1, 0, 60, 0)
+[072] REJECT-affine AND (0, 0, 52, 57)
+[073] REJECT-affine AND (1, 1, 4, 9)
+[074] REJECT-affine AND (2, 0, 3, 62)
+[075] REJECT-affine AND (0, 1, 63, 62)
+[076] REJECT-affine AND (2, 1, 1, 61)
+[077] kill-rank fr=57
+[078] REJECT-affine AND (1, 1, 41, 36)
+[079] REJECT-affine AND (0, 1, 61, 0)
+[080] REJECT-affine AND (1, 0, 1, 0)
+[081] REJECT-affine AND (0, 1, 1, 62)
+[082] REJECT-affine AND (0, 1, 52, 57)
+[083] kill fr=63 lin=PASS diff=FLAG nrej=10
+[084] kill-rank fr=57
+[085] REJECT-affine AND (0, 1, 29, 34)
+[086] REJECT-affine AND (2, 0, 13, 18)
+[087] REJECT-affine AND (0, 1, 0, 60)
+[088] REJECT-affine AND (0, 0, 43, 48)
+[089] REJECT-affine AND (0, 1, 4, 9)
+[090] REJECT-affine AND (1, 1, 39, 44)
+[091] REJECT-affine AND (1, 0, 4, 63)
+[092] REJECT-affine AND (2, 1, 63, 58)
+[093] REJECT-affine AND (0, 0, 1, 3)
+[094] REJECT-affine AND (1, 1, 63, 62)
+[095] REJECT-affine AND (2, 0, 27, 32)
+[096] REJECT-affine AND (2, 1, 60, 63)
+[097] REJECT-affine AND (1, 0, 35, 40)
+[098] REJECT-affine AND (0, 1, 8, 13)
+[099] REJECT-affine AND (1, 0, 20, 15)
+[100] REJECT-affine AND (0, 1, 31, 26)
+[101] REJECT-affine AND (2, 1, 3, 1)
+[102] REJECT-affine AND (1, 1, 9, 4)
+[103] REJECT-affine AND (2, 1, 6, 11)
+[104] REJECT-affine AND (1, 0, 10, 5)
+[105] REJECT-affine AND (0, 0, 27, 22)
+[106] REJECT-affine AND (0, 1, 45, 40)
+[107] REJECT-affine AND (0, 0, 52, 47)
+[108] REJECT-affine AND (0, 0, 40, 45)
+[109] REJECT-affine AND (1, 0, 12, 7)
+[110] kill fr=63 lin=PASS diff=FLAG nrej=5
+[111] REJECT-affine AND (0, 1, 57, 62)
+[112] REJECT-affine AND (0, 1, 1, 0)
+[113] REJECT-affine AND (1, 1, 13, 18)
+[114] REJECT-affine AND (0, 0, 61, 63)
+[115] REJECT-affine AND (2, 1, 20, 15)
+[116] REJECT-affine AND (0, 0, 63, 59)
+[117] REJECT-affine AND (0, 1, 2, 7)
+[118] REJECT-affine AND (0, 0, 38, 43)
+[119] REJECT-affine AND (0, 0, 41, 36)
+[120] REJECT-affine AND (1, 1, 39, 44)
+[121] REJECT-affine AND (2, 0, 26, 31)
+[122] REJECT-affine AND (0, 0, 35, 30)
+[123] REJECT-affine AND (0, 1, 22, 27)
+[124] REJECT-affine AND (0, 0, 36, 31)
+[125] REJECT-affine AND (2, 1, 13, 18)
+[126] REJECT-affine AND (0, 1, 3, 63)
+[127] REJECT-affine AND (0, 0, 50, 45)
+[128] REJECT-affine AND (1, 0, 2, 62)
+[129] kill fr=63 lin=PASS diff=FLAG nrej=10
+[130] REJECT-affine AND (0, 0, 2, 1)
+[131] REJECT-affine AND (1, 0, 8, 13)
+[132] REJECT-affine AND (2, 0, 1, 62)
+[133] REJECT-affine AND (1, 1, 47, 42)
+[134] REJECT-affine AND (0, 0, 54, 59)
+[135] REJECT-affine AND (0, 0, 1, 6)
+[136] REJECT-affine AND (2, 0, 51, 46)
+[137] REJECT-affine AND (1, 0, 13, 18)
+[138] REJECT-affine AND (2, 1, 40, 45)
+[139] REJECT-affine AND (1, 1, 21, 16)
+[140] kill-rank fr=56
+[141] kill fr=63 lin=PASS diff=FLAG nrej=3
+[142] REJECT-affine AND (2, 0, 0, 59)
+[143] REJECT-affine AND (1, 1, 44, 39)
+[144] REJECT-affine AND (1, 1, 3, 62)
+[145] REJECT-affine AND (0, 0, 10, 15)
+[146] kill-rank fr=61
+[147] REJECT-affine AND (2, 0, 20, 25)
+[148] REJECT-affine AND (1, 0, 33, 38)
+[149] kill fr=63 lin=PASS diff=FLAG nrej=8
+[150] kill-rank fr=61
+[151] REJECT-affine AND (0, 0, 47, 42)
+[152] REJECT-affine AND (0, 0, 2, 63)
+[153] REJECT-affine AND (0, 1, 35, 40)
+[154] REJECT-affine AND (0, 0, 61, 1)
+[155] REJECT-affine AND (0, 1, 2, 63)
+[156] REJECT-affine AND (0, 0, 3, 62)
+[157] REJECT-affine AND (0, 1, 17, 22)
+[158] REJECT-affine AND (0, 0, 49, 44)
+[159] REJECT-affine AND (1, 0, 3, 1)
+[160] REJECT-affine AND (0, 1, 62, 1)
+[161] kill-rank fr=58
+[162] REJECT-affine AND (1, 0, 60, 1)
+[163] REJECT-affine AND (2, 1, 37, 42)
+[164] kill-rank fr=57
+[165] REJECT-affine AND (1, 1, 7, 12)
+[166] REJECT-affine AND (1, 0, 9, 4)
+[167] kill-rank fr=54
+[168] REJECT-affine AND (2, 1, 6, 11)
+[169] REJECT-affine AND (0, 0, 17, 12)
+[170] REJECT-affine AND (2, 0, 43, 48)
+[171] REJECT-affine AND (1, 0, 37, 32)
+[172] REJECT-affine AND (1, 1, 3, 0)
+[173] REJECT-affine AND (0, 0, 63, 61)
+[174] REJECT-affine AND (0, 0, 48, 53)
+[175] REJECT-affine AND (0, 1, 19, 14)
+[176] REJECT-affine AND (0, 1, 5, 10)
+[177] kill fr=62 lin=PASS diff=FLAG nrej=7
+[178] REJECT-affine AND (0, 1, 20, 25)
+[179] REJECT-affine AND (1, 1, 58, 63)
+[180] REJECT-affine AND (1, 0, 43, 48)
+[181] REJECT-affine AND (0, 0, 63, 59)
+[182] REJECT-affine AND (1, 0, 4, 63)
+[183] REJECT-affine AND (0, 0, 2, 61)
+[184] REJECT-affine AND (2, 1, 10, 15)
+[185] kill fr=62 lin=PASS diff=FLAG nrej=4
+[186] REJECT-affine AND (0, 0, 47, 42)
+[187] kill-rank fr=59
+[188] REJECT-affine AND (2, 1, 32, 37)
+[189] REJECT-affine AND (0, 0, 62, 63)
+[190] REJECT-affine AND (0, 1, 63, 4)
+[191] REJECT-affine AND (0, 0, 63, 3)
+[192] REJECT-affine AND (0, 0, 37, 32)
+[193] REJECT-affine AND (2, 1, 20, 25)
+[194] REJECT-affine AND (2, 0, 53, 58)
+[195] kill fr=62 lin=PASS diff=FLAG nrej=8
+[196] REJECT-affine AND (1, 0, 3, 8)
+[197] REJECT-affine AND (1, 1, 0, 3)
+[198] REJECT-affine AND (0, 0, 46, 51)
+[199] REJECT-affine AND (2, 0, 1, 61)
+[200] REJECT-affine AND (2, 0, 17, 12)
+[201] REJECT-affine AND (0, 1, 25, 30)
+[202] REJECT-affine AND (2, 0, 59, 54)
+[203] REJECT-affine AND (0, 1, 54, 59)
+[204] REJECT-affine AND (1, 0, 33, 28)
+[205] REJECT-affine AND (1, 0, 44, 39)
+[206] REJECT-affine AND (0, 0, 40, 35)
+[207] kill fr=63 lin=PASS diff=FLAG nrej=4
+[208] REJECT-affine AND (2, 0, 25, 30)
+[209] REJECT-affine AND (0, 0, 24, 19)
+[210] REJECT-affine AND (2, 1, 61, 63)
+[211] REJECT-affine AND (1, 1, 10, 5)
+[212] REJECT-affine AND (2, 1, 1, 62)
+[213] REJECT-affine AND (1, 0, 32, 27)
+[214] REJECT-affine AND (1, 1, 9, 14)
+[215] REJECT-affine AND (1, 0, 35, 30)
+[216] REJECT-affine AND (0, 0, 11, 16)
+[217] REJECT-affine AND (0, 1, 18, 23)
+[218] REJECT-affine AND (0, 1, 38, 33)
+[219] REJECT-affine AND (0, 0, 49, 44)
+[220] REJECT-affine AND (0, 0, 63, 61)
+[221] REJECT-affine AND (2, 1, 0, 60)
+[222] REJECT-affine AND (0, 0, 25, 20)
+[223] REJECT-affine AND (1, 0, 63, 61)
+[224] REJECT-affine AND (1, 0, 22, 27)
+[225] REJECT-affine AND (0, 0, 40, 35)
+[226] REJECT-affine AND (0, 0, 20, 25)
+[227] kill fr=62 lin=FLAG diff=FLAG nrej=10
+[228] REJECT-affine AND (0, 0, 44, 49)
+[229] REJECT-affine AND (0, 0, 63, 58)
+[230] kill fr=63 lin=PASS diff=FLAG nrej=2
+[231] REJECT-affine AND (0, 0, 60, 55)
+[232] REJECT-affine AND (2, 1, 13, 8)
+[233] REJECT-affine AND (0, 0, 47, 52)
+[234] kill fr=63 lin=PASS diff=FLAG nrej=3
+[235] REJECT-affine AND (0, 0, 62, 3)
+[236] REJECT-affine AND (0, 0, 32, 27)
+[237] REJECT-affine AND (0, 0, 56, 51)
+[238] REJECT-affine AND (1, 0, 63, 62)
+[239] REJECT-affine AND (0, 0, 61, 0)
+[240] REJECT-affine AND (2, 0, 44, 49)
+[241] REJECT-affine AND (0, 0, 41, 46)
+[242] REJECT-affine AND (0, 1, 62, 1)
+[243] kill fr=62 lin=PASS diff=FLAG nrej=3
+[244] REJECT-affine AND (1, 1, 2, 61)
+[245] REJECT-affine AND (1, 0, 3, 63)
+[246] REJECT-affine AND (0, 0, 15, 20)
+[247] REJECT-affine AND (2, 0, 6, 11)
+[248] REJECT-affine AND (1, 1, 55, 60)
+[249] kill fr=62 lin=PASS diff=FLAG nrej=5
+[250] REJECT-affine AND (0, 0, 58, 63)
+[251] REJECT-affine AND (0, 0, 63, 58)
+[252] REJECT-affine AND (1, 1, 27, 22)
+[253] REJECT-affine AND (2, 0, 3, 63)
+[254] REJECT-affine AND (2, 0, 33, 28)
+[255] REJECT-affine AND (1, 0, 0, 1)
+[256] REJECT-affine AND (2, 1, 61, 2)
+[257] REJECT-affine AND (0, 0, 36, 31)
+[258] kill-rank fr=61
+[259] REJECT-affine AND (0, 0, 44, 39)
+[260] REJECT-affine AND (2, 0, 58, 53)
+[261] REJECT-affine AND (0, 0, 21, 16)
+[262] REJECT-affine AND (1, 1, 11, 16)
+[263] REJECT-affine AND (0, 0, 22, 17)
+[264] REJECT-affine AND (1, 1, 24, 29)
+[265] REJECT-affine AND (1, 1, 30, 35)
+[266] REJECT-affine AND (0, 0, 45, 40)
+[267] REJECT-affine AND (2, 1, 14, 19)
+[268] REJECT-affine AND (2, 0, 42, 37)
+[269] REJECT-affine AND (0, 1, 45, 40)
+[270] REJECT-affine AND (0, 0, 18, 23)
+[271] REJECT-affine AND (1, 0, 35, 40)
+[272] REJECT-affine AND (0, 0, 3, 8)
+[273] kill fr=63 lin=PASS diff=FLAG nrej=10
+[274] REJECT-affine AND (0, 1, 58, 63)
+[275] REJECT-affine AND (0, 1, 31, 26)
+[276] REJECT-affine AND (0, 1, 20, 15)
+[277] kill-rank fr=53
+[278] REJECT-affine AND (1, 1, 29, 34)
+[279] REJECT-affine AND (1, 1, 20, 15)
+[280] kill fr=62 lin=PASS diff=FLAG nrej=5
+[281] REJECT-affine AND (0, 0, 1, 4)
+[282] REJECT-affine AND (0, 0, 26, 31)
+[283] REJECT-affine AND (0, 0, 48, 43)
+[284] REJECT-affine AND (0, 0, 37, 42)
+[285] REJECT-affine AND (0, 0, 0, 63)
+[286] REJECT-affine AND (1, 0, 1, 6)
+[287] REJECT-affine AND (1, 1, 50, 45)
+[288] REJECT-affine AND (1, 1, 63, 3)
+[289] REJECT-affine AND (0, 0, 1, 60)
+[290] REJECT-affine AND (0, 1, 31, 26)
+[291] REJECT-affine AND (0, 0, 34, 39)
+[292] kill-rank fr=54
+[293] REJECT-affine AND (1, 1, 27, 32)
+[294] kill-rank fr=47
+[295] REJECT-affine AND (0, 1, 63, 2)
+[296] kill-rank fr=58
+[297] REJECT-affine AND (2, 1, 37, 42)
+[298] REJECT-affine AND (0, 1, 15, 20)
+[299] REJECT-affine AND (1, 1, 26, 21)
+DONE keeps=0

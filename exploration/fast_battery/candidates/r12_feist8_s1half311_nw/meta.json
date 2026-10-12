@@ -1,0 +1,26 @@
+{
+ "name": "r12_feist8_s1half311_nw",
+ "description": "8r Feistel, F=S1(low16)+lin(3,11), NO whitening",
+ "composition": "8r Feistel, F=S1(low16)+lin(3,11), NO whitening",
+ "rtl_top": "r12_feist8_s1half311_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x343a0f8736c7a424"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xc13861b7f3ba351c"
+  }
+ ]
+}

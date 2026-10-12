@@ -1,0 +1,26 @@
+{
+ "name": "r12_feist6_s1_16rot_nw",
+ "description": "6r Feistel, F=S1+lin16(x^rotl32(x,3)^rot16half(x,7)), NO whitening",
+ "composition": "6r Feistel, F=S1+lin16(x^rotl32(x,3)^rot16half(x,7)), NO whitening",
+ "rtl_top": "r12_feist6_s1_16rot_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x0a902cff22964d06"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x200d793bb4c74741"
+  }
+ ]
+}

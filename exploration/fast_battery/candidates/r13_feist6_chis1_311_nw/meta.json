@@ -1,0 +1,26 @@
+{
+ "name": "r13_feist6_chis1_311_nw",
+ "description": "6r Feistel, F=lin311(S1(chi32(R)))^rk, NO whitening",
+ "composition": "6r Feistel, F=lin311(S1(chi32(R)))^rk, NO whitening",
+ "rtl_top": "r13_feist6_chis1_311_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x0978e60c4bd53199"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x74c0b11de354b14d"
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "name": "r13_feist6_s1x3_chix3_nw",
+ "description": "6r Feistel, rounds 1-3 S1-F / rounds 4-6 chi-F, NO whitening",
+ "composition": "6r Feistel, rounds 1-3 S1-F / rounds 4-6 chi-F, NO whitening",
+ "rtl_top": "r13_feist6_s1x3_chix3_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xa8f5dcaa686bd7db"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x9f2a464f06ae737b"
+  }
+ ]
+}

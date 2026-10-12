@@ -1,0 +1,26 @@
+{
+ "name": "r13_feist6_s1_midk311_nw",
+ "description": "6r Feistel, F=lin311(S1(R)^rk) (key between S-box and linear), NO whitening",
+ "composition": "6r Feistel, F=lin311(S1(R)^rk) (key between S-box and linear), NO whitening",
+ "rtl_top": "r13_feist6_s1_midk311_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x9dd2a28ea7e078be"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x3f5e66ff408bb90f"
+  }
+ ]
+}

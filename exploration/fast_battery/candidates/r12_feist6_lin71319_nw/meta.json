@@ -1,0 +1,26 @@
+{
+ "name": "r12_feist6_lin71319_nw",
+ "description": "6r Feistel, F=S1+lin(7,13,19), NO whitening",
+ "composition": "6r Feistel, F=S1+lin(7,13,19), NO whitening",
+ "rtl_top": "r12_feist6_lin71319_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x02eab6b6759becbd"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x1a763cfc27723923"
+  }
+ ]
+}

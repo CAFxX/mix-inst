@@ -1,0 +1,26 @@
+{
+ "name": "r14_feist4_chis1l_nw",
+ "description": "4r Feistel, F=lin311(chi32(S1(R^rk))), NO whitening",
+ "composition": "4r Feistel, F=lin311(chi32(S1(R^rk))), NO whitening",
+ "rtl_top": "r14_feist4_chis1l_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x214f4174293b7ee6"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xedbf34f43ae32871"
+  }
+ ]
+}

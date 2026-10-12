@@ -1,0 +1,26 @@
+{
+ "name": "r12_feist5_lin31125_nw",
+ "description": "5r Feistel, F=S1+lin(3,11,25), NO whitening",
+ "composition": "5r Feistel, F=S1+lin(3,11,25), NO whitening",
+ "rtl_top": "r12_feist5_lin31125_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x41e124e0c82d0922"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x4975410786ade8ba"
+  }
+ ]
+}

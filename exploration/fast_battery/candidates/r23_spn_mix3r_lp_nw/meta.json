@@ -1,0 +1,26 @@
+{
+ "name": "r23_spn_mix3r_lp_nw",
+ "description": "R23 P1: 3-round keyed SPN x=L(P(S(x^rk))); P=O34, L=lin(3,11), S1. Round-count cliff probe: each round ~7u -> ~21u if it survives S2.",
+ "composition": "R23 P1: 3-round keyed SPN x=L(P(S(x^rk))); P=O34, L=lin(3,11), S1. Round-count cliff probe: each round ~7u -> ~21u if it survives S2.",
+ "rtl_top": "r23_spn_mix3r_lp_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x5655059d5caf10bf"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x42614718bfdd8996"
+  }
+ ]
+}

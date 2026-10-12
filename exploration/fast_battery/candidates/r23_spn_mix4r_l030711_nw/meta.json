@@ -1,0 +1,26 @@
+{
+ "name": "r23_spn_mix4r_l030711_nw",
+ "description": "R23 P2: 4r SPN, L=rotl(x,3)^rotl(x,7)^rotl(x,11) (no-identity 3-term, r21 3rot_ns form); S1, P=O34.",
+ "composition": "R23 P2: 4r SPN, L=rotl(x,3)^rotl(x,7)^rotl(x,11) (no-identity 3-term, r21 3rot_ns form); S1, P=O34.",
+ "rtl_top": "r23_spn_mix4r_l030711_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x216e4ffc3f01973d"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x36967ff104ecb0d2"
+  }
+ ]
+}

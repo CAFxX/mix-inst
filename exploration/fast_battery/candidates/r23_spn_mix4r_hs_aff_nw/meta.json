@@ -1,0 +1,26 @@
+{
+ "name": "r23_spn_mix4r_hs_aff_nw",
+ "description": "R23 P6b: 4r SPN, per-lane affine-equivalent S1 variants S_n(x)=S1(x^n)^(7n%16) (all DU4/LAT8/deg3 by affine equivalence); P=O34, L=lin(3,11).",
+ "composition": "R23 P6b: 4r SPN, per-lane affine-equivalent S1 variants S_n(x)=S1(x^n)^(7n%16) (all DU4/LAT8/deg3 by affine equivalence); P=O34, L=lin(3,11).",
+ "rtl_top": "r23_spn_mix4r_hs_aff_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x2b725aa9002f76de"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xd32f89f64ceb7709"
+  }
+ ]
+}

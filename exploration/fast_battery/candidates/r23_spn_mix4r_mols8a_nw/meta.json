@@ -1,0 +1,26 @@
+{
+ "name": "r23_spn_mix4r_mols8a_nw",
+ "description": "R23 P8: 4r SPN, MOLS(8)-derived P-box mols8a OA cols J,I base(a=1,b=2) off=(0,1) (O34-validated); S1, L=lin(3,11).",
+ "composition": "R23 P8: 4r SPN, MOLS(8)-derived P-box mols8a OA cols J,I base(a=1,b=2) off=(0,1) (O34-validated); S1, L=lin(3,11).",
+ "rtl_top": "r23_spn_mix4r_mols8a_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x41793014f5a653a"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xfb972a7ef9c6bd96"
+  }
+ ]
+}

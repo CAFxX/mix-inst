@@ -1,0 +1,26 @@
+{
+ "name": "r23_spn_mix4r_ks0_nw",
+ "description": "R23 P9: 4r SPN, key schedule rk_i=rotl64(key,13*(i+1)) (no GOLDEN round constant); S1, P=O34, L=lin(3,11). Null probe: ABC folds XOR-with-const into XNOR2, expect ~0 delay delta; key-side/data-side wall balanced per critpath.",
+ "composition": "R23 P9: 4r SPN, key schedule rk_i=rotl64(key,13*(i+1)) (no GOLDEN round constant); S1, P=O34, L=lin(3,11). Null probe: ABC folds XOR-with-const into XNOR2, expect ~0 delay delta; key-side/data-side wall balanced per critpath.",
+ "rtl_top": "r23_spn_mix4r_ks0_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xb6db10e0bab860d5"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xc33375e53ca9c211"
+  }
+ ]
+}

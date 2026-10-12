@@ -1,0 +1,26 @@
+{
+ "name": "r23_spn_mix4r_hs_alt_nw",
+ "description": "R23 P6a: 4r SPN, heterogeneous S-box lanes alternate S1/SB1 (even lanes S1 DU4, odd lanes SB1 DU6); P=O34, L=lin(3,11). Delay expectation capped (max-depth); tests S2 margins.",
+ "composition": "R23 P6a: 4r SPN, heterogeneous S-box lanes alternate S1/SB1 (even lanes S1 DU4, odd lanes SB1 DU6); P=O34, L=lin(3,11). Delay expectation capped (max-depth); tests S2 margins.",
+ "rtl_top": "r23_spn_mix4r_hs_alt_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xb0708f9c48657af5"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x1729be7e7b6ce452"
+  }
+ ]
+}

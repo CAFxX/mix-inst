@@ -1,0 +1,26 @@
+{
+ "name": "r22c_spn_mix6r_lp_nw",
+ "description": "O38 V2: 6-round keyed SPN: x_{i+1} = L(P(S16(x_i ^ rk_i))); P=O34 P-box, L=lin(3,11); round-count boundary probe",
+ "composition": "O38 V2: 6-round keyed SPN: x_{i+1} = L(P(S16(x_i ^ rk_i))); P=O34 P-box, L=lin(3,11); round-count boundary probe",
+ "rtl_top": "r22c_spn_mix6r_lp_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x65f8f3dc7acd7f7b"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x145636da9742ecf2"
+  }
+ ]
+}

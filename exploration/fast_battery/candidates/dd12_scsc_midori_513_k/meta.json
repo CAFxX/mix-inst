@@ -1,0 +1,26 @@
+{
+ "name": "dd12_scsc_midori_513_k",
+ "description": "Directed Design 12 (D9): 4r SCSC, Midori Sb0 S-box, KECCAK-chi CHI_A, LIN(5,13) all rounds \u2014 flavor x sbox matrix completion (dd9_k was 27.2u)",
+ "batch": "batch12",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "rtl_top": "dd12_scsc_midori_513_k",
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xfd2c89720e77464f"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x11e8774b9a28fc9e"
+  }
+ ]
+}

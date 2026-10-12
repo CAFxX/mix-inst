@@ -1,0 +1,26 @@
+{
+ "name": "dd12_scsc_midori_719_a",
+ "description": "Directed Design 12 (D9): 4r SCSC, Midori Sb0 S-box, AND-chi CHI_A, LIN(7,19) all rounds \u2014 lever 2 (rotation pair)",
+ "batch": "batch12",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "rtl_top": "dd12_scsc_midori_719_a",
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xf7f5d00644eda669"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xb2a626fbf0319d82"
+  }
+ ]
+}

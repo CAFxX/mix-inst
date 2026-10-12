@@ -1,0 +1,26 @@
+{
+ "name": "dd10_scsc_linchi_a",
+ "description": "Directed Design 10 (D7): 4r SCSC, AND-chi, LIN(5,13) on chi rounds only \u2014 does the chi round need LIN?",
+ "batch": "batch10",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "rtl_top": "dd10_scsc_linchi_a",
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xfba11229082a3dea"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x1bd8c43c2dec0c1f"
+  }
+ ]
+}

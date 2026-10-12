@@ -1,0 +1,26 @@
+{
+ "name": "dd11_ccs_wa",
+ "description": "Directed Design 11 (D8): 3r CCS, AND-chi wideA triples, LIN(5,13) all rounds \u2014 D8 triple co-design",
+ "batch": "batch11",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "rtl_top": "dd11_ccs_wa",
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xf0f7d7ffc581f757"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xfcc3aeeb015a4497"
+  }
+ ]
+}

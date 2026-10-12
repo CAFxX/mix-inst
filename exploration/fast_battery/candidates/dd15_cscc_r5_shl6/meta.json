@@ -1,0 +1,26 @@
+{
+ "name": "dd15_cscc_r5_shl6",
+ "description": "D13: 4-layer CSCC (chi,S-box,chi,chi) Midori/CHI_A, LIN=x^rotl(x,5)^(x<<6) all rounds (probe D0=18, multi 18/23/16, dprobe 16.1/17.5) \u2014 rot+shift class rep",
+ "batch": "batch15",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "rtl_top": "dd15_cscc_r5_shl6",
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xb7471bd15a569109"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xbe3057db3601e226"
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "name": "dd13_ax2_ssss_midori_1327",
+ "description": "D10 axis-2: 4r SSSS Midori Sb0, LIN(13,27) all rounds (screen D=23, multi 23/19/21, probe 16.3/14.4)",
+ "batch": "batch13",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "rtl_top": "dd13_ax2_ssss_midori_1327",
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x129055b82b0964ea"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x29f3c6e22edd21ea"
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "name": "dd14_ax2_ssss_midori_r13_shr6",
+ "description": "D11 axis-2: 4r SSSS Midori Sb0, LIN=x^rotl(x,13)^(x>>6) all rounds (screen D=20, multi 20/32/29, probe 16.9/15.0) \u2014 D10-best-term transplant survivor (r5_shl6 died on SSSS)",
+ "batch": "batch14",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "rtl_top": "dd14_ax2_ssss_midori_r13_shr6",
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x5160f4e925f53d94"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x66b443f36cf5feff"
+  }
+ ]
+}

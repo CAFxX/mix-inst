@@ -1,0 +1,26 @@
+{
+ "name": "dd10_sccs_linsbox_a",
+ "description": "Directed Design 10 (D7): 4r SCCS, AND-chi, LIN(5,13) on S-box rounds only \u2014 fastest D6 pattern (17.2u) + partial LIN",
+ "batch": "batch10",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "rtl_top": "dd10_sccs_linsbox_a",
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x2cda5a737177557a"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xf4acd235e24975cc"
+  }
+ ]
+}

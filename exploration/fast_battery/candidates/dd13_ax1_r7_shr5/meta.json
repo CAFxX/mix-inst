@@ -1,0 +1,26 @@
+{
+ "name": "dd13_ax1_r7_shr5",
+ "description": "D10 axis-1: 4r SCSC Midori/CHI_A, LIN=x^rotl(x,7)^(x>>5) all rounds (screen D=17, multi 17/33/16, probe 13.2/14.2)",
+ "batch": "batch13",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "rtl_top": "dd13_ax1_r7_shr5",
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x2abf79a26ae6bb4e"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x149f86596e485873"
+  }
+ ]
+}

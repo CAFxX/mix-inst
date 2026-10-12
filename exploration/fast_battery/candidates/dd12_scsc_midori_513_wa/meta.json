@@ -1,0 +1,26 @@
+{
+ "name": "dd12_scsc_midori_513_wa",
+ "description": "Directed Design 12 (D9): 4r SCSC, Midori Sb0 S-box, AND-chi wideA triples, LIN(5,13) all rounds \u2014 lever 3 (chi tuning)",
+ "batch": "batch12",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "rtl_top": "dd12_scsc_midori_513_wa",
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xc0bbddc33b64e5dc"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xa49b19113ac035b8"
+  }
+ ]
+}

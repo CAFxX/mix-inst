@@ -1,0 +1,26 @@
+{
+ "name": "dd11_css_a",
+ "description": "Directed Design 11 (D8): 3r CSS (chi-first), AND-chi CHI_A, LIN(5,13) all rounds \u2014 pattern variant",
+ "batch": "batch11",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "rtl_top": "dd11_css_a",
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xb9525e704bef36a9"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x287d0a608df32d3a"
+  }
+ ]
+}

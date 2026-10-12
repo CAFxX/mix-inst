@@ -1,0 +1,26 @@
+{
+ "name": "dd10_scsc_linsbox_rm",
+ "description": "Directed Design 10 (D7): 4r SCSC, AND-chi, LIN(5,13) on S-box rounds only, hetero R/M S-boxes (R round 0, M round 2)",
+ "batch": "batch10",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "rtl_top": "dd10_scsc_linsbox_rm",
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x643d96afe4ec91bf"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xdbb980b6a3cca92a"
+  }
+ ]
+}

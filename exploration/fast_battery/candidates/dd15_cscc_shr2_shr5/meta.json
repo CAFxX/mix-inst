@@ -1,0 +1,26 @@
+{
+ "name": "dd15_cscc_shr2_shr5",
+ "description": "D13: 4-layer CSCC (chi,S-box,chi,chi) Midori/CHI_A, LIN=x^(x>>2)^(x>>5) all rounds (probe D0=19, multi 19/23/15, dprobe 14.2/14.5) \u2014 shr+shr class rep",
+ "batch": "batch15",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "rtl_top": "dd15_cscc_shr2_shr5",
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x6fd0bd2050c177fa"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x6e518f1c026329e3"
+  }
+ ]
+}

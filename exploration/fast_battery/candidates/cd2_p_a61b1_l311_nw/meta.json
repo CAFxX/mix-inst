@@ -1,0 +1,26 @@
+{
+ "name": "cd2_p_a61b1_l311_nw",
+ "description": "Hybrid Batch 4 front 2: rasC2_0 S-box + affine P(i)=(61*i+1)%64 co-designed FOR lin(3,11) (lin-trail min-top tier).",
+ "composition": "Hybrid Batch 4 front 2: rasC2_0 S-box + affine P(i)=(61*i+1)%64 co-designed FOR lin(3,11) (lin-trail min-top tier).",
+ "rtl_top": "cd2_p_a61b1_l311_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x55d76e84e681ab31"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xffb6c454ad49a877"
+  }
+ ]
+}

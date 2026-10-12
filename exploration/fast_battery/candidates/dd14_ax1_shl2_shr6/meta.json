@@ -1,0 +1,26 @@
+{
+ "name": "dd14_ax1_shl2_shr6",
+ "description": "D11 axis-1: 4r SCSC Midori/CHI_A, LIN=x^(x<<2)^(x>>6) all rounds (screen D=13, multi 13/26/21, probe 15.2/14.8) \u2014 shl+shr class rep",
+ "batch": "batch14",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "rtl_top": "dd14_ax1_shl2_shr6",
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x40a707968db907d1"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x3fda45d883d4a195"
+  }
+ ]
+}

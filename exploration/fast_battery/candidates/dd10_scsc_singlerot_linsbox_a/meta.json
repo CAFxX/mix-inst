@@ -1,0 +1,26 @@
+{
+ "name": "dd10_scsc_singlerot_linsbox_a",
+ "description": "Directed Design 10 (D7): 4r SCSC, AND-chi, single-rotation LIN [13] on S-box rounds only \u2014 cheapest partial-LIN combo",
+ "batch": "batch10",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "rtl_top": "dd10_scsc_singlerot_linsbox_a",
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x40b2e0f5cdffeef9"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x38566fb91b9a5c28"
+  }
+ ]
+}

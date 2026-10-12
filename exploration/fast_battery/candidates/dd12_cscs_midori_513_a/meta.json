@@ -1,0 +1,26 @@
+{
+ "name": "dd12_cscs_midori_513_a",
+ "description": "Directed Design 12 (D9): 4r CSCS (chi-first), Midori Sb0 S-box, AND-chi CHI_A, LIN(5,13) all rounds \u2014 lever 4 (pattern)",
+ "batch": "batch12",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "rtl_top": "dd12_cscs_midori_513_a",
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xd4be97b0e9d58d1e"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xd27e160b95edad76"
+  }
+ ]
+}

@@ -1,0 +1,11 @@
+# fast_battery S0 flow. ABC script: src/abc_nodretime.script
+# (= yosys default for -genlib with dretime REMOVED; see that file for why).
+read_verilog /home/hatch/workspace/mix/exploration/fast_battery/candidates/t6_wand4_5b/rtl.v
+hierarchy -check -top t6_wand4_5b
+proc; opt; flatten; opt
+memory_map; opt
+techmap; opt
+abc -genlib /home/hatch/workspace/mix/synth/mini.genlib -script /home/hatch/workspace/mix/exploration/fast_battery/src/abc_nodretime.script
+opt; clean
+stat
+write_verilog -noattr /home/hatch/workspace/mix/exploration/new_constructions/s0_b30/t6_wand4_5b/_synth/mapped_t6_wand4_5b.v

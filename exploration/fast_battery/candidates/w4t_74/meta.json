@@ -1,0 +1,57 @@
+{
+ "name": "w4t_74",
+ "description": "w4t 4-term rotl-xor linear, screen keep idx 74 (fr=63)",
+ "screen_idx": 74,
+ "stages": [
+  [
+   [
+    26,
+    23
+   ],
+   [
+    6,
+    10
+   ]
+  ],
+  [
+   [
+    33,
+    35
+   ],
+   [
+    61,
+    59
+   ]
+  ],
+  [
+   [
+    37,
+    34
+   ],
+   [
+    18,
+    14
+   ]
+  ]
+ ],
+ "pqrs": [
+  9,
+  15,
+  37,
+  38
+ ],
+ "full_rank": 63,
+ "rtl_top": "w4t_74",
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xa81abe468dd78521"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x22d5ad1116098767"
+  }
+ ]
+}

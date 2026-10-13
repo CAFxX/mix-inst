@@ -1,0 +1,57 @@
+{
+ "name": "w4t_248",
+ "description": "w4t 4-term rotl-xor linear, screen keep idx 248 (fr=62)",
+ "screen_idx": 248,
+ "stages": [
+  [
+   [
+    7,
+    9
+   ],
+   [
+    45,
+    47
+   ]
+  ],
+  [
+   [
+    20,
+    23
+   ],
+   [
+    34,
+    36
+   ]
+  ],
+  [
+   [
+    58,
+    60
+   ],
+   [
+    30,
+    32
+   ]
+  ]
+ ],
+ "pqrs": [
+  9,
+  18,
+  54,
+  60
+ ],
+ "full_rank": 62,
+ "rtl_top": "w4t_248",
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x3a6cff075ed5e04b"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xb0a3ec50c50be20d"
+  }
+ ]
+}

@@ -1,0 +1,1 @@
+EQUIV n=1000 err=0 -> PASS (pinned mapped netlist vs independent spec model)

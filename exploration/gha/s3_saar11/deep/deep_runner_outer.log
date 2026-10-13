@@ -1,0 +1,39 @@
+agentwork-launch: tag=track2/saar11-deep schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+[2026-10-11T06:13:25Z] backoff blocked (try 1), waiting 60s
+[2026-10-11T06:14:29Z] CANARY OK: identity FAILs as required:   DC6-9x1Bytes-1                    R= +1140  p =  3.4e-260   FAIL !!!!!!    
+[2026-10-11T06:14:29Z] saar11_g0 S3 stage 64M ...
+[2026-10-11T06:18:14Z] saar11_g0 64M clean (17 checkpoints)
+[2026-10-11T06:18:20Z] backoff blocked (try 1), waiting 60s
+[2026-10-11T06:20:26Z] saar11_g0 S3 stage 256M ...
+[2026-10-11T06:21:21Z] saar11_g0 256M clean (19 checkpoints)
+[2026-10-11T06:21:21Z] backoff blocked (try 1), waiting 60s
+[2026-10-11T06:26:24Z] saar11_g0 S3 stage 1G ...
+[2026-10-11T06:39:29Z] saar11_g0 1G clean (21 checkpoints)
+[2026-10-11T06:39:30Z] saar11_g0 S3 PASS all stages to 1GB
+[2026-10-11T06:39:31Z] backoff blocked (try 1), waiting 60s
+[2026-10-11T06:41:35Z] saar11_g1 S3 stage 64M ...
+[2026-10-11T06:45:24Z] saar11_g1 64M clean (17 checkpoints)
+[2026-10-11T06:45:26Z] backoff blocked (try 1), waiting 60s
+[2026-10-11T06:46:27Z] saar11_g1 S3 stage 256M ...
+[2026-10-11T06:49:51Z] saar11_g1 256M clean (19 checkpoints)
+[2026-10-11T06:49:52Z] backoff blocked (try 1), waiting 60s
+[2026-10-11T06:57:57Z] saar11_g1 S3 stage 1G ...
+[2026-10-11T07:07:16Z] saar11_g1 1G clean (21 checkpoints)
+[2026-10-11T07:07:16Z] saar11_g1 S3 PASS all stages to 1GB
+[2026-10-11T07:07:17Z] backoff blocked (try 1), waiting 60s
+[2026-10-11T07:08:17Z] saar11_g2 S3 stage 64M ...
+[2026-10-11T07:09:13Z] saar11_g2 64M clean (17 checkpoints)
+[2026-10-11T07:09:13Z] backoff blocked (try 1), waiting 60s
+[2026-10-11T07:16:09Z] saar11_g2 S3 stage 256M ...
+[2026-10-11T07:21:24Z] saar11_g2 256M clean (19 checkpoints)
+[2026-10-11T07:21:25Z] saar11_g2 S3 stage 1G ...
+[2026-10-11T07:31:16Z] saar11_g2 1G clean (21 checkpoints)
+[2026-10-11T07:31:16Z] saar11_g2 S3 PASS all stages to 1GB
+[2026-10-11T07:31:16Z] backoff blocked (try 1), waiting 60s
+[2026-10-11T07:39:36Z] saar11_g3 S3 stage 64M ...
+[2026-10-11T07:41:45Z] saar11_g3 64M clean (17 checkpoints)
+[2026-10-11T07:41:49Z] backoff blocked (try 1), waiting 60s
+[2026-10-11T07:43:51Z] saar11_g3 S3 stage 256M ...
+[2026-10-11T07:48:34Z] saar11_g3 256M clean (19 checkpoints)
+[2026-10-11T07:48:36Z] backoff blocked (try 1), waiting 60s
+[2026-10-11T07:49:37Z] saar11_g3 S3 stage 1G ...

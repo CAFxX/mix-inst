@@ -1,0 +1,13 @@
+{
+ "name": "t6_xc4c",
+ "rtl_top": "t6_xc4c",
+ "description": "4-stage cross-coupled, close AND pairs, alt schedule",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ]
+}

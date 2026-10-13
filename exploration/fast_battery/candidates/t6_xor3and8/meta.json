@@ -1,0 +1,24 @@
+{
+ "name": "t6_xor3and8",
+ "description": "XOR+triple-AND, 8 stages",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x4dd2e62e8e688fa8"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x53d08a582420e916"
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "name": "t6_wide4b",
+ "rtl_top": "t6_wide4b",
+ "description": "4-stage WIDE AND-cascade, alternate schedule",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ]
+}

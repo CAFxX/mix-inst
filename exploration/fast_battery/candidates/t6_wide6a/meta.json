@@ -1,0 +1,13 @@
+{
+ "name": "t6_wide6a",
+ "rtl_top": "t6_wide6a",
+ "description": "6-stage dual parallel AND terms + linear",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ]
+}

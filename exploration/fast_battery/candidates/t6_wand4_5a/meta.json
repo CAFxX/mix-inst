@@ -1,0 +1,25 @@
+{
+ "name": "t6_wand4_5a",
+ "rtl_top": "t6_wand4_5a",
+ "description": "5-stage AND4+spread (order-4 density probe)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xbb37d698b71ccff3"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x5326a74d8e3f8381"
+  }
+ ]
+}

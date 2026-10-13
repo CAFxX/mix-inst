@@ -1,0 +1,25 @@
+{
+ "name": "t6_wand3_5c",
+ "rtl_top": "t6_wand3_5c",
+ "description": "5-stage AND3+spread, al key schedule, sched A",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xf8148c34930393f9"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x72db9f6308dd91bf"
+  }
+ ]
+}

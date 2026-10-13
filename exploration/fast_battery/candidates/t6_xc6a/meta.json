@@ -1,0 +1,13 @@
+{
+ "name": "t6_xc6a",
+ "rtl_top": "t6_xc6a",
+ "description": "6-stage cross-coupled cascade, control",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ]
+}

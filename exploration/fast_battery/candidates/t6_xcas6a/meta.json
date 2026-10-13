@@ -1,0 +1,13 @@
+{
+ "name": "t6_xcas6a",
+ "rtl_top": "t6_xcas6a",
+ "description": "6-stage cross-cascade (cross-AND halves), sched A",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "name": "t6_xc5b",
+ "rtl_top": "t6_xc5b",
+ "description": "5-stage cross-coupled cascade, alt schedule",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ]
+}

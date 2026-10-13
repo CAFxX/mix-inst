@@ -1,0 +1,26 @@
+{
+ "name": "rtw_rc_ctr",
+ "description": "tweak Z1: chioff13all rc[i]=i+1 counter",
+ "composition": "tweak Z1: chioff13all rc[i]=i+1 counter",
+ "rtl_top": "rtw_rc_ctr",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x6939866cf794724c"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xce838111d2724866"
+  }
+ ]
+}

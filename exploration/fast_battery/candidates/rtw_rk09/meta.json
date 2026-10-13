@@ -1,0 +1,26 @@
+{
+ "name": "rtw_rk09",
+ "description": "tweak N4: chioff13all with RK rotation multiplier 9",
+ "composition": "tweak N4: chioff13all with RK rotation multiplier 9",
+ "rtl_top": "rtw_rk09",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xb563b0ad659628e2"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x7748d5f677057336"
+  }
+ ]
+}

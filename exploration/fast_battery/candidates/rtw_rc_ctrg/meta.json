@@ -1,0 +1,26 @@
+{
+ "name": "rtw_rc_ctrg",
+ "description": "tweak Z1: chioff13all rc[i]=(i+1)*GOLDEN32",
+ "composition": "tweak Z1: chioff13all rc[i]=(i+1)*GOLDEN32",
+ "rtl_top": "rtw_rc_ctrg",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x0a42c29d7b409939"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x6fd4eb7685163c94"
+  }
+ ]
+}

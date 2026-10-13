@@ -1,0 +1,26 @@
+{
+ "name": "rtw_rk27",
+ "description": "tweak N4: chioff13all with RK rotation multiplier 27",
+ "composition": "tweak N4: chioff13all with RK rotation multiplier 27",
+ "rtl_top": "rtw_rk27",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xe8a3840f4ae7fb1a"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x7748d5f677057336"
+  }
+ ]
+}

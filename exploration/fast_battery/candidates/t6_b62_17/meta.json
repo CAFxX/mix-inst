@@ -1,0 +1,25 @@
+{
+ "name": "t6_b62_17",
+ "description": "batch-62 muxD5f 5-stage schedule (weakness-gated triage z=3.03 n_reject=0)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x7c3147f9f2584b56"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xf6fe54ae69864910"
+  }
+ ],
+ "rtl_top": "t6_b62_17"
+}

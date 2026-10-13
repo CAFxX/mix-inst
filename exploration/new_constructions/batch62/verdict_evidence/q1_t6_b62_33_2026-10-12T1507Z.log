@@ -1,0 +1,17 @@
+agentwork-launch: tag=track6/b62-q1-33 schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+  bit 16/64 done (395s)
+  bit 32/64 done (782s)
+  bit 48/64 done (1059s)
+  bit 64/64 done (1418s)
+{
+ "candidate": "t6_b62_33",
+ "key": "0x123456789abcdef0",
+ "N": 262144,
+ "sac_maxdev": 0.0066375732421875,
+ "sac_meandev": 0.0008628815412521362,
+ "sac_z5": 14,
+ "bic_maxcorr": 0.009123994853803167,
+ "bic_meancorr": 0.001556231594698325,
+ "avalanche_mean": 32.00765061378479,
+ "wall_s": 1417.9
+}

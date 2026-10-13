@@ -1,0 +1,23 @@
+{
+ "candidate": "t6_wand3_5c",
+ "verdict": "PASS",
+ "delay_u": 20.0,
+ "cells": 3818,
+ "area": 10483.0,
+ "delay_ratio_vs_mult": 0.1932,
+ "ratio_bar": 0.9,
+ "ref": {
+  "cells": 12645,
+  "crit": 103.5,
+  "cached": true
+ },
+ "equiv_check": {
+  "ok": true,
+  "detail": "n=1000 err=0",
+  "nvecs": 1000
+ },
+ "flow": "yosys 0.69+ abc -genlib mini.genlib, explicit no-dretime script (see README)",
+ "time_ref_s": 0.1,
+ "time_dut_s": 12.2,
+ "time_equiv_s": 32.8
+}

@@ -1,0 +1,58 @@
+{
+  "name": "w37h_keep1",
+  "family": "wave37h-single-lane-dense",
+  "construction": "single-lane 5-stage 1-AND+3-linear; pre x^K; post ^rotl(K,13)",
+  "sched": [
+    [
+      30,
+      41,
+      [
+        39,
+        51,
+        25
+      ]
+    ],
+    [
+      51,
+      39,
+      [
+        15,
+        14,
+        37
+      ]
+    ],
+    [
+      47,
+      8,
+      [
+        31,
+        24,
+        48
+      ]
+    ],
+    [
+      52,
+      53,
+      [
+        18,
+        42,
+        63
+      ]
+    ],
+    [
+      34,
+      33,
+      [
+        28,
+        36,
+        29
+      ]
+    ]
+  ],
+  "triage": {
+    "marg_margin": 2.96244231507403,
+    "seq_z": 3.1695326489524818,
+    "rnd64_z": 2.507743088000059
+  },
+  "source": "fused/wave37h_5st_L3_diag.jsonl try 5"
+}

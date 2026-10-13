@@ -1,0 +1,25 @@
+{
+ "name": "w38_t039",
+ "description": "wave-38 stratified S0 sample, screen try 39 (triage z=2.580, distinct=14, align=5)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xc346ded28df18e3a"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x4989cd85162f8c7c"
+  }
+ ],
+ "rtl_top": "w38_t039"
+}

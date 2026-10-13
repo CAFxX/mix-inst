@@ -1,0 +1,57 @@
+{
+ "name": "w4t_112",
+ "description": "w4t 4-term rotl-xor linear, screen keep idx 112 (fr=63)",
+ "screen_idx": 112,
+ "stages": [
+  [
+   [
+    41,
+    42
+   ],
+   [
+    6,
+    7
+   ]
+  ],
+  [
+   [
+    10,
+    9
+   ],
+   [
+    39,
+    42
+   ]
+  ],
+  [
+   [
+    45,
+    41
+   ],
+   [
+    43,
+    40
+   ]
+  ]
+ ],
+ "pqrs": [
+  13,
+  17,
+  41,
+  48
+ ],
+ "full_rank": 63,
+ "rtl_top": "w4t_112",
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xc3d0d28bfdbdefd6"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x491fc1dc6663ed90"
+  }
+ ]
+}

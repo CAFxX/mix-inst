@@ -1,0 +1,25 @@
+{
+ "name": "w38_t064",
+ "description": "wave-38 stratified S0 sample, screen try 64 (triage z=4.072, distinct=17, align=1)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x20146a4dc833934c"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xaadb791a53ed910a"
+  }
+ ],
+ "rtl_top": "w38_t064"
+}

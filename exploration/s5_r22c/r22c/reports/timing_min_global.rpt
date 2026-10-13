@@ -1,0 +1,30 @@
+Startpoint: key[24] (input port clocked by virt_clk)
+Endpoint: out[33] (output port clocked by virt_clk)
+Path Group: virt_clk
+Path Type: min
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock virt_clk (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.5000    0.5000 ^ input external delay
+   0.0000    0.5000 ^ key[24] (in)
+   0.0869    0.5869 v _2341_/X (sky130_fd_sc_hd__xor2_1)
+   0.1369    0.7238 ^ _2348_/Y (sky130_fd_sc_hd__xnor2_1)
+   0.1412    0.8651 v _2660_/Y (sky130_fd_sc_hd__a221oi_1)
+   0.1112    0.9762 ^ _2761_/Y (sky130_fd_sc_hd__xnor2_1)
+   0.0000    0.9762 ^ out[33] (out)
+             0.9762   data arrival time
+
+   0.0000    0.0000   clock virt_clk (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000   clock reconvergence pessimism
+  -0.5000   -0.5000   output external delay
+            -0.5000   data required time
+-------------------------------------------------------------
+            -0.5000   data required time
+            -0.9762   data arrival time
+-------------------------------------------------------------
+             1.4762   slack (MET)
+
+

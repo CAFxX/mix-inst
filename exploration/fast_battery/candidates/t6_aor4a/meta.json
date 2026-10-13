@@ -1,0 +1,25 @@
+{
+ "name": "t6_aor4a",
+ "description": "4-stage AND-OR fused, rotation set A",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "rtl_top": "t6_aor4a",
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xff5680ef6d5df50a"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xf7a9753388215946"
+  }
+ ]
+}

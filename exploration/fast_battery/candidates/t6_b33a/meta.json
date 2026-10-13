@@ -1,0 +1,25 @@
+{
+ "name": "t6_b33a",
+ "description": "batch-33 proxy-guided 6-stage AND schedule (triage z=2.6)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xb7c29e6463f4b23f"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x3d0d8d33f82ab079"
+  }
+ ],
+ "rtl_top": "t6_b33a"
+}

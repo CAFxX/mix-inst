@@ -1,0 +1,25 @@
+{
+ "name": "t6_andorM6a",
+ "description": "batch-44 andorM6 6-stage schedule (triage z=3.31)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x5dad4b95be3fdde4"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xd76258c225e1dfa2"
+  }
+ ],
+ "rtl_top": "t6_andorM6a"
+}

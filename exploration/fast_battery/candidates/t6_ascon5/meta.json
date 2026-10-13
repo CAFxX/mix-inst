@@ -1,0 +1,24 @@
+{
+ "name": "t6_ascon5",
+ "description": "3-bit chi triplets + linear, 8 rounds",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x4fb720d97a92a5c1"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x4fb720d97a92a5c1"
+  }
+ ]
+}

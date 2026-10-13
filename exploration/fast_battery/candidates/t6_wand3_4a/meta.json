@@ -1,0 +1,25 @@
+{
+ "name": "t6_wand3_4a",
+ "rtl_top": "t6_wand3_4a",
+ "description": "4-stage AND3+spread (order-3 wall test)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x3a8ef8c8e337b1a1"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xb496515b76a4b01e"
+  }
+ ]
+}

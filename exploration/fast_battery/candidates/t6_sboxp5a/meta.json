@@ -1,0 +1,13 @@
+{
+ "name": "t6_sboxp5a",
+ "rtl_top": "t6_sboxp5a",
+ "description": "5-round Midori-Sb0 + PRESENT pLayer SPN",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ]
+}

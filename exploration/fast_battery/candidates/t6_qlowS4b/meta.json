@@ -1,0 +1,25 @@
+{
+ "name": "t6_qlowS4b",
+ "description": "batch-50 qlowS4 4-stage schedule (triage z=5.57)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x70ad14cfa1cdff80"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xfa6207983a13fdc6"
+  }
+ ],
+ "rtl_top": "t6_qlowS4b"
+}

@@ -1,0 +1,13 @@
+{
+ "name": "t6_split3a",
+ "rtl_top": "t6_split3a",
+ "description": "3 super-stages, parallel 32-bit cascades + cross",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ]
+}

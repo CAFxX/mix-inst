@@ -1,0 +1,24 @@
+{
+ "name": "t6_trivium64b",
+ "description": "Trivium denser taps, 8 macro-rounds",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xb379ade0a828cb5e"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xb379ade0ba1c9d26"
+  }
+ ]
+}

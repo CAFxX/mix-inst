@@ -1,0 +1,13 @@
+{
+ "name": "t6_split6a",
+ "rtl_top": "t6_split6a",
+ "description": "Split 32-bit parallel cascade (3+3) + bijective cross",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ]
+}

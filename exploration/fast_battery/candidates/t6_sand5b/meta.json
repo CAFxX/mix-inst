@@ -1,0 +1,25 @@
+{
+ "name": "t6_sand5b",
+ "rtl_top": "t6_sand5b",
+ "description": "5-stage AND-sandwich x^=ra^(rb&rc)^rd, sched B",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xb3eba14227caf655"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x3924b215bc14f413"
+  }
+ ]
+}

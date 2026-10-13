@@ -1,0 +1,25 @@
+{
+ "name": "t6_skip5a",
+ "rtl_top": "t6_skip5a",
+ "description": "5-stage skip-coupled cascade (x-state residual)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xfb2f424e61a6b2dd"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x71e05119fa78b09b"
+  }
+ ]
+}

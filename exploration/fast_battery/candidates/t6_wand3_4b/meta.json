@@ -1,0 +1,25 @@
+{
+ "name": "t6_wand3_4b",
+ "rtl_top": "t6_wand3_4b",
+ "description": "4-stage AND3+spread, al key schedule",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xd1839a1ffa92baf5"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x5b4c8948614cb8b3"
+  }
+ ]
+}

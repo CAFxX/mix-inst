@@ -1,0 +1,13 @@
+{
+ "name": "t6_twin4a",
+ "rtl_top": "t6_twin4a",
+ "description": "4-stage twin-AND (density hypothesis)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ]
+}

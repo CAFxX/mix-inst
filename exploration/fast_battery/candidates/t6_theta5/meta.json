@@ -1,0 +1,24 @@
+{
+ "name": "t6_theta5",
+ "description": "S-box + theta parity, 5 rounds",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x771e6fe325932f0d"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xdab84e923f37508f"
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+{
+ "name": "t6_xorshift_nl",
+ "description": "xorshift + AND-rotation filter, 4 rounds",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x63bc0f4a31a8b155"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x9e5cf794a101495a"
+  }
+ ]
+}

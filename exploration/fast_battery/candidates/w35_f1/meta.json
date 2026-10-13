@@ -1,0 +1,25 @@
+{
+ "name": "w35_f1",
+ "description": "wave-35 two-state template F: AND-cascade + Midori-Sb0 S-box layer",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x14cd8e50fd77bb8d"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x9e029d0766a9b9cb"
+  }
+ ],
+ "rtl_top": "w35_f1"
+}

@@ -1,0 +1,25 @@
+{
+ "name": "w37b_keep0",
+ "description": "wave-37b two-lane repair (L=3 intra-linear/lane, AND-cross), KEEP try hit0 (z=9.52)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x547772e5622c666a"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xf2f79fd58b3a7fa5"
+  }
+ ],
+ "rtl_top": "w37b_keep0"
+}

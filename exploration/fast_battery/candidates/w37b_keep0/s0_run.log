@@ -1,0 +1,5 @@
+agentwork-launch: tag=track8/w37b-s0 schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT w37b_keep0: cells=11759 area=33966 crit=20.9
+RESULT name=w37b_keep0 cells=11759 area=33966 crit=20.9 delay_ratio=0.202 area_ratio=0.962 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)

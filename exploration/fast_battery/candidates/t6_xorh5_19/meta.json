@@ -1,0 +1,25 @@
+{
+ "name": "t6_xorh5_19",
+ "description": "xorh5 hetero 4xMUXD+1xXOR4 schedule (fisher triage z=3.99 n_reject=0)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x6136726e97fdab74"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xebf961390c23a932"
+  }
+ ],
+ "rtl_top": "t6_xorh5_19"
+}

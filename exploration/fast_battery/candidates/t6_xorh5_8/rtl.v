@@ -1,0 +1,35 @@
+// t6_xorh5_8: xorh5 hetero schedule (fisher triage z=2.93 n_reject=0)
+module t6_xorh5_8(
+    input  [63:0] val,
+    input  [63:0] key,
+    output [63:0] out
+);
+    wire [63:0] x0 = val ^ key;
+    wire [63:0] x1 = x0 ^ {x0[16:0],x0[63:17]} ^ {x0[28:0],x0[63:29]} ^ {x0[27:0],x0[63:28]} ^ {x0[54:0],x0[63:55]};
+    wire [63:0] x2_s = {x1[40:0],x1[63:41]};
+    wire [63:0] x2_a = {x1[17:0],x1[63:18]};
+    wire [63:0] x2_b = {x1[5:0],x1[63:6]};
+    wire [63:0] x2_d = {x1[45:0],x1[63:46]};
+    wire [63:0] x2_m = (x2_s & x2_a) | (~x2_s & x2_b);
+    wire [63:0] x2 = x1 ^ x2_m ^ x2_d;
+    wire [63:0] x3_s = {x2[26:0],x2[63:27]};
+    wire [63:0] x3_a = {x2[51:0],x2[63:52]};
+    wire [63:0] x3_b = {x2[22:0],x2[63:23]};
+    wire [63:0] x3_d = {x2[49:0],x2[63:50]};
+    wire [63:0] x3_m = (x3_s & x3_a) | (~x3_s & x3_b);
+    wire [63:0] x3 = x2 ^ x3_m ^ x3_d;
+    wire [63:0] x4_s = {x3[29:0],x3[63:30]};
+    wire [63:0] x4_a = {x3[11:0],x3[63:12]};
+    wire [63:0] x4_b = {x3[2:0],x3[63:3]};
+    wire [63:0] x4_d = {x3[44:0],x3[63:45]};
+    wire [63:0] x4_m = (x4_s & x4_a) | (~x4_s & x4_b);
+    wire [63:0] x4 = x3 ^ x4_m ^ x4_d;
+    wire [63:0] x5_s = {x4[10:0],x4[63:11]};
+    wire [63:0] x5_a = {x4[21:0],x4[63:22]};
+    wire [63:0] x5_b = {x4[62:0],x4[63:63]};
+    wire [63:0] x5_d = {x4[41:0],x4[63:42]};
+    wire [63:0] x5_m = (x5_s & x5_a) | (~x5_s & x5_b);
+    wire [63:0] x5 = x4 ^ x5_m ^ x5_d;
+    wire [63:0] k13 = {key[50:0],key[63:51]};
+    assign out = x5 ^ k13;
+endmodule

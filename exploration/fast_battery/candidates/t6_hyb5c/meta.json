@@ -1,0 +1,13 @@
+{
+ "name": "t6_hyb5c",
+ "rtl_top": "t6_hyb5c",
+ "description": "3 singles + 2 dual-AND (no re)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ]
+}

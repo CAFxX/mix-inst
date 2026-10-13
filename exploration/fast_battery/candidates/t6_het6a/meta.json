@@ -1,0 +1,12 @@
+{
+ "name": "t6_het6a",
+ "description": "heterogeneous cascade A: maj/andor/chi/majxor/xor3and/maj",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ]
+}

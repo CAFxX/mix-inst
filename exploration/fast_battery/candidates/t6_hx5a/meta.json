@@ -1,0 +1,13 @@
+{
+ "name": "t6_hx5a",
+ "rtl_top": "t6_hx5a",
+ "description": "hetero x^= 5-stage simple: ANDXOR/ORXOR/MAJ/ANDXOR/ORXOR",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ]
+}

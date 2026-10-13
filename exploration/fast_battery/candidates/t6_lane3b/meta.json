@@ -1,0 +1,25 @@
+{
+ "name": "t6_lane3b",
+ "rtl_top": "t6_lane3b",
+ "description": "3+3 cross-fed dual-lane cascade, sched B",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xc76c5e4115ffdead"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x87fee483ebf016e0"
+  }
+ ]
+}

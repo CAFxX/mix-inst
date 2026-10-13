@@ -1,0 +1,25 @@
+{
+  "name": "t6_maj6",
+  "description": "majority cascade, 6 stages",
+  "screen_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "practrand_keys": [
+    "0x123456789abcdef0",
+    "0x0"
+  ],
+  "goldens": [
+    {
+      "val": "0x0",
+      "key": "0x123456789abcdef0",
+      "out": "0xbe9d4aaa2682da00"
+    },
+    {
+      "val": "0x123456789abcdef0",
+      "key": "0x0",
+      "out": "0x5d727695360e3536"
+    }
+  ],
+  "rtl_top": "t6_maj6"
+}

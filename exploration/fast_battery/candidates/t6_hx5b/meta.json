@@ -1,0 +1,13 @@
+{
+ "name": "t6_hx5b",
+ "rtl_top": "t6_hx5b",
+ "description": "hetero x^= 5-stage simple, alternate schedule",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ]
+}

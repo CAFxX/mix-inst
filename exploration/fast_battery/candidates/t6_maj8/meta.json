@@ -1,0 +1,24 @@
+{
+ "name": "t6_maj8",
+ "description": "majority cascade, 8 stages",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xfa72a27ce471185f"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xf980a08c7d284f4d"
+  }
+ ]
+}

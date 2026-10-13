@@ -1,0 +1,13 @@
+{
+ "name": "t6_het5a",
+ "rtl_top": "t6_het5a",
+ "description": "heterogeneous 5-stage: maj/andor/chi/majxor/xor3and",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ]
+}

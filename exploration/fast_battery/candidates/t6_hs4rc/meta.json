@@ -1,0 +1,13 @@
+{
+ "name": "t6_hs4rc",
+ "rtl_top": "t6_hs4rc",
+ "description": "6-stage AND hetero-strength: rc on 0,1,3,4",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "name": "t6_hyb5e",
+ "rtl_top": "t6_hyb5e",
+ "description": "4 AND-stages + S-box+P-box super-stage last",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ]
+}

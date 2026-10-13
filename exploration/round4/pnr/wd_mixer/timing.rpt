@@ -1,0 +1,42 @@
+Startpoint: key[44] (input port clocked by vclk)
+Endpoint: out[28] (output port clocked by vclk)
+Path Group: vclk
+Path Type: max
+
+    Delay      Time   Description
+-------------------------------------------------------------
+   0.0000    0.0000   clock vclk (rise edge)
+   0.0000    0.0000   clock network delay (ideal)
+   0.0000    0.0000 v input external delay
+   0.0000    0.0000 v key[44] (in)
+   0.1553    0.1553 ^ _1346_/Y (sky130_fd_sc_hd__xnor2_4)
+   0.4223    0.5776 v _1523_/X (sky130_fd_sc_hd__xnor3_1)
+   0.4151    0.9927 v _1525_/X (sky130_fd_sc_hd__xor3_2)
+   0.2039    1.1966 v _1526_/X (sky130_fd_sc_hd__xor2_1)
+   0.3506    1.5472 ^ _1562_/Y (sky130_fd_sc_hd__nor4_1)
+   0.1260    1.6732 v _1564_/Y (sky130_fd_sc_hd__nor2_1)
+   0.4122    2.0854 v _1578_/X (sky130_fd_sc_hd__xnor3_1)
+   0.5289    2.6142 v _1609_/X (sky130_fd_sc_hd__or4_4)
+   0.1802    2.7944 ^ _1612_/Y (sky130_fd_sc_hd__o211ai_4)
+   0.5042    3.2985 v _2088_/X (sky130_fd_sc_hd__xor3_2)
+   0.1735    3.4720 v _2123_/Y (sky130_fd_sc_hd__nand2b_1)
+   0.2171    3.6891 ^ _2138_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.1922    3.8814 ^ _2427_/Y (sky130_fd_sc_hd__xnor2_1)
+   0.1201    4.0015 ^ _2471_/Y (sky130_fd_sc_hd__xnor2_1)
+   0.0000    4.0015 ^ out[28] (out)
+             4.0015   data arrival time
+
+10000.0000 10000.0000   clock vclk (rise edge)
+   0.0000 10000.0000   clock network delay (ideal)
+   0.0000 10000.0000   clock reconvergence pessimism
+   0.0000 10000.0000   output external delay
+          10000.0000   data required time
+-------------------------------------------------------------
+          10000.0000   data required time
+            -4.0015   data arrival time
+-------------------------------------------------------------
+          9995.9980   slack (MET)
+
+
+tns 0.00
+wns 0.00

@@ -1,0 +1,261 @@
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef, created 14 layers, 25 vias
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef at line 2.
+
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef, created 437 library cells
+[WARNING IFP-0028] Core area lower left (15.000, 15.000) snapped to (15.180, 16.320).
+[INFO IFP-0001] Added 188 rows of 1119 site unithd.
+Found 0 macro blocks.
+Using 2 tracks default min distance between IO pins.
+[INFO PPL-0001] Number of slots           1984
+[INFO PPL-0002] Number of I/O             192
+[INFO PPL-0003] Number of I/O w/sink      192
+[INFO PPL-0004] Number of I/O w/o sink    0
+[INFO PPL-0005] Slots per section         200
+[INFO PPL-0008] Successfully assigned pins to sections.
+[INFO PPL-0012] I/O nets HPWL: 60798.72 um.
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: (  0.460  2.720 ) um
+[INFO GPL-0004] CoreBBox: ( 15.180 16.320 ) ( 529.920 527.680 ) um
+[INFO GPL-0006] NumInstances:              9639
+[INFO GPL-0007] NumPlaceInstances:         9639
+[INFO GPL-0008] NumFixedInstances:            0
+[INFO GPL-0009] NumDummyInstances:            0
+[INFO GPL-0010] NumNets:                   9767
+[INFO GPL-0011] NumPins:                  32811
+[INFO GPL-0012] DieBBox:  (  0.000  0.000 ) ( 545.000 545.000 ) um
+[INFO GPL-0013] CoreBBox: ( 15.180 16.320 ) ( 529.920 527.680 ) um
+[INFO GPL-0016] CoreArea:            263217.446 um^2
+[INFO GPL-0017] NonPlaceInstsArea:        0.000 um^2
+[INFO GPL-0018] PlaceInstsArea:       66005.805 um^2
+[INFO GPL-0019] Util:                    25.077 %
+[INFO GPL-0020] StdInstsArea:         66005.805 um^2
+[INFO GPL-0021] MacroInstsArea:           0.000 um^2
+[InitialPlace]  Iter: 1 CG residual: 0.00356361 HPWL: 214547620
+[InitialPlace]  Iter: 2 CG residual: 0.00003218 HPWL: 73442108
+[InitialPlace]  Iter: 3 CG residual: 0.00000021 HPWL: 73460356
+[InitialPlace]  Iter: 4 CG residual: 0.00000304 HPWL: 73549853
+[InitialPlace]  Iter: 5 CG residual: 0.00000617 HPWL: 73530085
+[INFO GPL-0031] FillerInit:NumGCells:     27175
+[INFO GPL-0032] FillerInit:NumGNets:       9767
+[INFO GPL-0033] FillerInit:NumGPins:      32811
+[INFO GPL-0023] TargetDensity:            0.700
+[INFO GPL-0024] AvrgPlaceInstArea:        6.848 um^2
+[INFO GPL-0025] IdealBinArea:             9.783 um^2
+[INFO GPL-0026] IdealBinCnt:              26906
+[INFO GPL-0027] TotalBinArea:        263217.446 um^2
+[INFO GPL-0028] BinCnt:       128    128
+[INFO GPL-0029] BinSize: (  4.022  3.995 )
+[INFO GPL-0030] NumBins: 16384
+[NesterovSolve] Iter:    1 overflow: 0.995 HPWL: 24612685
+[NesterovSolve] Iter:   10 overflow: 0.992 HPWL: 26117505
+[NesterovSolve] Iter:   20 overflow: 0.992 HPWL: 26415129
+[NesterovSolve] Iter:   30 overflow: 0.992 HPWL: 26453889
+[NesterovSolve] Iter:   40 overflow: 0.992 HPWL: 26445439
+[NesterovSolve] Iter:   50 overflow: 0.992 HPWL: 26426509
+[NesterovSolve] Iter:   60 overflow: 0.992 HPWL: 26422739
+[NesterovSolve] Iter:   70 overflow: 0.992 HPWL: 26427314
+[NesterovSolve] Iter:   80 overflow: 0.992 HPWL: 26423351
+[NesterovSolve] Iter:   90 overflow: 0.992 HPWL: 26411921
+[NesterovSolve] Iter:  100 overflow: 0.992 HPWL: 26400768
+[NesterovSolve] Iter:  110 overflow: 0.992 HPWL: 26394679
+[NesterovSolve] Iter:  120 overflow: 0.992 HPWL: 26408740
+[NesterovSolve] Iter:  130 overflow: 0.992 HPWL: 26494730
+[NesterovSolve] Iter:  140 overflow: 0.991 HPWL: 26765572
+[NesterovSolve] Iter:  150 overflow: 0.990 HPWL: 27373364
+[NesterovSolve] Iter:  160 overflow: 0.989 HPWL: 28509290
+[NesterovSolve] Iter:  170 overflow: 0.987 HPWL: 30481343
+[NesterovSolve] Iter:  180 overflow: 0.984 HPWL: 33425840
+[NesterovSolve] Iter:  190 overflow: 0.978 HPWL: 37353810
+[NesterovSolve] Iter:  200 overflow: 0.971 HPWL: 42315637
+[NesterovSolve] Iter:  210 overflow: 0.962 HPWL: 48542330
+[NesterovSolve] Iter:  220 overflow: 0.948 HPWL: 56523831
+[NesterovSolve] Iter:  230 overflow: 0.929 HPWL: 66156345
+[NesterovSolve] Iter:  240 overflow: 0.904 HPWL: 76549544
+[NesterovSolve] Iter:  250 overflow: 0.874 HPWL: 85992238
+[NesterovSolve] Iter:  260 overflow: 0.843 HPWL: 93317452
+[NesterovSolve] Iter:  270 overflow: 0.805 HPWL: 100794794
+[NesterovSolve] Iter:  280 overflow: 0.764 HPWL: 112352823
+[NesterovSolve] Iter:  290 overflow: 0.720 HPWL: 119919866
+[NesterovSolve] Iter:  300 overflow: 0.674 HPWL: 121444792
+[NesterovSolve] Iter:  310 overflow: 0.613 HPWL: 130183724
+[NesterovSolve] Iter:  320 overflow: 0.543 HPWL: 132168307
+[NesterovSolve] Iter:  330 overflow: 0.498 HPWL: 141632916
+[NesterovSolve] Iter:  340 overflow: 0.458 HPWL: 141967635
+[NesterovSolve] Iter:  350 overflow: 0.411 HPWL: 147814234
+[NesterovSolve] Iter:  360 overflow: 0.373 HPWL: 145831510
+[NesterovSolve] Iter:  370 overflow: 0.339 HPWL: 146037080
+[NesterovSolve] Iter:  380 overflow: 0.310 HPWL: 146652646
+[NesterovSolve] Iter:  390 overflow: 0.288 HPWL: 144939564
+[NesterovSolve] Iter:  400 overflow: 0.261 HPWL: 145156609
+[NesterovSolve] Iter:  410 overflow: 0.243 HPWL: 145196618
+[NesterovSolve] Iter:  420 overflow: 0.222 HPWL: 144669085
+[NesterovSolve] Iter:  430 overflow: 0.204 HPWL: 144636967
+[NesterovSolve] Iter:  440 overflow: 0.184 HPWL: 144623908
+[NesterovSolve] Iter:  450 overflow: 0.167 HPWL: 144646924
+[NesterovSolve] Iter:  460 overflow: 0.149 HPWL: 144697157
+[NesterovSolve] Iter:  470 overflow: 0.134 HPWL: 144835319
+[NesterovSolve] Iter:  480 overflow: 0.121 HPWL: 144932184
+[NesterovSolve] Iter:  490 overflow: 0.107 HPWL: 145164351
+[NesterovSolve] Finished with Overflow: 0.098536
+[WARNING RSZ-0021] no estimated parasitics. Using wire load models.
+Placement Analysis
+---------------------------------
+total displacement      21390.1 u
+average displacement        2.2 u
+max displacement            8.7 u
+original HPWL          145501.8 u
+legalized HPWL         168464.7 u
+delta HPWL                   16 %
+
+[INFO DRT-0149] Reading tech and libs.
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer mcon
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer mcon
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via2
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via2
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via3
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via3
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via4
+[WARNING DRT-0349] LEF58_ENCLOSURE with no CUTCLASS is not supported. Skipping for layer via4
+
+Units:                1000
+Number of layers:     13
+Number of macros:     437
+Number of vias:       25
+Number of viarulegen: 25
+
+[INFO DRT-0150] Reading design.
+[WARNING DRT-0120] Large net b[4] has 103 pins which may impact routing performance. Consider optimization.
+
+Design:                   mul64_64
+Die area:                 ( 0 0 ) ( 545000 545000 )
+Number of track patterns: 12
+Number of DEF vias:       0
+Number of components:     9639
+Number of terminals:      192
+Number of snets:          0
+Number of nets:           9767
+
+[INFO DRT-0167] List of default vias:
+  Layer mcon
+    default via: L1M1_PR
+  Layer via
+    default via: M1M2_PR
+  Layer via2
+    default via: M2M3_PR
+  Layer via3
+    default via: M3M4_PR
+  Layer via4
+    default via: M4M5_PR
+[INFO DRT-0162] Library cell analysis.
+[INFO DRT-0163] Instance analysis.
+[INFO DRT-0164] Number of unique instances = 108.
+[INFO DRT-0168] Init region query.
+[INFO DRT-0024]   Complete FR_MASTERSLICE.
+[INFO DRT-0024]   Complete licon.
+[INFO DRT-0024]   Complete li1.
+[INFO DRT-0024]   Complete mcon.
+[INFO DRT-0024]   Complete met1.
+[INFO DRT-0024]   Complete via.
+[INFO DRT-0024]   Complete met2.
+[INFO DRT-0024]   Complete via2.
+[INFO DRT-0024]   Complete met3.
+[INFO DRT-0024]   Complete via3.
+[INFO DRT-0024]   Complete met4.
+[INFO DRT-0024]   Complete via4.
+[INFO DRT-0024]   Complete met5.
+[INFO DRT-0033] FR_MASTERSLICE shape region query size = 0.
+[INFO DRT-0033] licon shape region query size = 0.
+[INFO DRT-0033] li1 shape region query size = 226764.
+[INFO DRT-0033] mcon shape region query size = 0.
+[INFO DRT-0033] met1 shape region query size = 19905.
+[INFO DRT-0033] via shape region query size = 0.
+[INFO DRT-0033] met2 shape region query size = 192.
+[INFO DRT-0033] via2 shape region query size = 0.
+[INFO DRT-0033] met3 shape region query size = 0.
+[INFO DRT-0033] via3 shape region query size = 0.
+[INFO DRT-0033] met4 shape region query size = 0.
+[INFO DRT-0033] via4 shape region query size = 0.
+[INFO DRT-0033] met5 shape region query size = 0.
+[INFO DRT-0165] Start pin access.
+[INFO DRT-0078]   Complete 877 pins.
+[INFO DRT-0079]   Complete 100 unique inst patterns.
+[INFO DRT-0081]   Complete 108 unique inst patterns.
+[INFO DRT-0084]   Complete 4536 groups.
+#scanned instances     = 9639
+#unique  instances     = 108
+#stdCellGenAp          = 3158
+#stdCellValidPlanarAp  = 7
+#stdCellValidViaAp     = 2574
+#stdCellPinNoAp        = 0
+#stdCellPinCnt         = 32619
+#instTermValidViaApCnt = 0
+#macroGenAp            = 0
+#macroValidPlanarAp    = 0
+#macroValidViaAp       = 0
+#macroNoAp             = 0
+[INFO DRT-0166] Complete pin access.
+[INFO DRT-0267] cpu time = 00:03:50, elapsed time = 00:10:10, memory = 266.66 (MB), peak = 324.81 (MB)
+
+[INFO DRT-0157] Number of guides:     44973
+
+[INFO DRT-0169] Post process guides.
+[INFO DRT-0176] GCELLGRID X 0 DO 78 STEP 6900 ;
+[INFO DRT-0177] GCELLGRID Y 0 DO 78 STEP 6900 ;
+[INFO DRT-0028]   Complete FR_MASTERSLICE.
+[INFO DRT-0028]   Complete licon.
+[INFO DRT-0028]   Complete li1.
+[INFO DRT-0028]   Complete mcon.
+[INFO DRT-0028]   Complete met1.
+[INFO DRT-0028]   Complete via.
+[INFO DRT-0028]   Complete met2.
+[INFO DRT-0028]   Complete via2.
+[INFO DRT-0028]   Complete met3.
+[INFO DRT-0028]   Complete via3.
+[INFO DRT-0028]   Complete met4.
+[INFO DRT-0028]   Complete via4.
+[INFO DRT-0028]   Complete met5.
+[INFO DRT-0178] Init guide query.
+[INFO DRT-0035]   Complete FR_MASTERSLICE (guide).
+[INFO DRT-0035]   Complete licon (guide).
+[INFO DRT-0035]   Complete li1 (guide).
+[INFO DRT-0035]   Complete mcon (guide).
+[INFO DRT-0035]   Complete met1 (guide).
+[INFO DRT-0035]   Complete via (guide).
+[INFO DRT-0035]   Complete met2 (guide).
+[INFO DRT-0035]   Complete via2 (guide).
+[INFO DRT-0035]   Complete met3 (guide).
+[INFO DRT-0035]   Complete via3 (guide).
+[INFO DRT-0035]   Complete met4 (guide).
+[INFO DRT-0035]   Complete via4 (guide).
+[INFO DRT-0035]   Complete met5 (guide).
+[INFO DRT-0036] FR_MASTERSLICE guide region query size = 0.
+[INFO DRT-0036] licon guide region query size = 0.
+[INFO DRT-0036] li1 guide region query size = 20279.
+[INFO DRT-0036] mcon guide region query size = 0.
+[INFO DRT-0036] met1 guide region query size = 9485.
+[INFO DRT-0036] via guide region query size = 0.
+[INFO DRT-0036] met2 guide region query size = 2187.
+[INFO DRT-0036] via2 guide region query size = 0.
+[INFO DRT-0036] met3 guide region query size = 48.
+[INFO DRT-0036] via3 guide region query size = 0.
+[INFO DRT-0036] met4 guide region query size = 8.
+[INFO DRT-0036] via4 guide region query size = 0.
+[INFO DRT-0036] met5 guide region query size = 3.
+[INFO DRT-0179] Init gr pin query.
+[INFO DRT-0267] cpu time = 00:00:00, elapsed time = 00:00:00, memory = 279.43 (MB), peak = 324.81 (MB)
+[INFO DRT-0245] skipped writing guide updates to database.
+[INFO DRT-0185] Post process initialize RPin region query.
+[INFO DRT-0181] Start track assignment.
+[INFO DRT-0184] Done with 22474 vertical wires in 2 frboxes and 9536 horizontal wires in 2 frboxes.
+[INFO DRT-0186] Done with 7924 vertical wires in 2 frboxes and 3531 horizontal wires in 2 frboxes.
+[INFO DRT-0182] Complete track assignment.
+[INFO DRT-0267] cpu time = 00:00:04, elapsed time = 00:00:07, memory = 329.46 (MB), peak = 329.29 (MB)
+[INFO DRT-0187] Start routing data preparation.
+[INFO DRT-0267] cpu time = 00:00:00, elapsed time = 00:00:00, memory = 329.53 (MB), peak = 329.29 (MB)
+[INFO DRT-0194] Start detail routing.
+[INFO DRT-0195] Start 0th optimization iteration.
+    Completing 10% with 0 violations.
+    elapsed time = 00:05:10, memory = 364.40 (MB).

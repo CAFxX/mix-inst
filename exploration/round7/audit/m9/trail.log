@@ -1,0 +1,4 @@
+1-round F: best din=05000000 -> dout=02000041 count=4197757/16777216 p~2^-2.00
+2nd-round F: best din=02000041 -> dout=020638f0 count=66160/16777216 p~2^-7.99
+2-round trail prob ~ 2^-9.99
+EXIT=0

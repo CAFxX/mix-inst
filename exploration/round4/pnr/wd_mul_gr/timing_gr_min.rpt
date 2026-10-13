@@ -1,0 +1,28 @@
+Startpoint: b[0] (input port clocked by vclk)
+Endpoint: y[0] (output port clocked by vclk)
+Path Group: vclk
+Path Type: min
+
+      Cap      Slew     Delay      Time   Description
+-------------------------------------------------------------------------------
+             0.0000    0.0000    0.0000   clock vclk (rise edge)
+                       0.0000    0.0000   clock network delay (ideal)
+                       0.0000    0.0000 ^ input external delay
+   0.2733    0.0000    0.0000    0.0000 ^ b[0] (in)
+             0.0094    0.0047    0.0047 ^ _10106_/A (sky130_fd_sc_hd__and2_0)
+   0.0049    0.0828    0.1252    0.1299 ^ _10106_/X (sky130_fd_sc_hd__and2_0)
+             0.0828    0.0001    0.1300 ^ y[0] (out)
+                                 0.1300   data arrival time
+
+             0.0000    0.0000    0.0000   clock vclk (rise edge)
+                       0.0000    0.0000   clock network delay (ideal)
+                       0.0000    0.0000   clock reconvergence pessimism
+                       0.0000    0.0000   output external delay
+                                 0.0000   data required time
+-------------------------------------------------------------------------------
+                                 0.0000   data required time
+                                -0.1300   data arrival time
+-------------------------------------------------------------------------------
+                                 0.1300   slack (MET)
+
+

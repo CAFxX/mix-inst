@@ -1,0 +1,99 @@
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef, created 14 layers, 25 vias
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef at line 2.
+
+[INFO ODB-0227] LEF file: /home/hatch/.volare/volare/sky130/versions/c6d73a35f524070e85faff4a6a9eef49553ebc2b/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef, created 437 library cells
+[WARNING IFP-0028] Core area lower left (15.000, 15.000) snapped to (15.180, 16.320).
+[INFO IFP-0001] Added 84 rows of 499 site unithd.
+Found 0 macro blocks.
+Using 2 tracks default min distance between IO pins.
+[INFO PPL-0001] Number of slots           944
+[INFO PPL-0002] Number of I/O             192
+[INFO PPL-0003] Number of I/O w/sink      192
+[INFO PPL-0004] Number of I/O w/o sink    0
+[INFO PPL-0005] Slots per section         200
+[INFO PPL-0008] Successfully assigned pins to sections.
+[INFO PPL-0012] I/O nets HPWL: 37364.12 um.
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: (  0.460  2.720 ) um
+[INFO GPL-0004] CoreBBox: ( 15.180 16.320 ) ( 244.720 244.800 ) um
+[INFO GPL-0006] NumInstances:              1305
+[INFO GPL-0007] NumPlaceInstances:         1305
+[INFO GPL-0008] NumFixedInstances:            0
+[INFO GPL-0009] NumDummyInstances:            0
+[INFO GPL-0010] NumNets:                   1487
+[INFO GPL-0011] NumPins:                   4825
+[INFO GPL-0012] DieBBox:  (  0.000  0.000 ) ( 260.000 260.000 ) um
+[INFO GPL-0013] CoreBBox: ( 15.180 16.320 ) ( 244.720 244.800 ) um
+[INFO GPL-0016] CoreArea:             52445.299 um^2
+[INFO GPL-0017] NonPlaceInstsArea:        0.000 um^2
+[INFO GPL-0018] PlaceInstsArea:       13081.296 um^2
+[INFO GPL-0019] Util:                    24.943 %
+[INFO GPL-0020] StdInstsArea:         13081.296 um^2
+[INFO GPL-0021] MacroInstsArea:           0.000 um^2
+[InitialPlace]  Iter: 1 CG residual: 0.00000012 HPWL: 84152780
+[InitialPlace]  Iter: 2 CG residual: 0.00000009 HPWL: 24888659
+[InitialPlace]  Iter: 3 CG residual: 0.00000010 HPWL: 24670675
+[InitialPlace]  Iter: 4 CG residual: 0.00000006 HPWL: 24686823
+[InitialPlace]  Iter: 5 CG residual: 0.00000009 HPWL: 24668665
+[INFO GPL-0031] FillerInit:NumGCells:      3788
+[INFO GPL-0032] FillerInit:NumGNets:       1487
+[INFO GPL-0033] FillerInit:NumGPins:       4825
+[INFO GPL-0023] TargetDensity:            0.700
+[INFO GPL-0024] AvrgPlaceInstArea:       10.024 um^2
+[INFO GPL-0025] IdealBinArea:            14.320 um^2
+[INFO GPL-0026] IdealBinCnt:               3662
+[INFO GPL-0027] TotalBinArea:         52445.299 um^2
+[INFO GPL-0028] BinCnt:        32     32
+[INFO GPL-0029] BinSize: (  7.174  7.140 )
+[INFO GPL-0030] NumBins: 1024
+[NesterovSolve] Iter:    1 overflow: 0.950 HPWL: 22696565
+[NesterovSolve] Iter:   10 overflow: 0.926 HPWL: 24832616
+[NesterovSolve] Iter:   20 overflow: 0.924 HPWL: 25006555
+[NesterovSolve] Iter:   30 overflow: 0.925 HPWL: 24946411
+[NesterovSolve] Iter:   40 overflow: 0.925 HPWL: 24958856
+[NesterovSolve] Iter:   50 overflow: 0.925 HPWL: 24967780
+[NesterovSolve] Iter:   60 overflow: 0.925 HPWL: 24955842
+[NesterovSolve] Iter:   70 overflow: 0.925 HPWL: 24958992
+[NesterovSolve] Iter:   80 overflow: 0.925 HPWL: 24966467
+[NesterovSolve] Iter:   90 overflow: 0.925 HPWL: 24969147
+[NesterovSolve] Iter:  100 overflow: 0.924 HPWL: 24976136
+[NesterovSolve] Iter:  110 overflow: 0.924 HPWL: 24994466
+[NesterovSolve] Iter:  120 overflow: 0.924 HPWL: 25029047
+[NesterovSolve] Iter:  130 overflow: 0.923 HPWL: 25085271
+[NesterovSolve] Iter:  140 overflow: 0.922 HPWL: 25174247
+[NesterovSolve] Iter:  150 overflow: 0.920 HPWL: 25314081
+[NesterovSolve] Iter:  160 overflow: 0.915 HPWL: 25536180
+[NesterovSolve] Iter:  170 overflow: 0.911 HPWL: 25910664
+[NesterovSolve] Iter:  180 overflow: 0.903 HPWL: 26543438
+[NesterovSolve] Iter:  190 overflow: 0.885 HPWL: 27493175
+[NesterovSolve] Iter:  200 overflow: 0.866 HPWL: 28940809
+[NesterovSolve] Iter:  210 overflow: 0.844 HPWL: 30362371
+[NesterovSolve] Iter:  220 overflow: 0.812 HPWL: 32050949
+[NesterovSolve] Iter:  230 overflow: 0.774 HPWL: 33774798
+[NesterovSolve] Iter:  240 overflow: 0.734 HPWL: 35646543
+[NesterovSolve] Iter:  250 overflow: 0.694 HPWL: 37330776
+[NesterovSolve] Iter:  260 overflow: 0.644 HPWL: 38949057
+[NesterovSolve] Iter:  270 overflow: 0.592 HPWL: 40535822
+[NesterovSolve] Iter:  280 overflow: 0.535 HPWL: 41941268
+[NesterovSolve] Iter:  290 overflow: 0.469 HPWL: 43117377
+[NesterovSolve] Iter:  300 overflow: 0.416 HPWL: 44535816
+[NesterovSolve] Iter:  310 overflow: 0.352 HPWL: 45769286
+[NesterovSolve] Iter:  320 overflow: 0.297 HPWL: 46100080
+[NesterovSolve] Iter:  330 overflow: 0.260 HPWL: 46357205
+[NesterovSolve] Iter:  340 overflow: 0.226 HPWL: 46636485
+[NesterovSolve] Iter:  350 overflow: 0.187 HPWL: 46893121
+[NesterovSolve] Iter:  360 overflow: 0.163 HPWL: 47136281
+[NesterovSolve] Iter:  370 overflow: 0.138 HPWL: 47277975
+[NesterovSolve] Iter:  380 overflow: 0.109 HPWL: 47256057
+[NesterovSolve] Finished with Overflow: 0.098899
+[WARNING RSZ-0021] no estimated parasitics. Using wire load models.
+Placement Analysis
+---------------------------------
+total displacement       4531.1 u
+average displacement        3.5 u
+max displacement           10.7 u
+original HPWL           47278.9 u
+legalized HPWL          52145.6 u
+delta HPWL                   10 %
+

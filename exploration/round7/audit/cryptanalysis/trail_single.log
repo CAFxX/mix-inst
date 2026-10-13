@@ -1,0 +1,5 @@
+avg transitions per nonzero row: 6.4
+== single-key best 8-round differential trail ==
+best trail: P = 2^-61.00, active S-boxes = 25, out diff = (0x0000851d, 0x2cd36b18)
+no zero-output trail survived the beam (prob below beam cutoff)
+states with P >= 2^-64: 3344/4000

@@ -1,0 +1,16 @@
+  bit 16/64 done (25s)
+  bit 32/64 done (46s)
+  bit 48/64 done (69s)
+  bit 64/64 done (93s)
+{
+ "candidate": "r24_spn_mix4r_pba19b17_nw",
+ "key": "0x123456789abcdef0",
+ "N": 262144,
+ "sac_maxdev": 0.004886627197265625,
+ "sac_meandev": 0.0007890956476330757,
+ "sac_z5": 1,
+ "bic_maxcorr": 0.00892794144238841,
+ "bic_meancorr": 0.0015595768058209044,
+ "avalanche_mean": 31.999154031276703,
+ "wall_s": 93.3
+}

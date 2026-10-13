@@ -1,0 +1,12 @@
+{
+ "candidate": "rtw_pb2_rev_inout",
+ "key": "0x123456789abcdef0",
+ "N": 262144,
+ "sac_maxdev": 0.004047393798828125,
+ "sac_meandev": 0.0007841456681489944,
+ "sac_z5": 0,
+ "bic_maxcorr": 0.14319981789979425,
+ "bic_meancorr": 0.001610927524953391,
+ "avalanche_mean": 32.00099718570709,
+ "wall_s": 128.2
+}

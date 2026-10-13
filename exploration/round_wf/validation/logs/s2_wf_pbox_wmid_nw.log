@@ -1,0 +1,16 @@
+[gate] proceeding with 1 foreign heavies
+build OK
+XCHECK: PASS 10000/10000 C==Python
+
+S2 start N=2^22 kill=10
+# key=123456789abcdef0 N=2^22 kill_repeats=10
+# null E[repeats/delta] = 2^22 * 2^-64 = 2^-42
+# delta                  max|z|  low8_chi2 full_repeats
+  0x0000000000000400      8.4      292.8            0
+  0x0000000004000000      6.0      232.9            0
+  0x0000000000000001     54.6      342.8            2
+  0x0000000000000002    162.7     6226.5           74
+KILL delta=0x0000000000000002 repeats=74 > kill_repeats=10
+
+S2 done rc=2 wall=48s
+VERDICT: S2-KILL

@@ -1,0 +1,12 @@
+{
+ "candidate": "rtw_ab48_fm05",
+ "key": "0x123456789abcdef0",
+ "N": 262144,
+ "sac_maxdev": 0.008983612060546875,
+ "sac_meandev": 0.000837390311062336,
+ "sac_z5": 12,
+ "bic_maxcorr": 0.01857811987792497,
+ "bic_meancorr": 0.0015666755459908927,
+ "avalanche_mean": 31.99154931306839,
+ "wall_s": 246.8
+}

@@ -1,0 +1,12 @@
+{
+ "candidate": "rtw_lin_ab0612",
+ "key": "0x123456789abcdef0",
+ "N": 262144,
+ "sac_maxdev": 0.004009246826171875,
+ "sac_meandev": 0.0007663704454898834,
+ "sac_z5": 0,
+ "bic_maxcorr": 0.035437884872621415,
+ "bic_meancorr": 0.0015882059725664966,
+ "avalanche_mean": 32.00045967102051,
+ "wall_s": 61.5
+}

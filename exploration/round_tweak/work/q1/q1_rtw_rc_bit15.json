@@ -1,0 +1,12 @@
+{
+ "candidate": "rtw_rc_bit15",
+ "key": "0x123456789abcdef0",
+ "N": 262144,
+ "sac_maxdev": 0.003871917724609375,
+ "sac_meandev": 0.0007859403267502785,
+ "sac_z5": 0,
+ "bic_maxcorr": 0.1417386315768494,
+ "bic_meancorr": 0.0016069363215619546,
+ "avalanche_mean": 31.999838888645172,
+ "wall_s": 63.7
+}

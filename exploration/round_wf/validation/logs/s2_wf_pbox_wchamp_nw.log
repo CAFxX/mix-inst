@@ -1,0 +1,19 @@
+[polite] 2 foreign heavies, sleeping 120s
+[polite] 2 foreign heavies, sleeping 120s
+[polite] 2 foreign heavies, sleeping 120s
+[polite] 2 foreign heavies, sleeping 120s
+[polite] 2 foreign heavies, sleeping 120s
+[polite] 2 foreign heavies, sleeping 120s
+[gate] proceeding with 1 foreign heavies
+build OK
+XCHECK: PASS 10000/10000 C==Python
+
+S2 start N=2^22 kill=10
+# key=123456789abcdef0 N=2^22 kill_repeats=10
+# null E[repeats/delta] = 2^22 * 2^-64 = 2^-42
+# delta                  max|z|  low8_chi2 full_repeats
+  0x0000000000000400    981.5    13115.5          140
+KILL delta=0x0000000000000400 repeats=140 > kill_repeats=10
+
+S2 done rc=2 wall=11s
+VERDICT: S2-KILL

@@ -1,0 +1,13 @@
+{
+ "name": "t6_fxorand6a",
+ "rtl_top": "t6_fxorand6a",
+ "description": "fused 6-stage: x=(x&ra)^(x&rb)^rc",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ]
+}

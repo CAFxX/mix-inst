@@ -1,0 +1,25 @@
+{
+ "name": "t6_chif5b",
+ "rtl_top": "t6_chif5b",
+ "description": "5-stage AND + chi-final, sched B",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xd017728721821ca1"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x5ad861d0ba5c1ee7"
+  }
+ ]
+}

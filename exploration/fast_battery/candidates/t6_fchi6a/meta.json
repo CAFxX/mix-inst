@@ -1,0 +1,13 @@
+{
+ "name": "t6_fchi6a",
+ "rtl_top": "t6_fchi6a",
+ "description": "fused 6-stage chi(x,ra,rb): x^(ra&~rb) [Keccak form]",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "name": "t6_fand6a",
+ "rtl_top": "t6_fand6a",
+ "description": "fused 6-stage: x=(x&ra)^rb",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ]
+}

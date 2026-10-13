@@ -1,0 +1,24 @@
+{
+ "name": "t6_chi3col10",
+ "description": "3-bit column chi + rot, 10 rounds",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x3ec76cf0a9233923"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xfdc416fa640efab2"
+  }
+ ]
+}

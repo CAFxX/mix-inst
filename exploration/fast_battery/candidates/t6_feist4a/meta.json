@@ -1,0 +1,13 @@
+{
+ "name": "t6_feist4a",
+ "rtl_top": "t6_feist4a",
+ "description": "4-round Feistel, F=2-stage 32-bit AND-cascade",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ]
+}

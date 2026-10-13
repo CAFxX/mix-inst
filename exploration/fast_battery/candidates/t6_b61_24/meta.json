@@ -1,0 +1,25 @@
+{
+ "name": "t6_b61_24",
+ "description": "batch-61 muxD5f 5-stage schedule (fisher triage z=2.85 n_reject=0)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x98709db90b302795"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x12bf8eee90ee25d3"
+  }
+ ],
+ "rtl_top": "t6_b61_24"
+}

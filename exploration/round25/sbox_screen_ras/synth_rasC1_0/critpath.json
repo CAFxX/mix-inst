@@ -1,0 +1,230 @@
+{
+ "name": "sbox_rasC1_0",
+ "crit": 4.0,
+ "cells": 273,
+ "cell_histogram": {
+  "AOI21": 62,
+  "INV": 64,
+  "MUX2": 1,
+  "NAND2": 66,
+  "NAND3": 31,
+  "NOR2": 16,
+  "OAI21": 33
+ },
+ "topk": [
+  {
+   "out_bit": "y[1]",
+   "in_bit": "x[2]",
+   "delay": 4.0,
+   "levels": 3,
+   "nonlin_levels": 3,
+   "xorlin_levels": 0,
+   "buf_levels": 0,
+   "nonlin_delay": 4.0,
+   "xorlin_delay": 0.0,
+   "gate_types": [
+    "INV",
+    "AOI21",
+    "AOI21"
+   ],
+   "gate_hist": {
+    "AOI21": 2,
+    "INV": 1
+   }
+  },
+  {
+   "out_bit": "y[2]",
+   "in_bit": "x[2]",
+   "delay": 4.0,
+   "levels": 3,
+   "nonlin_levels": 3,
+   "xorlin_levels": 0,
+   "buf_levels": 0,
+   "nonlin_delay": 4.0,
+   "xorlin_delay": 0.0,
+   "gate_types": [
+    "INV",
+    "AOI21",
+    "OAI21"
+   ],
+   "gate_hist": {
+    "AOI21": 1,
+    "INV": 1,
+    "OAI21": 1
+   }
+  },
+  {
+   "out_bit": "y[3]",
+   "in_bit": "x[1]",
+   "delay": 4.0,
+   "levels": 3,
+   "nonlin_levels": 3,
+   "xorlin_levels": 0,
+   "buf_levels": 0,
+   "nonlin_delay": 4.0,
+   "xorlin_delay": 0.0,
+   "gate_types": [
+    "INV",
+    "AOI21",
+    "OAI21"
+   ],
+   "gate_hist": {
+    "AOI21": 1,
+    "INV": 1,
+    "OAI21": 1
+   }
+  },
+  {
+   "out_bit": "y[5]",
+   "in_bit": "x[6]",
+   "delay": 4.0,
+   "levels": 3,
+   "nonlin_levels": 3,
+   "xorlin_levels": 0,
+   "buf_levels": 0,
+   "nonlin_delay": 4.0,
+   "xorlin_delay": 0.0,
+   "gate_types": [
+    "INV",
+    "AOI21",
+    "AOI21"
+   ],
+   "gate_hist": {
+    "AOI21": 2,
+    "INV": 1
+   }
+  },
+  {
+   "out_bit": "y[6]",
+   "in_bit": "x[6]",
+   "delay": 4.0,
+   "levels": 3,
+   "nonlin_levels": 3,
+   "xorlin_levels": 0,
+   "buf_levels": 0,
+   "nonlin_delay": 4.0,
+   "xorlin_delay": 0.0,
+   "gate_types": [
+    "INV",
+    "AOI21",
+    "OAI21"
+   ],
+   "gate_hist": {
+    "AOI21": 1,
+    "INV": 1,
+    "OAI21": 1
+   }
+  },
+  {
+   "out_bit": "y[7]",
+   "in_bit": "x[5]",
+   "delay": 4.0,
+   "levels": 3,
+   "nonlin_levels": 3,
+   "xorlin_levels": 0,
+   "buf_levels": 0,
+   "nonlin_delay": 4.0,
+   "xorlin_delay": 0.0,
+   "gate_types": [
+    "INV",
+    "AOI21",
+    "OAI21"
+   ],
+   "gate_hist": {
+    "AOI21": 1,
+    "INV": 1,
+    "OAI21": 1
+   }
+  },
+  {
+   "out_bit": "y[9]",
+   "in_bit": "x[10]",
+   "delay": 4.0,
+   "levels": 3,
+   "nonlin_levels": 3,
+   "xorlin_levels": 0,
+   "buf_levels": 0,
+   "nonlin_delay": 4.0,
+   "xorlin_delay": 0.0,
+   "gate_types": [
+    "INV",
+    "AOI21",
+    "AOI21"
+   ],
+   "gate_hist": {
+    "AOI21": 2,
+    "INV": 1
+   }
+  },
+  {
+   "out_bit": "y[10]",
+   "in_bit": "x[10]",
+   "delay": 4.0,
+   "levels": 3,
+   "nonlin_levels": 3,
+   "xorlin_levels": 0,
+   "buf_levels": 0,
+   "nonlin_delay": 4.0,
+   "xorlin_delay": 0.0,
+   "gate_types": [
+    "INV",
+    "AOI21",
+    "OAI21"
+   ],
+   "gate_hist": {
+    "AOI21": 1,
+    "INV": 1,
+    "OAI21": 1
+   }
+  },
+  {
+   "out_bit": "y[11]",
+   "in_bit": "x[9]",
+   "delay": 4.0,
+   "levels": 3,
+   "nonlin_levels": 3,
+   "xorlin_levels": 0,
+   "buf_levels": 0,
+   "nonlin_delay": 4.0,
+   "xorlin_delay": 0.0,
+   "gate_types": [
+    "INV",
+    "AOI21",
+    "OAI21"
+   ],
+   "gate_hist": {
+    "AOI21": 1,
+    "INV": 1,
+    "OAI21": 1
+   }
+  },
+  {
+   "out_bit": "y[13]",
+   "in_bit": "x[14]",
+   "delay": 4.0,
+   "levels": 3,
+   "nonlin_levels": 3,
+   "xorlin_levels": 0,
+   "buf_levels": 0,
+   "nonlin_delay": 4.0,
+   "xorlin_delay": 0.0,
+   "gate_types": [
+    "INV",
+    "AOI21",
+    "AOI21"
+   ],
+   "gate_hist": {
+    "AOI21": 2,
+    "INV": 1
+   }
+  }
+ ],
+ "diversity": {
+  "n_paths": 10,
+  "distinct_in_bits": 7,
+  "distinct_out_bits": 10,
+  "common_suffix_levels": 0,
+  "common_prefix_levels": 2,
+  "delay_spread": 0.0
+ }
+}

@@ -1,0 +1,8 @@
+[2026-10-05 15:31] breaking stale lock (pid=169329, age=331s)
+[2026-10-05 15:31] midori_sb0: resuming with 912 done, 3184 remaining
+[2026-10-05 15:32] midori_sb0: tick+25, total 937/4096, best=3.0u/176c
+[2026-10-05 15:34] midori_sb0: tick+50, total 962/4096, best=3.0u/176c
+[2026-10-05 15:35] midori_sb0: tick+75, total 987/4096, best=3.0u/176c
+[2026-10-05 15:37] midori_sb0: tick+100, total 1012/4096, best=3.0u/176c
+[2026-10-05 15:38] midori_sb0: converged: 1024 done, top-10 within 0.1u (best 3.0u/176c)
+[2026-10-05 15:38] tick done: midori_sb0 +112 variants, total 1024/4096, best 3.0u/176c

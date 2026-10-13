@@ -1,0 +1,259 @@
+[2026-10-05 06:53] midori_sb0: resuming with 0 done, 4096 remaining
+[2026-10-05 06:53] gate full (2 foreign yosys), sleeping 60s
+[2026-10-05 06:54] gate full (2 foreign yosys), sleeping 60s
+[2026-10-05 06:55] gate full (2 foreign yosys), sleeping 60s
+[2026-10-05 06:56] budget exhausted after 2 variants this tick
+[2026-10-05 06:56] tick done: midori_sb0 +2 variants, total 2/4096, best 3.0u/178c
+[2026-10-05 07:25] midori_sb0: resuming with 2 done, 4094 remaining
+[2026-10-05 07:25] gate full (2 foreign yosys), sleeping 60s
+[2026-10-05 07:26] gate full (2 foreign yosys), sleeping 60s
+[2026-10-05 07:28] gate full (2 foreign yosys), sleeping 60s
+[2026-10-05 07:29] gate full (2 foreign yosys), sleeping 60s
+[2026-10-05 07:30] gate full (2 foreign yosys), sleeping 60s
+[2026-10-05 07:31] gate full (2 foreign yosys), sleeping 60s
+[2026-10-05 07:32] gate full (2 foreign yosys), sleeping 60s
+[2026-10-05 07:33] gate full (2 foreign yosys), sleeping 60s
+[2026-10-05 07:34] gate full (2 foreign yosys), sleeping 60s
+[2026-10-05 07:38] gate full (2 foreign yosys), sleeping 60s
+[2026-10-05 07:39] gate full (2 foreign yosys), sleeping 60s
+[2026-10-05 07:40] gate full (2 foreign yosys), sleeping 60s
+[2026-10-05 07:41] budget exhausted after 9 variants this tick
+[2026-10-05 07:41] tick done: midori_sb0 +9 variants, total 11/4096, best 3.0u/178c
+[2026-10-05 07:55] midori_sb0: resuming with 11 done, 4085 remaining
+[2026-10-05 07:55] gate full (2 foreign yosys), sleeping 60s
+[2026-10-05 07:56] gate full (2 foreign yosys), sleeping 60s
+[2026-10-05 07:57] gate full (2 foreign yosys), sleeping 60s
+[2026-10-05 07:58] gate full (2 foreign yosys), sleeping 60s
+[2026-10-05 07:59] gate full (2 foreign yosys), sleeping 60s
+[2026-10-05 08:00] gate full (2 foreign yosys), sleeping 60s
+[2026-10-05 08:01] gate full (2 foreign yosys), sleeping 60s
+[2026-10-05 08:02] gate full (2 foreign yosys), sleeping 60s
+[2026-10-05 08:03] gate full (2 foreign yosys), sleeping 60s
+[2026-10-05 08:04] gate full (2 foreign yosys), sleeping 60s
+[2026-10-05 08:05] gate full (2 foreign yosys), sleeping 60s
+[2026-10-05 08:06] gate full (2 foreign yosys), sleeping 60s
+[2026-10-05 08:07] gate full (2 foreign yosys), sleeping 60s
+[2026-10-05 08:08] gate full (2 foreign yosys), sleeping 60s
+[2026-10-05 08:09] budget exhausted after 1 variants this tick
+[2026-10-05 08:09] tick done: midori_sb0 +1 variants, total 12/4096, best 3.0u/178c
+[2026-10-05 08:25] midori_sb0: resuming with 12 done, 4084 remaining
+[2026-10-05 08:25] gate full (2 foreign yosys), sleeping 60s
+[2026-10-05 08:26] gate full (2 foreign yosys), sleeping 60s
+[2026-10-05 08:27] gate full (2 foreign yosys), sleeping 60s
+[2026-10-05 08:28] gate full (2 foreign yosys), sleeping 60s
+[2026-10-05 08:31] gate full (2 foreign yosys), sleeping 60s
+[2026-10-05 08:33] gate full (2 foreign yosys), sleeping 60s
+[2026-10-05 08:55] breaking stale lock (pid=222901, age=1801s)
+[2026-10-05 08:55] midori_sb0: resuming with 22 done, 4074 remaining
+[2026-10-05 09:04] midori_sb0: tick+25, total 47/4096, best=3.0u/176c
+[2026-10-05 09:10] budget exhausted after 44 variants this tick
+[2026-10-05 09:10] tick done: midori_sb0 +44 variants, total 66/4096, best 3.0u/176c
+[2026-10-05 09:25] midori_sb0: resuming with 66 done, 4030 remaining
+[2026-10-05 09:34] midori_sb0: tick+25, total 91/4096, best=3.0u/176c
+[2026-10-05 09:39] budget exhausted after 39 variants this tick
+[2026-10-05 09:39] tick done: midori_sb0 +39 variants, total 105/4096, best 3.0u/176c
+[2026-10-05 09:55] midori_sb0: resuming with 105 done, 3991 remaining
+[2026-10-05 10:00] midori_sb0: tick+25, total 130/4096, best=3.0u/176c
+[2026-10-05 10:04] midori_sb0: tick+50, total 155/4096, best=3.0u/176c
+[2026-10-05 10:09] budget exhausted after 68 variants this tick
+[2026-10-05 10:09] tick done: midori_sb0 +68 variants, total 173/4096, best 3.0u/176c
+[2026-10-05 10:25] midori_sb0: resuming with 173 done, 3923 remaining
+[2026-10-05 10:27] midori_sb0: tick+25, total 198/4096, best=3.0u/176c
+[2026-10-05 10:30] midori_sb0: tick+50, total 223/4096, best=3.0u/176c
+[2026-10-05 10:32] midori_sb0: tick+75, total 248/4096, best=3.0u/176c
+[2026-10-05 10:36] midori_sb0: tick+100, total 273/4096, best=3.0u/176c
+[2026-10-05 10:39] budget exhausted after 117 variants this tick
+[2026-10-05 10:39] tick done: midori_sb0 +117 variants, total 290/4096, best 3.0u/176c
+[2026-10-05 10:55] midori_sb0: resuming with 290 done, 3806 remaining
+[2026-10-05 11:01] midori_sb0: tick+25, total 315/4096, best=3.0u/176c
+[2026-10-05 11:09] midori_sb0: tick+50, total 340/4096, best=3.0u/176c
+[2026-10-05 11:09] budget exhausted after 52 variants this tick
+[2026-10-05 11:09] tick done: midori_sb0 +52 variants, total 342/4096, best 3.0u/176c
+[2026-10-05 11:25] midori_sb0: resuming with 342 done, 3754 remaining
+[2026-10-05 11:34] midori_sb0: tick+25, total 367/4096, best=3.0u/176c
+[2026-10-05 11:37] midori_sb0: tick+50, total 392/4096, best=3.0u/176c
+[2026-10-05 11:39] budget exhausted after 64 variants this tick
+[2026-10-05 11:39] tick done: midori_sb0 +64 variants, total 406/4096, best 3.0u/176c
+[2026-10-05 11:55] midori_sb0: resuming with 406 done, 3690 remaining
+[2026-10-05 11:58] midori_sb0: tick+25, total 431/4096, best=3.0u/176c
+[2026-10-05 12:00] midori_sb0: tick+50, total 456/4096, best=3.0u/176c
+[2026-10-05 12:02] midori_sb0: tick+75, total 481/4096, best=3.0u/176c
+[2026-10-05 12:05] midori_sb0: tick+100, total 506/4096, best=3.0u/176c
+[2026-10-05 12:09] midori_sb0: tick+125, total 531/4096, best=3.0u/176c
+[2026-10-05 12:09] budget exhausted after 126 variants this tick
+[2026-10-05 12:09] tick done: midori_sb0 +126 variants, total 532/4096, best 3.0u/176c
+[2026-10-05 12:25] midori_sb0: resuming with 532 done, 3564 remaining
+[2026-10-05 12:30] midori_sb0: tick+25, total 557/4096, best=3.0u/176c
+[2026-10-05 12:34] midori_sb0: tick+50, total 582/4096, best=3.0u/176c
+[2026-10-05 12:39] budget exhausted after 71 variants this tick
+[2026-10-05 12:39] tick done: midori_sb0 +71 variants, total 603/4096, best 3.0u/176c
+[2026-10-05 12:55] midori_sb0: resuming with 603 done, 3493 remaining
+[2026-10-05 13:00] midori_sb0: tick+25, total 628/4096, best=3.0u/176c
+[2026-10-05 13:02] midori_sb0: tick+50, total 653/4096, best=3.0u/176c
+[2026-10-05 13:05] midori_sb0: tick+75, total 678/4096, best=3.0u/176c
+[2026-10-05 13:07] midori_sb0: tick+100, total 703/4096, best=3.0u/176c
+[2026-10-05 13:09] budget exhausted after 121 variants this tick
+[2026-10-05 13:09] tick done: midori_sb0 +121 variants, total 724/4096, best 3.0u/176c
+[2026-10-05 13:25] midori_sb0: resuming with 724 done, 3372 remaining
+[2026-10-05 13:34] midori_sb0: tick+25, total 749/4096, best=3.0u/176c
+[2026-10-05 13:39] budget exhausted after 39 variants this tick
+[2026-10-05 13:39] tick done: midori_sb0 +39 variants, total 763/4096, best 3.0u/176c
+[2026-10-05 13:55] midori_sb0: resuming with 763 done, 3333 remaining
+[2026-10-05 14:06] midori_sb0: tick+25, total 788/4096, best=3.0u/176c
+[2026-10-05 14:09] budget exhausted after 41 variants this tick
+[2026-10-05 14:09] tick done: midori_sb0 +41 variants, total 804/4096, best 3.0u/176c
+[2026-10-05 14:25] midori_sb0: resuming with 804 done, 3292 remaining
+[2026-10-05 14:32] midori_sb0: tick+25, total 829/4096, best=3.0u/176c
+[2026-10-05 14:39] midori_sb0: tick+50, total 854/4096, best=3.0u/176c
+[2026-10-05 14:39] budget exhausted after 51 variants this tick
+[2026-10-05 14:39] tick done: midori_sb0 +51 variants, total 855/4096, best 3.0u/176c
+[2026-10-05 14:55] midori_sb0: resuming with 855 done, 3241 remaining
+[2026-10-05 15:03] midori_sb0: tick+25, total 880/4096, best=3.0u/176c
+[2026-10-05 15:07] midori_sb0: tick+50, total 905/4096, best=3.0u/176c
+[2026-10-05 15:10] budget exhausted after 57 variants this tick
+[2026-10-05 15:10] tick done: midori_sb0 +57 variants, total 912/4096, best 3.0u/176c
+[2026-10-05 15:25] midori_sb0: resuming with 912 done, 3184 remaining
+[2026-10-05 15:31] breaking stale lock (pid=169329, age=331s)
+[2026-10-05 15:31] midori_sb0: resuming with 912 done, 3184 remaining
+[2026-10-05 15:32] midori_sb0: tick+25, total 937/4096, best=3.0u/176c
+[2026-10-05 15:34] midori_sb0: tick+50, total 962/4096, best=3.0u/176c
+[2026-10-05 15:35] midori_sb0: tick+75, total 987/4096, best=3.0u/176c
+[2026-10-05 15:37] midori_sb0: tick+100, total 1012/4096, best=3.0u/176c
+[2026-10-05 15:38] midori_sb0: converged: 1024 done, top-10 within 0.1u (best 3.0u/176c)
+[2026-10-05 15:38] tick done: midori_sb0 +112 variants, total 1024/4096, best 3.0u/176c
+[2026-10-05 15:55] ulbc_s1: resuming with 0 done, 4096 remaining
+[2026-10-05 16:00] ulbc_s1: tick+25, total 25/4096, best=3.2u/254c
+[2026-10-05 16:03] ulbc_s1: tick+50, total 50/4096, best=3.0u/208c
+[2026-10-05 16:08] ulbc_s1: tick+75, total 75/4096, best=3.0u/208c
+[2026-10-05 16:09] budget exhausted after 99 variants this tick
+[2026-10-05 16:09] tick done: ulbc_s1 +99 variants, total 99/4096, best 3.0u/208c
+[2026-10-05 16:25] ulbc_s1: resuming with 99 done, 3997 remaining
+[2026-10-05 16:28] ulbc_s1: tick+25, total 124/4096, best=3.0u/208c
+[2026-10-05 16:31] ulbc_s1: tick+50, total 149/4096, best=3.0u/208c
+[2026-10-05 16:33] ulbc_s1: tick+75, total 174/4096, best=3.0u/208c
+[2026-10-05 16:36] ulbc_s1: tick+100, total 199/4096, best=3.0u/208c
+[2026-10-05 16:37] ulbc_s1: tick+125, total 224/4096, best=3.0u/208c
+[2026-10-05 16:39] ulbc_s1: tick+150, total 249/4096, best=3.0u/208c
+[2026-10-05 16:39] budget exhausted after 157 variants this tick
+[2026-10-05 16:39] tick done: ulbc_s1 +157 variants, total 256/4096, best 3.0u/208c
+[2026-10-05 16:55] ulbc_s1: resuming with 256 done, 3840 remaining
+[2026-10-05 16:58] ulbc_s1: tick+25, total 281/4096, best=3.0u/208c
+[2026-10-05 17:01] ulbc_s1: tick+50, total 306/4096, best=3.0u/208c
+[2026-10-05 17:03] ulbc_s1: tick+75, total 331/4096, best=3.0u/192c
+[2026-10-05 17:05] ulbc_s1: tick+100, total 356/4096, best=3.0u/192c
+[2026-10-05 17:06] ulbc_s1: tick+125, total 381/4096, best=3.0u/192c
+[2026-10-05 17:09] ulbc_s1: tick+150, total 406/4096, best=3.0u/192c
+[2026-10-05 17:09] budget exhausted after 150 variants this tick
+[2026-10-05 17:09] tick done: ulbc_s1 +150 variants, total 406/4096, best 3.0u/192c
+[2026-10-05 17:25] ulbc_s1: resuming with 406 done, 3690 remaining
+[2026-10-05 17:30] ulbc_s1: tick+25, total 431/4096, best=3.0u/192c
+[2026-10-05 17:36] ulbc_s1: tick+50, total 456/4096, best=3.0u/192c
+[2026-10-05 17:39] budget exhausted after 73 variants this tick
+[2026-10-05 17:39] tick done: ulbc_s1 +73 variants, total 479/4096, best 3.0u/192c
+[2026-10-05 17:55] ulbc_s1: resuming with 479 done, 3617 remaining
+[2026-10-05 17:58] ulbc_s1: tick+25, total 504/4096, best=3.0u/192c
+[2026-10-05 18:00] ulbc_s1: tick+50, total 529/4096, best=3.0u/192c
+[2026-10-05 18:02] ulbc_s1: tick+75, total 554/4096, best=3.0u/192c
+[2026-10-05 18:04] ulbc_s1: tick+100, total 579/4096, best=3.0u/192c
+[2026-10-05 18:07] ulbc_s1: tick+125, total 604/4096, best=3.0u/192c
+[2026-10-05 18:09] budget exhausted after 145 variants this tick
+[2026-10-05 18:09] tick done: ulbc_s1 +145 variants, total 624/4096, best 3.0u/192c
+[2026-10-05 18:25] ulbc_s1: resuming with 624 done, 3472 remaining
+[2026-10-05 18:30] ulbc_s1: tick+25, total 649/4096, best=3.0u/192c
+[2026-10-05 18:33] ulbc_s1: tick+50, total 674/4096, best=3.0u/192c
+[2026-10-05 18:35] ulbc_s1: tick+75, total 699/4096, best=3.0u/192c
+[2026-10-05 18:37] ulbc_s1: tick+100, total 724/4096, best=3.0u/192c
+[2026-10-05 18:39] budget exhausted after 121 variants this tick
+[2026-10-05 18:39] tick done: ulbc_s1 +121 variants, total 745/4096, best 3.0u/192c
+[2026-10-05 18:55] ulbc_s1: resuming with 745 done, 3351 remaining
+[2026-10-05 19:01] ulbc_s1: tick+25, total 770/4096, best=3.0u/192c
+[2026-10-05 19:04] ulbc_s1: tick+50, total 795/4096, best=3.0u/192c
+[2026-10-05 19:06] ulbc_s1: tick+75, total 820/4096, best=3.0u/192c
+[2026-10-05 19:09] ulbc_s1: tick+100, total 845/4096, best=3.0u/192c
+[2026-10-05 19:09] budget exhausted after 107 variants this tick
+[2026-10-05 19:09] tick done: ulbc_s1 +107 variants, total 852/4096, best 3.0u/192c
+[2026-10-05 19:25] ulbc_s1: resuming with 852 done, 3244 remaining
+[2026-10-05 19:27] ulbc_s1: tick+25, total 877/4096, best=3.0u/192c
+[2026-10-05 19:29] ulbc_s1: tick+50, total 902/4096, best=3.0u/192c
+[2026-10-05 19:31] ulbc_s1: tick+75, total 927/4096, best=3.0u/192c
+[2026-10-05 19:33] ulbc_s1: tick+100, total 952/4096, best=3.0u/192c
+[2026-10-05 19:35] ulbc_s1: tick+125, total 977/4096, best=3.0u/192c
+[2026-10-05 19:37] ulbc_s1: tick+150, total 1002/4096, best=3.0u/192c
+[2026-10-05 19:39] ulbc_s1: converged: 1024 done, top-10 within 0.1u (best 3.0u/192c)
+[2026-10-05 19:39] tick done: ulbc_s1 +172 variants, total 1024/4096, best 3.0u/192c
+[2026-10-05 19:55] thf_blink_s0: resuming with 0 done, 4096 remaining
+[2026-10-05 19:59] thf_blink_s0: tick+25, total 25/4096, best=3.4u/253c
+[2026-10-05 20:04] thf_blink_s0: tick+50, total 50/4096, best=3.4u/253c
+[2026-10-05 20:07] thf_blink_s0: tick+75, total 75/4096, best=3.4u/242c
+[2026-10-05 20:09] budget exhausted after 93 variants this tick
+[2026-10-05 20:09] tick done: thf_blink_s0 +93 variants, total 93/4096, best 3.4u/242c
+[2026-10-05 20:25] thf_blink_s0: resuming with 93 done, 4003 remaining
+[2026-10-05 20:28] thf_blink_s0: tick+25, total 118/4096, best=3.4u/240c
+[2026-10-05 20:30] thf_blink_s0: tick+50, total 143/4096, best=3.4u/240c
+[2026-10-05 20:31] thf_blink_s0: tick+75, total 168/4096, best=3.4u/240c
+[2026-10-05 20:36] thf_blink_s0: tick+100, total 193/4096, best=3.4u/240c
+[2026-10-05 20:37] thf_blink_s0: tick+125, total 218/4096, best=3.4u/240c
+[2026-10-05 20:39] budget exhausted after 147 variants this tick
+[2026-10-05 20:39] tick done: thf_blink_s0 +147 variants, total 240/4096, best 3.4u/240c
+[2026-10-05 20:55] thf_blink_s0: resuming with 240 done, 3856 remaining
+[2026-10-05 20:58] thf_blink_s0: tick+25, total 265/4096, best=3.4u/240c
+[2026-10-05 21:00] thf_blink_s0: tick+50, total 290/4096, best=3.4u/240c
+[2026-10-05 21:02] thf_blink_s0: tick+75, total 315/4096, best=3.4u/240c
+[2026-10-05 21:05] thf_blink_s0: tick+100, total 340/4096, best=3.4u/240c
+[2026-10-05 21:07] thf_blink_s0: tick+125, total 365/4096, best=3.4u/240c
+[2026-10-05 21:09] budget exhausted after 140 variants this tick
+[2026-10-05 21:09] tick done: thf_blink_s0 +140 variants, total 380/4096, best 3.4u/240c
+[2026-10-05 21:25] thf_blink_s0: resuming with 380 done, 3716 remaining
+[2026-10-05 21:29] thf_blink_s0: tick+25, total 405/4096, best=3.4u/240c
+[2026-10-05 21:31] thf_blink_s0: tick+50, total 430/4096, best=3.4u/240c
+[2026-10-05 21:33] thf_blink_s0: tick+75, total 455/4096, best=3.4u/240c
+[2026-10-05 21:35] thf_blink_s0: tick+100, total 480/4096, best=3.4u/240c
+[2026-10-05 21:37] thf_blink_s0: tick+125, total 505/4096, best=3.4u/240c
+[2026-10-05 21:39] budget exhausted after 144 variants this tick
+[2026-10-05 21:39] tick done: thf_blink_s0 +144 variants, total 524/4096, best 3.4u/240c
+[2026-10-05 21:55] thf_blink_s0: resuming with 524 done, 3572 remaining
+[2026-10-05 21:57] thf_blink_s0: tick+25, total 549/4096, best=3.4u/240c
+[2026-10-05 22:01] thf_blink_s0: tick+50, total 574/4096, best=3.4u/240c
+[2026-10-05 22:04] thf_blink_s0: tick+75, total 599/4096, best=3.4u/240c
+[2026-10-05 22:09] budget exhausted after 99 variants this tick
+[2026-10-05 22:09] tick done: thf_blink_s0 +99 variants, total 623/4096, best 3.4u/240c
+[2026-10-05 22:25] thf_blink_s0: resuming with 623 done, 3473 remaining
+[2026-10-05 22:29] thf_blink_s0: tick+25, total 648/4096, best=3.4u/240c
+[2026-10-05 22:35] thf_blink_s0: tick+50, total 673/4096, best=3.4u/240c
+[2026-10-05 22:39] thf_blink_s0: tick+75, total 698/4096, best=3.4u/240c
+[2026-10-05 22:39] budget exhausted after 78 variants this tick
+[2026-10-05 22:39] tick done: thf_blink_s0 +78 variants, total 701/4096, best 3.4u/240c
+[2026-10-05 22:55] thf_blink_s0: resuming with 701 done, 3395 remaining
+[2026-10-05 23:02] thf_blink_s0: tick+25, total 726/4096, best=3.4u/240c
+[2026-10-05 23:04] thf_blink_s0: tick+50, total 751/4096, best=3.4u/240c
+[2026-10-05 23:06] thf_blink_s0: tick+75, total 776/4096, best=3.4u/240c
+[2026-10-05 23:08] thf_blink_s0: tick+100, total 801/4096, best=3.4u/240c
+[2026-10-05 23:09] budget exhausted after 106 variants this tick
+[2026-10-05 23:09] tick done: thf_blink_s0 +106 variants, total 807/4096, best 3.4u/240c
+[2026-10-05 23:25] thf_blink_s0: resuming with 807 done, 3289 remaining
+[2026-10-05 23:30] thf_blink_s0: tick+25, total 832/4096, best=3.4u/240c
+[2026-10-05 23:36] thf_blink_s0: tick+50, total 857/4096, best=3.4u/240c
+[2026-10-05 23:39] budget exhausted after 61 variants this tick
+[2026-10-05 23:39] tick done: thf_blink_s0 +61 variants, total 868/4096, best 3.4u/240c
+[2026-10-05 23:55] thf_blink_s0: resuming with 868 done, 3228 remaining
+[2026-10-06 00:00] thf_blink_s0: tick+25, total 893/4096, best=3.4u/240c
+[2026-10-06 00:06] thf_blink_s0: tick+50, total 918/4096, best=3.4u/240c
+[2026-10-06 00:09] budget exhausted after 72 variants this tick
+[2026-10-06 00:09] tick done: thf_blink_s0 +72 variants, total 940/4096, best 3.4u/240c
+[2026-10-06 00:25] thf_blink_s0: resuming with 940 done, 3156 remaining
+[2026-10-06 00:31] thf_blink_s0: tick+25, total 965/4096, best=3.4u/240c
+[2026-10-06 00:39] thf_blink_s0: tick+50, total 990/4096, best=3.4u/240c
+[2026-10-06 00:39] budget exhausted after 53 variants this tick
+[2026-10-06 00:39] tick done: thf_blink_s0 +53 variants, total 993/4096, best 3.4u/240c
+[2026-10-06 00:55] thf_blink_s0: resuming with 993 done, 3103 remaining
+[2026-10-06 00:59] thf_blink_s0: tick+25, total 1018/4096, best=3.4u/240c
+[2026-10-06 00:59] thf_blink_s0: converged: 1024 done, top-10 within 0.1u (best 3.4u/240c)
+[2026-10-06 00:59] tick done: thf_blink_s0 +31 variants, total 1024/4096, best 3.4u/240c
+[2026-10-06 01:03] TERMINAL: sweep complete — top-10 per base box written to ROUND25_TABLE.md
+[2026-10-06 01:03]   midori_sb0: best 3.0u/176c/area=464/fanout=5 vi=3824
+[2026-10-06 01:03]   ulbc_s1: best 3.0u/192c/area=528/fanout=6 vi=1113
+[2026-10-06 01:03]   thf_blink_s0: best 3.4u/240c/area=576/fanout=5 vi=2192
+[2026-10-06 01:03] TERMINAL: sweep complete — top-10 per base box written to ROUND25_TABLE.md
+[2026-10-06 01:03]   midori_sb0: best 3.0u/176c/area=464/fanout=5 vi=3824
+[2026-10-06 01:03]   ulbc_s1: best 3.0u/192c/area=528/fanout=6 vi=1113
+[2026-10-06 01:03]   thf_blink_s0: best 3.4u/240c/area=576/fanout=5 vi=2192

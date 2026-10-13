@@ -1,0 +1,26 @@
+{
+ "name": "seed_rnd18",
+ "description": "GA 6r Feistel F=[chi_311,s1_311,s1_311,s1_713,chi32v_311,chi32v_notr] no whitening",
+ "composition": "GA 6r Feistel F=[chi_311,s1_311,s1_311,s1_713,chi32v_311,chi32v_notr] no whitening",
+ "rtl_top": "seed_rnd18",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x35181408e215f242"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xc8947620f8d4c87f"
+  }
+ ]
+}

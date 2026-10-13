@@ -1,0 +1,26 @@
+{
+ "name": "seed_hand_replacerot",
+ "description": "GA 6r Feistel F=[s1_311,chi32v_311,s1_311,chi32v_311,s1_311,chi32v_notr] pbox:replacerot/transpose8x4 no whitening",
+ "composition": "GA 6r Feistel F=[s1_311,chi32v_311,s1_311,chi32v_311,s1_311,chi32v_notr] pbox:replacerot/transpose8x4 no whitening",
+ "rtl_top": "seed_hand_replacerot",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x03d740485198ac48"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xd3a7c72f0e6092f2"
+  }
+ ]
+}

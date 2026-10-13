@@ -1,0 +1,16 @@
+{
+ "const_fam": null,
+ "const_where": "none",
+ "mask": "none",
+ "pbox_perm": null,
+ "pbox_where": "none",
+ "rounds": 6,
+ "tags": [
+  "chi_311",
+  "s1_311",
+  "s1_311",
+  "s1_713",
+  "chi32v_311",
+  "chi32v_notr"
+ ]
+}

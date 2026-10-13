@@ -1,0 +1,26 @@
+{
+ "name": "seed_hand_prepost",
+ "description": "GA 6r Feistel F=[s1_311,chi_311,s1_311,chi_311,s1_311,chi_fm07] const:prepost/bit no whitening",
+ "composition": "GA 6r Feistel F=[s1_311,chi_311,s1_311,chi_311,s1_311,chi_fm07] const:prepost/bit no whitening",
+ "rtl_top": "seed_hand_prepost",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xc5db310f142fb18d"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x64688d31ce03cfcf"
+  }
+ ]
+}

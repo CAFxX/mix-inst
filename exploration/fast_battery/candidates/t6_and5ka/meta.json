@@ -1,0 +1,13 @@
+{
+ "name": "t6_and5ka",
+ "rtl_top": "t6_and5ka",
+ "description": "5-stage AND-cascade + per-stage rk (sched A)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ]
+}

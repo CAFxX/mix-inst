@@ -1,0 +1,7 @@
+{
+ "name": "sparsemix64",
+ "rtl_top": "sparsemix64",
+ "desc": "4-round hetero SPN, 64 distinct 4-bit S-boxes, sparse wiring (Carlo's design)",
+ "rounds": 4,
+ "sboxes": 64
+}

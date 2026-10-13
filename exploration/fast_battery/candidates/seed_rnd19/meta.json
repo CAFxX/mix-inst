@@ -1,0 +1,26 @@
+{
+ "name": "seed_rnd19",
+ "description": "GA 7r Feistel F=[chi32v_311,chi_311,s1_517,chi_713,chi_311,chi32v_517,chi32w_notr] no whitening",
+ "composition": "GA 7r Feistel F=[chi32v_311,chi_311,s1_517,chi_713,chi_311,chi32v_517,chi32w_notr] no whitening",
+ "rtl_top": "seed_rnd19",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x88522ba4bd017e67"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x43ac7d59fd6bb2a6"
+  }
+ ]
+}

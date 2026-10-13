@@ -1,0 +1,25 @@
+{
+ "name": "t6_andnM6a",
+ "description": "batch-39 andnM6 6-stage schedule (triage z=2.2)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xb3498d62e6fd9f06"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x39869e357d239d40"
+  }
+ ],
+ "rtl_top": "t6_andnM6a"
+}

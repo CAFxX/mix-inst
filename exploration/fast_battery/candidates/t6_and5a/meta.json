@@ -1,0 +1,13 @@
+{
+ "name": "t6_and5a",
+ "rtl_top": "t6_and5a",
+ "description": "5-stage AND-cascade x^=(ra&rb)^rc (al_and6a schedule, 5 stages)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ]
+}

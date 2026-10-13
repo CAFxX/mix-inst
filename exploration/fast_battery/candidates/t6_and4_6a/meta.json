@@ -1,0 +1,13 @@
+{
+ "name": "t6_and4_6a",
+ "rtl_top": "t6_and4_6a",
+ "description": "6-stage quad-AND (quartic)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ]
+}

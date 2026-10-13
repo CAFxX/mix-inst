@@ -1,0 +1,13 @@
+{
+ "name": "t6_andchi5a",
+ "rtl_top": "t6_andchi5a",
+ "description": "4x AND-cascade + chi substitution layer",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ]
+}

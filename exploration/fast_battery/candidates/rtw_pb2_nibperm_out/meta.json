@@ -1,0 +1,26 @@
+{
+ "name": "rtw_pb2_nibperm_out",
+ "description": "tweak Z2b: pbox nibperm (out) + bijective lin(3,11)",
+ "composition": "tweak Z2b: pbox nibperm (out) + bijective lin(3,11)",
+ "rtl_top": "rtw_pb2_nibperm_out",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xb64b8dbd7b2ff8f1"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x7b2846494eaaae8b"
+  }
+ ]
+}

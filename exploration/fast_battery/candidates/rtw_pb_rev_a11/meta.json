@@ -1,0 +1,26 @@
+{
+ "name": "rtw_pb_rev_a11",
+ "description": "tweak Z2: pbox rev + single-rot lin(11) on chioff13all",
+ "composition": "tweak Z2: pbox rev + single-rot lin(11) on chioff13all",
+ "rtl_top": "rtw_pb_rev_a11",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x66b6287b9bf7d9fc"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x31ea2decaa1463ab"
+  }
+ ]
+}

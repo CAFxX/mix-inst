@@ -1,0 +1,26 @@
+{
+ "name": "rtw_pb2_byteswap_out",
+ "description": "tweak Z2b: pbox byteswap (out) + bijective lin(3,11)",
+ "composition": "tweak Z2b: pbox byteswap (out) + bijective lin(3,11)",
+ "rtl_top": "rtw_pb2_byteswap_out",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xc4906a9d32160195"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x20a87fca9cd85305"
+  }
+ ]
+}

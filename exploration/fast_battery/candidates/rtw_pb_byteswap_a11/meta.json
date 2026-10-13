@@ -1,0 +1,26 @@
+{
+ "name": "rtw_pb_byteswap_a11",
+ "description": "tweak Z2: pbox byteswap + single-rot lin(11) on chioff13all",
+ "composition": "tweak Z2: pbox byteswap + single-rot lin(11) on chioff13all",
+ "rtl_top": "rtw_pb_byteswap_a11",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x5dc68641e43cf85c"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x42e365ad3410f1c6"
+  }
+ ]
+}

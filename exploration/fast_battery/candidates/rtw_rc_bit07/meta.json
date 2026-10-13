@@ -1,0 +1,26 @@
+{
+ "name": "rtw_rc_bit07",
+ "description": "tweak Z1: chioff13all round constant 0x00000080 (all rounds)",
+ "composition": "tweak Z1: chioff13all round constant 0x00000080 (all rounds)",
+ "rtl_top": "rtw_rc_bit07",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x5233f332e2d22bed"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x7163dd86bef36c48"
+  }
+ ]
+}

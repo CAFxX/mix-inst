@@ -1,0 +1,26 @@
+{
+ "name": "rtw_pb2_rev_inout",
+ "description": "tweak Z2b: pbox rev (inout) + bijective lin(3,11)",
+ "composition": "tweak Z2b: pbox rev (inout) + bijective lin(3,11)",
+ "rtl_top": "rtw_pb2_rev_inout",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x0e1ea7d7281c1189"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x31821b2c40961c21"
+  }
+ ]
+}

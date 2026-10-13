@@ -1,0 +1,26 @@
+{
+ "name": "rtw_pb_nibperm_a03",
+ "description": "tweak Z2: pbox nibperm + single-rot lin(3) on chioff13all",
+ "composition": "tweak Z2: pbox nibperm + single-rot lin(3) on chioff13all",
+ "rtl_top": "rtw_pb_nibperm_a03",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x68caaab44cfffab1"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xb14da615b008db91"
+  }
+ ]
+}

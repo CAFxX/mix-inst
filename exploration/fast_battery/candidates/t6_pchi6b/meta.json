@@ -1,0 +1,13 @@
+{
+ "name": "t6_pchi6b",
+ "rtl_top": "t6_pchi6b",
+ "description": "6-stage parallel chi-combine (~p1&p2), alt schedule",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ]
+}

@@ -1,0 +1,25 @@
+{
+ "name": "t6_pbox5a",
+ "rtl_top": "t6_pbox5a",
+ "description": "5-stage AND + bit-reversal diffusion",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xf1005697f7efe9b8"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x7bcf45c06c31ebfe"
+  }
+ ]
+}

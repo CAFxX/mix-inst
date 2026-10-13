@@ -1,0 +1,25 @@
+{
+ "name": "t6_ormM6c",
+ "description": "batch-40 ormM6 6-stage schedule (triage z=2.37)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x25672fb395a3fafb"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xafa83ce40e7df8bd"
+  }
+ ],
+ "rtl_top": "t6_ormM6c"
+}

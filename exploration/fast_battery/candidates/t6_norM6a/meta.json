@@ -1,0 +1,25 @@
+{
+ "name": "t6_norM6a",
+ "description": "batch-41 norM 6-stage schedule (triage z=2.76)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xb88fe9378f80570"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x8147edc4e3260736"
+  }
+ ],
+ "rtl_top": "t6_norM6a"
+}

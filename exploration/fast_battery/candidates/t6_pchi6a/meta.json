@@ -1,0 +1,13 @@
+{
+ "name": "t6_pchi6a",
+ "rtl_top": "t6_pchi6a",
+ "description": "6-stage parallel chi-combine (p1&~p2), frontier challenger",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ]
+}

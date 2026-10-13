@@ -1,0 +1,25 @@
+{
+ "name": "t6_pbox5b",
+ "rtl_top": "t6_pbox5b",
+ "description": "5-stage AND + byte-transpose diffusion",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xf0c9ee1abd56f3aa"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x7a06fd4d2688f1ec"
+  }
+ ]
+}

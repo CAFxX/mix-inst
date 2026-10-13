@@ -1,0 +1,24 @@
+{
+ "name": "t6_narrow_arx",
+ "description": "4-round 4x16-bit ARX lanes + cross-lane XOR",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0xf079251688259be5"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xbdec9d582e744f3a"
+  }
+ ]
+}

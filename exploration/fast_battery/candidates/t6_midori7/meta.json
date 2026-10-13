@@ -1,0 +1,24 @@
+{
+ "name": "t6_midori7",
+ "description": "Midori64 reduced, 7 rounds",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x6baa08fe96bf21e0"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x57e69e6027a43a1d"
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "name": "t6_or6a",
+ "rtl_top": "t6_or6a",
+ "description": "6-stage OR-cascade (De Morgan twin of AND)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ]
+}

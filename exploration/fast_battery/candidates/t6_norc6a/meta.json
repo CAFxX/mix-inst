@@ -1,0 +1,13 @@
+{
+ "name": "t6_norc6a",
+ "rtl_top": "t6_norc6a",
+ "description": "6-stage AND-cascade, no linear rc term",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ]
+}

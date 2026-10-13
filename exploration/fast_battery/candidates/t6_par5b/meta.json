@@ -1,0 +1,13 @@
+{
+ "name": "t6_par5b",
+ "rtl_top": "t6_par5b",
+ "description": "parallel dual 5-stage cascade + AND-combine, B",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ]
+}

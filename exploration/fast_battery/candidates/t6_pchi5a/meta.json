@@ -1,0 +1,13 @@
+{
+ "name": "t6_pchi5a",
+ "rtl_top": "t6_pchi5a",
+ "description": "5-stage parallel chi-combine, DIFF-wall probe",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ]
+}

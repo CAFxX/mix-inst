@@ -1,0 +1,25 @@
+{
+ "name": "t6_nandM6a",
+ "description": "batch-41 nandM 6-stage schedule (triage z=2.15)",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x3b7d59bb7375e211"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0xb1b24aece8abe057"
+  }
+ ],
+ "rtl_top": "t6_nandM6a"
+}

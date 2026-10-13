@@ -1,0 +1,57 @@
+{
+ "name": "w4t_289",
+ "description": "w4t 4-term rotl-xor linear, screen keep idx 289 (fr=63)",
+ "screen_idx": 289,
+ "stages": [
+  [
+   [
+    45,
+    49
+   ],
+   [
+    45,
+    42
+   ]
+  ],
+  [
+   [
+    22,
+    20
+   ],
+   [
+    44,
+    40
+   ]
+  ],
+  [
+   [
+    33,
+    35
+   ],
+   [
+    34,
+    36
+   ]
+  ]
+ ],
+ "pqrs": [
+  14,
+  27,
+  28,
+  31
+ ],
+ "full_rank": 63,
+ "rtl_top": "w4t_289",
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x8c77286b7068ea9a"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x6b83b3cebb6e8dc"
+  }
+ ]
+}

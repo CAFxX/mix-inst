@@ -1,0 +1,17 @@
+{
+ "name": "wave13_stage_pre",
+ "description": "Wave-13 single stage (BOYAR19 nibble-S-box + transpose + pre-whiten); stage-cost probe, not a candidate",
+ "rtl_top": "wave13_stage_pre",
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x6ea2c64e0d9e13ea"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x6ea2c64e0d9e13ea"
+  }
+ ]
+}

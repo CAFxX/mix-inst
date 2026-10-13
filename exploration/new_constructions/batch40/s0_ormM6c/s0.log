@@ -1,0 +1,5 @@
+agentwork-launch: tag=track6/b40-s0-ormM6c schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+REF mul64: cells=12645 area=35323 crit=103.5
+DUT t6_ormM6c: cells=4362 area=12391 crit=21.9
+RESULT name=t6_ormM6c cells=4362 area=12391 crit=21.9 delay_ratio=0.212 area_ratio=0.351 ref_crit=103.5 ref_area=35323
+XCHECK: analyze.py == analyze2.py (cells/area/crit identical)

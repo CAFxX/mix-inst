@@ -1,0 +1,9 @@
+S0 for t6_ormM6a QUEUED — load backoff rc=1 at launch (load 15.50 >= 12).
+Launch when `~/workspace/system/bin/load-shed.sh backoff` returns rc=0:
+  cd ~/workspace/mix/exploration && ~/workspace/system/bin/agentwork-launch.sh --nice 19 \
+    --tag track6/b40-s0-ormM6a -- python3 run_synth.py \
+    fast_battery/candidates/t6_ormM6a/rtl.v t6_ormM6a \
+    new_constructions/batch40/s0_ormM6a > new_constructions/batch40/s0_ormM6a/s0.log 2>&1 &
+Cost bar: strictly < 19.8u MEASURED (crit field of RESULT line). Bundle: fast_battery/candidates/t6_ormM6a/ (bit-exact 2000/2000, triage z=2.08).
+Note: a premature launch was killed (backoff violation, self-corrected); the _ref dir contains a partial ref synth — run_synth.py will redo it cleanly.
+Queued 2026-10-11 05:40 UTC by track-6 supervisor incarnation VIII.

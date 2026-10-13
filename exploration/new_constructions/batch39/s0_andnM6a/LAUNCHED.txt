@@ -1,0 +1,9 @@
+S0 for t6_andnM6a QUEUED — load backoff rc=1 (load 14.55 >= 12 at queue time).
+Launch when `~/workspace/system/bin/load-shed.sh backoff` returns rc=0:
+  cd ~/workspace/mix/exploration && ~/workspace/system/bin/agentwork-launch.sh --nice 19 \
+    --tag track6/b39-s0-andnM6a -- python3 run_synth.py \
+    fast_battery/candidates/t6_andnM6a/rtl.v t6_andnM6a \
+    new_constructions/batch39/s0_andnM6a > new_constructions/batch39/s0_andnM6a/s0.log 2>&1 &
+Cost bar: strictly < 19.8u MEASURED (crit field of RESULT line). Bundle: fast_battery/candidates/t6_andnM6a/ (bit-exact 2000/2000, triage z=2.16).
+Note: launches serialize on the global yosys flock inside run_synth.py — launch BOTH queued S0s (ormM6a + andnM6a); they will run sequentially, not in parallel.
+Queued 2026-10-11 06:00 UTC by track-6 supervisor incarnation VIII.

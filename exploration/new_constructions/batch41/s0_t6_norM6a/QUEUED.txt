@@ -1,0 +1,1 @@
+QUEUED 2026-10-11 ~07:22 CEST: S0 via run_synth.py, bar strictly <19.8u. Runner: batch41/run_s0_b41.sh (polls load-shed backoff, then runs nandM6a + norM6a sequentially).

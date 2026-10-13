@@ -1,0 +1,418 @@
+.model netlist
+.inputs ys__n0 ys__n3 ys__n6 ys__n9 ys__n12 ys__n15 ys__n18 ys__n21 ys__n24 ys__n27 ys__n30 ys__n33 ys__n36 ys__n39 ys__n42 ys__n45 ys__n48 ys__n51 ys__n54 ys__n57 ys__n60 ys__n63 ys__n66 ys__n69 ys__n72 ys__n75 ys__n78 ys__n81 ys__n84 ys__n87 ys__n90 ys__n93 ys__n96 ys__n99 ys__n102 ys__n105 ys__n108 ys__n111 ys__n114 ys__n117 ys__n118 ys__n119 ys__n121 ys__n122 ys__n123 ys__n124 ys__n125 ys__n127 ys__n129 ys__n131 ys__n132 ys__n134 ys__n135 ys__n137 ys__n138 ys__n144 ys__n145 ys__n146 ys__n147 ys__n148 ys__n149 ys__n150 ys__n151 ys__n152
+.outputs ys__n2 ys__n5 ys__n8 ys__n11 ys__n14 ys__n17 ys__n20 ys__n23 ys__n26 ys__n29 ys__n32 ys__n35 ys__n38 ys__n41 ys__n44 ys__n47 ys__n50 ys__n53 ys__n56 ys__n59 ys__n62 ys__n65 ys__n68 ys__n71 ys__n74 ys__n77 ys__n80 ys__n83 ys__n86 ys__n89 ys__n92 ys__n95 ys__n98 ys__n101 ys__n104 ys__n107 ys__n110 ys__n113 ys__n116 ys__n153 ys__n154 ys__n155 ys__n156 ys__n157 ys__n158 ys__n159 ys__n160 ys__n161 ys__n162 ys__n163
+# ys__n0     \x [34]
+# ys__n1     $and$/home/hatch/workspace/mix/exploration/new_constructions/batch35/probes.v:34$47_Y [34]
+# ys__n2     \y [34]
+# ys__n3     \x [33]
+# ys__n4     $and$/home/hatch/workspace/mix/exploration/new_constructions/batch35/probes.v:34$47_Y [33]
+# ys__n5     \y [33]
+# ys__n6     \x [32]
+# ys__n7     $and$/home/hatch/workspace/mix/exploration/new_constructions/batch35/probes.v:34$47_Y [32]
+# ys__n8     \y [32]
+# ys__n9     \x [31]
+# ys__n10    $and$/home/hatch/workspace/mix/exploration/new_constructions/batch35/probes.v:34$47_Y [31]
+# ys__n11    \y [31]
+# ys__n12    \x [30]
+# ys__n13    $and$/home/hatch/workspace/mix/exploration/new_constructions/batch35/probes.v:34$47_Y [30]
+# ys__n14    \y [30]
+# ys__n15    \x [29]
+# ys__n16    $and$/home/hatch/workspace/mix/exploration/new_constructions/batch35/probes.v:34$47_Y [29]
+# ys__n17    \y [29]
+# ys__n18    \x [28]
+# ys__n19    $and$/home/hatch/workspace/mix/exploration/new_constructions/batch35/probes.v:34$47_Y [28]
+# ys__n20    \y [28]
+# ys__n21    \x [27]
+# ys__n22    $and$/home/hatch/workspace/mix/exploration/new_constructions/batch35/probes.v:34$47_Y [27]
+# ys__n23    \y [27]
+# ys__n24    \x [26]
+# ys__n25    $and$/home/hatch/workspace/mix/exploration/new_constructions/batch35/probes.v:34$47_Y [26]
+# ys__n26    \y [26]
+# ys__n27    \x [25]
+# ys__n28    $and$/home/hatch/workspace/mix/exploration/new_constructions/batch35/probes.v:34$47_Y [25]
+# ys__n29    \y [25]
+# ys__n30    \x [24]
+# ys__n31    $and$/home/hatch/workspace/mix/exploration/new_constructions/batch35/probes.v:34$47_Y [24]
+# ys__n32    \y [24]
+# ys__n33    \x [23]
+# ys__n34    $and$/home/hatch/workspace/mix/exploration/new_constructions/batch35/probes.v:34$47_Y [23]
+# ys__n35    \y [23]
+# ys__n36    \x [22]
+# ys__n37    $and$/home/hatch/workspace/mix/exploration/new_constructions/batch35/probes.v:34$47_Y [22]
+# ys__n38    \y [22]
+# ys__n39    \x [21]
+# ys__n40    $and$/home/hatch/workspace/mix/exploration/new_constructions/batch35/probes.v:34$47_Y [21]
+# ys__n41    \y [21]
+# ys__n42    \x [20]
+# ys__n43    $and$/home/hatch/workspace/mix/exploration/new_constructions/batch35/probes.v:34$47_Y [20]
+# ys__n44    \y [20]
+# ys__n45    \x [19]
+# ys__n46    $and$/home/hatch/workspace/mix/exploration/new_constructions/batch35/probes.v:34$47_Y [19]
+# ys__n47    \y [19]
+# ys__n48    \x [18]
+# ys__n49    $and$/home/hatch/workspace/mix/exploration/new_constructions/batch35/probes.v:34$47_Y [18]
+# ys__n50    \y [18]
+# ys__n51    \x [17]
+# ys__n52    $and$/home/hatch/workspace/mix/exploration/new_constructions/batch35/probes.v:34$47_Y [17]
+# ys__n53    \y [17]
+# ys__n54    \x [16]
+# ys__n55    $and$/home/hatch/workspace/mix/exploration/new_constructions/batch35/probes.v:34$47_Y [16]
+# ys__n56    \y [16]
+# ys__n57    \x [15]
+# ys__n58    $and$/home/hatch/workspace/mix/exploration/new_constructions/batch35/probes.v:34$47_Y [15]
+# ys__n59    \y [15]
+# ys__n60    \x [14]
+# ys__n61    $and$/home/hatch/workspace/mix/exploration/new_constructions/batch35/probes.v:34$47_Y [14]
+# ys__n62    \y [14]
+# ys__n63    \x [13]
+# ys__n64    $and$/home/hatch/workspace/mix/exploration/new_constructions/batch35/probes.v:34$47_Y [13]
+# ys__n65    \y [13]
+# ys__n66    \x [12]
+# ys__n67    $and$/home/hatch/workspace/mix/exploration/new_constructions/batch35/probes.v:34$47_Y [12]
+# ys__n68    \y [12]
+# ys__n69    \x [11]
+# ys__n70    $and$/home/hatch/workspace/mix/exploration/new_constructions/batch35/probes.v:34$47_Y [11]
+# ys__n71    \y [11]
+# ys__n72    \x [10]
+# ys__n73    $and$/home/hatch/workspace/mix/exploration/new_constructions/batch35/probes.v:34$47_Y [10]
+# ys__n74    \y [10]
+# ys__n75    \x [9]
+# ys__n76    $and$/home/hatch/workspace/mix/exploration/new_constructions/batch35/probes.v:34$47_Y [9]
+# ys__n77    \y [9]
+# ys__n78    \x [51]
+# ys__n79    $and$/home/hatch/workspace/mix/exploration/new_constructions/batch35/probes.v:34$47_Y [51]
+# ys__n80    \y [51]
+# ys__n81    \x [49]
+# ys__n82    $and$/home/hatch/workspace/mix/exploration/new_constructions/batch35/probes.v:34$47_Y [49]
+# ys__n83    \y [49]
+# ys__n84    \x [47]
+# ys__n85    $and$/home/hatch/workspace/mix/exploration/new_constructions/batch35/probes.v:34$47_Y [47]
+# ys__n86    \y [47]
+# ys__n87    \x [45]
+# ys__n88    $and$/home/hatch/workspace/mix/exploration/new_constructions/batch35/probes.v:34$47_Y [45]
+# ys__n89    \y [45]
+# ys__n90    \x [43]
+# ys__n91    $and$/home/hatch/workspace/mix/exploration/new_constructions/batch35/probes.v:34$47_Y [43]
+# ys__n92    \y [43]
+# ys__n93    \x [41]
+# ys__n94    $and$/home/hatch/workspace/mix/exploration/new_constructions/batch35/probes.v:34$47_Y [41]
+# ys__n95    \y [41]
+# ys__n96    \x [39]
+# ys__n97    $and$/home/hatch/workspace/mix/exploration/new_constructions/batch35/probes.v:34$47_Y [39]
+# ys__n98    \y [39]
+# ys__n99    \x [37]
+# ys__n100   $and$/home/hatch/workspace/mix/exploration/new_constructions/batch35/probes.v:34$47_Y [37]
+# ys__n101   \y [37]
+# ys__n102   \x [35]
+# ys__n103   $and$/home/hatch/workspace/mix/exploration/new_constructions/batch35/probes.v:34$47_Y [35]
+# ys__n104   \y [35]
+# ys__n105   \x [55]
+# ys__n106   $and$/home/hatch/workspace/mix/exploration/new_constructions/batch35/probes.v:34$47_Y [55]
+# ys__n107   \y [55]
+# ys__n108   \x [58]
+# ys__n109   $and$/home/hatch/workspace/mix/exploration/new_constructions/batch35/probes.v:34$47_Y [58]
+# ys__n110   \y [58]
+# ys__n111   \x [56]
+# ys__n112   $and$/home/hatch/workspace/mix/exploration/new_constructions/batch35/probes.v:34$47_Y [56]
+# ys__n113   \y [56]
+# ys__n114   \x [54]
+# ys__n115   $and$/home/hatch/workspace/mix/exploration/new_constructions/batch35/probes.v:34$47_Y [54]
+# ys__n116   \y [54]
+# ys__n117   \x [63]
+# ys__n118   \x [62]
+# ys__n119   \x [48]
+# ys__n120   $and$/home/hatch/workspace/mix/exploration/new_constructions/batch35/probes.v:34$47_Y [57]
+# ys__n121   \x [61]
+# ys__n122   \x [60]
+# ys__n123   \x [46]
+# ys__n124   \x [59]
+# ys__n125   \x [44]
+# ys__n126   $and$/home/hatch/workspace/mix/exploration/new_constructions/batch35/probes.v:34$47_Y [53]
+# ys__n127   \x [57]
+# ys__n128   $and$/home/hatch/workspace/mix/exploration/new_constructions/batch35/probes.v:34$47_Y [52]
+# ys__n129   \x [42]
+# ys__n130   $and$/home/hatch/workspace/mix/exploration/new_constructions/batch35/probes.v:34$47_Y [50]
+# ys__n131   \x [40]
+# ys__n132   \x [53]
+# ys__n133   $and$/home/hatch/workspace/mix/exploration/new_constructions/batch35/probes.v:34$47_Y [48]
+# ys__n134   \x [52]
+# ys__n135   \x [38]
+# ys__n136   $and$/home/hatch/workspace/mix/exploration/new_constructions/batch35/probes.v:34$47_Y [46]
+# ys__n137   \x [50]
+# ys__n138   \x [36]
+# ys__n139   $and$/home/hatch/workspace/mix/exploration/new_constructions/batch35/probes.v:34$47_Y [44]
+# ys__n140   $and$/home/hatch/workspace/mix/exploration/new_constructions/batch35/probes.v:34$47_Y [42]
+# ys__n141   $and$/home/hatch/workspace/mix/exploration/new_constructions/batch35/probes.v:34$47_Y [40]
+# ys__n142   $and$/home/hatch/workspace/mix/exploration/new_constructions/batch35/probes.v:34$47_Y [38]
+# ys__n143   $and$/home/hatch/workspace/mix/exploration/new_constructions/batch35/probes.v:34$47_Y [36]
+# ys__n144   \x [8]
+# ys__n145   \x [7]
+# ys__n146   \x [6]
+# ys__n147   \x [5]
+# ys__n148   \x [4]
+# ys__n149   \x [3]
+# ys__n150   \x [2]
+# ys__n151   \x [1]
+# ys__n152   \x [0]
+# ys__n153   \y [52]
+# ys__n154   \y [50]
+# ys__n155   \y [48]
+# ys__n156   \y [46]
+# ys__n157   \y [44]
+# ys__n158   \y [42]
+# ys__n159   \y [40]
+# ys__n160   \y [38]
+# ys__n161   \y [36]
+# ys__n162   \y [53]
+# ys__n163   \y [57]
+.names ys__n96 ys__n27 ys__n1
+11 1
+.names ys__n0 ys__n1 ys__n2
+01 1
+10 1
+.names ys__n135 ys__n30 ys__n4
+11 1
+.names ys__n3 ys__n4 ys__n5
+01 1
+10 1
+.names ys__n99 ys__n33 ys__n7
+11 1
+.names ys__n6 ys__n7 ys__n8
+01 1
+10 1
+.names ys__n138 ys__n36 ys__n10
+11 1
+.names ys__n9 ys__n10 ys__n11
+01 1
+10 1
+.names ys__n102 ys__n39 ys__n13
+11 1
+.names ys__n12 ys__n13 ys__n14
+01 1
+10 1
+.names ys__n0 ys__n42 ys__n16
+11 1
+.names ys__n15 ys__n16 ys__n17
+01 1
+10 1
+.names ys__n3 ys__n45 ys__n19
+11 1
+.names ys__n18 ys__n19 ys__n20
+01 1
+10 1
+.names ys__n6 ys__n48 ys__n22
+11 1
+.names ys__n21 ys__n22 ys__n23
+01 1
+10 1
+.names ys__n9 ys__n51 ys__n25
+11 1
+.names ys__n24 ys__n25 ys__n26
+01 1
+10 1
+.names ys__n12 ys__n54 ys__n28
+11 1
+.names ys__n27 ys__n28 ys__n29
+01 1
+10 1
+.names ys__n15 ys__n57 ys__n31
+11 1
+.names ys__n30 ys__n31 ys__n32
+01 1
+10 1
+.names ys__n18 ys__n60 ys__n34
+11 1
+.names ys__n33 ys__n34 ys__n35
+01 1
+10 1
+.names ys__n21 ys__n63 ys__n37
+11 1
+.names ys__n36 ys__n37 ys__n38
+01 1
+10 1
+.names ys__n24 ys__n66 ys__n40
+11 1
+.names ys__n39 ys__n40 ys__n41
+01 1
+10 1
+.names ys__n27 ys__n69 ys__n43
+11 1
+.names ys__n42 ys__n43 ys__n44
+01 1
+10 1
+.names ys__n30 ys__n72 ys__n46
+11 1
+.names ys__n45 ys__n46 ys__n47
+01 1
+10 1
+.names ys__n33 ys__n75 ys__n49
+11 1
+.names ys__n48 ys__n49 ys__n50
+01 1
+10 1
+.names ys__n36 ys__n144 ys__n52
+11 1
+.names ys__n51 ys__n52 ys__n53
+01 1
+10 1
+.names ys__n39 ys__n145 ys__n55
+11 1
+.names ys__n54 ys__n55 ys__n56
+01 1
+10 1
+.names ys__n42 ys__n146 ys__n58
+11 1
+.names ys__n57 ys__n58 ys__n59
+01 1
+10 1
+.names ys__n45 ys__n147 ys__n61
+11 1
+.names ys__n60 ys__n61 ys__n62
+01 1
+10 1
+.names ys__n48 ys__n148 ys__n64
+11 1
+.names ys__n63 ys__n64 ys__n65
+01 1
+10 1
+.names ys__n51 ys__n149 ys__n67
+11 1
+.names ys__n66 ys__n67 ys__n68
+01 1
+10 1
+.names ys__n54 ys__n150 ys__n70
+11 1
+.names ys__n69 ys__n70 ys__n71
+01 1
+10 1
+.names ys__n57 ys__n151 ys__n73
+11 1
+.names ys__n72 ys__n73 ys__n74
+01 1
+10 1
+.names ys__n60 ys__n152 ys__n76
+11 1
+.names ys__n75 ys__n76 ys__n77
+01 1
+10 1
+.names ys__n111 ys__n129 ys__n79
+11 1
+.names ys__n78 ys__n79 ys__n80
+01 1
+10 1
+.names ys__n114 ys__n131 ys__n82
+11 1
+.names ys__n81 ys__n82 ys__n83
+01 1
+10 1
+.names ys__n134 ys__n135 ys__n85
+11 1
+.names ys__n84 ys__n85 ys__n86
+01 1
+10 1
+.names ys__n137 ys__n138 ys__n88
+11 1
+.names ys__n87 ys__n88 ys__n89
+01 1
+10 1
+.names ys__n119 ys__n0 ys__n91
+11 1
+.names ys__n90 ys__n91 ys__n92
+01 1
+10 1
+.names ys__n123 ys__n6 ys__n94
+11 1
+.names ys__n93 ys__n94 ys__n95
+01 1
+10 1
+.names ys__n125 ys__n12 ys__n97
+11 1
+.names ys__n96 ys__n97 ys__n98
+01 1
+10 1
+.names ys__n129 ys__n18 ys__n100
+11 1
+.names ys__n99 ys__n100 ys__n101
+01 1
+10 1
+.names ys__n131 ys__n24 ys__n103
+11 1
+.names ys__n102 ys__n103 ys__n104
+01 1
+10 1
+.names ys__n122 ys__n123 ys__n106
+11 1
+.names ys__n105 ys__n106 ys__n107
+01 1
+10 1
+.names ys__n117 ys__n81 ys__n109
+11 1
+.names ys__n108 ys__n109 ys__n110
+01 1
+10 1
+.names ys__n121 ys__n84 ys__n112
+11 1
+.names ys__n111 ys__n112 ys__n113
+01 1
+10 1
+.names ys__n124 ys__n87 ys__n115
+11 1
+.names ys__n114 ys__n115 ys__n116
+01 1
+10 1
+.names ys__n118 ys__n119 ys__n120
+11 1
+.names ys__n108 ys__n125 ys__n126
+11 1
+.names ys__n127 ys__n90 ys__n128
+11 1
+.names ys__n105 ys__n93 ys__n130
+11 1
+.names ys__n132 ys__n96 ys__n133
+11 1
+.names ys__n78 ys__n99 ys__n136
+11 1
+.names ys__n81 ys__n102 ys__n139
+11 1
+.names ys__n84 ys__n3 ys__n140
+11 1
+.names ys__n87 ys__n9 ys__n141
+11 1
+.names ys__n90 ys__n15 ys__n142
+11 1
+.names ys__n93 ys__n21 ys__n143
+11 1
+.names ys__n134 ys__n128 ys__n153
+01 1
+10 1
+.names ys__n137 ys__n130 ys__n154
+01 1
+10 1
+.names ys__n119 ys__n133 ys__n155
+01 1
+10 1
+.names ys__n123 ys__n136 ys__n156
+01 1
+10 1
+.names ys__n125 ys__n139 ys__n157
+01 1
+10 1
+.names ys__n129 ys__n140 ys__n158
+01 1
+10 1
+.names ys__n131 ys__n141 ys__n159
+01 1
+10 1
+.names ys__n135 ys__n142 ys__n160
+01 1
+10 1
+.names ys__n138 ys__n143 ys__n161
+01 1
+10 1
+.names ys__n132 ys__n126 ys__n162
+01 1
+10 1
+.names ys__n127 ys__n120 ys__n163
+01 1
+10 1
+.end

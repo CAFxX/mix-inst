@@ -1,0 +1,148 @@
+# Benchmark "netlist" written by ABC on Sat Oct 10 23:38:49 2026
+.model netlist
+.inputs ys__n0 ys__n1 ys__n3 ys__n4 ys__n6 ys__n7 ys__n9 ys__n10 ys__n12 \
+ ys__n13 ys__n15 ys__n17 ys__n19 ys__n21 ys__n23 ys__n25 ys__n27 ys__n29 \
+ ys__n31 ys__n33 ys__n35 ys__n37 ys__n39 ys__n41 ys__n43 ys__n45 ys__n47 \
+ ys__n49 ys__n51 ys__n53 ys__n55 ys__n57 ys__n59 ys__n61 ys__n63 ys__n65 \
+ ys__n67 ys__n69 ys__n71 ys__n73 ys__n75 ys__n77 ys__n79 ys__n81 ys__n83 \
+ ys__n85 ys__n87 ys__n89 ys__n91 ys__n93 ys__n95 ys__n97 ys__n99 ys__n101 \
+ ys__n103 ys__n105 ys__n107 ys__n109 ys__n111 ys__n113 ys__n115 ys__n117 \
+ ys__n119 ys__n121
+.outputs ys__n125 ys__n126 ys__n127 ys__n128 ys__n129 ys__n130 ys__n131 \
+ ys__n132 ys__n133 ys__n134 ys__n135 ys__n136 ys__n137 ys__n138 ys__n139 \
+ ys__n140 ys__n141 ys__n142 ys__n143 ys__n144 ys__n145 ys__n146 ys__n147 \
+ ys__n148 ys__n149 ys__n150 ys__n151 ys__n152 ys__n153 ys__n154 ys__n155 \
+ ys__n156 ys__n157 ys__n158 ys__n159 ys__n160 ys__n161 ys__n162 ys__n163 \
+ ys__n164 ys__n165 ys__n166 ys__n167 ys__n168 ys__n169 ys__n170 ys__n171 \
+ ys__n172 ys__n173 ys__n174 ys__n175 ys__n176 ys__n177 ys__n178 ys__n179 \
+ ys__n180 ys__n181 ys__n182 ys__n183 ys__n184 ys__n185 ys__n189 ys__n190 \
+ ys__n191
+.gate XNOR2 A=ys__n4 B=ys__n23 Y=new_n129
+.gate XNOR2 A=ys__n3 B=new_n129 Y=ys__n125
+.gate XNOR2 A=ys__n10 B=ys__n27 Y=new_n131
+.gate XNOR2 A=ys__n9 B=new_n131 Y=ys__n126
+.gate XNOR2 A=ys__n15 B=ys__n31 Y=new_n133
+.gate XNOR2 A=ys__n1 B=new_n133 Y=ys__n127
+.gate XNOR2 A=ys__n19 B=ys__n35 Y=new_n135
+.gate XNOR2 A=ys__n7 B=new_n135 Y=ys__n128
+.gate XNOR2 A=ys__n23 B=ys__n39 Y=new_n137
+.gate XNOR2 A=ys__n13 B=new_n137 Y=ys__n129
+.gate XNOR2 A=ys__n27 B=ys__n43 Y=new_n139
+.gate XNOR2 A=ys__n17 B=new_n139 Y=ys__n130
+.gate XNOR2 A=ys__n31 B=ys__n47 Y=new_n141
+.gate XNOR2 A=ys__n21 B=new_n141 Y=ys__n131
+.gate XNOR2 A=ys__n35 B=ys__n51 Y=new_n143
+.gate XNOR2 A=ys__n25 B=new_n143 Y=ys__n132
+.gate XNOR2 A=ys__n39 B=ys__n55 Y=new_n145
+.gate XNOR2 A=ys__n29 B=new_n145 Y=ys__n133
+.gate XNOR2 A=ys__n43 B=ys__n59 Y=new_n147
+.gate XNOR2 A=ys__n33 B=new_n147 Y=ys__n134
+.gate XNOR2 A=ys__n47 B=ys__n63 Y=new_n149
+.gate XNOR2 A=ys__n37 B=new_n149 Y=ys__n135
+.gate XNOR2 A=ys__n51 B=ys__n67 Y=new_n151
+.gate XNOR2 A=ys__n41 B=new_n151 Y=ys__n136
+.gate XNOR2 A=ys__n55 B=ys__n71 Y=new_n153
+.gate XNOR2 A=ys__n45 B=new_n153 Y=ys__n137
+.gate XNOR2 A=ys__n59 B=ys__n75 Y=new_n155
+.gate XNOR2 A=ys__n49 B=new_n155 Y=ys__n138
+.gate XNOR2 A=ys__n63 B=ys__n79 Y=new_n157
+.gate XNOR2 A=ys__n53 B=new_n157 Y=ys__n139
+.gate XNOR2 A=ys__n67 B=ys__n83 Y=new_n159
+.gate XNOR2 A=ys__n57 B=new_n159 Y=ys__n140
+.gate XNOR2 A=ys__n71 B=ys__n87 Y=new_n161
+.gate XNOR2 A=ys__n61 B=new_n161 Y=ys__n141
+.gate XNOR2 A=ys__n75 B=ys__n91 Y=new_n163
+.gate XNOR2 A=ys__n65 B=new_n163 Y=ys__n142
+.gate XNOR2 A=ys__n79 B=ys__n95 Y=new_n165
+.gate XNOR2 A=ys__n69 B=new_n165 Y=ys__n143
+.gate XNOR2 A=ys__n83 B=ys__n99 Y=new_n167
+.gate XNOR2 A=ys__n73 B=new_n167 Y=ys__n144
+.gate XNOR2 A=ys__n87 B=ys__n103 Y=new_n169
+.gate XNOR2 A=ys__n77 B=new_n169 Y=ys__n145
+.gate XNOR2 A=ys__n91 B=ys__n107 Y=new_n171
+.gate XNOR2 A=ys__n81 B=new_n171 Y=ys__n146
+.gate XNOR2 A=ys__n95 B=ys__n111 Y=new_n173
+.gate XNOR2 A=ys__n85 B=new_n173 Y=ys__n147
+.gate XNOR2 A=ys__n99 B=ys__n115 Y=new_n175
+.gate XNOR2 A=ys__n89 B=new_n175 Y=ys__n148
+.gate XNOR2 A=ys__n103 B=ys__n119 Y=new_n177
+.gate XNOR2 A=ys__n93 B=new_n177 Y=ys__n149
+.gate XNOR2 A=ys__n97 B=ys__n107 Y=new_n179
+.gate XNOR2 A=ys__n0 B=new_n179 Y=ys__n150
+.gate XNOR2 A=ys__n101 B=ys__n111 Y=new_n181
+.gate XNOR2 A=ys__n6 B=new_n181 Y=ys__n151
+.gate XNOR2 A=ys__n105 B=ys__n115 Y=new_n183
+.gate XNOR2 A=ys__n12 B=new_n183 Y=ys__n152
+.gate XNOR2 A=ys__n109 B=ys__n119 Y=new_n185
+.gate XNOR2 A=ys__n4 B=new_n185 Y=ys__n153
+.gate XNOR2 A=ys__n10 B=ys__n113 Y=new_n187
+.gate XNOR2 A=ys__n0 B=new_n187 Y=ys__n154
+.gate XNOR2 A=ys__n1 B=ys__n21 Y=new_n189
+.gate XNOR2 A=ys__n0 B=new_n189 Y=ys__n155
+.gate XNOR2 A=ys__n13 B=ys__n29 Y=new_n191
+.gate XNOR2 A=ys__n12 B=new_n191 Y=ys__n156
+.gate XNOR2 A=ys__n21 B=ys__n37 Y=new_n193
+.gate XNOR2 A=ys__n10 B=new_n193 Y=ys__n157
+.gate XNOR2 A=ys__n29 B=ys__n45 Y=new_n195
+.gate XNOR2 A=ys__n19 B=new_n195 Y=ys__n158
+.gate XNOR2 A=ys__n37 B=ys__n53 Y=new_n197
+.gate XNOR2 A=ys__n27 B=new_n197 Y=ys__n159
+.gate XNOR2 A=ys__n45 B=ys__n61 Y=new_n199
+.gate XNOR2 A=ys__n35 B=new_n199 Y=ys__n160
+.gate XNOR2 A=ys__n53 B=ys__n69 Y=new_n201
+.gate XNOR2 A=ys__n43 B=new_n201 Y=ys__n161
+.gate XNOR2 A=ys__n61 B=ys__n77 Y=new_n203
+.gate XNOR2 A=ys__n51 B=new_n203 Y=ys__n162
+.gate XNOR2 A=ys__n69 B=ys__n85 Y=new_n205
+.gate XNOR2 A=ys__n59 B=new_n205 Y=ys__n163
+.gate XNOR2 A=ys__n77 B=ys__n93 Y=new_n207
+.gate XNOR2 A=ys__n67 B=new_n207 Y=ys__n164
+.gate XNOR2 A=ys__n85 B=ys__n101 Y=new_n209
+.gate XNOR2 A=ys__n75 B=new_n209 Y=ys__n165
+.gate XNOR2 A=ys__n93 B=ys__n109 Y=new_n211
+.gate XNOR2 A=ys__n83 B=new_n211 Y=ys__n166
+.gate XNOR2 A=ys__n101 B=ys__n117 Y=new_n213
+.gate XNOR2 A=ys__n91 B=new_n213 Y=ys__n167
+.gate XNOR2 A=ys__n99 B=ys__n109 Y=new_n215
+.gate XNOR2 A=ys__n3 B=new_n215 Y=ys__n168
+.gate XNOR2 A=ys__n107 B=ys__n117 Y=new_n217
+.gate XNOR2 A=ys__n1 B=new_n217 Y=ys__n169
+.gate XNOR2 A=ys__n13 B=ys__n115 Y=new_n219
+.gate XNOR2 A=ys__n3 B=new_n219 Y=ys__n170
+.gate XNOR2 A=ys__n17 B=ys__n33 Y=new_n221
+.gate XNOR2 A=ys__n4 B=new_n221 Y=ys__n171
+.gate XNOR2 A=ys__n33 B=ys__n49 Y=new_n223
+.gate XNOR2 A=ys__n23 B=new_n223 Y=ys__n172
+.gate XNOR2 A=ys__n49 B=ys__n65 Y=new_n225
+.gate XNOR2 A=ys__n39 B=new_n225 Y=ys__n173
+.gate XNOR2 A=ys__n65 B=ys__n81 Y=new_n227
+.gate XNOR2 A=ys__n55 B=new_n227 Y=ys__n174
+.gate XNOR2 A=ys__n81 B=ys__n97 Y=new_n229
+.gate XNOR2 A=ys__n71 B=new_n229 Y=ys__n175
+.gate XNOR2 A=ys__n97 B=ys__n113 Y=new_n231
+.gate XNOR2 A=ys__n87 B=new_n231 Y=ys__n176
+.gate XNOR2 A=ys__n103 B=ys__n113 Y=new_n233
+.gate XNOR2 A=ys__n9 B=new_n233 Y=ys__n177
+.gate XNOR2 A=ys__n7 B=ys__n25 Y=new_n235
+.gate XNOR2 A=ys__n6 B=new_n235 Y=ys__n178
+.gate XNOR2 A=ys__n41 B=ys__n57 Y=new_n237
+.gate XNOR2 A=ys__n31 B=new_n237 Y=ys__n179
+.gate XNOR2 A=ys__n73 B=ys__n89 Y=new_n239
+.gate XNOR2 A=ys__n63 B=new_n239 Y=ys__n180
+.gate XNOR2 A=ys__n105 B=ys__n121 Y=new_n241
+.gate XNOR2 A=ys__n95 B=new_n241 Y=ys__n181
+.gate XNOR2 A=ys__n25 B=ys__n41 Y=new_n243
+.gate XNOR2 A=ys__n15 B=new_n243 Y=ys__n182
+.gate XNOR2 A=ys__n89 B=ys__n105 Y=new_n245
+.gate XNOR2 A=ys__n79 B=new_n245 Y=ys__n183
+.gate XNOR2 A=ys__n57 B=ys__n73 Y=new_n247
+.gate XNOR2 A=ys__n47 B=new_n247 Y=ys__n184
+.gate XNOR2 A=ys__n111 B=ys__n121 Y=new_n249
+.gate XNOR2 A=ys__n7 B=new_n249 Y=ys__n185
+.gate XNOR2 A=ys__n19 B=ys__n121 Y=new_n251
+.gate XNOR2 A=ys__n12 B=new_n251 Y=ys__n189
+.gate XNOR2 A=ys__n17 B=ys__n119 Y=new_n253
+.gate XNOR2 A=ys__n9 B=new_n253 Y=ys__n190
+.gate XNOR2 A=ys__n15 B=ys__n117 Y=new_n255
+.gate XNOR2 A=ys__n6 B=new_n255 Y=ys__n191
+.end

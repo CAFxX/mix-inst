@@ -1,0 +1,91 @@
+# Benchmark "netlist" written by ABC on Sun Oct 11 01:14:20 2026
+.model netlist
+.inputs ys__n0 ys__n1 ys__n3 ys__n4 ys__n6 ys__n7 ys__n9 ys__n10 ys__n12 \
+ ys__n13 ys__n15 ys__n16 ys__n18 ys__n19 ys__n21 ys__n22 ys__n24 ys__n25 \
+ ys__n27 ys__n28 ys__n30 ys__n31 ys__n33 ys__n34 ys__n36 ys__n37 ys__n39 \
+ ys__n40 ys__n42 ys__n43 ys__n45 ys__n46 ys__n48 ys__n49 ys__n51 ys__n52 \
+ ys__n54 ys__n55 ys__n57 ys__n58 ys__n60 ys__n61 ys__n63 ys__n64 ys__n66 \
+ ys__n67 ys__n69 ys__n70 ys__n72 ys__n73 ys__n75 ys__n76 ys__n78 ys__n79 \
+ ys__n81 ys__n82 ys__n84 ys__n85 ys__n87 ys__n88 ys__n90 ys__n91 ys__n93 \
+ ys__n94 ys__n96 ys__n97 ys__n99 ys__n100 ys__n102 ys__n103 ys__n105 \
+ ys__n106 ys__n108 ys__n109 ys__n111 ys__n112 ys__n114 ys__n115 ys__n117 \
+ ys__n118 ys__n120 ys__n121 ys__n123 ys__n124 ys__n126 ys__n127 ys__n129 \
+ ys__n130 ys__n132 ys__n133 ys__n135 ys__n136 ys__n138 ys__n139 ys__n141 \
+ ys__n142 ys__n144 ys__n145 ys__n147 ys__n148 ys__n150 ys__n151 ys__n153 \
+ ys__n154 ys__n156 ys__n157 ys__n159 ys__n160 ys__n162 ys__n163 ys__n165 \
+ ys__n166 ys__n168 ys__n169 ys__n171 ys__n172 ys__n174 ys__n175 ys__n177 \
+ ys__n178 ys__n180 ys__n181 ys__n183 ys__n184 ys__n186 ys__n187 ys__n189 \
+ ys__n190
+.outputs ys__n2 ys__n5 ys__n8 ys__n11 ys__n14 ys__n17 ys__n20 ys__n23 \
+ ys__n26 ys__n29 ys__n32 ys__n35 ys__n38 ys__n41 ys__n44 ys__n47 ys__n50 \
+ ys__n53 ys__n56 ys__n59 ys__n62 ys__n65 ys__n68 ys__n71 ys__n74 ys__n77 \
+ ys__n80 ys__n83 ys__n86 ys__n89 ys__n92 ys__n95 ys__n98 ys__n101 ys__n104 \
+ ys__n107 ys__n110 ys__n113 ys__n116 ys__n119 ys__n122 ys__n125 ys__n128 \
+ ys__n131 ys__n134 ys__n137 ys__n140 ys__n143 ys__n146 ys__n149 ys__n152 \
+ ys__n155 ys__n158 ys__n161 ys__n164 ys__n167 ys__n170 ys__n173 ys__n176 \
+ ys__n179 ys__n182 ys__n185 ys__n188 ys__n191
+.gate AND2  A=ys__n0 B=ys__n1 Y=ys__n2
+.gate AND2  A=ys__n3 B=ys__n4 Y=ys__n5
+.gate AND2  A=ys__n6 B=ys__n7 Y=ys__n8
+.gate AND2  A=ys__n9 B=ys__n10 Y=ys__n11
+.gate AND2  A=ys__n12 B=ys__n13 Y=ys__n14
+.gate AND2  A=ys__n15 B=ys__n16 Y=ys__n17
+.gate AND2  A=ys__n18 B=ys__n19 Y=ys__n20
+.gate AND2  A=ys__n21 B=ys__n22 Y=ys__n23
+.gate AND2  A=ys__n24 B=ys__n25 Y=ys__n26
+.gate AND2  A=ys__n27 B=ys__n28 Y=ys__n29
+.gate AND2  A=ys__n30 B=ys__n31 Y=ys__n32
+.gate AND2  A=ys__n33 B=ys__n34 Y=ys__n35
+.gate AND2  A=ys__n36 B=ys__n37 Y=ys__n38
+.gate AND2  A=ys__n39 B=ys__n40 Y=ys__n41
+.gate AND2  A=ys__n42 B=ys__n43 Y=ys__n44
+.gate AND2  A=ys__n45 B=ys__n46 Y=ys__n47
+.gate AND2  A=ys__n48 B=ys__n49 Y=ys__n50
+.gate AND2  A=ys__n51 B=ys__n52 Y=ys__n53
+.gate AND2  A=ys__n54 B=ys__n55 Y=ys__n56
+.gate AND2  A=ys__n57 B=ys__n58 Y=ys__n59
+.gate AND2  A=ys__n60 B=ys__n61 Y=ys__n62
+.gate AND2  A=ys__n63 B=ys__n64 Y=ys__n65
+.gate AND2  A=ys__n66 B=ys__n67 Y=ys__n68
+.gate AND2  A=ys__n69 B=ys__n70 Y=ys__n71
+.gate AND2  A=ys__n72 B=ys__n73 Y=ys__n74
+.gate AND2  A=ys__n75 B=ys__n76 Y=ys__n77
+.gate AND2  A=ys__n78 B=ys__n79 Y=ys__n80
+.gate AND2  A=ys__n81 B=ys__n82 Y=ys__n83
+.gate AND2  A=ys__n84 B=ys__n85 Y=ys__n86
+.gate AND2  A=ys__n87 B=ys__n88 Y=ys__n89
+.gate AND2  A=ys__n90 B=ys__n91 Y=ys__n92
+.gate AND2  A=ys__n93 B=ys__n94 Y=ys__n95
+.gate AND2  A=ys__n96 B=ys__n97 Y=ys__n98
+.gate AND2  A=ys__n99 B=ys__n100 Y=ys__n101
+.gate AND2  A=ys__n102 B=ys__n103 Y=ys__n104
+.gate AND2  A=ys__n105 B=ys__n106 Y=ys__n107
+.gate AND2  A=ys__n108 B=ys__n109 Y=ys__n110
+.gate AND2  A=ys__n111 B=ys__n112 Y=ys__n113
+.gate AND2  A=ys__n114 B=ys__n115 Y=ys__n116
+.gate AND2  A=ys__n117 B=ys__n118 Y=ys__n119
+.gate AND2  A=ys__n120 B=ys__n121 Y=ys__n122
+.gate AND2  A=ys__n123 B=ys__n124 Y=ys__n125
+.gate AND2  A=ys__n126 B=ys__n127 Y=ys__n128
+.gate AND2  A=ys__n129 B=ys__n130 Y=ys__n131
+.gate AND2  A=ys__n132 B=ys__n133 Y=ys__n134
+.gate AND2  A=ys__n135 B=ys__n136 Y=ys__n137
+.gate AND2  A=ys__n138 B=ys__n139 Y=ys__n140
+.gate AND2  A=ys__n141 B=ys__n142 Y=ys__n143
+.gate AND2  A=ys__n144 B=ys__n145 Y=ys__n146
+.gate AND2  A=ys__n147 B=ys__n148 Y=ys__n149
+.gate AND2  A=ys__n150 B=ys__n151 Y=ys__n152
+.gate AND2  A=ys__n153 B=ys__n154 Y=ys__n155
+.gate AND2  A=ys__n156 B=ys__n157 Y=ys__n158
+.gate AND2  A=ys__n159 B=ys__n160 Y=ys__n161
+.gate AND2  A=ys__n162 B=ys__n163 Y=ys__n164
+.gate AND2  A=ys__n165 B=ys__n166 Y=ys__n167
+.gate AND2  A=ys__n168 B=ys__n169 Y=ys__n170
+.gate AND2  A=ys__n171 B=ys__n172 Y=ys__n173
+.gate AND2  A=ys__n174 B=ys__n175 Y=ys__n176
+.gate AND2  A=ys__n177 B=ys__n178 Y=ys__n179
+.gate AND2  A=ys__n180 B=ys__n181 Y=ys__n182
+.gate AND2  A=ys__n183 B=ys__n184 Y=ys__n185
+.gate AND2  A=ys__n186 B=ys__n187 Y=ys__n188
+.gate AND2  A=ys__n189 B=ys__n190 Y=ys__n191
+.end

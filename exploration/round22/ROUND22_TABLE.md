@@ -1,11 +1,11 @@
 # Round 22 — Analytical designs (wide SPN / EM-χχ / keyed SPN / Lai–Massey / Beneš)
 
-Date: 2026-10-03. Coordinator: r22 subagent. Design note: `../sota_analytical_designs.md`
-(§3 specs, §4 build order). Method: `../round20/ROUND20_TABLE.md` (S0→S4 + Q1).
+Date: 2026-10-03. Coordinator: r22 subagent. Design note: [`../sota_analytical_designs.md`](../sota_analytical_designs.md)
+(§3 specs, §4 build order). Method: [`../round20/ROUND20_TABLE.md`](../round20/ROUND20_TABLE.md) (S0→S4 + Q1).
 
 **ROUND VERDICT: all 6 candidates S2-killed. Frontier UNCHANGED.**
 (Frontier S: r20 chioff13all 37.0u / r19 chioff13 37.4u / r20 chioff31 37.5u;
-Frontier Q: r19 fm07/fm11/fm311, r15 parsplit, r9, r8 — see `../PARETO.md`.)
+Frontier Q: r19 fm07/fm11/fm311, r15 parsplit, r9, r8 — see [`../PARETO.md`](../PARETO.md).)
 
 The delays were spectacular (16.9–29.3u, all far below the 37.0u frontier) but
 every construction failed differential screening. The analytical value is in
@@ -50,9 +50,9 @@ LM5 inverse round-trip 2000/2000 (note: the design note's stated LM inverse
 
 (Every kill: (a) precise failing signal, (b) mechanistic hypothesis traced to the
 construction, (c) targeted follow-up. Kills scoped to the tested construction;
-recorded in `../VERDICT_SCOPE.md`.)
+recorded in [`../VERDICT_SCOPE.md`](../VERDICT_SCOPE.md).)
 
-**Note on S2 inputs:** `s2_diffprof.c` uses SEQUENTIAL x = 0..2^22-1 (not random).
+**Note on S2 inputs:** [`s2_diffprof.c`](../fast_battery/src/s2_diffprof.c) uses SEQUENTIAL x = 0..2^22-1 (not random).
 This is realistic for a hash mixer (hashing 0,1,2,...) and the Feistel candidates
 passed it, so the bar is achievable. The kills below are real, not harness artifacts.
 
@@ -151,9 +151,9 @@ the maximal single 64-cycle).
 S0 **27.7u** / 4174 cells / 11632 area (dual-analyzer agreement; below the
 29.3u estimate — P-box is free wiring) · **S2 KILL** (delta bit 10 `0x400`,
 140889 repeats > 10, max|z| = 705.0, low8_chi2 = 1232009.4). S1/S3/S4/Q1
-skipped (no survivors). Evidence: `s2_r22b_keyed_spn6_pbox_nw.log`,
-`xcheck/r22b_keyed_spn6_pbox_nw.log`, `rtlcheck/r22b_keyed_spn6_pbox_nw.log`,
-`s0/r22b_keyed_spn6_pbox_nw.log`.
+skipped (no survivors). Evidence: [`s2_r22b_keyed_spn6_pbox_nw.log`](s2_r22b_keyed_spn6_pbox_nw.log),
+[`xcheck/r22b_keyed_spn6_pbox_nw.log`](xcheck/r22b_keyed_spn6_pbox_nw.log), [`rtlcheck/r22b_keyed_spn6_pbox_nw.log`](rtlcheck/r22b_keyed_spn6_pbox_nw.log),
+[`s0/r22b_keyed_spn6_pbox_nw.log`](s0/r22b_keyed_spn6_pbox_nw.log).
 
 ### Failure analysis
 (a) **Signal:** S2 delta bit 10, 140889 repeats (threshold 10). max|z| = 705
@@ -210,7 +210,7 @@ bijective mixers are then: (a) 3-term rotation XOR (~4u/round, = lin(3,11));
 (b) triangular shift-XOR `y = x ^ ((x >> r) & MASK)` — bijective for any mask
 by back-substitution, single XOR2 ~= 2u/round, alternate directions per round.
 
-**Candidates** (P = O37 validated P-box; `r22.py`: `r22c_*`; generator: `gen_r22.py`):
+**Candidates** (P = O37 validated P-box; [`r22.py`](models/r22.py): `r22c_*`; generator: [`gen_r22.py`](gen_r22.py)):
 
 | Cand | Construction | S0 | xcheck | RTL | S2 (N=2^22, 115 deltas) | Verdict |
 |------|--------------|----|--------|-----|--------------------------|---------|
@@ -247,7 +247,7 @@ specific deterministic trail that killed A. V1 (5r) is cleaner still
 - Q1: sac_z5=0, bic_maxcorr=0.00865, avalanche_mean=31.9998 (no BIC blemish —
   the SPN's final mixing layer leaves no unmixed chi)
 **V0 at 28.3u is 8.4u under the current Frontier-S speed point (36.7u).**
-PARETO.md NOT edited (parent verifies from raw logs first).
+[PARETO.md](../PARETO.md) NOT edited (parent verifies from raw logs first).
 
 ### Bugs caught
 - `_v_shxor_stmts` emitted `x = t ^ ({13{1'b0}}, t[63:13])` (parens, not a
@@ -268,5 +268,5 @@ fixed — it called nonexistent `_selftest_chichi4_bijection`)
 - Generator: `round22/gen_r22.py` (SPECS/C_BODIES/`_v_shxor_stmts`/branches)
 - Candidates: `fast_battery/candidates/r22c_*/`
 - Logs: `round22/xcheck/`, `round22/rtlcheck/`, `round22/s0/`,
-`s2_r22c_*.log`, `s1_r22c_spn_mix4r_lp_nw.log`, `round22/run_o38.sh`,
+`s2_r22c_*.log`, [`s1_r22c_spn_mix4r_lp_nw.log`](s1_r22c_spn_mix4r_lp_nw.log), `round22/run_o38.sh`,
 `round22/progress_o38.log`

@@ -4,9 +4,9 @@ Target: beat/extend { r9_feist6_rot311_nw: 41.0u/4265/11996, r8_feist6_s1_1sbox_
 Multiplier reference re-measured fresh in this round's pinned flow: **103.5u**
 (cells 12,645, area 35,323). S0 bar: ≤ 0.9 × 103.5 = 93.15u.
 
-S0 numbers from `run_synth.py` (authorized path, Yosys 0.69 pinned,
+S0 numbers from [`run_synth.py`](../run_synth.py) (authorized path, Yosys 0.69 pinned,
 dual-analyzer agreement, 13/13 agreement lines present). Battery via
-`run_fast_battery.sh` (2 lanes, S2 kill threshold verified = 10 at the call
+[`run_fast_battery.sh`](../fast_battery/run_fast_battery.sh) (2 lanes, S2 kill threshold verified = 10 at the call
 site). Bit-exactness verified independently before synthesis: C↔Python
 10,000/10,000 PASS (13/13), RTL↔Python 300/300 PASS (13/13)
 (`round10/run_xcheck.sh`). Dedupe: all 13 pairwise-distinct by model output,

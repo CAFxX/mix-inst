@@ -6,16 +6,16 @@ validation battery with adder-like latency as the goal.
 
 ## Layout
 
-- `isa_spec.md` — instruction specification.
-- `mix64.py`, `spn.py` — reference models.
-- `rtl/` — RTL for frontier designs.
-- `synth/` — synthesis flow (pinned Yosys 0.69; `run_synth.py` is the only
+- [`isa_spec.md`](isa_spec.md) — instruction specification.
+- [`mix64.py`](mix64.py), [`spn.py`](spn.py) — reference models.
+- [`rtl/`](rtl/) — RTL for frontier designs.
+- [`synth/`](synth/) — synthesis flow (pinned Yosys 0.69; [`run_synth.py`](exploration/run_synth.py) is the only
   authorized path to delay/area numbers).
-- `exploration/` — the open-ended design search: `PARETO.md` is the live
-  frontier record, `LEADS_LEDGER.md` the leads ledger, `VERDICT_SCOPE.md`
-  the verdict-scoping rules, `RETAINED.md` the registry of every design
+- [`exploration/`](exploration/) — the open-ended design search: [`PARETO.md`](exploration/PARETO.md) is the live
+  frontier record, `LEADS_LEDGER.md` the leads ledger, [`VERDICT_SCOPE.md`](exploration/VERDICT_SCOPE.md)
+  the verdict-scoping rules, [`RETAINED.md`](exploration/RETAINED.md) the registry of every design
   that ever passed the full battery.
-- `exploration/fast_battery/candidates/` — candidate bundles (RTL, model,
+- [`exploration/fast_battery/candidates/`](exploration/fast_battery/candidates/) — candidate bundles (RTL, model,
   metadata) for the designs under test.
 - `tests_*.py` — test suites.
 
@@ -25,7 +25,7 @@ Staged kill-chain, cheapest first: (S0) unit-delay synthesis probe →
 (S1) fast statistical screen → (S2) differential early-kill → (S3)
 PractRand incremental → (S4) TestU01 SmallCrush → Q1 spot check
 (sac_z5 = 0 mandatory for frontier claims). The current frontier and its
-evidence are in `exploration/PARETO.md`.
+evidence are in [`exploration/PARETO.md`](exploration/PARETO.md).
 
 ## Sync note
 

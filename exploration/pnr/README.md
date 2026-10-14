@@ -22,21 +22,21 @@ Pitches/offsets are taken from the tech LEF LAYER statements.
 
 ## Flows
 
-- `flow.tcl` — combinational designs (virtual 10000ns clock, 0 IO delays).
+- [`flow.tcl`](flow.tcl) — combinational designs (virtual 10000ns clock, 0 IO delays).
   Reports post-route input→output critical path, area, power, DRC.
-- `flow_seq.tcl` — sequential designs (real clock on `clk`, default period 10ns).
-- `mul64_64.v` — 64×64→64 truncated multiplier reference (matches mixer output width).
-- `add64.v` — 64-bit adder reference.
-- Synth netlists: `synth_mul64_64.v` (9639 cells), `synth_add64.v`, `synth_pipe2.v`.
+- [`flow_seq.tcl`](flow_seq.tcl) — sequential designs (real clock on `clk`, default period 10ns).
+- [`mul64_64.v`](mul64_64.v) — 64×64→64 truncated multiplier reference (matches mixer output width).
+- [`add64.v`](add64.v) — 64-bit adder reference.
+- Synth netlists: [`synth_mul64_64.v`](synth_mul64_64.v) (9639 cells), [`synth_add64.v`](synth_add64.v), [`synth_pipe2.v`](synth_pipe2.v).
   Mixer netlist reused from `../results/r3/pnr_qm/synth.v` (6883 cells).
-- `summarize.py` — parses wd_*/timing.rpt, power.rpt, drc.rpt, flow.log.
+- [`summarize.py`](summarize.py) — parses wd_*/timing.rpt, power.rpt, drc.rpt, flow.log.
 
 ## Work dirs
 
-- `wd_mixer` — r3_xorlin_qm, DIE 300 (core 270×270)
-- `wd_mul` — mul64_64, DIE 355 (utilization-matched to mixer; DIE 300 over-dense, GPL-0302)
-- `wd_add` — add64, DIE 200
-- `wd_pipe2` — mix_pipe2_base, DIE 300, CLK_PERIOD 10ns
+- [`wd_mixer`](wd_mixer/) — r3_xorlin_qm, DIE 300 (core 270×270)
+- [`wd_mul`](wd_mul/) — mul64_64, DIE 355 (utilization-matched to mixer; DIE 300 over-dense, GPL-0302)
+- [`wd_add`](wd_add/) — add64, DIE 200
+- [`wd_pipe2`](wd_pipe2/) — mix_pipe2_base, DIE 300, CLK_PERIOD 10ns
 
 ## Results
 

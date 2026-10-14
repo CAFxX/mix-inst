@@ -2,7 +2,7 @@
 
 **Tool:** `critpath/critpath.py` (extends `round7/audit/review_synth/critpath.py`).
 **Method:** top-10 distinct critical paths backtraced from max-arrival outputs on the
-ABC-mapped netlist (authorized `run_synth.py` S0 path only: pinned Yosys 0.69,
+ABC-mapped netlist (authorized [`run_synth.py`](../run_synth.py) S0 path only: pinned Yosys 0.69,
 `memory_map` before `techmap`, dual-analyzer agreement). Per-path segmentation:
 NONLIN (S-box/chi DNF: AND/OR/NAND/NOR/AOI/OAI/MUX/INV) vs XORLIN (XOR2/XNOR2 —
 linear layers, key schedule) vs BUF. All numbers unit-delays (u), not silicon.
@@ -10,13 +10,13 @@ Netlists reused from each design's own round S0 run (PARETO numbers reproduce
 exactly: 28.3/4656, 36.7/4198, 37.4/3667 — no re-synthesis needed).
 
 **Sanity check (2026-10-04):** on `r23_spn_mix3r_lp_nw`, new tool vs round-7
-original vs analyze.py agree exactly — crit=21.4u, cells=3812, worst output
+original vs [analyze.py](../../synth/analyze.py) agree exactly — crit=21.4u, cells=3812, worst output
 out[2], identical 15-gate sequence.
 **Fix applied during review:** MUX2 moved to NONLIN (was XORLIN): a 2:1 mux is
 AND-OR logic (chi's `a^(~b&c)` maps to it), not XOR-linear.
 
 **Status:** all 8 designs analyzed, JSON checkpoints in `critpath/work/<name>/critpath.json`.
-(run_all.py's synthesis queue is redundant now — it self-skips on existing checkpoints.)
+([run_all.py](run_all.py)'s synthesis queue is redundant now — it self-skips on existing checkpoints.)
 
 ---
 
@@ -203,4 +203,4 @@ DNF depth), never a single path's gates.
   (delay_spread, n_paths-at-crit) as a fitness term — walls resist single tweaks.
 
 All suggestions are hypotheses with named falsifiers, not validated claims.
-Validation happens in the search tracks; this track does not edit PARETO.md.
+Validation happens in the search tracks; this track does not edit [PARETO.md](../PARETO.md).

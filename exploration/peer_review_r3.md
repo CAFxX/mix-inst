@@ -1,6 +1,6 @@
 # Peer review — round-3 winner `r3_xorlin_qm` (consolidated)
 
-**Design:** `rtl/r3/r3_xorlin_qm.v` — 4-round SPN, Quine–McCluskey-minimized PRESENT
+**Design:** [`rtl/r3/r3_xorlin_qm.v`](rtl/r3/r3_xorlin_qm.v) — 4-round SPN, Quine–McCluskey-minimized PRESENT
 S-box, function-identical to `spn4_xorlin_1137`. **Date:** 2026-10-01.
 **Coordinator:** this report consolidates four independent peer reviews
 (RTL, statistics, synthesis, P&R methodology), each conducted by an agent with no
@@ -29,36 +29,36 @@ TestU01 SimpPoker) now joined by a characterized differential profile.
 ### Critical
 
 - **C1 [P&R] — GRT-0701 misdiagnosed; routing failure was a scripting omission.**
-  Root cause is a missing `li1` `make_tracks` line in `pnr_sky130.sh`, reproduced
+  Root cause is a missing `li1` `make_tracks` line in [`pnr_sky130.sh`](pnr_sky130.sh), reproduced
   on the same OpenROAD v2.0 binary: adding the li1 line completes global route
   with 0 overflow. Not a tool/PDK version issue. The designer's own
-  `pnr/flow.tcl:16` already documented this. Fixed (see §2).
+  `[pnr/flow.tcl](pnr/flow.tcl):16` already documented this. Fixed (see §2).
 
 ### Major
 
 - **M1 [P&R] — reported "6883 cells / ~9% util" contradicts the artifacts.**
   The actual placed design is **1700 instances at 25.5% utilization** (GPL-0019);
   6883 is the unit-delay screening-flow count wrongly carried over.
-  Corrected in `candidates.md` (see §2).
+  Corrected in [`candidates.md`](candidates.md) (see §2).
 - **M2 [P&R] — "0 STA violations" vacuous.** The virtual clock is 10µs, not 10ns
   (1000× units error in the narrative), with zero IO delays, on a pre-route
   netlist with wireload-model timing. 5.07ns is a delay *measurement*
   (a lower bound), not closure. Narrative corrected; superseded by the
   global-route STA A/B in §3.3 (5.91ns with Steiner-tree wire estimates).
 - **M3 [P&R] — multiplier comparison never ran; "ABC timed out" unevidenced.**
-  The multiplier netlist `pnr/synth_mul64_64.v` (9639 cells) synthesized in
+  The multiplier netlist [`pnr/synth_mul64_64.v`](pnr/synth_mul64_64.v) (9639 cells) synthesized in
   5.15s. The hard requirement "latency ≤ multiplier post-route under identical
   conditions" was unverified. Now verified at global-route level: identical
   flow/corner, matched ~25% utilization, mixer 5.91ns vs multiplier 12.56ns
   (§3.3). Detailed-route + DRC still pending (environment).
 - **M4 [synth] — fanout-blind unit-delay model flatters the DUT asymmetrically.**
-  All fanout-delay fields in `synth/mini.genlib` are 0. The DUT's 30-gate
+  All fanout-delay fields in [`synth/mini.genlib`](../synth/mini.genlib) are 0. The DUT's 30-gate
   critical path drives on-path nets with fanout 11/12/13/14 (629 nets ≥ fanout 8
   overall); the multiplier reference's 38-gate critical path never exceeds
   fanout 4 on-path. 40.0 is optimistic *relative to* the 50.8 it is divided by,
   by an unquantified amount.
 - **M5 [synth] — the 50.8 reference is an ABC-naive multiplier, not a production one.**
-  ABC `-fast` does no Booth/CSD recoding (`candidates.md:103` acknowledges the
+  ABC `-fast` does no Booth/CSD recoding (`[candidates.md](candidates.md):103` acknowledges the
   class); a real 64×64 multiplier is faster and smaller than 50.8u/46073.
   Both M4 and M5 bias the 0.787 ratio the same way (downward). The ratio is
   solid *as flow-relative screening* (reproduced bit-exactly, exact
@@ -111,9 +111,9 @@ TestU01 SimpPoker) now joined by a characterized differential profile.
 - **m4** [P&R] `place_pins` omitted — delivered DEF not routable as-is. Fixed.
 - **m5** [P&R] no `estimate_parasitics -placement` before the original STA. Fixed.
 - **m6** [P&R] relative paths baked into generated pnr.tcl.
-- **m7** [synth] `gen_wallace.py` is not the 50.8 reference (it's a
+- **m7** [synth] [`gen_wallace.py`](gen_wallace.py) is not the 50.8 reference (it's a
   constant-multiplier generator for a separate experiment); the reference is
-  behavioral `synth/mul64.v` via ABC. Keep provenance straight.
+  behavioral [`synth/mul64.v`](../synth/mul64.v) via ABC. Keep provenance straight.
 - **m8** [synth] predecessor cell count is 7360 in the current flow, not 7450
   (immaterial).
 - **m9** [RTL/info] `results/r3/_r3_xorlin_qm/` keeps no saved PASS log for the
@@ -139,11 +139,11 @@ TestU01 SimpPoker) now joined by a characterized differential profile.
 
 | # | Action | Evidence |
 |---|--------|----------|
-| 1 | `pnr_sky130.sh` rewritten: li1 `make_tracks` (C1), `place_pins` (m4), full global+detail route, `report_drc`, `estimate_parasitics -detailed_routing` before STA (m5), die-size parameter, honest STA comments (M2/M6) | `pnr_sky130.sh` |
-| 2 | Routed A/B, identical flow/corner (M3): full detailed-route runs were killed by the loaded machine; fell back to global-route + `estimate_parasitics -global_routing` STA. Result at matched ~25% utilization: mixer **5.91ns** vs 64×64 multiplier **12.56ns** (TT/100C/1.8V) = **0.47×** — better than the 0.787 screening ratio. | `pnr/wd_mixer_gr/timing.rpt`, `pnr/wd_mul_gr545/timing.rpt`, `pnr/flow_gr.tcl` |
-| 3 | Differential profile: C profiler over all 64 weight-1 + 8 weight-2 input deltas at N=2²² pairs × 2 keys; per-bit flip bias, low-8-bit truncated χ², full-64-bit repeat counts (M8/M9) | `peer_review_r3_tools/diffprof.c`, `results/r3/diffprof_key1234.txt`, `results/r3/diffprof_key0.txt` |
-| 4 | Reduction cells re-run at N=2²⁴ (64× the screen) on SEQ and PTR-j8, both keys, reusing `screen_lib` cell statistics exactly (reviewer's C3) | `peer_review_r3_tools/recell24.py` → `/tmp/recell24.txt` |
-| 5 | `candidates.md` P&R section corrected: 1700 instances / 25.5% (M1), li1 root cause (C1), 5.07ns as placed-unrouted lower bound (M2/M6), multiplier "ABC timeout" note retracted (M3) | `candidates.md` |
+| 1 | [`pnr_sky130.sh`](pnr_sky130.sh) rewritten: li1 `make_tracks` (C1), `place_pins` (m4), full global+detail route, `report_drc`, `estimate_parasitics -detailed_routing` before STA (m5), die-size parameter, honest STA comments (M2/M6) | [`pnr_sky130.sh`](pnr_sky130.sh) |
+| 2 | Routed A/B, identical flow/corner (M3): full detailed-route runs were killed by the loaded machine; fell back to global-route + `estimate_parasitics -global_routing` STA. Result at matched ~25% utilization: mixer **5.91ns** vs 64×64 multiplier **12.56ns** (TT/100C/1.8V) = **0.47×** — better than the 0.787 screening ratio. | [`pnr/wd_mixer_gr/timing.rpt`](pnr/wd_mixer_gr/timing.rpt), [`pnr/wd_mul_gr545/timing.rpt`](pnr/wd_mul_gr545/timing.rpt), [`pnr/flow_gr.tcl`](pnr/flow_gr.tcl) |
+| 3 | Differential profile: C profiler over all 64 weight-1 + 8 weight-2 input deltas at N=2²² pairs × 2 keys; per-bit flip bias, low-8-bit truncated χ², full-64-bit repeat counts (M8/M9) | [`peer_review_r3_tools/diffprof.c`](peer_review_r3_tools/diffprof.c), `results/r3/diffprof_key1234.txt`, `results/r3/diffprof_key0.txt` |
+| 4 | Reduction cells re-run at N=2²⁴ (64× the screen) on SEQ and PTR-j8, both keys, reusing `screen_lib` cell statistics exactly (reviewer's C3) | [`peer_review_r3_tools/recell24.py`](peer_review_r3_tools/recell24.py) → `/tmp/recell24.txt` |
+| 5 | [`candidates.md`](candidates.md) P&R section corrected: 1700 instances / 25.5% (M1), li1 root cause (C1), 5.07ns as placed-unrouted lower bound (M2/M6), multiplier "ABC timeout" note retracted (M3) | [`candidates.md`](candidates.md) |
 | 6 | C model vs numpy cross-checked bit-exact (m2) | §3 |
 
 ---
@@ -220,7 +220,7 @@ magnitudes (input-distribution dependence under investigation — see §4.6).
 
 **Collision-forcing advantage (adversarial reading).** For chosen input δ, the
 low-8-bit output-difference distribution (the mask-8 bucket region), N=2²²
-sequential pairs, key 0x1234…F0 (`peer_review_r3_tools/colladv.c`):
+sequential pairs, key 0x1234…F0 ([`peer_review_r3_tools/colladv.c`](peer_review_r3_tools/colladv.c)):
 - δ=0x9: P(dx₈=0)=0.00455 vs 1/256=0.00391 → **1.17×**; best target dx₈=0x0b
   at 1.25× expected. Top-8 values all 1.22–1.25×.
 - δ=0x4: P(dx₈=0) at 1.19×; best 0x08 at 1.24×.
@@ -270,8 +270,8 @@ cost real delay in silicon but 0 in the unit-delay model, so the model
 flattered the multiplier absolutely more than it flattered the DUT relatively
 (M4's asymmetry cuts both ways across the two designs' different fanout
 profiles). Full detailed-route + DRC remains undone (the long runs were killed
-by the loaded machine); `pnr/flow_gr.tcl` reproduces the GR A/B,
-`pnr/flow_full.tcl` the full route.
+by the loaded machine); [`pnr/flow_gr.tcl`](pnr/flow_gr.tcl) reproduces the GR A/B,
+[`pnr/flow_full.tcl`](pnr/flow_full.tcl) the full route.
 
 Caveat: `mul64_64` is ABC-mapped with no Booth/CSD recoding (M5) — a production
 multiplier would be faster than 12.56ns. The A/B is apples-to-apples *within

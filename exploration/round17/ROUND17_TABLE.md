@@ -43,7 +43,7 @@ Self-tests: S1 DNF 4×16, S1REV vs brute-force bit-reversal (16 values),
 chi16(0,1) vs bit loop (200 vectors). Dedupe: all 10 specs
 pairwise-distinct by numpy model output before generation.
 
-## S0 (run_synth.py, authorized path)
+## S0 ([run_synth.py](../run_synth.py), authorized path)
 
 | Candidate | Delay | Ratio | Cells | Area | vs frontier |
 |---|---:|---:|---:|---:|---|
@@ -94,7 +94,7 @@ tested F strengths (single-S1, parsplit-F, alt S1/chi) — S1's marginal screen
 is blind to it for the stronger Fs, S2 is the gate that holds. No Q1/S3/S4
 (no frontier claim survives).
 
-## Findings (scoped per VERDICT_SCOPE.md)
+## Findings (scoped per [VERDICT_SCOPE.md](../VERDICT_SCOPE.md))
 
 1. **5r is dead at S2 for every tested F.** 5r parsplit-F and 5r alt (S1-first)
    pass the full S1 screen at ~34-35u but both show a strong differential on

@@ -6,7 +6,7 @@ key-whitened. **Date:** 2026-10-01.
 **Coordinator:** this report consolidates seven independent workers (gates/synthesis
 re-verification, pipeline, PractRand, TestU01, differential characterization,
 P&R, screen-methodology diagnosis), plus coordinator remediation and new
-measurements. It follows the structure of `peer_review_r3.md`.
+measurements. It follows the structure of [`peer_review_r3.md`](../peer_review_r3.md).
 
 **Bottom line: `h_xorspn3` is DISQUALIFIED as a finalist.** It genuinely passes
 both hard gates — delay 34.5u reproduced to the digit (0.679× a freshly
@@ -51,7 +51,7 @@ Model: `round4/models/r4_hybrid.py` (`mix_h_xorspn3_s` scalar,
   (p=1.6e-331), FPF/16:all R=+84.2 (p=1.7e-78) at 256MB. Comparison:
   r3_xorlin_qm failed BRank only at 256MB (R=+622…+754) — h_xorspn3 fails at
   least 16× earlier in stream length with 12× the terminal R-score. Logs:
-  `exploration/hx_practrand/run1_key1234.log`, `run2_key0.log`.
+  [`exploration/hx_practrand/run1_key1234.log`](../hx_practrand/run1_key1234.log), [`run2_key0.log`](../hx_practrand/run2_key0.log).
 - **C2 [differential] — catastrophic full-64-bit differential structure.**
   N=2²² deduped sequential pairs × 72 deltas × 2 keys, C profiler bit-exact
   1500/1500 vs the Python model: **57/72 deltas flagged at both keys**
@@ -103,7 +103,7 @@ Model: `round4/models/r4_hybrid.py` (`mix_h_xorspn3_s` scalar,
   are the coordinator's, not the worker's.
 - **m3** [P&R] Post-DRT STA in this OpenROAD build falls back to wireload
   (no `estimate_parasitics -detailed_routing`); `report_area`/`report_drc`
-  absent (worked around via `post.tcl` + DRT logs). GR+parasitic STA is the
+  absent (worked around via [`post.tcl`](pnr/post.tcl) + DRT logs). GR+parasitic STA is the
   apples-to-apples number.
 
 ### Info (no action)
@@ -127,8 +127,8 @@ Model: `round4/models/r4_hybrid.py` (`mix_h_xorspn3_s` scalar,
   sig figs); add64 reproduced clean (0 DRC, 9.5912 ns, 305 instances).
   **Mixer-vs-multiplier: 0.39×** — the best silicon ratio yet (r3: 0.47×).
   Corner TT/100C/1.8V, virtual-clock flow, OpenROAD v2.0 / Yosys 0.69 /
-  Sky130A c6d73a35. Netlists + notes: `round4/pnr/` (RESULTS.md,
-  synth_h_xorspn3.v). Moot for the verdict, valuable as flow validation.
+  Sky130A c6d73a35. Netlists + notes: `round4/pnr/` ([RESULTS.md](pnr/RESULTS.md),
+  [synth_h_xorspn3.v](pnr/synth_h_xorspn3.v)). Moot for the verdict, valuable as flow validation.
 - blink4 (cheap extra): the single flagged reduction cell (SEQ, key=0xAA,
   mask-m=8, |z|=6.23 at N=2¹⁸) does NOT reproduce at 4× samples —
   6.23 → 4.08 → 2.26 (a real bias would √N-scale to ~8.8/~12.5); six other

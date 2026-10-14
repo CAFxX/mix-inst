@@ -5,13 +5,13 @@ Composition: 8-round Feistel, val^key whitening, F = S1 nibble S-box layer
 No final swap; output {R,L}.
 
 ## S0 (delay) — CONFIRMED, with toolchain-bug fix
-- Pinned run_synth.py (Yosys 0.69): 56.5u = 0.546x (ref mul64 103.5u),
-  6063 cells, area 17098. analyze.py == analyze2.py.
+- Pinned [run_synth.py](../../run_synth.py) (Yosys 0.69): 56.5u = 0.546x (ref mul64 103.5u),
+  6063 cells, area 17098. [analyze.py](../../../synth/analyze.py) == [analyze2.py](../../analyze2.py).
 - FOUND BUG (fixed): bare "yosys" in subprocess resolved to /usr/bin/yosys
   0.33 when conda env not on PATH, giving 78.3u for identical RTL (38% silent
   error). Same failure class as the 2026-10-01 flow-order bug.
   Fix: YOSYS pinned to ~/tools/micromamba-root/envs/sky130/bin/yosys with
-  `yosys -V` asserting "0.69" in run_synth.py AND s0_delay.py.
+  `yosys -V` asserting "0.69" in [run_synth.py](../../run_synth.py) AND [s0_delay.py](../../fast_battery/src/s0_delay.py).
   Guard red-green tested: rejects 0.33, accepts 0.69.
   Lesson added to ~/AGENTS.md.
 - Round-6 numbers used 0.69 (ref 103.5u matches), so cross-round comparison
@@ -23,7 +23,7 @@ No final swap; output {R,L}.
 
 ## S2 — CONFIRMED by independent re-run (2 keys)
 - Team reported PASS on 1 key but persisted no log; re-ran both keys
-  (N=2^22, 74 deltas, kill>1000), logs at round7/audit/s2_k0.log, s2_k1.log:
+  (N=2^22, 74 deltas, kill>1000), logs at round7/audit/s2_k0.log, [s2_k1.log](s2_k1.log):
   - key=0: PASS, max_repeats=0, max|z|=3.6
   - key=0x123456789ABCDEF0: PASS, max_repeats=0, max|z|=3.8
 - Zero full-64-bit repeats on either key (vs 41,889 for h_xorspn3).

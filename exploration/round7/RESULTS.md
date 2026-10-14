@@ -14,7 +14,7 @@ Reference for S0: mul64 crit=103.5u, area=35323 (re-measured per flow); bar = 0.
 | r7_feist8_mid32 | 32-bit Midori almost-MDS / r6 schedule | n/a (killed at S1) | **KILLED**: LIN rej=10/10, DIFF rej=10/10 | — | — | — | n/a (decomposes) | **KILLED** |
 
 Details:
-- **S0**: via `run_synth.py` only; analyze.py == analyze2.py cross-check passed for all 4.
+- **S0**: via [`run_synth.py`](../run_synth.py) only; [analyze.py](../../synth/analyze.py) == [analyze2.py](../analyze2.py) cross-check passed for all 4.
   All 4 beat r6 (86.5u/0.836x): r311 is fastest at 84.3u (0.814x).
 - **S1**: amended 4-family screen, 10 keys. All 4 survivors: PB rej=0, RD rej=0, LIN rej=0, DIFF rej=0.
   Per-candidate logs: `results/<name>/s1_result.json`, `s1_stdout.log`.
@@ -29,7 +29,7 @@ Details:
 - **Bijectivity**: structural (8-round Feistel + XOR whitening = permutation for any F) PLUS
   explicit C inverse (`fast_battery/src/s5_invert.c`, `#include`s the shipped impl.c):
   200,000 random (val,key) round-trips + 24 edge vectors x 4 keys, 0 failures, all 4.
-- **Linear-layer bijectivity**: GF(2) rank 32/32 for r311, r517, mid32, r6-linear (import-time guard in models/r7c.py).
+- **Linear-layer bijectivity**: GF(2) rank 32/32 for r311, r517, mid32, r6-linear (import-time guard in [models/r7c.py](models/r7c.py)).
 
 ## Kill: r7_feist8_mid32
 

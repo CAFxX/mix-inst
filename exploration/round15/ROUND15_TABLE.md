@@ -46,7 +46,7 @@ constants; key-index derivation spot-checked for j=1..8 against numpy.
 check_rtl passed 300/300 first try on all novel conventions (unrolled mixed
 rounds, rkdiff two-key, rksbox key-through-S-box, whitening, parsplit).
 
-## S0 (run_synth.py, authorized path)
+## S0 ([run_synth.py](../run_synth.py), authorized path)
 
 | Candidate | Delay | Ratio | Cells | Area | vs frontier |
 |---|---:|---:|---:|---:|---|
@@ -183,7 +183,7 @@ RTL copied to `~/workspace/your_files/mix_rtl_pareto/mix_r15_feist6_parsplit_nw.
    via explicit per-round constants (`_rk_v(j)`); derivation spot-checked
    for j=1..8 against numpy in emit(). check_rtl 300/300 first try on all
    four mixed designs.
-3. S1 progress-line grep in run_s1.sh matches CAL_PASS|CAL_FLAG|KILL but the
+3. S1 progress-line grep in [run_s1.sh](run_s1.sh) matches CAL_PASS|CAL_FLAG|KILL but the
    script writes "verdict: FLAG" — FLAG verdicts show rc=2 with an empty
    verdict field in the progress log; the per-candidate s1_*.log is
    authoritative. (Cosmetic; logs are complete.)

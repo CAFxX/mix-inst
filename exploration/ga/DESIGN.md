@@ -8,10 +8,10 @@ Evolve `mix` candidates (keyed 64→64-bit, bijective per fixed key, single-cycl
 unrolled combinational) over the validated Feistel family **plus Carlo's
 almost-zero-overhead step genes** (P-box, XOR-constant, AND/OR-mask), minimizing
 (delay, cells, area) under the exact staged battery (S0→S4 + Q1) used by the
-manual rounds. The GA never edits `PARETO.md`; it flags archive entries and the
+manual rounds. The GA never edits [`PARETO.md`](../PARETO.md); it flags archive entries and the
 human coordinator verifies from raw logs.
 
-## 2. Genome (JSON, see `genome.py`)
+## 2. Genome (JSON, see [`genome.py`](genome.py))
 
 ```json
 {
@@ -54,7 +54,7 @@ Notes:
   `lin(x)=x^rotl(x,a)^rotl(x,b)` instead computes
   `lin'(x)=x^rotl(x,a)^P32(x)` (one rotation swapped for a permutation).
   Rounds without such a linear are unaffected. Inside F — safe.
-- Permutation families (fixed tables, `PERM_TABLES` in `genome.py`):
+- Permutation families (fixed tables, `PERM_TABLES` in [`genome.py`](genome.py)):
   - P64: `bitrev64 byteswap64 nibrev64 interleave64 transpose8x8 rot64_16 rot64_32`
   - P32: `bitrev32 byteswap32 nibrev32 interleave32 transpose8x4 rot32_8 rot32_16`
   - `interleave`: out[2i]=in[i], out[2i+1]=in[i+w/2] (perfect shuffle of halves).
@@ -115,7 +115,7 @@ Composition of bijections is a bijection. ∎
 
 The S0 stage measures the true numbers; the table is only a prior.
 
-## 3. Operators (`genome.py`)
+## 3. Operators ([`genome.py`](genome.py))
 
 - **Crossover:** single-point on tags (point ∈ 1..min(n1,n2)−1); uniform
   crossover on scalar genes (`pbox_where/perm`, `const_where/fam`, `mask`,
@@ -134,9 +134,9 @@ The S0 stage measures the true numbers; the table is only a prior.
   fixed vectors). Checked against every evaluated genome *and* all seeds before
   any synthesis. (Existing rule: pairwise-distinct model outputs.)
 
-## 4. Fitness — staged (see `evaluate.py`)
+## 4. Fitness — staged (see [`evaluate.py`](evaluate.py))
 
-Multi-objective: minimize (delay, cells, area) from S0 (`s0_delay.py`,
+Multi-objective: minimize (delay, cells, area) from S0 ([`s0_delay.py`](../fast_battery/src/s0_delay.py),
 authorized path, dual-analyzer agreement inside).
 
 - **Emit** → build C harnesses → **xcheck** 10k vectors C-vs-Python (gate).
@@ -144,7 +144,7 @@ authorized path, dual-analyzer agreement inside).
   point is **dominated by BOTH Pareto archives** on all three axes → discard,
   no statistics burned. (A candidate that is S-dominated but could extend the
   Q frontier survives — see the two archives below.)
-- **Stage B (S1):** `s1_screen.py` (absolute outdir). Kill on rc≠0 (honors every
+- **Stage B (S1):** [`s1_screen.py`](../fast_battery/src/s1_screen.py) (absolute outdir). Kill on rc≠0 (honors every
   kill field incl. `cal_verdict`).
 - **Stage C (S2):** `diffprof` N=2^22, 115 deltas. Parse the summary line; kill
   if `max_repeats ≥ 10` **or `max|z| > 40`** (structural rule from the
@@ -154,15 +154,15 @@ authorized path, dual-analyzer agreement inside).
   **Stage D:** S3 PractRand 1GB ×2 configs, S4 SmallCrush, Q1 SAC/BIC. Any
   fail → evicted from both, logged dead. Pass → confirmed; Q membership
   additionally requires `bic ≤ 0.02` (evicted from Q otherwise, kept in S).
-  The log flags Frontier-S/Q candidacy **without editing PARETO.md**.
+  The log flags Frontier-S/Q candidacy **without editing [PARETO.md](../PARETO.md)**.
 
-## 5. Selection (`ga.py`)
+## 5. Selection ([`ga.py`](ga.py))
 
 (μ+λ), μ=20, λ=12. Nondomination rank on (delay, cells, area) for S0-evaluated
 individuals (S1/S2 kills rank below all survivors); crowding-distance tiebreak;
 truncation to μ (elitist). Generation 0 = seeds (below).
 
-## 6. Seeding (`seed.py`)
+## 6. Seeding ([`seed.py`](seed.py))
 
 - **Archive:** every candidate from rounds 6–20 satisfying ALL of: S0 numbers
   parsed from the round table; S1 `CAL_PASS`; S2 `PASS` with `max_repeats < 10`
@@ -181,7 +181,7 @@ truncation to μ (elitist). Generation 0 = seeds (below).
   5. `hand_prepost`: fm07 tags + `prepost` constants.
   Random genomes fill to μ=20.
 
-## 7. Concurrency (`evaluate.py::polite_wait`)
+## 7. Concurrency (`[evaluate.py](evaluate.py)::polite_wait`)
 
 Never >2 heavy pipelines system-wide. Before each heavy stage, count distinct
 *foreign* (non-`ga_g*`) candidate names with live
@@ -198,16 +198,16 @@ sleep 300 and re-check. (Round 21 runs concurrently.)
   movements, kills with construction-scoped reasons, frontier-candidacy flags.
 - 48h wall-clock budget from first start (persisted).
 
-## 10. Analytical failure analysis (`evaluate.py`, `ga.py`)
+## 10. Analytical failure analysis ([`evaluate.py`](evaluate.py), [`ga.py`](ga.py))
 
 The battery is a diagnostic instrument, not a black-box oracle. Every
-statistical death is recorded with three fields (`evaluate.py::annotate`):
+statistical death is recorded with three fields (`[evaluate.py](evaluate.py)::annotate`):
 
 1. **Failing signal** — the precise mechanism: which stage; S1 family rejection
    lists (LIN/DIFF/PB/RD with counts); S2 summary (`max_repeats`, `max|z|`,
    and every single-bit spike delta with its |z|); S3/S4 which config/test;
    Q1 `sac_z5` / `bic_maxcorr`.
-2. **Mechanistic hypothesis** (`evaluate.py::hypothesize`) — a rule-based,
+2. **Mechanistic hypothesis** (`[evaluate.py](evaluate.py)::hypothesize`) — a rule-based,
    construction-scoped diagnosis, explicitly labeled HYPOTHESIS. Current rules:
    - S1 LIN-heavy → linear-hull trail through the rotation pairs
      → `guided_linear`
@@ -221,19 +221,19 @@ statistical death is recorded with three fields (`evaluate.py::annotate`):
    - Q1 bic high → unmixed final nonlinear layer (the known notr blemish
      class) → `guided_finalmix` (the measured y^rotl(y,m) cure)
    - Q1 sac → avalanche failure → `guided_diffusion`
-3. **Suggested fix** — a guided-mutation op name (`ga.py::guided_mutate`).
+3. **Suggested fix** — a guided-mutation op name (`[ga.py](ga.py)::guided_mutate`).
 
 - **Failure-annotated archive** (`state.failures`): every dead individual
   stores its annotation plus its genome and gene-pattern tags
-  (`evaluate.py::gene_pattern`: truncation tags, per-tag family counts,
+  (`[evaluate.py](evaluate.py)::gene_pattern`: truncation tags, per-tag family counts,
   pbox/const/mask genes, round count).
 - **Association table** (`state.assoc`): `(failure_stage, gene_pattern_tag) →
-  count`, snapshotted into GA_LOG.md each generation. Over time this shows
+  count`, snapshotted into [GA_LOG.md](GA_LOG.md) each generation. Over time this shows
   which gene patterns correlate with which failure modes (e.g. "S2: chi_notr
   on final + many spikes"), letting the search learn mechanisms, not just
   fitness values. New hypotheses graduate to `hypothesize` rules when they
   survive several independent confirmations.
-- **Guided mutation** (`ga.py::guided_mutate`, 30% of offspring): picks a
+- **Guided mutation** (`[ga.py](ga.py)::guided_mutate`, 30% of offspring): picks a
   recent death (uniform among the last 25), reads its `suggested_fix`, and
   applies the targeted edit to that dead genome (falling back to a random
   mutation if the edit is inapplicable or invalid). 70% stay random/crossover
@@ -242,9 +242,9 @@ statistical death is recorded with three fields (`evaluate.py::annotate`):
 Guardrails: a guided edit that fails schema validation falls back to random
 mutation (never an invalid genome); hypotheses are labeled as hypotheses in
 the log; verdicts stay scoped to the tested construction (AGENTS.md /
-VERDICT_SCOPE.md rules).
+[VERDICT_SCOPE.md](../VERDICT_SCOPE.md) rules).
 
-## 11. Validation of the harness itself (`test_ga.py`)
+## 11. Validation of the harness itself ([`test_ga.py`](test_ga.py))
 
 - Permutation tables are true permutations (bijective) — numpy vs independent
   bit-loop reference.

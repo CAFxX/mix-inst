@@ -4,7 +4,7 @@ All measurements are in hand (24-key sweep: max|z|=2.91, zero flags). Compiling 
 
 # Peer Review: Cryptographic Soundness of the PRESENT-style SPN Mixer
 
-**Method:** independent Python reimplementation from the S-box table only; DDT/LAT computed by brute force; branch number derived analytically and checked; key-schedule linear algebra solved via GF(2) Gaussian elimination; 24-key empirical sweep at 10 rounds (MSB bias, sequential inputs, N=2¹⁶); literature cross-check (PRESENT designers' bounds, Bonn lecture notes). I reviewed `~/workspace/mix/spn.py` and `~/workspace/mix/isa_spec.md` §§3,5,7.
+**Method:** independent Python reimplementation from the S-box table only; DDT/LAT computed by brute force; branch number derived analytically and checked; key-schedule linear algebra solved via GF(2) Gaussian elimination; 24-key empirical sweep at 10 rounds (MSB bias, sequential inputs, N=2¹⁶); literature cross-check (PRESENT designers' bounds, Bonn lecture notes). I reviewed [`~/workspace/mix/spn.py`](../spn.py) and [`~/workspace/mix/isa_spec.md`](../isa_spec.md) §§3,5,7.
 
 ## 1. S-box analysis — computed from scratch (item 1)
 
@@ -18,7 +18,7 @@ S-box `S = [C,5,6,B,9,0,A,D,3,E,F,8,4,7,1,2]`, verified bijective (16 distinct o
 | Differential uniformity | 4 (optimal for bijective 4-bit S-box) | 4 | ✓ |
 | Coordinate algebraic degrees | 2, 3, 3, 3 | 2,3,3,3 | ✓ |
 
-The code comment in `spn.py` ("differential uniformity 4 (optimal for 4b), max linear bias 4/16") is **correct**.
+The code comment in [`spn.py`](../spn.py) ("differential uniformity 4 (optimal for 4b), max linear bias 4/16") is **correct**.
 
 ## 2. Active-S-box bounds and what they buy (item 2)
 
@@ -47,20 +47,20 @@ The code comment in `spn.py` ("differential uniformity 4 (optimal for 4b), max l
 
 ## 5. Sentence-by-sentence claim review (item 5)
 
-**`isa_spec.md` §7 (Security scope):**
+**[`isa_spec.md`](../isa_spec.md) §7 (Security scope):**
 1. "`mix` is a **hash-map finalizer**, not a cryptographic primitive" — **PASS**.
 2. "The key schedule … is chosen for hardware simplicity, not related-key resistance. Related-key differentials were not analyzed to cryptographic standards." — **WEAK PASS, reword.** "Not analyzed" understates a known-by-construction property. Replace with: *"The key schedule provides no related-key resistance by design: round constants cancel under seed differences, so Δrk[i] = ROTL(Δkey, 13·(i+1)) is fully attacker-controlled. This is acceptable because the seed is a public per-map value with no related-key oracle; the design must never be used where related-key security is required."*
 3. "No claim is made about preimage resistance, collision resistance, or PRF security under adversarially chosen keys." — **PASS**.
 4. Statistical-quality paragraph ("empirical, finite-sample measurements — not proofs of universal guarantees") — **PASS**. This is exactly the right framing; keep it verbatim in the final report.
 5. "'ideal SAC/BIC/differential uniformity for all keys' is not claimed" — **PASS**.
 
-**`isa_spec.md` §3 (bijectivity):** "This holds for all keys by structural induction over the construction." — **PASS with nit:** replace "by structural induction" with "because each stage is a bijection and composition of bijections is a bijection." The 16-bit exhaustive check is correctly labeled supporting evidence. The claim itself is a valid proof.
+**[`isa_spec.md`](../isa_spec.md) §3 (bijectivity):** "This holds for all keys by structural induction over the construction." — **PASS with nit:** replace "by structural induction" with "because each stage is a bijection and composition of bijections is a bijection." The 16-bit exhaustive check is correctly labeled supporting evidence. The claim itself is a valid proof.
 
-**`spn.py` header:** "Full-cycle uniformity is therefore EXACT." — **PASS** (iterating all 2⁶⁴ inputs yields each output exactly once — true and legitimately claimed).
+**[`spn.py`](../spn.py) header:** "Full-cycle uniformity is therefore EXACT." — **PASS** (iterating all 2⁶⁴ inputs yields each output exactly once — true and legitimately claimed).
 
 **Final-report requirements that must be explicitly scoped down** (for the parent's limitations section):
 - *"Ideal SAC/BIC/uniformity/diffusion/nonlinearity/differential uniformity"* → **FAIL as stated.** Replace with: "Measured SAC mean |dev| ≤ 0.0063, BIC max|corr| ≤ 0.05, uniformity χ² |z| ≤ 1.1 (m≤14), all within noise of SplitMix64/Murmur3-fmix64 on identical tests. 'Ideal' is not claimed; several of these properties cannot simultaneously be literally ideal for a 64-bit permutation."
-- *"Strictly not worse than any common software mixing functions"* → **FAIL as stated.** Replace with: "On the fixed comparison set {SplitMix64, Murmur3 fmix64} and the fixed battery in `tests_final.py`, SPN-10 is no worse within statistical noise on every metric, and substantially better on BIC (0.044 vs 0.97/1.00 — both baselines have structural differential correlations from their final xorshifts). One exception: Murmur's value-SAC max|dev| (0.02686) is nominally better than SPN-10's (0.02783); the difference is inside sampling noise (σ≈0.0078)."
+- *"Strictly not worse than any common software mixing functions"* → **FAIL as stated.** Replace with: "On the fixed comparison set {SplitMix64, Murmur3 fmix64} and the fixed battery in [`tests_final.py`](../tests_final.py), SPN-10 is no worse within statistical noise on every metric, and substantially better on BIC (0.044 vs 0.97/1.00 — both baselines have structural differential correlations from their final xorshifts). One exception: Murmur's value-SAC max|dev| (0.02686) is nominally better than SPN-10's (0.02783); the difference is inside sampling noise (σ≈0.0078)."
 - *"For every key/value combination … arbitrary key, I, j"* → **FAIL as stated.** Replace with: "Tested on ~40 distinct keys, 6 input-structure families (sequential, strided, high-bits-only, random), N up to 2²² (4M samples), under raw/Lemire/mask/mod-y reductions with exact null distributions. Finite testing cannot certify all 2⁶⁴ keys × all strides; the claim is empirical coverage, not universality."
 - *"Latency no higher than an adder"* → **FAIL as stated** (mutually exclusive with the multiplier target; a Kogge-Stone adder is ~4–5× faster than any adequate mixer). The report must carry the reconciliation: multiplier target is the achievable one.
 

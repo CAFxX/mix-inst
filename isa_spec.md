@@ -90,7 +90,7 @@ Reference implementation is fully combinational (no sequential state):
 - Intended to fit in a single execute-stage cycle alongside the integer
   multiplier; relative synthesis shows 1.26× the reference multiplier
   delay, so single-cycle fit at the multiplier's target frequency is not
-  established — see §6 and the Sky130 P&R plan in `verification_plan.md`.
+  established — see §6 and the Sky130 P&R plan in [`verification_plan.md`](verification_plan.md).
 
 **Round count rationale.** 8 rounds meets the delay target most closely
 (1.02× the reference multiplier in relative synthesis) but fails the
@@ -106,7 +106,7 @@ biases on *raw sequential* inputs at 10 rounds (~20% of keys show some
 bit with |z|>4 at N=2^18, δ≈0.004; undetectable after any reduction —
 all Lemire/mask/mod-y tests pass). SplitMix64 exhibits the same class of
 phenomenon (bit 31, δ≈0.0033). 12 rounds is clean on the same screen
-(0/32 flags) at ≈1.51× multiplier delay. See TEST_REPORT.md §4.
+(0/32 flags) at ≈1.51× multiplier delay. See [TEST_REPORT.md](TEST_REPORT.md) §4.
 
 Area/delay budget: 1–2× a full-width 64-bit multiplier (user requirement).
 
@@ -115,7 +115,7 @@ Area/delay budget: 1–2× a full-width 64-bit multiplier (user requirement).
 Relative synthesis, Yosys 0.33 + ABC (`-fast`: strash/dretime/map, which
 preserves prefix-adder structure that the default script destroys) mapped
 to a unit-delay teaching cell library. **Ratios only** — absolute Sky130
-numbers require P&R with the real PDK (see `verification_plan.md`).
+numbers require P&R with the real PDK (see [`verification_plan.md`](verification_plan.md)).
 
 | Design | Cells | Unit-gate area | Crit. path (unit) | Delay vs ref mul | Area vs ref mul |
 |---|---:|---:|---:|---:|---:|
@@ -142,7 +142,7 @@ Caveats:
 
 Full place-and-route on SkyWater 130 (OpenLane/OpenROAD) is required
 before any absolute delay claim; the flow and acceptance criteria are
-documented in `verification_plan.md`.
+documented in [`verification_plan.md`](verification_plan.md).
 
 ## 7. Security scope (non-goals)
 
@@ -159,7 +159,7 @@ documented in `verification_plan.md`.
   sequence tests under raw, Lemire, mask, and mod-`y` reductions, using
   exact null distributions (preimage counts, not uniform-bin
   approximations), versus SplitMix64 and Murmur3-fmix64 under identical
-  conditions (see TEST_REPORT.md). These are empirical, finite-sample
+  conditions (see [TEST_REPORT.md](TEST_REPORT.md)). These are empirical, finite-sample
   measurements — not proofs of universal guarantees. Notably, 8-round
   and 9-round variants were rejected on measured statistical grounds;
   "ideal SAC/BIC/differential uniformity for all keys" is not claimed.
@@ -173,4 +173,4 @@ Bit-accurate reference: `workspace/mix/spn.py` (`mix_spn_scalar`,
 ---
 
 *Draft 0.1 — 2026-10-01. Pending: Sky130 P&R with the real PDK (relative
-numbers only so far); peer review completed 2026-10-01 (see `reviews/`).*
+numbers only so far); peer review completed 2026-10-01 (see [`reviews/`](reviews/)).*

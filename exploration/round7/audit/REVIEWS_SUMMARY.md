@@ -1,8 +1,8 @@
 # Peer-review consolidation: r7_feist8_s1_1sbox (2026-10-02)
 
 Four independent reviewers, no cross-communication. Each read the actual sources
-and ran their own checks. Individual reports: `review_rtl.md`,
-`review_statistics.md`, `review_cryptanalysis.md`, `review_synthesis.md`.
+and ran their own checks. Individual reports: [`review_rtl.md`](review_rtl.md),
+[`review_statistics.md`](review_statistics.md), [`review_cryptanalysis.md`](review_cryptanalysis.md), [`review_synthesis.md`](review_synthesis.md).
 
 ## Verdicts
 
@@ -44,7 +44,7 @@ not design defects. They require action before any production/adversarial claim.
    ~50% chance of ≥1 false CAL_PASS in the search. Leader selection is
    post-selection inference. Mitigated here by independent re-verification
    (audit + 4 reviews), but the screening claim must carry the caveat.
-6. **Latent orchestrator bug: `s1_screen.py` drops the inner LIN/DIFF kill
+6. **Latent orchestrator bug: [`s1_screen.py`](../../fast_battery/src/s1_screen.py) drops the inner LIN/DIFF kill
    signal.** A borderline candidate could be misreported CAL_PASS. Did not fire
    for this leader (verified), but it is a real bug — fix per escape protocol
    (the two LIN/DIFF implementations also differ in pair sets/p-transforms).
@@ -85,7 +85,7 @@ not design defects. They require action before any production/adversarial claim.
 1. Revise M9's safety case: replace 2-round 2⁻¹⁰ → 2⁻², 8-round 2⁻⁵⁸ → 2⁻⁶¹
    (beam search), record related-key 2⁻³⁷ bound and thin-margin assessment.
    Correct MEMORY.md's M9 entry.
-2. Fix `s1_screen.py` dropped inner-kill signal (escape protocol: hunt the
+2. Fix [`s1_screen.py`](../../fast_battery/src/s1_screen.py) dropped inner-kill signal (escape protocol: hunt the
    class — check other orchestrators for dropped signals).
 3. Restate S1 FWER honestly; add search-multiplicity caveat to screening claims.
 4. Tie S2 kill threshold to the null; drive S2 deltas from the S-box DDT.

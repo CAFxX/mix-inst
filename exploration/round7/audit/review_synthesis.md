@@ -2,7 +2,7 @@
 
 **Claim under review**: RV64 `mix` candidate `r7_feist8_s1_1sbox` synthesizes at
 56.5u = 0.546× a 64×64 multiplier reference (103.5u), 6063 cells, area 17098,
-via `~/workspace/mix/exploration/run_synth.py`.
+via [`~/workspace/mix/exploration/run_synth.py`](../../run_synth.py).
 **Reviewer**: independent subagent (no contact with other reviewers).
 **Date**: 2026-10-02. **Disposition sought**: verify, don't confirm — be adversarial.
 
@@ -15,7 +15,7 @@ via `~/workspace/mix/exploration/run_synth.py`.
    standalone `yosys-abc cec`, with the reference side built **without**
    `abc`/`dretime` (dretime once miscompiled another candidate).
 3. Simulate the mapped netlist against the Python model on ≥2000 vectors
-   (iverilog + `cells_sim.v`), including key=0 / val=0 edge cases.
+   (iverilog + [`cells_sim.v`](../../fast_battery/src/cells_sim.v)), including key=0 / val=0 edge cases.
 4. Mutation test: flip one S-box entry, re-synthesize, confirm the sim catches it.
 5. Critical-path plausibility note.
 
@@ -24,8 +24,8 @@ this review covers the synthesis numbers and tooling only.
 
 ## Method (exact commands)
 
-Work dir for all review artifacts: `~/workspace/mix/exploration/round7/audit/review_synth/`
-(`fresh/`, `cec/`, `sim/`, `mut/`).
+Work dir for all review artifacts: [`~/workspace/mix/exploration/round7/audit/review_synth/`](review_synth/)
+([`fresh/`](review_synth/fresh/), [`cec/`](review_synth/cec/), [`sim/`](review_synth/sim/), [`mut/`](review_synth/mut/)).
 
 ### 1. Fresh synthesis, clean env
 
@@ -37,7 +37,7 @@ env -i PATH=/usr/bin:/bin HOME=/home/hatch /usr/bin/python3 run_synth.py \
 ```
 
 `env -i` wipes the environment; PATH has no conda entry (and no yosys at all).
-This tests whether the absolute-path pin + version assert in `run_synth.py`
+This tests whether the absolute-path pin + version assert in [`run_synth.py`](../../run_synth.py)
 actually works rather than accidentally inheriting a good PATH.
 
 ### 2. Formal equivalence, dretime-free reference
@@ -88,13 +88,13 @@ python3 gen_vecs.py   # 2048 seeded (0xC0FFEE) random (val,key) + 6 edge cases
 ./sim_good
 ```
 
-`tb.v` drives each vector, settles `#10`, compares with `===` (X-sensitive: an
+[`tb.v`](review_synth/sim/tb.v) drives each vector, settles `#10`, compares with `===` (X-sensitive: an
 undriven net can never silently "match"), prints `RESULT MATCH=.. MISMATCH=..`.
 
 Edge cases (first 6 vectors): `(0,0)`, `(0, 0x123456789ABCDEF0)`,
 `(0xFEDCBA9876543210, 0)`, `(all-ones, all-ones)`, `(1, 0)`, `(msb, msb)`.
 
-Additionally, an **independent simulator** (`bpsim.py`, written for this review,
+Additionally, an **independent simulator** ([`bpsim.py`](review_synth/sim/bpsim.py), written for this review,
 no iverilog/yosys/abc code): topological evaluator over the mapped netlist
 with all 2054 vectors bit-parallel in Python ints (bit i of each net = value
 under vector i). Guards against a systematic iverilog miscompile.
@@ -115,7 +115,7 @@ python3 ../sim/bpsim.py mut/synth/_dut/mapped_r7_feist8_s1_1sbox.v \
 
 ### 5. Critical path trace
 
-`critpath.py` (review_synth/): re-implements the analyzer's arrival computation
+[`critpath.py`](review_synth/critpath.py) (review_synth/): re-implements the analyzer's arrival computation
 on the fresh netlist, backtracks from the worst output, prints the cell
 sequence. (Cross-checked total = 56.5u = analyzer's number.)
 
@@ -159,15 +159,15 @@ Networks are equivalent.  Time =    21.07 sec
 - CI/CO matching by name verified sound: both BLIFs expose identical
   `val[0..63] key[0..63]` / `out[0..63]` lists.
 - The mapped netlist is fully mapped: 0 `assign` statements, 6063 cell
-  instances, every instance type covered by `cells_sim.v` (cross-checked the
+  instances, every instance type covered by [`cells_sim.v`](../../fast_battery/src/cells_sim.v) (cross-checked the
   18-type histogram against the sim models).
 
 ### Check 3 — mapped netlist vs Python model, 2054 vectors: PASS (no finding)
 
-- Independent bit-parallel sim (`bpsim.py`, my own code, no shared
+- Independent bit-parallel sim ([`bpsim.py`](review_synth/sim/bpsim.py), my own code, no shared
   infrastructure with iverilog/yosys): **MATCH=2054 MISMATCH=0** in 4.3 s.
   Includes the 6 edge cases (key=0, val=0, all-ones, msb-only).
-- iverilog run (`sim_good`, cells_sim.v + saved mapped netlist + tb.v,
+- iverilog run (`sim_good`, [cells_sim.v](../../fast_battery/src/cells_sim.v) + saved mapped netlist + [tb.v](review_synth/sim/tb.v),
   `===` comparison): **RESULT MATCH=2054 MISMATCH=0**.
   (10-vector calibration run also 10/10; the full run was slowed by machine
   contention — 2 cores, load ~13 from parallel jobs — but completed with the
@@ -204,7 +204,7 @@ consistent with ~2× the S-box depth per round).
   dretime-free reference, and (b) 2054-vector functional agreement with the
   Python model. Both would have to fail correlatively for a dretime bug to
   survive; they didn't.
-- **Analyzer gaming**: `analyze.py` hard-errors on functional assigns driving
+- **Analyzer gaming**: [`analyze.py`](../../../synth/analyze.py) hard-errors on functional assigns driving
   live nets (the 8.9u-vs-86.5u bug class); the netlist has zero assigns.
   Both analyzers are byte-identical in output on all three netlists examined
   (fresh DUT, saved DUT, mutated DUT).
@@ -232,5 +232,5 @@ consistent with ~2× the S-box depth per round).
   plausible for 8 Feistel rounds of this F-function.
 - Both analyzers agree everywhere; the saved netlist artifact is current.
 
-Review artifacts: `~/workspace/mix/exploration/round7/audit/review_synth/`
-(`fresh/`, `cec/`, `sim/`, `mut/`, `critpath.py`).
+Review artifacts: [`~/workspace/mix/exploration/round7/audit/review_synth/`](review_synth/)
+([`fresh/`](review_synth/fresh/), [`cec/`](review_synth/cec/), [`sim/`](review_synth/sim/), [`mut/`](review_synth/mut/), [`critpath.py`](review_synth/critpath.py)).

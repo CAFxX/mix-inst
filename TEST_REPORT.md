@@ -1,13 +1,13 @@
 # Test Report — RV64 `mix` 10-round SPN statistical validation
 
-Date: 2026-10-01. All numbers measured. Logs: `tests_final.log`,
-`tests_final_v2.log`, `tests_adversarial.log`, `keyscan.log`, `keyscan12.log`.
+Date: 2026-10-01. All numbers measured. Logs: [`tests_final.log`](tests_final.log),
+[`tests_final_v2.log`](tests_final_v2.log), [`tests_adversarial.log`](tests_adversarial.log), [`keyscan.log`](keyscan.log), [`keyscan12.log`](keyscan12.log).
 
 ## 1. Method
 
 - Candidates: SplitMix64, Murmur3-fmix64 (baselines), SPN-8, SPN-10
   (`x = val^key; 10× x=P(S(x^rk[i])); out=x^rk[10]`, PRESENT S-box/pLayer).
-- Battery (`tests_final.py`): SAC avalanche (4096 trials, value+key),
+- Battery ([`tests_final.py`](tests_final.py)): SAC avalanche (4096 trials, value+key),
   BIC (8192 trials), sequential uniformity (N=2^20, m=4..14), sequence
   battery on 6 input configs × 22–23 tests (raw monobit, per-bit monobit
   screen, low-bit χ², nibble pairs, exact Lemire X∈{2,3,10,1000,2^32,2^64−1},
@@ -19,7 +19,7 @@ Date: 2026-10-01. All numbers measured. Logs: `tests_final.log`,
 - Flag threshold |z|>4; flags reported with p-value scale noted
   (|z|>4 ⟺ p≈0.01 at df=1, p≈6×10⁻⁵ at df=1023).
 
-## 2. Results — main battery (tests_final_v2.log, per-bit screen included)
+## 2. Results — main battery ([tests_final_v2.log](tests_final_v2.log), per-bit screen included)
 
 | Candidate | SAC val max|dev| | BIC max|corr| | Seq χ² (m≤14) | Battery flags |
 |---|---|---|---|---|
@@ -93,7 +93,7 @@ Impact assessment:
 - Finite testing cannot certify all keys/strides; key-dependent
   weaknesses (§4) prove sampling can miss things.
 
-## 7. Peer review (2026-10-01, reports in `reviews/`)
+## 7. Peer review (2026-10-01, reports in [`reviews/`](reviews/))
 
 - RTL: PASS, no logic bugs (independent model, 400+400 vectors,
   exhaustive S-box/pLayer/key-schedule checks). Test-hygiene fixes
@@ -114,4 +114,4 @@ Impact assessment:
 python3 tests_final.py        # main battery (~2 min)
 python3 tests_adversarial.py  # adversarial configs (~40 s)
 ```
-Golden RTL vectors: `golden_vectors.txt` (8/8 in `rtl/tb_golden.v`).
+Golden RTL vectors: [`golden_vectors.txt`](golden_vectors.txt) (8/8 in [`rtl/tb_golden.v`](rtl/tb_golden.v)).

@@ -2,14 +2,14 @@
 
 ## Strategic context
 - **Delay bar**: relative, ≤0.9× the 64×64 multiplier re-measured in the current
-  flow via `exploration/run_synth.py` (ONLY authorized delay path).
+  flow via [`exploration/run_synth.py`](run_synth.py) (ONLY authorized delay path).
   Multiplier ref: 103.5u → **bar ≈ 93.2u**.
 - **Round-6 finding**: Feistel with SPN F-functions is the ONLY structure to
   pass LIN/DIFF. Winner r6_feist8_spn (86.5u, 0.836×) cleared S0–S4.
 - **Round-7 mission**: expand the Feistel family (round counts, F variants,
   key schedules, unbalanced/Misty) + justified outsiders. The search continues
   regardless of r6_feist8_spn — no ISA freeze.
-- **Infra fix (round 7)**: `fast_battery/src/s0_delay.py` was missing
+- **Infra fix (round 7)**: [`fast_battery/src/s0_delay.py`](fast_battery/src/s0_delay.py) was missing
   `memory_map` before `techmap` (same bug class as round 6); hardened analyzers
   made it fail loudly instead of silently. Fixed 2026-10-01.
 
@@ -109,7 +109,7 @@
   floor (sac_z5=0, maxdev 0.0038, bic 0.0080, mean 31.999). **NEW STANDING
   LEADER** — dominates r7_feist8_s1_1sbox on all three axes (24% faster,
   32% fewer cells, 32% less area). Full evidence in
-  `round8/ROUND8_TABLE.md`. Lesson: 6 rounds of this F suffice; the 8-round
+  [`round8/ROUND8_TABLE.md`](round8/ROUND8_TABLE.md). Lesson: 6 rounds of this F suffice; the 8-round
   leader was over-engineered, and whitening is pure cost at 6 rounds (nw is
   0.8u faster than the whitened twin).
 - **r8_feist6_pbox** (round 8): same 6r F + P32 bit-perm on new R each round,

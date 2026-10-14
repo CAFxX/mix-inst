@@ -10,7 +10,7 @@ Template (fixed for all 10): 6r Feistel, F = S-box layer → x^rotl32(x,a)^rotl3
 primitive not yet attacked in rounds 7–10.
 
 S-box tables verified against primary sources (cipher spec papers) before
-generation; see `sboxes.json`. Notably the SKINNY-4 table was CORRECTED during
+generation; see [`sboxes.json`](sboxes.json). Notably the SKINNY-4 table was CORRECTED during
 verification: three independent sources agree on
 `[12,6,9,0,1,10,2,11,3,8,5,13,4,14,7,15]`, not the commonly misremembered
 `[12,6,9,0,1,10,7,11,3,14,15,8,13,4,5,2]` (differs at positions 6,9,10,14).
@@ -37,7 +37,7 @@ uses a case statement (DNF infeasible at 8 bits).
 | r11_feist6_present311_nw | PRESENT | (3,11) | 49.1u | 0.474× | 5,700 | 15,726 |
 | r11_feist6_sk8311_nw | 4×SKINNY-8 | (3,11) | 67.2u | 0.649× | 5,392 | 15,470 |
 
-S0 numbers from `run_synth.py` (authorized path, Yosys 0.69 pinned,
+S0 numbers from [`run_synth.py`](../run_synth.py) (authorized path, Yosys 0.69 pinned,
 dual-analyzer agreement).
 
 Key finding: **every crypto S-box is slower *and* larger than the incumbent
@@ -55,7 +55,7 @@ Escape protocol (1 bug): the first RTL generation inlined the 1-based round-key
 computation into the 0-based Verilog `for` loop keeping `(i+1)` — an off-by-one
 shifting every round key by one round. C↔model passed (both 1-based); only
 RTL↔model check_rtl caught it (10/10 failed pre-fix, 10/10 pass post-fix).
-Fixed in `gen_r11.py`, all candidates regenerated, lesson added to
+Fixed in [`gen_r11.py`](gen_r11.py), all candidates regenerated, lesson added to
 `~/AGENTS.md`.
 
 ## S1 screen (10/10 CAL_PASS)

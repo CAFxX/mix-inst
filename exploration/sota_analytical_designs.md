@@ -1,7 +1,7 @@
 # Analytical SOTA Design Note — Wide & Latency-Aware Constructions for RV64 `mix`
 
 **Date:** 2026-10-03. **Author:** analytical subagent (reference-text pass, complements the web survey).
-**Context:** `~/workspace/mix/exploration/`. Frontier: 6-round Feistel (S1/chi), best 37.0u where
+**Context:** [`~/workspace/mix/exploration/`](./). Frontier: 6-round Feistel (S1/chi), best 37.0u where
 the 64×64 multiplier is 103.5u. Hard constraints: delay ≲ 37u, no 64-bit multiplies (~40u each),
 no long adder chains, ~4000–5000 cells, cheap key injection (XOR/rotations), bijective per fixed
 key. Statistical bar: S1 screen, S2 differentials, PractRand 1GB, SmallCrush, SAC, BIC.
@@ -9,7 +9,7 @@ This note does depth arithmetic in our own measured units instead of guessing.
 
 ## §1 — Calibration: our unit-delay model, measured not guessed
 
-### 1.1 The unit model (from `synth/mini.genlib`, used by the authorized `run_synth.py`)
+### 1.1 The unit model (from [`synth/mini.genlib`](../synth/mini.genlib), used by the authorized [`run_synth.py`](run_synth.py))
 
 | Cell | Delay (u) |
 |---|---|
@@ -22,7 +22,7 @@ Critical path = sum of pin delays along the longest path (dual-analyzer agreemen
 Note the load-bearing fact: **one XOR2 level costs 2u**, not 1u. Estimates elsewhere in this
 project that assumed ~1u/XOR-level are optimistic by ~2× on XOR-heavy paths.
 
-### 1.2 Measured layer delays (pinned Yosys 0.69, `run_synth.py`, dual-analyzer agreement)
+### 1.2 Measured layer delays (pinned Yosys 0.69, [`run_synth.py`](run_synth.py), dual-analyzer agreement)
 
 Each module below exposes one candidate layer input→output so S0 measures the layer itself.
 Source: `/tmp/cal_layers.v` (kept with this note's evidence).
@@ -118,7 +118,7 @@ nothing and the shared-prefix/suffix split adds key-schedule and control complex
 
 ### 2.5 THF / Blink-64a (Wang et al., ToSC 2025 = ePrint 2025/1314, the THF paper)
 
-The paper's unrolled @45nm table (already in `sota_leads.md`): SPEEDY-6-192 2.54ns,
+The paper's unrolled @45nm table (already in [`sota_leads.md`](sota_leads.md)): SPEEDY-6-192 2.54ns,
 PRINCE 2.63ns, MANTIS 3.28ns, QARMA-64 3.44ns, Midori64 4.69ns; Blink-64a core 2.92ns
 (~11% slower than PRINCE). Blink-64a = 5-round SPN: depth-3.5 involutory 4-bit S-box +
 Midori 4×4 almost-MDS (XOR depth 2) + cell permutation + key XOR + round constant, round

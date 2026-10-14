@@ -2,21 +2,21 @@
 
 **Reviewer:** independent RTL/functional reviewer (peer, not the designer)
 **Date:** 2026-10-01
-**Scope:** `rtl/r3/r3_xorlin_qm.v`, `qm_sbox.py`, `gen_r3.py` (emitter for this variant),
-`check_pipe2.py`, `gen_pipe2.py`, `rtl/r3/mix_pipe2_base.v`, `results/r3/`
-(equivalence outputs). `round4/` untouched. The `r3_xorlin_qm_b` / `_bd` lever
+**Scope:** [`rtl/r3/r3_xorlin_qm.v`](rtl/r3/r3_xorlin_qm.v), [`qm_sbox.py`](qm_sbox.py), [`gen_r3.py`](gen_r3.py) (emitter for this variant),
+[`check_pipe2.py`](check_pipe2.py), [`gen_pipe2.py`](gen_pipe2.py), [`rtl/r3/mix_pipe2_base.v`](rtl/r3/mix_pipe2_base.v), `results/r3/`
+(equivalence outputs). [`round4/`](round4/) untouched. The `r3_xorlin_qm_b` / `_bd` lever
 variants were not in scope (same emitter, noted where relevant).
 
 **Method:** everything below was re-derived independently — own Python PRESENT
 model, own Verilog-expression parser/evaluator, own QM brute-force, own GF(2)
-rank computation, and fresh iverilog/vvp runs of `check_rtl.py` (500 vectors)
-and `check_pipe2.py`, plus an adversarial 2-cycle-latency variant. No designer
+rank computation, and fresh iverilog/vvp runs of [`check_rtl.py`](check_rtl.py) (500 vectors)
+and [`check_pipe2.py`](check_pipe2.py), plus an adversarial 2-cycle-latency variant. No designer
 script was trusted for any conclusion.
 
 ## Verdict: PASS (functional correctness)
 
 No functional discrepancies found. The RTL is bit-identical to the claimed
-spec and to the screened model `models/spn4_xorlin_1137.py`; the QM S-box is
+spec and to the screened model [`models/spn4_xorlin_1137.py`](models/spn4_xorlin_1137.py); the QM S-box is
 exactly correct and exactly minimal; the 1-cycle-latency claim for
 `mix_pipe2_base` is accurate and the test is not vacuous.
 
@@ -25,7 +25,7 @@ exactly correct and exactly minimal; the 1-cycle-latency claim for
 ### 1. QM S-box logic — PASS, 0/64 mismatches (exhaustive)
 
 - Wrote an independent parser for all 256 `assign sb{r}_{i}[{b}] = ...;`
-  statements in `rtl/r3/r3_xorlin_qm.v`, converted each to a Python Boolean
+  statements in [`rtl/r3/r3_xorlin_qm.v`](rtl/r3/r3_xorlin_qm.v), converted each to a Python Boolean
   function, and evaluated all 16 inputs × 4 output bits × 64 instances
   (4 rounds × 16 nibbles) against the claimed PRESENT table
   `[C,5,6,B,9,0,A,D,3,E,F,8,4,7,1,2]`: **0 mismatches**.
@@ -40,7 +40,7 @@ exactly correct and exactly minimal; the 1-cycle-latency claim for
 
 ### 2. Round structure — PASS
 
-Verified from `rtl/r3/r3_xorlin_qm.v`:
+Verified from [`rtl/r3/r3_xorlin_qm.v`](rtl/r3/r3_xorlin_qm.v):
 - `s0 = val ^ key` (line 5); each round `sx{i} = s{i} ^ rk{i}` **before** the
   S-box layer (lines 6, 105, 204, 303); linear layer
   `s{i+1} = sy{i} ^ ROTL(sy{i},11) ^ ROTL(sy{i},37)` (lines 104, 203, 302, 401);
@@ -61,21 +61,21 @@ All five emitted constants equal `(i+1)·0x9E3779B97F4A7C15 mod 2^64`
 `9e3779b97f4a7c15`, `3c6ef372fe94f82a`, `daa66d2c7ddf743f`, `78dde6e5fd29f054`,
 `1715609f7c746c69` — lines 6, 105, 204, 303, 402 match exactly.
 
-### 4. `qm_sbox.py` bug fix — PASS (fix present, correct, and exactly minimal)
+### 4. [`qm_sbox.py`](qm_sbox.py) bug fix — PASS (fix present, correct, and exactly minimal)
 
 - The reported bug (combine() not checking mask equality → 5/64 invalid
-  primes) is fixed: both `qm_sbox.py` (`if a[0] != b[0]: return None`) and the
-  copy in `gen_r3.py` carry the mask-equality guard, plus the don't-care
+  primes) is fixed: both [`qm_sbox.py`](qm_sbox.py) (`if a[0] != b[0]: return None`) and the
+  copy in [`gen_r3.py`](gen_r3.py) carry the mask-equality guard, plus the don't-care
   overlap guard (`if a[0] & diff`). The `covers()` predicate
   `(m & ~p[0]) == p[1]` is correct.
 - Independent cross-check: brute-forced the exact minimum SOP per output bit
   by a different method (enumerate all 81 implicants → prime implicants →
   exact set cover minimizing cubes then literals). Result: bit0 = 6 cubes /
   20 lits, bit1 = 5/15, bit2 = 5/16, bit3 = 5/15 — **identical** to what
-  `qm_sbox.py` prints and to what is emitted in the RTL. The "QM-minimal"
+  [`qm_sbox.py`](qm_sbox.py) prints and to what is emitted in the RTL. The "QM-minimal"
   claim is true, and the exhaustive 0/64 table check (§1) proves the emitted
   cubes implement the right function (minimality alone wouldn't).
-- `gen_r3.py`'s emitter reproduces `rtl/r3/r3_xorlin_qm.v` **byte-for-byte**
+- [`gen_r3.py`](gen_r3.py)'s emitter reproduces [`rtl/r3/r3_xorlin_qm.v`](rtl/r3/r3_xorlin_qm.v) **byte-for-byte**
   (re-ran `build_variant("r3_xorlin_qm", set())` with EXP redirected to
   /tmp; `diff` clean), so the file under review is exactly what the reviewed
   generator produces — no hand edits in between.
@@ -96,7 +96,7 @@ All five emitted constants equal `(i+1)·0x9E3779B97F4A7C15 mod 2^64`
 
 ### 6. Pipeline 1-cycle-latency claim — PASS, and the test is not vacuous
 
-- Read `check_pipe2.py` and `rtl/r3/mix_pipe2_base.v` in full. Structure:
+- Read [`check_pipe2.py`](check_pipe2.py) and [`rtl/r3/mix_pipe2_base.v`](rtl/r3/mix_pipe2_base.v) in full. Structure:
   stage 1 = `val^key` + rounds 0,1 → registers `s2_q/key_q/valid_q` →
   stage 2 = rounds 2,3 + whitening with `key_q` → `out = st2_s2 ^ rk[4]`,
   `valid_out = valid_q`. Exactly one register level ⇒ input presented before
@@ -116,14 +116,14 @@ All five emitted constants equal `(i+1)·0x9E3779B97F4A7C15 mod 2^64`
 ### 7. Screening-model vs emitted-RTL consistency — PASS
 
 Trust chain verified link by link, each with an independent run:
-- My from-scratch scalar spec == `models/spn4_xorlin_1137.py` (both the numpy
+- My from-scratch scalar spec == [`models/spn4_xorlin_1137.py`](models/spn4_xorlin_1137.py) (both the numpy
   `mix_spn4_xorlin_1137_np` used for screening and the scalar reference):
   300 random vectors, 0 mismatches.
-- `models/spn4_xorlin_1137.py` == `rtl/r3/r3_xorlin_qm.v`: re-ran
-  `check_rtl.py` with **500** vectors (fresh seed path in /tmp):
+- [`models/spn4_xorlin_1137.py`](models/spn4_xorlin_1137.py) == [`rtl/r3/r3_xorlin_qm.v`](rtl/r3/r3_xorlin_qm.v): re-ran
+  [`check_rtl.py`](check_rtl.py) with **500** vectors (fresh seed path in /tmp):
   `RTLCHECK: 500/500 vectors match -> PASS`. The testbench uses `!==`,
   so X-propagation would also have been caught.
-- `gen_r3.py` emitter == file on disk: byte-identical (see §4).
+- [`gen_r3.py`](gen_r3.py) emitter == file on disk: byte-identical (see §4).
 - Hence the statistical screening (run on the model) applied to the exact
   function in the RTL. No discrepancy.
 
@@ -131,14 +131,14 @@ Trust chain verified link by link, each with an independent run:
 
 - **(info)** `results/r3/_r3_xorlin_qm/` keeps the compiled `tb_check` binary
   and `vectors.txt` but no saved PASS log; the only record of the original
-  equivalence run is `gen_r3.py`'s stdout (`EQUIV-OK`). This review re-ran it
+  equivalence run is [`gen_r3.py`](gen_r3.py)'s stdout (`EQUIV-OK`). This review re-ran it
   (500 vectors, PASS), but future runs should tee the PASS line to a file.
 - **(info)** Cosmetic: a few S-box `assign` lines have inconsistent extra
   parentheses (e.g. around single product terms). Harmless — iverilog
   compiles cleanly and all 256 assigns evaluate to the correct table — but
   the emitter could normalize them.
-- **(info)** Out of scope but noted: `r3_xorlin_qm_b.v` / `_bd.v` (levers b/d)
-  exist in `rtl/r3/` and share the same emitter/QM code; they were not
+- **(info)** Out of scope but noted: [`r3_xorlin_qm_b.v`](rtl/r3/r3_xorlin_qm_b.v) / `_bd.v` (levers b/d)
+  exist in [`rtl/r3/`](rtl/r3/) and share the same emitter/QM code; they were not
   reviewed here.
 - **(info)** This review created and then deleted one scratch testbench
   (`results/r3/tb_mix_pipe2_base_2cyc.v`); workspace left as found.

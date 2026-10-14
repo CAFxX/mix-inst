@@ -1,7 +1,7 @@
 # Quality Battery Results — 8 Pareto Candidates
 
 **Date:** 2026-10-02 | **Key:** 0x123456789ABCDEF0 (all Q2/Q3) | **Machine:** 2-core, max 2 concurrent pipelines
-**Work dir:** `~/workspace/mix/exploration/quality/`
+**Work dir:** [`~/workspace/mix/exploration/quality/`](./)
 
 ## Table 1 — Q1 Avalanche (SAC/BIC), N=2^18, fixed key
 
@@ -45,7 +45,7 @@ Power-of-two strides pin low input bits (aligned-data pathology); s4g is the cri
 All 8 candidates FAIL PractRand BCFN (p=0, R>+99999) on lemire1e9p7, mod1e9p7, mod1000 across all 6 sequences.
 **Control experiment:** splitmix64 (known-good PRNG) reduced via `x % 1000000007` FAILs BCFN identically.
 **Mechanism:** values in [0, 10⁹+7) use only 30 of 32 bits; top bits structurally zero → BCFN detects it.
-**Conclusion:** reduction artifact, NOT a candidate defect. Excluded from quality ranking. (See `CONTROL_NOTE.md`.)
+**Conclusion:** reduction artifact, NOT a candidate defect. Excluded from quality ranking. (See [`CONTROL_NOTE.md`](CONTROL_NOTE.md).)
 
 **Q2 verdict:** On the discriminating (pow2) reductions, all 8 candidates are perfect across all 6 stride sequences, including the s4g low-half-stuck critical test. **Q2 does not discriminate.**
 
@@ -76,4 +76,4 @@ No candidate shows any statistical weakness at 1 GB reductions (6 stride sequenc
 The non-pow2 reduction FAILs are a test-setup artifact (proven by splitmix64 control), not a candidate signal.
 
 **Files:** Q1 JSONs `q1_<name>.json` · Q2 logs `q2_<name>_<seq>_<red>.log` (384 cells) · Q3 logs `q3_<name>.log` ·
-generators `q_gen_reduce.c`, `q_avalanche.c` · parsers `parse_q2.py`, `parse_q3.py` · control note `CONTROL_NOTE.md`.
+generators [`q_gen_reduce.c`](q_gen_reduce.c), [`q_avalanche.c`](q_avalanche.c) · parsers [`parse_q2.py`](parse_q2.py), [`parse_q3.py`](parse_q3.py) · control note [`CONTROL_NOTE.md`](CONTROL_NOTE.md).

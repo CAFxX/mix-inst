@@ -119,7 +119,7 @@ s5_r22c/
 
 ## 8. Limitations & Follow-ups
 
-1. **DRC not verified:** Detailed routing infeasible on current VM load. If DRC-clean status is required, re-run `s4_route.tcl` on an unloaded machine.
+1. **DRC not verified:** Detailed routing infeasible on current VM load. If DRC-clean status is required, re-run [`s4_route.tcl`](../flow/s4_route.tcl) on an unloaded machine.
 2. **Wirelength is HPWL, not routed:** Standard pre-route estimator; detailed routes would refine by ~10-20%.
 3. **Utilization changed 55%→40%:** Initial 55% caused routing congestion (4,147 violations). Both designs at 40% for identical conditions.
 4. **Mult block attribution:** Multiplier has no SPN structure; SVG uses `--plain` mode.

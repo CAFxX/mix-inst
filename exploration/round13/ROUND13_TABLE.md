@@ -36,7 +36,7 @@ uses the (i+2) convention (round-11 lesson); F1 additionally uses
 (2i+2)/(2i+3) for its two keys/round — check_rtl passed 300/300 first try on
 all novel conventions (double-key, rotating key-half, mid-key, Lai-Massey).
 
-## S0 (run_synth.py, authorized path)
+## S0 ([run_synth.py](../run_synth.py), authorized path)
 
 | Candidate | Delay | Ratio | Cells | Area | vs frontier |
 |---|---:|---:|---:|---:|---|
@@ -202,7 +202,7 @@ RTL copied to `~/workspace/your_files/mix_rtl_pareto/mix_r13_feist6_alt_s1chi_nw
    the S2 queue (5/11 done) and the chi6 S3 battery, killing all detached
    queues despite setsid/nohup. Toolchain (~/tools, micromamba) survived
    intact. Recovery: S2 resumed for the 6 remaining candidates
-   (`run_s2_resume.sh`); completed S2 results (5) were on persistent disk
+   ([`run_s2_resume.sh`](run_s2_resume.sh)); completed S2 results (5) were on persistent disk
    and kept. Lesson: on this VM, treat every long queue as rebootable —
    keep per-candidate progress logs so a resume script can pick up exactly
    the unfinished set. (Same class as the round-9 session-reaping lesson,

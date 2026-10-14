@@ -50,10 +50,10 @@ multiplies are too slow. Structural, not tunable.
 ...
 
 ## Tooling lessons
-- analyze2.py cannot parse yosys escaped identifiers (`\u.val`, `\R[5]`,
+- [analyze2.py](../analyze2.py) cannot parse yosys escaped identifiers (`\u.val`, `\R[5]`,
   `\rnd[0].rk`) from hierarchy flattening, unpacked arrays, or generate
   blocks. Fix: generate fully-flat, unrolled Verilog (no arrays/generate/
-  hierarchy) via Python generators into `rtl/flat2/`.
+  hierarchy) via Python generators into [`rtl/flat2/`](rtl/flat2/).
 - Never hand-derive RTL constants; always compute (skinny 3C/4C/5C lesson).
 - Variable part-select on function return values breaks yosys; use explicit
   concatenation.

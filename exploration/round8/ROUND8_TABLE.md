@@ -4,7 +4,7 @@ Target: beat `r7_feist8_s1_1sbox` — 56.5u (0.546×), 6,063 cells, area 17,098.
 Multiplier reference re-measured fresh in this round's pinned flow: **103.5u**
 (cells 12,645, area 35,323). S0 bar: ≤ 0.9 × 103.5 = 93.15u.
 
-Metrology note: `run_synth.py` (default ABC) and `s0_delay.py` (no-dretime
+Metrology note: [`run_synth.py`](../run_synth.py) (default ABC) and [`s0_delay.py`](../fast_battery/src/s0_delay.py) (no-dretime
 script) agree exactly on the leader (56.5u/6063/17098). Battery S0 numbers
 are quotable.
 

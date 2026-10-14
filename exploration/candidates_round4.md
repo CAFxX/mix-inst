@@ -135,7 +135,7 @@ Sequential 32-bit multiplies: 82-88 delay. Structurally too slow.
 - Round-3 peer reviews still pending (separate track)
 
 ## Files
-- Models: `round4/models/r4_blink.py`, `r4_speedy.py`, `r4_xorlinv.py`, etc.
-- RTL: `round4/rtl/flat2/r4_blink*.v` (DNF S-box), `round4/rtl/flat2/r4_midori3.v`
-- Generators: `round4/gen_bflat.py` (DNF), `gen_sflat.py`, `gen_xflat.py`, `gen_gflat.py`
-- Results: `round4/results/` (screens), `batch3.log`, `batch_bsv2.log`
+- Models: [`round4/models/r4_blink.py`](round4/models/r4_blink.py), [`r4_speedy.py`](round4/models/r4_speedy.py), [`r4_xorlinv.py`](round4/models/r4_xorlinv.py), etc.
+- RTL: `round4/rtl/flat2/r4_blink*.v` (DNF S-box), [`round4/rtl/flat2/r4_midori3.v`](round4/rtl/flat2/r4_midori3.v)
+- Generators: [`round4/gen_bflat.py`](round4/gen_bflat.py) (DNF), [`gen_sflat.py`](round4/gen_sflat.py), [`gen_xflat.py`](round4/gen_xflat.py), [`gen_gflat.py`](round4/gen_gflat.py)
+- Results: `round4/results/` (screens), [`batch3.log`](round4/batch3.log), [`batch_bsv2.log`](round4/batch_bsv2.log)

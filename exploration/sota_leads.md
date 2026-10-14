@@ -125,7 +125,7 @@ measured 2.92ns @45nm vs PRINCE 2.63ns.
 
 ## 2026-10-03 — Analytical reference-text pass (complements the web survey above)
 
-Full note: `exploration/sota_analytical_designs.md`. Method: per-layer depths **measured** in the
+Full note: [`exploration/sota_analytical_designs.md`](sota_analytical_designs.md). Method: per-layer depths **measured** in the
 pinned Yosys-0.69 flow (XOR2=2u — the survey's ~1u/XOR assumption is optimistic by ~2× on
 XOR-heavy paths), not estimated. Key corrections to the survey's numbers:
 - Literal 5-round Blink-64a = **43u** measured (8.6u/round), NOT ~35u — killed as specified;

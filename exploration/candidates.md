@@ -102,7 +102,7 @@ All other 15 candidates are dominated (worse on both axes than some Pareto membe
 
 - **Reference drift**: a mid-day service restart replaced Yosys 0.33 (REF=49.2) with 0.69; batch C ran under a verified `-fast`-equivalent shim with REF=50.8 (3.3% ABC-version drift). Batch A rebuilt Yosys 0.33 from source (commit 2584903) and re-ran under the original version (REF=49.2). All verdicts use the absolute bar 44.3 and are unaffected.
 - **Flow caveat (all ratios)**: ABC `-fast` does no Booth/CSD recoding and maps adder-tree nodes as full CPAs; constant multipliers are systematically overpriced vs a production flow (≈0.6–0.7×). Ratios are flow-relative screening numbers, not P&R predictions.
-- **Tool bugs fixed centrally**: analyze2.py LHS-concat assigns; screen_lib verbose-print crash. Open limitations: analyze2.py cannot parse yosys `$func$`/`$memrd`/hierarchical-dotted net names (agents worked around with inline-SOP RTL).
+- **Tool bugs fixed centrally**: [analyze2.py](analyze2.py) LHS-concat assigns; screen_lib verbose-print crash. Open limitations: [analyze2.py](analyze2.py) cannot parse yosys `$func$`/`$memrd`/hierarchical-dotted net names (agents worked around with inline-SOP RTL).
 - **Spec corrections during screening**: D3's `0x7F4A` → `0x7F4B` (even→odd, was a spec bug); SKINNY S-box table in the brief was wrong, published table used (C 6 9 0 1 A 2 B 3 8 5 D 4 E 7 F); A7/A8's `x^=L(x)` notation collapses to non-bijective 2-term — implemented as the proven-bijective 3-term `x:=x^ROTL(x,13)^ROTL(x,41)`.
 - **Statistics**: extended scenario catalog (PTR j=8/16, STRIDE-MPOW2, HIGH-ONLY, DESC, SINGLE-BIT, key-sweep) + Lemire/mask/mod reductions; bar per-bit 4.0 / reduction 4.5. Even the 12-round reference FLAGs mildly (4.36) under the new catalog — candidates were judged against the absolute bar, with the reference as context.
 - All models: scalar==vectorized checked; bijectivity spot-checks 3×200k collision-free; all RTL 64/64 vs model.
@@ -124,7 +124,7 @@ round to **CAL_PASS** the statistical gate with zero rejections — but all sit 
 
 ## Methodology changes (round 2)
 
-- **Calibrated flagging** (`screen_cal.py`, new; `screen_lib.py` untouched): per
+- **Calibrated flagging** ([`screen_cal.py`](screen_cal.py), new; [`screen_lib.py`](screen_lib.py) untouched): per
   (scenario, key) cell, Fisher-combine the 64 two-sided per-bit p-values (df=128);
   per (SEQ|PTR-j8, key) cell, Fisher-combine the 9 reduction p-values (df=18);
   Holm-Bonferroni across all cells (448 per-bit + 20 reduction), alpha=0.01.
@@ -139,7 +139,7 @@ round to **CAL_PASS** the statistical gate with zero rejections — but all sit 
 - **Fresh reference**: 64×64 variable multiplier remeasured at **50.8**
   (yosys-shim flow; was 49.2 under 0.33). Absolute bar kept at **44.3**
   (conservative). Ratios reported vs both 50.8 and the new CSD reference.
-- **CSD reference** (`gen_wallace.py`, new): hand-built Wallace carry-save CSD
+- **CSD reference** ([`gen_wallace.py`](gen_wallace.py), new): hand-built Wallace carry-save CSD
   tree for 64-bit constant multiply. Dense splitmix const (23 CSD terms):
   **41.9** (vs 47.3 behavioral, vs 67.1 CPA-tree). Sparse 4-term consts:
   24.8–27.7; 6-term: 28.5–30.9. The 41.9 Wallace-dense is the
@@ -261,7 +261,7 @@ frontier at ≤44.8 is now CAL_PASS (was: mild FLAG).
    ~+2u) — required, not optional, for any lane-mult design.
 3. **Wallace carry-save CSD trees beat behavioral const-mult in this flow**
    (dense 41.9 vs 47.3; the CPA-tree 67.1 was ABC mapping each node as a full
-   CPA). Use `gen_wallace.py` for any future const-mult; the 41.9 number is the
+   CPA). Use [`gen_wallace.py`](gen_wallace.py) for any future const-mult; the 41.9 number is the
    honest production-representative const-mult reference.
 4. **5-round pLayer SPN is below the statistical threshold** for this use;
    free linear-layer tweaks (whole-state rotates) move failure modes, not mass.
@@ -337,9 +337,9 @@ numpy model, valid tracking correct, 1-cycle latency. Throughput 1/cycle ✓.
   virtual clock is 10µs with zero IO delays.)
 - Routing: was blocked by GRT-0701, root-caused to a missing `li1`
   `make_tracks` line in the script (not a tool/PDK version issue).
-  `pnr_sky130.sh` fixed (li1 tracks + place_pins + full route + DRC +
+  [`pnr_sky130.sh`](pnr_sky130.sh) fixed (li1 tracks + place_pins + full route + DRC +
   post-route STA); full detailed-route A/B did not survive the loaded machine
-  (killed mid-route) — rerun `pnr/flow_full.tcl` on a quieter box.
+  (killed mid-route) — rerun [`pnr/flow_full.tcl`](pnr/flow_full.tcl) on a quieter box.
 - **Routed A/B (Sky130 TT/100C/1.8V, identical flow, 2026-10-01)** — global
   route + `estimate_parasitics -global_routing` STA (Steiner-tree wire
   estimates, strict improvement over the 5.07ns wireload number):
@@ -355,7 +355,7 @@ numpy model, valid tracking correct, 1-cycle latency. Throughput 1/cycle ✓.
   systematic across keys). 12-round SPN passes BRank → confirms rounds issue.
 - **TestU01 SmallCrush**: 14/15 PASS; **SimpPoker FAIL** (p < 1e-300).
 - **Differential profile** (peer-review remediation 2026-10-01,
-  `peer_review_r3.md` §3.1): strong key-independent joint structure the screen
+  [`peer_review_r3.md`](peer_review_r3.md) §3.1): strong key-independent joint structure the screen
   never probed — per-output-bit flip biases up to ~0.05 for single-bit input
   deltas (z>200 at N=2²² pairs, sequential inputs; confirmed in C and numpy),
   low-8-bit truncated differentials χ² up to ~29000 (255 dof), full-64-bit

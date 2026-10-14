@@ -7,8 +7,8 @@
 ## 1. Exact null distributions — VERIFIED CORRECT (highest-risk area)
 
 I brute-forced the toy analog (W=2¹²) of both formulas against direct enumeration:
-- `lemire_preimg` (tests_final.py:95): `ceil(hi·W/X) − ceil(lo·W/X)` — **0 mismatches** across 30 X values (incl. X=1, X=W−1, random X) and random [lo,hi) intervals. The ceil (not floor) is correct: `(s·X)>>k = r ⟺ r·2ᵏ/X ≤ s < (r+1)·2ᵏ/X`, and #{integers in [L,U)} = ⌈U⌉−⌈L⌉.
-- `mod_preimg` (tests_final.py:102): **0 mismatches** across 28 y values.
+- `lemire_preimg` ([tests_final.py](../tests_final.py):95): `ceil(hi·W/X) − ceil(lo·W/X)` — **0 mismatches** across 30 X values (incl. X=1, X=W−1, random X) and random [lo,hi) intervals. The ceil (not floor) is correct: `(s·X)>>k = r ⟺ r·2ᵏ/X ≤ s < (r+1)·2ᵏ/X`, and #{integers in [L,U)} = ⌈U⌉−⌈L⌉.
+- `mod_preimg` ([tests_final.py](../tests_final.py):102): **0 mismatches** across 28 y values.
 - `lemire_np` object arithmetic (line 71): matches pure-Python reference for all battery X **including X=2⁶⁴−1**; no overflow.
 - The `np.digitize(R.astype(object), ...)` path for X>1024 (lines 143–147): matches manual binning elementwise; boundary values land in the correct [lo,hi) bin.
 - All expected counts ≥ 5 (min: 16 for low14-chi2; 64+ elsewhere). χ² normal approximation valid where used.
@@ -28,7 +28,7 @@ I brute-forced the toy analog (W=2¹²) of both formulas against direct enumerat
 
 ## 3. Methodology bugs (with line refs)
 
-1. **[Minor] Flag threshold miscalibrated across df** (tests_final.py:218,225; tests_adversarial.py). `|z|>4` means p≈6×10⁻⁵ for df=1023 but p≈0.01 for df=1 (lemire-X=2, mask-m=1) and p≈0.0067 for df=2 (lemire-X=3, mod-3). Flag counts mix incomparable scales. Doesn't change any verdict, but the final report must flag in p-values, and "18 flags" should be reported as "17 with p<10⁻⁹, 1 with p≈0.007."
+1. **[Minor] Flag threshold miscalibrated across df** ([tests_final.py](../tests_final.py):218,225; [tests_adversarial.py](../tests_adversarial.py)). `|z|>4` means p≈6×10⁻⁵ for df=1023 but p≈0.01 for df=1 (lemire-X=2, mask-m=1) and p≈0.0067 for df=2 (lemire-X=3, mod-3). Flag counts mix incomparable scales. Doesn't change any verdict, but the final report must flag in p-values, and "18 flags" should be reported as "17 with p<10⁻⁹, 1 with p≈0.007."
 2. **[Moderate] Per-bit coverage gap in `seq_battery`** (line 110). No per-bit monobit screen on sequences: raw-monobit pools 64 bits (dilutes a single-bit bias 64×); lemire-X=2 sees only the MSB; low-bit χ² covers bits 0–13; lemire-X=2³²'s 1024-bin χ² dilutes a δ=0.003 single-bit bias to z≈0.05 (I computed this). **This gap hid a real effect** (§4). Recommend adding a 64-bit per-bit screen.
 3. **[Minor] PART C single key** (line 60): one fixed key, paired across candidates (good) but no key diversity; adversarial battery doesn't repeat it.
 4. **[Trivial] Stale docstring** (line 4): "takes ~10-20 min" — actual runtime ~1–2 min.
@@ -51,6 +51,6 @@ My per-bit screen (the coverage fix for bug #2) found a **real, key-dependent** 
 4. **Disclose the bit39 transient** with the SplitMix64 calibration — do not let "SPN-10 is clean" stand unqualified.
 5. **BIC**: battery flips only val bit 0; full-sweep results favor SPN-10 even more strongly — include them.
 6. **Untested**: key-sequenced inputs (varying key, fixed val); related-key behavior; X values beyond the 6 tested; y=2⁶⁴−1.
-7. **Model/spec consistency verified**: rotations reduce mod 64; S-box/P-layer/round constants match isa_spec.md; scalar==vector==RTL on 3007 vectors (per parent).
+7. **Model/spec consistency verified**: rotations reduce mod 64; S-box/P-layer/round constants match [isa_spec.md](../isa_spec.md); scalar==vector==RTL on 3007 vectors (per parent).
 
 **Bottom line:** the statistical methodology is sound where it matters (exact nulls verified, follow-up protocol correct), all four headline findings survive adversarial re-testing, and SPN-10 remains the right choice. But the battery needs the per-bit screen added, p-value flagging, and the final report must disclose the bit39 transient and the finite-sampling limits rather than claiming literal "passes for arbitrary key/I/j."

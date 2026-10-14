@@ -6,12 +6,12 @@ Pipeline **latency** ≤ one 64×64 multiplier delay, 1/cycle throughput, **2–
 Since pipelining can't beat combinational critical path + register overhead:
 
 - **Combinational critical path ≤ 0.90 × D_mult**, D_mult = **49.2 unit-delays**
-  (reference `mul64.v`, measured twice — stable). **Bar: crit ≤ 44.3.** Anything
+  (reference [`mul64.v`](../synth/mul64.v), measured twice — stable). **Bar: crit ≤ 44.3.** Anything
   above is OUT regardless of statistics. No exceptions.
 - **2–4 pipeline stages** at natural block boundaries; S × T_clk ≤ 49.2 with
   T_clk = max_stage × 1.10 (10% clk-to-q+setup+skew **assumption**, always labeled).
 
-## Measured primitive delays (exploration/prim/, same -fast flow, ratio to 49.2)
+## Measured primitive delays ([exploration/prim/](prim/), same -fast flow, ratio to 49.2)
 
 | primitive | crit | ratio | verdict for critical-path use |
 |---|---|---|---|
@@ -65,9 +65,9 @@ family would price ~0.6–0.7× — note it as a P&R-stage caveat, not a screen 
   simultaneous `(a,b)->(a^f(b), b^g(a))`.
 - One-line construction argument required per candidate (see RESULT format).
 
-## Directories and shared tools (`~/workspace/mix/exploration/`)
+## Directories and shared tools ([`~/workspace/mix/exploration/`](./))
 
-- `screen_lib.py` — **read before writing any model.** `screen(fn, name)` is the
+- [`screen_lib.py`](screen_lib.py) — **read before writing any model.** `screen(fn, name)` is the
   identical protocol (10 keys, N=2^18; scenarios: SEQ, PTR-j8/j16, MPOW2 12 cfgs,
   HIGH-ONLY, DESC ×2, POW2 11 cfgs, STRIDE-3, STRIDE-FIB, SINGLE-BIT 64-set,
   KEY-SWEEP 128×64; reductions Lemire X∈{10,1000,2^32} exact / mask m∈{8,32} /
@@ -85,15 +85,15 @@ family would price ~0.6–0.7× — note it as a P&R-stage caveat, not a screen 
 - `check_model_equiv(scalar, np_fn, name)` and `bijectivity_spotcheck(fn, name)`
   (3 keys × 200k, zero collisions tolerated): **required for every candidate**.
 - `present_perm_np` (fast PRESENT pLayer, verified), `sbox16_np(x, table)` provided.
-- `run_synth.py <verilog> <top> <workdir>`: EXACT -fast flow mirror (yosys →
-  `abc -fast -genlib mini.genlib`), then BOTH `analyze.py` and hardened
-  `analyze2.py` (resolves `assign` incl. vector slices, ERRORS on unknown cells,
+- `[run_synth.py](run_synth.py) <verilog> <top> <workdir>`: EXACT -fast flow mirror (yosys →
+  `abc -fast -genlib mini.genlib`), then BOTH [`analyze.py`](../synth/analyze.py) and hardened
+  [`analyze2.py`](analyze2.py) (resolves `assign` incl. vector slices, ERRORS on unknown cells,
   topological crit path). Must agree or the number is untrusted. Re-measures the
   mul64 reference each run; prints `RESULT ... delay_ratio=...`.
-- `check_rtl.py <dotted.model.fn> <rtl.v> <top> <workdir> [nvec=64]`: iverilog
+- `[check_rtl.py](check_rtl.py) <dotted.model.fn> <rtl.v> <top> <workdir> [nvec=64]`: iverilog
   model-vs-RTL. vvp ≈ 0.5 s/vector on SPN-class netlists (measured, inherent) —
   64 vectors ≈ 30–60 s; don't raise nvec casually.
-- `prim/`: primitive delay survey. `CANDIDATE_BRIEF.md`: this file.
+- [`prim/`](prim/): primitive delay survey. [`CANDIDATE_BRIEF.md`](CANDIDATE_BRIEF.md): this file.
 
 ## Per-candidate deliverables
 
@@ -107,7 +107,7 @@ family would price ~0.6–0.7× — note it as a P&R-stage caveat, not a screen 
 ## Pipeline partition (ONLY if delay_ratio ≤ 0.90 AND screen PASS)
 
 1. 2–4 stages at natural block boundaries; state cut points.
-2. Synthesize EACH stage standalone (`run_synth.py`) → per-stage crits.
+2. Synthesize EACH stage standalone ([`run_synth.py`](run_synth.py)) → per-stage crits.
 3. T_clk = max_stage × 1.10 (labeled ASSUMPTION); latency = S × T_clk ≤ 49.2.
 4. Report stages, per-stage crits, T_clk, latency, margin.
 
@@ -182,13 +182,13 @@ no final swap; `out={Rn^ROTL32(key[63:32],7), Ln^ROTL32(key[31:0],7)}`.
 
 ## Rules
 
-- Read-only outside `exploration/`. Do not touch `rtl/`, `synth/`, or test files.
-- Do not modify `screen_lib.py`, `run_synth.py`, `analyze2.py`, `check_rtl.py`.
+- Read-only outside [`exploration/`](./). Do not touch [`rtl/`](../rtl/), [`synth/`](../synth/), or test files.
+- Do not modify [`screen_lib.py`](screen_lib.py), [`run_synth.py`](run_synth.py), [`analyze2.py`](analyze2.py), [`check_rtl.py`](check_rtl.py).
   Bug reports with reproductions go to me; I fix centrally.
 - Do not invent tables/permutations from memory — verify GIFT/SKINNY/AES tables
   and every permutation against a primary source; assert bijectivity in the model.
 - Use `screen()` as-is (do not sub-sample scenarios or keys). Do not declare winners.
   If delay_ratio > 0.90, mark OUT and move on — no rescue attempts.
-- Full scenario catalog is at `~/workspace/mix/scenarios.md` (your screen covers
+- Full scenario catalog is at [`~/workspace/mix/scenarios.md`](../scenarios.md) (your screen covers
   the triage subset; SMALL-N, GRAY, UPSTREAM, BYTE-REP, SPARSE-HD and the full
   reduction grid run in the FINAL battery on finalists only — not your stage).

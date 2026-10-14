@@ -46,7 +46,7 @@ emission: `_rotrN_np` computed rotate-left instead of rotate-right
 Dedupe: all 9 specs pairwise-distinct by numpy model output before
 generation.
 
-## S0 (run_synth.py, authorized path)
+## S0 ([run_synth.py](../run_synth.py), authorized path)
 
 | Candidate | Delay | Ratio | Cells | Area | vs frontier |
 |---|---:|---:|---:|---:|---|
@@ -117,7 +117,7 @@ repeats |z|=12.4, Q1 sac_z5=0 bic=0.0089, PractRand 1GB clean, SmallCrush
 passed) but is dominated by the new speed point on all three axes
 (40.5 > 37.9, 4,447 > 4,119, 12,905 > 11,621) — does NOT enter.
 
-## Findings (scoped per VERDICT_SCOPE.md)
+## Findings (scoped per [VERDICT_SCOPE.md](../VERDICT_SCOPE.md))
 
 1. **The final round's linear layer is not load-bearing — for delay OR the
    gates.** Dropping it (alt_notr) saves 2.2u/444 cells AND passes S1–S4 +

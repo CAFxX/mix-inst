@@ -127,10 +127,10 @@ red-cell flag proves a fluke on re-screen, h_xorspn3 beats it on both delay
    `calibrated: CAL_PASS (rej 0, 0)` is authoritative.
 
 ## Files
-- Models: `round4/models/r4_hybrid.py` (numpy + scalar, self-test on run)
+- Models: [`round4/models/r4_hybrid.py`](round4/models/r4_hybrid.py) (numpy + scalar, self-test on run)
 - RTL: `round4/rtl/flat2/r4_h_*.v` (10 files, flat unrolled)
-- Generator: `round4/gen_hflat.py`
-- Batch: `round4/run_batch_h.py`, `round4/batch_h.log`
+- Generator: [`round4/gen_hflat.py`](round4/gen_hflat.py)
+- Batch: [`round4/run_batch_h.py`](round4/run_batch_h.py), [`round4/batch_h.log`](round4/batch_h.log)
 - Screens: `round4/results/screen_h_*.log`
 
 ## Open items

@@ -4,8 +4,8 @@ Target: beat `r8_feist6_s1_1sbox_nw` — 42.9u (0.414×), 4,133 cells, area 11,6
 Multiplier reference re-measured fresh in this round's pinned flow: **103.5u**
 (cells 12,645, area 35,323). S0 bar: ≤ 0.9 × 103.5 = 93.15u.
 
-S0 numbers below are from `run_synth.py` (authorized path, Yosys 0.69 pinned,
-dual-analyzer agreement). Battery S0 (`s0_delay.py`) is the stage gate only.
+S0 numbers below are from [`run_synth.py`](../run_synth.py) (authorized path, Yosys 0.69 pinned,
+dual-analyzer agreement). Battery S0 ([`s0_delay.py`](../fast_battery/src/s0_delay.py)) is the stage gate only.
 
 ## S0 pre-screen (all 14 pass the 0.9× bar)
 
@@ -117,7 +117,7 @@ Retained as fast-but-weaker alternatives, not leaders.
 ## Process notes (escape protocol)
 
 - **S2 threshold mismatch (found 2026-10-02):** the hardened kill threshold
-  (10) was changed in `s2_diffprof.c`'s default but `run_fast_battery.sh`
+  (10) was changed in [`s2_diffprof.c`](../fast_battery/src/s2_diffprof.c)'s default but [`run_fast_battery.sh`](../fast_battery/run_fast_battery.sh)
   passes `ref/s2_kill_repeats.txt` (=1000) explicitly, so every battery
   (rounds 7–9) actually ran at 1000. Fixed: ref file → 10; re-ran S2 for
   the only candidates with repeats>0 (the 5-rounders, 7 < 10) — no verdict

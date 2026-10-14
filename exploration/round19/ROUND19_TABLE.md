@@ -38,7 +38,7 @@ block); fixed, all 9+1 RTLs parse in iverilog.
 C↔model 10,000/10,000 and RTL↔model 300/300 for all 10 — first try, including
 the rk-baking fm rounds (round-key indexing (i+2) convention held).
 
-## S0 (run_synth.py, authorized path)
+## S0 ([run_synth.py](../run_synth.py), authorized path)
 
 | Candidate | Delay | Ratio | Cells | Area | vs frontier |
 |---|---:|---:|---:|---:|---|
@@ -129,7 +129,7 @@ gates; consistent with notr's documented status.
 Frontier is now two points: {r18 notr, r19 chioff13}. RTL package updated:
 `~/workspace/your_files/mix_rtl_pareto/` now holds both.
 
-## Findings (scoped per VERDICT_SCOPE.md)
+## Findings (scoped per [VERDICT_SCOPE.md](../VERDICT_SCOPE.md))
 
 1. **The BIC blemish is curable for ~1u.** y ^ rotl(y,m) on the final round's
    output restores bic_maxcorr to 0.008–0.0098 on all five tested structures

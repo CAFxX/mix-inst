@@ -96,7 +96,7 @@ S1 S-box (exact): max DDT entry 4/16 = **2^-2** per active S-box; max linear
 correlation 1/2.
 
 Measured 1-round F differential (120 single-nibble input diffs × 2^24 samples)
-and best 2-round Feistel trail (trail.log):
+and best 2-round Feistel trail ([trail.log](m9/trail.log)):
 
 ## CORRECTION (2026-10-02, independent cryptanalysis peer review)
 
@@ -116,7 +116,7 @@ The differential bounds below are WRONG and superseded. The peer reviewer found:
 - The structural conclusions below (permutation => no exact collisions,
   no weak/related-key *practical* structure, no slide pairs) still hold.
   Only the quantitative trail bounds are corrected.
-- Full detail: exploration/round7/audit/REVIEWS_SUMMARY.md (MAJOR-1..3).
+- Full detail: [exploration/round7/audit/REVIEWS_SUMMARY.md](REVIEWS_SUMMARY.md) (MAJOR-1..3).
 
 ---
 

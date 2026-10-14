@@ -73,22 +73,22 @@ The N8 neighborhood (above) is the co-designed follow-up.
 | rtw_fswap_r2_s1 | N5 | 37.7u | 4,253 | 11,958 | +0.7u | no win (s1 costlier than chi here) |
 | rtw_n7a_0311 | N7a | 40.0u | 4,407 | 12,743 | +3.0u vs r20 notr (37.0u) | **baseline probe**: all-6-rounds lin(3,11) vs r20's 5-round version — the round-6 linear costs +3.0u on this chassis; confirms the N7a chassis is structurally slower (best of 237 so far: 38.2u) |
 
-*(table fills as the sweep runs; see work/sweep_results.json)*
+*(table fills as the sweep runs; see [work/sweep_results.json](work/sweep_results.json))*
 
 **Resume checkpoint 2026-10-04 ~01:00 CEST:** previous coordinator died 2026-10-03
-22:56 UTC on a runtime restart (not a task failure). State: `rtweak.py`
+22:56 UTC on a runtime restart (not a task failure). State: [`rtweak.py`](models/rtweak.py)
 self-test green; `rtw_n7a_0311` was never emitted (stale build-FAIL entry) —
 emitted via `gen_tweak.emit_one` and its results entry cleared so the sweep
 re-queues it (S0 40.0u/4407/12743, see row above). Sweep relaunched detached
-(`setsid nohup python3 sweep.py`, log `work/sweep_resume.log`), resumed from
-the `sweep_results.json` checkpoint (1182 specs, 259 already probed, no redo).
+(`setsid nohup python3 [sweep.py](sweep.py)`, log [`work/sweep_resume.log`](work/sweep_resume.log)), resumed from
+the [`sweep_results.json`](work/sweep_results.json) checkpoint (1182 specs, 259 already probed, no redo).
 Registered as `mix-tweak-sweep` in the work registry. rtw_pb2_rev_inout needs
-nothing further (parent-verified, RETAINED.md #24, dominated off-frontier).
+nothing further (parent-verified, [RETAINED.md](../RETAINED.md) #24, dominated off-frontier).
 
 ## Failure analyses
 
 Analytical failure analysis per probe (signal → mechanistic hypothesis →
-steered next probes). Raw records: work/diagnoses.jsonl.
+steered next probes). Raw records: [work/diagnoses.jsonl.](work/diagnoses.jsonl)
 
 ### A1 — rtw_pb_rev_a03 (Z2): single-rotation linear is provably singular [KILL]
 - **Signal**: S0 33.1u/3,207/9,310 ("fast number, broken design"); S1 LIN
@@ -107,7 +107,7 @@ steered next probes). Raw records: work/diagnoses.jsonl.
 - **Cross-track note**: single-rotation linear layers are dead as a gene for
   the GA track too (any x^rotl(x,a) is singular on 32 bits).
 
-### A2 — sweep.py battery_done() false-positive [INFRA BUG, fixed]
+### A2 — [sweep.py](sweep.py) battery_done() false-positive [INFRA BUG, fixed]
 - **Signal**: After a VM reboot killed the rtw_pb2_rev_inout battery mid-S3b,
   the resumed sweep logged "PROMOTE-SKIP: battery already done" and marked a
   WINNER without S3b/S4/Q1 ever running.
@@ -137,7 +137,7 @@ steered next probes). Raw records: work/diagnoses.jsonl.
 
 ## Winners
 
-*(candidates passing the full battery + Q1 with Pareto improvement; PARETO.md
+*(candidates passing the full battery + Q1 with Pareto improvement; [PARETO.md](../PARETO.md)
 is updated by the parent only after raw-log verification)*
 
 ### 🏆 rtw_pb2_rev_inout (Z2b neighborhood, 2026-10-03)
@@ -156,7 +156,7 @@ is updated by the parent only after raw-log verification)*
   fast_battery candidates AND within the sweep (48-vector signatures).
 - S0 via run_synth.synth_one (authorized flow: pinned Yosys 0.69,
   memory_map before techmap, dual-analyzer agreement); reference
-  re-measurement skipped for probes, full run_synth.py for winners.
+  re-measurement skipped for probes, full [run_synth.py](../run_synth.py) for winners.
 - Polite concurrency: backoff when ≥2 heavy pipelines system-wide.
 - N1 control rtw_lin_ab0311_ctrl re-probes (3,11) to check flow determinism.
 - **Standing retention rule (Carlo 2026-10-03)**: NEVER delete
@@ -164,4 +164,4 @@ is updated by the parent only after raw-log verification)*
   retired or not. "Retired" = off the Pareto frontier only. Every
   full-battery survivor is retained indefinitely (extended PractRand
   breaking-point batteries will run over all of them; registry at
-  `exploration/RETAINED.md`). This sweep never deletes.
+  [`exploration/RETAINED.md`](../RETAINED.md)). This sweep never deletes.

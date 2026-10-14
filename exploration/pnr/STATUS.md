@@ -31,7 +31,7 @@ violations decrease 3460→2460 across iterations, need ~20 to converge).
 ## Gap 2: Multiplier reference — P&R RUNNING
 
 `pnr/mul64_64.v`: 64×64→64 truncated multiplier (fairer vs mixer, less ABC work).
-Yosys+ABC: ~5s, 9639 cells. P&R at DIE=355 (62% util) running in `wd_mul/`.
+Yosys+ABC: ~5s, 9639 cells. P&R at DIE=355 (62% util) running in [`wd_mul/`](wd_mul/).
 
 ## Results
 
@@ -46,11 +46,11 @@ Yosys+ABC: ~5s, 9639 cells. P&R at DIE=355 (62% util) running in `wd_mul/`.
 - P&R killed (machine overload); needs rerun
 
 ### Mixer (r3_xorlin_qm) — P&R RUNNING with fixes
-- `wd_mixer_final/`: no-li1 + 20 DRT iterations, in 0th optimization iter
+- [`wd_mixer_final/`](wd_mixer_final/): no-li1 + 20 DRT iterations, in 0th optimization iter
 - Expected: convergence to 0 violations (trend supports this)
 
 ### Multiplier — P&R RUNNING
-- `wd_mul/`: in 0th optimization iteration
+- [`wd_mul/`](wd_mul/): in 0th optimization iteration
 
 ## Files
 - `pnr/flow.tcl`: updated with li1 tracks, no-li1 routing, 20 DRT iters
@@ -60,6 +60,6 @@ Yosys+ABC: ~5s, 9639 cells. P&R at DIE=355 (62% util) running in `wd_mul/`.
 
 ## Remaining
 1. mixer_final and mul to finish DRT (~30-60 min on 2-CPU box)
-2. Run `post.tcl` on final DEFs for timing/area/power
+2. Run [`post.tcl`](post.tcl) on final DEFs for timing/area/power
 3. Rerun KS adder P&R
 4. Standalone DRC (Magic/KLayout) not available — document as gap

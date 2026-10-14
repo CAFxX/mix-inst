@@ -36,7 +36,7 @@ uses the (i+2) convention (round-11 lesson); F3 uses (2i+2)/(2i+3) double-key;
 alt_rkhi's 1-based-even-round low32 half derived explicitly and matched
 300/300 first try.
 
-## S0 (run_synth.py, authorized path)
+## S0 ([run_synth.py](../run_synth.py), authorized path)
 
 | Candidate | Delay | Ratio | Cells | Area | vs frontier |
 |---|---:|---:|---:|---:|---|
@@ -141,7 +141,7 @@ improvements. The r13 alt (S1,chi) at 40.1u survives every variant thrown at it.
 
 ## Process notes
 
-1. Tautological self-test assertion caught at write time: gen_r14.py's
+1. Tautological self-test assertion caught at write time: [gen_r14.py](gen_r14.py)'s
    emit() initially asserted `not np.array_equal(O, fn(V,K) ^ 0)` — XOR with
    zero is the identity, so the assertion could never fail. Removed before
    emission. Rule: every self-test assertion must be capable of failing;

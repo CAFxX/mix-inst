@@ -13,12 +13,12 @@ val^key whitening, F(R,rk) = S1-nibble-layer → x^rotl32(x,7)^rotl32(x,13) →
 ^(rk low 32), one S-box layer per F, no final swap, out = {R,L}.
 
 Files reviewed (read in full, line by line):
-- Model: `~/workspace/mix/exploration/round7/models/r7.py`
+- Model: [`~/workspace/mix/exploration/round7/models/r7.py`](../models/r7.py)
   (`r7_feist8_s1_1sbox`; key schedule `_rk_np` imported from
   `round5/models/r5.py`, which re-exports it from
   `round4/models/r4_hybrid.py` — **read that definition directly**)
-- C: `~/workspace/mix/exploration/fast_battery/candidates/r7_feist8_s1_1sbox/impl.c`
-- RTL: `~/workspace/mix/exploration/fast_battery/candidates/r7_feist8_s1_1sbox/rtl.v`
+- C: [`~/workspace/mix/exploration/fast_battery/candidates/r7_feist8_s1_1sbox/impl.c`](../../fast_battery/candidates/r7_feist8_s1_1sbox/impl.c)
+- RTL: [`~/workspace/mix/exploration/fast_battery/candidates/r7_feist8_s1_1sbox/rtl.v`](../../fast_battery/candidates/r7_feist8_s1_1sbox/rtl.v)
 
 Out of scope: statistical quality (S1–S4), synthesis delay numbers, P&R,
 bijectivity proofs. This review covers implementation fidelity only:
@@ -31,14 +31,14 @@ Icarus Verilog 13.0 from conda-forge into `~/tools/ivl-env`
 (`~/tools/bin/micromamba create -y -p ~/tools/ivl-env iverilog`).
 gcc (system), python3 + numpy 1.26.4.
 
-All scripts kept in `~/workspace/mix/exploration/round7/audit/`:
+All scripts kept in [`~/workspace/mix/exploration/round7/audit/`](./):
 
-1. **Bit-exactness sim** — `gen_vectors.py` builds 2139 vectors (2000 seeded
+1. **Bit-exactness sim** — [`gen_vectors.py`](gen_vectors.py) builds 2139 vectors (2000 seeded
    random + edge cases: key=0, val=0, val=key=0, all-ones val/key, all 64
    single-bit val with key=0, all 64 single-bit key with val=0,
    alternating-bit patterns, 0x0123456789ABCDEF/0xFEDCBA9876543210) with
-   expected outputs from `r7.py`, written to `vectors.hex`.
-   `tb_rtl.v` drives the DUT combinationally and compares with `===`
+   expected outputs from [`r7.py`](../models/r7.py), written to `vectors.hex`.
+   [`tb_rtl.v`](tb_rtl.v) drives the DUT combinationally and compares with `===`
    (strict: any X bit fails):
    ```
    cd ~/workspace/mix/exploration/round7/audit && python3 gen_vectors.py
@@ -47,25 +47,25 @@ All scripts kept in `~/workspace/mix/exploration/round7/audit/`:
    ./sim_rtl
    ```
    Extended sweep: 20,000 more seeded random vectors (`vectors20k.hex`,
-   model evaluated vectorized), same TB via `tb_rtl20k.v`.
-2. **S-box / nibble order** — `check_sbox_rk.py` regex-extracts all 16 `case`
-   entries from `rtl.v` and compares against `S1` from `r7.py`; checks the
+   model evaluated vectorized), same TB via [`tb_rtl20k.v`](tb_rtl20k.v).
+2. **S-box / nibble order** — [`check_sbox_rk.py`](check_sbox_rk.py) regex-extracts all 16 `case`
+   entries from `rtl.v` and compares against `S1` from [`r7.py`](../models/r7.py); checks the
    part-select pattern `t[4*j+:4] = sbox(R[4*j+:4])` (LSB-nibble-first) vs the
    model's `((x >> 4*i) & 0xF)` loop.
-3. **Round-key schedule** — `check_sbox_rk.py` emits `rk_vectors.hex`
-   (6 keys × rounds 1..8, expected = model's `_rk_np`); `tb_rk.v` calls the
+3. **Round-key schedule** — [`check_sbox_rk.py`](check_sbox_rk.py) emits `rk_vectors.hex`
+   (6 keys × rounds 1..8, expected = model's `_rk_np`); [`tb_rk.v`](tb_rk.v) calls the
    RTL's **actual internal function** hierarchically (`dut.rk(key, round)`)
    and compares.
 4. **Structural** — line-by-line read of `rtl.v` + `iverilog -Wall` clean
    check for width/latch warnings.
-5. **Mutation red-green** — copied `rtl.v` → `mut/rtl_mut.v` (original
+5. **Mutation red-green** — copied `rtl.v` → [`mut/rtl_mut.v`](mut/rtl_mut.v) (original
    untouched), flipped one entry (`4'h3` output `4'h4` → `4'h5`), recompiled
    with the unchanged TB:
    ```
    sed -i "s/4'h3: sbox_feist8_s1_1sbox = 4'h4;/4'h3: sbox_feist8_s1_1sbox = 4'h5;/" mut/rtl_mut.v
    ~/tools/ivl-env/bin/iverilog -o sim_mut mut/rtl_mut.v tb_rtl.v && ./sim_mut
    ```
-6. **C vs RTL** — `harness.c` links `impl.c` (`mix_hash`), checks the first
+6. **C vs RTL** — [`harness.c`](harness.c) links `impl.c` (`mix_hash`), checks the first
    301 rows of `vectors.hex` (all edge cases + ~290 random) against the
    model-derived expected values:
    ```
@@ -77,11 +77,11 @@ All scripts kept in `~/workspace/mix/exploration/round7/audit/`:
 
 ### Exact key-schedule formula (established from code, all three artifacts)
 
-- Model (`r4_hybrid.py`): `_rk_np(k, i) = rotl64(k, 13*(i+1)) ^ (((i+1) *
+- Model ([`r4_hybrid.py`](../../round4/models/r4_hybrid.py)): `_rk_np(k, i) = rotl64(k, 13*(i+1)) ^ (((i+1) *
   0x9E3779B97F4A7C15) mod 2^64)`. `_feistel8_np` calls it with **1-based**
   round `i` = 1..8, so effective rotations are **26, 39, 52, 1, 14, 27, 40,
   53** — rotation 13 never occurs. (This is a consequence of reusing r4's
-  0-based `_rk_np` with a 1-based loop; the r7.py docstring formula
+  0-based `_rk_np` with a 1-based loop; the [r7.py](../models/r7.py) docstring formula
   `rotl64(k,13*(i+1))` with i = round number is consistent with this.)
 - RTL `rk(k, i)`: `r = (13*(i+1)) % 64`; `rc = (i+1) * 64'h9E3779B97F4A7C15`;
   `rk = ((k<<r)|(k>>(64-r))) ^ rc` (with an `r==0` guard). Called as

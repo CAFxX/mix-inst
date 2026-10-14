@@ -6,11 +6,11 @@
 x_{i+1} = L(P(S16(x_i ^ rk_i))), P(i)=(5i+27)%64, L=lin(3,11), S1.
 28.3u/4656/12949, full battery PASS, bic 0.00865.
 
-**Method:** staged kill-chain S0 (run_synth.py only) → S1 → S2 (N=2^22,
+**Method:** staged kill-chain S0 ([run_synth.py](../run_synth.py) only) → S1 → S2 (N=2^22,
 115 deltas, kill repeats>10) → S3 (PractRand 16M→1G ×2 configs) → S4
 (SmallCrush) → Q1 (sac_z5=0 mandatory). C↔model 10k + RTL↔model 300
 before any synthesis. Polite ≤2-heavy-pipeline concurrency (binary-counted).
-Generator: `gen_r23.py`; model: `models/r23.py`; specs frozen in `specs23.json`.
+Generator: [`gen_r23.py`](gen_r23.py); model: [`models/r23.py`](models/r23.py); specs frozen in [`specs23.json`](specs23.json).
 
 **Per-layer bijectivity (SPN hard gate):** every spec's S-box verified a
 4-bit permutation, P-box a 64-permutation, L GF(2) rank 64 (pre-synthesis);
@@ -104,7 +104,7 @@ deg=1). See F5. No candidates.
 | r23_spn_mix4r_mols8c_nw | PASS | PASS | 27.9u/5205/14020 | **FLAG** | — | — | — | — | **S1-KILLED** |
 | r23_spn_mix4r_ks0_nw | PASS | PASS | 27.9u/5330/14510 | **FLAG** | — | — | — | — | **S1-KILLED** |
 
-## Critpath redirects (2026-10-04, from exploration/critpath/CRITPATH.md)
+## Critpath redirects (2026-10-04, from [exploration/critpath/CRITPATH.md](../critpath/CRITPATH.md))
 
 Backtraced top-10 critical paths on all frontier designs (unit-delay STA).
 Three findings redirect round-23 priorities:
@@ -283,4 +283,4 @@ S2 queue.
 
 ## Winners
 
-*(full battery + Q1 sac_z5=0 with Pareto improvement; PARETO.md updated by parent only)*
+*(full battery + Q1 sac_z5=0 with Pareto improvement; [PARETO.md](../PARETO.md) updated by parent only)*

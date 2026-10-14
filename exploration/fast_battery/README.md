@@ -34,17 +34,17 @@ that makes the wire-friendly P-box track's proxy wirelength (Σ|P(i)−i|)
 visually checkable against real routed wirelength. The renderer is built
 when S5 is armed, not before (no P&R output exists yet to render).
 
-Orchestrator: `./run_fast_battery.sh <candidate> [start_stage]`.
+Orchestrator: `[./run_fast_battery.sh](run_fast_battery.sh) <candidate> [start_stage]`.
 Per-stage verdict + wall-clock go to `results/<candidate>/`; stops at the first
 kill. Exit 0 = all pass, 2 = killed, 1 = infra error.
 
 ## Thresholds and calibration
 
 - **S0 bar: delay ≤ 0.9 × the 64×64 multiplier**, both synthesized through the
-  identical flow (multiplier measured once, cached in `ref/mult_ref.txt`).
+  identical flow (multiplier measured once, cached in [`ref/mult_ref.txt`](ref/mult_ref.txt)).
   The user's hard requirement is "latency no higher than a multiplier"; the old
   absolute 44.3u bar belonged to a retired flow (see below) and is not used.
-- **S2 kill threshold: 1000 full-64-bit repeats** (`ref/s2_kill_repeats.txt`).
+- **S2 kill threshold: 1000 full-64-bit repeats** ([`ref/s2_kill_repeats.txt`](ref/s2_kill_repeats.txt)).
   Null expectation at N=2^22 (≈2^21 deduped pairs) is C(2^21,2)/2^64 ≈ 2^-23,
   so any repeats are real signal; r3_xorlin_qm (standing winner) measures 12,
   h_xorspn3 measured 41889. 1000 sits ~83× above the best known-good design
@@ -61,7 +61,7 @@ contains `dretime`, which was PROVEN on 2026-10-01 to produce a functionally
 WRONG mapping** for `mix_h_xorspn3` (SAT miter pre-ABC vs post-ABC: concrete
 counterexample; iverilog confirmed the mapped netlist computes wrong values;
 pre-ABC netlist verified correct). S0 therefore uses an explicit ABC script,
-`src/abc_nodretime.script` (= the built-in default with `dretime` removed;
+[`src/abc_nodretime.script`](src/abc_nodretime.script) (= the built-in default with `dretime` removed;
 the no-dretime mapping was SAT-proven equivalent: "no model found: SUCCESS").
 Pass it via `-script <file>` — the `-script +cmd1,cmd2,...` string form does
 NOT work in this build (commands aren't separated; ABC emits unmapped `$lut`
@@ -71,7 +71,7 @@ Because the synthesis flow changed, absolute unit-delays are NOT comparable
 with the historical `-fast` numbers (hx 34.5u, r3 40.0u, mult 50.8u). The
 ratio bar keeps S0 honest across flows.
 
-S0 also simulates the ABC-mapped netlist (iverilog + `src/cells_sim.v`,
+S0 also simulates the ABC-mapped netlist (iverilog + [`src/cells_sim.v`](src/cells_sim.v),
 behavioral models of every mini.genlib cell, themselves exhaustively tested)
 on 1000 random vectors against the Python model. A synthesis miscompile can
 never pass as a fast design. **Project-wide warning**: any synthesis run on

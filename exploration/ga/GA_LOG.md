@@ -1,11 +1,11 @@
 # GA log — analytical failure analysis + evolution
 
-Append-only. Frontier-candidacy flags are NOT PARETO.md edits; the human coordinator verifies from raw logs.
+Append-only. Frontier-candidacy flags are NOT [PARETO.md](../PARETO.md) edits; the human coordinator verifies from raw logs.
 
 [2026-10-03T16:11:51Z] GA start: pop=20 archive=4 (seed-parsed, no re-synthesis)
 [2026-10-03T16:11:51Z] gen 0: evaluating seed seed_hand_const_iota {"const_fam": "iota", "const_where": "round_F", "mask": "none", "pbox_perm": null, "pbox_where": "none", "rounds": 6, "t...
 [2026-10-03T16:12:13Z]   [seed_hand_const_iota] xcheck rc=0 XCHECK seed_hand_const_iota: PASS 10000/10000 C==Python
-/home/hatch/workspace/mix/exploration/round20/models/r20.py:93: RuntimeWarning: overflow encountered in scalar multiply
+[/home/hatch/workspace/mix/exploration/round20/models/r20.py](../round20/models/r20.py):93: RuntimeWarning: overflow encountered in scalar multiply
   return (_rotl64_np(k, r) ^ (np.uint64(i + 1) * GOLDEN64)) & MASK32
 
 [2026-10-03T16:12:13Z]   [seed_hand_const_iota] polite_wait: >=2 foreign heavy pipelines, sleeping 300s
@@ -13,7 +13,7 @@ Append-only. Frontier-candidacy flags are NOT PARETO.md edits; the human coordin
 [2026-10-03T16:14:55Z] resumed at gen 0 evals=0 archiveS=4 archiveQ=0
 [2026-10-03T16:14:55Z] gen 0: evaluating seed seed_hand_const_iota {"const_fam": "iota", "const_where": "round_F", "mask": "none", "pbox_perm": null, "pbox_where": "none", "rounds": 6, "t...
 [2026-10-03T16:15:13Z]   [seed_hand_const_iota] xcheck rc=0 XCHECK seed_hand_const_iota: PASS 10000/10000 C==Python
-/home/hatch/workspace/mix/exploration/round20/models/r20.py:93: RuntimeWarning: overflow encountered in scalar multiply
+[/home/hatch/workspace/mix/exploration/round20/models/r20.py](../round20/models/r20.py):93: RuntimeWarning: overflow encountered in scalar multiply
   return (_rotl64_np(k, r) ^ (np.uint64(i + 1) * GOLDEN64)) & MASK32
 
 [2026-10-03T16:15:13Z]   [seed_hand_const_iota] polite_wait: >=2 foreign heavy pipelines, sleeping 300s
@@ -21,7 +21,7 @@ Append-only. Frontier-candidacy flags are NOT PARETO.md edits; the human coordin
 [2026-10-03T16:17:32Z] resumed at gen 0 evals=0 archiveS=4 archiveQ=7
 [2026-10-03T16:17:32Z] gen 0: evaluating seed seed_hand_const_iota {"const_fam": "iota", "const_where": "round_F", "mask": "none", "pbox_perm": null, "pbox_where": "none", "rounds": 6, "t...
 [2026-10-03T16:17:45Z]   [seed_hand_const_iota] xcheck rc=0 XCHECK seed_hand_const_iota: PASS 10000/10000 C==Python
-/home/hatch/workspace/mix/exploration/round20/models/r20.py:93: RuntimeWarning: overflow encountered in scalar multiply
+[/home/hatch/workspace/mix/exploration/round20/models/r20.py](../round20/models/r20.py):93: RuntimeWarning: overflow encountered in scalar multiply
   return (_rotl64_np(k, r) ^ (np.uint64(i + 1) * GOLDEN64)) & MASK32
 
 [2026-10-03T16:17:45Z]   [seed_hand_const_iota] polite_wait: >=2 foreign heavy pipelines, sleeping 300s
@@ -33,13 +33,13 @@ Append-only. Frontier-candidacy flags are NOT PARETO.md edits; the human coordin
 [2026-10-03T16:47:58Z]   [seed_hand_const_iota] S0 no result json: [Errno 2] No such file or directory: '/home/hatch/workspace/mix/exploration/ga/results/seed_hand_const_iota/s0_result.json'; rc=1
 [2026-10-03T16:47:58Z] gen 0: evaluating seed seed_hand_replacerot {"const_fam": null, "const_where": "none", "mask": "none", "pbox_perm": "transpose8x4", "pbox_where": "replacerot", "rou...
 [2026-10-03T16:48:45Z]   [seed_hand_replacerot] xcheck rc=0 XCHECK seed_hand_replacerot: PASS 10000/10000 C==Python
-/home/hatch/workspace/mix/exploration/round20/models/r20.py:93: RuntimeWarning: overflow encountered in scalar multiply
+[/home/hatch/workspace/mix/exploration/round20/models/r20.py](../round20/models/r20.py):93: RuntimeWarning: overflow encountered in scalar multiply
   return (_rotl64_np(k, r) ^ (np.uint64(i + 1) * GOLDEN64)) & MASK32
 
 [2026-10-03T16:48:58Z]   [seed_hand_replacerot] S0 no result json: [Errno 2] No such file or directory: '/home/hatch/workspace/mix/exploration/ga/results/seed_hand_replacerot/s0_result.json'; rc=1
 [2026-10-03T16:48:58Z] gen 0: evaluating seed seed_hand_between64 {"const_fam": null, "const_where": "none", "mask": "none", "pbox_perm": "interleave64", "pbox_where": "between64", "roun...
 [2026-10-03T16:50:21Z]   [seed_hand_between64] xcheck rc=0 XCHECK seed_hand_between64: PASS 10000/10000 C==Python
-/home/hatch/workspace/mix/exploration/round20/models/r20.py:93: RuntimeWarning: overflow encountered in scalar multiply
+[/home/hatch/workspace/mix/exploration/round20/models/r20.py](../round20/models/r20.py):93: RuntimeWarning: overflow encountered in scalar multiply
   return (_rotl64_np(k, r) ^ (np.uint64(i + 1) * GOLDEN64)) & MASK32
 
 [2026-10-03T16:54:04Z] INFRA: iverilog was wiped by the VM deployment/reboot; reinstalled iverilog 12.0 from /var/cache/apt/archives via dpkg -i. S0 pipeline verified: seed_hand_const_iota = 37.9u/4170c/11954a PASS (equiv 1000/1000). The 16:47:58Z S0 rc=1 was FileNotFoundError iverilog, not a design or harness bug.
@@ -48,14 +48,14 @@ Append-only. Frontier-candidacy flags are NOT PARETO.md edits; the human coordin
 [2026-10-03T16:58:01Z]   death @S1: HYPOTHESIS: differential weakness in F (10 DIFF rejections) — the nonlinear layer/chi offsets leak a differential trail.
 [2026-10-03T16:58:01Z] gen 0: evaluating seed seed_hand_mask {"const_fam": null, "const_where": "none", "mask": "r2_A5", "pbox_perm": null, "pbox_where": "none", "rounds": 6, "tags"...
 [2026-10-03T16:58:12Z]   [seed_hand_mask] xcheck rc=0 XCHECK seed_hand_mask: PASS 10000/10000 C==Python
-/home/hatch/workspace/mix/exploration/round20/models/r20.py:93: RuntimeWarning: overflow encountered in scalar multiply
+[/home/hatch/workspace/mix/exploration/round20/models/r20.py](../round20/models/r20.py):93: RuntimeWarning: overflow encountered in scalar multiply
   return (_rotl64_np(k, r) ^ (np.uint64(i + 1) * GOLDEN64)) & MASK32
 
 [2026-10-03T17:03:48Z]   [seed_hand_mask] S0 delay=45.0 cells=5170 area=14764.0 verdict=PASS rc=0
 [2026-10-03T17:03:48Z]   [seed_hand_mask] Stage-A discard: dominated by both archives
 [2026-10-03T17:03:48Z] gen 0: evaluating seed seed_hand_prepost {"const_fam": "bit", "const_where": "prepost", "mask": "none", "pbox_perm": null, "pbox_where": "none", "rounds": 6, "ta...
 [2026-10-03T17:04:05Z]   [seed_hand_prepost] xcheck rc=0 XCHECK seed_hand_prepost: PASS 10000/10000 C==Python
-/home/hatch/workspace/mix/exploration/round20/models/r20.py:93: RuntimeWarning: overflow encountered in scalar multiply
+[/home/hatch/workspace/mix/exploration/round20/models/r20.py](../round20/models/r20.py):93: RuntimeWarning: overflow encountered in scalar multiply
   return (_rotl64_np(k, r) ^ (np.uint64(i + 1) * GOLDEN64)) & MASK32
 
 [2026-10-03T17:04:05Z]   [seed_hand_prepost] polite_wait: >=2 foreign heavy pipelines, sleeping 300s
@@ -68,14 +68,14 @@ Append-only. Frontier-candidacy flags are NOT PARETO.md edits; the human coordin
 [2026-10-03T17:36:43Z] gen 0: evaluating seed seed_rnd16 {"const_fam": null, "const_where": "none", "mask": "none", "pbox_perm": null, "pbox_where": "none", "rounds": 7, "tags":...
 [2026-10-03T17:37:03Z]   [seed_rnd16] xcheck rc=1 ffdda k=f26fff4cc4fd394d C=d9bcc6be7b3798ab py=a506e2d9d9bcc6be
 XCHECK seed_rnd16: FAIL 10000/10000 mismatches
-/home/hatch/workspace/mix/exploration/round20/models/r20.py:93: RuntimeWarning: overflow encountered in scalar multiply
+[/home/hatch/workspace/mix/exploration/round20/models/r20.py](../round20/models/r20.py):93: RuntimeWarning: overflow encountered in scalar multiply
   return (_rotl64_np(k, r) ^ (np.uint64(i + 1) * GOLDEN64)) & MASK32
 
 [2026-10-03T17:37:03Z] gen 0: evaluating seed seed_rnd17 {"const_fam": "bit", "const_where": "prepost", "mask": "r2_FF", "pbox_perm": null, "pbox_where": "none", "rounds": 7, "t...
 [2026-10-03T17:37:03Z]   [seed_rnd17] EMIT failed: name 'chi16_assigns' is not defined
 [2026-10-03T17:37:03Z] gen 0: evaluating seed seed_rnd18 {"const_fam": null, "const_where": "none", "mask": "none", "pbox_perm": null, "pbox_where": "none", "rounds": 6, "tags":...
 [2026-10-03T17:37:25Z]   [seed_rnd18] xcheck rc=0 XCHECK seed_rnd18: PASS 10000/10000 C==Python
-/home/hatch/workspace/mix/exploration/round20/models/r20.py:93: RuntimeWarning: overflow encountered in scalar multiply
+[/home/hatch/workspace/mix/exploration/round20/models/r20.py](../round20/models/r20.py):93: RuntimeWarning: overflow encountered in scalar multiply
   return (_rotl64_np(k, r) ^ (np.uint64(i + 1) * GOLDEN64)) & MASK32
 
 [2026-10-03T17:37:25Z]   [seed_rnd18] polite_wait: >=2 foreign heavy pipelines, sleeping 300s
@@ -83,13 +83,13 @@ XCHECK seed_rnd16: FAIL 10000/10000 mismatches
 [2026-10-03T17:47:25Z]   [seed_rnd18] polite_wait: >=2 foreign heavy pipelines, sleeping 300s
 
 [2026-10-04T00:05Z] RESUME (subagent): driver died ~2026-10-03 17:47Z in seed_rnd18's polite_wait (runtime restart, not a task failure).
-[2026-10-04T00:05Z] INCIDENT: this resume's own test_ga.py run clobbered state/checkpoint.pkl at 23:36Z — test_checkpoint_roundtrip wrote a 3-key toy dict over the production checkpoint. Recovered EXACTLY: mine_archive re-parse (all 12 member points verified identical), HAND_BUILT, GA_LOG S0 points, disk genome.json for rnd16/rnd18, transcript for rnd17, failures[0]+assoc transcribed verbatim, 7 fingerprints recomputed, t0/evals/deaths restored. One loss: seed_rnd19's genome existed only in the checkpoint (never emitted) -> regenerated a fresh valid random genome (logged substitution). Root causes fixed: (1) test now uses a temp STATE dir (never touches ga/state); (2) genome.py random_tag/_repair_final_tags used GLOBAL random instead of the passed rng (made fills irreproducible) -> rng threaded through all callers.
-[2026-10-04T00:05Z] HARNESS FIXES (both verified 10k/10k xcheck + iverilog RTL sim): (1) emit.py is_base now requires rounds==6 — gen_r20's C_MAIN_TMPL hardcodes 6 rounds, so 7-round genomes failed xcheck 10000/10000 (seed_rnd16) and now route through the round-parameterized custom emitter; (2) ps-tag RTL used gen_r20._ps_block which calls chi16_assigns, undefined in gen_r20 (latent bug; round 20 never emitted ps) -> local _ps_block_local() ported from gen_r19 semantics, bit-exact vs gamodels._nl_ps.
+[2026-10-04T00:05Z] INCIDENT: this resume's own [test_ga.py](test_ga.py) run clobbered [state/checkpoint.pkl](state/checkpoint.pkl) at 23:36Z — test_checkpoint_roundtrip wrote a 3-key toy dict over the production checkpoint. Recovered EXACTLY: mine_archive re-parse (all 12 member points verified identical), HAND_BUILT, GA_LOG S0 points, disk genome.json for rnd16/rnd18, transcript for rnd17, failures[0]+assoc transcribed verbatim, 7 fingerprints recomputed, t0/evals/deaths restored. One loss: seed_rnd19's genome existed only in the checkpoint (never emitted) -> regenerated a fresh valid random genome (logged substitution). Root causes fixed: (1) test now uses a temp STATE dir (never touches ga/state); (2) [genome.py](genome.py) random_tag/_repair_final_tags used GLOBAL random instead of the passed rng (made fills irreproducible) -> rng threaded through all callers.
+[2026-10-04T00:05Z] HARNESS FIXES (both verified 10k/10k xcheck + iverilog RTL sim): (1) [emit.py](emit.py) is_base now requires rounds==6 — gen_r20's C_MAIN_TMPL hardcodes 6 rounds, so 7-round genomes failed xcheck 10000/10000 (seed_rnd16) and now route through the round-parameterized custom emitter; (2) ps-tag RTL used gen_r20._ps_block which calls chi16_assigns, undefined in gen_r20 (latent bug; round 20 never emitted ps) -> local _ps_block_local() ported from gen_r19 semantics, bit-exact vs gamodels._nl_ps.
 [2026-10-04T00:05Z] Requeued infra-killed seeds seed_hand_const_iota + seed_hand_replacerot (S0 rc=1 was iverilog-wipe FileNotFoundError, not a design verdict) -> initial_sweep will re-run them on resume.
 [2026-10-03T23:48:06Z] resumed at gen 0 evals=0 archiveS=4 archiveQ=7
 [2026-10-03T23:48:06Z] gen 0: evaluating seed seed_hand_const_iota {"const_fam": "iota", "const_where": "round_F", "mask": "none", "pbox_perm": null, "pbox_where": "none", "rounds": 6, "t...
 [2026-10-03T23:48:18Z]   [seed_hand_const_iota] xcheck rc=0 XCHECK seed_hand_const_iota: PASS 10000/10000 C==Python
-/home/hatch/workspace/mix/exploration/round20/models/r20.py:93: RuntimeWarning: overflow encountered in scalar multiply
+[/home/hatch/workspace/mix/exploration/round20/models/r20.py](../round20/models/r20.py):93: RuntimeWarning: overflow encountered in scalar multiply
   return (_rotl64_np(k, r) ^ (np.uint64(i + 1) * GOLDEN64)) & MASK32
 
 [2026-10-03T23:50:17Z]   [seed_hand_const_iota] S0 delay=37.9 cells=4170 area=11954.0 verdict=PASS rc=0
@@ -97,7 +97,7 @@ XCHECK seed_rnd16: FAIL 10000/10000 mismatches
 [2026-10-03T23:50:57Z]   death @S1: HYPOTHESIS: differential weakness in F (1 DIFF rejections) — the nonlinear layer/chi offsets leak a differential trail.
 [2026-10-03T23:50:57Z] gen 0: evaluating seed seed_hand_replacerot {"const_fam": null, "const_where": "none", "mask": "none", "pbox_perm": "transpose8x4", "pbox_where": "replacerot", "rou...
 [2026-10-03T23:51:32Z]   [seed_hand_replacerot] xcheck rc=0 XCHECK seed_hand_replacerot: PASS 10000/10000 C==Python
-/home/hatch/workspace/mix/exploration/round20/models/r20.py:93: RuntimeWarning: overflow encountered in scalar multiply
+[/home/hatch/workspace/mix/exploration/round20/models/r20.py](../round20/models/r20.py):93: RuntimeWarning: overflow encountered in scalar multiply
   return (_rotl64_np(k, r) ^ (np.uint64(i + 1) * GOLDEN64)) & MASK32
 
 [2026-10-03T23:53:47Z]   [seed_hand_replacerot] S0 delay=37.7 cells=3948 area=11262.0 verdict=PASS rc=0
@@ -105,7 +105,7 @@ XCHECK seed_rnd16: FAIL 10000/10000 mismatches
 [2026-10-03T23:54:34Z]   death @S1: HYPOTHESIS: linear hull through the round linears (10 LIN rejections) — the (a,b) rotation pairs admit a high-bias linear trail at 6r.
 [2026-10-03T23:54:34Z] gen 0: evaluating seed seed_rnd18 {"const_fam": null, "const_where": "none", "mask": "none", "pbox_perm": null, "pbox_where": "none", "rounds": 6, "tags":...
 [2026-10-03T23:54:42Z]   [seed_rnd18] xcheck rc=0 XCHECK seed_rnd18: PASS 10000/10000 C==Python
-/home/hatch/workspace/mix/exploration/round20/models/r20.py:93: RuntimeWarning: overflow encountered in scalar multiply
+[/home/hatch/workspace/mix/exploration/round20/models/r20.py](../round20/models/r20.py):93: RuntimeWarning: overflow encountered in scalar multiply
   return (_rotl64_np(k, r) ^ (np.uint64(i + 1) * GOLDEN64)) & MASK32
 
 [2026-10-03T23:57:06Z]   [seed_rnd18] S0 delay=38.4 cells=4031 area=11359.0 verdict=PASS rc=0
@@ -113,7 +113,7 @@ XCHECK seed_rnd16: FAIL 10000/10000 mismatches
 [2026-10-04T02:23:58Z] resumed at gen 0 evals=0 archiveS=4 archiveQ=7
 [2026-10-04T02:23:58Z] gen 0: evaluating seed seed_rnd18 {"const_fam": null, "const_where": "none", "mask": "none", "pbox_perm": null, "pbox_where": "none", "rounds": 6, "tags":...
 [2026-10-04T02:24:06Z]   [seed_rnd18] xcheck rc=0 XCHECK seed_rnd18: PASS 10000/10000 C==Python
-/home/hatch/workspace/mix/exploration/round20/models/r20.py:93: RuntimeWarning: overflow encountered in scalar multiply
+[/home/hatch/workspace/mix/exploration/round20/models/r20.py](../round20/models/r20.py):93: RuntimeWarning: overflow encountered in scalar multiply
   return (_rotl64_np(k, r) ^ (np.uint64(i + 1) * GOLDEN64)) & MASK32
 
 [2026-10-04T02:25:39Z]   [seed_rnd18] S0 delay=38.4 cells=4031 area=11359.0 verdict=PASS rc=0
@@ -121,7 +121,7 @@ XCHECK seed_rnd16: FAIL 10000/10000 mismatches
 [2026-10-04T03:01:14Z] resumed at gen 0 evals=0 archiveS=4 archiveQ=7
 [2026-10-04T03:01:14Z] gen 0: evaluating seed seed_rnd18 {"const_fam": null, "const_where": "none", "mask": "none", "pbox_perm": null, "pbox_where": "none", "rounds": 6, "tags":...
 [2026-10-04T03:01:22Z]   [seed_rnd18] xcheck rc=0 XCHECK seed_rnd18: PASS 10000/10000 C==Python
-/home/hatch/workspace/mix/exploration/round20/models/r20.py:93: RuntimeWarning: overflow encountered in scalar multiply
+[/home/hatch/workspace/mix/exploration/round20/models/r20.py](../round20/models/r20.py):93: RuntimeWarning: overflow encountered in scalar multiply
   return (_rotl64_np(k, r) ^ (np.uint64(i + 1) * GOLDEN64)) & MASK32
 
 [2026-10-04T03:03:21Z]   [seed_rnd18] S0 delay=38.4 cells=4031 area=11359.0 verdict=PASS rc=0
@@ -129,7 +129,7 @@ XCHECK seed_rnd16: FAIL 10000/10000 mismatches
 [2026-10-04T07:54:27Z] resumed at gen 0 evals=0 archiveS=4 archiveQ=7
 [2026-10-04T07:54:27Z] gen 0: evaluating seed seed_rnd18 {"const_fam": null, "const_where": "none", "mask": "none", "pbox_perm": null, "pbox_where": "none", "rounds": 6, "tags":...
 [2026-10-04T07:54:55Z]   [seed_rnd18] xcheck rc=0 XCHECK seed_rnd18: PASS 10000/10000 C==Python
-/home/hatch/workspace/mix/exploration/round20/models/r20.py:93: RuntimeWarning: overflow encountered in scalar multiply
+[/home/hatch/workspace/mix/exploration/round20/models/r20.py](../round20/models/r20.py):93: RuntimeWarning: overflow encountered in scalar multiply
   return (_rotl64_np(k, r) ^ (np.uint64(i + 1) * GOLDEN64)) & MASK32
 
 [2026-10-04T07:54:55Z]   [seed_rnd18] polite_wait: >=2 foreign heavy pipelines, sleeping 300s
@@ -161,7 +161,7 @@ XCHECK seed_rnd16: FAIL 10000/10000 mismatches
 [2026-10-04T10:25:33Z] resumed at gen 0 evals=0 archiveS=4 archiveQ=7
 [2026-10-04T10:25:33Z] gen 0: evaluating seed seed_rnd18 {"const_fam": null, "const_where": "none", "mask": "none", "pbox_perm": null, "pbox_where": "none", "rounds": 6, "tags":...
 [2026-10-04T10:25:40Z]   [seed_rnd18] xcheck rc=0 XCHECK seed_rnd18: PASS 10000/10000 C==Python
-/home/hatch/workspace/mix/exploration/round20/models/r20.py:93: RuntimeWarning: overflow encountered in scalar multiply
+[/home/hatch/workspace/mix/exploration/round20/models/r20.py](../round20/models/r20.py):93: RuntimeWarning: overflow encountered in scalar multiply
   return (_rotl64_np(k, r) ^ (np.uint64(i + 1) * GOLDEN64)) & MASK32
 
 [2026-10-04T10:28:04Z]   [seed_rnd18] S0 delay=38.4 cells=4031 area=11359.0 verdict=PASS rc=0
@@ -177,7 +177,7 @@ XCHECK seed_rnd16: FAIL 10000/10000 mismatches
 [2026-10-04T11:07:14Z]   [seed_rnd18] ARCHIVE-Q EVICT: bic=0.026940838846846435 > 0.02
 [2026-10-04T11:07:14Z] gen 0: evaluating seed seed_rnd19 {"const_fam": null, "const_where": "none", "mask": "none", "pbox_perm": null, "pbox_where": "none", "rounds": 7, "tags":...
 [2026-10-04T11:07:29Z]   [seed_rnd19] xcheck rc=0 XCHECK seed_rnd19: PASS 10000/10000 C==Python
-/home/hatch/workspace/mix/exploration/round20/models/r20.py:93: RuntimeWarning: overflow encountered in scalar multiply
+[/home/hatch/workspace/mix/exploration/round20/models/r20.py](../round20/models/r20.py):93: RuntimeWarning: overflow encountered in scalar multiply
   return (_rotl64_np(k, r) ^ (np.uint64(i + 1) * GOLDEN64)) & MASK32
 
 [2026-10-04T11:10:32Z]   [seed_rnd19] S0 delay=44.1 cells=5087 area=14584.0 verdict=PASS rc=0

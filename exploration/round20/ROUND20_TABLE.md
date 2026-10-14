@@ -31,7 +31,7 @@ C↔model 10,000/10,000 and RTL↔model 300/300 — results in `round20/xcheck/`
 `round20/rtlcheck/`. Round-key indexing: (i+2) convention (round-11 lesson);
 all 9 first try.
 
-## S0 (run_synth.py, authorized path)
+## S0 ([run_synth.py](../run_synth.py), authorized path)
 
 | Candidate | Delay | Ratio | Cells | Area | vs frontier |
 |---|---:|---:|---:|---:|---|
@@ -118,7 +118,7 @@ sac_z5=0 (mandatory) holds for all three.
 | r19_feist6_alt_notr_fm11_nw | PASS ×2 | "All tests were passed" | **BATTERY-PASS** (backfill) |
 | r19_feist6_alt_notr_fm311_nw | PASS ×2 | "All tests were passed" | **BATTERY-PASS** (backfill) |
 
-Batteries launched with `run_fast_battery.sh <cand> 3` (start at S3) since
+Batteries launched with `[run_fast_battery.sh](../fast_battery/run_fast_battery.sh) <cand> 3` (start at S3) since
 S0/S1/S2/Q1 evidence is already recorded; logs in
 `fast_battery/results/<cand>/battery.log` + `round20/battery_<cand>.log`.
 The three fm backfills clear their provisional markers — Frontier Q is now
@@ -185,11 +185,11 @@ fully confirmed.
   and re-measured (37.2u). No synthesis numbers were trusted before the
   RTL fix.
 - Batteries for frontier candidates were launched with
-  `run_fast_battery.sh <cand> 3` (start at S3) to avoid re-running
+  `[run_fast_battery.sh](../fast_battery/run_fast_battery.sh) <cand> 3` (start at S3) to avoid re-running
   recorded S0/S1/S2 stages; max 2 concurrent heavy pipelines throughout.
-- A mid-round service restart killed the run_q1.sh queue after 2/3
+- A mid-round service restart killed the [run_q1.sh](run_q1.sh) queue after 2/3
   candidates; chioff31's Q1 was re-run standalone (resume marks in
-  progress.log made this safe).
+  [progress.log](progress.log) made this safe).
 
 ## Process notes
 

@@ -1,15 +1,15 @@
 # Peer review — statistical claims for `r3_xorlin_qm` (round-3 winner)
 
 Reviewer: independent statistics track (not the designer).
-Date: 2026-10-01. Workspace: `~/workspace/mix/exploration/` (round4/ untouched).
+Date: 2026-10-01. Workspace: [`~/workspace/mix/exploration/`](./) (round4/ untouched).
 Design: `r3_xorlin_qm` (V_a) — 4-round SPN, PRESENT S-box as Quine–McCluskey-minimized SOP,
 L(x)=x⊕ROTL(x,11)⊕ROTL(x,37), xor key schedule. Only functional change vs
 `spn4_xorlin_1137` is the S-box ROM→SOP substitution.
 
-Sources read: `screen_cal.py`, `run_screen_cal.py`, `screen_lib.py` (constants),
-`models/spn4_xorlin_1137.py`, `gen_r3.py`, `check_rtl.py`, `qm_sbox.py`,
-`practrand_gen.py`, `testu01_smallcrush.c`, `~/workspace/mix/scenarios.md`,
-`candidates.md`, `results/*/screen_cal.json`. Verified from installed tool sources:
+Sources read: [`screen_cal.py`](screen_cal.py), [`run_screen_cal.py`](run_screen_cal.py), [`screen_lib.py`](screen_lib.py) (constants),
+[`models/spn4_xorlin_1137.py`](models/spn4_xorlin_1137.py), [`gen_r3.py`](gen_r3.py), [`check_rtl.py`](check_rtl.py), [`qm_sbox.py`](qm_sbox.py),
+[`practrand_gen.py`](practrand_gen.py), [`testu01_smallcrush.c`](testu01_smallcrush.c), [`~/workspace/mix/scenarios.md`](../scenarios.md),
+[`candidates.md`](candidates.md), `results/*/screen_cal.json`. Verified from installed tool sources:
 PractRand `BRank.h`, TestU01 `sknuth_SimpPoker` + `unif01_StripL`.
 
 ## Verdicts (one line each)
@@ -35,8 +35,8 @@ PractRand `BRank.h`, TestU01 `sknuth_SimpPoker` + `unif01_StripL`.
 1. The calibrated screen ran on `mix_spn4_xorlin_1137_np` (the vectorized numpy model —
    the only model with the array API `screen_calibrated` requires; scalar≡np cross-checked,
    re-verified 50/50 vectors today).
-2. The winner's RTL was checked against **the same** numpy function (`gen_r3.py::check_equiv`
-   → `check_rtl.py` vs `models.spn4_xorlin_1137.mix_spn4_xorlin_1137_np`): 200/200 random
+2. The winner's RTL was checked against **the same** numpy function (`[gen_r3.py](gen_r3.py)::check_equiv`
+   → [`check_rtl.py`](check_rtl.py) vs `models.spn4_xorlin_1137.mix_spn4_xorlin_1137_np`): 200/200 random
    vectors (seed 0xBEEF), EQUIV-OK.
 3. The S-box substitution is exact by construction: the QM minimizer enumerates prime
    implicants of the on-set only (implicants can't cover off-set points) and covers all
@@ -60,7 +60,7 @@ vectors with near-certainty; the only logic change is provably exact.
   cells against the RTL netlist.
 - **[minor] A2 — The batteries are inherited too, via a weaker link.** PractRand used the
   numpy model directly (fine — same argument as above), but TestU01 used a C
-  reimplementation (`testu01_smallcrush.c`) with **no recorded cross-validation** against the
+  reimplementation ([`testu01_smallcrush.c`](testu01_smallcrush.c)) with **no recorded cross-validation** against the
   numpy model. It matches by inspection (round keys, S-box table, rotations all agree), and
   PractRand corroborates the qualitative failure, so a spurious artifact is unlikely — but
   the cross-check is a 5-minute job and should exist before the battery results are quoted
@@ -94,7 +94,7 @@ CAL_PASS ⇔ zero rejections. N=2^18 per cell, 10 keys (8 fixed + 2 random), +12
      DESC-j=2^64−1; next 0.0518 on POW2-2^16). So the PASS conclusion stands, but the
      nominal "FWER controlled at 0.01" is not literally established. State it as a
      heuristic screen with corroboration, not a calibrated level-α test.
-- **[major] B2 — Coverage vs `scenarios.md` is partial; "468 cells" overstates it.**
+- **[major] B2 — Coverage vs [`scenarios.md`](../scenarios.md) is partial; "468 cells" overstates it.**
   The catalog says "every finalist must pass all of these." Gaps in the calibrated run:
   1. **Keys:** 8 fixed + **2** random vs catalog's "≥32 pseudorandom keys". The 128×64
      key-sweep partially compensates (per-bit over the key axis) but with n=64 it is coarse.
@@ -121,12 +121,12 @@ CAL_PASS ⇔ zero rejections. N=2^18 per cell, 10 keys (8 fixed + 2 random), +12
   "reject if either rejects" rule doubles the budget. (Holm needs no cross-cell independence —
   that part is genuinely solid.) Fix by stating per-family control or using α=0.005/family.
 - **[minor] B5 — Fisher dilution blinds the screen to isolated single-bit bias (disclosed,
-  but in tension with scenarios.md).** Verified numerically: one bit at |z|=6 among 63 null
+  but in tension with [scenarios.md](../scenarios.md)).** Verified numerically: one bit at |z|=6 among 63 null
   bits → Fisher combined p≈0.013 ≫ Holm threshold 2.2e-5 → **no rejection** (the self-test
   even asserts "expect not rejected"). So the calibrated rule cannot see an isolated
   ~0.6%-bias bit at N=2^18. Practical impact is small (a sub-1% single-bit bias is irrelevant
   to bucketing; the reduction family covers consumed paths), and the Bonferroni-on-max|z|
-  secondary check mitigates it — but scenarios.md §F explicitly wants per-bit monobit to
+  secondary check mitigates it — but [scenarios.md](../scenarios.md) §F explicitly wants per-bit monobit to
   catch single-bit biases "that pooled tests dilute," and Fisher reintroduces exactly that
   dilution. Keep the secondary check as a co-equal gate, not informational-only.
 - **[info] B6 — The raw→calibrated override was the right call.** Raw verdict was FLAG
@@ -162,7 +162,7 @@ justified. It is good *screening* evidence — not a proof, and not full-catalog
 ### Findings
 
 - **[major] C1 — Sequential input IS the deployment distribution; the "PRNG" framing is
-  wrong.** scenarios.md lists SEQ as the canonical case ("ordered integer keys, counters").
+  wrong.** [scenarios.md](../scenarios.md) lists SEQ as the canonical case ("ordered integer keys, counters").
   The PractRand/TestU01 stream h(0),h(1),h(2),… is literally the hash sequence a table
   computes for keys 0,1,2,…. A structural defect in consecutive-output joint distribution is
   in the use case's direct path — not an artificial PRNG scenario the design can disclaim.
@@ -172,7 +172,7 @@ justified. It is good *screening* evidence — not a proof, and not full-catalog
   linear/differential structure through 4 rounds (PRESENT S-box max linear correlation 2^−1;
   4-round trails at ~2^−4 are easily visible in 2^31 bits). Key enters only via xors, so
   differential properties are **key-independent by construction** — "trusted per-map seed"
-  (scenarios.md's rationale for scoping out differential analysis) does **not** neutralize
+  ([scenarios.md](../scenarios.md)'s rationale for scoping out differential analysis) does **not** neutralize
   key-independent differentials. An attacker can analyze the public 4-round structure
   offline, find high-probability low-weight differentials, and force output *relations*
   (hence bucket collisions under mask reduction) without knowing the key. CAL_PASS's
@@ -226,7 +226,7 @@ at least not at adversarial scale.
    `check_rtl`, plus a numpy-vs-C cross-check for the TestU01 model.
 4. **Documentation fixes:** correct the Dieharder note (C6); state FWER as per-family or
    halve α (B4); write down the explicit delta between the calibrated run and
-   scenarios.md (B2); promote the Bonferroni-on-max|z| check to a co-equal gate (B5).
+   [scenarios.md](../scenarios.md) (B2); promote the Bonferroni-on-max|z| check to a co-equal gate (B5).
 5. **Add a moderate positive control** for the screen (B3) — e.g., a 3-round variant — to
    locate the real detection threshold before the next winner is declared on CAL_PASS alone.
 
@@ -238,6 +238,6 @@ at least not at adversarial scale.
   C2 (key-independent joint structure in reduction-consumed bits),
   C3 (128× sample-size/power mismatch)
 - minor: A1 (composition evidence = 200 vectors), A2/C5 (C model unvalidated),
-  B4 (FWER 0.02 not 0.01), B5 (Fisher dilution vs scenarios.md intent),
+  B4 (FWER 0.02 not 0.01), B5 (Fisher dilution vs [scenarios.md](../scenarios.md) intent),
   C4 (12-round diagnostic unlogged)
 - info: A3, B6, C6

@@ -65,7 +65,7 @@ candidate directories.
 ## Evidence locations (per candidate)
 
 - Implementation + model: [`fast_battery/candidates/<name>/{impl.c,rtl.v,model.py,meta.json}`](fast_battery/candidates/)
-- Round table: `round<N>/ROUND<N>_TABLE.md` (O44: `round22/ROUND22_TABLE.md`)
+- Round table: `round<N>/ROUND<N>_TABLE.md` (O44: [`round22/ROUND22_TABLE.md`](round22/ROUND22_TABLE.md))
 - Battery log: `round<N>/battery_<name>.log` (S3/S4 verdicts)
 - S0/S1/S2/Q1: `round<N>/{s0,s1,q1}/`, `round<N>/s2_<name>.log`
 
@@ -87,8 +87,8 @@ discriminator the standard battery cannot provide. Practical notes:
 
 ## Retention rules for all tracks
 
-1. Never delete `fast_battery/candidates/<name>/`.
+1. Never delete [`fast_battery/candidates/<name>/`](fast_battery/candidates/).
 2. Never delete round logs (`round<N>/`, [`round_hyb/`](round_hyb/), [`round_tweak/`](round_tweak/), [`ga/`](ga/)).
-3. "Retired" in PARETO.md / VERDICT_SCOPE.md / round tables = frontier
+3. "Retired" in [PARETO.md](PARETO.md) / [VERDICT_SCOPE.md](VERDICT_SCOPE.md) / round tables = frontier
    membership only. The candidate and its evidence stay.
 4. The RTL package is a *view* over the live frontiers, not the archive.

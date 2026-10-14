@@ -18,8 +18,8 @@ delay numbers, synthesis/equivalence/bijectivity (covered by other audits).
   `audit/s2_k0.log`, `audit/s2_k1.log`, `results/.../s3_k0|k1|k1s3/*.log`,
   `results/.../s4/smallcrush.log`.
 - Read methodology sources in full: `fast_battery/src/s1_screen.py`,
-  `lin_diff.py`, `screen_lindiff.py`, `screen_cal.py` (incl. PB/RD families),
-  `s2_diffprof.c`, `s3_gen.c`, `s3_practrand.sh`, `s4_smallcrush.c`,
+  [`lin_diff.py`](../../fast_battery/src/lin_diff.py), [`screen_lindiff.py`](../../screen_lindiff.py), [`screen_cal.py`](../../screen_cal.py) (incl. PB/RD families),
+  [`s2_diffprof.c`](../../fast_battery/src/s2_diffprof.c), [`s3_gen.c`](../../fast_battery/src/s3_gen.c), [`s3_practrand.sh`](../../fast_battery/src/s3_practrand.sh), [`s4_smallcrush.c`](../../fast_battery/src/s4_smallcrush.c),
   candidate `impl.c`/`model.py`.
 - Recomputed independently: S-box DDT/LAT (max DP = 4/16 = 2^-2), LIN null
   `P(rank<=61)=0.005285` (verified analytically ≈ 0.00528, exact is correct),
@@ -27,7 +27,7 @@ delay numbers, synthesis/equivalence/bijectivity (covered by other audits).
   S2 null expectations, detection floors, S1 expected max|z|.
 - Re-ran SmallCrush myself with a **different key** (`0x9E3779B97F4A7C15`;
   team's key presumed `0x123456789ABCDEF0`, not recorded in their log):
-  built from `s4_smallcrush.c` + candidate `impl.c` with
+  built from [`s4_smallcrush.c`](../../fast_battery/src/s4_smallcrush.c) + candidate `impl.c` with
   `-DGOLDEN_OUT=0x9433380721f156b2` (golden = Python model `mix(0,
   0x123456789ABCDEF0)`; bit-exact sanity check passed, i.e. C↔Python agree).
   Log: `audit/s4_smallcrush_key9e37.log`.
@@ -41,7 +41,7 @@ needs *valid* per-cell p-values. Three of the four families Fisher-combine
 *dependent* p-values inside each cell: PB combines 64 per-bit p-values from
 the same N outputs; RD combines 9 reduction p-values from the same S; DIFF
 combines 18 delta p-values from overlapping input sets. The team's own
-`screen_cal.py` docstring admits Fisher "assumes independence, so as an exact
+[`screen_cal.py`](../../screen_cal.py) docstring admits Fisher "assumes independence, so as an exact
 test it is liberal under dependence; it is used here as the prescribed
 calibrated screening heuristic." A procedure that is *admitted* liberal
 cannot support the word "honest". Only the LIN family (single exact binomial
@@ -67,14 +67,14 @@ not be read as "4% chance this survivor is a false positive of the search".
 
 ### MAJOR-3 — Latent orchestrator bug: inner LIN/DIFF kill signal is dropped
 
-`s1_screen.py` runs LIN/DIFF via `lin_diff.py` for the verdict, but
+[`s1_screen.py`](../../fast_battery/src/s1_screen.py) runs LIN/DIFF via [`lin_diff.py`](../../fast_battery/src/lin_diff.py) for the verdict, but
 `screen_calibrated()` *re-runs* LIN/DIFF via a *different implementation*
-(`screen_lindiff.py`) as its early-kill gate. The two implementations differ:
+([`screen_lindiff.py`](../../screen_lindiff.py)) as its early-kill gate. The two implementations differ:
 different pair sets (lin_diff uses 2^16 pairs for deltas 2^0..2^16 vs 2^17
 in screen_lindiff) and different p-transforms (normal approx vs
 Wilson-Hilferty). If the inner gate flags, `screen_calibrated` returns
 `cal_rejected_perbit=[]`, `cal_rejected_red=[]`, `s1_kill=True`,
-`cal_verdict="CAL_FLAG"` — and `s1_screen.py` **ignores** `s1_kill` and
+`cal_verdict="CAL_FLAG"` — and [`s1_screen.py`](../../fast_battery/src/s1_screen.py) **ignores** `s1_kill` and
 `cal_verdict`, sees two empty rejection lists, and can emit **CAL_PASS**.
 The kill path was not taken for this candidate (both implementations pass),
 so this did not fire — but a borderline candidate could be misreported as
@@ -136,7 +136,7 @@ weak-key or related-key analysis (M9 acknowledged as remaining).
 
 ### MINOR-2 — S3 stage-verdict logic: FAIL-only grep misses "unusual"/"suspicious" and vacuous stages
 
-- `s3_practrand.sh` kills only on `grep -q "FAIL"`. PractRand's intermediate
+- [`s3_practrand.sh`](../../fast_battery/src/s3_practrand.sh) kills only on `grep -q "FAIL"`. PractRand's intermediate
   tiers ("unusual", "mildly suspicious", "suspicious") never kill. Instance:
   `s3_k1s3/s3_practrand_16MB.log` shows `Gap-16:A  R= -4.3  p=1-4.4e-4
   unusual` ("...and 146 test result(s) without anomalies"). Assessment:
@@ -162,7 +162,7 @@ gap). My re-run adds key 0x9E3779B97F4A7C15 → 15/15 pass, min p-value 0.09
 
 ### MINOR-4 — Cosmetic/robustness nits
 
-- `bonf_logp` in `lin_diff.py` is "capped later" per comment but never
+- `bonf_logp` in [`lin_diff.py`](../../fast_battery/src/lin_diff.py) is "capped later" per comment but never
   capped: `s1_result.json` contains positive log-p values (0.148, 0.262,
   0.503). Not used in any verdict; fix the comment or the cap.
 - S1 LIN's most extreme cell: D=36/4096, logp=-5.86, key

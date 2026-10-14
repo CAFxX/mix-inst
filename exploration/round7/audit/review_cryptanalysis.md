@@ -37,14 +37,14 @@ disagreement is documented as a finding.
   per round (key=0); `mix(v,k)=v` fixed points over 2²² inputs × 3 keys; complementation
   probes over 2²⁰ inputs; key-bit reachability into F.
 
-Scripts: `cryptanalysis/ca_sbox.py`, `ca_keys.py`, `ca_trails.py`, `ca_construct.py`,
-`ca_emp2r_vec.py`, `ca_fast.py` (all in this `audit/cryptanalysis/` directory).
+Scripts: [`cryptanalysis/ca_sbox.py`](cryptanalysis/ca_sbox.py), [`ca_keys.py`](cryptanalysis/ca_keys.py), [`ca_trails.py`](cryptanalysis/ca_trails.py), [`ca_construct.py`](cryptanalysis/ca_construct.py),
+[`ca_emp2r_vec.py`](cryptanalysis/ca_emp2r_vec.py), [`ca_fast.py`](cryptanalysis/ca_fast.py) (all in this `audit/cryptanalysis/` directory).
 
 ## Findings
 
 ### MAJOR-1 — M9's differential bound is incorrect; the safety case must be revised
 
-M9 (`M9_hashdos_DRAFT.md`, `trail.log`) claims "best measured 2-round trail ≈ 2⁻¹⁰"
+M9 (`M9_hashdos_DRAFT.md`, [`trail.log`](m9/trail.log)) claims "best measured 2-round trail ≈ 2⁻¹⁰"
 (`1-round F: … p~2^-2.00`, `2nd-round F: … p~2^-7.99`) and extrapolates "8-round ≈ 2⁻⁵⁸".
 **This misses the best 2-round trail.** M9 only chained the non-skip pattern
 (input difference `(0, din)`). The Feistel round-skip pattern — input difference `(a, 0)`
@@ -166,7 +166,7 @@ final xor. No slide pairs possible (distinct rotations + distinct round constant
 - **No complementation/symmetry**: `P(mix(v^c,k) = mix(v,k)^c) = 0` measured over 2²⁰
   inputs for `c ∈ {all-ones, 0x00000000FFFFFFFF, 0xFFFFFFFF00000000, 1, 1<<32}`;
   `P(mix(~v,~k) = ~mix(v,k)) = 0`.
-- **Bit-exactness**: C `impl.c` vs Python `r7.py`: 0 mismatches on 3000 random +
+- **Bit-exactness**: C `impl.c` vs Python [`r7.py`](../models/r7.py): 0 mismatches on 3000 random +
   5 structured vectors.
 - **Hash-DoS, experimental**: for fixed key, `mix(·,k)` is a **permutation** (Feistel),
   so exact 64-bit collisions **do not exist** — no differential, MITM, or birthday

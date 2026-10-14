@@ -84,7 +84,7 @@ C↔model 10,000/10,000 and RTL↔model 300/300 — results in `round_hyb/xcheck
 helper bugs caught and fixed before generation (decrypt-side only; model
 correct): wrong-half F evaluation + output packing. See Process notes §1.
 
-## S0 (run_synth.py, authorized path)
+## S0 ([run_synth.py](../run_synth.py), authorized path)
 
 | Candidate | Delay | Ratio | Cells | Area | vs frontier |
 |---|---:|---:|---:|---:|---|
@@ -108,7 +108,7 @@ correct): wrong-half F evaluation + output packing. See Process notes §1.
 | rh_feist6_notr_psfinal_nw | 38.8u | 0.375× | 3,694 | 10,674 | dominated (slower than chioff31 37.5u) |
 
 All pass the S0 bar (≤ 93.15u). Multiplier ref: 103.5u. Dual-analyzer agreement
-(`analyze.py == analyze2.py`) confirmed on all logs. Note: S0 for the LM pair
+(`[analyze.py](../../synth/analyze.py) == [analyze2.py](../analyze2.py)`) confirmed on all logs. Note: S0 for the LM pair
 was run twice (manual fix-up run + pipeline re-run after the rtlcheck fix —
 same RTL, both runs agree: 45.5u / 43.4u); the duplicate is recorded in
 Process notes §4.
@@ -195,7 +195,7 @@ All rh2: xcheck 10k/10k, rtlcheck 300/300. Bit-exact.
 (Per Carlo 2026-10-03 methodology upgrade: (a) precise failing signal with
 numbers from the logs, (b) mechanistic hypothesis traced to the parent trait,
 (c) one follow-up rh2_* hybrid per distinct kill mechanism, cap ~6.
-The VERDICT_SCOPE.md ledger entries stay terse and construction-scoped;
+The [VERDICT_SCOPE.md](../VERDICT_SCOPE.md) ledger entries stay terse and construction-scoped;
 this section carries the mechanism + follow-up.)
 
 ### M1. Even-term linear singularity — rh_feist6_parsplit_3rot_nw (S1 kill)

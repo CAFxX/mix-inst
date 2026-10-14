@@ -8,7 +8,7 @@
 | Mapped-netlist vs Python model | Icarus + functional cell models, 300 random vectors | 300/300 match |
 | Bijectivity per fixed key | Exhaustive on structurally identical 16-bit instance, 7 keys | 65536/65536 distinct each |
 | Relative delay/area | Yosys 0.33 + ABC (`-fast`: strash, dretime, map) to unit-delay `mini.genlib`; critical path by longest-path analysis on mapped netlist | see §2 |
-| Statistical quality | SAC/BIC/uniformity/sequence batteries vs SplitMix64, Murmur3 fmix64 | see TEST_REPORT.md |
+| Statistical quality | SAC/BIC/uniformity/sequence batteries vs SplitMix64, Murmur3 fmix64 | see [TEST_REPORT.md](TEST_REPORT.md) |
 
 ## 2. Relative synthesis results (unit-delay teaching library — ratios only)
 
@@ -40,7 +40,7 @@ Notes and caveats:
 1. Install SkyWater 130 PDK (`skywater-pdk`) + OpenLane2/OpenROAD flow.
 2. Synthesize three designs with identical constraints/SDC:
    - `mix_spn10` (ROUNDS=10, the candidate; ROUNDS=8 was rejected on
-     statistical grounds — see isa_spec.md §5),
+     statistical grounds — see [isa_spec.md](isa_spec.md) §5),
    - best available 64×64 multiplier (Booth/Wallace, not Yosys `$mul`),
    - 64-bit Kogge-Stone adder (reference).
    Each wrapped identically (registered inputs/outputs or pure
@@ -68,7 +68,7 @@ Notes and caveats:
 - Sequence battery (raw/Lemire/mask/mod-y) on adversarial configs:
   zero *unexplained* flags at |z| > 4 (one 4.5σ flag investigated: not
   reproduced at 16× sample size, neighboring configs clean — classified
-  as statistical fluctuation; see TEST_REPORT.md), and no worse than
+  as statistical fluctuation; see [TEST_REPORT.md](TEST_REPORT.md)), and no worse than
   SplitMix64/Murmur3-fmix64 under identical conditions.
 
 ## 5. Outstanding verification
@@ -77,7 +77,7 @@ Notes and caveats:
 - [ ] Dieharder/PractRand on long streams (PractRand not installed here)
 - [x] Independent peer review (4 reviews completed 2026-10-01: RTL, statistical
       methodology, cryptanalytic soundness, synthesis/ISA honesty — see
-      `reviews/`; findings remediated below)
+      [`reviews/`](reviews/); findings remediated below)
 - [ ] Related-key differential spot-checks — re-scoped: the key schedule
       provides *no related-key resistance by design* (round constants cancel
       under seed differences: Δrk[i] = ROTL(Δkey, 13·(i+1))); acceptable because
@@ -86,8 +86,8 @@ Notes and caveats:
 
 ## 6. Peer-review findings remediated (2026-10-01)
 
-- RTL: no logic bugs; test-hygiene fixes applied — `tb_mix8.v` and
-  `tb_golden.v` now FATAL on missing vector file (were vacuous passes) and
+- RTL: no logic bugs; test-hygiene fixes applied — [`tb_mix8.v`](rtl/tb_mix8.v) and
+  [`tb_golden.v`](rtl/tb_golden.v) now FATAL on missing vector file (were vacuous passes) and
   print explicit PASS/FAIL verdicts; compiled sim binaries removed from tree.
 - Stats methodology: exact null distributions (Lemire/mod preimage counts)
   independently verified correct by brute force on toy widths. Flag threshold
@@ -96,13 +96,13 @@ Notes and caveats:
   `perbit-max|z|` statistic); it found a small real transient bias in SPN-10
   bit 39 (δ≈0.002–0.004, key-dependent, sequential inputs only, washes out by
   N≈2²⁰; SplitMix64 shows the same phenomenon on bit 31) — disclosed in
-  TEST_REPORT.md, no practical impact on the use case.
+  [TEST_REPORT.md](TEST_REPORT.md), no practical impact on the use case.
 - Crypto: PRESENT S-box DDT/LAT verified (2⁻²/2⁻²); ≥20 active S-boxes over
   10 rounds ⇒ ≤2⁻⁴⁰ per-characteristic differential probability, ≤2⁻²⁰ linear
   correlation, key-independent. 14 of 55 round pairs admit exact-collision weak
   keys, but each class is 2–4 keys out of 2⁶⁴ (fraction ≤2⁻⁶²) — negligible.
 - Synth/ISA: all six relative numbers reproduced exactly from archived
   netlists; `-fast` vs default flow discrepancy on the KS adder confirmed a
-  genuine ABC `dch` behavior, fairly applied. isa_spec.md wording fixes
+  genuine ABC `dch` behavior, fairly applied. [isa_spec.md](isa_spec.md) wording fixes
   applied (see F7–F9 items); "see test report" references repointed to
-  TEST_REPORT.md.
+  [TEST_REPORT.md](TEST_REPORT.md).

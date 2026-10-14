@@ -41,7 +41,7 @@ independent bit loops (3 offset-pairs x 200 vectors); lin3 spot-check vs
 independent shift-or (2 triples x 200 vectors). Dedupe: all 12 specs
 pairwise-distinct by numpy model output before generation.
 
-## S0 (run_synth.py, authorized path)
+## S0 ([run_synth.py](../run_synth.py), authorized path)
 
 | Candidate | Delay | Ratio | Cells | Area | vs frontier |
 |---|---:|---:|---:|---:|---|
@@ -132,7 +132,7 @@ The round's value is entirely in the verdict-scope re-tests:
 
 ## Process notes
 
-1. run_s1.sh's progress-line grep (`CAL_PASS|CAL_FLAG|KILL`) does not match a
+1. [run_s1.sh](run_s1.sh)'s progress-line grep (`CAL_PASS|CAL_FLAG|KILL`) does not match a
    bare `verdict: FLAG` line — giftsplit's FLAG was recorded correctly in
    its log but the progress line showed an empty verdict. Future round
    scripts should grep `CAL_PASS|FLAG|KILL` (bare FLAG included). The logs,

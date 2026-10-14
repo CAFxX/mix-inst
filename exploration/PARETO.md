@@ -17,7 +17,7 @@ Two frontiers are maintained (Carlo 2026-10-03):
   with headroom and rejects the unmixed-final-chi blemish class at
   0.14–0.17).
 
-Delay/area/cells from [run_synth.py](run_synth.py) (authorized path).
+Delay/area/cells from [`run_synth.py`](run_synth.py) (authorized path).
 
 **Retention:** "retired" below means off the Pareto frontier — never deleted.
 Every candidate that ever passed the full battery is retained indefinitely

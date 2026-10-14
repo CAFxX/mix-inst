@@ -48,7 +48,7 @@ all 11 first try. The tail-skip for key-baking tags was generalized
 (`tag.startswith("chi_fm") or tag.endswith("_keyin_notr")`) — round-20
 escape-protocol lesson applied proactively (class hunt at design time).
 
-## S0 (run_synth.py, authorized path)
+## S0 ([run_synth.py](../run_synth.py), authorized path)
 
 | Candidate | Delay | Ratio | Cells | Area | vs frontier |
 |---|---:|---:|---:|---:|---|
@@ -162,11 +162,11 @@ the fm cure on top.
 | chioff13all_fm311 | PASS ×2 | "All tests were passed" | **BATTERY-PASS** |
 | 3rot_ns | PASS ×2 | "All tests were passed" | **BATTERY-PASS** |
 
-Battery queue: detached, 2 concurrent, `run_battery_queue.sh`, progress in
+Battery queue: detached, 2 concurrent, [`run_battery_queue.sh`](run_battery_queue.sh), progress in
 `round21/battery_progress.log`. A mid-queue VM reboot killed chioff31final's
 S4 after S3/S3b had passed; iverilog was reinstalled from the apt cache
 (per AGENTS.md reboot lesson) and the S4 was resumed via
-`run_fast_battery.sh <cand> 4`; the queue was relaunched for the remaining
+`[run_fast_battery.sh](../fast_battery/run_fast_battery.sh) <cand> 4`; the queue was relaunched for the remaining
 4 with keyin31's BATTERY_DONE checkpoint honored.
 
 ## Failure analyses
@@ -286,8 +286,8 @@ Frontier-S size point, retiring r20 chioff31 and r19 chioff13.
    (+1.7–2.4u).
 8. **Process:** a mid-queue VM reboot killed chioff31final's S4 after
    S3/S3b passed; iverilog was reinstalled from the apt cache and the S4
-   resumed via `run_fast_battery.sh <cand> 4` (BATTERY-PASS). The
-   per-candidate checkpointing in battery_progress.log made the resume
+   resumed via `[run_fast_battery.sh](../fast_battery/run_fast_battery.sh) <cand> 4` (BATTERY-PASS). The
+   per-candidate checkpointing in [battery_progress.log](battery_progress.log) made the resume
    exact. The round-20 tail-skip escape was applied at design time
    (generalized condition before any RTL was emitted).
 
@@ -328,9 +328,9 @@ rounds 1–5 byte-identical to 3rot_ns). Target: Frontier-Q size point vs
 r19 fm311 (39.5u/4,467/12,769).
 
 (b) **Results — full pipeline, all green.**
-- Generation: r21.py extended with `_F_chi_fm311` (plain-chi fm311,
+- Generation: [r21.py](models/r21.py) extended with `_F_chi_fm311` (plain-chi fm311,
   matches the already-emitted C `F_chi_fm311` and the Verilog `chi_fm311`
-  branch, both added during round 21 for the plain-chi case); gen_r21.py
+  branch, both added during round 21 for the plain-chi case); [gen_r21.py](gen_r21.py)
   gained the `chi_fm311` C_F_EXPR entry + spec. All self-tests re-run:
   DNF OK, chi×4 OK, bijection 12×2000 distinct OK, dedupe 12 specs
   pairwise-distinct OK. The 11 round-21 candidates regenerate
@@ -338,8 +338,8 @@ r19 fm311 (39.5u/4,467/12,769).
 - xcheck: 10000/10000 C==Python PASS. RTL check: 300/300 PASS
   (all logic inside the single always block; fm round tail-skip via the
   generalized `tag.startswith("chi_fm")` condition).
-- S0: **38.3u** / 4,299 cells / 12,356 area (run_synth.py, pinned Yosys
-  0.69, analyze.py == analyze2.py). Cure cost vs base: +0.9u, +632 cells,
+- S0: **38.3u** / 4,299 cells / 12,356 area ([run_synth.py](../run_synth.py), pinned Yosys
+  0.69, [analyze.py](../../synth/analyze.py) == [analyze2.py](../analyze2.py)). Cure cost vs base: +0.9u, +632 cells,
   +1,614 area — consistent with the fm cure scaling with chi cone.
 - S1: CAL_PASS. S2: PASS, 0 repeats, max|z|=4.7 (all 115 deltas).
 - Q1: **sac_z5=0**, **bic_maxcorr=0.00883**, bic_meancorr=0.00156,
@@ -349,7 +349,7 @@ r19 fm311 (39.5u/4,467/12,769).
   strided key=0x0: 1GB no FAIL). S4: SmallCrush "All tests were passed".
   BATTERY-PASS — `round21/battery_r21b_3rot_ns_fm311_nw.log`.
 - r21b is a **full-battery survivor** (S0–S4 + Q1 sac_z5=0): retained
-  indefinitely per the standing retention rule; joins the RETAINED.md
+  indefinitely per the standing retention rule; joins the [RETAINED.md](../RETAINED.md)
   registry. Nothing deleted; candidate dir and all round logs intact.
 
 (c) **Frontier-Q assessment** (post-O44 landscape: r22c 28.3u/4,656/12,949
@@ -362,5 +362,5 @@ area TIE — weakly dominates (coordinator's call on the tie).
 vs r22c: +10u slower but −357 cells/−593 area (genuine tradeoff).
 r21b does NOT take the speed point (r22c) nor the size point (r8 4,133);
 it becomes the mid-frontier point, strictly removing two members.
-NOT yet edited into PARETO.md — pending coordinator raw-log
+NOT yet edited into [PARETO.md](../PARETO.md) — pending coordinator raw-log
 verification (S0/S1/S2/Q1/S3/S4). RTL package sync pending.

@@ -2,14 +2,14 @@
 
 ## Strategic context
 - **Delay bar**: relative, ≤0.9× the 64×64 multiplier re-measured in the current
-  flow. Multiplier ref: 103.5u (fast_battery/ref/mult_ref.txt) → **bar ≈ 93.2u**.
+  flow. Multiplier ref: 103.5u ([fast_battery/ref/mult_ref.txt](fast_battery/ref/mult_ref.txt)) → **bar ≈ 93.2u**.
 - **Binding constraint**: LIN/DIFF (amended 4-family screen), not delay.
 - **xorshift64 pre-diffusion abandoned** as core primitive (round-5 finding).
 - **S1 pipeline**: LIN/DIFF run FIRST; marginal (PB/RD) screen skipped on kill.
   Validated: h_xorspn3 dies in ~15s.
 
 ## SOTA refresh (2026-10-01)
-Fresh sweep written to `exploration/sota_leads.md`. Key leads:
+Fresh sweep written to [`exploration/sota_leads.md`](sota_leads.md). Key leads:
 - THF (eprint 2025/1314): fresh unrolled latency table; QARMAv2 tweak ideas.
 - Orthros (2021): non-invertible low-latency PRF precedent — our mixer need not
   be invertible.
@@ -112,7 +112,7 @@ independent S1 confirmation).
    Fixed with explicit 32-bit masking.
 2. **Verilog rk missing round constant**: `_rk_np(k,i) = rotl(k,13*(i+1)) ^ rc(i)`
    but Verilog only did rotation. Fixed.
-3. **run_synth.py**: removed `-fast` (incompatible with `-genlib` in this ABC
+3. **[run_synth.py](run_synth.py)**: removed `-fast` (incompatible with `-genlib` in this ABC
    version); added `memory_map` for ROM inference from case statements.
 
 ## Next gates (per kill-chain)

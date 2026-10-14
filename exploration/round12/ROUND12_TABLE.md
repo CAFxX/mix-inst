@@ -22,7 +22,7 @@ r7/r8/r9 key schedule. Generator: `round12/gen_r12.py`; reference:
 `round12/models/r12.py`. C↔model 10,000/10,000 and RTL↔model 300/300 for all
 10 (round-key indexing uses the (i+2) convention per the round-11 lesson).
 
-## S0 (run_synth.py, authorized path)
+## S0 ([run_synth.py](../run_synth.py), authorized path)
 
 | Candidate | Delay | Ratio | Cells | Area | vs frontier |
 |---|---:|---:|---:|---:|---|
@@ -87,7 +87,7 @@ to the non-S-box half do not get enough nonlinear diffusion even at 8 rounds.
 ## Evidence locations
 
 - `round12/gen_r12.py`, `round12/models/r12.py`
-- `round12/s0/` (per-candidate run_synth.py logs), `round12/s0_progress.log`
+- `round12/s0/` (per-candidate [run_synth.py](../run_synth.py) logs), `round12/s0_progress.log`
 - `round12/s1/` + `round12/s1_<cand>.log`, `round12/s1_progress.log`
 - `round12/xcheck/` (C↔model 10k), `round12/rtlcheck/` (RTL↔model 300)
 - `round12/battery_r12_feist8_s1half311_nw.log`; S2 detail in

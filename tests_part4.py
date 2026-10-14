@@ -1,8 +1,8 @@
 """Follow-up: (a) fixed Lemire binning for X=2^32; (b) top-bit balance under
 high-only-varying inputs, SPN-10 vs baselines, larger N."""
-import sys
+import os, sys
 import numpy as np
-sys.path.insert(0, "/home/hatch/workspace/mix")
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from spn import mix_spn_np, U64
 from tests_part1 import splitmix_np, murmur_np
 from tests_part3 import lemire_high64, chi2_z, monobit_z

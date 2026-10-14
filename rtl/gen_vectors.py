@@ -1,11 +1,11 @@
 """Generate golden vectors: val, key, expected = mix_spn_scalar(val,key,12)."""
-import random, sys
-sys.path.insert(0, "/home/hatch/workspace/mix")
+import os, random, sys
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from spn import mix_spn_scalar
 
 rng = random.Random(0xBEEF)
 N = 3000
-with open("/home/hatch/workspace/mix/rtl/vectors.hex", "w") as f:
+with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "vectors.hex"), "w") as f:
     for _ in range(N):
         v = rng.getrandbits(64)
         k = rng.getrandbits(64)

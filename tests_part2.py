@@ -1,7 +1,7 @@
 """Avalanche / SAC / BIC / uniformity for SPN rounds vs splitmix & murmur."""
-import sys, time
+import os, sys, time
 import numpy as np
-sys.path.insert(0, "/home/hatch/workspace/mix")
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from spn import mix_spn_np, U64
 from tests_part1 import splitmix_np, murmur_np
 

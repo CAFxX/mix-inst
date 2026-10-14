@@ -1,8 +1,8 @@
 """Sequence battery for SPN-10: raw / Lemire / mask / mod-y uniformity.
 All numbers MEASURED. Pass flag: |z| < 4 (chi2 z-score vs df)."""
-import sys, time
+import os, sys, time
 import numpy as np
-sys.path.insert(0, "/home/hatch/workspace/mix")
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from spn import mix_spn_np, U64, MASK64
 MASK32 = U64(0xFFFFFFFF)
 

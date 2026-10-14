@@ -1,8 +1,8 @@
 """Adversarial follow-up: worst keys for the 8-round weakness, N=2^18.
 SPN-8 included as positive control (must flag); SPN-10 must be clean."""
-import sys, time
+import os, sys, time
 import numpy as np
-sys.path.insert(0, "/home/hatch/workspace/mix")
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from tests_final import seq_battery, splitmix_np, murmur_np
 from spn import mix_spn_np
 

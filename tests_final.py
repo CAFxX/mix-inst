@@ -3,9 +3,9 @@ Covers: SAC (val+key), BIC, sequential-input uniformity at multiple widths,
 and the sequence battery (raw / Lemire / mask / mod-y) on adversarial configs.
 All numbers MEASURED. Run: python3 tests_final.py  (takes ~1-2 min)
 """
-import sys, time
+import os, sys, time
 import numpy as np
-sys.path.insert(0, "/home/hatch/workspace/mix")
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from spn import mix_spn_np, U64
 
 BIT = np.arange(64, dtype=np.uint64)

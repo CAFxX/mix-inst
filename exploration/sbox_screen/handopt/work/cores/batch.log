@@ -1,0 +1,9 @@
+agentwork-launch: tag=track2/sbox8-handopt schedulers:[none [mq-deadline]  ] ionice=best-effort/7 (effective only on BFQ/cfq; no-op on mq-deadline)
+wrote /home/hatch/workspace/mix/exploration/sbox_screen/handopt/work/cores/core_lam0x8_b0.v (lam=0x8, beta idx 0)
+lam=0x8 beta=0: RESULT name=comp8_core cells=393 area=1114 crit=23.0 delay_ratio=0.222 area_ratio=0.032 ref_crit=103.5 ref_area=35323
+wrote /home/hatch/workspace/mix/exploration/sbox_screen/handopt/work/cores/core_lam0x9_b7.v (lam=0x9, beta idx 7)
+lam=0x9 beta=7: RESULT name=comp8_core cells=354 area=991 crit=25.4 delay_ratio=0.245 area_ratio=0.028 ref_crit=103.5 ref_area=35323
+wrote /home/hatch/workspace/mix/exploration/sbox_screen/handopt/work/cores/core_lam0xa_b6.v (lam=0xa, beta idx 6)
+Terminated
+lam=0xa beta=6: 
+wrote /home/hatch/workspace/mix/exploration/sbox_screen/handopt/work/cores/core_lam0xb_b1.v (lam=0xb, beta idx 1)

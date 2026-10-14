@@ -1,0 +1,25 @@
+  [LIN] key=0x0 D=4096/4096 logp=-inf
+  [LIN] key=0xffffffffffffffff D=2277/4096 logp=-inf
+  [LIN] key=0xaaaaaaaaaaaaaaaa D=2812/4096 logp=-inf
+  [LIN] key=0x5555555555555555 D=4096/4096 logp=-inf
+  [LIN] key=0xdeadbeefdeadbeef D=3614/4096 logp=-inf
+  [LIN] key=0x9e3779b97f4a7c15 D=3884/4096 logp=-inf
+  [LIN] key=0x1234 D=2912/4096 logp=-inf
+  [LIN] key=0x123456789abcdef D=3161/4096 logp=-inf
+  [LIN] key=0xf0b52a9e7d8ba2b5 D=3013/4096 logp=-inf
+  [LIN] key=0x92988f142674743 D=4096/4096 logp=-inf
+  [DIFF] key=0x0 worst|z|=34699.6 fisher_logp=-inf bonf_logp=-602032014.14
+  [DIFF] key=0xffffffffffffffff worst|z|=31798.7 fisher_logp=-inf bonf_logp=-505577476.90
+  [DIFF] key=0xaaaaaaaaaaaaaaaa worst|z|=34412.6 fisher_logp=-inf bonf_logp=-592112354.73
+  [DIFF] key=0x5555555555555555 worst|z|=34479.5 fisher_logp=-inf bonf_logp=-594417219.22
+  [DIFF] key=0xdeadbeefdeadbeef worst|z|=33944.4 fisher_logp=-inf bonf_logp=-576109538.04
+  [DIFF] key=0x9e3779b97f4a7c15 worst|z|=34806.2 fisher_logp=-inf bonf_logp=-605735676.98
+  [DIFF] key=0x1234 worst|z|=31563.0 fisher_logp=-inf bonf_logp=-498110500.40
+  [DIFF] key=0x123456789abcdef worst|z|=33475.0 fisher_logp=-inf bonf_logp=-560289350.38
+  [DIFF] key=0xf0b52a9e7d8ba2b5 worst|z|=34046.4 fisher_logp=-inf bonf_logp=-579577982.77
+  [DIFF] key=0x92988f142674743 worst|z|=30789.5 fisher_logp=-inf bonf_logp=-473996584.10
+  LIN: FLAG (rej=10)  DIFF: FLAG (rej=10)
+[S1 rtw_lin_ab0204] LIN/DIFF 59s: LIN FLAG DIFF FLAG; SKIPPED (LIN/DIFF kill)
+[S1 rtw_lin_ab0204] verdict: FLAG
+/home/hatch/workspace/mix/exploration/round_tweak/models/rtweak.py:112: RuntimeWarning: overflow encountered in scalar multiply
+  return (rotl64_np(k, r) ^ (np.uint64(int(i) + 1) * GOLDEN64)) & MASK32

@@ -1,0 +1,26 @@
+{
+ "name": "wf_pbox_basecheck_nw",
+ "description": "round_wf wire-friendly P-box variant of r22c (W=1450 vs 1450 baseline, S=362); 4r keyed SPN",
+ "composition": "round_wf wire-friendly P-box variant of r22c (W=1450 vs 1450 baseline, S=362); 4r keyed SPN",
+ "rtl_top": "wf_pbox_basecheck_nw",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x6ae4dc553716c81f"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x43839608d3cbe709"
+  }
+ ]
+}

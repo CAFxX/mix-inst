@@ -1,0 +1,26 @@
+{
+ "name": "wf2d_aff_a17_b17",
+ "description": "round_wf 2D-phase P-box variant of r22c (W1d=1358, S=350); 4r keyed SPN",
+ "composition": "round_wf 2D-phase P-box variant of r22c (W1d=1358, S=350); 4r keyed SPN",
+ "rtl_top": "wf2d_aff_a17_b17",
+ "screen_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "practrand_keys": [
+  "0x123456789abcdef0",
+  "0x0"
+ ],
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x7530d3fee9823962"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x43839608d3cbe709"
+  }
+ ]
+}

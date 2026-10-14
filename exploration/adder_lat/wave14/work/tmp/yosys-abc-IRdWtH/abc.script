@@ -1,0 +1,33 @@
+echo + read_blif "/home/hatch/workspace/mix/exploration/adder_lat/wave14/work/tmp/yosys-abc-IRdWtH/input.blif";
+read_blif "/home/hatch/workspace/mix/exploration/adder_lat/wave14/work/tmp/yosys-abc-IRdWtH/input.blif";
+echo + read_library "/home/hatch/workspace/mix/synth/mini.genlib";
+read_library "/home/hatch/workspace/mix/synth/mini.genlib";
+echo + strash;
+strash;
+echo + &get -n;
+&get -n;
+echo + &fraig -x;
+&fraig -x;
+echo + &put;
+&put;
+echo + scorr;
+scorr;
+echo + dc2;
+dc2;
+echo + dretime;
+dretime;
+echo + strash;
+strash;
+echo + &get -n;
+&get -n;
+echo + &dch -f;
+&dch -f;
+echo + &nf ;
+&nf ;
+echo + &put;
+&put;
+echo + write_blif /home/hatch/workspace/mix/exploration/adder_lat/wave14/work/tmp/yosys-abc-IRdWtH/output.blif;
+write_blif /home/hatch/workspace/mix/exploration/adder_lat/wave14/work/tmp/yosys-abc-IRdWtH/output.blif;
+echo;
+echo "YOSYS_ABC_DONE"
+

@@ -1,0 +1,368 @@
+# Benchmark "netlist" written by ABC on Sat Oct 10 23:12:48 2026
+.model netlist
+.inputs ys__n0 ys__n1 ys__n3 ys__n4 ys__n6 ys__n7 ys__n9 ys__n10 ys__n12 \
+ ys__n13 ys__n15 ys__n16 ys__n18 ys__n19 ys__n21 ys__n22 ys__n24 ys__n25 \
+ ys__n27 ys__n28 ys__n30 ys__n31 ys__n33 ys__n34 ys__n36 ys__n37 ys__n39 \
+ ys__n40 ys__n42 ys__n43 ys__n45 ys__n46 ys__n48 ys__n49 ys__n51 ys__n52 \
+ ys__n54 ys__n55 ys__n57 ys__n58 ys__n60 ys__n61 ys__n63 ys__n64 ys__n66 \
+ ys__n67 ys__n70 ys__n71 ys__n73 ys__n74 ys__n76 ys__n77 ys__n79 ys__n80 \
+ ys__n82 ys__n83 ys__n85 ys__n86 ys__n88 ys__n89 ys__n92 ys__n93 ys__n96 \
+ ys__n97 ys__n99 ys__n100 ys__n102 ys__n103 ys__n106 ys__n107 ys__n109 \
+ ys__n110 ys__n112 ys__n113 ys__n115 ys__n116 ys__n118 ys__n119 ys__n121 \
+ ys__n122 ys__n129 ys__n130 ys__n133 ys__n134 ys__n137 ys__n138 ys__n140 \
+ ys__n141 ys__n144 ys__n145 ys__n147 ys__n148 ys__n152 ys__n153 ys__n156 \
+ ys__n157 ys__n159 ys__n160 ys__n162 ys__n163 ys__n168 ys__n169 ys__n171 \
+ ys__n172 ys__n175 ys__n176 ys__n180 ys__n181 ys__n184 ys__n185 ys__n188 \
+ ys__n189 ys__n193 ys__n194 ys__n203 ys__n204 ys__n207 ys__n208 ys__n212 \
+ ys__n213 ys__n385 ys__n386 ys__n417 ys__n418 ys__n419 ys__n420 ys__n596 \
+ ys__n597
+.outputs ys__n101 ys__n533 ys__n534 ys__n535 ys__n536 ys__n537 ys__n538 \
+ ys__n539 ys__n540 ys__n541 ys__n542 ys__n543 ys__n544 ys__n545 ys__n546 \
+ ys__n547 ys__n548 ys__n549 ys__n550 ys__n551 ys__n552 ys__n553 ys__n554 \
+ ys__n555 ys__n556 ys__n557 ys__n558 ys__n559 ys__n560 ys__n561 ys__n562 \
+ ys__n563 ys__n564 ys__n565 ys__n566 ys__n567 ys__n568 ys__n569 ys__n570 \
+ ys__n571 ys__n572 ys__n573 ys__n574 ys__n575 ys__n576 ys__n577 ys__n578 \
+ ys__n579 ys__n580 ys__n581 ys__n582 ys__n583 ys__n584 ys__n585 ys__n586 \
+ ys__n587 ys__n588 ys__n589 ys__n590 ys__n591 ys__n592 ys__n593 ys__n594 \
+ ys__n595
+.gate NAND2 A=ys__n99 B=ys__n100 Y=new_n193
+.gate XOR2  A=ys__n99 B=ys__n100 Y=ys__n101
+.gate NAND2 A=ys__n159 B=ys__n160 Y=new_n195
+.gate AND2  A=ys__n36 B=ys__n37 Y=new_n196
+.gate NAND2 A=ys__n207 B=ys__n208 Y=new_n197
+.gate XOR2  A=ys__n207 B=ys__n208 Y=new_n198
+.gate NAND2 A=ys__n106 B=ys__n107 Y=new_n199
+.gate OR2   A=ys__n106 B=ys__n107 Y=new_n200
+.gate NAND2 A=ys__n24 B=ys__n25 Y=new_n201
+.gate XOR2  A=ys__n24 B=ys__n25 Y=new_n202
+.gate AND2  A=ys__n417 B=ys__n418 Y=new_n203
+.gate NAND2 A=ys__n6 B=ys__n7 Y=new_n204
+.gate XOR2  A=ys__n6 B=ys__n7 Y=new_n205
+.gate NAND2 A=ys__n27 B=ys__n28 Y=new_n206
+.gate OR2   A=ys__n27 B=ys__n28 Y=new_n207
+.gate NAND2 A=ys__n3 B=ys__n4 Y=new_n208
+.gate XOR2  A=ys__n3 B=ys__n4 Y=new_n209
+.gate NAND2 A=ys__n21 B=ys__n22 Y=new_n210
+.gate OR2   A=ys__n21 B=ys__n22 Y=new_n211
+.gate NAND2 A=ys__n102 B=ys__n103 Y=new_n212
+.gate XOR2  A=ys__n102 B=ys__n103 Y=new_n213
+.gate NAND2 A=ys__n212 B=ys__n213 Y=new_n214
+.gate OR2   A=ys__n212 B=ys__n213 Y=new_n215
+.gate NAND2 A=ys__n188 B=ys__n189 Y=new_n216
+.gate XOR2  A=ys__n188 B=ys__n189 Y=new_n217
+.gate AND2  A=ys__n12 B=ys__n13 Y=new_n218
+.gate NAND2 A=ys__n70 B=ys__n71 Y=new_n219
+.gate XOR2  A=ys__n70 B=ys__n71 Y=new_n220
+.gate OR2   A=ys__n9 B=ys__n10 Y=new_n221
+.gate NAND2 A=ys__n9 B=ys__n10 Y=new_n222
+.gate NAND2 A=ys__n39 B=ys__n40 Y=new_n223
+.gate XOR2  A=ys__n39 B=ys__n40 Y=new_n224
+.gate NAND2 A=ys__n121 B=ys__n122 Y=new_n225
+.gate OR2   A=ys__n121 B=ys__n122 Y=new_n226
+.gate NAND2 A=ys__n42 B=ys__n43 Y=new_n227
+.gate XOR2  A=ys__n42 B=ys__n43 Y=new_n228
+.gate OR2   A=ys__n30 B=ys__n31 Y=new_n229
+.gate NAND2 A=ys__n30 B=ys__n31 Y=new_n230
+.gate NAND2 A=ys__n133 B=ys__n134 Y=new_n231
+.gate XOR2  A=ys__n133 B=ys__n134 Y=new_n232
+.gate AND2  A=ys__n18 B=ys__n19 Y=new_n233
+.gate XNOR2 A=ys__n18 B=ys__n19 Y=new_n234
+.gate NAND2 A=ys__n76 B=ys__n77 Y=new_n235
+.gate XOR2  A=ys__n76 B=ys__n77 Y=new_n236
+.gate NAND2 A=ys__n15 B=ys__n16 Y=new_n237
+.gate OR2   A=ys__n15 B=ys__n16 Y=new_n238
+.gate NAND2 A=ys__n73 B=ys__n74 Y=new_n239
+.gate XOR2  A=ys__n73 B=ys__n74 Y=new_n240
+.gate NAND2 A=ys__n193 B=ys__n194 Y=new_n241
+.gate OR2   A=ys__n193 B=ys__n194 Y=new_n242
+.gate NAND2 A=ys__n109 B=ys__n110 Y=new_n243
+.gate XOR2  A=ys__n109 B=ys__n110 Y=new_n244
+.gate NAND2 A=ys__n184 B=ys__n185 Y=new_n245
+.gate OR2   A=ys__n184 B=ys__n185 Y=new_n246
+.gate NAND2 A=ys__n144 B=ys__n145 Y=new_n247
+.gate XOR2  A=ys__n144 B=ys__n145 Y=new_n248
+.gate AND2  A=ys__n82 B=ys__n83 Y=new_n249
+.gate NAND2 A=ys__n118 B=ys__n119 Y=new_n250
+.gate XOR2  A=ys__n118 B=ys__n119 Y=new_n251
+.gate OR2   A=ys__n79 B=ys__n80 Y=new_n252
+.gate NAND2 A=ys__n79 B=ys__n80 Y=new_n253
+.gate NAND2 A=ys__n66 B=ys__n67 Y=new_n254
+.gate XOR2  A=ys__n66 B=ys__n67 Y=new_n255
+.gate NAND2 A=ys__n156 B=ys__n157 Y=new_n256
+.gate OR2   A=ys__n156 B=ys__n157 Y=new_n257
+.gate NAND2 A=ys__n63 B=ys__n64 Y=new_n258
+.gate XOR2  A=ys__n63 B=ys__n64 Y=new_n259
+.gate NAND2 A=ys__n112 B=ys__n113 Y=new_n260
+.gate OR2   A=ys__n112 B=ys__n113 Y=new_n261
+.gate NAND2 A=ys__n115 B=ys__n116 Y=new_n262
+.gate XOR2  A=ys__n115 B=ys__n116 Y=new_n263
+.gate NAND2 A=ys__n180 B=ys__n181 Y=new_n264
+.gate OR2   A=ys__n180 B=ys__n181 Y=new_n265
+.gate NAND2 A=ys__n88 B=ys__n89 Y=new_n266
+.gate XOR2  A=ys__n88 B=ys__n89 Y=new_n267
+.gate OR2   A=ys__n60 B=ys__n61 Y=new_n268
+.gate NAND2 A=ys__n60 B=ys__n61 Y=new_n269
+.gate NAND2 A=ys__n85 B=ys__n86 Y=new_n270
+.gate XOR2  A=ys__n85 B=ys__n86 Y=new_n271
+.gate NAND2 A=ys__n57 B=ys__n58 Y=new_n272
+.gate OR2   A=ys__n57 B=ys__n58 Y=new_n273
+.gate NAND2 A=ys__n129 B=ys__n130 Y=new_n274
+.gate XOR2  A=ys__n129 B=ys__n130 Y=new_n275
+.gate NAND2 A=ys__n175 B=ys__n176 Y=new_n276
+.gate OR2   A=ys__n175 B=ys__n176 Y=new_n277
+.gate NAND2 A=ys__n419 B=ys__n420 Y=new_n278
+.gate XOR2  A=ys__n419 B=ys__n420 Y=new_n279
+.gate NAND2 A=ys__n92 B=ys__n93 Y=new_n280
+.gate OR2   A=ys__n92 B=ys__n93 Y=new_n281
+.gate NAND2 A=ys__n147 B=ys__n148 Y=new_n282
+.gate XOR2  A=ys__n147 B=ys__n148 Y=new_n283
+.gate NAND2 A=ys__n54 B=ys__n55 Y=new_n284
+.gate OR2   A=ys__n54 B=ys__n55 Y=new_n285
+.gate NAND2 A=ys__n33 B=ys__n34 Y=new_n286
+.gate XOR2  A=ys__n33 B=ys__n34 Y=new_n287
+.gate NAND2 A=ys__n51 B=ys__n52 Y=new_n288
+.gate OR2   A=ys__n51 B=ys__n52 Y=new_n289
+.gate NAND2 A=ys__n162 B=ys__n163 Y=new_n290
+.gate XOR2  A=ys__n162 B=ys__n163 Y=new_n291
+.gate NAND2 A=ys__n171 B=ys__n172 Y=new_n292
+.gate OR2   A=ys__n171 B=ys__n172 Y=new_n293
+.gate NAND2 A=ys__n137 B=ys__n138 Y=new_n294
+.gate XOR2  A=ys__n137 B=ys__n138 Y=new_n295
+.gate AND2  A=ys__n96 B=ys__n97 Y=new_n296
+.gate NAND2 A=ys__n385 B=ys__n386 Y=new_n297
+.gate XNOR2 A=ys__n385 B=ys__n386 Y=new_n298
+.gate INV   A=new_n298 Y=new_n299
+.gate NAND2 A=ys__n48 B=ys__n49 Y=new_n300
+.gate OR2   A=ys__n48 B=ys__n49 Y=new_n301
+.gate NAND2 A=ys__n203 B=ys__n204 Y=new_n302
+.gate XOR2  A=ys__n203 B=ys__n204 Y=new_n303
+.gate NAND2 A=ys__n45 B=ys__n46 Y=new_n304
+.gate INV   A=new_n304 Y=new_n305
+.gate NAND2 A=ys__n152 B=ys__n153 Y=new_n306
+.gate NAND2 A=ys__n140 B=ys__n141 Y=new_n307
+.gate INV   A=new_n307 Y=new_n308
+.gate NAND2 A=ys__n0 B=ys__n1 Y=new_n309
+.gate NAND2 A=ys__n168 B=ys__n169 Y=new_n310
+.gate NOR2  A=ys__n168 B=ys__n169 Y=new_n311
+.gate XOR2  A=ys__n168 B=ys__n169 Y=new_n312
+.gate OAI21 A=new_n193 B=new_n311 C=new_n310 Y=new_n313
+.gate XOR2  A=ys__n0 B=ys__n1 Y=new_n314
+.gate NAND2 A=new_n313 B=new_n314 Y=new_n315
+.gate NAND2 A=new_n309 B=new_n315 Y=new_n316
+.gate XNOR2 A=ys__n140 B=ys__n141 Y=new_n317
+.gate AOI21 A=new_n309 B=new_n315 C=new_n317 Y=new_n318
+.gate NOR2  A=new_n308 B=new_n318 Y=new_n319
+.gate XOR2  A=ys__n152 B=ys__n153 Y=new_n320
+.gate OAI21 A=new_n308 B=new_n318 C=new_n320 Y=new_n321
+.gate AND2  A=new_n306 B=new_n321 Y=new_n322
+.gate XNOR2 A=ys__n45 B=ys__n46 Y=new_n323
+.gate AOI21 A=new_n306 B=new_n321 C=new_n323 Y=new_n324
+.gate NOR2  A=new_n305 B=new_n324 Y=new_n325
+.gate OAI21 A=new_n305 B=new_n324 C=new_n303 Y=new_n326
+.gate NAND2 A=new_n302 B=new_n326 Y=new_n327
+.gate NAND3 A=new_n300 B=new_n302 C=new_n326 Y=new_n328
+.gate NAND2 A=new_n301 B=new_n328 Y=new_n329
+.gate NAND3 A=new_n299 B=new_n301 C=new_n328 Y=new_n330
+.gate XNOR2 A=ys__n96 B=ys__n97 Y=new_n331
+.gate AOI21 A=new_n297 B=new_n330 C=new_n331 Y=new_n332
+.gate NOR2  A=new_n296 B=new_n332 Y=new_n333
+.gate OAI21 A=new_n296 B=new_n332 C=new_n295 Y=new_n334
+.gate NAND2 A=new_n294 B=new_n334 Y=new_n335
+.gate NAND3 A=new_n292 B=new_n294 C=new_n334 Y=new_n336
+.gate NAND2 A=new_n293 B=new_n336 Y=new_n337
+.gate NAND3 A=new_n291 B=new_n293 C=new_n336 Y=new_n338
+.gate NAND2 A=new_n290 B=new_n338 Y=new_n339
+.gate NAND3 A=new_n288 B=new_n290 C=new_n338 Y=new_n340
+.gate NAND2 A=new_n289 B=new_n340 Y=new_n341
+.gate NAND3 A=new_n287 B=new_n289 C=new_n340 Y=new_n342
+.gate NAND2 A=new_n286 B=new_n342 Y=new_n343
+.gate NAND3 A=new_n284 B=new_n286 C=new_n342 Y=new_n344
+.gate NAND2 A=new_n285 B=new_n344 Y=new_n345
+.gate NAND3 A=new_n283 B=new_n285 C=new_n344 Y=new_n346
+.gate NAND2 A=new_n282 B=new_n346 Y=new_n347
+.gate NAND3 A=new_n280 B=new_n282 C=new_n346 Y=new_n348
+.gate NAND2 A=new_n281 B=new_n348 Y=new_n349
+.gate NAND3 A=new_n279 B=new_n281 C=new_n348 Y=new_n350
+.gate NAND2 A=new_n278 B=new_n350 Y=new_n351
+.gate NAND3 A=new_n276 B=new_n278 C=new_n350 Y=new_n352
+.gate NAND2 A=new_n277 B=new_n352 Y=new_n353
+.gate NAND3 A=new_n275 B=new_n277 C=new_n352 Y=new_n354
+.gate NAND2 A=new_n274 B=new_n354 Y=new_n355
+.gate NAND3 A=new_n272 B=new_n274 C=new_n354 Y=new_n356
+.gate NAND2 A=new_n273 B=new_n356 Y=new_n357
+.gate NAND3 A=new_n271 B=new_n273 C=new_n356 Y=new_n358
+.gate NAND2 A=new_n270 B=new_n358 Y=new_n359
+.gate NAND3 A=new_n269 B=new_n270 C=new_n358 Y=new_n360
+.gate NAND2 A=new_n268 B=new_n360 Y=new_n361
+.gate NAND3 A=new_n267 B=new_n268 C=new_n360 Y=new_n362
+.gate NAND2 A=new_n266 B=new_n362 Y=new_n363
+.gate NAND3 A=new_n264 B=new_n266 C=new_n362 Y=new_n364
+.gate NAND2 A=new_n265 B=new_n364 Y=new_n365
+.gate NAND3 A=new_n263 B=new_n265 C=new_n364 Y=new_n366
+.gate NAND2 A=new_n262 B=new_n366 Y=new_n367
+.gate NAND3 A=new_n260 B=new_n262 C=new_n366 Y=new_n368
+.gate NAND2 A=new_n261 B=new_n368 Y=new_n369
+.gate NAND3 A=new_n259 B=new_n261 C=new_n368 Y=new_n370
+.gate NAND2 A=new_n258 B=new_n370 Y=new_n371
+.gate NAND3 A=new_n256 B=new_n258 C=new_n370 Y=new_n372
+.gate NAND2 A=new_n257 B=new_n372 Y=new_n373
+.gate NAND3 A=new_n255 B=new_n257 C=new_n372 Y=new_n374
+.gate NAND2 A=new_n254 B=new_n374 Y=new_n375
+.gate NAND3 A=new_n253 B=new_n254 C=new_n374 Y=new_n376
+.gate NAND2 A=new_n252 B=new_n376 Y=new_n377
+.gate NAND3 A=new_n251 B=new_n252 C=new_n376 Y=new_n378
+.gate XNOR2 A=ys__n82 B=ys__n83 Y=new_n379
+.gate AOI21 A=new_n250 B=new_n378 C=new_n379 Y=new_n380
+.gate NOR2  A=new_n249 B=new_n380 Y=new_n381
+.gate OAI21 A=new_n249 B=new_n380 C=new_n248 Y=new_n382
+.gate NAND2 A=new_n247 B=new_n382 Y=new_n383
+.gate NAND3 A=new_n245 B=new_n247 C=new_n382 Y=new_n384
+.gate NAND2 A=new_n246 B=new_n384 Y=new_n385
+.gate NAND3 A=new_n244 B=new_n246 C=new_n384 Y=new_n386
+.gate NAND2 A=new_n243 B=new_n386 Y=new_n387
+.gate NAND3 A=new_n241 B=new_n243 C=new_n386 Y=new_n388
+.gate NAND2 A=new_n242 B=new_n388 Y=new_n389
+.gate NAND3 A=new_n240 B=new_n242 C=new_n388 Y=new_n390
+.gate NAND2 A=new_n239 B=new_n390 Y=new_n391
+.gate NAND3 A=new_n237 B=new_n239 C=new_n390 Y=new_n392
+.gate NAND2 A=new_n238 B=new_n392 Y=new_n393
+.gate NAND3 A=new_n236 B=new_n238 C=new_n392 Y=new_n394
+.gate AOI21 A=new_n235 B=new_n394 C=new_n234 Y=new_n395
+.gate NOR2  A=new_n233 B=new_n395 Y=new_n396
+.gate OAI21 A=new_n233 B=new_n395 C=new_n232 Y=new_n397
+.gate NAND2 A=new_n231 B=new_n397 Y=new_n398
+.gate NAND3 A=new_n230 B=new_n231 C=new_n397 Y=new_n399
+.gate NAND2 A=new_n229 B=new_n399 Y=new_n400
+.gate NAND3 A=new_n228 B=new_n229 C=new_n399 Y=new_n401
+.gate NAND2 A=new_n227 B=new_n401 Y=new_n402
+.gate NAND3 A=new_n225 B=new_n227 C=new_n401 Y=new_n403
+.gate NAND2 A=new_n226 B=new_n403 Y=new_n404
+.gate NAND3 A=new_n224 B=new_n226 C=new_n403 Y=new_n405
+.gate NAND2 A=new_n223 B=new_n405 Y=new_n406
+.gate NAND3 A=new_n222 B=new_n223 C=new_n405 Y=new_n407
+.gate NAND2 A=new_n221 B=new_n407 Y=new_n408
+.gate NAND3 A=new_n220 B=new_n221 C=new_n407 Y=new_n409
+.gate XNOR2 A=ys__n12 B=ys__n13 Y=new_n410
+.gate AOI21 A=new_n219 B=new_n409 C=new_n410 Y=new_n411
+.gate NOR2  A=new_n218 B=new_n411 Y=new_n412
+.gate OAI21 A=new_n218 B=new_n411 C=new_n217 Y=new_n413
+.gate NAND2 A=new_n216 B=new_n413 Y=new_n414
+.gate NAND3 A=new_n214 B=new_n216 C=new_n413 Y=new_n415
+.gate NAND2 A=new_n215 B=new_n415 Y=new_n416
+.gate NAND3 A=new_n213 B=new_n215 C=new_n415 Y=new_n417
+.gate NAND2 A=new_n212 B=new_n417 Y=new_n418
+.gate NAND3 A=new_n210 B=new_n212 C=new_n417 Y=new_n419
+.gate NAND2 A=new_n211 B=new_n419 Y=new_n420
+.gate NAND3 A=new_n209 B=new_n211 C=new_n419 Y=new_n421
+.gate NAND2 A=new_n208 B=new_n421 Y=new_n422
+.gate NAND3 A=new_n206 B=new_n208 C=new_n421 Y=new_n423
+.gate NAND2 A=new_n207 B=new_n423 Y=new_n424
+.gate NAND3 A=new_n205 B=new_n207 C=new_n423 Y=new_n425
+.gate XNOR2 A=ys__n417 B=ys__n418 Y=new_n426
+.gate AOI21 A=new_n204 B=new_n425 C=new_n426 Y=new_n427
+.gate NOR2  A=new_n203 B=new_n427 Y=new_n428
+.gate OAI21 A=new_n203 B=new_n427 C=new_n202 Y=new_n429
+.gate NAND2 A=new_n201 B=new_n429 Y=new_n430
+.gate NAND3 A=new_n199 B=new_n201 C=new_n429 Y=new_n431
+.gate NAND2 A=new_n200 B=new_n431 Y=new_n432
+.gate NAND3 A=new_n198 B=new_n200 C=new_n431 Y=new_n433
+.gate NAND2 A=new_n197 B=new_n433 Y=new_n434
+.gate XNOR2 A=ys__n36 B=ys__n37 Y=new_n435
+.gate AOI21 A=new_n197 B=new_n433 C=new_n435 Y=new_n436
+.gate NOR2  A=new_n196 B=new_n436 Y=new_n437
+.gate XOR2  A=ys__n159 B=ys__n160 Y=new_n438
+.gate OAI21 A=new_n196 B=new_n436 C=new_n438 Y=new_n439
+.gate XNOR2 A=ys__n596 B=ys__n597 Y=new_n440
+.gate AND3  A=new_n195 B=new_n439 C=new_n440 Y=new_n441
+.gate AOI21 A=new_n195 B=new_n439 C=new_n440 Y=new_n442
+.gate NOR2  A=new_n441 B=new_n442 Y=ys__n533
+.gate XNOR2 A=new_n437 B=new_n438 Y=ys__n534
+.gate XNOR2 A=new_n434 B=new_n435 Y=ys__n535
+.gate XNOR2 A=new_n198 B=new_n432 Y=ys__n536
+.gate NAND2 A=new_n199 B=new_n200 Y=new_n447
+.gate XNOR2 A=new_n430 B=new_n447 Y=ys__n537
+.gate XNOR2 A=new_n202 B=new_n428 Y=ys__n538
+.gate AND3  A=new_n204 B=new_n425 C=new_n426 Y=new_n450
+.gate NOR2  A=new_n427 B=new_n450 Y=ys__n539
+.gate XNOR2 A=new_n205 B=new_n424 Y=ys__n540
+.gate NAND2 A=new_n206 B=new_n207 Y=new_n453
+.gate XNOR2 A=new_n422 B=new_n453 Y=ys__n541
+.gate XNOR2 A=new_n209 B=new_n420 Y=ys__n542
+.gate NAND2 A=new_n210 B=new_n211 Y=new_n456
+.gate XNOR2 A=new_n418 B=new_n456 Y=ys__n543
+.gate XNOR2 A=new_n213 B=new_n416 Y=ys__n544
+.gate NAND2 A=new_n214 B=new_n215 Y=new_n459
+.gate XNOR2 A=new_n414 B=new_n459 Y=ys__n545
+.gate XNOR2 A=new_n217 B=new_n412 Y=ys__n546
+.gate AND3  A=new_n219 B=new_n409 C=new_n410 Y=new_n462
+.gate NOR2  A=new_n411 B=new_n462 Y=ys__n547
+.gate XNOR2 A=new_n220 B=new_n408 Y=ys__n548
+.gate NAND2 A=new_n221 B=new_n222 Y=new_n465
+.gate XNOR2 A=new_n406 B=new_n465 Y=ys__n549
+.gate XNOR2 A=new_n224 B=new_n404 Y=ys__n550
+.gate NAND2 A=new_n225 B=new_n226 Y=new_n468
+.gate XNOR2 A=new_n402 B=new_n468 Y=ys__n551
+.gate XNOR2 A=new_n228 B=new_n400 Y=ys__n552
+.gate NAND2 A=new_n229 B=new_n230 Y=new_n471
+.gate XNOR2 A=new_n398 B=new_n471 Y=ys__n553
+.gate XNOR2 A=new_n232 B=new_n396 Y=ys__n554
+.gate AND3  A=new_n234 B=new_n235 C=new_n394 Y=new_n474
+.gate NOR2  A=new_n395 B=new_n474 Y=ys__n555
+.gate XNOR2 A=new_n236 B=new_n393 Y=ys__n556
+.gate NAND2 A=new_n237 B=new_n238 Y=new_n477
+.gate XNOR2 A=new_n391 B=new_n477 Y=ys__n557
+.gate XNOR2 A=new_n240 B=new_n389 Y=ys__n558
+.gate NAND2 A=new_n241 B=new_n242 Y=new_n480
+.gate XNOR2 A=new_n387 B=new_n480 Y=ys__n559
+.gate XNOR2 A=new_n244 B=new_n385 Y=ys__n560
+.gate NAND2 A=new_n245 B=new_n246 Y=new_n483
+.gate XNOR2 A=new_n383 B=new_n483 Y=ys__n561
+.gate XNOR2 A=new_n248 B=new_n381 Y=ys__n562
+.gate AND3  A=new_n250 B=new_n378 C=new_n379 Y=new_n486
+.gate NOR2  A=new_n380 B=new_n486 Y=ys__n563
+.gate XNOR2 A=new_n251 B=new_n377 Y=ys__n564
+.gate NAND2 A=new_n252 B=new_n253 Y=new_n489
+.gate XNOR2 A=new_n375 B=new_n489 Y=ys__n565
+.gate XNOR2 A=new_n255 B=new_n373 Y=ys__n566
+.gate NAND2 A=new_n256 B=new_n257 Y=new_n492
+.gate XNOR2 A=new_n371 B=new_n492 Y=ys__n567
+.gate XNOR2 A=new_n259 B=new_n369 Y=ys__n568
+.gate NAND2 A=new_n260 B=new_n261 Y=new_n495
+.gate XNOR2 A=new_n367 B=new_n495 Y=ys__n569
+.gate XNOR2 A=new_n263 B=new_n365 Y=ys__n570
+.gate NAND2 A=new_n264 B=new_n265 Y=new_n498
+.gate XNOR2 A=new_n363 B=new_n498 Y=ys__n571
+.gate XNOR2 A=new_n267 B=new_n361 Y=ys__n572
+.gate NAND2 A=new_n268 B=new_n269 Y=new_n501
+.gate XNOR2 A=new_n359 B=new_n501 Y=ys__n573
+.gate XNOR2 A=new_n271 B=new_n357 Y=ys__n574
+.gate NAND2 A=new_n272 B=new_n273 Y=new_n504
+.gate XNOR2 A=new_n355 B=new_n504 Y=ys__n575
+.gate XNOR2 A=new_n275 B=new_n353 Y=ys__n576
+.gate NAND2 A=new_n276 B=new_n277 Y=new_n507
+.gate XNOR2 A=new_n351 B=new_n507 Y=ys__n577
+.gate XNOR2 A=new_n279 B=new_n349 Y=ys__n578
+.gate NAND2 A=new_n280 B=new_n281 Y=new_n510
+.gate XNOR2 A=new_n347 B=new_n510 Y=ys__n579
+.gate XNOR2 A=new_n283 B=new_n345 Y=ys__n580
+.gate NAND2 A=new_n284 B=new_n285 Y=new_n513
+.gate XNOR2 A=new_n343 B=new_n513 Y=ys__n581
+.gate XNOR2 A=new_n287 B=new_n341 Y=ys__n582
+.gate NAND2 A=new_n288 B=new_n289 Y=new_n516
+.gate XNOR2 A=new_n339 B=new_n516 Y=ys__n583
+.gate XNOR2 A=new_n291 B=new_n337 Y=ys__n584
+.gate NAND2 A=new_n292 B=new_n293 Y=new_n519
+.gate XNOR2 A=new_n335 B=new_n519 Y=ys__n585
+.gate XNOR2 A=new_n295 B=new_n333 Y=ys__n586
+.gate AND3  A=new_n297 B=new_n330 C=new_n331 Y=new_n522
+.gate NOR2  A=new_n332 B=new_n522 Y=ys__n587
+.gate XNOR2 A=new_n299 B=new_n329 Y=ys__n588
+.gate NAND2 A=new_n300 B=new_n301 Y=new_n525
+.gate XNOR2 A=new_n327 B=new_n525 Y=ys__n589
+.gate XNOR2 A=new_n303 B=new_n325 Y=ys__n590
+.gate XOR2  A=new_n322 B=new_n323 Y=ys__n591
+.gate XNOR2 A=new_n319 B=new_n320 Y=ys__n592
+.gate XNOR2 A=new_n316 B=new_n317 Y=ys__n593
+.gate XOR2  A=new_n313 B=new_n314 Y=ys__n594
+.gate XNOR2 A=new_n193 B=new_n312 Y=ys__n595
+.end

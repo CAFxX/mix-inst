@@ -1,0 +1,17 @@
+{
+ "name": "w13s_boyar19_gf4inv",
+ "description": "Wave-13 single stage (BOYAR19_GF4INV nibble-S-box + transpose + pre-whiten); stage-cost probe, not a candidate",
+ "rtl_top": "w13s_boyar19_gf4inv",
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x6ea2c64e0d9e13ea"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x6ea2c64e0d9e13ea"
+  }
+ ]
+}

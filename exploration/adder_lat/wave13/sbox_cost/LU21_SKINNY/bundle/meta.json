@@ -1,0 +1,17 @@
+{
+ "name": "w13s_lu21_skinny",
+ "description": "Wave-13 single stage (LU21_SKINNY nibble-S-box + transpose + pre-whiten); stage-cost probe, not a candidate",
+ "rtl_top": "w13s_lu21_skinny",
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x4aab807f8f0e5366"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x4aab807f8f0e5366"
+  }
+ ]
+}

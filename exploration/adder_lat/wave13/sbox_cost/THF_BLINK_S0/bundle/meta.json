@@ -1,0 +1,17 @@
+{
+ "name": "w13s_thf_blink_s0",
+ "description": "Wave-13 single stage (THF_BLINK_S0 nibble-S-box + transpose + pre-whiten); stage-cost probe, not a candidate",
+ "rtl_top": "w13s_thf_blink_s0",
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x547a0f4e26bc6a2b"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x547a0f4e26bc6a2b"
+  }
+ ]
+}

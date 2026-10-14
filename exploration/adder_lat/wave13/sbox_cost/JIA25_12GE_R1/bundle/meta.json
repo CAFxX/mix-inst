@@ -1,0 +1,17 @@
+{
+ "name": "w13s_jia25_12ge_r1",
+ "description": "Wave-13 single stage (JIA25_12GE_R1 nibble-S-box + transpose + pre-whiten); stage-cost probe, not a candidate",
+ "rtl_top": "w13s_jia25_12ge_r1",
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x6678d4d423d61eca"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x6678d4d423d61eca"
+  }
+ ]
+}

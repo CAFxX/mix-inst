@@ -1,0 +1,17 @@
+{
+ "name": "w13s_ulbc_s1",
+ "description": "Wave-13 single stage (ULBC_s1 nibble-S-box + transpose + pre-whiten); stage-cost probe, not a candidate",
+ "rtl_top": "w13s_ulbc_s1",
+ "goldens": [
+  {
+   "val": "0x0",
+   "key": "0x123456789abcdef0",
+   "out": "0x10bf3e380bdc686e"
+  },
+  {
+   "val": "0x123456789abcdef0",
+   "key": "0x0",
+   "out": "0x10bf3e380bdc686e"
+  }
+ ]
+}

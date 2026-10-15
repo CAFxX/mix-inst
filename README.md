@@ -1,3 +1,11 @@
+> # ⚠️ EXPERIMENTAL — DO NOT USE ⚠️
+>
+> **This is experimental, pre-alpha software, written by AI agents.**
+> It is unfinished, unreviewed, and may be broken in ways that are not obvious.
+> **Do not use it yet.**
+
+---
+
 # mix — RV64 `mix` instruction design
 
 Design of a custom RISC-V instruction `mix rd, rs1, rs2` (custom-0 encoding):

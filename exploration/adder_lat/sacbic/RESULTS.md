@@ -68,7 +68,7 @@ leaving an affine function. This creates rank deficiency in consecutive output b
 - [anneal_best_t48_s42.pkl](anneal_best_t48_s42.pkl): Optimal ANF.
 - [sacbic64.v](sacbic64.v): Verilog.
 - [s0_sacbic/](s0_sacbic/): Synthesis (12.7u).
-- [seq_outputs.bin](seq_outputs.bin): 2^18 outputs for testing.
+- `seq_outputs.bin`: 2^18 outputs for testing (generated artifact, not tracked).
 - [DESIGN.md](DESIGN.md): Design documentation.
 
 ## Conclusion

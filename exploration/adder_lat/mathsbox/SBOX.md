@@ -2,7 +2,7 @@
 
 **Method**: pure mathematics — truth tables, Walsh spectra, ANF as polynomials.
 No gates, no netlists, no circuits. All results in
-[`~/workspace/mix/exploration/adder_lat/mathsbox/`](~/workspace/mix/exploration/adder_lat/mathsbox/).
+[`~/workspace/mix/exploration/adder_lat/mathsbox/`](./).
 
 ## 1. The 8×8 S-box S
 
@@ -112,16 +112,16 @@ but this F achieves byte branch 9 (vs AES's 5) in a single linear layer.
 
 ## 4. Files
 
-- [`sbox_math.py`](~/workspace/mix/exploration/adder_lat/mathsbox/sbox_math.py) — GF(2⁸), affine maps, metric functions (Walsh, Möbius, SAC/BIC, DU)
-- [`affine_search.py`](~/workspace/mix/exploration/adder_lat/mathsbox/affine_search.py) — random affine search
-- [`goodmask.py`](~/workspace/mix/exploration/adder_lat/mathsbox/goodmask.py) — good-mask table + impossibility analysis
-- [`bias_search.py`](~/workspace/mix/exploration/adder_lat/mathsbox/bias_search.py) — max-bias minimization (background)
-- [`diffusion.py`](~/workspace/mix/exploration/adder_lat/mathsbox/diffusion.py) — Cauchy M + verification
-- [`eval_F.py`](~/workspace/mix/exploration/adder_lat/mathsbox/eval_F.py) — statistical SAC/BIC of F
-- [`S_table.npy`](~/workspace/mix/exploration/adder_lat/mathsbox/S_table.npy) — the S-box (256 bytes)
-- [`S_anf.npy`](~/workspace/mix/exploration/adder_lat/mathsbox/S_anf.npy) — ANF supports
-- [`M64.npy`](~/workspace/mix/exploration/adder_lat/mathsbox/M64.npy) — the 64×64 binary matrix
-- [`best_affine.pkl`](~/workspace/mix/exploration/adder_lat/mathsbox/best_affine.pkl) — affine parameters
+- [`sbox_math.py`](sbox_math.py) — GF(2⁸), affine maps, metric functions (Walsh, Möbius, SAC/BIC, DU)
+- [`affine_search.py`](affine_search.py) — random affine search
+- [`goodmask.py`](goodmask.py) — good-mask table + impossibility analysis
+- [`bias_search.py`](bias_search.py) — max-bias minimization (background)
+- [`diffusion.py`](diffusion.py) — Cauchy M + verification
+- [`eval_F.py`](eval_F.py) — statistical SAC/BIC of F
+- [`S_table.npy`](S_table.npy) — the S-box (256 bytes)
+- [`S_anf.npy`](S_anf.npy) — ANF supports
+- [`M64.npy`](M64.npy) — the 64×64 binary matrix
+- [`best_affine.pkl`](best_affine.pkl) — affine parameters
 
 ## 5. Open points (for parent)
 
